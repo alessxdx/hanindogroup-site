@@ -8,7 +8,7 @@ placeholder, so nothing looks broken.
 Format: JPG for photos, PNG for logos. At least ~1000px wide for
 heroes and ~800px for cards. Landscape suits heroes and cards.
 
-Currently in /photos/:  logo.png  (only file present so far)
+Currently in /photos/:  logo.png, hero-sky.jpg, hero-building.png
 
 NOTE: the /fire-fighting/ section has its OWN photos folder
 (/fire-fighting/photos/) which is already fully populated. Do not
@@ -24,15 +24,24 @@ background image. All three are darkened by a blue overlay that is
 heaviest on the LEFT (where the text sits), so keep the important
 detail on the RIGHT of the frame. Landscape, at least 1600px wide.
 
-hero-group.jpg            Slide 1 "Your technology one stop solution"
-                          THE key image on the site. A forecourt,
-                          flagship installation, or office exterior.
-hero-sky.jpg              Slide 1 "Welcome to the Hanindo Group"
-                          DONE — sky above the clouds, already in place.
-                          Replace by overwriting this exact filename.
-hero-advice.jpg           Slide 3 "Our team is ready for your project"
-                          The team at work, a meeting, or the world-map
-                          network graphic the old site used.
+SLIDE 1 — "Welcome to the Hanindo Group"          [COMPLETE]
+hero-sky.jpg              Background. Sky above the clouds. In place.
+hero-building.png         Head-office photo, shown as a tall panel
+                          between the headline and the company list.
+                          The Jl. Fatmawati No. 55 building. In place.
+                          Only appears on screens wider than 1100px.
+                          PORTRAIT or square crop — it fills a narrow
+                          full-height column, so a wide landscape shot
+                          would crop hard at the sides.
+
+SLIDE 2 — "Your technology one stop solution"     [NEEDED]
+hero-group.jpg            Background. A forecourt, flagship
+                          installation, or office exterior.
+
+SLIDE 3 — "Our team is ready for your project"    [NEEDED]
+hero-advice.jpg           Background. The team at work, a meeting, or
+                          the world-map network graphic the old site
+                          used.
 
 div-oil-and-gas.jpg       Division card — fuel dispenser / forecourt
 div-automotive.jpg        Division card — workshop with a car on a lift
