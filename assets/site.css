@@ -61,7 +61,7 @@ img{max-width:100%;display:block}
    (photos/logo-citra.png, logo-automotive.png, logo-automation.png, ...);
    swap the file to change the logo. While the file is missing, onerror
    reveals .brandfall — the group lockup + company name used before. */
-.brand img.cologo{height:48px;width:auto}
+.brand img.cologo{height:54px;width:auto}
 .brandfall{align-items:center;gap:.8rem}
 .brandfall img{height:44px;width:auto}
 .top-right{display:flex;align-items:center;gap:1.3rem}
