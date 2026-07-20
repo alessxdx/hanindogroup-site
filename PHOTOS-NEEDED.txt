@@ -51,7 +51,9 @@ div-fire-fighting.jpg     Division card — OPTIONAL. If absent, falls
                           back automatically to the existing
                           fire-fighting/photos/mot-hydrant-pump.jpg
 div-flowtech.jpg          Division card — fuel station under construction
-div-printer-pos.jpg       Division card — POS / ticket printer hardware
+div-printer-pos.png       Division card — POS / ticket printer hardware
+                          [DONE] four-printer product shot, white
+                          background, shown uncropped via .dimg-contain
 div-overseas.jpg          Division card — Shanghai office or skyline
 
 PARTNER LOGOS — ALL 22                            [COMPLETE]
