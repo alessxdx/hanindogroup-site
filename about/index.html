@@ -11,18 +11,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css" />
 <style>
-/* page-specific: the six companies, listed as rows rather than cards so
+/* page-specific: the group companies, listed as rows rather than cards so
    the differing amounts of detail per company do not fight each other */
-.orgrow{display:grid;grid-template-columns:auto 1fr auto;gap:1.4rem;align-items:start;padding:1.5rem 0;border-bottom:1px solid var(--line)}
+.orgrow{display:grid;grid-template-columns:auto 1fr auto;gap:1.1rem;align-items:start;padding:1.05rem 0;border-bottom:1px solid var(--line)}
 .orgrow:first-of-type{border-top:1px solid var(--line)}
-@media(max-width:760px){.orgrow{grid-template-columns:1fr;gap:.5rem}}
-.orgrow .no{font-weight:700;font-size:.78rem;color:var(--brand);letter-spacing:.08em;padding-top:.28rem;min-width:2.2rem}
-.orgrow h3{font-weight:700;font-size:1.08rem;color:var(--blue-800);margin-bottom:.3rem}
-.orgrow p{font-size:.93rem;color:var(--muted);max-width:62ch}
-.orgrow .go{display:inline-flex;align-items:center;gap:.4rem;font-weight:600;font-size:.84rem;color:var(--brand);white-space:nowrap;padding-top:.3rem}
-.orgrow .go svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2.2;transition:transform .18s}
+@media(max-width:760px){.orgrow{grid-template-columns:1fr;gap:.35rem;padding:.95rem 0}}
+.orgrow .no{font-weight:700;font-size:.72rem;color:var(--brand);letter-spacing:.08em;padding-top:.3rem;min-width:1.9rem}
+.orgrow h3{font-weight:700;font-size:.97rem;color:var(--blue-800);margin-bottom:.2rem}
+.orgrow p{font-size:.86rem;line-height:1.55;color:var(--muted);max-width:74ch}
+.orgrow .go{display:inline-flex;align-items:center;gap:.35rem;font-weight:600;font-size:.78rem;color:var(--brand);white-space:nowrap;padding-top:.28rem}
+.orgrow .go svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2.2;transition:transform .18s}
 .orgrow .go:hover svg{transform:translateX(3px)}
-@media(max-width:760px){.orgrow .go{padding-top:.6rem}}
+@media(max-width:760px){.orgrow .go{padding-top:.45rem}}
 /* vision & mission */
 .vm{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-top:2.4rem}
 @media(max-width:820px){.vm{grid-template-columns:1fr}}
@@ -169,21 +169,21 @@
   </div>
 </section>
 
-<!-- ============ THE SIX COMPANIES ============ -->
+<!-- ============ THE COMPANIES ============ -->
 <section class="section paper">
   <div class="wrap">
     <div class="reveal">
       <span class="kicker">The group</span>
-      <h2 class="h2">Six companies, one address.</h2>
+      <h2 class="h2">Specialists under one roof.</h2>
       <p class="lede">Each company is a specialist in its own field. Together they cover a project from permits and construction, through equipment and automation, to service for the life of the asset.</p>
     </div>
 
-    <div class="reveal d1" style="margin-top:2.4rem">
+    <div class="reveal d1" style="margin-top:2rem">
       <div class="orgrow">
         <span class="no">01</span>
         <div>
           <h3>PT. Hanindo Citra</h3>
-          <p>Sales and after-sales service of petroleum equipment and product supply, continuing the work started by PT. Sugiron Citra. Also provides construction for the retail petroleum industry — from consultation and drawing through building, until the station operates — plus sign boards and forecourt lighting.</p>
+          <p>Sales and after-sales service of petroleum equipment and product supply, continuing the work started by PT. Sugiron Citra. Also provides construction for the retail petroleum industry, plus sign boards and forecourt lighting, and houses the group's Fire Fighting Department.</p>
         </div>
         <a class="go" href="../oil-and-gas/">Oil &amp; Gas <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
@@ -191,59 +191,39 @@
       <div class="orgrow">
         <span class="no">02</span>
         <div>
-          <h3>PT. Hanindo Citra — Fire Fighting Department</h3>
-          <p>Design, supply, installation and maintenance of complete fire-fighting systems across Indonesia: hydrant, sprinkler, deluge, gas and foam suppression, and fire detection and alarm. Certified to ISO 9001:2015, ISO 14001:2015 and ISO 45001:2018.</p>
-        </div>
-        <a class="go" href="../fire-fighting/">Fire Fighting <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-
-      <div class="orgrow">
-        <span class="no">03</span>
-        <div>
           <h3>PT. Flowtech Engineering</h3>
-          <p>Fuel station construction. Experience gained in managing the fuel station business gave the group the knowledge and resources to build its own. Every aspect required in the construction of a fuel station is handled in-house: permits, materials, labour, mechanical and electrical installation, and training staff on operation and safety. Now also serves the oil and gas industry and automotive garage construction.</p>
+          <p>Fuel station construction. Every aspect is handled in-house: permits, materials, labour, mechanical and electrical installation, and training staff on operation and safety. Also serves the oil and gas industry and automotive garage construction.</p>
         </div>
         <a class="go" href="../flowtech-engineering/">Flowtech <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
 
       <div class="orgrow">
-        <span class="no">04</span>
+        <span class="no">03</span>
         <div>
           <h3>PT. Hanindo Automotive</h3>
-          <p>Autoshop equipment, offering products built on the latest technology to increase efficiency, productivity and ease of use. Sole distributor for a range of garage equipment brands covering lifting, diagnostics, emissions testing, tyre service and lubrication.</p>
+          <p>Autoshop equipment built on the latest technology, to increase efficiency, productivity and ease of use. Sole distributor for garage equipment covering lifting, diagnostics, emissions testing, tyre service and lubrication.</p>
         </div>
         <a class="go" href="../automotive/">Automotive <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
 
       <div class="orgrow">
-        <span class="no">05</span>
+        <span class="no">04</span>
         <div>
           <h3>PT. Hanindo Automation Solutions</h3>
-          <p>Retail and commercial fuel automation, helping customers control and manage stations securely and remotely. Covers the AdvanZ&reg; retail automation family, fleet and fuel card management, forecourt terminals, fuel management for commercial sites and vehicle fleets, garage automation, and access control and identification.</p>
+          <p>Retail and commercial fuel automation, so stations can be controlled and managed securely and remotely. Covers the AdvanZ&reg; family, fleet and fuel card management, forecourt terminals, fuel management for commercial sites and fleets, and access control.</p>
         </div>
         <a class="go" href="../automation/">Automation <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
 
       <div class="orgrow">
-        <span class="no">06</span>
+        <span class="no">05</span>
         <div>
           <h3>Custom (S.E.A) Gralessando</h3>
-          <p>Printing, scanning and reading systems, together with the hardware and software behind them, from the group’s principal Custom. The company maintains its own website at custom-sea.com.</p>
+          <p>Printing, scanning and reading systems, with the hardware and software behind them, from the group's principal Custom. The company maintains its own website at custom-sea.com.</p>
         </div>
         <a class="go" href="../printer-pos/">Printer &amp; POS <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
-
-      <div class="orgrow">
-        <span class="no">07</span>
-        <div>
-          <h3>Hanindo (Shanghai) International Co. Ltd</h3>
-          <p>The group’s international arm, established in 2007 and operating from Shanghai. Beyond the domestic Chinese market it serves export markets across Asia Pacific, the Middle East and Africa, and holds a strategic alliance with the Australian fuel management provider Transponder Technology.</p>
-        </div>
-        <a class="go" href="../overseas/">Overseas <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
     </div>
-
-    <p class="lede reveal" style="margin-top:1.4rem;font-size:.88rem">Hanindo Citra appears twice above: its Fire Fighting Department operates as a distinct business within the same company.</p>
   </div>
 </section>
 
