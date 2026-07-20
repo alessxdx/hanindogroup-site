@@ -69,7 +69,7 @@ AUTOMATICALLY replace the drawing on the matching product card:
   prod-deluge.jpg        Deluge Systems
 (White/light background product shots look best, like the hydrant.)
 
-CUSTOMER LOGO SLOTS (Home page "Our Customers" moving bar):
+CUSTOMER LOGO SLOTS (Home page "Team experience includes work with" bar):
 Drop a logo file with one of these names into photos/ and it will
 AUTOMATICALLY replace the text on the matching customer card:
   cust-mot.png           Ministry of Transportation

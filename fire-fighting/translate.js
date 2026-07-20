@@ -46,7 +46,7 @@
     "One partner, backed by the Hanindo Group": "Satu mitra, didukung oleh Hanindo Group",
 
     /* ---- customers ---- */
-    "Our Customers": "Pelanggan Kami",
+    "Team experience includes work with": "Pengalaman tim mencakup pekerjaan dengan",
 
     /* ---- contact (short + full) ---- */
     "Partner with Hanindo Citra": "Bermitra dengan Hanindo Citra",
