@@ -18,6 +18,19 @@ relatively.
 
 
 --------------------------------------------------
+COMPANY LOGOS  (header of each company's pages)
+--------------------------------------------------
+Each company site's header has a fixed logo slot. Drop a PNG with the
+EXACT filename into /photos/ and it replaces the "HANINDOGROUP | NAME"
+text lockup automatically. Wide lockup format, ~640px wide (shown at
+48px tall), white or transparent background.
+
+logo-citra.png            Hanindo Citra                   [COMPLETE]
+logo-automotive.png       Hanindo Automotive              [NEEDED]
+logo-automation.png       Hanindo Automation Solutions    [NEEDED]
+
+
+--------------------------------------------------
 HOME  (/index.html)
 --------------------------------------------------
 The homepage hero is a 3-slide slideshow. Each slide has its own
