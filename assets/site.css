@@ -42,9 +42,17 @@ img{max-width:100%;display:block}
 .topbar{background:var(--white);border-bottom:1px solid var(--line)}
 .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.2rem;min-height:82px;padding-top:.6rem;padding-bottom:.6rem}
 .brand{display:flex;align-items:center;gap:.8rem}
+/* logo-lockup.png is the original wordmark artwork with the high-resolution
+   icon composited in; it is drawn at 3x so it stays sharp on retina screens */
 .brand img{height:44px;width:auto}
-.brand .btxt strong{font-weight:700;color:#3d5570;font-size:1.22rem;display:block;line-height:1.1;letter-spacing:-.01em}
-.brand .btxt span{font-weight:600;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);display:block}
+/* Brand lockup. Colours are sampled from the official logo artwork
+   (photos/logo.png); the face is Arial/Helvetica to match the printed
+   wordmark rather than the Open Sans used elsewhere on the site. */
+.brand .btxt{font-family:Arial,Helvetica,'Liberation Sans',sans-serif}
+.brand .btxt strong{font-weight:700;color:#6b6459;font-size:1.28rem;display:block;line-height:1.05;letter-spacing:-.005em}
+/* tracking tuned so the tagline sits at ~98% of the wordmark's width,
+   the same proportion as the printed logo */
+.brand .btxt span{font-weight:400;font-size:.74rem;letter-spacing:.014em;text-transform:uppercase;color:#8a8377;display:block}
 .top-right{display:flex;align-items:center;gap:1.3rem}
 .callcenter{font-size:.86rem;color:var(--muted);font-weight:500;white-space:nowrap}
 .callcenter b{color:var(--blue-800);font-weight:700}
