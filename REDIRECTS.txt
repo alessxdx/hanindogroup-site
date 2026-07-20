@@ -1,0 +1,95 @@
+HANINDO GROUP — OLD JOOMLA URL -> NEW PATH
+==================================================
+For the hosting colleague: at go-live, turn these into 301 redirects
+in .htaccess (public_html/.htaccess) so existing Google results and
+any bookmarked links keep working.
+
+STATUS: incomplete — /about/, /partners/, /training/, /career/ and
+/contact/ are not built yet. Their rows are listed below and marked
+[PENDING]; the mapping is already decided, so the redirects can be
+written now and will start working the moment those pages ship.
+
+
+--------------------------------------------------
+MAPPING
+--------------------------------------------------
+OLD (Joomla)                                          NEW
+/                                                     /
+/about-hanindo-group                                  /about/                    [PENDING]
+/about-hanindo-group/hanindo-citra                    /oil-and-gas/
+/about-hanindo-group/flowtech-engineering             /flowtech-engineering/
+/about-hanindo-group/hanindo-automotive               /automotive/
+/about-hanindo-group/hanindo-automation-solutions     /automation/
+/about-hanindo-group/hanindo-overseas                 /overseas/
+/pt-hanindo-citra                                     /oil-and-gas/
+/pt-flowtech-engineering                              /flowtech-engineering/
+/pt-hanindo-automotive                                /automotive/
+/hanindo-automation-solutions                         /automation/
+/pt-hanindo-overseas                                  /overseas/
+/hanindo-product                                      /                          (no direct equivalent -> home)
+/oil-and-gas                                          /oil-and-gas/
+/home-automotive                                      /automotive/
+/fire-fighting                                        /fire-fighting/            (already live)
+/partners-a-principals                                /partners/                 [PENDING]
+/training-gilbarco-veeder-root-thermal-printer-indonesia          /training/     [PENDING]
+/news-info/career-hanindo-group-gilbarco-veeder-root-indonesia-thermal-printer   /career/   [PENDING]
+/contact-us                                           /contact/                  [PENDING]
+/about                                                /about/                    [PENDING]
+
+EXTERNAL — leave alone, do NOT redirect. These already point off-site
+and should keep doing so:
+/  (menu item "Printer & POS System")                 https://custom-sea.com/
+/  (menu item "Custom (S.E.A) Hanindo")               https://custom-sea.com/
+
+UNRESOLVED — decide before go-live:
+/gralessando          Linked from the old site's "Our Websites" menu.
+                      Unknown destination and no content was found for
+                      it. Either point it somewhere sensible or let it
+                      404. Do not invent a page for it.
+/?Itemid=152          Old Joomla sitemap. Suggest -> /
+/component/users/...  Joomla login/password-reset endpoints. These have
+                      no equivalent on a static site. Let them 404, or
+                      redirect to / if you prefer no dead links.
+
+
+--------------------------------------------------
+SAMPLE .htaccess
+--------------------------------------------------
+# Hanindo Group — legacy Joomla redirects
+RewriteEngine On
+
+Redirect 301 /about-hanindo-group/hanindo-citra                /oil-and-gas/
+Redirect 301 /about-hanindo-group/flowtech-engineering         /flowtech-engineering/
+Redirect 301 /about-hanindo-group/hanindo-automotive           /automotive/
+Redirect 301 /about-hanindo-group/hanindo-automation-solutions /automation/
+Redirect 301 /about-hanindo-group/hanindo-overseas             /overseas/
+Redirect 301 /about-hanindo-group                              /about/
+Redirect 301 /pt-hanindo-citra                                 /oil-and-gas/
+Redirect 301 /pt-flowtech-engineering                          /flowtech-engineering/
+Redirect 301 /pt-hanindo-automotive                            /automotive/
+Redirect 301 /hanindo-automation-solutions                     /automation/
+Redirect 301 /pt-hanindo-overseas                              /overseas/
+Redirect 301 /hanindo-product                                  /
+Redirect 301 /oil-and-gas                                      /oil-and-gas/
+Redirect 301 /home-automotive                                  /automotive/
+Redirect 301 /partners-a-principals                            /partners/
+Redirect 301 /training-gilbarco-veeder-root-thermal-printer-indonesia  /training/
+Redirect 301 /news-info/career-hanindo-group-gilbarco-veeder-root-indonesia-thermal-printer  /career/
+Redirect 301 /contact-us                                       /contact/
+Redirect 301 /about                                            /about/
+
+# IMPORTANT: order matters. The longer /about-hanindo-group/* rules
+# MUST come before the bare /about-hanindo-group rule, otherwise the
+# short one swallows them.
+
+
+--------------------------------------------------
+GO-LIVE CHECKLIST (separate from redirects)
+--------------------------------------------------
+[ ] Remove <meta name="robots" content="noindex" /> from EVERY page.
+    It is on all new pages so staging never competes with the live
+    site in Google. The site will not be indexed until it is removed.
+    Find them with:  grep -rn "noindex" --include=*.html .
+[ ] Confirm the header search still behaves. It currently opens a
+    Google site: search for hanindogroup.com in a new tab, because the
+    old Joomla search endpoint disappears with Joomla.

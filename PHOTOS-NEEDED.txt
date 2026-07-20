@@ -1,0 +1,132 @@
+HANINDO GROUP SITE — PHOTOS NEEDED
+==================================================
+Every slot below is already wired into a page. Drop a file with the
+EXACT filename into /photos/ and it appears automatically — no code
+changes needed. Until then the page shows a styled "Photo needed"
+placeholder, so nothing looks broken.
+
+Format: JPG for photos, PNG for logos. At least ~1000px wide for
+heroes and ~800px for cards. Landscape suits heroes and cards.
+
+Currently in /photos/:  logo.png  (only file present so far)
+
+NOTE: the /fire-fighting/ section has its OWN photos folder
+(/fire-fighting/photos/) which is already fully populated. Do not
+move those files — that section is finished and references them
+relatively.
+
+
+--------------------------------------------------
+HOME  (/index.html)
+--------------------------------------------------
+The homepage hero is a 3-slide slideshow. Each slide has its own
+background image. All three are darkened by a blue overlay that is
+heaviest on the LEFT (where the text sits), so keep the important
+detail on the RIGHT of the frame. Landscape, at least 1600px wide.
+
+hero-group.jpg            Slide 1 "Your technology one stop solution"
+                          THE key image on the site. A forecourt,
+                          flagship installation, or office exterior.
+hero-sky.jpg              Slide 1 "Welcome to the Hanindo Group"
+                          DONE — sky above the clouds, already in place.
+                          Replace by overwriting this exact filename.
+hero-advice.jpg           Slide 3 "Our team is ready for your project"
+                          The team at work, a meeting, or the world-map
+                          network graphic the old site used.
+
+div-oil-and-gas.jpg       Division card — fuel dispenser / forecourt
+div-automotive.jpg        Division card — workshop with a car on a lift
+div-automation.jpg        Division card — POS terminal or control room
+div-fire-fighting.jpg     Division card — OPTIONAL. If absent, falls
+                          back automatically to the existing
+                          fire-fighting/photos/mot-hydrant-pump.jpg
+div-flowtech.jpg          Division card — fuel station under construction
+div-printer-pos.jpg       Division card — POS / ticket printer hardware
+div-overseas.jpg          Division card — Shanghai office or skyline
+
+PARTNER LOGOS (home marquee) — PNG, colour logo on white or
+transparent. Until added, each card shows the brand name as text,
+which looks intentional.
+brand-gilbarco.png        Gilbarco Veeder-Root
+brand-opw.png             OPW
+brand-honeywell.png       Honeywell
+brand-durapipe.png        Durapipe
+brand-piusi.png           PIUSI
+brand-raasm.png           RAASM
+brand-brainbee.png        Brainbee
+brand-custom.png          Custom
+brand-gasboy.png          Gasboy
+brand-tcs.png             TCS
+
+
+--------------------------------------------------
+OIL & GAS  (/oil-and-gas/)
+--------------------------------------------------
+hero-oil-and-gas.jpg      Page hero — forecourt or storage terminal
+oag-forecourt.jpg         Intro section — station Hanindo equipped
+oag-dispenser.jpg         Product card — pumps & dispensers
+oag-advanz.jpg            Product card — AdvanZ POS/BOS screen or terminal
+oag-flowmeter.jpg         Product card — flow meter unit
+oag-atg.jpg               Product card — automatic tank gauging console
+oag-stp.jpg               Product card — submersible turbine pump
+oag-piping.jpg            Product card — piping / fueling components
+
+
+--------------------------------------------------
+AUTOMOTIVE  (/automotive/)
+--------------------------------------------------
+hero-automotive.jpg       Page hero — busy workshop
+auto-workshop.jpg         Intro section — garage fitted with our kit
+auto-car-air-condition.jpg    Product card — A/C service unit
+auto-engine-analyzer.jpg      Product card — engine diagnostic tool
+auto-gas-analyzer.jpg         Product card — four gas analyser
+auto-injector.jpg             Product card — injector test/clean bench
+auto-lift.jpg                 Product card — two-post or scissor lift
+auto-opacimeter.jpg           Product card — opacimeter / smoke meter
+auto-tire-service.jpg         Product card — tyre changer or balancer
+auto-lube-oil.jpg             Product card — lubrication / oil equipment
+
+
+--------------------------------------------------
+AUTOMATION  (/automation/)
+--------------------------------------------------
+hero-automation.jpg           Page hero — control room or POS counter
+auto-sol-control.jpg          Intro section — station management screen
+autm-advanz-pos.jpg           Product card — AdvanZ POS/BOS/HOS
+autm-fleet-card.jpg           Product card — fleet / fuel / loyalty cards
+autm-ift-terminal.jpg         Product card — AdvanZ IFT forecourt terminal
+autm-fuel-okey.jpg            Product card — FUEL O'KEY
+autm-garage-automation.jpg    Product card — garage automation
+autm-access-control.jpg       Product card — access control & ID
+
+
+--------------------------------------------------
+PRINTER & POS  (/printer-pos/)
+--------------------------------------------------
+hero-printer-pos.jpg      Page hero — POS counter or printer hardware
+pos-terminal.jpg          Intro section — Custom terminal / printer
+
+
+--------------------------------------------------
+FLOWTECH ENGINEERING  (/flowtech-engineering/)
+--------------------------------------------------
+hero-flowtech.jpg              Page hero — station under construction
+flow-construction.jpg          Intro section — site work in progress
+flow-fuel-stations.jpg         Sector card — completed fuel station
+flow-oil-gas.jpg               Sector card — oil & gas facility
+flow-automotive-garages.jpg    Sector card — completed garage build
+
+
+--------------------------------------------------
+HANINDO OVERSEAS  (/overseas/)
+--------------------------------------------------
+hero-overseas.jpg         Page hero — Shanghai skyline or office
+ovs-shanghai.jpg          Intro section — Shanghai office or team
+
+
+--------------------------------------------------
+STILL TO BE BUILT (pages not written yet)
+--------------------------------------------------
+/about/      /partners/      /training/      /career/      /contact/
+Photo slots for these will be added here once those pages exist.
+The /partners/ page will reuse the brand-*.png logos listed above.
