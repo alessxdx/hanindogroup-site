@@ -140,13 +140,12 @@ hero-partners.jpg         Page hero. Optional — without it the banner
 --------------------------------------------------
 ABOUT US  (/about/)
 --------------------------------------------------
-hero-about.jpg            Page hero. Optional — without it the banner
-                          shows flat deep blue, which reads fine.
-                          The head office, a team shot, or a wide
-                          installation photo would all suit.
-                          Landscape, at least 1600px wide, detail on
-                          the RIGHT (the overlay is heaviest on the
-                          left, where the heading sits).
+hero-about.jpg            Page hero. IN PLACE — photo of the meeting
+                          room at Jl. Fatmawati. NOTE the source is only
+                          600x450, so it is upscaled to fill the banner
+                          and looks soft. If a larger original exists,
+                          overwrite this file with it (same name) and
+                          the banner sharpens with no code change.
 
 The About page also reuses hero-building.png (already in place) as the
 photo beside the company history.
