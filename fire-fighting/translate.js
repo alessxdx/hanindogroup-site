@@ -59,6 +59,7 @@
     "Fast, professional response from our team": "Respons cepat dan profesional dari tim kami",
     "Email our team": "Email tim kami",
     "Head Office": "Kantor Pusat",
+    "Fire Fighting Dept Office": "Kantor Departemen Pemadam Kebakaran",
     "Phone": "Telepon",
     "Business Hours": "Jam Operasional",
     "Monday – Friday, 08:00 – 17:00 WIB": "Senin – Jumat, 08.00 – 17.00 WIB",

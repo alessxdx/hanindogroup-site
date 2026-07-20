@@ -498,3 +498,10 @@ body{line-height:1.65}
 .hslide .glow,.pagehero .glow,.contact .glow,.feature .glow{display:none}
 .scrollcue{display:none}
 .hslide.active .bg img{animation:none}
+
+/* ---------- FOOTER: two offices with labelled icons ---------- */
+.footer h4{display:flex;align-items:center;gap:.5rem}
+.footer h4 svg{flex:none;width:14px;height:14px;fill:none;stroke:var(--crimson);stroke-width:2}
+.footer h4.second{margin-top:1.6rem}
+.footer .cl svg{width:13px;height:13px;fill:none;stroke:var(--crimson);stroke-width:2;vertical-align:-2px;margin-right:.45rem}
+.footer .fbrand .btn{margin-top:1.4rem}
