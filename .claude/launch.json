@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "hanindo-static",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-c", "import os,http.server as h; h.ThreadingHTTPServer(('',int(os.environ.get('PORT','5173'))), h.SimpleHTTPRequestHandler).serve_forever()"],
+      "port": 5173,
+      "autoPort": true
+    }
+  ]
+}
