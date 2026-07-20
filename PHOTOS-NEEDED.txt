@@ -8,7 +8,8 @@ placeholder, so nothing looks broken.
 Format: JPG for photos, PNG for logos. At least ~1000px wide for
 heroes and ~800px for cards. Landscape suits heroes and cards.
 
-Currently in /photos/:  logo.png, hero-sky.jpg, hero-building.png
+Currently in /photos/:  see each section below. The 21 partner logos
+                        are in /photos/partners/, not /photos/ itself.
 
 NOTE: the /fire-fighting/ section has its OWN photos folder
 (/fire-fighting/photos/) which is already fully populated. Do not
@@ -27,13 +28,9 @@ detail on the RIGHT of the frame. Landscape, at least 1600px wide.
 SLIDE 1 — "Welcome to the Hanindo Group"          [COMPLETE]
 hero-sky.jpg              Background. Sky above the clouds. In place.
 
-NOT CURRENTLY USED:
-hero-building.png         Portrait photo of the Jl. Fatmawati No. 55
-                          building. Was briefly shown on slide 1 and
-                          removed. The file is kept because it is a
-                          good shot and would suit the About page or
-                          the Contact page when those are built.
-                          Safe to delete if not wanted.
+hero-building.png        Portrait photo of the Jl. Fatmawati No. 55
+                          building. IN USE on the About page, beside
+                          the company history. In place.
 
 SLIDE 2 — "Your technology one stop solution"     [NEEDED]
 hero-group.jpg            Background. A forecourt, flagship
@@ -46,50 +43,22 @@ hero-advice.jpg           Background. The team at work, a meeting, or
 
 div-oil-and-gas.jpg       Division card — fuel dispenser / forecourt
 div-automotive.jpg        Division card — workshop with a car on a lift
-div-automation.jpg        Division card — POS terminal or control room
 div-fire-fighting.jpg     Division card — OPTIONAL. If absent, falls
                           back automatically to the existing
                           fire-fighting/photos/mot-hydrant-pump.jpg
-div-flowtech.jpg          Division card — fuel station under construction
 div-printer-pos.png       Division card — POS / ticket printer hardware
                           [DONE] four-printer product shot, white
                           background, shown uncropped via .dimg-contain
-div-overseas.jpg          Division card — Shanghai office or skyline
 
-PARTNER LOGOS — ALL 22                            [COMPLETE]
-Downloaded from the existing hanindogroup.com server
-(/images/PartnerPrincipals/) so nothing breaks when Joomla retires.
+PARTNER LOGOS                                     [COMPLETE]
+All 21 principal logos live in /photos/partners/ — NOT in /photos/
+directly. They appear as a static grid on the homepage and on the
+/partners/ page. Filenames match the brand, for example:
+  gilbarco.webp   opw1.webp   raasm.png   cebora.png   itl.webp
 
-Shown on the homepage marquee (10):
-  brand-gilbarco.webp     Gilbarco Veeder-Root
-  brand-opw.webp          OPW
-  brand-honeywell.webp    Honeywell
-  brand-durapipe.webp     Durapipe
-  brand-piusi.webp        PIUSI
-  brand-raasm.webp        RAASM
-  brand-brainbee.webp     Brainbee
-  brand-custom.webp       Custom
-  brand-gasboy.webp       Gasboy
-  brand-tcs.webp          TCS
-
-Held for the /partners/ page, not yet shown anywhere (12):
-  brand-redjacket.webp    Red Jacket
-  brand-postec.webp       Postec
-  brand-doms.webp         Doms
-  brand-transponder.webp  Transponder Technologies
-  brand-itl.gif           Integration Technologies Limited   (GIF)
-  brand-airtec.webp       Airtec
-  brand-wincor.webp       Wincor Nixdorf
-  brand-hpa.webp          HPA
-  brand-lafon.webp        Lafon
-  brand-transtank.webp    Transtank
-  brand-orpak.webp        Orpak
-  brand-cebora.png        Cebora                             (PNG)
-
-NOTE the three different extensions — .webp for most, .gif for ITL,
-.png for Cebora. Any <img> must use the exact extension above.
-To replace a logo, keep the filename AND extension, otherwise the
-card falls back to showing the brand name as text.
+Most are .webp, a few are .png. Any <img> must use the exact
+extension. To replace one, keep the same filename AND extension,
+otherwise the cell falls back to showing the brand name as text.
 
 
 --------------------------------------------------
