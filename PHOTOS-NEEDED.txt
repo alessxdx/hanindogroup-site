@@ -47,11 +47,10 @@ div-fire-fighting.jpg     Division card — OPTIONAL. If absent, falls
                           back automatically to the existing
                           fire-fighting/photos/mot-hydrant-pump.jpg
 div-printer-pos.png       Division card — POS / ticket printer hardware
-                          [DONE] four-printer shot cut to the site navy
-                          (#051838). Shown whole via .dimg-art, which
-                          sets the panel to the same navy so the two
-                          meet invisibly. Replacing it? Match that
-                          background, or the seam will show.
+                          [DONE] four-printer product shot on white,
+                          shown whole via .dimg-contain (white panel,
+                          no crop). A navy-cut version of the same
+                          arrangement was tried and reverted.
 
 PARTNER LOGOS                                     [COMPLETE]
 All 21 principal logos live in /photos/partners/ — NOT in /photos/
