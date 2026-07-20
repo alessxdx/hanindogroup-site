@@ -53,7 +53,16 @@ img{max-width:100%;display:block}
 /* tracking tuned so the tagline sits at ~98% of the wordmark's width,
    the same proportion as the printed logo */
 .brand .btxt span{font-weight:400;font-size:.74rem;letter-spacing:.014em;text-transform:uppercase;color:#8a8377;display:block}
+/* Company mini-sites (oil-and-gas, automotive, printer-pos, fire-fighting) sit
+   behind their own navbar, so the logo is followed by the company name rather
+   than the group tagline. Divider mirrors the hairline treatment used above. */
+.colabel{font-weight:700;font-size:.82rem;letter-spacing:.1em;color:var(--blue-800);border-left:1px solid var(--line);padding-left:.8rem;line-height:1.25}
 .top-right{display:flex;align-items:center;gap:1.3rem}
+/* "back to the group" escape hatch, present on every mini-site page */
+.grouplink{display:inline-flex;align-items:center;gap:.35rem;font-size:.82rem;font-weight:600;color:var(--muted);white-space:nowrap;transition:color .18s}
+.grouplink:hover{color:var(--blue-800)}
+.grouplink svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2.5}
+@media(max-width:760px){.grouplink span{display:none}}
 .callcenter{font-size:.86rem;color:var(--muted);font-weight:500;white-space:nowrap}
 .callcenter b{color:var(--blue-800);font-weight:700}
 .searchbox{display:flex;height:38px}
