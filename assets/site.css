@@ -57,13 +57,17 @@ img{max-width:100%;display:block}
    behind their own navbar, so the logo is followed by the company name rather
    than the group tagline. Divider mirrors the hairline treatment used above. */
 .colabel{font-weight:700;font-size:.82rem;letter-spacing:.1em;color:var(--blue-800);border-left:1px solid var(--line);padding-left:.8rem;line-height:1.25}
-/* Company logo slot. Each company page points .cologo at a fixed file
-   (photos/logo-citra.png, logo-automotive.png, logo-automation.png, ...);
-   swap the file to change the logo. While the file is missing, onerror
-   reveals .brandfall — the group lockup + company name used before. */
-.brand img.cologo{height:54px;width:auto}
-.brandfall{align-items:center;gap:.8rem}
-.brandfall img{height:44px;width:auto}
+/* Company header: the group lockup stays on the left and always links
+   back to the main page; the company's own logo sits to its right and
+   links to the company home. The logo is a fixed-file slot
+   (photos/logo-citra.png, logo-automotive.png, logo-automation.png, ...) —
+   swap the file to change it; while it is missing, onerror reveals the
+   .colabel company-name text instead. */
+.brands{display:flex;align-items:center;gap:1rem;min-width:0}
+.cobrand{display:inline-flex;align-items:center;border-left:1px solid var(--line);padding-left:1rem}
+.cobrand .colabel{border-left:0;padding-left:0}
+.brand img.cologo,.cobrand img.cologo{height:48px;width:auto}
+@media(max-width:640px){.brands{gap:.6rem}.cobrand{padding-left:.6rem}.brands .brand img{height:34px}.cobrand img.cologo{height:38px}}
 .top-right{display:flex;align-items:center;gap:1.3rem}
 /* "back to the group" escape hatch, present on every mini-site page */
 .grouplink{display:inline-flex;align-items:center;gap:.35rem;font-size:.82rem;font-weight:600;color:var(--muted);white-space:nowrap;transition:color .18s}
