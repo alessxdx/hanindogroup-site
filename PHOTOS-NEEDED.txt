@@ -127,6 +127,14 @@ ovs-shanghai.jpg          Intro section — Shanghai office or team
 
 
 --------------------------------------------------
+PARTNERS & PRINCIPALS  (/partners/)
+--------------------------------------------------
+hero-partners.jpg         Page hero. Optional — without it the banner
+                          shows flat deep blue. Equipment, a branded
+                          product wall, or a wide site shot suits.
+
+
+--------------------------------------------------
 ABOUT US  (/about/)
 --------------------------------------------------
 hero-about.jpg            Page hero. Optional — without it the banner
