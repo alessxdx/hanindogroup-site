@@ -28,10 +28,6 @@ detail on the RIGHT of the frame. Landscape, at least 1600px wide.
 SLIDE 1 — "Welcome to the Hanindo Group"          [COMPLETE]
 hero-sky.jpg              Background. Sky above the clouds. In place.
 
-hero-building.png        Portrait photo of the Jl. Fatmawati No. 55
-                          building. IN USE on the About page, beside
-                          the company history. In place.
-
 SLIDE 2 — "Your technology one stop solution"     [NEEDED]
 hero-group.jpg            Background. A forecourt, flagship
                           installation, or office exterior.
@@ -146,8 +142,9 @@ hero-about.jpg            Page hero. IN PLACE — photo of the meeting
                           overwrite this file with it (same name) and
                           the banner sharpens with no code change.
 
-The About page also reuses hero-building.png (already in place) as the
-photo beside the company history.
+hero-reception.png        Reception at the Jl. Fatmawati head office.
+                          IN USE beside the company history. Landscape,
+                          crops well in that slot.
 
 
 --------------------------------------------------
