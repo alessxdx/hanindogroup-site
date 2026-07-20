@@ -461,3 +461,40 @@ body.on-contact>.section.contact#contact{display:none}
    squeezed into the left column with dead space beside it. */
 .hslide .wrap{grid-template-columns:1fr}
 .hslide .content{max-width:62ch}
+
+/* ---------- TYPE SCALE + FLAT TREATMENT ----------
+   The block of CSS above is this section's original stylesheet, kept
+   whole because it is the only complete, structurally valid copy (it
+   carries all 27 media queries and every keyframe). But it also
+   carries the ORIGINAL heavier typography and the old decorative
+   treatment, both of which override site.css simply by loading later.
+
+   These rules put the current type scale and flat styling back on top.
+   Values are copied from site.css deliberately: if the shared scale
+   changes there, update it here too.
+   ------------------------------------------------------------------ */
+body{line-height:1.65}
+.h2{font-weight:700;font-size:clamp(1.6rem,2.9vw,2.15rem);line-height:1.18;letter-spacing:-.015em}
+.pagehero h1{font-weight:700;font-size:clamp(1.9rem,3.8vw,2.75rem);line-height:1.12;letter-spacing:-.015em}
+.hslide h1{font-weight:700;font-size:clamp(1.85rem,3.7vw,2.8rem);line-height:1.14;letter-spacing:-.02em}
+.kicker{font-size:.72rem;letter-spacing:.16em;font-weight:700;margin-bottom:.85rem}
+.eyebrow{font-size:.72rem;letter-spacing:.16em;font-weight:700}
+.btn{padding:.85rem 1.6rem;border-radius:var(--r);font-weight:600;font-size:.92rem;border:1px solid transparent}
+.lede{font-size:1rem;max-width:64ch}
+.tabs>li>a{padding:.95rem 1.2rem;font-size:.9rem;font-weight:600}
+.stat .num{font-weight:700;font-size:clamp(2.2rem,3.8vw,2.9rem);line-height:1}
+.statement .big{font-weight:400;font-size:clamp(1.15rem,2.1vw,1.5rem);line-height:1.6;color:var(--ink)}
+.statement .big em{font-style:normal;color:var(--crimson);font-weight:700}
+.svc h3,.pbody h4,.proj h4,.wccard h3{font-weight:700}
+
+/* flat, sharp, no lift — matching the rest of the site */
+.certcard,.isocard,.proj,.wccard,.vm-card,.pmodal-box,.aphoto,.pcard,.syscard,.tile{border-radius:var(--r)}
+.certcard,.isocard,.proj,.wccard,.pcard{box-shadow:none;border:1px solid var(--line)}
+.proj:hover,.isocard:hover,.wccard:hover,.certcard:hover,.pcard:hover,.syscard:hover{transform:none;box-shadow:none;border-color:var(--crimson)}
+.pstep .n,.mlist .n{box-shadow:none;border-radius:var(--r)}
+.btn-fire{background:var(--crimson);box-shadow:none}
+.btn-fire:hover{background:var(--crimson-600);transform:none;box-shadow:none}
+.btn-dark:hover{transform:none}
+.hslide .glow,.pagehero .glow,.contact .glow,.feature .glow{display:none}
+.scrollcue{display:none}
+.hslide.active .bg img{animation:none}
