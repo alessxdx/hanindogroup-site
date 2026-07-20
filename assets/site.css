@@ -347,8 +347,11 @@ img{max-width:100%;display:block}
 .dcard{background:#333a41;border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
 .dcard .dimg{position:relative;height:168px;background:var(--blue-900)}
 .dcard .dimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.dcard .dimg.dimg-contain{background:#fff}
-.dcard .dimg.dimg-contain img{object-fit:contain;padding:.6rem}
+/* Artwork that is already cut to the site's navy, on a transparent or
+   matching ground: show it whole rather than cropping into it. The panel
+   is set to the artwork's own background so the two meet invisibly. */
+.dcard .dimg.dimg-art{background:#051838}
+.dcard .dimg.dimg-art img{object-fit:contain}
 .dcard .dimg .ph{background:var(--blue-900);color:#7b8ea9}
 .dcard .dimg .ph svg{stroke:#5d6f8c}
 .dcard .dhead{padding:1.1rem 1.2rem 1.25rem;display:flex;flex-direction:column;flex:1}
