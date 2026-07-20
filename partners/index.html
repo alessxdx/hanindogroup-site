@@ -19,7 +19,9 @@
 @media(max-width:480px){.logogrid{grid-template-columns:repeat(2,1fr)}}
 .logogrid .cell{background:#fff;min-height:132px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;padding:1.1rem .9rem;text-align:center;transition:background .15s}
 .logogrid .cell:hover{background:var(--paper)}
-.logogrid .cell img{max-height:52px;max-width:100%;width:auto;object-fit:contain}
+/* fixed box + contain: every logo is scaled to the same optical size,
+   whether its source file is large or small, without distortion */
+.logogrid .cell img{width:100%;height:52px;object-fit:contain}
 .logogrid .cell .nm{font-size:.78rem;font-weight:600;color:var(--muted);line-height:1.25}
 </style>
 </head>

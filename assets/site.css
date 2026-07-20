@@ -383,7 +383,9 @@ img{max-width:100%;display:block}
 .marquee:hover .mtrack{animation-play-state:paused}
 @keyframes marq{from{transform:translateX(0)}to{transform:translateX(calc(-1 * var(--marw,50%)))}}
 .brandcard{flex:none;height:80px;margin-right:2.6rem;display:flex;align-items:center;justify-content:center}
-.brandcard img{max-height:64px;max-width:200px;width:auto;object-fit:contain}
+/* fixed box + contain, so a small source file is scaled up to the same
+   optical size as a large one instead of rendering at its natural size */
+.brandcard img{width:200px;height:52px;object-fit:contain}
 .brandcard .btext{font-weight:600;font-size:.94rem;color:var(--muted);text-align:center;line-height:1.25;white-space:nowrap}
 @media(max-width:520px){.brandcard{height:66px;margin-right:1.8rem}.brandcard .btext{font-size:.86rem}}
 @media(prefers-reduced-motion:reduce){.mtrack{animation:none;flex-wrap:wrap;justify-content:center}.brandcard{margin:0 .65rem 1rem}}
