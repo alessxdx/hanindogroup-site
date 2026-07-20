@@ -6,20 +6,35 @@ WHAT THIS IS
 A STATIC website. Plain HTML/CSS/JS — no PHP, no database, no build
 step. Runs on the existing Qwords hosting ALONGSIDE the Joomla site.
 
-FILES  (keep everything together in one folder!)
-------------------------------------------------
-  fire-fighting/
-    index.html                  <- Home
-    about.html                  <- About Us
-    products-services.html      <- Products & Services
-    projects.html               <- Projects
-    contact.html                <- Contact Us
-    hanindo-citra-website.html  <- OPTIONAL: whole site in one page
-                                   (tabs switch pages instantly)
-    translate.js                <- English / Bahasa Indonesia toggle
-                                   (MUST be uploaded with the .html files)
-    photos/                     <- ALL pictures live here
-    README-FOR-COLLEAGUE.txt
+FILES
+-----
+!! IMPORTANT — THIS CHANGED. The pages no longer work as a folder on
+!! their own. They now load their stylesheets from a SHARED /assets/
+!! folder that sits NEXT TO fire-fighting/, not inside it. Upload
+!! fire-fighting/ by itself and every page loads with NO STYLING AT
+!! ALL. You must upload all three items listed below.
+
+  public_html/
+    fire-fighting/
+      index.html                  <- Home
+      about.html                  <- About Us
+      products-services.html      <- Products & Services
+      projects.html               <- Projects
+      contact.html                <- Contact Us
+      hanindo-citra-website.html  <- OPTIONAL: whole site in one page
+                                     (tabs switch pages instantly)
+      translate.js                <- English / Bahasa Indonesia toggle
+                                     (MUST be uploaded with the .html)
+      photos/                     <- this section's pictures
+      README-FOR-COLLEAGUE.txt
+
+    assets/                       <- REQUIRED. Shared stylesheets.
+      site.css                       Both files are needed; the pages
+      fire-fighting.css              reference them as ../assets/...
+
+    photos/
+      logo-lockup.png             <- REQUIRED. The header logo.
+                                     Referenced as ../photos/
 
 LANGUAGE TOGGLE (EN / ID):
 The button at the top-right of every page switches the whole site
@@ -34,11 +49,22 @@ paths. The photos folder MUST be uploaded/kept next to the .html files.
 HOW TO PUBLISH
 --------------
 1. cPanel File Manager (or FTP) -> public_html/
-2. Upload the whole fire-fighting folder:
-      public_html/fire-fighting/   (html files + photos folder)
-3. Test:  https://hanindogroup.com/fire-fighting/
-4. In Joomla admin, point the existing "Fire Fighting" menu item
+2. Upload the fire-fighting folder:
+      public_html/fire-fighting/   (html files + translate.js + photos/)
+3. Upload the shared assets folder:
+      public_html/assets/          (site.css + fire-fighting.css)
+4. Upload the group logo:
+      public_html/photos/logo-lockup.png
+5. Test:  https://hanindogroup.com/fire-fighting/
+   Then press Ctrl+F5. If the page looks like plain unstyled text on a
+   white background, step 3 was missed or went to the wrong folder.
+6. In Joomla admin, point the existing "Fire Fighting" menu item
    (under Product) at:  /fire-fighting/   (type: External URL)
+
+NOTE ON CACHING: the .html files link the stylesheets with a version
+number, e.g. site.css?v=202607201553. When you change a .css file,
+also bump that number in the .html files, otherwise returning
+visitors keep seeing the old styling from their browser cache.
 
 
 =====================================================

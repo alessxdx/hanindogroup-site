@@ -35,6 +35,14 @@
     "View projects": "Lihat proyek",
     "Scroll": "Gulir",
 
+    /* ---- home hero + intro split (new layout) ---- */
+    "PT. Hanindo Citra designs, supplies, installs and maintains complete fire-fighting systems — reliable on day one, and every day after.": "PT. Hanindo Citra merancang, memasok, memasang, dan memelihara sistem pemadam kebakaran yang lengkap — andal sejak hari pertama, dan setiap hari sesudahnya.",
+    "Fire safety, under one roof.": "Keselamatan kebakaran, dalam satu atap.",
+    "The fire fighting department of the Hanindo Group, delivering advanced, end-to-end fire-protection systems that safeguard lives and property across Indonesia. Meticulous engineering turned into systems that perform reliably long after handover.": "Departemen pemadam kebakaran Hanindo Group, menghadirkan sistem proteksi kebakaran mutakhir dan menyeluruh yang melindungi jiwa dan properti di seluruh Indonesia. Rekayasa yang cermat diwujudkan menjadi sistem yang bekerja andal jauh setelah serah terima.",
+    "Design, supply, installation, testing and long-term maintenance from a single partner": "Perancangan, pemasokan, pemasangan, pengujian, dan pemeliharaan jangka panjang dari satu mitra",
+    "Six fire-system technologies covering hydrant, sprinkler, gas, foam, deluge and alarm": "Enam teknologi sistem kebakaran meliputi hidran, sprinkler, gas, busa, deluge, dan alarm",
+    "Trusted across oil & gas, government and industry throughout Indonesia": "Dipercaya di sektor migas, pemerintah, dan industri di seluruh Indonesia",
+
     /* ---- home statement + stats ---- */
     "Hanindo Citra is the fire protection division of Hanindo Group—transforming": "Hanindo Citra adalah divisi proteksi kebakaran Hanindo Group—mengubah",
     "meticulous engineering": "rekayasa yang cermat",

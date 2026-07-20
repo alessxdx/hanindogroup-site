@@ -505,3 +505,11 @@ body{line-height:1.65}
 .footer h4.second{margin-top:1.6rem}
 .footer .cl svg{width:13px;height:13px;fill:none;stroke:var(--crimson);stroke-width:2;vertical-align:-2px;margin-right:.45rem}
 .footer .fbrand .btn{margin-top:1.4rem}
+
+/* ---------- SPLIT (text + image) — navy/crimson ----------
+   site.css defines .split/.checks in the group blue. These rules
+   re-colour them for this section; the layout itself is inherited. */
+.split .shot{background:var(--navy-900);border-color:var(--line)}
+.split .shot .ph{background:linear-gradient(150deg,var(--navy-800),var(--navy-700));color:#8fa0c0}
+.split .shot .ph svg{stroke:#8fa0c0}
+.checks li svg{stroke:var(--crimson)}
