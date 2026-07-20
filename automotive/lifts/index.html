@@ -28,6 +28,16 @@
 .prod ul.feat li{position:relative;padding-left:1.15rem;font-size:.89rem;color:var(--ink);margin-bottom:.32rem;line-height:1.5}
 .prod ul.feat li::before{content:"";position:absolute;left:0;top:.55em;width:5px;height:5px;border-radius:50%;background:var(--brand)}
 .prod .note{font-size:.8rem;color:var(--muted);font-style:italic;margin-top:.7rem}
+/* spec table sits directly on the card - two columns on wide screens so a
+   long parameter list does not push the card metres tall */
+table.spectable{width:100%;border-collapse:collapse;margin-top:.9rem;font-size:.85rem;
+  column-count:2;column-gap:2rem;display:block}
+@media(max-width:1100px){table.spectable{column-count:1}}
+table.spectable tr{display:flex;justify-content:space-between;gap:1rem;
+  border-bottom:1px solid var(--line);padding:.34rem 0;break-inside:avoid}
+table.spectable td{padding:0}
+table.spectable td:first-child{color:var(--muted)}
+table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right;white-space:nowrap}
 details.specs{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
 details.specs summary{cursor:pointer;font-size:.83rem;font-weight:700;color:var(--blue-800);letter-spacing:.03em}
 details.specs summary:hover{color:var(--brand)}
@@ -113,26 +123,14 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag atom">ATOM</span>
       <h3>Mid-Rise Scissor Car Lift <span class="mdl">— DL-3.5YD</span></h3>
-      <ul class="feat">
-        <li>Movable design for flexible workshop placement</li>
-        <li>Mechanical locking device locks automatically on the way up and unlocks pneumatically on the way down</li>
-        <li>Precise laser cutting for accurate size, smooth cut and high finish</li>
-        <li>Shot blasting and high-temperature spray treatment for durability</li>
-        <li>Self-lubricating bearings on all movable joints</li>
-        <li>Supportable approach bridge suits vehicles with a longer wheelbase</li>
-        <li>Centre connecting rod ensures stability and synchronisation</li>
-      </ul>
-      <details class="specs">
-        <summary>Specifications</summary>
-        <table>
-          <tr><td>Lifting capacity</td><td>3.5 T</td></tr>
-          <tr><td>Lifting height</td><td>110–1000 mm</td></tr>
-          <tr><td>Table length</td><td>1400–1940 mm</td></tr>
-          <tr><td>Table width</td><td>520 mm</td></tr>
-          <tr><td>Total width</td><td>1885 mm</td></tr>
-          <tr><td>Power supply</td><td>380 V</td></tr>
-        </table>
-      </details>
+      <table class="spectable">
+        <tr><td>Lifting capacity</td><td>3.5 T</td></tr>
+        <tr><td>Lifting height</td><td>110–1000 mm</td></tr>
+        <tr><td>Table length</td><td>1400–1940 mm</td></tr>
+        <tr><td>Table width</td><td>520 mm</td></tr>
+        <tr><td>Total width</td><td>1885 mm</td></tr>
+        <tr><td>Power supply</td><td>380 V</td></tr>
+      </table>
     </div>
   </div>
 </article>
@@ -142,24 +140,13 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag atom">ATOM</span>
       <h3>In-Ground Mini Scissor Lift <span class="mdl">— DL-3.5DC</span></h3>
-      <ul class="feat">
-        <li>Wear-resistant polymer sliders for smoother movement and higher stability</li>
-        <li>Integrated non-welded mechanical safety gear offers high strength and precision</li>
-        <li>Hydraulic synchronisation with hydraulic lock and mechanical safety device; unlocks automatically when descending</li>
-        <li>CNC-machined, mirror-rolled oil cylinders for excellent concentricity</li>
-        <li>Imported seals and ball valves with built-in hydraulic explosion-proof protection</li>
-        <li>Adjustable platform length, wear-resistant bearings and a 24 V safety control circuit</li>
-      </ul>
-      <details class="specs">
-        <summary>Specifications</summary>
-        <table>
-          <tr><td>Lifting capacity</td><td>3.5 T</td></tr>
-          <tr><td>Lifting height</td><td>330–2100 mm</td></tr>
-          <tr><td>Table length</td><td>1540–1740 mm</td></tr>
-          <tr><td>Table width</td><td>550 mm</td></tr>
-          <tr><td>Power supply</td><td>380 V</td></tr>
-        </table>
-      </details>
+      <table class="spectable">
+        <tr><td>Lifting capacity</td><td>3.5 T</td></tr>
+        <tr><td>Lifting height</td><td>330–2100 mm</td></tr>
+        <tr><td>Table length</td><td>1540–1740 mm</td></tr>
+        <tr><td>Table width</td><td>550 mm</td></tr>
+        <tr><td>Power supply</td><td>380 V</td></tr>
+      </table>
     </div>
   </div>
 </article>
@@ -169,25 +156,14 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag atom">ATOM</span>
       <h3>On-Ground Mini Scissor Lift <span class="mdl">— DL-3.5CB</span></h3>
-      <ul class="feat">
-        <li>High-strength alloy booster arm with 3D dynamic simulation for smooth descent under full load</li>
-        <li>Solid steel X-frame with pneumatic mechanical safety lock</li>
-        <li>Six-cylinder dual-hydraulic system with synchronised lifting and triple safety protection</li>
-        <li>CNC-machined, mirror-finished oil cylinders</li>
-        <li>Laser-cut solid steel frame, resistant to corrosion and deformation</li>
-        <li>24 V low-voltage safety control with wear-resistant bearings</li>
-      </ul>
-      <details class="specs">
-        <summary>Specifications</summary>
-        <table>
-          <tr><td>Lifting capacity</td><td>4 T</td></tr>
-          <tr><td>Lifting height</td><td>110–1900 mm</td></tr>
-          <tr><td>Table length</td><td>1485–2040 mm</td></tr>
-          <tr><td>Table width</td><td>660 mm</td></tr>
-          <tr><td>Total width</td><td>2290 mm</td></tr>
-          <tr><td>Power supply</td><td>380 V</td></tr>
-        </table>
-      </details>
+      <table class="spectable">
+        <tr><td>Lifting capacity</td><td>4 T</td></tr>
+        <tr><td>Lifting height</td><td>110–1900 mm</td></tr>
+        <tr><td>Table length</td><td>1485–2040 mm</td></tr>
+        <tr><td>Table width</td><td>660 mm</td></tr>
+        <tr><td>Total width</td><td>2290 mm</td></tr>
+        <tr><td>Power supply</td><td>380 V</td></tr>
+      </table>
     </div>
   </div>
 </article>
@@ -197,29 +173,18 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>Ultra-Thin Main/Sub Scissor Car Lift <span class="mdl">— DL-4.0CBD</span></h3>
-      <ul class="feat">
-        <li>High-strength alloy booster arm with 3D dynamic simulation for smooth full-load descent</li>
-        <li>Solid steel X-frame with pneumatic safety lock and standard movable boarding</li>
-        <li>Six-cylinder dual-hydraulic system, synchronised lifting with triple safety protection</li>
-        <li>Fully imported seals and ball valves</li>
-        <li>Shot blasting and high-temperature coating treatment</li>
-        <li>24 V safety control circuit with wear-resistant bearings and sliding blocks</li>
-      </ul>
-      <details class="specs">
-        <summary>Specifications</summary>
-        <table>
-          <tr><td>Main scissor capacity</td><td>4 T</td></tr>
-          <tr><td>Main lifting height</td><td>200–1700 mm</td></tr>
-          <tr><td>Main table length</td><td>4500 mm</td></tr>
-          <tr><td>Main table width</td><td>660 mm</td></tr>
-          <tr><td>Sub scissor capacity</td><td>3 T</td></tr>
-          <tr><td>Sub lifting height</td><td>450 mm</td></tr>
-          <tr><td>Sub table length</td><td>1515–1680 mm</td></tr>
-          <tr><td>Sub table width</td><td>600 mm</td></tr>
-          <tr><td>Air pressure</td><td>4–6 bar</td></tr>
-          <tr><td>Power supply</td><td>380 V</td></tr>
-        </table>
-      </details>
+      <table class="spectable">
+        <tr><td>Main scissor capacity</td><td>4 T</td></tr>
+        <tr><td>Main lifting height</td><td>200–1700 mm</td></tr>
+        <tr><td>Main table length</td><td>4500 mm</td></tr>
+        <tr><td>Main table width</td><td>660 mm</td></tr>
+        <tr><td>Sub scissor capacity</td><td>3 T</td></tr>
+        <tr><td>Sub lifting height</td><td>450 mm</td></tr>
+        <tr><td>Sub table length</td><td>1515–1680 mm</td></tr>
+        <tr><td>Sub table width</td><td>600 mm</td></tr>
+        <tr><td>Air pressure</td><td>4–6 bar</td></tr>
+        <tr><td>Power supply</td><td>380 V</td></tr>
+      </table>
     </div>
   </div>
 </article>
@@ -229,29 +194,18 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag atom">ATOM</span>
       <h3>2-Post Car Lift <span class="mdl">— DL-4.0LM</span></h3>
-      <ul class="feat">
-        <li>CNC-machined, mirror-finished oil cylinders for precision and smooth operation</li>
-        <li>Imported seals and ball valves for long-lasting, leak-free performance</li>
-        <li>Laser-cut components with shot blasting and high-temperature coating</li>
-        <li>Dual hydraulic cylinders with synchronised steel cables for stable, balanced lifting</li>
-        <li>Concealed cable and oil pipe design for a neat, professional appearance</li>
-        <li>Widened gear block prevents slipping; 110 mm minimum height suits luxury vehicles</li>
-      </ul>
-      <details class="specs">
-        <summary>Specifications</summary>
-        <table>
-          <tr><td>Lifting capacity</td><td>4 T</td></tr>
-          <tr><td>Max lifting height</td><td>1850 mm</td></tr>
-          <tr><td>Min lifting height</td><td>110 mm</td></tr>
-          <tr><td>Pass width</td><td>2744 mm</td></tr>
-          <tr><td>Total height</td><td>3830 mm</td></tr>
-          <tr><td>Total width</td><td>3395 mm</td></tr>
-          <tr><td>Lifting time</td><td>50 s</td></tr>
-          <tr><td>Decline time</td><td>30 s</td></tr>
-          <tr><td>Weight</td><td>650 kg</td></tr>
-          <tr><td>Power supply</td><td>2.2 kW, 380 V</td></tr>
-        </table>
-      </details>
+      <table class="spectable">
+        <tr><td>Lifting capacity</td><td>4 T</td></tr>
+        <tr><td>Max lifting height</td><td>1850 mm</td></tr>
+        <tr><td>Min lifting height</td><td>110 mm</td></tr>
+        <tr><td>Pass width</td><td>2744 mm</td></tr>
+        <tr><td>Total height</td><td>3830 mm</td></tr>
+        <tr><td>Total width</td><td>3395 mm</td></tr>
+        <tr><td>Lifting time</td><td>50 s</td></tr>
+        <tr><td>Decline time</td><td>30 s</td></tr>
+        <tr><td>Weight</td><td>650 kg</td></tr>
+        <tr><td>Power supply</td><td>2.2 kW, 380 V</td></tr>
+      </table>
     </div>
   </div>
 </article>
@@ -261,30 +215,19 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag atom">ATOM</span>
       <h3>2-Post Car Lift <span class="mdl">— GC-4.0PRO</span></h3>
-      <ul class="feat">
-        <li>24 V low-voltage control</li>
-        <li>Up-limit switch avoids collision when lifting the vehicle</li>
-        <li>Steel oil tank</li>
-        <li>Hydraulic cylinders with direct lifting and steel cable synchronisation</li>
-        <li>Stiff structure with long, strong carriage connected by crossbar</li>
-        <li>Italian pump, slanted lock teeth and round rubber pads</li>
-      </ul>
-      <details class="specs">
-        <summary>Specifications</summary>
-        <table>
-          <tr><td>Lifting capacity</td><td>4 T</td></tr>
-          <tr><td>Lifting height</td><td>1830 mm</td></tr>
-          <tr><td>Original height</td><td>100 mm</td></tr>
-          <tr><td>Pass width</td><td>2438 mm</td></tr>
-          <tr><td>Overall width</td><td>3420 mm</td></tr>
-          <tr><td>Lifting time</td><td>80 s</td></tr>
-          <tr><td>Decline time</td><td>100 s</td></tr>
-          <tr><td>Noise level</td><td>&lt; 76 dB</td></tr>
-          <tr><td>Working temperature</td><td>5–40 °C</td></tr>
-          <tr><td>Working humidity</td><td>30–95 %</td></tr>
-          <tr><td>Power supply</td><td>2.2 kW, 380 V</td></tr>
-        </table>
-      </details>
+      <table class="spectable">
+        <tr><td>Lifting capacity</td><td>4 T</td></tr>
+        <tr><td>Lifting height</td><td>1830 mm</td></tr>
+        <tr><td>Original height</td><td>100 mm</td></tr>
+        <tr><td>Pass width</td><td>2438 mm</td></tr>
+        <tr><td>Overall width</td><td>3420 mm</td></tr>
+        <tr><td>Lifting time</td><td>80 s</td></tr>
+        <tr><td>Decline time</td><td>100 s</td></tr>
+        <tr><td>Noise level</td><td>&lt; 76 dB</td></tr>
+        <tr><td>Working temperature</td><td>5–40 °C</td></tr>
+        <tr><td>Working humidity</td><td>30–95 %</td></tr>
+        <tr><td>Power supply</td><td>2.2 kW, 380 V</td></tr>
+      </table>
     </div>
   </div>
 </article>
@@ -294,32 +237,20 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>4-Post Car Lift <span class="mdl">— DL-4.0SSZ</span></h3>
-      <ul class="feat">
-        <li>Supports electric, manual and automatic unlocking</li>
-        <li>Hydraulic power unit with throttling valve for precise, adjustable lowering speed</li>
-        <li>Hydraulic cylinder and steel wire rope drive for synchronised, stable lifting</li>
-        <li>Safety lock prevents wire rope failure</li>
-        <li>Electric linkage mechanism with eight-point locking</li>
-        <li>Adjustable runway spacing fits a wide range of vehicle track widths</li>
-        <li>Integrated secondary lifting trolley — manual, pneumatic or hydraulic</li>
-      </ul>
-      <details class="specs">
-        <summary>Specifications</summary>
-        <table>
-          <tr><td>Lifting capacity</td><td>4 T</td></tr>
-          <tr><td>Lifting height</td><td>1700 mm</td></tr>
-          <tr><td>Min height</td><td>220 mm</td></tr>
-          <tr><td>Secondary lifting height</td><td>320–480 mm</td></tr>
-          <tr><td>Table length</td><td>4860 mm</td></tr>
-          <tr><td>Single lane width</td><td>550 mm</td></tr>
-          <tr><td>Lane spacing</td><td>950 mm</td></tr>
-          <tr><td>Width between columns</td><td>2990 mm</td></tr>
-          <tr><td>Total width</td><td>3340 mm</td></tr>
-          <tr><td>Column height</td><td>2000 mm</td></tr>
-          <tr><td>Motor power</td><td>2.2 kW</td></tr>
-          <tr><td>Voltage</td><td>380 V / 220 V</td></tr>
-        </table>
-      </details>
+      <table class="spectable">
+        <tr><td>Lifting capacity</td><td>4 T</td></tr>
+        <tr><td>Lifting height</td><td>1700 mm</td></tr>
+        <tr><td>Min height</td><td>220 mm</td></tr>
+        <tr><td>Secondary lifting height</td><td>320–480 mm</td></tr>
+        <tr><td>Table length</td><td>4860 mm</td></tr>
+        <tr><td>Single lane width</td><td>550 mm</td></tr>
+        <tr><td>Lane spacing</td><td>950 mm</td></tr>
+        <tr><td>Width between columns</td><td>2990 mm</td></tr>
+        <tr><td>Total width</td><td>3340 mm</td></tr>
+        <tr><td>Column height</td><td>2000 mm</td></tr>
+        <tr><td>Motor power</td><td>2.2 kW</td></tr>
+        <tr><td>Voltage</td><td>380 V / 220 V</td></tr>
+      </table>
     </div>
   </div>
 </article>
@@ -329,21 +260,14 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>Shaking Machine <span class="mdl">— DL-4.0 YYJ</span></h3>
-      <ul class="feat">
-        <li>Supplied with 2 main workers, 2 support frames and 2 stress releases</li>
-        <li>Microcrystal regulator control mode</li>
-      </ul>
-      <details class="specs">
-        <summary>Specifications</summary>
-        <table>
-          <tr><td>Capacity</td><td>4000 kg (4 T)</td></tr>
-          <tr><td>Lifting height</td><td>1100 mm</td></tr>
-          <tr><td>Dimensions</td><td>850 × 900 × 1060 mm</td></tr>
-          <tr><td>Weight</td><td>680 kg</td></tr>
-          <tr><td>Working temperature</td><td>−30 °C to 50 °C</td></tr>
-          <tr><td>Power</td><td>380 ACV, 2.2 kW</td></tr>
-        </table>
-      </details>
+      <table class="spectable">
+        <tr><td>Capacity</td><td>4000 kg (4 T)</td></tr>
+        <tr><td>Lifting height</td><td>1100 mm</td></tr>
+        <tr><td>Dimensions</td><td>850 × 900 × 1060 mm</td></tr>
+        <tr><td>Weight</td><td>680 kg</td></tr>
+        <tr><td>Working temperature</td><td>−30 °C to 50 °C</td></tr>
+        <tr><td>Power</td><td>380 ACV, 2.2 kW</td></tr>
+      </table>
     </div>
   </div>
 </article>

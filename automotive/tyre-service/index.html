@@ -28,6 +28,16 @@
 .prod ul.feat li{position:relative;padding-left:1.15rem;font-size:.89rem;color:var(--ink);margin-bottom:.32rem;line-height:1.5}
 .prod ul.feat li::before{content:"";position:absolute;left:0;top:.55em;width:5px;height:5px;border-radius:50%;background:var(--brand)}
 .prod .note{font-size:.8rem;color:var(--muted);font-style:italic;margin-top:.7rem}
+/* spec table sits directly on the card - two columns on wide screens so a
+   long parameter list does not push the card metres tall */
+table.spectable{width:100%;border-collapse:collapse;margin-top:.9rem;font-size:.85rem;
+  column-count:2;column-gap:2rem;display:block}
+@media(max-width:1100px){table.spectable{column-count:1}}
+table.spectable tr{display:flex;justify-content:space-between;gap:1rem;
+  border-bottom:1px solid var(--line);padding:.34rem 0;break-inside:avoid}
+table.spectable td{padding:0}
+table.spectable td:first-child{color:var(--muted)}
+table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right;white-space:nowrap}
 details.specs{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
 details.specs summary{cursor:pointer;font-size:.83rem;font-weight:700;color:var(--blue-800);letter-spacing:.03em}
 details.specs summary:hover{color:var(--brand)}
@@ -113,28 +123,17 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>Semi-Automatic Car Tyre Changer <span class="mdl">— SI003</span></h3>
-      <ul class="feat">
-        <li>Robust Ø41 mm hexagon shaft with adjustable clearance and manual locking mechanism</li>
-        <li>Durable copper wire motor</li>
-        <li>Gearbox worm shaft supported by a thrust bearing at its end</li>
-        <li>Iron bead-breaking air cylinder with anti-rust inner wall and quick ventilation valve on the front cover</li>
-        <li>Square turntable with self-centring chucks protected by sliding plates, greatly prolonging service life</li>
-        <li>Standard aluminium pedal with stepping movement — the claw stops at any position</li>
-      </ul>
-      <details class="specs">
-        <summary>Specifications</summary>
-        <table>
-          <tr><td>Inner clamping size</td><td>13&quot;–25&quot;</td></tr>
-          <tr><td>Outer clamping size</td><td>11&quot;–23&quot;</td></tr>
-          <tr><td>Max wheel diameter</td><td>1030 mm</td></tr>
-          <tr><td>Max wheel width</td><td>340 mm</td></tr>
-          <tr><td>Operating pressure</td><td>8–10 bar</td></tr>
-          <tr><td>Motor power</td><td>220 V / 1.1 kW · 380 V × 0.75 kW</td></tr>
-          <tr><td>Packaging size</td><td>760 × 980 × 860 mm</td></tr>
-          <tr><td>Net weight</td><td>165 kg</td></tr>
-          <tr><td>Gross weight</td><td>184 kg</td></tr>
-        </table>
-      </details>
+      <table class="spectable">
+        <tr><td>Inner clamping size</td><td>13&quot;–25&quot;</td></tr>
+        <tr><td>Outer clamping size</td><td>11&quot;–23&quot;</td></tr>
+        <tr><td>Max wheel diameter</td><td>1030 mm</td></tr>
+        <tr><td>Max wheel width</td><td>340 mm</td></tr>
+        <tr><td>Operating pressure</td><td>8–10 bar</td></tr>
+        <tr><td>Motor power</td><td>220 V / 1.1 kW · 380 V × 0.75 kW</td></tr>
+        <tr><td>Packaging size</td><td>760 × 980 × 860 mm</td></tr>
+        <tr><td>Net weight</td><td>165 kg</td></tr>
+        <tr><td>Gross weight</td><td>184 kg</td></tr>
+      </table>
     </div>
   </div>
 </article>
@@ -144,29 +143,17 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>Automatic Tilt-Back Car Tyre Changer <span class="mdl">— SI118</span></h3>
-      <ul class="feat">
-        <li>Robust Ø41 mm hexagon shaft with adjustable clearance and manual locking mechanism</li>
-        <li>Durable copper wire motor and stainless tool head</li>
-        <li>Gearbox worm shaft supported by a thrust bearing at its end</li>
-        <li>Iron bead-breaking air cylinder with anti-rust inner wall and quick ventilation valve</li>
-        <li>Square turntable with self-centring chucks protected by sliding plates</li>
-        <li>Standard aluminium pedal with stepping movement — the claw stops at any position</li>
-        <li>Robust right helper arm with bead pressing roller, bead pressing cone and tyre lifting disk for safer, less strenuous operation</li>
-      </ul>
-      <details class="specs">
-        <summary>Specifications</summary>
-        <table>
-          <tr><td>Inner clamping size</td><td>10&quot;–28&quot;</td></tr>
-          <tr><td>Outer clamping size</td><td>10&quot;–26&quot;</td></tr>
-          <tr><td>Max wheel diameter</td><td>1140 mm</td></tr>
-          <tr><td>Max wheel width</td><td>400 mm</td></tr>
-          <tr><td>Operating pressure</td><td>8–10 bar</td></tr>
-          <tr><td>Motor power</td><td>220 V / 1.1 kW · 380 V × 0.75 kW</td></tr>
-          <tr><td>Packaging size</td><td>1150 × 980 × 860 mm</td></tr>
-          <tr><td>Net weight</td><td>264 kg</td></tr>
-          <tr><td>Gross weight</td><td>297 kg</td></tr>
-        </table>
-      </details>
+      <table class="spectable">
+        <tr><td>Inner clamping size</td><td>10&quot;–28&quot;</td></tr>
+        <tr><td>Outer clamping size</td><td>10&quot;–26&quot;</td></tr>
+        <tr><td>Max wheel diameter</td><td>1140 mm</td></tr>
+        <tr><td>Max wheel width</td><td>400 mm</td></tr>
+        <tr><td>Operating pressure</td><td>8–10 bar</td></tr>
+        <tr><td>Motor power</td><td>220 V / 1.1 kW · 380 V × 0.75 kW</td></tr>
+        <tr><td>Packaging size</td><td>1150 × 980 × 860 mm</td></tr>
+        <tr><td>Net weight</td><td>264 kg</td></tr>
+        <tr><td>Gross weight</td><td>297 kg</td></tr>
+      </table>
     </div>
   </div>
 </article>
@@ -176,30 +163,18 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>Semi-Automatic Car Wheel Balancer <span class="mdl">— S2023</span></h3>
-      <ul class="feat">
-        <li>Manual measuring of wheel diameter and distance</li>
-        <li>Selectable programs — Static, Alu1, Alu2, Alu3 and others</li>
-        <li>Spin unit with 36 mm balancing shaft and anti-rust alu-alloy belt pulley</li>
-        <li>Precise alu-alloy distance gauge with weight holder for accurate measurement</li>
-        <li>Integrated calibration and self-diagnostic program</li>
-        <li>Automatic or manual start when the hood is lowered</li>
-        <li>Switchable millimetre/inch and ounce/gram display</li>
-      </ul>
-      <details class="specs">
-        <summary>Specifications</summary>
-        <table>
-          <tr><td>Rim diameter</td><td>10&quot;–28&quot; or 10&quot;–24&quot;</td></tr>
-          <tr><td>Max tyre diameter</td><td>1000 mm</td></tr>
-          <tr><td>Max tyre width</td><td>1.5&quot;–20&quot;</td></tr>
-          <tr><td>Max tyre weight</td><td>70 kg</td></tr>
-          <tr><td>Balancing accuracy</td><td>±1 g</td></tr>
-          <tr><td>Spinning speed</td><td>200 rpm</td></tr>
-          <tr><td>Motor power</td><td>250 W</td></tr>
-          <tr><td>Power supply</td><td>220 V</td></tr>
-          <tr><td>Net weight</td><td>86 kg</td></tr>
-          <tr><td>Gross weight</td><td>105 kg</td></tr>
-        </table>
-      </details>
+      <table class="spectable">
+        <tr><td>Rim diameter</td><td>10&quot;–28&quot; or 10&quot;–24&quot;</td></tr>
+        <tr><td>Max tyre diameter</td><td>1000 mm</td></tr>
+        <tr><td>Max tyre width</td><td>1.5&quot;–20&quot;</td></tr>
+        <tr><td>Max tyre weight</td><td>70 kg</td></tr>
+        <tr><td>Balancing accuracy</td><td>±1 g</td></tr>
+        <tr><td>Spinning speed</td><td>200 rpm</td></tr>
+        <tr><td>Motor power</td><td>250 W</td></tr>
+        <tr><td>Power supply</td><td>220 V</td></tr>
+        <tr><td>Net weight</td><td>86 kg</td></tr>
+        <tr><td>Gross weight</td><td>105 kg</td></tr>
+      </table>
     </div>
   </div>
 </article>
@@ -209,33 +184,18 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>Automatic Car Wheel Balancer with LCD Display <span class="mdl">— S2228</span></h3>
-      <ul class="feat">
-        <li>Multiple balancing modes — Static, Dynamic, 5ALU, ALUS1, ALUS2, MOTO, OPT, plus hidden split-weight</li>
-        <li>A/B/D automatic data entry for efficient, accurate operation</li>
-        <li>Integrated self-diagnostic program for real-time system checks</li>
-        <li>19&quot; LCD display with standard safety hood</li>
-        <li>Spin unit with 40 mm balancing shaft and quick-release nut</li>
-        <li>Automatic detection and locking at the unbalanced position</li>
-        <li>Integrated LED light assists precise weight placement</li>
-        <li>Electro-drive laser guide for accurate inner and outer adhesive weight placement</li>
-        <li>Optional pedal brake system for wheel locking during weight application</li>
-        <li>Optional motorcycle accessories for dynamic motorcycle wheel balancing</li>
-      </ul>
-      <details class="specs">
-        <summary>Specifications</summary>
-        <table>
-          <tr><td>Rim diameter</td><td>10&quot;–24&quot;</td></tr>
-          <tr><td>Max tyre diameter</td><td>1000 mm</td></tr>
-          <tr><td>Max tyre width</td><td>1.5&quot;–20&quot;</td></tr>
-          <tr><td>Max tyre weight</td><td>65 kg</td></tr>
-          <tr><td>Balancing accuracy</td><td>±1 g</td></tr>
-          <tr><td>Spinning speed</td><td>200 rpm</td></tr>
-          <tr><td>Motor power</td><td>240 W</td></tr>
-          <tr><td>Power supply</td><td>220 V</td></tr>
-          <tr><td>Net weight</td><td>115 kg</td></tr>
-          <tr><td>Gross weight</td><td>135 kg</td></tr>
-        </table>
-      </details>
+      <table class="spectable">
+        <tr><td>Rim diameter</td><td>10&quot;–24&quot;</td></tr>
+        <tr><td>Max tyre diameter</td><td>1000 mm</td></tr>
+        <tr><td>Max tyre width</td><td>1.5&quot;–20&quot;</td></tr>
+        <tr><td>Max tyre weight</td><td>65 kg</td></tr>
+        <tr><td>Balancing accuracy</td><td>±1 g</td></tr>
+        <tr><td>Spinning speed</td><td>200 rpm</td></tr>
+        <tr><td>Motor power</td><td>240 W</td></tr>
+        <tr><td>Power supply</td><td>220 V</td></tr>
+        <tr><td>Net weight</td><td>115 kg</td></tr>
+        <tr><td>Gross weight</td><td>135 kg</td></tr>
+      </table>
     </div>
   </div>
 </article>
@@ -245,27 +205,18 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>3D Wheel Alignment System <span class="mdl">— S3015</span></h3>
-      <ul class="feat">
-        <li>Dynamic 3D imaging technology — no delay, with instant and accurate steering wheel adjustment</li>
-        <li>Intelligent lamp design allows operation without checking the computer screen</li>
-        <li>No rim compensation or vehicle lifting required; high-precision measurement based on axle positioning</li>
-        <li>No wires or battery-powered electronic devices — long service life, maintenance-free, no connectivity issues</li>
-      </ul>
-      <details class="specs">
-        <summary>Specifications</summary>
-        <table>
-          <tr><td>Display precision</td><td>0.1 mm / 0.01°</td></tr>
-          <tr><td>Total toe</td><td>±0.01°  (range ±40°)</td></tr>
-          <tr><td>Camber</td><td>±0.01°  (range ±45°)</td></tr>
-          <tr><td>Caster</td><td>±0.02°  (range ±45°)</td></tr>
-          <tr><td>S.A.I</td><td>±0.01°  (range ±45°)</td></tr>
-          <tr><td>Thrust</td><td>±0.01°  (range ±40°)</td></tr>
-          <tr><td>Set back</td><td>±0.01°  (range ±40°)</td></tr>
-          <tr><td>Max steering</td><td>±0.02°  (range ±50°)</td></tr>
-          <tr><td>Track width</td><td>±2 mm  (range 1219–2439 mm)</td></tr>
-          <tr><td>Wheelbase</td><td>±2 mm  (range 2006–4572 mm)</td></tr>
-        </table>
-      </details>
+      <table class="spectable">
+        <tr><td>Display precision</td><td>0.1 mm / 0.01°</td></tr>
+        <tr><td>Total toe</td><td>±0.01°  (range ±40°)</td></tr>
+        <tr><td>Camber</td><td>±0.01°  (range ±45°)</td></tr>
+        <tr><td>Caster</td><td>±0.02°  (range ±45°)</td></tr>
+        <tr><td>S.A.I</td><td>±0.01°  (range ±45°)</td></tr>
+        <tr><td>Thrust</td><td>±0.01°  (range ±40°)</td></tr>
+        <tr><td>Set back</td><td>±0.01°  (range ±40°)</td></tr>
+        <tr><td>Max steering</td><td>±0.02°  (range ±50°)</td></tr>
+        <tr><td>Track width</td><td>±2 mm  (range 1219–2439 mm)</td></tr>
+        <tr><td>Wheelbase</td><td>±2 mm  (range 2006–4572 mm)</td></tr>
+      </table>
     </div>
   </div>
 </article>

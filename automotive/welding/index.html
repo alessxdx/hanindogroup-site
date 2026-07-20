@@ -28,6 +28,16 @@
 .prod ul.feat li{position:relative;padding-left:1.15rem;font-size:.89rem;color:var(--ink);margin-bottom:.32rem;line-height:1.5}
 .prod ul.feat li::before{content:"";position:absolute;left:0;top:.55em;width:5px;height:5px;border-radius:50%;background:var(--brand)}
 .prod .note{font-size:.8rem;color:var(--muted);font-style:italic;margin-top:.7rem}
+/* spec table sits directly on the card - two columns on wide screens so a
+   long parameter list does not push the card metres tall */
+table.spectable{width:100%;border-collapse:collapse;margin-top:.9rem;font-size:.85rem;
+  column-count:2;column-gap:2rem;display:block}
+@media(max-width:1100px){table.spectable{column-count:1}}
+table.spectable tr{display:flex;justify-content:space-between;gap:1rem;
+  border-bottom:1px solid var(--line);padding:.34rem 0;break-inside:avoid}
+table.spectable td{padding:0}
+table.spectable td:first-child{color:var(--muted)}
+table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right;white-space:nowrap}
 details.specs{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
 details.specs summary{cursor:pointer;font-size:.83rem;font-weight:700;color:var(--blue-800);letter-spacing:.03em}
 details.specs summary:hover{color:var(--brand)}
@@ -113,30 +123,24 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>MMA Welding Machine <span class="mdl">— MMA-200A</span></h3>
-      <ul class="feat">
-        <li>Mini portable size</li>
-        <li>Suitable for carbon steel welding</li>
-        <li>Electrode range 1.6–3.2 mm</li>
-      </ul>
+      <table class="spectable">
+        <tr><td>Type</td><td>IGBT – 1 PCB</td></tr>
+        <tr><td>AC input voltage</td><td>Single phase 220 V</td></tr>
+        <tr><td>Rated input power</td><td>5 kVA</td></tr>
+        <tr><td>Current display range</td><td>20–200 A</td></tr>
+        <tr><td>Real current</td><td>120 A</td></tr>
+        <tr><td>No-load voltage</td><td>60 V</td></tr>
+        <tr><td>Electrode diameter</td><td>1.6–3.2 mm</td></tr>
+        <tr><td>Rated duty cycle</td><td>60 %</td></tr>
+        <tr><td>Efficiency</td><td>85 %</td></tr>
+        <tr><td>Quick joint size</td><td>10–25 mm</td></tr>
+        <tr><td>Protection class</td><td>IP21</td></tr>
+        <tr><td>Insulation class</td><td>F</td></tr>
+        <tr><td>Dimensions</td><td>260 × 100 × 160 mm</td></tr>
+        <tr><td>Weight (G.W/N.W)</td><td>2.5 / 3.7 kg</td></tr>
+      </table>
       <details class="specs">
-        <summary>Specifications</summary>
-        <table>
-          <tr><td>Type</td><td>IGBT – 1 PCB</td></tr>
-          <tr><td>AC input voltage</td><td>Single phase 220 V</td></tr>
-          <tr><td>Rated input power</td><td>5 kVA</td></tr>
-          <tr><td>Current display range</td><td>20–200 A</td></tr>
-          <tr><td>Real current</td><td>120 A</td></tr>
-          <tr><td>No-load voltage</td><td>60 V</td></tr>
-          <tr><td>Electrode diameter</td><td>1.6–3.2 mm</td></tr>
-          <tr><td>Rated duty cycle</td><td>60 %</td></tr>
-          <tr><td>Efficiency</td><td>85 %</td></tr>
-          <tr><td>Quick joint size</td><td>10–25 mm</td></tr>
-          <tr><td>Protection class</td><td>IP21</td></tr>
-          <tr><td>Insulation class</td><td>F</td></tr>
-          <tr><td>Dimensions</td><td>260 × 100 × 160 mm</td></tr>
-          <tr><td>Weight (G.W/N.W)</td><td>2.5 / 3.7 kg</td></tr>
-        </table>
-        <div class="acch">Supplied with</div>
+        <summary>Supplied with</summary>
         <ul class="acc">
           <li>Manual</li>
           <li>Mask and brush</li>
@@ -154,30 +158,24 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>MMA Welding Machine <span class="mdl">— MMA-400F</span></h3>
-      <ul class="feat">
-        <li>Big current for industry</li>
-        <li>5.0 mm stopless work</li>
-        <li>35–50 plate-type connector</li>
-      </ul>
+      <table class="spectable">
+        <tr><td>Type</td><td>IGBT – Module</td></tr>
+        <tr><td>AC input voltage</td><td>3-phase 380 V</td></tr>
+        <tr><td>Rated input power</td><td>15 kVA</td></tr>
+        <tr><td>Current display range</td><td>20–350 A</td></tr>
+        <tr><td>Real current</td><td>280 A</td></tr>
+        <tr><td>No-load voltage</td><td>77 V</td></tr>
+        <tr><td>Electrode diameter</td><td>1.6–5.0 mm</td></tr>
+        <tr><td>Rated duty cycle</td><td>60 %</td></tr>
+        <tr><td>Efficiency</td><td>85 %</td></tr>
+        <tr><td>Quick joint size</td><td>35–50 mm plate-type connector</td></tr>
+        <tr><td>Protection class</td><td>IP21</td></tr>
+        <tr><td>Insulation class</td><td>F</td></tr>
+        <tr><td>Dimensions</td><td>460 × 220 × 300 mm</td></tr>
+        <tr><td>Weight (G.W/N.W)</td><td>10.5 / 13.5 kg</td></tr>
+      </table>
       <details class="specs">
-        <summary>Specifications</summary>
-        <table>
-          <tr><td>Type</td><td>IGBT – Module</td></tr>
-          <tr><td>AC input voltage</td><td>3-phase 380 V</td></tr>
-          <tr><td>Rated input power</td><td>15 kVA</td></tr>
-          <tr><td>Current display range</td><td>20–350 A</td></tr>
-          <tr><td>Real current</td><td>280 A</td></tr>
-          <tr><td>No-load voltage</td><td>77 V</td></tr>
-          <tr><td>Electrode diameter</td><td>1.6–5.0 mm</td></tr>
-          <tr><td>Rated duty cycle</td><td>60 %</td></tr>
-          <tr><td>Efficiency</td><td>85 %</td></tr>
-          <tr><td>Quick joint size</td><td>35–50 mm plate-type connector</td></tr>
-          <tr><td>Protection class</td><td>IP21</td></tr>
-          <tr><td>Insulation class</td><td>F</td></tr>
-          <tr><td>Dimensions</td><td>460 × 220 × 300 mm</td></tr>
-          <tr><td>Weight (G.W/N.W)</td><td>10.5 / 13.5 kg</td></tr>
-        </table>
-        <div class="acch">Supplied with</div>
+        <summary>Supplied with</summary>
         <ul class="acc">
           <li>Manual</li>
           <li>Mask and brush</li>
@@ -194,30 +192,24 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>MMA Welding Machine <span class="mdl">— MMA-700F</span></h3>
-      <ul class="feat">
-        <li>Big current for industry</li>
-        <li>5.0 mm stopless work</li>
-        <li>35–50 plate-type connector</li>
-      </ul>
+      <table class="spectable">
+        <tr><td>Type</td><td>IGBT – Module</td></tr>
+        <tr><td>AC input voltage</td><td>3-phase 380 V</td></tr>
+        <tr><td>Rated input power</td><td>18 kVA</td></tr>
+        <tr><td>Current display range</td><td>20–700 A</td></tr>
+        <tr><td>Real current</td><td>460 A</td></tr>
+        <tr><td>No-load voltage</td><td>60 V</td></tr>
+        <tr><td>Electrode diameter</td><td>1.6–5.0 mm</td></tr>
+        <tr><td>Rated duty cycle</td><td>60 %</td></tr>
+        <tr><td>Efficiency</td><td>85 %</td></tr>
+        <tr><td>Quick joint size</td><td>35–50 mm plate-type connector</td></tr>
+        <tr><td>Protection class</td><td>IP21</td></tr>
+        <tr><td>Insulation class</td><td>F</td></tr>
+        <tr><td>Dimensions</td><td>550 × 265 × 380 mm</td></tr>
+        <tr><td>Weight (G.W/N.W)</td><td>14.0 / 17.0 kg</td></tr>
+      </table>
       <details class="specs">
-        <summary>Specifications</summary>
-        <table>
-          <tr><td>Type</td><td>IGBT – Module</td></tr>
-          <tr><td>AC input voltage</td><td>3-phase 380 V</td></tr>
-          <tr><td>Rated input power</td><td>18 kVA</td></tr>
-          <tr><td>Current display range</td><td>20–700 A</td></tr>
-          <tr><td>Real current</td><td>460 A</td></tr>
-          <tr><td>No-load voltage</td><td>60 V</td></tr>
-          <tr><td>Electrode diameter</td><td>1.6–5.0 mm</td></tr>
-          <tr><td>Rated duty cycle</td><td>60 %</td></tr>
-          <tr><td>Efficiency</td><td>85 %</td></tr>
-          <tr><td>Quick joint size</td><td>35–50 mm plate-type connector</td></tr>
-          <tr><td>Protection class</td><td>IP21</td></tr>
-          <tr><td>Insulation class</td><td>F</td></tr>
-          <tr><td>Dimensions</td><td>550 × 265 × 380 mm</td></tr>
-          <tr><td>Weight (G.W/N.W)</td><td>14.0 / 17.0 kg</td></tr>
-        </table>
-        <div class="acch">Supplied with</div>
+        <summary>Supplied with</summary>
         <ul class="acc">
           <li>Manual</li>
           <li>Mask and brush</li>
@@ -234,25 +226,18 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>MIG / MMA Welding Machine <span class="mdl">— MIG/MMA-350F</span></h3>
-      <ul class="feat">
-        <li>MIG/MMA big current for industry</li>
-        <li>Auto-set function (3 in 1)</li>
-        <li>2T/4T heavy duty</li>
-        <li>Spot welding</li>
-      </ul>
+      <table class="spectable">
+        <tr><td>MMA electrode</td><td>5.0 mm</td></tr>
+        <tr><td>MIG solid wire diameter</td><td>0.8, 1.0, 1.2 mm</td></tr>
+        <tr><td>MIG flux wire diameter</td><td>0.8, 1.0, 1.2 mm</td></tr>
+        <tr><td>Input power cable</td><td>DC 24 V – 350 A</td></tr>
+        <tr><td>Quick joint size</td><td>EDZ-50B port</td></tr>
+        <tr><td>Protection class</td><td>IP21</td></tr>
+        <tr><td>Dimensions</td><td>490 × 260 × 430 mm</td></tr>
+        <tr><td>Weight (G.W/N.W)</td><td>20.0 / 23.8 kg</td></tr>
+      </table>
       <details class="specs">
-        <summary>Specifications</summary>
-        <table>
-          <tr><td>MMA electrode</td><td>5.0 mm</td></tr>
-          <tr><td>MIG solid wire diameter</td><td>0.8, 1.0, 1.2 mm</td></tr>
-          <tr><td>MIG flux wire diameter</td><td>0.8, 1.0, 1.2 mm</td></tr>
-          <tr><td>Input power cable</td><td>DC 24 V – 350 A</td></tr>
-          <tr><td>Quick joint size</td><td>EDZ-50B port</td></tr>
-          <tr><td>Protection class</td><td>IP21</td></tr>
-          <tr><td>Dimensions</td><td>490 × 260 × 430 mm</td></tr>
-          <tr><td>Weight (G.W/N.W)</td><td>20.0 / 23.8 kg</td></tr>
-        </table>
-        <div class="acch">Supplied with</div>
+        <summary>Supplied with</summary>
         <ul class="acc">
           <li>Manual</li>
           <li>Mask and brush</li>
@@ -272,12 +257,38 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>MIG / MMA Welding Machine <span class="mdl">— MIG/MMA-500F</span></h3>
-      <ul class="feat">
-        <li>MIG/MMA big current for industry</li>
-        <li>Auto-set function (3 in 1)</li>
-        <li>2T/4T heavy duty</li>
-        <li>Spot welding</li>
-      </ul>
+      <table class="spectable">
+        <tr><td>Type</td><td>IGBT – Module, 15 kg wire spool</td></tr>
+        <tr><td>AC input voltage</td><td>3-phase 380 V</td></tr>
+        <tr><td>Rated input power</td><td>20 kVA</td></tr>
+        <tr><td>Current display range</td><td>50–500 A</td></tr>
+        <tr><td>Real current</td><td>500 A</td></tr>
+        <tr><td>No-load voltage</td><td>56 V</td></tr>
+        <tr><td>MMA electrode</td><td>5.0 mm</td></tr>
+        <tr><td>MIG solid wire diameter</td><td>1.0, 1.2, 1.6 mm</td></tr>
+        <tr><td>MIG flux wire diameter</td><td>1.0, 1.2, 1.6 mm</td></tr>
+        <tr><td>Rated duty cycle</td><td>60 %</td></tr>
+        <tr><td>Efficiency</td><td>85 %</td></tr>
+        <tr><td>Input frequency</td><td>50/60 Hz</td></tr>
+        <tr><td>Input power cable</td><td>DC 24 V – 350 A</td></tr>
+        <tr><td>Quick joint size</td><td>EDZ-50B port</td></tr>
+        <tr><td>Protection class</td><td>IP21</td></tr>
+        <tr><td>Insulation class</td><td>F</td></tr>
+        <tr><td>Dimensions</td><td>580 × 300 × 510 mm</td></tr>
+        <tr><td>Weight (G.W/N.W)</td><td>25.35 / 28.67 kg</td></tr>
+      </table>
+      <details class="specs">
+        <summary>Supplied with</summary>
+        <ul class="acc">
+          <li>Manual</li>
+          <li>Mask and brush</li>
+          <li>1.8 m 35 mm² 500 A holder</li>
+          <li>1.2 m 35 mm² 500 A clamp</li>
+          <li>5 m 36AK 35 mm² torch</li>
+          <li>36 V CO₂ relief valve</li>
+          <li>Hose clamp</li>
+        </ul>
+      </details>
     </div>
   </div>
 </article>

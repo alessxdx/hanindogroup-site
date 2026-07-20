@@ -28,6 +28,16 @@
 .prod ul.feat li{position:relative;padding-left:1.15rem;font-size:.89rem;color:var(--ink);margin-bottom:.32rem;line-height:1.5}
 .prod ul.feat li::before{content:"";position:absolute;left:0;top:.55em;width:5px;height:5px;border-radius:50%;background:var(--brand)}
 .prod .note{font-size:.8rem;color:var(--muted);font-style:italic;margin-top:.7rem}
+/* spec table sits directly on the card - two columns on wide screens so a
+   long parameter list does not push the card metres tall */
+table.spectable{width:100%;border-collapse:collapse;margin-top:.9rem;font-size:.85rem;
+  column-count:2;column-gap:2rem;display:block}
+@media(max-width:1100px){table.spectable{column-count:1}}
+table.spectable tr{display:flex;justify-content:space-between;gap:1rem;
+  border-bottom:1px solid var(--line);padding:.34rem 0;break-inside:avoid}
+table.spectable td{padding:0}
+table.spectable td:first-child{color:var(--muted)}
+table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right;white-space:nowrap}
 details.specs{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
 details.specs summary{cursor:pointer;font-size:.83rem;font-weight:700;color:var(--blue-800);letter-spacing:.03em}
 details.specs summary:hover{color:var(--brand)}
@@ -113,26 +123,15 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>Oil Flushing Machine <span class="mdl">— LCS-9800</span></h3>
-      <ul class="feat">
-        <li>Colour touch screen with graphic icon main menu</li>
-        <li>Visual window offers a clear view of the in/out fluid</li>
-        <li>Transparent filter cup shows the 5 micron filtering effect</li>
-        <li>Refilling volume and cleaning time can be set freely</li>
-        <li>Dynamic circulating filtration cleans engine oil passages</li>
-        <li>Pressurised air flushing completely removes residual cleaning fluid</li>
-      </ul>
-      <details class="specs">
-        <summary>Specifications</summary>
-        <table>
-          <tr><td>Filter precision</td><td>5 μm</td></tr>
-          <tr><td>Pressure gauge</td><td>0–4 kg/cm²</td></tr>
-          <tr><td>Fluid outlet hose</td><td>2.3 m</td></tr>
-          <tr><td>Fluid return hose</td><td>2.3 m</td></tr>
-          <tr><td>Dimensions</td><td>690 × 590 × 1030 mm</td></tr>
-          <tr><td>Weight</td><td>65 kg</td></tr>
-          <tr><td>Power supply</td><td>220–250 V</td></tr>
-        </table>
-      </details>
+      <table class="spectable">
+        <tr><td>Filter precision</td><td>5 μm</td></tr>
+        <tr><td>Pressure gauge</td><td>0–4 kg/cm²</td></tr>
+        <tr><td>Fluid outlet hose</td><td>2.3 m</td></tr>
+        <tr><td>Fluid return hose</td><td>2.3 m</td></tr>
+        <tr><td>Dimensions</td><td>690 × 590 × 1030 mm</td></tr>
+        <tr><td>Weight</td><td>65 kg</td></tr>
+        <tr><td>Power supply</td><td>220–250 V</td></tr>
+      </table>
     </div>
   </div>
 </article>
@@ -142,25 +141,15 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>Radiator Cooling System Machine <span class="mdl">— WCS-9800</span></h3>
-      <ul class="feat">
-        <li>LCD touch screen with coloured graphic icons</li>
-        <li>Visual window provides a clear view of the in/out fluid</li>
-        <li>Cleans, refills, recovers and extracts coolant in a single unit</li>
-        <li>Equivalent fluid exchange — refills new fluid and drains used fluid at the same time</li>
-        <li>Dual tank system: 20 L for new fluid, 20 L for used</li>
-      </ul>
-      <details class="specs">
-        <summary>Specifications</summary>
-        <table>
-          <tr><td>New/used fluid tank</td><td>20 L × 2</td></tr>
-          <tr><td>Pressure gauge</td><td>0–2 kg/cm²</td></tr>
-          <tr><td>Fluid outlet hose</td><td>2.3 m</td></tr>
-          <tr><td>Fluid return hose</td><td>2.3 m</td></tr>
-          <tr><td>Dimensions</td><td>690 × 590 × 1030 mm</td></tr>
-          <tr><td>Weight</td><td>68 kg</td></tr>
-          <tr><td>Power supply</td><td>12 V – 250 W</td></tr>
-        </table>
-      </details>
+      <table class="spectable">
+        <tr><td>New/used fluid tank</td><td>20 L × 2</td></tr>
+        <tr><td>Pressure gauge</td><td>0–2 kg/cm²</td></tr>
+        <tr><td>Fluid outlet hose</td><td>2.3 m</td></tr>
+        <tr><td>Fluid return hose</td><td>2.3 m</td></tr>
+        <tr><td>Dimensions</td><td>690 × 590 × 1030 mm</td></tr>
+        <tr><td>Weight</td><td>68 kg</td></tr>
+        <tr><td>Power supply</td><td>12 V – 250 W</td></tr>
+      </table>
     </div>
   </div>
 </article>
@@ -170,32 +159,19 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>Automatic Transmission Oil Exchanger <span class="mdl">— ATF-9800</span></h3>
-      <ul class="feat">
-        <li>Fully automatic operation with LCD touch screen and colour observation window</li>
-        <li>Built-in vehicle database guides oil change procedures</li>
-        <li>Automatic flow control detects and switches oil in/out direction</li>
-        <li>Automatically detects positive and negative power supply connections</li>
-        <li>Circulating cleaning and replacement of old and new transmission oil</li>
-        <li>Real-time display of oil pressure and outlet pressure</li>
-        <li>Compatible with adapters for European, American and Asian vehicles</li>
-        <li>Optional printing and heating functions</li>
-      </ul>
-      <details class="specs">
-        <summary>Specifications</summary>
-        <table>
-          <tr><td>New/used fluid tank</td><td>20 L × 2</td></tr>
-          <tr><td>Filter precision</td><td>5 μm</td></tr>
-          <tr><td>Pressure gauge</td><td>0–150 psi</td></tr>
-          <tr><td>Fluid outlet hose</td><td>2.3 m</td></tr>
-          <tr><td>Fluid return hose</td><td>2.3 m</td></tr>
-          <tr><td>Fluid draining hose</td><td>1.5 m</td></tr>
-          <tr><td>Printer</td><td>Yes</td></tr>
-          <tr><td>Maximum power</td><td>250 W</td></tr>
-          <tr><td>Dimensions</td><td>690 × 590 × 1030 mm</td></tr>
-          <tr><td>Weight</td><td>74 kg</td></tr>
-          <tr><td>Power supply</td><td>220 V AC</td></tr>
-        </table>
-      </details>
+      <table class="spectable">
+        <tr><td>New/used fluid tank</td><td>20 L × 2</td></tr>
+        <tr><td>Filter precision</td><td>5 μm</td></tr>
+        <tr><td>Pressure gauge</td><td>0–150 psi</td></tr>
+        <tr><td>Fluid outlet hose</td><td>2.3 m</td></tr>
+        <tr><td>Fluid return hose</td><td>2.3 m</td></tr>
+        <tr><td>Fluid draining hose</td><td>1.5 m</td></tr>
+        <tr><td>Printer</td><td>Yes</td></tr>
+        <tr><td>Maximum power</td><td>250 W</td></tr>
+        <tr><td>Dimensions</td><td>690 × 590 × 1030 mm</td></tr>
+        <tr><td>Weight</td><td>74 kg</td></tr>
+        <tr><td>Power supply</td><td>220 V AC</td></tr>
+      </table>
     </div>
   </div>
 </article>
@@ -205,24 +181,16 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>Brake Lathe Bench Machine <span class="mdl">— AM-552</span></h3>
-      <ul class="feat">
-        <li>Dual-purpose design supports both brake discs and brake drums</li>
-        <li>Brake drum support option</li>
-        <li>Supplied with universal slide mounting, extension brackets, drive adaptors and drum support</li>
-      </ul>
-      <details class="specs">
-        <summary>Specifications</summary>
-        <table>
-          <tr><td>Drive speed</td><td>50–250 rpm</td></tr>
-          <tr><td>Turning accuracy</td><td>&lt; 0.002–0.005 mm</td></tr>
-          <tr><td>Brake runout</td><td>0.000–0.005 mm</td></tr>
-          <tr><td>Working height</td><td>1.25 m</td></tr>
-          <tr><td>Dimensions</td><td>850 × 650 × 1250 mm</td></tr>
-          <tr><td>Weight</td><td>118 kg</td></tr>
-          <tr><td>Ambient temperature</td><td>−25 °C to 50 °C</td></tr>
-          <tr><td>Power</td><td>220 V, 50 Hz</td></tr>
-        </table>
-      </details>
+      <table class="spectable">
+        <tr><td>Drive speed</td><td>50–250 rpm</td></tr>
+        <tr><td>Turning accuracy</td><td>&lt; 0.002–0.005 mm</td></tr>
+        <tr><td>Brake runout</td><td>0.000–0.005 mm</td></tr>
+        <tr><td>Working height</td><td>1.25 m</td></tr>
+        <tr><td>Dimensions</td><td>850 × 650 × 1250 mm</td></tr>
+        <tr><td>Weight</td><td>118 kg</td></tr>
+        <tr><td>Ambient temperature</td><td>−25 °C to 50 °C</td></tr>
+        <tr><td>Power</td><td>220 V, 50 Hz</td></tr>
+      </table>
     </div>
   </div>
 </article>
@@ -232,29 +200,19 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>HHO Carbon Cleaning Machine — Motorcycle <span class="mdl">— HHO-300</span></h3>
-      <ul class="feat">
-        <li>Compact body with 300 L/h gas output, designed for motorcycle use</li>
-        <li>12 safety protection systems</li>
-        <li>4.3-inch touchscreen with dual control system (electronic and mechanical)</li>
-        <li>Suitable for all motorcycle engine sizes</li>
-        <li>Cleans a motorcycle engine in about 20 minutes</li>
-      </ul>
-      <details class="specs">
-        <summary>Specifications</summary>
-        <table>
-          <tr><td>Rated gas production</td><td>300 ± 10 % L/h</td></tr>
-          <tr><td>Working gas pressure</td><td>0.03 MPa</td></tr>
-          <tr><td>Rated capacity</td><td>1 kVA</td></tr>
-          <tr><td>Power consumption</td><td>0.96 kW/h</td></tr>
-          <tr><td>Water consumption</td><td>0.17 L/h</td></tr>
-          <tr><td>Cooling mode</td><td>Air cooling</td></tr>
-          <tr><td>Insulation level</td><td>F</td></tr>
-          <tr><td>Protection grade</td><td>IP21S</td></tr>
-          <tr><td>Dimensions</td><td>350 × 470 × 550 mm</td></tr>
-          <tr><td>Weight</td><td>30 kg</td></tr>
-          <tr><td>Input voltage</td><td>220 V (110 V optional)</td></tr>
-        </table>
-      </details>
+      <table class="spectable">
+        <tr><td>Rated gas production</td><td>300 ± 10 % L/h</td></tr>
+        <tr><td>Working gas pressure</td><td>0.03 MPa</td></tr>
+        <tr><td>Rated capacity</td><td>1 kVA</td></tr>
+        <tr><td>Power consumption</td><td>0.96 kW/h</td></tr>
+        <tr><td>Water consumption</td><td>0.17 L/h</td></tr>
+        <tr><td>Cooling mode</td><td>Air cooling</td></tr>
+        <tr><td>Insulation level</td><td>F</td></tr>
+        <tr><td>Protection grade</td><td>IP21S</td></tr>
+        <tr><td>Dimensions</td><td>350 × 470 × 550 mm</td></tr>
+        <tr><td>Weight</td><td>30 kg</td></tr>
+        <tr><td>Input voltage</td><td>220 V (110 V optional)</td></tr>
+      </table>
     </div>
   </div>
 </article>
@@ -264,29 +222,19 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>HHO Carbon Cleaning Machine — Automotive <span class="mdl">— HHO-700</span></h3>
-      <ul class="feat">
-        <li>Up to 4 hours of continuous HHO gas output for engine carbon cleaning</li>
-        <li>12 intelligent safety systems</li>
-        <li>Smaller footprint with higher gas production — suits workshops with limited space</li>
-        <li>4.3-inch intelligent touchscreen with mechanical and electronic operating modes</li>
-        <li>Designed for 600 cc to 3000 cc engines</li>
-      </ul>
-      <details class="specs">
-        <summary>Specifications</summary>
-        <table>
-          <tr><td>Rated gas production</td><td>700 ± 10 % L/h</td></tr>
-          <tr><td>Working gas pressure</td><td>0.03 MPa</td></tr>
-          <tr><td>Rated capacity</td><td>2 kVA</td></tr>
-          <tr><td>Power consumption</td><td>1.9 kW/h</td></tr>
-          <tr><td>Water consumption</td><td>0.35 L/h</td></tr>
-          <tr><td>Cooling mode</td><td>Air cooling</td></tr>
-          <tr><td>Insulation level</td><td>F</td></tr>
-          <tr><td>Protection grade</td><td>IP21S</td></tr>
-          <tr><td>Dimensions</td><td>480 × 550 × 710 mm</td></tr>
-          <tr><td>Weight</td><td>56 kg</td></tr>
-          <tr><td>Input voltage</td><td>220 V (110 V optional)</td></tr>
-        </table>
-      </details>
+      <table class="spectable">
+        <tr><td>Rated gas production</td><td>700 ± 10 % L/h</td></tr>
+        <tr><td>Working gas pressure</td><td>0.03 MPa</td></tr>
+        <tr><td>Rated capacity</td><td>2 kVA</td></tr>
+        <tr><td>Power consumption</td><td>1.9 kW/h</td></tr>
+        <tr><td>Water consumption</td><td>0.35 L/h</td></tr>
+        <tr><td>Cooling mode</td><td>Air cooling</td></tr>
+        <tr><td>Insulation level</td><td>F</td></tr>
+        <tr><td>Protection grade</td><td>IP21S</td></tr>
+        <tr><td>Dimensions</td><td>480 × 550 × 710 mm</td></tr>
+        <tr><td>Weight</td><td>56 kg</td></tr>
+        <tr><td>Input voltage</td><td>220 V (110 V optional)</td></tr>
+      </table>
     </div>
   </div>
 </article>
@@ -296,30 +244,21 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>A/C Recycling Service Station <span class="mdl">— AC-900</span></h3>
-      <ul class="feat">
-        <li>5-inch HD colour screen</li>
-        <li>Automatic oil drain and inject</li>
-        <li>SD database for easy access to vehicle data</li>
-        <li>Integrated printer</li>
-      </ul>
-      <details class="specs">
-        <summary>Specifications</summary>
-        <table>
-          <tr><td>Refrigerant</td><td>R134a</td></tr>
-          <tr><td>Tank</td><td>16 L</td></tr>
-          <tr><td>Compressor</td><td>1/2 HP, 14 cc</td></tr>
-          <tr><td>Vacuum pump</td><td>60 L/min, 1.8 CFM</td></tr>
-          <tr><td>Ultimate vacuum</td><td>75 micron, 10 Pa</td></tr>
-          <tr><td>Gas loadcell</td><td>1 g / 30 kg</td></tr>
-          <tr><td>Max pressure</td><td>16 bar</td></tr>
-          <tr><td>Oil bottle</td><td>250 ml</td></tr>
-          <tr><td>Hose</td><td>3 m / SAE-J2196</td></tr>
-          <tr><td>Printer</td><td>Yes</td></tr>
-          <tr><td>Package</td><td>550 × 600 × 1050 mm</td></tr>
-          <tr><td>Gross weight</td><td>85 kg</td></tr>
-          <tr><td>Power</td><td>220 V / 50 Hz</td></tr>
-        </table>
-      </details>
+      <table class="spectable">
+        <tr><td>Refrigerant</td><td>R134a</td></tr>
+        <tr><td>Tank</td><td>16 L</td></tr>
+        <tr><td>Compressor</td><td>1/2 HP, 14 cc</td></tr>
+        <tr><td>Vacuum pump</td><td>60 L/min, 1.8 CFM</td></tr>
+        <tr><td>Ultimate vacuum</td><td>75 micron, 10 Pa</td></tr>
+        <tr><td>Gas loadcell</td><td>1 g / 30 kg</td></tr>
+        <tr><td>Max pressure</td><td>16 bar</td></tr>
+        <tr><td>Oil bottle</td><td>250 ml</td></tr>
+        <tr><td>Hose</td><td>3 m / SAE-J2196</td></tr>
+        <tr><td>Printer</td><td>Yes</td></tr>
+        <tr><td>Package</td><td>550 × 600 × 1050 mm</td></tr>
+        <tr><td>Gross weight</td><td>85 kg</td></tr>
+        <tr><td>Power</td><td>220 V / 50 Hz</td></tr>
+      </table>
     </div>
   </div>
 </article>
@@ -329,26 +268,16 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>Nitrogen Generator <span class="mdl">— WDN-70</span></h3>
-      <ul class="feat">
-        <li>Intelligent energy management system for optimal power savings</li>
-        <li>Automatic inflation to pre-set tyre pressure</li>
-        <li>Adjustable nitrogen purity and flow rate</li>
-        <li>Integrated vacuum and inflation system guarantees high purity during initial fills</li>
-        <li>Specialised mode for safe handling of flat (zero pressure) tyres</li>
-      </ul>
-      <details class="specs">
-        <summary>Specifications</summary>
-        <table>
-          <tr><td>Nitrogen purity</td><td>99.9 %</td></tr>
-          <tr><td>Nitrogen process speed</td><td>70 L/min</td></tr>
-          <tr><td>Storage tank capacity</td><td>70 L</td></tr>
-          <tr><td>Input air</td><td>6–10 bar</td></tr>
-          <tr><td>Dimensions</td><td>1350 × 570 × 630 mm</td></tr>
-          <tr><td>Weight</td><td>130 kg</td></tr>
-          <tr><td>Power</td><td>30 W</td></tr>
-          <tr><td>Voltage</td><td>200 VAC</td></tr>
-        </table>
-      </details>
+      <table class="spectable">
+        <tr><td>Nitrogen purity</td><td>99.9 %</td></tr>
+        <tr><td>Nitrogen process speed</td><td>70 L/min</td></tr>
+        <tr><td>Storage tank capacity</td><td>70 L</td></tr>
+        <tr><td>Input air</td><td>6–10 bar</td></tr>
+        <tr><td>Dimensions</td><td>1350 × 570 × 630 mm</td></tr>
+        <tr><td>Weight</td><td>130 kg</td></tr>
+        <tr><td>Power</td><td>30 W</td></tr>
+        <tr><td>Voltage</td><td>200 VAC</td></tr>
+      </table>
     </div>
   </div>
 </article>
@@ -358,22 +287,12 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>Catalytic Converter Cleaning Machine <span class="mdl">— GX-900</span></h3>
-      <ul class="feat">
-        <li>Visual five-in-one cleaning system</li>
-        <li>Removes carbon deposits and gum build-up inside the engine</li>
-        <li>Restores optimal combustion efficiency</li>
-        <li>Helps recover engine power, smoothness and fuel efficiency</li>
-        <li>Cleans intake system, fuel system, injector needle valve, three-way catalytic system and combustion chamber</li>
-      </ul>
-      <details class="specs">
-        <summary>Specifications</summary>
-        <table>
-          <tr><td>Working pressure</td><td>60 PSI</td></tr>
-          <tr><td>Dimensions</td><td>410 × 445 × 940 mm</td></tr>
-          <tr><td>Weight</td><td>33 kg</td></tr>
-          <tr><td>Voltage</td><td>12 V</td></tr>
-        </table>
-      </details>
+      <table class="spectable">
+        <tr><td>Working pressure</td><td>60 PSI</td></tr>
+        <tr><td>Dimensions</td><td>410 × 445 × 940 mm</td></tr>
+        <tr><td>Weight</td><td>33 kg</td></tr>
+        <tr><td>Voltage</td><td>12 V</td></tr>
+      </table>
     </div>
   </div>
 </article>
