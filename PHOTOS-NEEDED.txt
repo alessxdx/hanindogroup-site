@@ -26,7 +26,7 @@ text lockup automatically. Wide lockup format, ~640px wide (shown at
 48px tall), white or transparent background.
 
 logo-citra.png            Hanindo Citra                   [COMPLETE]
-logo-automotive.png       Hanindo Automotive              [NEEDED]
+logo-automotive.png       Hanindo Automotive              [COMPLETE]
 logo-automation.png       Hanindo Automation Solutions    [NEEDED]
 
 
