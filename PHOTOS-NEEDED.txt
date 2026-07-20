@@ -26,13 +26,14 @@ detail on the RIGHT of the frame. Landscape, at least 1600px wide.
 
 SLIDE 1 — "Welcome to the Hanindo Group"          [COMPLETE]
 hero-sky.jpg              Background. Sky above the clouds. In place.
-hero-building.png         Head-office photo, shown as a tall panel
-                          between the headline and the company list.
-                          The Jl. Fatmawati No. 55 building. In place.
-                          Only appears on screens wider than 1100px.
-                          PORTRAIT or square crop — it fills a narrow
-                          full-height column, so a wide landscape shot
-                          would crop hard at the sides.
+
+NOT CURRENTLY USED:
+hero-building.png         Portrait photo of the Jl. Fatmawati No. 55
+                          building. Was briefly shown on slide 1 and
+                          removed. The file is kept because it is a
+                          good shot and would suit the About page or
+                          the Contact page when those are built.
+                          Safe to delete if not wanted.
 
 SLIDE 2 — "Your technology one stop solution"     [NEEDED]
 hero-group.jpg            Background. A forecourt, flagship
@@ -53,19 +54,40 @@ div-flowtech.jpg          Division card — fuel station under construction
 div-printer-pos.jpg       Division card — POS / ticket printer hardware
 div-overseas.jpg          Division card — Shanghai office or skyline
 
-PARTNER LOGOS (home marquee) — PNG, colour logo on white or
-transparent. Until added, each card shows the brand name as text,
-which looks intentional.
-brand-gilbarco.png        Gilbarco Veeder-Root
-brand-opw.png             OPW
-brand-honeywell.png       Honeywell
-brand-durapipe.png        Durapipe
-brand-piusi.png           PIUSI
-brand-raasm.png           RAASM
-brand-brainbee.png        Brainbee
-brand-custom.png          Custom
-brand-gasboy.png          Gasboy
-brand-tcs.png             TCS
+PARTNER LOGOS — ALL 22                            [COMPLETE]
+Downloaded from the existing hanindogroup.com server
+(/images/PartnerPrincipals/) so nothing breaks when Joomla retires.
+
+Shown on the homepage marquee (10):
+  brand-gilbarco.webp     Gilbarco Veeder-Root
+  brand-opw.webp          OPW
+  brand-honeywell.webp    Honeywell
+  brand-durapipe.webp     Durapipe
+  brand-piusi.webp        PIUSI
+  brand-raasm.webp        RAASM
+  brand-brainbee.webp     Brainbee
+  brand-custom.webp       Custom
+  brand-gasboy.webp       Gasboy
+  brand-tcs.webp          TCS
+
+Held for the /partners/ page, not yet shown anywhere (12):
+  brand-redjacket.webp    Red Jacket
+  brand-postec.webp       Postec
+  brand-doms.webp         Doms
+  brand-transponder.webp  Transponder Technologies
+  brand-itl.gif           Integration Technologies Limited   (GIF)
+  brand-airtec.webp       Airtec
+  brand-wincor.webp       Wincor Nixdorf
+  brand-hpa.webp          HPA
+  brand-lafon.webp        Lafon
+  brand-transtank.webp    Transtank
+  brand-orpak.webp        Orpak
+  brand-cebora.png        Cebora                             (PNG)
+
+NOTE the three different extensions — .webp for most, .gif for ITL,
+.png for Cebora. Any <img> must use the exact extension above.
+To replace a logo, keep the filename AND extension, otherwise the
+card falls back to showing the brand name as text.
 
 
 --------------------------------------------------

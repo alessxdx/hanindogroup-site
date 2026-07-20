@@ -39,13 +39,15 @@ OLD (Joomla)                                          NEW
 EXTERNAL — leave alone, do NOT redirect. These already point off-site
 and should keep doing so:
 /  (menu item "Printer & POS System")                 https://custom-sea.com/
-/  (menu item "Custom (S.E.A) Hanindo")               https://custom-sea.com/
+/  (menu item "Custom (S.E.A) Gralessando")           https://custom-sea.com/
 
 UNRESOLVED — decide before go-live:
 /gralessando          Linked from the old site's "Our Websites" menu.
-                      Unknown destination and no content was found for
-                      it. Either point it somewhere sensible or let it
-                      404. Do not invent a page for it.
+                      LIKELY -> /printer-pos/  — the printing and POS
+                      company is named Custom (S.E.A) Gralessando, so
+                      this old URL probably belongs to it. NOT YET
+                      CONFIRMED by Graziella, so do not apply this
+                      redirect until she says so. Otherwise let it 404.
 /?Itemid=152          Old Joomla sitemap. Suggest -> /
 /component/users/...  Joomla login/password-reset endpoints. These have
                       no equivalent on a static site. Let them 404, or
