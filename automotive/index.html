@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/site.css?v=202607201830" />
+<link rel="stylesheet" href="../assets/site.css?v=202607221300" />
 </head>
 <body>
 
@@ -93,6 +93,17 @@
     </div>
   </div>
 </section>
+<!-- ============ CUSTOMERS (moving marquee) ============ -->
+<section class="customers" aria-label="Team experience includes work with">
+  <div class="chead reveal"><span class="kick">Team experience includes work with</span></div>
+  <div class="marquee">
+    <div class="mtrack" id="mtrack">
+      <!-- Client logos go here. Drop a logo into /photos/ and add a card like:
+      <div class="brandcard"><img src="../photos/cust-name.png" alt="Client Name" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="btext" style="display:none">Client Name</span></div>
+      -->
+    </div>
+  </div>
+</section>
 <!-- ============ CONTACT ============ -->
 <section class="section contact">
   <div class="glow"></div>
@@ -157,6 +168,23 @@ function hsearch(f){var q=(f.q.value||'').trim();if(!q)return false;window.open(
 (function(){var b=document.getElementById('burger'),t=document.getElementById('tabs');if(b&&t){b.addEventListener('click',function(){var o=t.classList.toggle('open');b.setAttribute('aria-expanded',o);});}})();
 /* reveal */
 (function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
+/* customers marquee: repeat logos to fill width + seamless, even-spaced loop */
+(function(){var t=document.getElementById('mtrack');if(!t)return;
+var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function build(){
+  var o=t.getAttribute('data-orig');if(o===null){o=t.innerHTML;t.setAttribute('data-orig',o);}else{t.innerHTML=o;}
+  if(rm)return;
+  var n=t.children.length;if(!n)return;
+  t.insertAdjacentHTML('beforeend',o);
+  var period=t.children[n].offsetLeft-t.children[0].offsetLeft;if(!period)return;
+  t.style.setProperty('--marw',period+'px');
+  t.style.animationDuration=(period/28).toFixed(1)+'s';
+  var base=Math.max(t.parentElement.offsetWidth,(window.screen&&screen.width)||1280);
+  var target=base*2+period,guard=0;
+  while(t.scrollWidth<target&&guard<40){t.insertAdjacentHTML('beforeend',o);guard++;}
+}
+if(document.readyState==='complete')build();else window.addEventListener('load',build);
+})();
 /* count up */
 (function(){var done=new WeakSet();function run(el){var end=+el.getAttribute('data-count'),t0=null,dur=1400;function step(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/dur,1);el.textContent=Math.round(p*end);if(p<1)requestAnimationFrame(step);else el.textContent=end;}requestAnimationFrame(step);}
 var nums=document.querySelectorAll('.num[data-count]');if(!('IntersectionObserver'in window)){nums.forEach(function(n){n.textContent=n.getAttribute('data-count')});return;}
