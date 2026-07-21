@@ -115,7 +115,7 @@
     "Personnel certified as technical assessor in fire protection competency under the Indonesian National Work Competency Standards (SKKNI).": "Personel bersertifikat sebagai pengkaji teknis kompetensi proteksi kebakaran berdasarkan Standar Kompetensi Kerja Nasional Indonesia (SKKNI).",
     "View certificate": "Lihat sertifikat",
     "Why choose us": "Mengapa Memilih Kami",
-    "Why clients trust Hanindo Citra": "Mengapa klien mempercayai Hanindo Citra",
+    "Why clients trust us": "Mengapa klien mempercayai kami",
     "Trusted": "Terpercaya",
     "Trusted by leading organisations across government, oil & gas, and industry — including the Ministry of Transportation, PT Pertamina (Persero), AKR Fuel Storage, LPG Petroleum Storage, PT. GLB Indonesia, and the OP-1 Operational Building.": "Dipercaya oleh organisasi terkemuka di sektor pemerintah, migas, dan industri — termasuk Kementerian Perhubungan, PT Pertamina (Persero), AKR Fuel Storage, LPG Petroleum Storage, PT. GLB Indonesia, dan OP-1 Operational Building.",
     "Best Quality": "Kualitas Terbaik",
