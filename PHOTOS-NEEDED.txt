@@ -28,7 +28,7 @@ white, ~800px wide; the card contains rather than crops it.
 Specifications are in for B55 and B75; the other twelve cards still
 show a "Full specifications to follow" line until their tables arrive.
 
-hpa-b35.png       B35 Digital Wheel Balancer          [NEEDED]
+hpa-b35.png       B35 Digital Wheel Balancer          [COMPLETE]
 hpa-b45.png       B45 Digital Wheel Balancer          [NEEDED]
 hpa-b50.png       B50 TV Monitor Wheel Balancer       [NEEDED]
 hpa-b55.png       B55 Digital Wheel Balancer          [COMPLETE]
