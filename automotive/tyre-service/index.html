@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../../assets/site.css" />
+<link rel="stylesheet" href="../../assets/site.css?v=202607202015" />
 <style>
 /* product cards: photo left, detail right; stacks on narrow screens */
 .prod{border:1px solid var(--line);border-radius:var(--r);background:#fff;margin-bottom:1.1rem;overflow:hidden}
@@ -22,6 +22,18 @@
 .prod .brandtag{display:inline-block;font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700;color:#fff;background:var(--blue-800);padding:.24rem .55rem;border-radius:2px;margin-bottom:.55rem}
 .prod .brandtag.atom{background:var(--brand)}
 .prod .brandtag.third{background:var(--muted)}
+.prod .brandtag.hpa{background:#0d5c3f}
+/* Models catalogued ahead of their artwork and spec sheets: the shot slot
+   keeps its place so the card does not reflow when the photo is dropped in
+   at photos/automotive/<file>.png */
+.prod .shot .soon{display:flex;flex-direction:column;align-items:center;gap:.5rem;color:#9aa7b8;font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;font-weight:600}
+.prod .shot .soon svg{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.5}
+.prod .await{margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);font-size:.84rem;color:var(--muted)}
+.prod .await b{color:var(--blue-800);font-weight:600}
+.grouphead{margin:2.6rem 0 1.2rem;padding-top:1.6rem;border-top:1px solid var(--line)}
+.grouphead:first-of-type{border-top:0;padding-top:0}
+.grouphead h2{font-size:1.15rem;font-weight:700;color:var(--blue-800)}
+.grouphead p{font-size:.88rem;color:var(--muted);margin-top:.2rem}
 .prod h3{font-size:1.12rem;font-weight:700;color:var(--blue-900);line-height:1.25}
 .prod h3 .mdl{color:var(--muted);font-weight:600}
 .prod ul.feat{list-style:none;margin:.85rem 0 0}
@@ -111,8 +123,9 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
   <a href="../service/">Service Equipment</a>
   <a href="../welding/">Welding</a>
 </div>
-    <p class="lede" style="margin-bottom:1.8rem">5 models. Specifications are taken from the Hanindo Automotive catalogue — contact us for pricing, lead time and installation.</p>
+    <p class="lede" style="margin-bottom:1.8rem">19 models. Specifications are taken from the Hanindo Automotive catalogue — contact us for pricing, lead time and installation.</p>
 
+<div class="grouphead"><h2>WELDANN</h2><p>Five models &mdash; tyre changers, wheel balancers and 3D alignment.</p></div>
 <article class="prod reveal">
   <div class="inner">
     <div class="shot"><img src="../../photos/automotive/weldann-si003.png" alt="Weldann SI003 Semi-Automatic Car Tyre Changer" onerror="this.style.display='none'" /></div>
@@ -213,6 +226,153 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
         <tr><td>Track width</td><td>±2 mm  (range 1219–2439 mm)</td></tr>
         <tr><td>Wheelbase</td><td>±2 mm  (range 2006–4572 mm)</td></tr>
       </table>
+    </div>
+  </div>
+</article>
+
+
+<div class="grouphead"><h2>HPA-Faip &mdash; Wheel Balancers</h2><p>Eight models, digital and TV-monitor, car through truck.</p></div>
+<article class="prod reveal">
+  <div class="inner">
+    <div class="shot"><img src="../../photos/automotive/hpa-b35.png" alt="HPA-Faip B35 Wheel Balancer" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
+    <div class="body">
+      <span class="brandtag hpa">HPA-Faip</span>
+      <h3>Digital Wheel Balancer <span class="mdl">&mdash; B35</span></h3>
+      <p class="await">Full specifications <b>to follow</b> &mdash; contact us for the data sheet, pricing and lead time.</p>
+    </div>
+  </div>
+</article>
+<article class="prod reveal">
+  <div class="inner">
+    <div class="shot"><img src="../../photos/automotive/hpa-b45.png" alt="HPA-Faip B45 Wheel Balancer" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
+    <div class="body">
+      <span class="brandtag hpa">HPA-Faip</span>
+      <h3>Digital Wheel Balancer <span class="mdl">&mdash; B45</span></h3>
+      <p class="await">Full specifications <b>to follow</b> &mdash; contact us for the data sheet, pricing and lead time.</p>
+    </div>
+  </div>
+</article>
+<article class="prod reveal">
+  <div class="inner">
+    <div class="shot"><img src="../../photos/automotive/hpa-b50.png" alt="HPA-Faip B50 Wheel Balancer" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
+    <div class="body">
+      <span class="brandtag hpa">HPA-Faip</span>
+      <h3>TV Monitor Wheel Balancer <span class="mdl">&mdash; B50</span></h3>
+      <p class="await">Full specifications <b>to follow</b> &mdash; contact us for the data sheet, pricing and lead time.</p>
+    </div>
+  </div>
+</article>
+<article class="prod reveal">
+  <div class="inner">
+    <div class="shot"><img src="../../photos/automotive/hpa-b55.png" alt="HPA-Faip B55 Wheel Balancer" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
+    <div class="body">
+      <span class="brandtag hpa">HPA-Faip</span>
+      <h3>Digital Wheel Balancer <span class="mdl">&mdash; B55</span></h3>
+      <p class="await">Full specifications <b>to follow</b> &mdash; contact us for the data sheet, pricing and lead time.</p>
+    </div>
+  </div>
+</article>
+<article class="prod reveal">
+  <div class="inner">
+    <div class="shot"><img src="../../photos/automotive/hpa-b60.png" alt="HPA-Faip B60 Wheel Balancer" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
+    <div class="body">
+      <span class="brandtag hpa">HPA-Faip</span>
+      <h3>TV Monitor Wheel Balancer <span class="mdl">&mdash; B60</span></h3>
+      <p class="await">Full specifications <b>to follow</b> &mdash; contact us for the data sheet, pricing and lead time.</p>
+    </div>
+  </div>
+</article>
+<article class="prod reveal">
+  <div class="inner">
+    <div class="shot"><img src="../../photos/automotive/hpa-b75.png" alt="HPA-Faip B75 Wheel Balancer" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
+    <div class="body">
+      <span class="brandtag hpa">HPA-Faip</span>
+      <h3>Digital Wheel Balancer (Truck) <span class="mdl">&mdash; B75</span></h3>
+      <p class="await">Full specifications <b>to follow</b> &mdash; contact us for the data sheet, pricing and lead time.</p>
+    </div>
+  </div>
+</article>
+<article class="prod reveal">
+  <div class="inner">
+    <div class="shot"><img src="../../photos/automotive/hpa-b225.png" alt="HPA-Faip B225 Wheel Balancer" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
+    <div class="body">
+      <span class="brandtag hpa">HPA-Faip</span>
+      <h3>Digital Wheel Balancer <span class="mdl">&mdash; B225</span></h3>
+      <p class="await">Full specifications <b>to follow</b> &mdash; contact us for the data sheet, pricing and lead time.</p>
+    </div>
+  </div>
+</article>
+<article class="prod reveal">
+  <div class="inner">
+    <div class="shot"><img src="../../photos/automotive/hpa-b325.png" alt="HPA-Faip B325 Wheel Balancer" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
+    <div class="body">
+      <span class="brandtag hpa">HPA-Faip</span>
+      <h3>TV Monitor Wheel Balancer <span class="mdl">&mdash; B325</span></h3>
+      <p class="await">Full specifications <b>to follow</b> &mdash; contact us for the data sheet, pricing and lead time.</p>
+    </div>
+  </div>
+</article>
+
+<div class="grouphead"><h2>HPA-Faip &mdash; Tyre Changers</h2><p>Four models, 21&quot; single-phase through 24&quot; three-phase.</p></div>
+<article class="prod reveal">
+  <div class="inner">
+    <div class="shot"><img src="../../photos/automotive/hpa-m31.png" alt="HPA-Faip M31 Tyre Changer" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
+    <div class="body">
+      <span class="brandtag hpa">HPA-Faip</span>
+      <h3>Tyre Changer <span class="mdl">&mdash; M31 &middot; 21&quot; 1ph</span></h3>
+      <p class="await">Full specifications <b>to follow</b> &mdash; contact us for the data sheet, pricing and lead time.</p>
+    </div>
+  </div>
+</article>
+<article class="prod reveal">
+  <div class="inner">
+    <div class="shot"><img src="../../photos/automotive/hpa-m54.png" alt="HPA-Faip M54 Tyre Changer" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
+    <div class="body">
+      <span class="brandtag hpa">HPA-Faip</span>
+      <h3>Tyre Changer <span class="mdl">&mdash; M54 &middot; 24&quot; 1 or 3ph</span></h3>
+      <p class="await">Full specifications <b>to follow</b> &mdash; contact us for the data sheet, pricing and lead time.</p>
+    </div>
+  </div>
+</article>
+<article class="prod reveal">
+  <div class="inner">
+    <div class="shot"><img src="../../photos/automotive/hpa-m422.png" alt="HPA-Faip M422 Tyre Changer" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
+    <div class="body">
+      <span class="brandtag hpa">HPA-Faip</span>
+      <h3>Tyre Changer <span class="mdl">&mdash; M422 &middot; 22&quot; 3ph</span></h3>
+      <p class="await">Full specifications <b>to follow</b> &mdash; contact us for the data sheet, pricing and lead time.</p>
+    </div>
+  </div>
+</article>
+<article class="prod reveal">
+  <div class="inner">
+    <div class="shot"><img src="../../photos/automotive/hpa-m424.png" alt="HPA-Faip M424 Tyre Changer" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
+    <div class="body">
+      <span class="brandtag hpa">HPA-Faip</span>
+      <h3>Tyre Changer <span class="mdl">&mdash; M424 &middot; 24&quot; 3ph</span></h3>
+      <p class="await">Full specifications <b>to follow</b> &mdash; contact us for the data sheet, pricing and lead time.</p>
+    </div>
+  </div>
+</article>
+
+<div class="grouphead"><h2>HPA-Faip &mdash; Wheel Alignment</h2><p>Two-camera 3D alignment, standard and i-Next.</p></div>
+<article class="prod reveal">
+  <div class="inner">
+    <div class="shot"><img src="../../photos/automotive/hpa-c880-std.png" alt="HPA-Faip C880 STD Wheel Alignment" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
+    <div class="body">
+      <span class="brandtag hpa">HPA-Faip</span>
+      <h3>3D Wheel Alignment System <span class="mdl">&mdash; C880 STD &middot; 2 camera</span></h3>
+      <p class="await">Full specifications <b>to follow</b> &mdash; contact us for the data sheet, pricing and lead time.</p>
+    </div>
+  </div>
+</article>
+<article class="prod reveal">
+  <div class="inner">
+    <div class="shot"><img src="../../photos/automotive/hpa-c880-inext.png" alt="HPA-Faip C880 i-Next Wheel Alignment" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
+    <div class="body">
+      <span class="brandtag hpa">HPA-Faip</span>
+      <h3>3D Wheel Alignment System <span class="mdl">&mdash; C880 i-Next &middot; 2 camera</span></h3>
+      <p class="await">Full specifications <b>to follow</b> &mdash; contact us for the data sheet, pricing and lead time.</p>
     </div>
   </div>
 </article>

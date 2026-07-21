@@ -18,6 +18,33 @@ relatively.
 
 
 --------------------------------------------------
+HPA-Faip TYRE SERVICE  (/automotive/tyre-service/)
+--------------------------------------------------
+Fourteen HPA-Faip models are listed with their photo slots already
+wired. Drop a PNG with the EXACT filename into /photos/automotive/ and
+it replaces the "Photo to follow" placeholder. Cut-out product shot on
+white, ~800px wide; the card contains rather than crops it.
+
+Specifications for all fourteen are still outstanding - each card shows
+a "Full specifications to follow" line until the spec tables are added.
+
+hpa-b35.png       B35 Digital Wheel Balancer          [NEEDED]
+hpa-b45.png       B45 Digital Wheel Balancer          [NEEDED]
+hpa-b50.png       B50 TV Monitor Wheel Balancer       [NEEDED]
+hpa-b55.png       B55 Digital Wheel Balancer          [NEEDED]
+hpa-b60.png       B60 TV Monitor Wheel Balancer       [NEEDED]
+hpa-b75.png       B75 Digital Wheel Balancer (Truck)  [NEEDED]
+hpa-b225.png      B225 Digital Wheel Balancer         [NEEDED]
+hpa-b325.png      B325 TV Monitor Wheel Balancer      [NEEDED]
+hpa-m31.png       M31 Tyre Changer 21" 1ph            [NEEDED]
+hpa-m54.png       M54 Tyre Changer 24" 1 or 3ph       [NEEDED]
+hpa-m422.png      M422 Tyre Changer 22" 3ph           [NEEDED]
+hpa-m424.png      M424 Tyre Changer 24" 3ph           [NEEDED]
+hpa-c880-std.png  C880 STD 3D Wheel Alignment         [NEEDED]
+hpa-c880-inext.png C880 i-Next 3D Wheel Alignment     [NEEDED]
+
+
+--------------------------------------------------
 COMPANY LOGOS  (header of each company's pages)
 --------------------------------------------------
 Each company site's header has a fixed logo slot. Drop a PNG with the
@@ -90,14 +117,11 @@ AUTOMOTIVE  (/automotive/)
 --------------------------------------------------
 hero-automotive.jpg       Page hero — busy workshop
 auto-workshop.jpg         Intro section — garage fitted with our kit
-auto-car-air-condition.jpg    Product card — A/C service unit
-auto-engine-analyzer.jpg      Product card — engine diagnostic tool
-auto-gas-analyzer.jpg         Product card — four gas analyser
-auto-injector.jpg             Product card — injector test/clean bench
-auto-lift.jpg                 Product card — two-post or scissor lift
-auto-opacimeter.jpg           Product card — opacimeter / smoke meter
-auto-tire-service.jpg         Product card — tyre changer or balancer
-auto-lube-oil.jpg             Product card — lubrication / oil equipment
+
+The eight auto-*.jpg product cards that used to sit here are gone. The
+Products & Services page now indexes the four catalogue sub-pages
+instead, using the real product shots already in /photos/automotive/,
+so no placeholder slots remain on that page.
 
 
 --------------------------------------------------
