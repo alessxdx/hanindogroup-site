@@ -40,31 +40,30 @@ img{max-width:100%;display:block}
 
 /* ---------- HEADER (Hanindo two-row — kept) ---------- */
 .topbar{background:var(--white);border-bottom:1px solid var(--line)}
-.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.2rem;min-height:86px;padding-top:.6rem;padding-bottom:.6rem}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.2rem;min-height:82px;padding-top:.6rem;padding-bottom:.6rem}
 .brand{display:flex;align-items:center;gap:.8rem}
-.brand img{height:50px;width:auto}
+.brand img{height:44px;width:auto}
 .brand .btxt strong{font-weight:800;color:#42506a;font-size:1.28rem;display:block;line-height:1.1}
 .brand .btxt span{font-weight:700;font-size:.72rem;letter-spacing:.03em;text-transform:uppercase;color:var(--crimson);display:block}
 .top-right{display:flex;align-items:center;gap:1.3rem}
-.callcenter{font-size:.9rem;color:var(--navy-700);font-weight:600;white-space:nowrap}
-.callcenter b{color:var(--crimson)}
-.searchbox{display:flex;height:40px}
-.searchbox input{border:1px solid var(--line);border-right:0;border-radius:6px 0 0 6px;padding:0 .9rem;font-family:var(--font);font-size:.88rem;width:180px;outline:none;background:var(--paper)}
+.callcenter{font-size:.86rem;color:var(--muted);font-weight:500;white-space:nowrap}
+.callcenter b{color:var(--navy-800);font-weight:700}
+.searchbox{display:flex;height:38px}
+.searchbox input{border:1px solid var(--line);border-right:0;border-radius:var(--r) 0 0 var(--r);padding:0 .9rem;font-family:var(--font);font-size:.86rem;width:170px;outline:none;background:var(--white)}
 .searchbox input:focus{border-color:var(--navy-700)}
-.searchbox button{border:0;background:var(--navy-800);color:#fff;padding:0 .95rem;border-radius:0 6px 6px 0;cursor:pointer;display:flex;align-items:center}
+.searchbox button{border:0;background:var(--navy-800);color:#fff;padding:0 .9rem;border-radius:0 var(--r) var(--r) 0;cursor:pointer;display:flex;align-items:center}
 .searchbox button:hover{background:var(--crimson)}
-.searchbox button svg{width:16px;height:16px;fill:none;stroke:#fff;stroke-width:2}
+.searchbox button svg{width:15px;height:15px;fill:none;stroke:#fff;stroke-width:2}
 .langtoggle{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;flex:none;height:40px}
 .langtoggle button{border:0;background:var(--white);color:var(--muted);font-family:var(--font);font-weight:700;font-size:.8rem;padding:0 .7rem;cursor:pointer;transition:.15s;line-height:1}
 .langtoggle button+button{border-left:1px solid var(--line)}
 .langtoggle button:hover{background:var(--paper);color:var(--navy-800)}
 .langtoggle button.active{background:var(--navy-800);color:#fff}
 /* two-logo header: group lockup | Citra logo + small dept label; EN/ID stacked under search */
-.cobrand .deptlabel{margin-left:.6rem;font-weight:800;font-size:.6rem;letter-spacing:.09em;text-transform:uppercase;color:var(--crimson);line-height:1.3}
-.searchstack{display:flex;flex-direction:column;align-items:flex-end;gap:.3rem}
-.searchstack .searchbox{height:34px}
-.searchstack .langtoggle{height:24px;border-radius:6px}
-.searchstack .langtoggle button{font-size:.68rem;padding:0 .55rem}
+.cobrand .deptlabel{margin-left:.6rem;font-weight:800;font-size:.6rem;letter-spacing:.09em;text-transform:uppercase;color:var(--crimson);line-height:1.3;white-space:nowrap}
+.searchstack{display:flex;flex-direction:column;align-items:flex-end;gap:.25rem}
+.searchstack .langtoggle{height:22px;border-radius:6px}
+.searchstack .langtoggle button{font-size:.66rem;padding:0 .5rem}
 @media(max-width:860px){.topbar .top-right{display:flex;gap:.7rem}.topbar .top-right .callcenter,.topbar .top-right .searchbox{display:none}}
 .navbar{position:sticky;top:0;z-index:100;background:var(--navy-800);box-shadow:0 6px 20px -12px rgba(0,0,0,.5)}
 .navbar .wrap{display:flex;align-items:stretch;justify-content:space-between}
