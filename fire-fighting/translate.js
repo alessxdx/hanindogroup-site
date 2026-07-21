@@ -202,7 +202,23 @@
     "Supply & installation of foam system.": "Pengadaan & pemasangan sistem busa.",
     "Rail Infrastructure": "Infrastruktur Perkeretaapian",
     "West Sumatera": "Sumatera Barat",
-    "Complete site fire-protection delivery for the Directorate General of Railways.": "Pengerjaan proteksi kebakaran lokasi secara lengkap untuk Direktorat Jenderal Perkeretaapian."
+    "Complete site fire-protection delivery for the Directorate General of Railways.": "Pengerjaan proteksi kebakaran lokasi secara lengkap untuk Direktorat Jenderal Perkeretaapian.",
+    "Power": "Kelistrikan",
+    "Hanindo Citra designed and built a complete hydrant system for PLN UID Lampung. The project covered the supply, installation, testing, and commissioning of the fire protection system, ensuring compliance with project specifications and applicable fire-safety standards.": "Hanindo Citra merancang dan membangun sistem hidran lengkap untuk PLN UID Lampung. Proyek ini mencakup pengadaan, pemasangan, pengujian, dan komisioning sistem proteksi kebakaran, dengan memastikan kesesuaian terhadap spesifikasi proyek dan standar keselamatan kebakaran yang berlaku.",
+
+    /* ---- project detail modals ---- */
+    "Project Overview": "Ikhtisar Proyek",
+    "Project Gallery": "Galeri Proyek",
+    "Show all photos": "Tampilkan semua foto",
+    "Show fewer photos": "Tampilkan lebih sedikit foto",
+    "Project Details": "Detail Proyek",
+    "Client": "Klien",
+    "Project Duration": "Durasi Proyek",
+    "Completed": "Selesai",
+    "Key Equipment": "Peralatan Utama",
+    "Component": "Komponen",
+    "Brand": "Merek",
+    "View details": "Lihat detail"
   };
 
   var store = null;

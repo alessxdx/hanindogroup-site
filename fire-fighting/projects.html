@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607201800" />
-<link rel="stylesheet" href="../assets/fire-fighting.css?v=202607201800" />
+<link rel="stylesheet" href="../assets/fire-fighting.css?v=202607211800" />
 </head>
 <body>
 <!-- ============ SITE HEADER (Hanindo two-row — kept) ============ -->
@@ -65,11 +65,15 @@
         <div class="pimg"><img src="photos/proj-glb.jpg" alt="PT. GLB Indonesia hydrant system pump installation" style="object-position:center 50%" /><span class="sector">Industrial</span></div>
         <div class="body"><h4>PT. GLB Indonesia</h4><div class="loc">Indonesia</div><p class="scope">Design &amp; build of hydrant system.</p><span class="proj-more">View details <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
       </div>
-      <div class="proj reveal d2">
+      <div class="proj reveal d2 proj-click" data-modal="pmodal-pln" role="button" tabindex="0" aria-haspopup="dialog">
+        <div class="pimg"><img src="photos/proj-pln.jpg" alt="PLN UID Lampung fire pump house piping and control panels" style="object-position:center 45%" /><span class="sector">Power</span></div>
+        <div class="body"><h4>PLN UID Lampung</h4><div class="loc">Lampung, Indonesia</div><p class="scope">Design &amp; build of hydrant system.</p><span class="proj-more">View details <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+      </div>
+      <div class="proj reveal">
         <div class="pimg"><img src="photos/proj-lpg.jpg" alt="LPG spherical storage tanks, Lombok" style="object-position:center 30%" /><span class="sector">Oil &amp; Gas</span></div>
         <div class="body"><h4>LPG Petroleum Storage</h4><div class="loc">Lombok, Indonesia</div><p class="scope">Alarm, hydrant, sprinkler &amp; deluge systems.</p></div>
       </div>
-      <div class="proj reveal">
+      <div class="proj reveal d1">
         <div class="pimg"><img src="photos/proj-akr.jpg" alt="Foam system vessel installation at AKR fuel storage, Pontianak" style="object-position:center 32%" /><span class="sector">Oil &amp; Gas</span></div>
         <div class="body"><h4>AKR Fuel Storage</h4><div class="loc">Pontianak, Sei Nipah</div><p class="scope">Supply &amp; installation of foam system.</p></div>
       </div>
@@ -146,6 +150,49 @@
   </div>
 </div>
 
+<div class="pmodal" id="pmodal-pln" aria-hidden="true">
+  <div class="pmodal-backdrop" data-close></div>
+  <div class="pmodal-box" role="dialog" aria-modal="true" aria-labelledby="ppln-title">
+    <div class="pmodal-head">
+      <button class="pmodal-x" type="button" data-close aria-label="Close">&times;</button>
+      <span class="pmodal-tag">Power</span>
+      <h3 id="ppln-title">PLN UID Lampung</h3>
+      <div class="pmodal-loc">Lampung, Indonesia</div>
+    </div>
+    <div class="pmodal-body">
+      <h4>Project Overview</h4>
+      <p>Hanindo Citra designed and built a complete hydrant system for PLN UID Lampung. The project covered the supply, installation, testing, and commissioning of the fire protection system, ensuring compliance with project specifications and applicable fire-safety standards.</p>
+      <h4>Project Gallery</h4>
+      <div class="pgallery" id="pgallery-pln">
+        <a href="photos/proj-pln.jpg" target="_blank" rel="noopener"><img src="photos/proj-pln.jpg" alt="Fire pump house piping and control panels" loading="lazy" /></a>
+        <a href="photos/proj-pln-7.jpg" target="_blank" rel="noopener"><img src="photos/proj-pln-7.jpg" alt="Valve assemblies and diesel fire pump" loading="lazy" /></a>
+        <a href="photos/proj-pln-8.jpg" target="_blank" rel="noopener"><img src="photos/proj-pln-8.jpg" alt="Hydrant pillar and hydrant box on site" loading="lazy" /></a>
+        <a class="more" href="photos/proj-pln-3.jpg" target="_blank" rel="noopener"><img src="photos/proj-pln-3.jpg" alt="Q-Fire hydrant pillar and hydrant box" loading="lazy" /></a>
+        <a class="more" href="photos/proj-pln-4.jpg" target="_blank" rel="noopener"><img src="photos/proj-pln-4.jpg" alt="Fire pump and riser piping" loading="lazy" /></a>
+        <a class="more" href="photos/proj-pln-5.jpg" target="_blank" rel="noopener"><img src="photos/proj-pln-5.jpg" alt="Water reservoir under construction" loading="lazy" /></a>
+        <a class="more" href="photos/proj-pln-6.jpg" target="_blank" rel="noopener"><img src="photos/proj-pln-6.jpg" alt="Riser and valve installation" loading="lazy" /></a>
+      </div>
+      <button class="pgallery-btn" type="button" data-gallery="pgallery-pln"><span class="sa">Show all photos</span><span class="sf">Show fewer photos</span></button>
+      <h4>Project Details</h4>
+      <table class="ptable">
+        <tr><th>Client</th><td>PLN UID Lampung</td></tr>
+        <tr><th>System</th><td>Hydrant System</td></tr>
+        <tr><th>Project Duration</th><td>January 2019 – September 2019</td></tr>
+        <tr><th>Status</th><td><span class="pill-done">Completed</span></td></tr>
+      </table>
+      <h4>Key Equipment</h4>
+      <table class="ptable">
+        <thead><tr><th>Component</th><th>Brand</th></tr></thead>
+        <tbody>
+          <tr><td>Fire Fighting Pump</td><td>Aurora (UL/FM)</td></tr>
+          <tr><td>UL/FM Valves</td><td>Weflo</td></tr>
+          <tr><td>Hydrant Pillar</td><td>Q-Fire</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
 <footer class="footer">
   <div class="wrap">
     <div class="foot-grid">
@@ -207,6 +254,12 @@ window.addEventListener('scroll',function(){if(!tick){requestAnimationFrame(upd)
     m.addEventListener('click',function(e){if(e.target===m||(e.target.hasAttribute&&e.target.hasAttribute('data-close')))close(m);});
   });
   document.addEventListener('keydown',function(e){if(e.key==='Escape'){[].slice.call(document.querySelectorAll('.pmodal.open')).forEach(close);}});
+  [].slice.call(document.querySelectorAll('.pgallery-btn')).forEach(function(b){
+    b.addEventListener('click',function(){
+      var g=document.getElementById(b.getAttribute('data-gallery'));if(!g)return;
+      var x=g.classList.toggle('expanded');b.classList.toggle('expanded',x);
+    });
+  });
 })();
 </script>
 <script src="translate.js"></script>

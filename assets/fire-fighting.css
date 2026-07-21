@@ -464,6 +464,19 @@ body.on-contact>.section.contact#contact{display:none}
 .ptable tbody tr:nth-child(even) td{background:#fafbfd}
 .pill-done{display:inline-block;background:#e7f7ee;color:#1b8a4b;font-weight:700;font-size:.82rem;padding:.2rem .6rem;border-radius:6px}
 @media(max-width:520px){.pmodal-head,.pmodal-body{padding-left:1.2rem;padding-right:1.2rem}}
+/* modal project gallery */
+.pgallery{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem}
+@media(max-width:520px){.pgallery{grid-template-columns:repeat(2,1fr)}}
+.pgallery a{display:block;border-radius:10px;overflow:hidden;border:1px solid var(--line)}
+.pgallery img{width:100%;height:120px;object-fit:cover;display:block;transition:transform .25s}
+.pgallery a:hover img{transform:scale(1.05)}
+.pgallery a.more{display:none}
+.pgallery.expanded a.more{display:block}
+.pgallery-btn{margin-top:.85rem;padding:.55rem 1.1rem;border-radius:var(--r);border:1px solid var(--line);background:#fff;color:var(--crimson);font-weight:700;font-size:.88rem;cursor:pointer}
+.pgallery-btn:hover{border-color:var(--crimson)}
+.pgallery-btn .sf{display:none}
+.pgallery-btn.expanded .sa{display:none}
+.pgallery-btn.expanded .sf{display:inline}
 
 /* ---------- BRIDGE TO THE SHARED TOKENS ----------
    Any site.css component this file does not override still reads the
