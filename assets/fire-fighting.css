@@ -501,6 +501,7 @@ body{line-height:1.65}
 /* flat, sharp, no lift — matching the rest of the site */
 .certcard,.isocard,.proj,.wccard,.vm-card,.pmodal-box,.aphoto,.pcard,.syscard,.tile{border-radius:var(--r)}
 .certcard,.isocard,.proj,.wccard,.pcard{box-shadow:none;border:1px solid var(--line)}
+.wccard{border-top-color:var(--crimson)}
 .proj:hover,.isocard:hover,.wccard:hover,.certcard:hover,.pcard:hover,.syscard:hover{transform:none;box-shadow:none;border-color:var(--crimson)}
 .pstep .n,.mlist .n{box-shadow:none;border-radius:var(--r)}
 .btn-fire{background:var(--crimson);box-shadow:none}
