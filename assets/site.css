@@ -91,6 +91,16 @@ img{max-width:100%;display:block}
 .tile:hover img{transform:scale(1.05)}
 .tile::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(4,32,58,.85))}
 .tile span{position:absolute;left:.9rem;bottom:.8rem;right:.9rem;z-index:2;color:#fff;font-weight:700;font-size:1rem;line-height:1.25}
+/* single-row tile strip with an advance button */
+.tilestrip{position:relative;margin-top:1.6rem}
+.tilestrip .strip{display:flex;gap:.8rem;overflow-x:auto;scroll-behavior:smooth;scrollbar-width:none;-ms-overflow-style:none}
+.tilestrip .strip::-webkit-scrollbar{display:none}
+.tilestrip .tile{flex:none;width:190px}
+.tilestrip .tile span{font-size:.88rem;left:.7rem;bottom:.6rem;right:.7rem}
+.stripmore{position:absolute;right:-6px;top:50%;transform:translateY(-50%);z-index:3;width:42px;height:42px;border-radius:50%;border:0;background:var(--brand);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px -10px rgba(0,0,0,.55);transition:background .15s}
+.stripmore:hover{background:var(--brand-600)}
+.stripmore svg{width:18px;height:18px;fill:none;stroke:#fff;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.section.compact .split .shot{min-height:240px}
 /* company overview: sole-distributor principal list */
 .plist-lead{margin-top:1.2rem;font-weight:700;color:var(--blue-800);font-size:.95rem}
 .plist{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.5rem 1.4rem;margin-top:.8rem}
