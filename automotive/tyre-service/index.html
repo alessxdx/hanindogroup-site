@@ -63,6 +63,17 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
 .catnav a{font-size:.86rem;font-weight:600;padding:.5rem 1rem;border:1px solid var(--line);border-radius:var(--r);color:var(--blue-800);transition:border-color .15s,color .15s}
 .catnav a:hover{border-color:var(--brand);color:var(--brand)}
 .catnav a.on{background:var(--blue-800);color:#fff;border-color:var(--blue-800)}
+/* Brand filter. HPA-Faip leads by default; "All models" restores the full
+   list. Purely client-side — every card stays in the markup so the page
+   still reads complete without JavaScript. */
+.filterbar{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2rem}
+.filterbar button{font-family:var(--font);font-size:.86rem;font-weight:600;padding:.5rem 1rem;
+  border:1px solid var(--line);border-radius:var(--r);background:var(--white);color:var(--blue-800);
+  cursor:pointer;transition:border-color .15s,color .15s,background .15s}
+.filterbar button:hover{border-color:var(--brand);color:var(--brand)}
+.filterbar button.on{background:var(--blue-800);color:#fff;border-color:var(--blue-800)}
+.filterbar button span{opacity:.6;font-weight:600;margin-left:.3rem}
+.filterbar button.on span{opacity:.75}
 </style>
 </head>
 <body>
@@ -123,116 +134,16 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
   <a href="../service/">Service Equipment</a>
   <a href="../welding/">Welding</a>
 </div>
-    <p class="lede" style="margin-bottom:1.8rem">19 models. Specifications are taken from the Hanindo Automotive catalogue — contact us for pricing, lead time and installation.</p>
+    <p class="lede" style="margin-bottom:1.8rem">Nineteen models from HPA-Faip and WELDANN. Specifications are taken from the Hanindo Automotive catalogue — contact us for pricing, lead time and installation.</p>
 
-<div class="grouphead"><h2>WELDANN</h2><p>Five models &mdash; tyre changers, wheel balancers and 3D alignment.</p></div>
-<article class="prod reveal">
-  <div class="inner">
-    <div class="shot"><img src="../../photos/automotive/weldann-si003.png" alt="Weldann SI003 Semi-Automatic Car Tyre Changer" onerror="this.style.display='none'" /></div>
-    <div class="body">
-      <span class="brandtag ">Weldann</span>
-      <h3>Semi-Automatic Car Tyre Changer <span class="mdl">— SI003</span></h3>
-      <table class="spectable">
-        <tr><td>Inner clamping size</td><td>13&quot;–25&quot;</td></tr>
-        <tr><td>Outer clamping size</td><td>11&quot;–23&quot;</td></tr>
-        <tr><td>Max wheel diameter</td><td>1030 mm</td></tr>
-        <tr><td>Max wheel width</td><td>340 mm</td></tr>
-        <tr><td>Operating pressure</td><td>8–10 bar</td></tr>
-        <tr><td>Motor power</td><td>220 V / 1.1 kW · 380 V × 0.75 kW</td></tr>
-        <tr><td>Packaging size</td><td>760 × 980 × 860 mm</td></tr>
-        <tr><td>Net weight</td><td>165 kg</td></tr>
-        <tr><td>Gross weight</td><td>184 kg</td></tr>
-      </table>
-    </div>
-  </div>
-</article>
-<article class="prod reveal">
-  <div class="inner">
-    <div class="shot"><img src="../../photos/automotive/weldann-si118.png" alt="Weldann SI118 Automatic Tilt-Back Car Tyre Changer" onerror="this.style.display='none'" /></div>
-    <div class="body">
-      <span class="brandtag ">Weldann</span>
-      <h3>Automatic Tilt-Back Car Tyre Changer <span class="mdl">— SI118</span></h3>
-      <table class="spectable">
-        <tr><td>Inner clamping size</td><td>10&quot;–28&quot;</td></tr>
-        <tr><td>Outer clamping size</td><td>10&quot;–26&quot;</td></tr>
-        <tr><td>Max wheel diameter</td><td>1140 mm</td></tr>
-        <tr><td>Max wheel width</td><td>400 mm</td></tr>
-        <tr><td>Operating pressure</td><td>8–10 bar</td></tr>
-        <tr><td>Motor power</td><td>220 V / 1.1 kW · 380 V × 0.75 kW</td></tr>
-        <tr><td>Packaging size</td><td>1150 × 980 × 860 mm</td></tr>
-        <tr><td>Net weight</td><td>264 kg</td></tr>
-        <tr><td>Gross weight</td><td>297 kg</td></tr>
-      </table>
-    </div>
-  </div>
-</article>
-<article class="prod reveal">
-  <div class="inner">
-    <div class="shot"><img src="../../photos/automotive/weldann-s2023.png" alt="Weldann S2023 Semi-Automatic Car Wheel Balancer" onerror="this.style.display='none'" /></div>
-    <div class="body">
-      <span class="brandtag ">Weldann</span>
-      <h3>Semi-Automatic Car Wheel Balancer <span class="mdl">— S2023</span></h3>
-      <table class="spectable">
-        <tr><td>Rim diameter</td><td>10&quot;–28&quot; or 10&quot;–24&quot;</td></tr>
-        <tr><td>Max tyre diameter</td><td>1000 mm</td></tr>
-        <tr><td>Max tyre width</td><td>1.5&quot;–20&quot;</td></tr>
-        <tr><td>Max tyre weight</td><td>70 kg</td></tr>
-        <tr><td>Balancing accuracy</td><td>±1 g</td></tr>
-        <tr><td>Spinning speed</td><td>200 rpm</td></tr>
-        <tr><td>Motor power</td><td>250 W</td></tr>
-        <tr><td>Power supply</td><td>220 V</td></tr>
-        <tr><td>Net weight</td><td>86 kg</td></tr>
-        <tr><td>Gross weight</td><td>105 kg</td></tr>
-      </table>
-    </div>
-  </div>
-</article>
-<article class="prod reveal">
-  <div class="inner">
-    <div class="shot"><img src="../../photos/automotive/weldann-s2228.png" alt="Weldann S2228 Automatic Car Wheel Balancer with LCD Display" onerror="this.style.display='none'" /></div>
-    <div class="body">
-      <span class="brandtag ">Weldann</span>
-      <h3>Automatic Car Wheel Balancer with LCD Display <span class="mdl">— S2228</span></h3>
-      <table class="spectable">
-        <tr><td>Rim diameter</td><td>10&quot;–24&quot;</td></tr>
-        <tr><td>Max tyre diameter</td><td>1000 mm</td></tr>
-        <tr><td>Max tyre width</td><td>1.5&quot;–20&quot;</td></tr>
-        <tr><td>Max tyre weight</td><td>65 kg</td></tr>
-        <tr><td>Balancing accuracy</td><td>±1 g</td></tr>
-        <tr><td>Spinning speed</td><td>200 rpm</td></tr>
-        <tr><td>Motor power</td><td>240 W</td></tr>
-        <tr><td>Power supply</td><td>220 V</td></tr>
-        <tr><td>Net weight</td><td>115 kg</td></tr>
-        <tr><td>Gross weight</td><td>135 kg</td></tr>
-      </table>
-    </div>
-  </div>
-</article>
-<article class="prod reveal">
-  <div class="inner">
-    <div class="shot"><img src="../../photos/automotive/weldann-s3015.png" alt="Weldann S3015 3D Wheel Alignment System" onerror="this.style.display='none'" /></div>
-    <div class="body">
-      <span class="brandtag ">Weldann</span>
-      <h3>3D Wheel Alignment System <span class="mdl">— S3015</span></h3>
-      <table class="spectable">
-        <tr><td>Display precision</td><td>0.1 mm / 0.01°</td></tr>
-        <tr><td>Total toe</td><td>±0.01°  (range ±40°)</td></tr>
-        <tr><td>Camber</td><td>±0.01°  (range ±45°)</td></tr>
-        <tr><td>Caster</td><td>±0.02°  (range ±45°)</td></tr>
-        <tr><td>S.A.I</td><td>±0.01°  (range ±45°)</td></tr>
-        <tr><td>Thrust</td><td>±0.01°  (range ±40°)</td></tr>
-        <tr><td>Set back</td><td>±0.01°  (range ±40°)</td></tr>
-        <tr><td>Max steering</td><td>±0.02°  (range ±50°)</td></tr>
-        <tr><td>Track width</td><td>±2 mm  (range 1219–2439 mm)</td></tr>
-        <tr><td>Wheelbase</td><td>±2 mm  (range 2006–4572 mm)</td></tr>
-      </table>
-    </div>
-  </div>
-</article>
+<div class="filterbar" role="group" aria-label="Filter by brand">
+  <button type="button" data-filter="hpa" class="on" aria-pressed="true">HPA-Faip <span>14</span></button>
+  <button type="button" data-filter="weldann" aria-pressed="false">WELDANN <span>5</span></button>
+  <button type="button" data-filter="all" aria-pressed="false">All models <span>19</span></button>
+</div>
 
-
-<div class="grouphead"><h2>HPA-Faip &mdash; Wheel Balancers</h2><p>Eight models, digital and TV-monitor, car through truck.</p></div>
-<article class="prod reveal">
+<div class="grouphead" data-brand="hpa"><h2>HPA-Faip &mdash; Wheel Balancers</h2><p>Eight models, digital and TV-monitor, car through truck.</p></div>
+<article class="prod reveal" data-brand="hpa">
   <div class="inner">
     <div class="shot"><img src="../../photos/automotive/hpa-b35.png" alt="HPA-Faip B35 Wheel Balancer" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
     <div class="body">
@@ -242,7 +153,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     </div>
   </div>
 </article>
-<article class="prod reveal">
+<article class="prod reveal" data-brand="hpa">
   <div class="inner">
     <div class="shot"><img src="../../photos/automotive/hpa-b45.png" alt="HPA-Faip B45 Wheel Balancer" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
     <div class="body">
@@ -252,7 +163,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     </div>
   </div>
 </article>
-<article class="prod reveal">
+<article class="prod reveal" data-brand="hpa">
   <div class="inner">
     <div class="shot"><img src="../../photos/automotive/hpa-b50.png" alt="HPA-Faip B50 Wheel Balancer" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
     <div class="body">
@@ -262,7 +173,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     </div>
   </div>
 </article>
-<article class="prod reveal">
+<article class="prod reveal" data-brand="hpa">
   <div class="inner">
     <div class="shot"><img src="../../photos/automotive/hpa-b55.png" alt="HPA-Faip B55 Wheel Balancer" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
     <div class="body">
@@ -284,7 +195,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     </div>
   </div>
 </article>
-<article class="prod reveal">
+<article class="prod reveal" data-brand="hpa">
   <div class="inner">
     <div class="shot"><img src="../../photos/automotive/hpa-b60.png" alt="HPA-Faip B60 Wheel Balancer" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
     <div class="body">
@@ -306,7 +217,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     </div>
   </div>
 </article>
-<article class="prod reveal">
+<article class="prod reveal" data-brand="hpa">
   <div class="inner">
     <div class="shot"><img src="../../photos/automotive/hpa-b75.png" alt="HPA-Faip B75 Wheel Balancer" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
     <div class="body">
@@ -330,7 +241,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     </div>
   </div>
 </article>
-<article class="prod reveal">
+<article class="prod reveal" data-brand="hpa">
   <div class="inner">
     <div class="shot"><img src="../../photos/automotive/hpa-b225.png" alt="HPA-Faip B225 Wheel Balancer" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
     <div class="body">
@@ -359,7 +270,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     </div>
   </div>
 </article>
-<article class="prod reveal">
+<article class="prod reveal" data-brand="hpa">
   <div class="inner">
     <div class="shot"><img src="../../photos/automotive/hpa-b325.png" alt="HPA-Faip B325 Wheel Balancer" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
     <div class="body">
@@ -389,8 +300,8 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
   </div>
 </article>
 
-<div class="grouphead"><h2>HPA-Faip &mdash; Tyre Changers</h2><p>Four models, 21&quot; single-phase through 24&quot; three-phase.</p></div>
-<article class="prod reveal">
+<div class="grouphead" data-brand="hpa"><h2>HPA-Faip &mdash; Tyre Changers</h2><p>Four models, 21&quot; single-phase through 24&quot; three-phase.</p></div>
+<article class="prod reveal" data-brand="hpa">
   <div class="inner">
     <div class="shot"><img src="../../photos/automotive/hpa-m31.png" alt="HPA-Faip M31 Tyre Changer" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
     <div class="body">
@@ -400,7 +311,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     </div>
   </div>
 </article>
-<article class="prod reveal">
+<article class="prod reveal" data-brand="hpa">
   <div class="inner">
     <div class="shot"><img src="../../photos/automotive/hpa-m54.png" alt="HPA-Faip M54 Tyre Changer" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
     <div class="body">
@@ -410,7 +321,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     </div>
   </div>
 </article>
-<article class="prod reveal">
+<article class="prod reveal" data-brand="hpa">
   <div class="inner">
     <div class="shot"><img src="../../photos/automotive/hpa-m422.png" alt="HPA-Faip M422 Tyre Changer" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
     <div class="body">
@@ -420,7 +331,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     </div>
   </div>
 </article>
-<article class="prod reveal">
+<article class="prod reveal" data-brand="hpa">
   <div class="inner">
     <div class="shot"><img src="../../photos/automotive/hpa-m424.png" alt="HPA-Faip M424 Tyre Changer" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
     <div class="body">
@@ -431,8 +342,8 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
   </div>
 </article>
 
-<div class="grouphead"><h2>HPA-Faip &mdash; Wheel Alignment</h2><p>Two-camera 3D alignment, standard and i-Next.</p></div>
-<article class="prod reveal">
+<div class="grouphead" data-brand="hpa"><h2>HPA-Faip &mdash; Wheel Alignment</h2><p>Two-camera 3D alignment, standard and i-Next.</p></div>
+<article class="prod reveal" data-brand="hpa">
   <div class="inner">
     <div class="shot"><img src="../../photos/automotive/hpa-c880-std.png" alt="HPA-Faip C880 STD Wheel Alignment" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
     <div class="body">
@@ -442,7 +353,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     </div>
   </div>
 </article>
-<article class="prod reveal">
+<article class="prod reveal" data-brand="hpa">
   <div class="inner">
     <div class="shot"><img src="../../photos/automotive/hpa-c880-inext.png" alt="HPA-Faip C880 i-Next Wheel Alignment" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="soon" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo to follow</span></div></div>
     <div class="body">
@@ -453,7 +364,113 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
   </div>
 </article>
 
-    <p style="margin-top:1.8rem"><a class="btn btn-fire" href="../contact.html">Request a quotation <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+    <div class="grouphead" data-brand="weldann"><h2>WELDANN</h2><p>Five models &mdash; tyre changers, wheel balancers and 3D alignment.</p></div>
+<article class="prod reveal" data-brand="weldann">
+  <div class="inner">
+    <div class="shot"><img src="../../photos/automotive/weldann-si003.png" alt="Weldann SI003 Semi-Automatic Car Tyre Changer" onerror="this.style.display='none'" /></div>
+    <div class="body">
+      <span class="brandtag ">Weldann</span>
+      <h3>Semi-Automatic Car Tyre Changer <span class="mdl">— SI003</span></h3>
+      <table class="spectable">
+        <tr><td>Inner clamping size</td><td>13&quot;–25&quot;</td></tr>
+        <tr><td>Outer clamping size</td><td>11&quot;–23&quot;</td></tr>
+        <tr><td>Max wheel diameter</td><td>1030 mm</td></tr>
+        <tr><td>Max wheel width</td><td>340 mm</td></tr>
+        <tr><td>Operating pressure</td><td>8–10 bar</td></tr>
+        <tr><td>Motor power</td><td>220 V / 1.1 kW · 380 V × 0.75 kW</td></tr>
+        <tr><td>Packaging size</td><td>760 × 980 × 860 mm</td></tr>
+        <tr><td>Net weight</td><td>165 kg</td></tr>
+        <tr><td>Gross weight</td><td>184 kg</td></tr>
+      </table>
+    </div>
+  </div>
+</article>
+<article class="prod reveal" data-brand="weldann">
+  <div class="inner">
+    <div class="shot"><img src="../../photos/automotive/weldann-si118.png" alt="Weldann SI118 Automatic Tilt-Back Car Tyre Changer" onerror="this.style.display='none'" /></div>
+    <div class="body">
+      <span class="brandtag ">Weldann</span>
+      <h3>Automatic Tilt-Back Car Tyre Changer <span class="mdl">— SI118</span></h3>
+      <table class="spectable">
+        <tr><td>Inner clamping size</td><td>10&quot;–28&quot;</td></tr>
+        <tr><td>Outer clamping size</td><td>10&quot;–26&quot;</td></tr>
+        <tr><td>Max wheel diameter</td><td>1140 mm</td></tr>
+        <tr><td>Max wheel width</td><td>400 mm</td></tr>
+        <tr><td>Operating pressure</td><td>8–10 bar</td></tr>
+        <tr><td>Motor power</td><td>220 V / 1.1 kW · 380 V × 0.75 kW</td></tr>
+        <tr><td>Packaging size</td><td>1150 × 980 × 860 mm</td></tr>
+        <tr><td>Net weight</td><td>264 kg</td></tr>
+        <tr><td>Gross weight</td><td>297 kg</td></tr>
+      </table>
+    </div>
+  </div>
+</article>
+<article class="prod reveal" data-brand="weldann">
+  <div class="inner">
+    <div class="shot"><img src="../../photos/automotive/weldann-s2023.png" alt="Weldann S2023 Semi-Automatic Car Wheel Balancer" onerror="this.style.display='none'" /></div>
+    <div class="body">
+      <span class="brandtag ">Weldann</span>
+      <h3>Semi-Automatic Car Wheel Balancer <span class="mdl">— S2023</span></h3>
+      <table class="spectable">
+        <tr><td>Rim diameter</td><td>10&quot;–28&quot; or 10&quot;–24&quot;</td></tr>
+        <tr><td>Max tyre diameter</td><td>1000 mm</td></tr>
+        <tr><td>Max tyre width</td><td>1.5&quot;–20&quot;</td></tr>
+        <tr><td>Max tyre weight</td><td>70 kg</td></tr>
+        <tr><td>Balancing accuracy</td><td>±1 g</td></tr>
+        <tr><td>Spinning speed</td><td>200 rpm</td></tr>
+        <tr><td>Motor power</td><td>250 W</td></tr>
+        <tr><td>Power supply</td><td>220 V</td></tr>
+        <tr><td>Net weight</td><td>86 kg</td></tr>
+        <tr><td>Gross weight</td><td>105 kg</td></tr>
+      </table>
+    </div>
+  </div>
+</article>
+<article class="prod reveal" data-brand="weldann">
+  <div class="inner">
+    <div class="shot"><img src="../../photos/automotive/weldann-s2228.png" alt="Weldann S2228 Automatic Car Wheel Balancer with LCD Display" onerror="this.style.display='none'" /></div>
+    <div class="body">
+      <span class="brandtag ">Weldann</span>
+      <h3>Automatic Car Wheel Balancer with LCD Display <span class="mdl">— S2228</span></h3>
+      <table class="spectable">
+        <tr><td>Rim diameter</td><td>10&quot;–24&quot;</td></tr>
+        <tr><td>Max tyre diameter</td><td>1000 mm</td></tr>
+        <tr><td>Max tyre width</td><td>1.5&quot;–20&quot;</td></tr>
+        <tr><td>Max tyre weight</td><td>65 kg</td></tr>
+        <tr><td>Balancing accuracy</td><td>±1 g</td></tr>
+        <tr><td>Spinning speed</td><td>200 rpm</td></tr>
+        <tr><td>Motor power</td><td>240 W</td></tr>
+        <tr><td>Power supply</td><td>220 V</td></tr>
+        <tr><td>Net weight</td><td>115 kg</td></tr>
+        <tr><td>Gross weight</td><td>135 kg</td></tr>
+      </table>
+    </div>
+  </div>
+</article>
+<article class="prod reveal" data-brand="weldann">
+  <div class="inner">
+    <div class="shot"><img src="../../photos/automotive/weldann-s3015.png" alt="Weldann S3015 3D Wheel Alignment System" onerror="this.style.display='none'" /></div>
+    <div class="body">
+      <span class="brandtag ">Weldann</span>
+      <h3>3D Wheel Alignment System <span class="mdl">— S3015</span></h3>
+      <table class="spectable">
+        <tr><td>Display precision</td><td>0.1 mm / 0.01°</td></tr>
+        <tr><td>Total toe</td><td>±0.01°  (range ±40°)</td></tr>
+        <tr><td>Camber</td><td>±0.01°  (range ±45°)</td></tr>
+        <tr><td>Caster</td><td>±0.02°  (range ±45°)</td></tr>
+        <tr><td>S.A.I</td><td>±0.01°  (range ±45°)</td></tr>
+        <tr><td>Thrust</td><td>±0.01°  (range ±40°)</td></tr>
+        <tr><td>Set back</td><td>±0.01°  (range ±40°)</td></tr>
+        <tr><td>Max steering</td><td>±0.02°  (range ±50°)</td></tr>
+        <tr><td>Track width</td><td>±2 mm  (range 1219–2439 mm)</td></tr>
+        <tr><td>Wheelbase</td><td>±2 mm  (range 2006–4572 mm)</td></tr>
+      </table>
+    </div>
+  </div>
+</article>
+
+
+<p style="margin-top:1.8rem"><a class="btn btn-fire" href="../contact.html">Request a quotation <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
   </div>
 </section>
 
@@ -498,6 +515,33 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
 function hsearch(f){var q=(f.q.value||'').trim();if(!q)return false;window.open('https://www.google.com/search?q=site%3Ahanindogroup.com+'+encodeURIComponent(q),'_blank','noopener');return false;}
 (function(){var b=document.getElementById('burger'),t=document.getElementById('tabs');if(b&&t){b.addEventListener('click',function(){var o=t.classList.toggle('open');b.setAttribute('aria-expanded',o);});}})();
 (function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
+</script>
+<script>
+/* Brand filter for the model list. Cards carry data-brand, as do the group
+   headings, so hiding a brand takes its headings with it.
+   NOTE: .reveal cards start at opacity 0 and are only revealed by the
+   IntersectionObserver in site.css's companion script. A card hidden on load
+   is never observed, so it would stay invisible when unhidden later — hence
+   .in is set explicitly on everything this shows. */
+(function(){
+  var bar=document.querySelector('.filterbar');if(!bar)return;
+  var items=[].slice.call(document.querySelectorAll('[data-brand]'));
+  function apply(f){
+    items.forEach(function(el){
+      var show=(f==='all'||el.getAttribute('data-brand')===f);
+      el.style.display=show?'':'none';
+      if(show)el.classList.add('in');
+    });
+    [].forEach.call(bar.querySelectorAll('button'),function(b){
+      var on=b.getAttribute('data-filter')===f;
+      b.classList.toggle('on',on);b.setAttribute('aria-pressed',on);
+    });
+  }
+  bar.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(b)apply(b.getAttribute('data-filter'));
+  });
+  apply('hpa');
+})();
 </script>
 </body>
 </html>
