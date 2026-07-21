@@ -376,6 +376,10 @@ img{max-width:100%;display:block}
 .section.compact .isogrid{margin-top:1.6rem}
 .section.compact .certgrid{margin-top:1.6rem;gap:1.1rem}
 .section.compact .isonote{margin-top:1rem}
+.section.compact .svc-grid{margin-top:1.8rem}
+.section.compact .pgrid{margin-top:1.8rem}
+.section.compact .process{margin-top:1.8rem}
+.section.compact .proj-grid{margin-top:1.8rem}
 .contact.compact h2{font-size:clamp(1.6rem,2.9vw,2.2rem)}
 .contact.compact p.sub{margin-top:.9rem}
 .contact.compact .clist{margin:1.1rem 0 .2rem;gap:.55rem}
