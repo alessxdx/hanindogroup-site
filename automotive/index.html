@@ -104,15 +104,14 @@
     </div>
   </div>
 </section>
-<!-- ============ STATS ============ -->
-<section class="section stats">
-  <div class="glow"></div>
-  <div class="wrap">
-    <div class="grid">
-      <div class="stat reveal"><div class="num" data-count="8">8</div><div class="lbl">Product lines covering the whole service bay</div></div>
-      <div class="stat reveal d1"><div class="num" data-count="28">28</div><div class="lbl">Catalogue models with full specifications</div></div>
-      <div class="stat reveal d2"><div class="num" data-count="2">2</div><div class="lbl">Own brands — WELDANN and ATOM</div></div>
-      <div class="stat txt reveal d3"><div class="num">Sole distributor</div><div class="lbl">For international garage equipment principals in Indonesia</div></div>
+<!-- ============ TOP BRANDS (moving marquee) ============ -->
+<section class="customers" aria-label="Top brands">
+  <div class="chead reveal"><span class="kick">Top Brands</span></div>
+  <div class="marquee">
+    <div class="mtrack">
+      <!-- Brand logos go here. Drop a logo into /photos/ and add a card like:
+      <div class="brandcard"><img src="../photos/brand-name.png" alt="Brand Name" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="btext" style="display:none">Brand Name</span></div>
+      -->
     </div>
   </div>
 </section>
@@ -120,7 +119,7 @@
 <section class="customers" aria-label="Team experience includes work with">
   <div class="chead reveal"><span class="kick">Team experience includes work with</span></div>
   <div class="marquee">
-    <div class="mtrack" id="mtrack">
+    <div class="mtrack">
       <!-- Client logos go here. Drop a logo into /photos/ and add a card like:
       <div class="brandcard"><img src="../photos/cust-name.png" alt="Client Name" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="btext" style="display:none">Client Name</span></div>
       -->
@@ -198,10 +197,10 @@ b.addEventListener('click',function(){
   if(s.scrollLeft>=max-8){s.scrollTo({left:0,behavior:'smooth'});}
   else{s.scrollBy({left:Math.round(s.clientWidth*.85),behavior:'smooth'});}
 });})();
-/* customers marquee: repeat logos to fill width + seamless, even-spaced loop */
-(function(){var t=document.getElementById('mtrack');if(!t)return;
+/* customers marquees: repeat logos to fill width + seamless, even-spaced loop */
+(function(){var tracks=document.querySelectorAll('.mtrack');if(!tracks.length)return;
 var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-function build(){
+function build(t){
   var o=t.getAttribute('data-orig');if(o===null){o=t.innerHTML;t.setAttribute('data-orig',o);}else{t.innerHTML=o;}
   if(rm)return;
   var n=t.children.length;if(!n)return;
@@ -213,7 +212,8 @@ function build(){
   var target=base*2+period,guard=0;
   while(t.scrollWidth<target&&guard<40){t.insertAdjacentHTML('beforeend',o);guard++;}
 }
-if(document.readyState==='complete')build();else window.addEventListener('load',build);
+function all(){for(var i=0;i<tracks.length;i++)build(tracks[i]);}
+if(document.readyState==='complete')all();else window.addEventListener('load',all);
 })();
 /* count up */
 (function(){var done=new WeakSet();function run(el){var end=+el.getAttribute('data-count'),t0=null,dur=1400;function step(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/dur,1);el.textContent=Math.round(p*end);if(p<1)requestAnimationFrame(step);else el.textContent=end;}requestAnimationFrame(step);}
