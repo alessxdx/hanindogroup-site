@@ -270,6 +270,7 @@ img{max-width:100%;display:block}
 .svc-grid{grid-template-columns:repeat(3,1fr)}
 @media(max-width:1000px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.svc-grid{grid-template-columns:1fr}}
+.svc{background:var(--paper)}
 .svc::before{background:var(--fire)}
 .svc .ic svg{stroke:#ff8a5c}
 .pills{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.6rem}
