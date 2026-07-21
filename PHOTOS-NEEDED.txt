@@ -25,8 +25,8 @@ wired. Drop a PNG with the EXACT filename into /photos/automotive/ and
 it replaces the "Photo to follow" placeholder. Cut-out product shot on
 white, ~800px wide; the card contains rather than crops it.
 
-Specifications for all fourteen are still outstanding - each card shows
-a "Full specifications to follow" line until the spec tables are added.
+Specifications are in for B55 and B75; the other twelve cards still
+show a "Full specifications to follow" line until their tables arrive.
 
 hpa-b35.png       B35 Digital Wheel Balancer          [NEEDED]
 hpa-b45.png       B45 Digital Wheel Balancer          [NEEDED]
