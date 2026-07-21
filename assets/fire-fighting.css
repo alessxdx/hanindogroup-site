@@ -266,16 +266,12 @@ img{max-width:100%;display:block}
 .mlist p{color:#c9d2e6;font-size:.98rem}
 
 /* ---------- services page ---------- */
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:3rem}
-@media(max-width:900px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+/* services grid — flat catalogue style from site.css, with fire-brand accents */
+.svc-grid{grid-template-columns:repeat(3,1fr)}
+@media(max-width:1000px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.svc-grid{grid-template-columns:1fr}}
-.svc{background:linear-gradient(150deg,var(--navy-800),var(--navy-700));color:#e7ecf7;border-radius:18px;padding:1.9rem 1.7rem;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s}
-.svc::before{content:"";position:absolute;left:0;top:0;width:100%;height:5px;background:var(--fire)}
-.svc:hover{transform:translateY(-6px);box-shadow:0 26px 44px -24px rgba(7,15,36,.6);background:linear-gradient(150deg,var(--navy-800),var(--navy-700))}
-.svc .ic{width:42px;height:42px;margin-bottom:1rem}
-.svc .ic svg{width:100%;height:100%;fill:none;stroke:#ff8a5c;stroke-width:1.7}
-.svc h3{font-weight:800;font-size:1.25rem;color:#fff;margin-bottom:.45rem}
-.svc p{font-size:.93rem;color:#b9c3da}
+.svc::before{background:var(--fire)}
+.svc .ic svg{stroke:#ff8a5c}
 .pills{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.6rem}
 .pill{background:var(--white);border:1px solid var(--line);border-radius:40px;padding:.6rem 1.15rem;font-size:.88rem;font-weight:700;color:var(--navy-800);transition:.18s}
 .pill:hover{background:var(--navy-800);color:#fff;border-color:var(--navy-800)}
