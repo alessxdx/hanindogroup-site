@@ -543,3 +543,12 @@ body{line-height:1.65}
 .split .shot .ph{background:linear-gradient(150deg,var(--navy-800),var(--navy-700));color:#8fa0c0}
 .split .shot .ph svg{stroke:#8fa0c0}
 .checks li svg{stroke:var(--crimson)}
+
+/* ---------- MOBILE HEADER FIT ---------- */
+/* At phone widths the group lockup + "FIRE FIGHTING DEPARTMENT" label
+   overflow the 375px viewport. The label's size is inline-styled in the
+   page header, hence the !important. */
+@media(max-width:640px){
+  .topbar .brand img{height:32px}
+  .brand .btxt strong{font-size:.78rem !important}
+}
