@@ -162,6 +162,7 @@ img{max-width:100%;display:block}
 
 /* ---------- SECTION BASE + MOTION ---------- */
 .section{position:relative;padding:clamp(58px,7vw,96px) 0}
+.section.compact{padding:clamp(34px,4.5vw,54px) 0}
 .section.dark{background:var(--blue-900);color:#dde5f0}
 .section.paper{background:var(--paper)}
 .section.white{background:var(--white)}
