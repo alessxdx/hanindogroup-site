@@ -394,6 +394,8 @@ img{max-width:100%;display:block}
 .certcard.mini .cbody{padding:1.35rem 1.5rem;gap:.95rem}
 .certcard.mini .chd h3{font-size:1.08rem}
 .certcard .cpill.cpill-soon{background:var(--paper);color:var(--muted);border:1px dashed #c9d2de}
+.certcard .certlink{align-self:flex-start;font-weight:800;font-size:.92rem;color:var(--crimson);text-decoration:none}
+.certcard .certlink:hover{text-decoration:underline}
 
 /* ---------- track-record stat cards ---------- */
 .statcards{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
