@@ -9,25 +9,34 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607201830" />
-<link rel="stylesheet" href="../assets/fire-fighting.css?v=202607212300" />
+<link rel="stylesheet" href="../assets/fire-fighting.css?v=202607212330" />
 </head>
 <body>
 
 <!-- ============ SITE HEADER (Hanindo two-row — kept) ============ -->
 <div class="topbar">
   <div class="wrap">
-    <a class="brand" href="../">
-      <img src="../photos/logo-lockup.png" alt="Hanindo Group" onerror="this.style.display='none'" />
-      <span class="btxt"><strong style="color:var(--crimson);font-size:1.05rem;letter-spacing:.05em;line-height:1.2">FIRE FIGHTING<br/>DEPARTMENT</strong></span>
-    </a>
+    <div class="brands">
+      <a class="brand" href="../" aria-label="Hanindo Group — main page">
+        <img src="../photos/logo-lockup.png" alt="Hanindo Group — Your Solution Provider" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
+        <span class="btxt" style="display:none"><strong>HANINDOGROUP</strong><span>Your Solution Provider</span></span>
+      </a>
+      <a class="cobrand" href="index.html" aria-label="Hanindo Citra Fire Fighting Department — home">
+        <img class="cologo" src="../photos/logo-citra.png" alt="Hanindo Citra — Member of the Hanindo Group of Companies" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
+        <span class="colabel" style="display:none">HANINDO CITRA</span>
+        <span class="deptlabel">Fire Fighting<br/>Department</span>
+      </a>
+    </div>
     <div class="top-right">
       <a class="grouplink" href="../" aria-label="Back to Hanindo Group"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg><span>Hanindo Group</span></a>
       <span class="callcenter">Call Center : <b>+6221-75900909</b></span>
-      <form class="searchbox" role="search" onsubmit="return hsearch(this)">
-        <input type="text" name="q" placeholder="Search" aria-label="Search" />
-        <button type="submit" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></button>
-      </form>
-      <div class="langtoggle" role="group" aria-label="Language"><button type="button" data-lang="en" class="active" aria-pressed="true">EN</button><button type="button" data-lang="id" aria-pressed="false">ID</button></div>
+      <div class="searchstack">
+        <form class="searchbox" role="search" onsubmit="return hsearch(this)">
+          <input type="text" name="q" placeholder="Search" aria-label="Search" />
+          <button type="submit" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></button>
+        </form>
+        <div class="langtoggle" role="group" aria-label="Language"><button type="button" data-lang="en" class="active" aria-pressed="true">EN</button><button type="button" data-lang="id" aria-pressed="false">ID</button></div>
+      </div>
     </div>
   </div>
 </div>

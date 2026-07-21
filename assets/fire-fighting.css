@@ -59,6 +59,12 @@ img{max-width:100%;display:block}
 .langtoggle button+button{border-left:1px solid var(--line)}
 .langtoggle button:hover{background:var(--paper);color:var(--navy-800)}
 .langtoggle button.active{background:var(--navy-800);color:#fff}
+/* two-logo header: group lockup | Citra logo + small dept label; EN/ID stacked under search */
+.cobrand .deptlabel{margin-left:.6rem;font-weight:800;font-size:.6rem;letter-spacing:.09em;text-transform:uppercase;color:var(--crimson);line-height:1.3}
+.searchstack{display:flex;flex-direction:column;align-items:flex-end;gap:.3rem}
+.searchstack .searchbox{height:34px}
+.searchstack .langtoggle{height:24px;border-radius:6px}
+.searchstack .langtoggle button{font-size:.68rem;padding:0 .55rem}
 @media(max-width:860px){.topbar .top-right{display:flex;gap:.7rem}.topbar .top-right .callcenter,.topbar .top-right .searchbox{display:none}}
 .navbar{position:sticky;top:0;z-index:100;background:var(--navy-800);box-shadow:0 6px 20px -12px rgba(0,0,0,.5)}
 .navbar .wrap{display:flex;align-items:stretch;justify-content:space-between}
