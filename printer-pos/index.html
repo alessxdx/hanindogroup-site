@@ -58,6 +58,10 @@
    consistent baseline. Names are hidden and surface only if a logo file
    fails to load, so a cell is never empty. Cells are inert — no links out
    to the customers, and so no hover state. */
+.inds{margin-top:1.6rem}
+.indlabel{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--brand)}
+.inds .pills{margin-top:.7rem;gap:.4rem}
+.inds .pill{padding:.42rem .75rem;font-size:.8rem}
 .custgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:1.6rem}
 @media(max-width:1000px){.custgrid{grid-template-columns:repeat(4,1fr)}}
 @media(max-width:760px){.custgrid{grid-template-columns:repeat(3,1fr)}}
@@ -147,6 +151,24 @@
           <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Point of sale &amp; data capture</b>Terminals, touch systems, cash registers, scanners and payment terminals.</span></li>
           <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Scanning</b>Document scanners and multifunction print-and-scan systems.</span></li>
         </ul>
+        <!-- The sectors Custom organises its own solutions around, taken
+             from custom.biz. Plain spans: .pill is a link elsewhere on the
+             site, but there is nowhere for these to point. -->
+        <div class="inds reveal d1">
+          <span class="indlabel">Industries served</span>
+          <div class="pills">
+            <span class="pill">Retail</span>
+            <span class="pill">Self-Payment &amp; Info Kiosk</span>
+            <span class="pill">Public Transport</span>
+            <span class="pill">Healthcare</span>
+            <span class="pill">Parking</span>
+            <span class="pill">Logistics &amp; Postal</span>
+            <span class="pill">Entertainment</span>
+            <span class="pill">Lotteries &amp; Betting</span>
+            <span class="pill">Manufacturing</span>
+            <span class="pill">Banking &amp; Finance</span>
+          </div>
+        </div>
       </div>
       <div class="shot reveal d2">
         <img src="../photos/pos-terminal.jpg" alt="Point of sale terminal" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
@@ -203,39 +225,12 @@
 </section>
 -->
 
-<!-- ============ INDUSTRIES ============ -->
-<!-- The sectors Custom organises its own solutions around, taken from
-     custom.biz. Plain spans, not links — .pill is used as a link
-     elsewhere, but there is nowhere for these to go. -->
-<section class="section white">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="kicker">Industries</span>
-      <h2 class="h2">Where these systems go to work.</h2>
-      <p class="lede">The same printing, scanning and point of sale hardware serves very different counters. These are the sectors Custom builds for.</p>
-    </div>
-    <div class="pills reveal d1">
-      <span class="pill">Retail</span>
-      <span class="pill">Self-Payment &amp; Info Kiosk</span>
-      <span class="pill">Public Transport</span>
-      <span class="pill">Healthcare</span>
-      <span class="pill">Parking</span>
-      <span class="pill">Logistics &amp; Postal</span>
-      <span class="pill">Entertainment</span>
-      <span class="pill">Lotteries &amp; Betting</span>
-      <span class="pill">Manufacturing</span>
-      <span class="pill">Banking &amp; Finance</span>
-    </div>
-  </div>
-</section>
-
 <!-- ============ CUSTOMER BASE ============ -->
 <!-- Ordered alphabetically, as every other logo wall on the site.
-     Carries "paper" so it alternates against the white industries band
-     above it, which is what the original note here assumed would be in
-     place. Logo files are in /photos/customers/, shared with the Hanindo
+     No "paper": the product strip above it is already grey, so this
+     would land grey-on-grey. Logo files are in /photos/customers/, shared with the Hanindo
      Citra wall. Names are listed in PHOTOS-NEEDED.txt. -->
-<section class="customers paper" aria-label="Customer base">
+<section class="customers" aria-label="Customer base">
   <div class="chead reveal"><span class="kick">Customer base</span></div>
   <div class="wrap">
     <div class="custgrid">
