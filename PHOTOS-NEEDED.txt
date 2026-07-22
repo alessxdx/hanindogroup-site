@@ -238,6 +238,7 @@ Same rules as that wall: trimmed to the artwork, ~400px wide or more,
 shown at 52px tall. Names are hidden and appear only if a file is
 missing.
 
+airasia.png                   AirAsia                         [COMPLETE]
 collins.png                   Collins Aerospace               [COMPLETE]
 jd-sports.png                 JD Sports                       [COMPLETE]
 nlb.png                       National Library Board          [COMPLETE]
@@ -250,21 +251,22 @@ smrt.png                      SMRT Trains                     [COMPLETE]
 st-engineering.png            ST Engineering                  [COMPLETE]
 wei-long-electronics.png      Wei Long Electronics            [COMPLETE]
 
-airasia.png                   AirAsia                         [NEEDED]
-                              A file was fetched but it was cropped at
-                              both edges and carried a repeating "Canva"
-                              watermark, so it was discarded rather than
-                              shipped. Needs a clean source.
 
 JD Sports and Wei Long Electronics keep their names visible: both marks
 are monograms with no wordmark, the same exception JICT gets on the
 Citra wall.
 
-philippine-airlines.png is clipped on its left edge in the source file
-itself — the red and blue wedges run off the frame. White margin was
-added around it so it no longer touches the cell edge, which stops it
-reading as though the cell had cropped it, but the missing artwork
-cannot be recovered. Replace if a clean file turns up.
+philippine-airlines.png was replaced with a complete file — full
+sunburst, no clipping, plus the "Heart of the Filipino" tagline. The
+earlier cropped version and its padding workaround are gone.
+
+Both it and airasia.png came in around 270px wide, which is smaller than
+the rest of the wall. Fine at 52px tall, soft if ever shown larger.
+
+airasia.png is white on a solid red block, so its cell reads as a red
+rectangle where every other cell is white artwork on white. Deliberate —
+it is a standard AirAsia lockup — but a red-on-white version would sit
+more quietly if one turns up.
 
 sg-pools.png is portrait rather than landscape, so it renders narrower
 than its neighbours in the fixed-height cell.
