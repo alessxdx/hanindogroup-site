@@ -10,6 +10,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607222115" />
+<style>
+/* Catalogue cards in the arrangement the automotive Products & Services
+   page uses: category name above the product shot, supporting copy
+   beneath, everything centred on a plain white card. Same block as
+   automotive/products-services.html. */
+.cat-tiles{gap:1rem;margin-top:1.3rem}
+.cat-tiles .cat{text-align:center;padding:1.1rem .9rem 1.2rem}
+.cat-tiles .cat:hover{border-color:var(--brand)}
+.cat-tiles .cat h3{margin:0 0 .7rem;font-size:.95rem;line-height:1.3}
+.cat-tiles .cat .shot{background:transparent;border-bottom:0;height:132px;padding:0}
+.cat-tiles .cat .body{padding:.7rem 0 0;align-items:center}
+.cat-tiles .cat p{font-size:.82rem;margin:.3rem 0 .8rem}
+</style>
 </head>
 <body>
 
@@ -58,6 +71,63 @@
     <div class="crumb"><a href="../">Hanindo Group</a><span class="sep">/</span><a href="index.html">Custom (S.E.A) Gralessando</a><span class="sep">/</span>Products &amp; Services</div>
     <h1>Hardware and software <span class="fx">for automation.</span></h1>
     <p class="intro">Printing, scanning and point of sale — supplied, integrated and supported.</p>
+  </div>
+</section>
+<!-- ============ WHAT WE OFFER ============ -->
+<!-- Same card treatment as the automotive Products & Services page:
+     category name above the product shot, supporting copy beneath,
+     centred, with a link out of each one. Photos are the same four in
+     /photos/printer-pos/ that the home-page strip uses.
+
+     No model counts here — unlike the automotive catalogue, the range
+     is not listed on this site, so each card links straight to its
+     section of the Custom catalogue instead. -->
+<section class="section paper compact">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">What we offer</span>
+      <h2 class="h2">Automation hardware, counter to kiosk</h2>
+      <p class="lede" style="max-width:none">Four families of Custom hardware and the software that runs them, supplied, integrated and supported across South East Asia. Each links through to the full Custom catalogue.</p>
+    </div>
+    <div class="catgrid cat-tiles">
+
+      <a class="cat reveal" href="https://www.custom.biz/en_GB/catalog/printers" target="_blank" rel="noopener">
+        <h3>Professional Printing Solutions</h3>
+        <div class="shot"><img src="../photos/printer-pos/professional-printing.png" alt="Custom VKP80III kiosk printer" onerror="this.style.display='none'" /></div>
+        <div class="body">
+          <p>POS, fiscal, ticket, label, kiosk and mobile printers.</p>
+          <span class="go">View products <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+
+      <a class="cat reveal d1" href="https://www.custom.biz/en_GB/catalog/dc-pos-solutions" target="_blank" rel="noopener">
+        <h3>DC / POS Solutions</h3>
+        <div class="shot"><img src="../photos/printer-pos/dc-pos.png" alt="Custom TREK touch monitor" onerror="this.style.display='none'" /></div>
+        <div class="body">
+          <p>POS terminals, touch systems, cash registers and monitors.</p>
+          <span class="go">View products <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+
+      <a class="cat reveal d2" href="https://www.custom.biz/en_GB/catalog/scanning-solutions" target="_blank" rel="noopener">
+        <h3>Scanning Solutions</h3>
+        <div class="shot"><img src="../photos/printer-pos/scanning.png" alt="Custom SCAN 105 desktop scanner" onerror="this.style.display='none'" /></div>
+        <div class="body">
+          <p>Document scanners, barcode readers and imaging systems.</p>
+          <span class="go">View products <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+
+      <a class="cat reveal d3" href="https://www.custom.biz/en_GB/catalog/self-service-solutions" target="_blank" rel="noopener">
+        <h3>Self-Service Solutions</h3>
+        <div class="shot"><img src="../photos/printer-pos/self-service.jpg" alt="Custom CONNECT self-service kiosk" onerror="this.style.display='none'" /></div>
+        <div class="body">
+          <p>Kiosks and countertop units for unattended service.</p>
+          <span class="go">View products <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+
+    </div>
   </div>
 </section>
 <!-- ============ CROSS-LINK: CUSTOM (S.E.A) ============ -->
