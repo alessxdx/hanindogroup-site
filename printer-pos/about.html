@@ -10,6 +10,33 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607222115" />
+<style>
+/* Why-choose-us: no card box, a tinted icon tile over centred copy,
+   each column ending in its own link. The rules live in
+   fire-fighting.css, which this page does not load, so they are
+   restated here in the Hanindo blues. Same block as the automotive
+   About page. */
+.adv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.5rem}
+@media(max-width:860px){.adv-grid{grid-template-columns:1fr}}
+.adv{padding:1.5rem 1.3rem;text-align:center;display:flex;flex-direction:column}
+.advic{width:50px;height:50px;margin:0 auto .85rem;border-radius:14px;display:flex;align-items:center;justify-content:center}
+.advic svg{width:23px;height:23px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.adv-1 .advic{background:#e6f2fb}.adv-1 .advic svg{stroke:var(--brand)}
+.adv-2 .advic{background:#e8eef6}.adv-2 .advic svg{stroke:var(--blue-800)}
+.adv-3 .advic{background:#e3f5fd}.adv-3 .advic svg{stroke:var(--brand-600)}
+.adv h3{font-weight:800;font-size:1.02rem;color:var(--blue-800);margin-bottom:.45rem}
+.adv p{color:var(--muted);font-size:.9rem;max-width:32ch;margin:0 auto}
+.advlink{display:inline-flex;align-items:center;align-self:center;gap:.35rem;margin-top:auto;padding-top:.9rem;font-weight:700;font-size:.84rem;color:var(--brand)}
+.advlink svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2.2}
+.advlink:hover{color:var(--brand-600);text-decoration:underline}
+/* Vision & Mission, tightened. .vm is shared with the other About
+   pages, so the smaller gaps and padding stay page-local. */
+.vm{gap:1rem;margin-top:1.1rem}
+.vm-card{padding:1.25rem 1.3rem}
+.vm-card h3{font-size:1.1rem;margin:.35rem 0 .5rem}
+.vm-card>p,.mlist p{font-size:.9rem;line-height:1.55}
+.mlist{gap:.6rem}
+</style>
 </head>
 <body>
 
@@ -60,24 +87,81 @@
     <p class="intro">Custom (S.E.A) Gralessando brings the Custom printing and POS range to Indonesia, with local supply, integration and service.</p>
   </div>
 </section>
-<!-- ============ INTRO / SPLIT ============ -->
-<section class="section white">
+<!-- ============ COMPANY OVERVIEW ============ -->
+<!-- Full width, no photo panel: the only shot available for it is the
+     office signboard, which the hero above already shows. Laid out like
+     the automotive About page. No principals table — Custom is the one
+     principal, so it is named in the copy instead. -->
+<section class="section white compact">
   <div class="wrap">
-    <div class="split">
-      <div class="reveal">
-        <span class="kicker">Custom (S.E.A) Gralessando</span>
-        <h2 class="h2">One of the six divisions<br/>of the Hanindo Group.</h2>
-        <p class="lede">Custom (S.E.A) Gralessando represents Custom, a manufacturer of hardware and software for automation with printing, scanning and reading solutions. The division runs its own site, which carries the full and current product catalogue.</p>
-        <p class="lede">Incorporated in Singapore as Gralessando (S) Pte Ltd, it covers the South East Asian market — Malaysia, the Philippines and Vietnam are all served through this company, with an office in the Philippines alongside the Singapore base.</p>
-        <ul class="checks">
-          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Printing solutions</span></li>
-          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Scanning solutions</span></li>
-          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Reading solutions</span></li>
+    <div class="reveal">
+      <span class="kicker">Company overview</span>
+      <h2 class="h2">Custom's partner in South East Asia.</h2>
+      <p class="lede" style="max-width:none">One of the companies of the Hanindo Group, Custom (S.E.A) Gralessando represents Custom &mdash; a manufacturer of hardware and software for automation, spanning printing, scanning and reading solutions.</p>
+      <p class="lede" style="max-width:none">Incorporated in Singapore as Gralessando (S) Pte Ltd, it covers South East Asia, with Malaysia, the Philippines and Vietnam all served from the Singapore office. Custom's full and current product catalogue is carried on the company's own site.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OUR DIRECTION ============ -->
+<!-- DRAFT COPY. Written from what the rest of the section already
+     claims — nothing here comes from a stated vision or mission for
+     this company. Replace with the real wording when it is available. -->
+<section class="section paper compact">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">Our direction</span>
+      <h2 class="h2">Vision &amp; Mission</h2>
+    </div>
+    <div class="vm">
+      <div class="vm-card reveal">
+        <span class="tag">01 / Vision</span>
+        <h3>Vision</h3>
+        <p>To be the automation partner South East Asia's retail, transport and service operators rely on.</p>
+      </div>
+      <div class="vm-card reveal d1">
+        <span class="tag">02 / Mission</span>
+        <h3>Mission</h3>
+        <ul class="mlist">
+          <li><span class="n">1</span><p>Supply Custom's printing, scanning and point-of-sale hardware with the software that runs it.</p></li>
+          <li><span class="n">2</span><p>Integrate, install and support every system locally.</p></li>
+          <li><span class="n">3</span><p>Keep pace with Custom's range so customers run current technology.</p></li>
         </ul>
       </div>
-      <div class="shot reveal d2">
-        <img src="../photos/pos-terminal.jpg" alt="Point of sale terminal" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
-        <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US ============ -->
+<!-- Same treatment as the fire-fighting and automotive About pages:
+     tinted icon tile over centred copy, each column ending in a link.
+     Those rules live in fire-fighting.css, which this page does not
+     load, so they are restated in the head of this file. -->
+<section class="section white compact">
+  <div class="wrap">
+    <div class="cert-head">
+      <span class="kicker reveal">Why choose us</span>
+      <h2 class="h2 reveal">Why clients trust us</h2>
+      <p class="reveal d1">Three things you can count on, from first specification through to long-term support.</p>
+    </div>
+    <div class="adv-grid">
+      <div class="adv adv-1 reveal">
+        <div class="advic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 8.7l5.4-.8z"/></svg></div>
+        <h3>Trusted</h3>
+        <p>One of the companies of the Hanindo Group, serving operators across South East Asia.</p>
+        <a class="advlink" href="projects.html">See our projects <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="adv adv-2 reveal d1">
+        <div class="advic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3.3v5.2c0 4.5-3.1 8.4-7.5 9.9-4.4-1.5-7.5-5.4-7.5-9.9V6.1z"/><path d="M9 12l2.2 2.2L15.4 10"/></svg></div>
+        <h3>Best Quality</h3>
+        <p>Custom hardware and software, built for unattended, high-volume use.</p>
+        <a class="advlink" href="products-services.html">Our products <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="adv adv-3 reveal d2">
+        <div class="advic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13a8 8 0 0116 0"/><path d="M4 13v3a2 2 0 002 2h1v-5H6a2 2 0 00-2 2z"/><path d="M20 13v3a2 2 0 01-2 2h-1v-5h1a2 2 0 012 2z"/><path d="M17 18v1a2 2 0 01-2 2h-2"/></svg></div>
+        <h3>Excellent Service</h3>
+        <p>Supply, integration and after-sales support from the Singapore office.</p>
+        <a class="advlink" href="contact.html">Talk to us <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
   </div>
