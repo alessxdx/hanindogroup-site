@@ -112,6 +112,39 @@ oag-atg.jpg               Product card — automatic tank gauging console
 oag-stp.jpg               Product card — submersible turbine pump
 oag-piping.jpg            Product card — piping / fueling components
 
+CUSTOMER LOGOS
+The "Customer base" wall on /oil-and-gas/index.html has 20 logo slots.
+They live in /photos/customers/ — NOT in /photos/ itself. Drop a PNG
+with the EXACT filename below and it appears; until then the cell shows
+the customer name on its own, which looks deliberate rather than
+broken. Cut-out logo on white or transparent, ~400px wide (shown at
+52px tall).
+
+Use the customer's own official logo file — do not redraw or upscale
+one from a screenshot, and check we have permission to display it
+before the site goes public.
+
+adaro.png                     PT Adaro Indonesia
+pertamina-patra-niaga.png     PT Pertamina Patra Niaga
+interport.png                 PT Interport Mandiri Utama
+indomobil-prima-energi.png    PT Indomobil Prima Energi
+injourney-airports.png        Soekarno-Hatta Intl Airport (InJourney)
+mrt-jakarta.png               PT MRT Jakarta
+jict.png                      Jakarta Intl Container Terminal
+chiyoda.png                   Chiyoda Corporation — Freeport Smelter
+honda-prospect-motor.png      PT Honda Prospect Motor
+astra-daihatsu.png            PT Astra Daihatsu Motor
+penang-airport.png            Penang International Airport
+malaysia-truck-terminal.png   Malaysia Truck Terminal
+exxonmobil.png                Exxon Mobil Cepu Ltd
+jgc.png                       PT JGC Indonesia
+toho-gas.png                  Toho Gas
+star-energy.png               Star Energy Geothermal Salak, Ltd
+berau-coal.png                PT Berau Coal
+freeport.png                  PT Freeport Indonesia
+kideco.png                    PT Kideco Jaya Agung
+newmont.png                   PT Newmont Nusa Tenggara
+
 
 --------------------------------------------------
 AUTOMOTIVE  (/automotive/)
