@@ -103,7 +103,7 @@ otherwise the cell falls back to showing the brand name as text.
 --------------------------------------------------
 OIL & GAS  (/oil-and-gas/)
 --------------------------------------------------
-hero-oil-and-gas.jpg      Page hero — forecourt or storage terminal
+hero-oil-and-gas.webp     DONE — page hero, forecourt at dusk (1536x1024)
 oag-forecourt.jpg         Intro section — station Hanindo equipped
 oag-dispenser.jpg         Product card — pumps & dispensers
 oag-advanz.jpg            Product card — AdvanZ POS/BOS screen or terminal
