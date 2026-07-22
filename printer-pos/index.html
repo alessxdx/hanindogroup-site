@@ -16,6 +16,11 @@
 .checks-desc li{align-items:flex-start}
 .checks-desc b{display:block;font-weight:700;color:var(--blue-800);margin-bottom:.12rem}
 .checks-desc span{font-size:.88rem;color:var(--muted);line-height:1.5}
+.checks-desc{gap:.55rem;margin-top:1.1rem}
+/* Pull the two columns closer. The photo panel shrinks on its own —
+   site.css drops it to 240px inside a .compact section. */
+.split-tight{gap:clamp(1.6rem,3vw,2.4rem)}
+.split-tight .lede{margin-top:.75rem}
 </style>
 </head>
 <body>
@@ -68,22 +73,22 @@
   </div>
 </section>
 <!-- ============ INTRO / SPLIT ============ -->
-<section class="section white">
+<section class="section white compact">
   <div class="wrap">
-    <div class="split">
+    <div class="split split-tight">
       <div class="reveal">
         <span class="kicker">Custom (S.E.A) Gralessando</span>
         <h2 class="h2">Printing, scanning, and point of sale.</h2>
-        <p class="lede">Custom (S.E.A) Gralessando represents Custom, a manufacturer of hardware and software for automation with printing, scanning and reading solutions. The division runs its own site, which carries the full and current product catalogue.</p>
-        <p class="lede">Incorporated in Singapore as Gralessando (S) Pte Ltd, it covers the South East Asian market — Malaysia, the Philippines and Vietnam are all served through this company, with an office in Singapore.</p>
+        <p class="lede">Custom (S.E.A) Gralessando represents Custom, a manufacturer of hardware and software for automation with printing, scanning and reading solutions. Its own site carries the full product catalogue.</p>
+        <p class="lede">Incorporated in Singapore as Gralessando (S) Pte Ltd, it covers South East Asia — Malaysia, the Philippines and Vietnam — from its Singapore office.</p>
         <!-- The three areas Custom organises its own catalogue around,
              taken from custom.biz. "Reading solutions" was folded into
              data capture, which is where the scanners and payment
              terminals actually sit. -->
         <ul class="checks checks-desc">
-          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Professional printing</b>POS, fiscal, ticket, label and mobile printers built for unattended, high-volume use.</span></li>
-          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Point of sale &amp; data capture</b>POS terminals, touch systems, cash registers, barcode scanners and payment terminals.</span></li>
-          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Scanning</b>Document scanners and multifunction print-and-scan systems for digitalising paperwork.</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Professional printing</b>POS, fiscal, ticket, label and mobile printers.</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Point of sale &amp; data capture</b>Terminals, touch systems, cash registers, scanners and payment terminals.</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Scanning</b>Document scanners and multifunction print-and-scan systems.</span></li>
         </ul>
       </div>
       <div class="shot reveal d2">
