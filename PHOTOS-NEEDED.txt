@@ -241,8 +241,12 @@ Same rules as that wall: trimmed to the artwork, ~400px wide or more,
 shown at 52px tall. Names are hidden and appear only if a file is
 missing.
 
+aboitiz.png                   Aboitiz InfraCapital            [COMPLETE]
 airasia.png                   AirAsia                         [COMPLETE]
+burger-king.png               Burger King                     [COMPLETE]
 collins.png                   Collins Aerospace               [COMPLETE]
+daifuku.png                   Daifuku                         [COMPLETE]
+idemia.png                    IDEMIA                          [COMPLETE]
 jd-sports.png                 JD Sports                       [COMPLETE]
 nlb.png                       National Library Board          [COMPLETE]
 philippine-airlines.png       Philippine Airlines             [COMPLETE]
@@ -272,7 +276,18 @@ it is a standard AirAsia lockup — but a red-on-white version would sit
 more quietly if one turns up.
 
 sg-pools.png is portrait rather than landscape, so it renders narrower
-than its neighbours in the fixed-height cell.
+than its neighbours in the fixed-height cell. burger-king.png is nearly
+square, so it sits the same way.
+
+idemia.png had its chevron mark flush against the left edge; white
+margin was added so it does not read as clipped.
+
+cebu-pacific.png                Cebu Pacific                  [NEEDED]
+                              Supplied inline as a base64 data URI
+                              rather than a file or a link. It could not
+                              be transcribed intact, so nothing was
+                              written. Save the file straight into
+                              /photos/customers/ or send a URL.
 
 
 --------------------------------------------------
