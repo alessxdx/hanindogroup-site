@@ -218,13 +218,20 @@ missing shows as a plain panel with its label, so the strip looks
 deliberate while they are outstanding.
 
 Four tiles, one per top-level section of the Custom catalogue, each
-linking out to that section on custom.biz. Pick a shot that represents
-the whole family rather than one model.
+linking out to that section on custom.biz.
 
-professional-printing.png Professional Printing Solutions     [NEEDED]
-dc-pos.png                DC / POS Solutions                  [NEEDED]
-scanning.png              Scanning Solutions                  [NEEDED]
-self-service.png          Self-Service Solutions              [NEEDED]
+FILLED FROM THE MANUFACTURER'S SITE. Each is a product thumbnail taken
+from the matching custom.biz category page, so they are Custom's
+copyright, used here as their distributor. Confirm this is covered by
+the distributor agreement or ask Custom for a media kit before the site
+goes public — and prefer the media kit anyway, since these are only
+~270x221 and are downscaled to fit a 258px tile.
+
+professional-printing.png VKP80III kiosk printer          [PLACEHOLDER]
+dc-pos.png                TREK touch monitor              [PLACEHOLDER]
+scanning.png              SCAN 105 desktop scanner        [PLACEHOLDER]
+self-service.jpg          CONNECT self-service kiosk      [PLACEHOLDER]
+                          (note .jpg, not .png)
 
 CUSTOMER LOGOS
 The "Customer base" wall on /printer-pos/index.html shares the
