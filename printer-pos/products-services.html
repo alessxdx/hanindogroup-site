@@ -24,10 +24,12 @@
 .cat-tiles .cat p{font-size:.82rem;margin:.3rem 0 .8rem}
 /* Industries served: an equal-column grid rather than the wrapping
    .pills flex row, so the block runs the full container width and lines
-   up with the cards above instead of ragging out mid-row. */
+   up with the cards above instead of ragging out mid-row.
+   Six across, not five: with eleven sectors five would strand a single
+   pill alone on a third row, where six keeps it two deep. */
 .inds{margin-top:1.8rem}
 .indlabel{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--brand)}
-.indgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:.5rem;margin-top:.8rem}
+.indgrid{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:1fr;gap:.5rem;margin-top:.8rem}
 @media(max-width:900px){.indgrid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:560px){.indgrid{grid-template-columns:repeat(2,1fr)}}
 .indgrid .pill{display:flex;align-items:center;justify-content:center;text-align:center;padding:.6rem .7rem;font-size:.84rem;line-height:1.25}
@@ -153,6 +155,7 @@
         <span class="pill">Retail</span>
         <span class="pill">Self-Payment &amp; Info Kiosk</span>
         <span class="pill">Public Transport</span>
+        <span class="pill">Aviation</span>
         <span class="pill">Healthcare</span>
         <span class="pill">Parking</span>
         <span class="pill">Logistics &amp; Postal</span>
