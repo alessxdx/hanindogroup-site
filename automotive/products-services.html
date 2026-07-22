@@ -24,6 +24,12 @@
 .cat-tiles .cat .body{padding:.7rem 0 0;align-items:center}
 .cat-tiles .cat .lbl{font-size:.68rem}
 .cat-tiles .cat p{font-size:.82rem;margin:.3rem 0 .8rem}
+
+/* .svc-grid is a fixed four across in site.css. The services row runs
+   three, which would leave a fourth cell painted empty — so match the
+   column count to the cards. If a fourth service is added, remove the
+   svc-3 class and the four-column default takes over. */
+@media(min-width:1001px){.svc-3{grid-template-columns:repeat(3,1fr)}}
 </style>
 </head>
 <body>
@@ -125,6 +131,50 @@
         </div>
       </a>
 
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<!-- Services sold around the equipment, as opposed to the catalogue
+     above. PLACEHOLDER COPY — every claim here is already made on
+     about.html, so nothing new is asserted, but the details still need
+     confirming before this goes public:
+       * Technical Training — where it runs (our premises, the
+         customer's workshop, or both), how long, and whether basic
+         handover training is included in the machine price with only
+         the deeper course charged for.
+       * Whether maintenance is sold as a contract or per visit.
+       * Any service that belongs here and is missing — calibration,
+         relocation, inspection, equipment hire.
+     Add or drop cards freely; if a fourth is added, remove the svc-3
+     class on the grid so it goes back to four columns. -->
+<section class="section white compact">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">Services</span>
+      <h2 class="h2">Support beyond the equipment</h2>
+      <p class="lede" style="max-width:none">Supplying the machine is the start. These services are quoted separately, so you take only what your workshop needs.</p>
+    </div>
+    <div class="svc-grid svc-3">
+      <div class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M12 4L2.5 8.5 12 13l9.5-4.5z"/><path d="M6.5 10.7V15c0 1.3 2.5 2.6 5.5 2.6s5.5-1.3 5.5-2.6v-4.3"/><path d="M21.5 8.5V14"/></svg></div>
+        <h3>Technical Training</h3>
+        <p>Hands-on training so your technicians can operate the equipment safely and get the most out of it.</p>
+      </div>
+      <div class="svc reveal d1">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.8-3.8a6 6 0 01-7.9 7.9l-6.9 6.9a2.1 2.1 0 01-3-3l6.9-6.9a6 6 0 017.9-7.9z"/></svg></div>
+        <h3>Installation &amp; Commissioning</h3>
+        <p>Delivery, installation and commissioning by our own team, with handover once the equipment is running.</p>
+      </div>
+      <div class="svc reveal d2">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M20.8 18.4L13 10.6"/><path d="M9.5 3.5l2.5 2.5-2 2-2.5-2.5a3.5 3.5 0 004.6 4.4l7.2 7.2a1.8 1.8 0 01-2.6 2.6l-7.2-7.2A3.5 3.5 0 015.1 8L7.6 10.5l2-2L7.1 6A3.5 3.5 0 019.5 3.5z"/></svg></div>
+        <h3>Maintenance &amp; Spare Parts</h3>
+        <p>Service visits and genuine spare parts, backed by after-sales support from the team that installed the machine.</p>
+      </div>
+    </div>
+    <div style="margin-top:1.4rem" class="reveal d3">
+      <a class="btn btn-dark" href="contact.html">Ask for a quote <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
   </div>
 </section>
