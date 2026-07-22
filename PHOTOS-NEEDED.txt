@@ -199,7 +199,8 @@ autm-access-control.jpg       Product card — access control & ID
 --------------------------------------------------
 PRINTER & POS  (/printer-pos/)
 --------------------------------------------------
-hero-printer-pos.jpg      Page hero — POS counter or printer hardware
+hero-printer-pos.jpg      DONE — page hero, office signboard (2560x1920).
+                          Shared by all five pages in the section.
 pos-terminal.jpg          Intro section — Custom terminal / printer
 
 
