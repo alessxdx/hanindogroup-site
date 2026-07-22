@@ -11,10 +11,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607222115" />
 <style>
-/* .svc-grid is a fixed four across in site.css; this section runs five
-   cards, which would otherwise leave three empty cells painted on a
-   second row. Tighter padding keeps the narrower columns readable. */
-@media(min-width:1001px){.svc-5{grid-template-columns:repeat(5,1fr)}.svc-5 .svc{padding:1.6rem 1.2rem}}
+/* Catalogue tiles in the arrangement the fire-fighting products page
+   uses: category name above the product shot, supporting copy beneath,
+   everything centred on a plain white card. Those rules live in
+   fire-fighting.css, which this page does not load, so the shared .cat
+   card is restated here rather than pulling that stylesheet in. */
+.cat-tiles{gap:1rem;margin-top:1.3rem}
+.cat-tiles .cat{text-align:center;padding:1.1rem .9rem 1.2rem}
+.cat-tiles .cat:hover{border-color:var(--brand)}
+.cat-tiles .cat h3{margin:0 0 .7rem;font-size:.95rem;line-height:1.3}
+.cat-tiles .cat .shot{background:transparent;border-bottom:0;height:132px;padding:0}
+.cat-tiles .cat .body{padding:.7rem 0 0;align-items:center}
+.cat-tiles .cat .lbl{font-size:.68rem}
+.cat-tiles .cat p{font-size:.82rem;margin:.3rem 0 .8rem}
 </style>
 </head>
 <body>
@@ -66,89 +75,52 @@
     <p class="intro">Tyre service, lifting and handling, service equipment and welding — forty-two models across the catalogue.</p>
   </div>
 </section>
-<!-- ============ CAPABILITY AREAS ============ -->
-<section class="section white">
+<!-- ============ CATALOGUE ============ -->
+<section class="section paper compact">
   <div class="wrap">
     <div class="reveal">
       <span class="kicker">What we offer</span>
-      <h2 class="h2">Complete workshop equipment solutions</h2>
-      <p class="lede" style="max-width:none">Whether you're setting up a new workshop or upgrading an existing facility, we supply the equipment required for every service bay&mdash;from diagnostics and lifting systems to tyre service and lubrication.</p>
+      <h2 class="h2">Professional equipment for every service bay</h2>
+      <p class="lede" style="max-width:none">Explore our range of workshop equipment sourced from leading international manufacturers. Each solution is selected to improve productivity, safety and service quality.</p>
     </div>
-    <div class="svc-grid svc-5">
-      <div class="svc reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M7 11l2.5 2.5L13 9l2 3h2"/><path d="M8 21h8"/></svg></div>
-        <h3>Diagnostics &amp; Testing</h3>
-        <p>Engine analyzers, gas analyzers, opacimeters and scan tools for fault finding and emissions testing.</p>
-      </div>
-      <div class="svc reveal d1">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M3 20h18"/><path d="M6 20v-9M18 20v-9"/><path d="M4 11h16l-2-4H6z"/><path d="M12 11V4"/></svg></div>
-        <h3>Vehicle Lifting</h3>
-        <p>Two-post, four-post, scissor and single-post lifts to bring every vehicle safely to working height.</p>
-      </div>
-      <div class="svc reveal d2">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3v5.5M12 15.5V21M3 12h5.5M15.5 12H21"/></svg></div>
-        <h3>Tyre Service Equipment</h3>
-        <p>Tyre changers, wheel balancers, wheel aligners and inflation equipment for the tyre bay.</p>
-      </div>
-      <div class="svc reveal d3">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M4 7h7v8H4z"/><path d="M11 9h4l3 3v6a2 2 0 01-4 0V9"/><path d="M4 19h9"/></svg></div>
-        <h3>Lubrication Systems</h3>
-        <p>Lube and oil equipment, volume measurement, fluid changers and brake fluid testing.</p>
-      </div>
-      <div class="svc reveal d4">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M12 4L2.5 8.5 12 13l9.5-4.5z"/><path d="M6.5 10.7V15c0 1.3 2.5 2.6 5.5 2.6s5.5-1.3 5.5-2.6v-4.3"/><path d="M21.5 8.5V14"/></svg></div>
-        <h3>Technical Training</h3>
-        <p>Operator and technician training on the equipment we supply, at installation and on request.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- ============ CATALOGUE ============ -->
-<section class="section paper">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="kicker">Catalogue</span>
-      <h2 class="h2">Browse the equipment.</h2>
-      <p class="lede">Forty-two models across four categories, with full specifications for each &mdash; taken from the Hanindo Automotive catalogue.</p>
-    </div>
-    <div class="catgrid">
+    <div class="catgrid cat-tiles">
 
       <a class="cat reveal" href="tyre-service/">
+        <h3>Tyre Service</h3>
         <div class="shot"><img src="../photos/automotive/weldann-s3015.png" alt="WELDANN S3015 3D wheel alignment system" onerror="this.style.display='none'" /></div>
         <div class="body">
           <span class="lbl">19 models</span>
-          <h3>Tyre Service</h3>
-          <p>WELDANN and HPA-Faip tyre changers, wheel balancers and 3D wheel alignment.</p>
+          <p>Tyre changers, wheel balancers and 3D wheel alignment.</p>
           <span class="go">View products <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </div>
       </a>
 
       <a class="cat reveal d1" href="lifts/">
+        <h3>Lifts &amp; Handling</h3>
         <div class="shot"><img src="../photos/automotive/atom-dl-35yd.png" alt="ATOM DL-3.5YD mid-rise scissor car lift" onerror="this.style.display='none'" /></div>
         <div class="body">
           <span class="lbl">8 models</span>
-          <h3>Lifts &amp; Handling</h3>
-          <p>Scissor, two-post and four-post lifts from 3.5 to 4 tonnes, plus the shaking machine.</p>
+          <p>Scissor, two-post and four-post lifts, 3.5 to 4 tonnes.</p>
           <span class="go">View products <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </div>
       </a>
 
       <a class="cat reveal d2" href="service/">
+        <h3>Service Equipment</h3>
         <div class="shot"><img src="../photos/automotive/weldann-ac-900.png" alt="WELDANN AC-900 A/C recycling service station" onerror="this.style.display='none'" /></div>
         <div class="body">
           <span class="lbl">10 models</span>
-          <h3>Service Equipment</h3>
-          <p>Fluid exchange, brake lathe, A/C recycling, carbon cleaning, nitrogen and diagnostics.</p>
+          <p>Fluid exchange, brake lathe, A/C recycling and diagnostics.</p>
           <span class="go">View products <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </div>
       </a>
 
       <a class="cat reveal d3" href="welding/">
+        <h3>Welding</h3>
         <div class="shot"><img src="../photos/automotive/weldann-mig-mma-350f.png" alt="WELDANN MIG/MMA-350F welding machine" onerror="this.style.display='none'" /></div>
         <div class="body">
           <span class="lbl">5 models</span>
-          <h3>Welding</h3>
-          <p>MMA and MIG/MMA inverter welding machines, 200 A portable to 700 A industrial.</p>
+          <p>MMA and MIG/MMA inverters, 200 A to 700 A.</p>
           <span class="go">View products <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </div>
       </a>
