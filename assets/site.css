@@ -116,6 +116,55 @@ img{max-width:100%;display:block}
 @media(max-width:560px){.plist{grid-template-columns:1fr}}
 .plist li{font-size:.92rem;color:var(--muted);line-height:1.5}
 .plist b{color:var(--blue-800);font-weight:700}
+/* about page: company-overview split — copy on the left, a stacked pair of
+   captioned photos on the right. Wider text column than .split because the
+   overview runs to three paragraphs rather than a lede plus bullets. */
+.about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,4vw,3.4rem);align-items:center}
+@media(max-width:900px){.about-grid{grid-template-columns:1fr}}
+.about-copy p{margin-bottom:1rem;color:var(--muted);font-size:1rem}
+.about-copy p:last-child{margin-bottom:0}
+.about-media{display:grid;gap:1rem}
+.aphoto{position:relative;border-radius:var(--r);overflow:hidden;min-height:210px;border:1px solid var(--line)}
+.aphoto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+/* the caption sits on the photo, so it needs a scrim to stay legible
+   whatever the shot underneath happens to be */
+.aphoto::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(4,32,58,.72),transparent 55%)}
+.aphoto .cap{position:absolute;left:1rem;bottom:.85rem;z-index:2;color:#fff;font-weight:600;font-size:.9rem}
+
+/* centred section head, used by the credential blocks below */
+.cert-head{max-width:70ch;margin:0 auto 2.4rem;text-align:center}
+.cert-head p{color:var(--muted);margin-top:.9rem;font-size:.98rem}
+
+/* ISO certificates: each card is a link that opens the full scan */
+.isogrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+@media(max-width:860px){.isogrid{grid-template-columns:1fr}}
+.isocard{display:block;background:var(--white);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:border-color .18s}
+.isocard:hover{border-color:var(--blue-800)}
+/* portrait scans, shown whole on a paper ground rather than cropped */
+.isoimg{position:relative;background:var(--paper);border-bottom:1px solid var(--line);height:300px;display:flex;align-items:center;justify-content:center;padding:1rem}
+.isoimg img{max-width:100%;max-height:100%;width:auto;object-fit:contain}
+.isoimg .view{position:absolute;right:.7rem;bottom:.7rem;background:var(--blue-800);color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.36rem .6rem;border-radius:var(--r);opacity:0;transition:opacity .18s}
+.isocard:hover .view{opacity:1}
+.isometa{padding:1rem 1.15rem 1.15rem}
+.isometa .std{display:block;font-weight:700;font-size:1rem;color:var(--blue-800)}
+.isometa .lbl{display:block;font-size:.85rem;color:var(--muted);margin-top:.2rem}
+.isonote{text-align:center;color:var(--muted);font-size:.86rem;margin-top:1.4rem}
+
+/* memberships and national certifications — text cards, no scan to show */
+.certgrid{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-top:2.6rem}
+@media(max-width:860px){.certgrid{grid-template-columns:1fr}}
+.certcard{background:var(--white);border:1px solid var(--line);border-top:3px solid var(--blue-800);border-radius:var(--r);padding:1.5rem 1.4rem}
+.certcard .chd{display:flex;gap:.9rem;align-items:flex-start;margin-bottom:.9rem}
+.certcard .cic{flex:none;width:38px;height:38px;border-radius:var(--r);background:var(--paper);border:1px solid var(--line);display:flex;align-items:center;justify-content:center}
+.certcard .cic svg{width:19px;height:19px;fill:none;stroke:var(--brand);stroke-width:1.6}
+.certcard .ey{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.certcard h3{font-weight:700;font-size:1.02rem;color:var(--blue-800);line-height:1.35;margin-top:.2rem}
+.certcard .desc{font-size:.9rem;color:var(--muted)}
+.cpills{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.9rem}
+.cpill{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:.26rem .55rem;font-size:.72rem;font-weight:600;color:var(--blue-700)}
+.certlink{display:inline-flex;align-items:center;gap:.35rem;margin-top:1rem;font-size:.84rem;font-weight:600;color:var(--brand);transition:color .18s}
+.certlink:hover{color:var(--blue-800)}
+
 /* about page: vision-mission cards + why-choose-us cards (company mini-sites) */
 .vm{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-top:2rem}
 @media(max-width:780px){.vm{grid-template-columns:1fr}}
@@ -151,13 +200,22 @@ img{max-width:100%;display:block}
 .tabs>li.active>a{background:var(--white);color:var(--blue-800);border-bottom-color:var(--brand)}
 .tabs>li>a .caret{width:10px;height:10px;margin-left:.4rem;fill:none;stroke:currentColor;stroke-width:2.4;transition:transform .2s}
 .tabs>li.has-drop:hover>a .caret,.tabs>li.has-drop:focus-within>a .caret{transform:rotate(180deg)}
-.drop{position:absolute;left:0;top:100%;min-width:230px;background:var(--blue-900);list-style:none;border-top:2px solid var(--brand);opacity:0;visibility:hidden;transition:opacity .16s,visibility .16s;z-index:120}
+.drop{position:absolute;left:0;top:100%;min-width:252px;background:var(--blue-900);list-style:none;border-top:2px solid var(--brand);opacity:0;visibility:hidden;transition:opacity .16s,visibility .16s;z-index:120}
 .tabs>li.has-drop:hover .drop,.tabs>li.has-drop:focus-within .drop{opacity:1;visibility:visible}
 .drop li{display:block}
 .drop li+li{border-top:1px solid rgba(255,255,255,.06)}
 .drop a{display:block;padding:.8rem 1.15rem;font-size:.87rem;font-weight:500;color:#dfe7f2;white-space:nowrap;border-left:2px solid transparent;transition:background .15s,border-color .15s,color .15s}
 .drop a:hover{background:rgba(255,255,255,.07);border-left-color:var(--brand);color:#fff}
 .drop li.on>a{border-left-color:var(--brand);color:#fff;background:rgba(255,255,255,.05)}
+/* Second level. The Fire Fighting Department is a division of PT. Hanindo
+   Citra rather than a company of its own, so the menu nests it under the
+   parent instead of listing it as a peer. Rendered inline, not as a
+   flyout — one child item does not justify a second hover target. */
+.subdrop{list-style:none;background:rgba(0,0,0,.22);border-top:1px solid rgba(255,255,255,.06)}
+.subdrop a{padding-left:2.3rem;font-size:.83rem;color:#b9c6d8;position:relative}
+/* short elbow marking the item as a child of the entry above it */
+.subdrop a::before{content:"";position:absolute;left:1.45rem;top:50%;width:9px;height:1px;background:rgba(255,255,255,.32)}
+.subdrop a:hover{color:#fff}
 .burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:12px;align-self:center}
 .burger span{width:24px;height:2px;background:#fff}
 @media(max-width:860px){
@@ -171,6 +229,8 @@ img{max-width:100%;display:block}
   .tabs>li>a .caret{display:none}
   .drop{position:static;opacity:1;visibility:visible;min-width:0;background:rgba(0,0,0,.2);border-top:0}
   .drop a{padding:.68rem var(--pad) .68rem calc(var(--pad) + 1rem);font-size:.84rem;color:#b9c6d8}
+  .subdrop a{padding-left:calc(var(--pad) + 2.2rem);font-size:.82rem}
+  .subdrop a::before{left:calc(var(--pad) + 1.35rem)}
 }
 
 /* ---------- PAGE HERO ---------- */
