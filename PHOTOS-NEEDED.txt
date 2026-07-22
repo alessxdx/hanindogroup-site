@@ -124,6 +124,11 @@ Use the customer's own official logo file — do not redraw or upscale
 one from a screenshot, and check we have permission to display it
 before the site goes public.
 
+Note on sources: every cropped or watermarked file so far came from a
+Google image-result thumbnail (encrypted-tbn0.gstatic.com). Those are
+proxy previews, cut to fit a tile. Company sites, press kits and
+Wikimedia Commons have come through clean every time.
+
 adaro.png                     PT Adaro Indonesia              [COMPLETE]
 pertamina-patra-niaga.png     PT Pertamina Patra Niaga        [COMPLETE]
 interport.png                 PT Interport Mandiri Utama      [COMPLETE]
