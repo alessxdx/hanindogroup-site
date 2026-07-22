@@ -105,10 +105,12 @@ img{max-width:100%;display:block}
 /* product tile strip (automotive home) */
 .tilegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:.9rem;margin-top:2rem}
 @media(max-width:900px){.tilegrid{grid-template-columns:repeat(2,1fr)}}
-.tile{position:relative;display:block;aspect-ratio:1/1;border-radius:var(--r);overflow:hidden;background:linear-gradient(150deg,var(--blue-800),var(--blue-700))}
-.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .25s}
+/* Product shots ship on white; contain + multiply drops their background into
+   the shared panel so nothing is cropped and every tile reads the same. */
+.tile{position:relative;display:block;aspect-ratio:1/1;border-radius:var(--r);overflow:hidden;background:linear-gradient(165deg,#f2f5fa 0%,#e2e9f3 100%)}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply;padding:.7rem;transition:transform .25s}
 .tile:hover img{transform:scale(1.05)}
-.tile::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(4,32,58,.85))}
+.tile::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(4,32,58,.82))}
 .tile span{position:absolute;left:.9rem;bottom:.8rem;right:.9rem;z-index:2;color:#fff;font-weight:700;font-size:1rem;line-height:1.25}
 /* single-row tile strip with an advance button */
 .tilestrip{position:relative;margin-top:1.6rem}
