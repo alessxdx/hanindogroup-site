@@ -22,6 +22,15 @@
 .cat-tiles .cat .shot{background:transparent;border-bottom:0;height:132px;padding:0}
 .cat-tiles .cat .body{padding:.7rem 0 0;align-items:center}
 .cat-tiles .cat p{font-size:.82rem;margin:.3rem 0 .8rem}
+/* Industries served: an equal-column grid rather than the wrapping
+   .pills flex row, so the block runs the full container width and lines
+   up with the cards above instead of ragging out mid-row. */
+.inds{margin-top:1.8rem}
+.indlabel{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--brand)}
+.indgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:.5rem;margin-top:.8rem}
+@media(max-width:900px){.indgrid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.indgrid{grid-template-columns:repeat(2,1fr)}}
+.indgrid .pill{display:flex;align-items:center;justify-content:center;text-align:center;padding:.6rem .7rem;font-size:.84rem;line-height:1.25}
 </style>
 </head>
 <body>
@@ -127,6 +136,31 @@
         </div>
       </a>
 
+    </div>
+    <!-- The sectors Custom organises its own solutions around, taken from
+         custom.biz. Plain spans: .pill is a link elsewhere on the site,
+         but there is nowhere for these to point. Moved here from the home
+         page, where it sat in a half-width column.
+
+         Laid out as an equal-column grid rather than the wrapping flex
+         .pills row, so the block squares off against the cards above.
+         Ten sectors will not fit one row at a readable size — the longest
+         labels alone run past the container — so it is five across and
+         two deep. -->
+    <div class="inds reveal d3">
+      <span class="indlabel">Industries served</span>
+      <div class="indgrid">
+        <span class="pill">Retail</span>
+        <span class="pill">Self-Payment &amp; Info Kiosk</span>
+        <span class="pill">Public Transport</span>
+        <span class="pill">Healthcare</span>
+        <span class="pill">Parking</span>
+        <span class="pill">Logistics &amp; Postal</span>
+        <span class="pill">Entertainment</span>
+        <span class="pill">Lotteries &amp; Betting</span>
+        <span class="pill">Manufacturing</span>
+        <span class="pill">Banking &amp; Finance</span>
+      </div>
     </div>
   </div>
 </section>
