@@ -9,20 +9,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/site.css?v=202607222030" />
+<link rel="stylesheet" href="../assets/site.css?v=202607222115" />
 <style>
-/* page-specific: logo wall. Fixed-height cells so logos of very different
-   proportions still sit on a consistent baseline grid. */
-.logogrid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:1.6rem}
-@media(max-width:1000px){.logogrid{grid-template-columns:repeat(4,1fr)}}
-@media(max-width:760px){.logogrid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:480px){.logogrid{grid-template-columns:repeat(2,1fr)}}
-.logogrid .cell{background:#fff;min-height:132px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;padding:1.1rem .9rem;text-align:center;transition:background .15s}
-.logogrid .cell:hover{background:var(--paper)}
-/* fixed box + contain: every logo is scaled to the same optical size,
-   whether its source file is large or small, without distortion */
-.logogrid .cell img{width:100%;height:52px;object-fit:contain}
-.logogrid .cell .nm{font-size:.78rem;font-weight:600;color:var(--muted);line-height:1.25}
+/* The wall is the shared .custgrid from site.css. Only two rules are
+   local: this page names every brand and tints a cell on hover, where
+   the customer walls elsewhere are inert. */
+.custgrid .cell{transition:background .15s}
+.custgrid .cell:hover{background:var(--paper)}
 </style>
 </head>
 <body>
@@ -105,7 +98,7 @@
       <span class="kicker">Our principals</span>
       <h2 class="h2">Brands we supply and service.</h2>
     </div>
-    <div class="logogrid">
+    <div class="custgrid">
       <div class="cell reveal"><img src="../photos/partners/airtec.png" alt="Airtec" /><span class="nm">Airtec</span></div>
       <div class="cell reveal"><img src="../photos/partners/brainbee.webp" alt="Brain Bee" /><span class="nm">Brain Bee</span></div>
       <div class="cell reveal"><img src="../photos/partners/cebora.png" alt="Cebora" /><span class="nm">Cebora</span></div>
