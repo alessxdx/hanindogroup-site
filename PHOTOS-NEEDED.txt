@@ -236,13 +236,18 @@ airasia.png                   AirAsia                         [NEEDED]
                               watermark, so it was discarded rather than
                               shipped. Needs a clean source.
 
-JD Sports keeps its name visible: its mark is the JD monogram alone,
-with no wordmark, the same exception JICT gets on the Citra wall.
+JD Sports and Wei Long Electronics keep their names visible: both marks
+are monograms with no wordmark, the same exception JICT gets on the
+Citra wall.
 
-philippine-airlines.png is very slightly clipped on its left edge, where
-the red flag element meets the frame. Replace if a cleaner file turns
-up. sg-pools.png is portrait rather than landscape, so it renders
-narrower than its neighbours in the fixed-height cell.
+philippine-airlines.png is clipped on its left edge in the source file
+itself — the red and blue wedges run off the frame. White margin was
+added around it so it no longer touches the cell edge, which stops it
+reading as though the cell had cropped it, but the missing artwork
+cannot be recovered. Replace if a clean file turns up.
+
+sg-pools.png is portrait rather than landscape, so it renders narrower
+than its neighbours in the fixed-height cell.
 
 
 --------------------------------------------------
