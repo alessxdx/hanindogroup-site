@@ -285,9 +285,12 @@ sg-pools.png is portrait rather than landscape, so it renders narrower
 than its neighbours in the fixed-height cell. burger-king.png is nearly
 square, so it sits the same way.
 
-idemia.png arrived with its chevron device sliced down the left, so it
-is cropped to the IDEMIA wordmark alone — a standard lockup, and clean,
-where the mark could not be repaired.
+idemia.png is the full lockup, chevron device and wordmark. The first
+file supplied had the chevron sliced and was cut back to the wordmark
+alone; the replacement is complete. It arrived white on IDEMIA purple,
+which would have shown as a purple block in a wall of white cells, so it
+was inverted to purple on white — the company's primary lockup, and the
+same artwork, not a recolour of their brand.
 
 SITA and Philippine Airlines are SVG, not PNG. Both raster versions were
 cropped — SITA's final A and PAL's sunburst were sliced in the supplied
