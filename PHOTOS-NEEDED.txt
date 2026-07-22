@@ -113,7 +113,7 @@ oag-stp.jpg               Product card — submersible turbine pump
 oag-piping.jpg            Product card — piping / fueling components
 
 CUSTOMER LOGOS
-The "Customer base" wall on /oil-and-gas/index.html has 20 logo slots.
+The "Customer base" wall on /oil-and-gas/index.html has 19 logo slots.
 They live in /photos/customers/ — NOT in /photos/ itself. Drop a PNG
 with the EXACT filename below and it appears; until then the cell shows
 the customer name on its own, which looks deliberate rather than
@@ -141,17 +141,12 @@ berau-coal.png                PT Berau Coal                   [COMPLETE]
 freeport.png                  PT Freeport Indonesia           [COMPLETE]
 kideco.png                    PT Kideco Jaya Agung            [COMPLETE]
 newmont.png                   PT Newmont Nusa Tenggara        [COMPLETE]
+exxonmobil.png                Exxon Mobil Cepu Ltd            [COMPLETE]
 
-malaysia-truck-terminal.png   Malaysia Truck Terminal         [NEEDED]
-                              The source sheet shows a yellow "asb"
-                              mark against this row — confirm which
-                              company it actually is before sourcing.
 star-energy.png               Star Energy Geothermal Salak    [NEEDED]
-exxonmobil.png                Exxon Mobil Cepu Ltd            [NEEDED]
-                              A file was fetched but the source image
-                              was itself cropped mid-wordmark
-                              ("ExxonMo..."), so it was discarded
-                              rather than shipped cut off.
+
+Malaysia Truck Terminal was dropped from the wall at the business's
+request, taking it from 20 customers to 19.
 
 NOTES ON SOURCES
 Most of these came from proxied search-result thumbnails, which are
