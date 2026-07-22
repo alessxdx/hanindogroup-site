@@ -561,3 +561,71 @@ body{line-height:1.65}
   .topbar .brand img{height:32px}
   .brand .btxt strong{font-size:.78rem !important}
 }
+
+/* ---------- VISION & MISSION — layered card over a colour panel ----------
+   The white card sits inset on a crimson/navy panel, with the step number
+   showing in the strip beneath it. Declared last so the flat-treatment
+   block above does not strip the radii back to var(--r). */
+.vm-item{position:relative;border-radius:16px;padding:.8rem .8rem 2.3rem;display:flex;flex-direction:column}
+.vm-item.vm-v{background:linear-gradient(160deg,var(--crimson),var(--crimson-600))}
+.vm-item.vm-m{background:linear-gradient(160deg,var(--navy-800),var(--navy-700))}
+.vmc{background:var(--white);border-radius:12px;padding:1.4rem 1.3rem;text-align:center;flex:1;box-shadow:0 14px 28px -22px rgba(7,15,36,.55)}
+.vmic{width:44px;height:44px;margin:0 auto .7rem;border-radius:50%;background:var(--paper);border:1px solid var(--line);display:flex;align-items:center;justify-content:center}
+.vmic svg{width:21px;height:21px;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.vm-v .vmic svg{stroke:var(--crimson)}
+.vm-m .vmic svg{stroke:var(--navy-800)}
+.vmc h3{font-weight:800;font-size:.95rem;letter-spacing:.1em;text-transform:uppercase;color:var(--navy-800);margin-bottom:.55rem}
+.vmc>p{color:#33405c;font-size:.92rem}
+.vmno{position:absolute;left:50%;bottom:.7rem;transform:translateX(-50%);font-weight:800;font-size:.92rem;letter-spacing:.14em;color:rgba(255,255,255,.92)}
+/* the mission list sits on white here, so re-colour it from the navy-card defaults */
+.vmc .mlist{gap:.6rem;text-align:left;margin-top:.2rem}
+.vmc .mlist p{color:#33405c;font-size:.9rem}
+.vmc .mlist .n{width:26px;height:26px;font-size:.82rem}
+@media(max-width:780px){.vmc{padding:1.3rem 1.1rem}}
+
+/* ---------- WHY CHOOSE US — soft icon tiles with a follow-on link ---------- */
+.adv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.5rem}
+@media(max-width:860px){.adv-grid{grid-template-columns:1fr}}
+.adv{background:var(--white);border-radius:16px;padding:1.5rem 1.3rem;text-align:center;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
+.adv:hover{transform:translateY(-3px);box-shadow:0 24px 42px -28px rgba(7,15,36,.55)}
+.advic{width:50px;height:50px;margin:0 auto .85rem;border-radius:14px;display:flex;align-items:center;justify-content:center}
+.advic svg{width:23px;height:23px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.adv-1 .advic{background:#fdecef}.adv-1 .advic svg{stroke:var(--crimson)}
+.adv-2 .advic{background:#eaeff9}.adv-2 .advic svg{stroke:var(--navy-800)}
+.adv-3 .advic{background:#fff0e8}.adv-3 .advic svg{stroke:#ff6a3d}
+.adv h3{font-weight:800;font-size:1.02rem;color:var(--navy-800);margin-bottom:.45rem}
+.adv p{color:var(--muted);font-size:.9rem;max-width:32ch;margin:0 auto}
+/* margin-top:auto pins the link to the card floor so all three line up
+   even though the copy above them runs to different lengths */
+.advlink{display:inline-flex;align-items:center;align-self:center;gap:.35rem;margin-top:auto;padding-top:.9rem;font-weight:700;font-size:.84rem;color:var(--crimson);text-decoration:none}
+.advlink svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2.2;transition:transform .18s}
+.advlink:hover{text-decoration:underline}
+.adv:hover .advlink svg{transform:translateX(3px)}
+
+/* ---------- CREDENTIAL CARDS — white card, tinted icon tile, colour foot ---------- */
+.ccard{background:var(--white);border-radius:16px;padding:1.6rem 1.5rem 1.5rem;position:relative;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 14px 30px -24px rgba(7,15,36,.5);transition:transform .2s,box-shadow .2s}
+.ccard:hover{transform:translateY(-3px);box-shadow:0 26px 46px -30px rgba(7,15,36,.55)}
+.ccard::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px}
+.cc-red::after{background:var(--fire)}
+.cc-navy::after{background:var(--navy-800)}
+.ccic{width:50px;height:50px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
+.cc-red .ccic{background:#fdecef}
+.cc-navy .ccic{background:#eaeff9}
+.ccic svg{width:24px;height:24px;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.cc-red .ccic svg{stroke:var(--crimson)}
+.cc-navy .ccic svg{stroke:var(--navy-800)}
+.ccey{font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;font-weight:800;color:var(--muted);display:block;margin-bottom:.35rem}
+.ccard h3{font-weight:800;font-size:1.08rem;line-height:1.3;color:var(--navy-800);margin-bottom:.6rem}
+.ccard>p{color:var(--muted);font-size:.92rem}
+.ccard>p i{font-style:italic;color:var(--navy-700)}
+.ccpills{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.9rem}
+.ccpill{font-size:.75rem;font-weight:700;padding:.38rem .72rem;border-radius:8px;background:var(--paper);color:var(--navy-800);border:1px solid var(--line)}
+.cclink{margin-top:auto;padding-top:1rem;align-self:flex-start;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:var(--crimson);text-decoration:none}
+.cclink:hover{text-decoration:underline}
+
+/* smaller ISO certificate cards inside the compact credentials band */
+.section.compact .isoimg{height:150px}
+.section.compact .isometa{padding:.75rem .9rem}
+.section.compact .isometa .std{font-size:.92rem}
+.section.compact .isometa .lbl{font-size:.78rem;margin-top:.15rem}
+.section.compact .isonote{font-size:.82rem}
