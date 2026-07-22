@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/site.css?v=202607241000" />
+<link rel="stylesheet" href="../assets/site.css?v=202607221730" />
 </head>
 <body>
 
@@ -119,6 +119,29 @@
     </div>
   </div>
 </section>
+<!-- ============ CUSTOMER BASE ============ -->
+<!-- TO FILL IN: one .cell per customer, following the oil-and-gas wall.
+     Drop a logo in /photos/customers/ and add a row like:
+
+       <div class="cell reveal"><img src="../photos/customers/FILE.png"
+         alt="PT Customer Name" loading="lazy"
+         onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'"
+         /><span class="nm" style="display:none">PT Customer Name</span></div>
+
+     The name shows automatically if the logo file is missing, so a cell
+     is never blank — a customer with no logo yet can go in as text.
+     .custgrid lives in site.css; nothing page-local is needed.
+     The section stays commented out until the first cell is added,
+     because an empty grid renders as a heading over nothing. -->
+<!--
+<section class="customers" aria-label="Customer base">
+  <div class="chead reveal"><span class="kick">Customer base</span></div>
+  <div class="wrap">
+    <div class="custgrid">
+    </div>
+  </div>
+</section>
+-->
 <!-- ============ CONTACT ============ -->
 <section class="section contact">
   <div class="glow"></div>
