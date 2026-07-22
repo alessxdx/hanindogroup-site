@@ -199,12 +199,16 @@ autm-access-control.jpg       Product card — access control & ID
 --------------------------------------------------
 PRINTER & POS  (/printer-pos/)
 --------------------------------------------------
-hero-printer-pos.jpg      DONE — page hero, office signboard (2560x1920).
-                          Shared by all five pages in the section.
-pos-terminal.jpg          DONE — intro section, reception with the
-                          Custom roll-up banner (2560x1920). Shares its
-                          subject with the hero, which is the same
-                          signboard; a product shot would separate them.
+hero-printer-pos.jpg      DONE — page hero, reception with the Custom
+                          roll-up banner (2560x1920). Shared by all five
+                          pages, each cropped to object-position
+                          center 70% so the heading falls on the counter
+                          rather than the signage.
+pos-terminal.jpg          DONE — intro section, the office signboard
+                          (2560x1920). Still a stand-in: a product shot
+                          of a Custom terminal or printer would suit the
+                          slot better, and would stop the section
+                          repeating the hero's subject.
 
 
 --------------------------------------------------
