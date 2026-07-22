@@ -272,12 +272,17 @@ img{max-width:100%;display:block}
 
 /* ---------- services page ---------- */
 /* services grid — flat catalogue style from site.css, with fire-brand accents */
-.svc-grid{grid-template-columns:repeat(3,1fr)}
-@media(max-width:1000px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:560px){.svc-grid{grid-template-columns:1fr}}
-.svc{background:var(--paper)}
+/* six services on one row at desktop, stepping down on narrower screens */
+.svc-grid{grid-template-columns:repeat(6,1fr)}
+@media(max-width:1150px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:720px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:460px){.svc-grid{grid-template-columns:1fr}}
+.svc{background:var(--paper);padding:1.1rem .95rem 1.2rem}
 .svc::before{background:var(--fire)}
+.svc .ic{width:26px;height:26px;margin-bottom:.6rem}
 .svc .ic svg{stroke:#ff8a5c}
+.svc h3{font-size:.87rem;line-height:1.3;margin-bottom:.3rem}
+.svc p{font-size:.79rem;line-height:1.45}
 .pills{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.6rem}
 .pill{background:var(--white);border:1px solid var(--line);border-radius:40px;padding:.6rem 1.15rem;font-size:.88rem;font-weight:700;color:var(--navy-800);transition:.18s}
 .pill:hover{background:var(--navy-800);color:#fff;border-color:var(--navy-800)}
@@ -309,10 +314,13 @@ img{max-width:100%;display:block}
 .pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2.6rem}
 @media(max-width:860px){.pgrid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:520px){.pgrid{grid-template-columns:1fr}}
-.pcard{background:var(--white);border:1px solid var(--line);border-radius:16px;overflow:hidden;text-align:center;transition:transform .2s,box-shadow .2s}
+/* title sits above the product shot, caption beneath — see .ptitle/.pcap order */
+.pcard{background:var(--white);border:1px solid var(--line);border-radius:16px;overflow:hidden;text-align:center;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column;padding:.9rem .8rem 1rem}
 .pcard:hover{transform:translateY(-6px);box-shadow:0 26px 44px -26px rgba(16,26,48,.45)}
-.pbox{background:linear-gradient(165deg,#f2f5fa 0%,#e2e9f3 100%);height:180px;display:flex;align-items:center;justify-content:center;padding:1rem;position:relative;overflow:hidden}
-.pbox::after{content:"";position:absolute;left:-30%;top:-60%;width:90%;height:120%;background:radial-gradient(circle,rgba(255,255,255,.85),transparent 65%);pointer-events:none}
+.ptitle{order:-1;font-weight:700;font-size:.92rem;color:var(--crimson);line-height:1.3;margin-bottom:.7rem}
+.pcap{order:1;font-size:.79rem;line-height:1.4;color:var(--navy-800)!important;margin-top:.6rem}
+.pbox{background:transparent;height:132px;display:flex;align-items:center;justify-content:center;padding:0;position:relative;overflow:hidden;border-radius:10px}
+.pbox::after{content:none}
 .pbox svg{height:100%;width:auto;max-width:100%;position:relative;z-index:1;transition:transform .25s}
 .pcard:hover .pbox svg{transform:scale(1.06)}
 .pbody{padding:1.15rem 1.2rem 1.45rem}
@@ -326,7 +334,7 @@ img{max-width:100%;display:block}
 .pbox img{height:100%;width:auto;max-width:100%;object-fit:contain;position:relative;z-index:1;transition:transform .25s;mix-blend-mode:multiply}
 .pcard:hover .pbox img{transform:scale(1.06)}
 
-.pbox-photo{background:linear-gradient(165deg,#f2f5fa 0%,#e2e9f3 100%)}
+.pbox-photo{background:transparent}
 
 /* ---------- customers marquee ---------- */
 .customers{background:var(--white);position:relative;overflow:hidden;padding:clamp(46px,7vw,82px) 0}
@@ -381,8 +389,8 @@ img{max-width:100%;display:block}
 .section.compact .isogrid{margin-top:1.6rem}
 .section.compact .certgrid{margin-top:1.6rem;gap:1.1rem}
 .section.compact .isonote{margin-top:1rem}
-.section.compact .svc-grid{margin-top:1.8rem}
-.section.compact .pgrid{margin-top:1.8rem}
+.section.compact .svc-grid{margin-top:1.2rem}
+.section.compact .pgrid{margin-top:1.3rem;gap:.9rem}
 .section.compact .process{margin-top:1.8rem}
 .section.compact .proj-grid{margin-top:1.8rem}
 .contact.compact h2{font-size:clamp(1.6rem,2.9vw,2.2rem)}
