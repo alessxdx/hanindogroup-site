@@ -26,6 +26,33 @@
    leaving a gap on the right; below ~820px they hit the floor and the
    strip goes back to scrolling. */
 .strip-4 .tile{flex:1 1 0;min-width:190px}
+/* Hero product stage — the four families cycling on the right of the
+   hero. Depth is faked with perspective and a slight Y-axis turn as
+   each slide arrives and leaves; the products themselves are flat
+   cut-outs, so the motion stays shallow rather than pretending to be a
+   real 3D model. Copy keeps the left two-thirds to itself.
+   Below 900px the stage is dropped entirely — there is no room for it
+   beside the heading, and stacking it under the copy pushes the whole
+   page down for decoration. */
+.hero-show{min-height:clamp(240px,44vh,430px)}
+.hero-show .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(1.5rem,3vw,3rem);align-items:center}
+.hstage{position:relative;height:clamp(180px,26vh,250px);perspective:1000px}
+.hslide{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.7rem;
+  opacity:0;transform:rotateY(18deg) translateZ(-60px) scale(.94);transition:opacity .7s ease,transform .7s cubic-bezier(.22,.61,.36,1);pointer-events:none}
+.hslide.on{opacity:1;transform:rotateY(0) translateZ(0) scale(1)}
+.hslide.out{opacity:0;transform:rotateY(-18deg) translateZ(-60px) scale(.94)}
+.hslide img{max-width:100%;max-height:calc(100% - 2rem);width:auto;height:auto;object-fit:contain;
+  filter:drop-shadow(0 18px 26px rgba(0,0,0,.45));animation:hfloat 7s ease-in-out infinite}
+.hslide figcaption{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--sky-2)}
+@keyframes hfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@media(prefers-reduced-motion:reduce){
+  .hslide{transition:none}
+  .hslide img{animation:none}
+}
+@media(max-width:900px){
+  .hero-show .wrap{display:block}
+  .hstage{display:none}
+}
 /* page-specific: customer wall, same as the one on the Hanindo Citra page.
    Fixed-height cells so logos of very different proportions sit on a
    consistent baseline. Names are hidden and surface only if a logo file
@@ -80,13 +107,26 @@
 <!-- END SITE HEADER -->
 
 <!-- ============ PAGE HERO ============ -->
-<section class="pagehero">
+<section class="pagehero hero-show">
   <div class="bg"><img src="../photos/hero-printer-pos.jpg" alt="" style="object-position:center 70%" onerror="this.style.display='none'" /></div>
   <div class="ov"></div><div class="glow"></div>
   <div class="wrap">
-    <div class="crumb"><a href="../">Hanindo Group</a><span class="sep">/</span><a href="index.html">Custom (S.E.A) Gralessando</a></div>
-    <h1>Custom (S.E.A) <span class="fx">Gralessando</span></h1>
-    <p class="intro">Custom (S.E.A) Gralessando supplies the printing, scanning and point-of-sale hardware and software behind retail and hospitality automation.</p>
+    <div class="hcopy">
+      <div class="crumb"><a href="../">Hanindo Group</a><span class="sep">/</span><a href="index.html">Custom (S.E.A) Gralessando</a></div>
+      <h1>Custom (S.E.A) <span class="fx">Gralessando</span></h1>
+      <p class="intro">Custom (S.E.A) Gralessando supplies the printing, scanning and point-of-sale hardware and software behind retail and hospitality automation.</p>
+    </div>
+    <!-- The four product families, cycling one at a time. Decorative:
+         the same four are listed properly further down the page, so the
+         stage is aria-hidden and the images carry empty alt text. If the
+         script does not run, the first slide is the one marked .on in
+         the markup and simply sits there. -->
+    <div class="hstage" id="hstage" aria-hidden="true">
+      <figure class="hslide on"><img src="../photos/printer-pos/professional-printing.png" alt="" onerror="this.closest('.hslide').remove()" /><figcaption>Professional Printing</figcaption></figure>
+      <figure class="hslide"><img src="../photos/printer-pos/dc-pos.png" alt="" onerror="this.closest('.hslide').remove()" /><figcaption>DC / POS</figcaption></figure>
+      <figure class="hslide"><img src="../photos/printer-pos/scanning.png" alt="" onerror="this.closest('.hslide').remove()" /><figcaption>Scanning</figcaption></figure>
+      <figure class="hslide"><img src="../photos/printer-pos/self-service.png" alt="" onerror="this.closest('.hslide').remove()" /><figcaption>Self-Service</figcaption></figure>
+    </div>
   </div>
 </section>
 <!-- ============ INTRO / SPLIT ============ -->
@@ -139,7 +179,7 @@
         <a class="tile" href="https://www.custom.biz/en_GB/catalog/printers" target="_blank" rel="noopener"><img src="../photos/printer-pos/professional-printing.png" alt="" loading="lazy" onerror="this.remove()" /><span>Professional Printing Solutions</span></a>
         <a class="tile" href="https://www.custom.biz/en_GB/catalog/dc-pos-solutions" target="_blank" rel="noopener"><img src="../photos/printer-pos/dc-pos.png" alt="" loading="lazy" onerror="this.remove()" /><span>DC / POS Solutions</span></a>
         <a class="tile" href="https://www.custom.biz/en_GB/catalog/scanning-solutions" target="_blank" rel="noopener"><img src="../photos/printer-pos/scanning.png" alt="" loading="lazy" onerror="this.remove()" /><span>Scanning Solutions</span></a>
-        <a class="tile" href="https://www.custom.biz/en_GB/catalog/self-service-solutions" target="_blank" rel="noopener"><img src="../photos/printer-pos/self-service.jpg" alt="" loading="lazy" onerror="this.remove()" /><span>Self-Service Solutions</span></a>
+        <a class="tile" href="https://www.custom.biz/en_GB/catalog/self-service-solutions" target="_blank" rel="noopener"><img src="../photos/printer-pos/self-service.png" alt="" loading="lazy" onerror="this.remove()" /><span>Self-Service Solutions</span></a>
       </div>
       <button class="stripmore" type="button" aria-label="Show more products"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
     </div>
@@ -288,6 +328,23 @@ function hsearch(f){var q=(f.q.value||'').trim();if(!q)return false;window.open(
 (function(){var b=document.getElementById('burger'),t=document.getElementById('tabs');if(b&&t){b.addEventListener('click',function(){var o=t.classList.toggle('open');b.setAttribute('aria-expanded',o);});}})();
 /* reveal */
 (function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
+/* hero product stage: cross-fade the four families, one at a time.
+   Holds still for anyone who prefers reduced motion, and stops while
+   the tab is in the background. */
+(function(){var st=document.getElementById('hstage');if(!st)return;
+var s=st.querySelectorAll('.hslide');if(s.length<2){return;}
+if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+var i=0,t=null;
+function step(){
+  s[i].classList.remove('on');s[i].classList.add('out');
+  var prev=i;i=(i+1)%s.length;
+  s[i].classList.remove('out');s[i].classList.add('on');
+  setTimeout(function(){s[prev].classList.remove('out');},800);
+}
+function play(){if(!t)t=setInterval(step,4000);}
+function pause(){if(t){clearInterval(t);t=null;}}
+document.addEventListener('visibilitychange',function(){document.hidden?pause():play();});
+if(!document.hidden)play();})();
 /* product strip: advance a screenful, wrap back to the start at the end.
    The button hides itself when everything already fits. */
 (function(){var s=document.getElementById('tilestrip'),b=document.querySelector('.stripmore');if(!s||!b)return;

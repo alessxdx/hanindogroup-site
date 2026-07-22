@@ -235,8 +235,11 @@ goes public — and prefer the media kit anyway, since these are only
 professional-printing.png VKP80III kiosk printer          [PLACEHOLDER]
 dc-pos.png                TREK touch monitor              [PLACEHOLDER]
 scanning.png              SCAN 105 desktop scanner        [PLACEHOLDER]
-self-service.jpg          CONNECT self-service kiosk      [PLACEHOLDER]
-                          (note .jpg, not .png)
+self-service.png          CONNECT self-service kiosk      [PLACEHOLDER]
+                          Custom serve this one as a JPEG on a white
+                          background; the copy here has been keyed to
+                          transparent so it can sit on the dark hero
+                          alongside the other three.
 
 CUSTOMER LOGOS
 The "Customer base" wall on /printer-pos/index.html shares the
