@@ -124,26 +124,49 @@ Use the customer's own official logo file — do not redraw or upscale
 one from a screenshot, and check we have permission to display it
 before the site goes public.
 
-adaro.png                     PT Adaro Indonesia
-pertamina-patra-niaga.png     PT Pertamina Patra Niaga
-interport.png                 PT Interport Mandiri Utama
-indomobil-prima-energi.png    PT Indomobil Prima Energi
-injourney-airports.png        Soekarno-Hatta Intl Airport (InJourney)
-mrt-jakarta.png               PT MRT Jakarta
-jict.png                      Jakarta Intl Container Terminal
-chiyoda.png                   Chiyoda Corporation — Freeport Smelter
-honda-prospect-motor.png      PT Honda Prospect Motor
-astra-daihatsu.png            PT Astra Daihatsu Motor
-penang-airport.png            Penang International Airport
-malaysia-truck-terminal.png   Malaysia Truck Terminal
-exxonmobil.png                Exxon Mobil Cepu Ltd
-jgc.png                       PT JGC Indonesia
-toho-gas.png                  Toho Gas
-star-energy.png               Star Energy Geothermal Salak, Ltd
-berau-coal.png                PT Berau Coal
-freeport.png                  PT Freeport Indonesia
-kideco.png                    PT Kideco Jaya Agung
-newmont.png                   PT Newmont Nusa Tenggara
+adaro.png                     PT Adaro Indonesia              [COMPLETE]
+pertamina-patra-niaga.png     PT Pertamina Patra Niaga        [COMPLETE]
+interport.png                 PT Interport Mandiri Utama      [COMPLETE]
+indomobil-prima-energi.png    PT Indomobil Prima Energi       [COMPLETE]
+injourney-airports.png        Soekarno-Hatta (InJourney)      [COMPLETE]
+mrt-jakarta.png               PT MRT Jakarta                  [COMPLETE]
+jict.png                      Jakarta Intl Container Terminal [COMPLETE]
+chiyoda.png                   Chiyoda Corp — Freeport Smelter [COMPLETE]
+honda-prospect-motor.png      PT Honda Prospect Motor         [COMPLETE]
+astra-daihatsu.png            PT Astra Daihatsu Motor         [COMPLETE]
+penang-airport.png            Penang International Airport    [COMPLETE]
+jgc.png                       PT JGC Indonesia                [COMPLETE]
+toho-gas.png                  Toho Gas                        [COMPLETE]
+berau-coal.png                PT Berau Coal                   [COMPLETE]
+freeport.png                  PT Freeport Indonesia           [COMPLETE]
+kideco.png                    PT Kideco Jaya Agung            [COMPLETE]
+newmont.png                   PT Newmont Nusa Tenggara        [COMPLETE]
+
+malaysia-truck-terminal.png   Malaysia Truck Terminal         [NEEDED]
+                              The source sheet shows a yellow "asb"
+                              mark against this row — confirm which
+                              company it actually is before sourcing.
+star-energy.png               Star Energy Geothermal Salak    [NEEDED]
+exxonmobil.png                Exxon Mobil Cepu Ltd            [NEEDED]
+                              A file was fetched but the source image
+                              was itself cropped mid-wordmark
+                              ("ExxonMo..."), so it was discarded
+                              rather than shipped cut off.
+
+NOTES ON SOURCES
+Most of these came from proxied search-result thumbnails, which are
+small and, where the original had transparency, arrive with a grey
+checkerboard flattened into the pixels. That grey was mapped back to
+white on the affected files, and every logo was trimmed to its artwork
+so the fixed-height cell scales them all to the same optical size.
+
+The weakest files are adaro (200px) and mrt-jakarta (320px). They are
+fine at 52px but soft if ever shown larger. Replace any of these with
+press-kit or vector originals when they can be obtained — keep the same
+filename and the page picks them up with no code change.
+
+jict.png is the emblem only, with no wordmark, which matches the
+company's own mark but reads less clearly at cell size than the others.
 
 
 --------------------------------------------------
