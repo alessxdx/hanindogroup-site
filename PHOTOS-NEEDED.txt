@@ -201,7 +201,10 @@ PRINTER & POS  (/printer-pos/)
 --------------------------------------------------
 hero-printer-pos.jpg      DONE — page hero, office signboard (2560x1920).
                           Shared by all five pages in the section.
-pos-terminal.jpg          Intro section — Custom terminal / printer
+pos-terminal.jpg          DONE — intro section, reception with the
+                          Custom roll-up banner (2560x1920). Shares its
+                          subject with the hero, which is the same
+                          signboard; a product shot would separate them.
 
 
 --------------------------------------------------
