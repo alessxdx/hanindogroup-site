@@ -242,10 +242,16 @@ shown at 52px tall. Names are hidden and appear only if a file is
 missing.
 
 aboitiz.png                   Aboitiz InfraCapital            [COMPLETE]
+amadeus.png                   Amadeus                         [COMPLETE]
+cebu-pacific.png              Cebu Pacific                    [COMPLETE]
 airasia.png                   AirAsia                         [COMPLETE]
 burger-king.png               Burger King                     [COMPLETE]
 collins.png                   Collins Aerospace               [COMPLETE]
 daifuku.png                   Daifuku                         [COMPLETE]
+                              (injourney-airports.png is reused from the
+                              Citra wall — one file, both walls)
+pt-murni.png                  PT Murni                        [COMPLETE]
+strides.png                   Strides                         [COMPLETE]
 idemia.png                    IDEMIA                          [COMPLETE]
 jd-sports.png                 JD Sports                       [COMPLETE]
 nlb.png                       National Library Board          [COMPLETE]
@@ -279,15 +285,15 @@ sg-pools.png is portrait rather than landscape, so it renders narrower
 than its neighbours in the fixed-height cell. burger-king.png is nearly
 square, so it sits the same way.
 
-idemia.png had its chevron mark flush against the left edge; white
-margin was added so it does not read as clipped.
+idemia.png arrived with its chevron device sliced down the left, so it
+is cropped to the IDEMIA wordmark alone — a standard lockup, and clean,
+where the mark could not be repaired.
 
-cebu-pacific.png                Cebu Pacific                  [NEEDED]
-                              Supplied inline as a base64 data URI
-                              rather than a file or a link. It could not
-                              be transcribed intact, so nothing was
-                              written. Save the file straight into
-                              /photos/customers/ or send a URL.
+sita.png is cropped in the source: the final A is sliced vertically at
+the right edge. Nothing can be done to the file itself, since trimming
+it would leave "SIT". Needs a clean replacement.
+
+
 
 
 --------------------------------------------------
