@@ -536,6 +536,21 @@ img{max-width:100%;display:block}
 @media(max-width:520px){.brandcard{height:108px;margin-right:2rem}.brandcard img{max-height:92px;max-width:210px}.brandcard .btext{font-size:.92rem}}
 @media(prefers-reduced-motion:reduce){.mtrack{animation:none;flex-wrap:wrap;justify-content:center}.brandcard{margin:0 .65rem 1rem}}
 
+/* customer wall — the static alternative to the marquee above, for pages
+   with enough customers that scrolling them would be slower than showing
+   them. Same fixed-height cell approach as the /partners/ logo grid, so
+   logos of very different proportions still sit on a consistent baseline.
+   Names are hidden — these logos are well enough known to stand alone —
+   and surface only if a logo file fails to load, so a cell is never
+   empty. Cells are inert: no links out to the customers, no hover. */
+.custgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:1.6rem}
+@media(max-width:1000px){.custgrid{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:760px){.custgrid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:480px){.custgrid{grid-template-columns:repeat(2,1fr)}}
+.custgrid .cell{background:#fff;min-height:132px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;padding:1.1rem .9rem;text-align:center}
+.custgrid .cell img{width:100%;height:52px;object-fit:contain}
+.custgrid .cell .nm{font-size:.78rem;font-weight:600;color:var(--muted);line-height:1.25}
+
 /* partner logo grid — static, all logos visible at once, no motion.
    auto-fill keeps the rows tidy at any width without hand-tuned
    breakpoints, which matters because the count is not a round number. */
