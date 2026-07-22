@@ -13,9 +13,11 @@
 <style>
 /* page-specific: customer wall. Same fixed-height cell approach as the
    /partners/ logo grid, so logos of very different proportions still sit
-   on a consistent baseline. The name is always shown; the logo slot sits
-   above it and collapses if the file is not there yet. Cells are inert —
-   no links out to the customers, and so no hover state either. */
+   on a consistent baseline. Names are hidden — these logos are well
+   enough known to stand alone — and surface only if a logo file fails to
+   load, so a cell is never empty. JICT is the exception: its mark is the
+   emblem alone, with no wordmark, so it keeps its label. Cells are
+   inert — no links out to the customers, and so no hover state either. */
 .custgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:1.6rem}
 @media(max-width:1000px){.custgrid{grid-template-columns:repeat(4,1fr)}}
 @media(max-width:760px){.custgrid{grid-template-columns:repeat(3,1fr)}}
@@ -138,25 +140,25 @@
       <p class="lede">Hanindo Citra equips and maintains fuel and fluid handling installations for state energy companies, mining operations, airports, terminals, EPC contractors and vehicle manufacturers across Indonesia and the region.</p>
     </div>
     <div class="custgrid">
-      <div class="cell reveal"><img src="../photos/customers/adaro.png" alt="PT Adaro Indonesia" loading="lazy" onerror="this.style.display='none'" /><span class="nm">PT Adaro Indonesia</span></div>
-      <div class="cell reveal"><img src="../photos/customers/pertamina-patra-niaga.png" alt="PT Pertamina Patra Niaga" loading="lazy" onerror="this.style.display='none'" /><span class="nm">PT Pertamina Patra Niaga</span></div>
-      <div class="cell reveal"><img src="../photos/customers/interport.png" alt="PT Interport Mandiri Utama" loading="lazy" onerror="this.style.display='none'" /><span class="nm">PT Interport Mandiri Utama</span></div>
-      <div class="cell reveal"><img src="../photos/customers/indomobil-prima-energi.png" alt="PT Indomobil Prima Energi" loading="lazy" onerror="this.style.display='none'" /><span class="nm">PT Indomobil Prima Energi</span></div>
-      <div class="cell reveal"><img src="../photos/customers/injourney-airports.png" alt="Soekarno-Hatta International Airport — InJourney Airports" loading="lazy" onerror="this.style.display='none'" /><span class="nm">Soekarno-Hatta International Airport</span></div>
-      <div class="cell reveal"><img src="../photos/customers/mrt-jakarta.png" alt="PT MRT Jakarta" loading="lazy" onerror="this.style.display='none'" /><span class="nm">PT MRT Jakarta</span></div>
+      <div class="cell reveal"><img src="../photos/customers/adaro.png" alt="PT Adaro Indonesia" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Adaro Indonesia</span></div>
+      <div class="cell reveal"><img src="../photos/customers/pertamina-patra-niaga.png" alt="PT Pertamina Patra Niaga" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Pertamina Patra Niaga</span></div>
+      <div class="cell reveal"><img src="../photos/customers/interport.png" alt="PT Interport Mandiri Utama" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Interport Mandiri Utama</span></div>
+      <div class="cell reveal"><img src="../photos/customers/indomobil-prima-energi.png" alt="PT Indomobil Prima Energi" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Indomobil Prima Energi</span></div>
+      <div class="cell reveal"><img src="../photos/customers/injourney-airports.png" alt="Soekarno-Hatta International Airport — InJourney Airports" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Soekarno-Hatta International Airport</span></div>
+      <div class="cell reveal"><img src="../photos/customers/mrt-jakarta.png" alt="PT MRT Jakarta" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT MRT Jakarta</span></div>
       <div class="cell reveal"><img src="../photos/customers/jict.png" alt="Jakarta International Container Terminal" loading="lazy" onerror="this.style.display='none'" /><span class="nm">Jakarta International Container Terminal</span></div>
-      <div class="cell reveal"><img src="../photos/customers/chiyoda.png" alt="Chiyoda Corporation" loading="lazy" onerror="this.style.display='none'" /><span class="nm">Chiyoda Corporation — Freeport Smelter</span></div>
-      <div class="cell reveal"><img src="../photos/customers/honda-prospect-motor.png" alt="PT Honda Prospect Motor" loading="lazy" onerror="this.style.display='none'" /><span class="nm">PT Honda Prospect Motor</span></div>
-      <div class="cell reveal"><img src="../photos/customers/astra-daihatsu.png" alt="PT Astra Daihatsu Motor" loading="lazy" onerror="this.style.display='none'" /><span class="nm">PT Astra Daihatsu Motor</span></div>
-      <div class="cell reveal"><img src="../photos/customers/penang-airport.png" alt="Penang International Airport" loading="lazy" onerror="this.style.display='none'" /><span class="nm">Penang International Airport</span></div>
-      <div class="cell reveal"><img src="../photos/customers/exxonmobil.png" alt="Exxon Mobil Cepu Ltd" loading="lazy" onerror="this.style.display='none'" /><span class="nm">Exxon Mobil Cepu Ltd</span></div>
-      <div class="cell reveal"><img src="../photos/customers/jgc.png" alt="PT JGC Indonesia" loading="lazy" onerror="this.style.display='none'" /><span class="nm">PT JGC Indonesia</span></div>
-      <div class="cell reveal"><img src="../photos/customers/toho-gas.png" alt="Toho Gas" loading="lazy" onerror="this.style.display='none'" /><span class="nm">Toho Gas — Japan/Indonesia cooperation</span></div>
-      <div class="cell reveal"><img src="../photos/customers/star-energy.png" alt="Star Energy Geothermal Salak, Ltd" loading="lazy" onerror="this.style.display='none'" /><span class="nm">Star Energy Geothermal Salak, Ltd</span></div>
-      <div class="cell reveal"><img src="../photos/customers/berau-coal.png" alt="PT Berau Coal" loading="lazy" onerror="this.style.display='none'" /><span class="nm">PT Berau Coal</span></div>
-      <div class="cell reveal"><img src="../photos/customers/freeport.png" alt="PT Freeport Indonesia" loading="lazy" onerror="this.style.display='none'" /><span class="nm">PT Freeport Indonesia</span></div>
-      <div class="cell reveal"><img src="../photos/customers/kideco.png" alt="PT Kideco Jaya Agung" loading="lazy" onerror="this.style.display='none'" /><span class="nm">PT Kideco Jaya Agung</span></div>
-      <div class="cell reveal"><img src="../photos/customers/newmont.png" alt="PT Newmont Nusa Tenggara" loading="lazy" onerror="this.style.display='none'" /><span class="nm">PT Newmont Nusa Tenggara</span></div>
+      <div class="cell reveal"><img src="../photos/customers/chiyoda.png" alt="Chiyoda Corporation" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Chiyoda Corporation — Freeport Smelter</span></div>
+      <div class="cell reveal"><img src="../photos/customers/honda-prospect-motor.png" alt="PT Honda Prospect Motor" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Honda Prospect Motor</span></div>
+      <div class="cell reveal"><img src="../photos/customers/astra-daihatsu.png" alt="PT Astra Daihatsu Motor" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Astra Daihatsu Motor</span></div>
+      <div class="cell reveal"><img src="../photos/customers/penang-airport.png" alt="Penang International Airport" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Penang International Airport</span></div>
+      <div class="cell reveal"><img src="../photos/customers/exxonmobil.png" alt="Exxon Mobil Cepu Ltd" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Exxon Mobil Cepu Ltd</span></div>
+      <div class="cell reveal"><img src="../photos/customers/jgc.png" alt="PT JGC Indonesia" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT JGC Indonesia</span></div>
+      <div class="cell reveal"><img src="../photos/customers/toho-gas.png" alt="Toho Gas" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Toho Gas — Japan/Indonesia cooperation</span></div>
+      <div class="cell reveal"><img src="../photos/customers/star-energy.png" alt="Star Energy Geothermal Salak, Ltd" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Star Energy Geothermal Salak, Ltd</span></div>
+      <div class="cell reveal"><img src="../photos/customers/berau-coal.png" alt="PT Berau Coal" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Berau Coal</span></div>
+      <div class="cell reveal"><img src="../photos/customers/freeport.png" alt="PT Freeport Indonesia" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Freeport Indonesia</span></div>
+      <div class="cell reveal"><img src="../photos/customers/kideco.png" alt="PT Kideco Jaya Agung" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Kideco Jaya Agung</span></div>
+      <div class="cell reveal"><img src="../photos/customers/newmont.png" alt="PT Newmont Nusa Tenggara" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Newmont Nusa Tenggara</span></div>
     </div>
   </div>
 </section>
