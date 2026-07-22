@@ -598,9 +598,12 @@ body{line-height:1.65}
 /* ---------- SYSTEM TILE STRIP ----------
    Layout comes from site.css; these rules re-colour it for this section.
    The product shots sit on white, so the label scrim is kept light-to-navy. */
-.tile{background:linear-gradient(150deg,var(--navy-800),var(--navy-700))}
-.tile::after{background:linear-gradient(180deg,transparent 45%,rgba(7,15,36,.82))}
-.tile img{object-fit:contain;background:linear-gradient(165deg,#f2f5fa 0%,#e2e9f3 100%)}
+/* The product shots ship with different backgrounds — some pure white, some
+   light grey. Multiply blends whatever they carry into one shared panel so
+   every tile reads the same. */
+.tile{background:linear-gradient(165deg,#f2f5fa 0%,#e2e9f3 100%)}
+.tile::after{background:linear-gradient(180deg,transparent 55%,rgba(7,15,36,.82))}
+.tile img{object-fit:contain;mix-blend-mode:multiply;padding:.7rem}
 .stripmore{background:var(--crimson)}
 .stripmore:hover{background:var(--crimson-600)}
 
