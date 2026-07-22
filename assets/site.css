@@ -543,19 +543,24 @@ img{max-width:100%;display:block}
    Names are hidden — these logos are well enough known to stand alone —
    and surface only if a logo file fails to load, so a cell is never
    empty. Cells are inert: no links out to the customers, no hover. */
-.custgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:1.6rem}
+.custgrid{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:1.6rem}
 @media(max-width:1000px){.custgrid{grid-template-columns:repeat(4,1fr)}}
 @media(max-width:760px){.custgrid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:480px){.custgrid{grid-template-columns:repeat(2,1fr)}}
-.custgrid .cell{background:#fff;min-height:132px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;padding:1.1rem .9rem;text-align:center}
+.custgrid .cell{background:#fff;min-height:132px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;padding:1.1rem .9rem;text-align:center;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
 .custgrid .cell img{width:100%;height:52px;object-fit:contain}
 .custgrid .cell .nm{font-size:.78rem;font-weight:600;color:var(--muted);line-height:1.25}
 
 /* partner logo grid — static, all logos visible at once, no motion.
    auto-fill keeps the rows tidy at any width without hand-tuned
    breakpoints, which matters because the count is not a round number. */
-.lgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
-.lcell{background:var(--white);display:flex;align-items:center;justify-content:center;min-height:98px;padding:1rem;transition:background .18s}
+/* Rules are drawn per cell rather than as a 1px gap over a tinted
+   container: the count is rarely a multiple of the column count, and a
+   tinted container paints the leftover cells of the last row as a solid
+   block. Bordering the cells instead means the grid simply stops where
+   the logos do. */
+.lgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.lcell{background:var(--white);display:flex;align-items:center;justify-content:center;min-height:98px;padding:1rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line);transition:background .18s}
 .lcell:hover{background:var(--paper)}
 /* fixed box + contain, so a small source file is scaled to the same
    optical size as a large one instead of rendering at its natural size */
