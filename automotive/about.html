@@ -10,6 +10,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607221100" />
+<style>
+/* Sole-distributor brand grid — logo tile + what the brand covers.
+   House style: hairline borders, flat colour, 3px radii. A cell whose
+   logo file is missing falls back to a text wordmark automatically, so
+   dropping the PNG into /photos/partners/ later needs no code change. */
+.dgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:1.1rem}
+@media(max-width:680px){.dgrid{grid-template-columns:1fr}}
+.dcell{background:var(--white);display:flex;flex-direction:column;align-items:center;text-align:center;gap:.85rem;padding:1.9rem 1.4rem;transition:background .18s}
+.dcell:hover{background:var(--paper)}
+.dlogo{height:58px;display:flex;align-items:center;justify-content:center}
+.dlogo img{max-width:150px;max-height:58px;width:auto;height:auto;object-fit:contain}
+.dlogo .wm{font-size:.9rem;font-weight:800;letter-spacing:.04em;color:var(--blue-800);line-height:1.25}
+.dname{font-size:.98rem;font-weight:700;color:var(--blue-800);line-height:1.35}
+.dwhat{font-size:.88rem;color:var(--muted);line-height:1.45}
+</style>
 </head>
 <body>
 
@@ -65,21 +80,14 @@
   <div class="wrap">
     <div class="reveal">
       <span class="kicker">Company overview</span>
-      <h2 class="h2">The workshop, fully equipped.</h2>
-      <p class="lede" style="max-width:none">As one of the companies under the flag of the Hanindo Group, PT. Hanindo Automotive inherits the same tradition of continuously offering innovative breakthroughs and fully dedicated service. Specializing in the autoshop equipment business, Hanindo Automotive offers sophisticated products built on the latest technology to increase efficiency, productivity and user friendliness.</p>
+      <h2 class="h2">Equipping Indonesia's workshops.</h2>
+      <p class="lede" style="max-width:none">As one of the companies under the flag of the Hanindo Group, PT. Hanindo Automotive continuously offers innovative breakthroughs and fully dedicated service. Hanindo Automotive offers products built on the latest technology to increase efficiency, productivity and user friendliness.</p>
       <p class="plist-lead">Some of the brands that rely on Hanindo Automotive as their sole distributor:</p>
-      <ul class="plist">
-        <li><b>FAIP &ndash; HPA</b> &mdash; Automotive garage</li>
-        <li><b>Brainbee</b> &mdash; Four gas analyser &amp; smoke meter</li>
-        <li><b>Scantool Autoland</b> &mdash; Engine diagnostics</li>
-        <li><b>RAASM</b> &mdash; Lubrication equipment</li>
-        <li><b>Airtec</b> &mdash; Tire inflator</li>
-        <li><b>Fully</b> &mdash; Volume oil measurement</li>
-        <li><b>Vacula</b> &mdash; Brake fluid tester</li>
-        <li><b>MK BRAND</b> &mdash; Full automatic ATF changer</li>
-        <li><b>BYDE</b> &mdash; Two-post &amp; four-post lifts</li>
-        <li><b>PIUSI</b></li>
-      </ul>
+      <div class="dgrid">
+        <div class="dcell"><div class="dlogo"><img src="../photos/partners/hpa.webp" alt="HPA FAIP" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="wm" style="display:none">HPA FAIP</span></div><div><div class="dname">HPA FAIP</div><div class="dwhat">Aligners, balancers &amp; tyre changers</div></div></div>
+        <div class="dcell"><div class="dlogo"><img src="../photos/partners/raasm.png" alt="RAASM" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="wm" style="display:none">RAASM</span></div><div><div class="dname">RAASM</div><div class="dwhat">Oil &amp; lubrication equipment</div></div></div>
+        <div class="dcell"><div class="dlogo"><img src="../photos/partners/airtec.png" alt="Airtec" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="wm" style="display:none">AIRTEC</span></div><div><div class="dname">Airtec</div><div class="dwhat">Tyre inflators</div></div></div>
+      </div>
     </div>
   </div>
 </section>
