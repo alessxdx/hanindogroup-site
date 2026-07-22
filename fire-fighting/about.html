@@ -10,6 +10,23 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607222115" />
 <link rel="stylesheet" href="../assets/fire-fighting.css?v=202607232000" />
+<style>
+/* Vision & Mission in the flat treatment the automotive About page
+   uses: plain white card, hairline border, pill tag, left-aligned.
+   fire-fighting.css styles .vm-card for the gradient-panel version
+   still used on hanindo-citra-website.html, so this is scoped to
+   .vm-plain and left page-local rather than changing that file.
+   Crimson and navy stand in for the group blues. */
+.vm-plain{gap:1rem;margin-top:1.1rem}
+.vm-plain .vm-card{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:1.25rem 1.3rem}
+.vm-plain .vm-card::before{content:none}
+.vm-plain .vm-card .tag{display:inline-block;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:.26rem .55rem;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--crimson);-webkit-text-fill-color:var(--crimson);-webkit-background-clip:border-box;background-clip:border-box}
+.vm-plain .vm-card h3{font-weight:700;font-size:1.1rem;color:var(--navy-800);margin:.35rem 0 .5rem}
+.vm-plain .vm-card>p{color:var(--muted);font-size:.9rem;line-height:1.55}
+.vm-plain .mlist{gap:.6rem}
+.vm-plain .mlist .n{width:26px;height:26px;background:var(--navy-800);border-radius:var(--r);font-size:.8rem;font-weight:700;box-shadow:none}
+.vm-plain .mlist p{color:var(--muted);font-size:.9rem;line-height:1.55}
+</style>
 </head>
 <body>
 <!-- ============ SITE HEADER (Hanindo two-row — kept) ============ -->
@@ -83,26 +100,20 @@
   <div class="wrap">
     <span class="kicker reveal">Our direction</span>
     <h2 class="h2 reveal">Vision &amp; Mission</h2>
-    <div class="vm">
-      <div class="vm-item vm-v reveal">
-        <div class="vmc">
-          <div class="vmic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1.8 12S5.5 5.5 12 5.5 22.2 12 22.2 12 18.5 18.5 12 18.5 1.8 12 1.8 12z"/><circle cx="12" cy="12" r="3.2"/></svg></div>
-          <h3>Vision</h3>
-          <p>To be the fire-protection partner our clients trust without question — reliable systems, professional service, lasting peace of mind.</p>
-        </div>
-        <span class="vmno">01</span>
+    <div class="vm vm-plain">
+      <div class="vm-card reveal">
+        <span class="tag">01 / Vision</span>
+        <h3>Vision</h3>
+        <p>To be the fire-protection partner our clients trust without question — reliable systems, professional service, lasting peace of mind.</p>
       </div>
-      <div class="vm-item vm-m reveal d1">
-        <div class="vmc">
-          <div class="vmic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.6"/><circle cx="12" cy="12" r="1.2"/></svg></div>
-          <h3>Mission</h3>
-          <ul class="mlist">
-            <li><span class="n">1</span><p>Deliver efficient, targeted services to professional standards.</p></li>
-            <li><span class="n">2</span><p>Invest continuously in innovation and in our people.</p></li>
-            <li><span class="n">3</span><p>Apply systems and technology that raise efficiency, quality and safety.</p></li>
-          </ul>
-        </div>
-        <span class="vmno">02</span>
+      <div class="vm-card reveal d1">
+        <span class="tag">02 / Mission</span>
+        <h3>Mission</h3>
+        <ul class="mlist">
+          <li><span class="n">1</span><p>Deliver efficient, targeted services to professional standards.</p></li>
+          <li><span class="n">2</span><p>Invest continuously in innovation and in our people.</p></li>
+          <li><span class="n">3</span><p>Apply systems and technology that raise efficiency, quality and safety.</p></li>
+        </ul>
       </div>
     </div>
   </div>
