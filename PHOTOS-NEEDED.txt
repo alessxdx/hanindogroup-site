@@ -206,6 +206,40 @@ pos-terminal.jpg          DONE — intro section, reception with the
                           subject with the hero, which is the same
                           signboard; a product shot would separate them.
 
+CUSTOMER LOGOS
+The "Customer base" wall on /printer-pos/index.html shares the
+/photos/customers/ folder with the Hanindo Citra wall — one pool for the
+whole site, so a customer served by two companies needs only one file.
+Same rules as that wall: trimmed to the artwork, ~400px wide or more,
+shown at 52px tall. Names are hidden and appear only if a file is
+missing.
+
+collins.png                   Collins Aerospace               [COMPLETE]
+jd-sports.png                 JD Sports                       [COMPLETE]
+nlb.png                       National Library Board          [COMPLETE]
+philippine-airlines.png       Philippine Airlines             [COMPLETE]
+singapore-airlines.png        Singapore Airlines              [COMPLETE]
+sg-cruise-centre.png          Singapore Cruise Centre         [COMPLETE]
+sg-pools.png                  Singapore Pools                 [COMPLETE]
+sita.png                      SITA                            [COMPLETE]
+smrt.png                      SMRT Trains                     [COMPLETE]
+st-engineering.png            ST Engineering                  [COMPLETE]
+wei-long-electronics.png      Wei Long Electronics            [COMPLETE]
+
+airasia.png                   AirAsia                         [NEEDED]
+                              A file was fetched but it was cropped at
+                              both edges and carried a repeating "Canva"
+                              watermark, so it was discarded rather than
+                              shipped. Needs a clean source.
+
+JD Sports keeps its name visible: its mark is the JD monogram alone,
+with no wordmark, the same exception JICT gets on the Citra wall.
+
+philippine-airlines.png is very slightly clipped on its left edge, where
+the red flag element meets the frame. Replace if a cleaner file turns
+up. sg-pools.png is portrait rather than landscape, so it renders
+narrower than its neighbours in the fixed-height cell.
+
 
 --------------------------------------------------
 FLOWTECH ENGINEERING  (/flowtech-engineering/)
