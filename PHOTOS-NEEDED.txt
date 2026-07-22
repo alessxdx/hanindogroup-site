@@ -217,18 +217,14 @@ is a square and contains rather than crops. A tile whose photo is
 missing shows as a plain panel with its label, so the strip looks
 deliberate while they are outstanding.
 
-The eight below are Custom's own product families, used as a starting
-point. Rename, drop or add tiles once the range for this market is
-settled — each is one <a class="tile"> in printer-pos/index.html.
+Four tiles, one per top-level section of the Custom catalogue, each
+linking out to that section on custom.biz. Pick a shot that represents
+the whole family rather than one model.
 
-pos-printer.png           POS / receipt printer               [NEEDED]
-fiscal-printer.png        Fiscal printer                      [NEEDED]
-ticket-printer.png        Ticket printer                      [NEEDED]
-label-printer.png         Label printer                       [NEEDED]
-mobile-printer.png        Mobile / portable printer           [NEEDED]
-pos-terminal.png          POS terminal or touch system        [NEEDED]
-barcode-scanner.png       Barcode scanner                     [NEEDED]
-document-scanner.png      Document scanner                    [NEEDED]
+professional-printing.png Professional Printing Solutions     [NEEDED]
+dc-pos.png                DC / POS Solutions                  [NEEDED]
+scanning.png              Scanning Solutions                  [NEEDED]
+self-service.png          Self-Service Solutions              [NEEDED]
 
 CUSTOMER LOGOS
 The "Customer base" wall on /printer-pos/index.html shares the
