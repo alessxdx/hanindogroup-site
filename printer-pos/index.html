@@ -10,6 +10,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607222115" />
+<style>
+/* .checks is a plain one-line tick list in site.css. Here each tick
+   carries a sentence, so the label goes on its own line above it. */
+.checks-desc li{align-items:flex-start}
+.checks-desc b{display:block;font-weight:700;color:var(--blue-800);margin-bottom:.12rem}
+.checks-desc span{font-size:.88rem;color:var(--muted);line-height:1.5}
+</style>
 </head>
 <body>
 
@@ -69,10 +76,14 @@
         <h2 class="h2">Printing, scanning, and point of sale.</h2>
         <p class="lede">Custom (S.E.A) Gralessando represents Custom, a manufacturer of hardware and software for automation with printing, scanning and reading solutions. The division runs its own site, which carries the full and current product catalogue.</p>
         <p class="lede">Incorporated in Singapore as Gralessando (S) Pte Ltd, it covers the South East Asian market — Malaysia, the Philippines and Vietnam are all served through this company, with an office in Singapore.</p>
-        <ul class="checks">
-          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Printing solutions</span></li>
-          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Scanning solutions</span></li>
-          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Reading solutions</span></li>
+        <!-- The three areas Custom organises its own catalogue around,
+             taken from custom.biz. "Reading solutions" was folded into
+             data capture, which is where the scanners and payment
+             terminals actually sit. -->
+        <ul class="checks checks-desc">
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Professional printing</b>POS, fiscal, ticket, label and mobile printers built for unattended, high-volume use.</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Point of sale &amp; data capture</b>POS terminals, touch systems, cash registers, barcode scanners and payment terminals.</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Scanning</b>Document scanners and multifunction print-and-scan systems for digitalising paperwork.</span></li>
         </ul>
       </div>
       <div class="shot reveal d2">
