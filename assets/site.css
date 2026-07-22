@@ -88,6 +88,11 @@ img{max-width:100%;display:block}
 .lgrid.brands3{grid-template-columns:repeat(3,1fr)}
 @media(max-width:720px){.lgrid.brands3{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:420px){.lgrid.brands3{grid-template-columns:1fr}}
+/* a taller logo box: square marks like ATOM were being pinned to the 46px
+   height cap while wide wordmarks ran to the full width */
+.lgrid.brands3 .lcell{min-height:112px}
+.lgrid.brands3 .lcell img{width:126px;height:72px}
+.lgrid.brands3 .lcell:hover{background:var(--white)}
 /* top-brands logo grid — white cards on the paper band */
 .brandgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2rem}
 @media(max-width:900px){.brandgrid{grid-template-columns:repeat(2,1fr);gap:.9rem}}
