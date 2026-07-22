@@ -586,7 +586,7 @@ body{line-height:1.65}
 /* ---------- WHY CHOOSE US — soft icon tiles with a follow-on link ---------- */
 .adv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.5rem}
 @media(max-width:860px){.adv-grid{grid-template-columns:1fr}}
-.adv{background:var(--white);border-radius:16px;padding:1.5rem 1.3rem;text-align:center;transition:transform .2s,box-shadow .2s}
+.adv{background:var(--white);border-radius:16px;padding:1.5rem 1.3rem;text-align:center;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
 .adv:hover{transform:translateY(-3px);box-shadow:0 24px 42px -28px rgba(7,15,36,.55)}
 .advic{width:50px;height:50px;margin:0 auto .85rem;border-radius:14px;display:flex;align-items:center;justify-content:center}
 .advic svg{width:23px;height:23px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
@@ -595,7 +595,9 @@ body{line-height:1.65}
 .adv-3 .advic{background:#fff0e8}.adv-3 .advic svg{stroke:#ff6a3d}
 .adv h3{font-weight:800;font-size:1.02rem;color:var(--navy-800);margin-bottom:.45rem}
 .adv p{color:var(--muted);font-size:.9rem;max-width:32ch;margin:0 auto}
-.advlink{display:inline-flex;align-items:center;gap:.35rem;margin-top:.9rem;font-weight:700;font-size:.84rem;color:var(--crimson);text-decoration:none}
+/* margin-top:auto pins the link to the card floor so all three line up
+   even though the copy above them runs to different lengths */
+.advlink{display:inline-flex;align-items:center;align-self:center;gap:.35rem;margin-top:auto;padding-top:.9rem;font-weight:700;font-size:.84rem;color:var(--crimson);text-decoration:none}
 .advlink svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2.2;transition:transform .18s}
 .advlink:hover{text-decoration:underline}
 .adv:hover .advlink svg{transform:translateX(3px)}
