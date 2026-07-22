@@ -20,7 +20,7 @@
     "Call Center :": "Pusat Panggilan :",
 
     /* ---- home hero ---- */
-    "Fire protection,": "Proteksi kebakaran,",
+    "Hanindo Citra — Fire Fighting Department,": "Hanindo Citra — Departemen Pemadam Kebakaran,",
     "engineered end to end.": "direkayasa menyeluruh.",
     "We design, supply, install and maintain complete fire-fighting systems — reliable on day one, and every day after.": "Kami merancang, memasok, memasang, dan memelihara sistem pemadam kebakaran yang lengkap — andal sejak hari pertama, dan setiap hari sesudahnya.",
     "Our products & services": "Produk & layanan kami",
