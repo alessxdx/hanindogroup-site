@@ -143,10 +143,17 @@ kideco.png                    PT Kideco Jaya Agung            [COMPLETE]
 newmont.png                   PT Newmont Nusa Tenggara        [COMPLETE]
 exxonmobil.png                Exxon Mobil Cepu Ltd            [COMPLETE]
 
-star-energy.png               Star Energy Geothermal Salak    [NEEDED]
+star-energy.png               Star Energy Geothermal Salak    [COMPLETE]
+
+All 19 slots are filled.
 
 Malaysia Truck Terminal was dropped from the wall at the business's
 request, taking it from 20 customers to 19.
+
+The wall lives on the Hanindo Citra page only. It was briefly on the
+group homepage too, but customers belong to the individual companies —
+if every company added its own the homepage would be swamped. The
+homepage keeps the principals wall, which is shared across the group.
 
 NOTES ON SOURCES
 Most of these came from proxied search-result thumbnails, which are
