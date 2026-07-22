@@ -210,6 +210,26 @@ pos-terminal.jpg          DONE — intro section, the office signboard
                           slot better, and would stop the section
                           repeating the hero's subject.
 
+PRODUCT TILES  ("What we supply" strip on the home page)
+These go in /photos/printer-pos/ — a folder that does not exist yet;
+create it. Cut-out product shot on white, ~800px, square-ish: the tile
+is a square and contains rather than crops. A tile whose photo is
+missing shows as a plain panel with its label, so the strip looks
+deliberate while they are outstanding.
+
+The eight below are Custom's own product families, used as a starting
+point. Rename, drop or add tiles once the range for this market is
+settled — each is one <a class="tile"> in printer-pos/index.html.
+
+pos-printer.png           POS / receipt printer               [NEEDED]
+fiscal-printer.png        Fiscal printer                      [NEEDED]
+ticket-printer.png        Ticket printer                      [NEEDED]
+label-printer.png         Label printer                       [NEEDED]
+mobile-printer.png        Mobile / portable printer           [NEEDED]
+pos-terminal.png          POS terminal or touch system        [NEEDED]
+barcode-scanner.png       Barcode scanner                     [NEEDED]
+document-scanner.png      Document scanner                    [NEEDED]
+
 CUSTOMER LOGOS
 The "Customer base" wall on /printer-pos/index.html shares the
 /photos/customers/ folder with the Hanindo Citra wall — one pool for the
