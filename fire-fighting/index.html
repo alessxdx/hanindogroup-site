@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607221100" />
-<link rel="stylesheet" href="../assets/fire-fighting.css?v=202607232000" />
+<link rel="stylesheet" href="../assets/fire-fighting.css?v=202607232200" />
 </head>
 <body>
 
@@ -87,6 +87,26 @@
   </div>
 </section>
 
+<!-- ============ SYSTEM TILES ============ -->
+<section class="section white compact">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">What we supply</span>
+    </div>
+    <div class="tilestrip reveal">
+      <div class="strip" id="tilestrip">
+        <a class="tile" href="products-services.html"><img src="photos/prod-hydrant.jpg" alt="" loading="lazy" onerror="this.remove()" /><span>Fire Hydrant Systems</span></a>
+        <a class="tile" href="products-services.html"><img src="photos/prod-sprinkler.jpg" alt="" loading="lazy" onerror="this.remove()" /><span>Sprinkler Systems</span></a>
+        <a class="tile" href="products-services.html"><img src="photos/prod-gas.jpg" alt="" loading="lazy" onerror="this.remove()" /><span>Gas Suppression</span></a>
+        <a class="tile" href="products-services.html"><img src="photos/prod-foam.jpg" alt="" loading="lazy" onerror="this.remove()" /><span>Foam Suppression</span></a>
+        <a class="tile" href="products-services.html"><img src="photos/prod-alarm.jpg" alt="" loading="lazy" onerror="this.remove()" /><span>Fire Detection &amp; Alarm</span></a>
+        <a class="tile" href="products-services.html"><img src="photos/prod-deluge.jpg" alt="" loading="lazy" onerror="this.remove()" /><span>Deluge Systems</span></a>
+      </div>
+      <button class="stripmore" type="button" aria-label="Show more systems"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+    </div>
+  </div>
+</section>
+
 <!-- ============ CUSTOMERS (moving marquee) ============ -->
 <section class="customers" aria-label="Team experience includes work with">
   <div class="chead reveal"><span class="kick">Team experience includes work with</span></div>
@@ -148,6 +168,17 @@ var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isInter
 (function(){var pb=document.getElementById('pbg');if(!pb)return;var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;if(rm)return;var tick=false;
 function upd(){var r=pb.parentElement.getBoundingClientRect();var off=(r.top+r.height/2-window.innerHeight/2)*-0.08;pb.style.transform='translateY('+off+'px)';tick=false;}
 window.addEventListener('scroll',function(){if(!tick){requestAnimationFrame(upd);tick=true;}},{passive:true});upd();})();
+/* system tile strip: advance on click, loop back at the end.
+   Six tiles fit outright on a wide screen, so the arrow hides itself
+   whenever there is nothing left to scroll. */
+(function(){var s=document.getElementById('tilestrip'),b=document.querySelector('.stripmore');if(!s||!b)return;
+function sync(){b.style.display=(s.scrollWidth-s.clientWidth>4)?'':'none';}
+b.addEventListener('click',function(){
+  var max=s.scrollWidth-s.clientWidth;
+  if(s.scrollLeft>=max-8){s.scrollTo({left:0,behavior:'smooth'});}
+  else{s.scrollBy({left:Math.round(s.clientWidth*.85),behavior:'smooth'});}
+});
+window.addEventListener('resize',sync);window.addEventListener('load',sync);sync();})();
 /* customers marquee: repeat logos to fill width + seamless, even-spaced loop */
 (function(){var t=document.getElementById('mtrack');if(!t)return;
 var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;

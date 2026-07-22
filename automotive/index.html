@@ -199,11 +199,13 @@ function hsearch(f){var q=(f.q.value||'').trim();if(!q)return false;window.open(
 (function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
 /* tile strip: advance on click, loop back at the end */
 (function(){var s=document.getElementById('tilestrip'),b=document.querySelector('.stripmore');if(!s||!b)return;
+function sync(){b.style.display=(s.scrollWidth-s.clientWidth>4)?'':'none';}
 b.addEventListener('click',function(){
   var max=s.scrollWidth-s.clientWidth;
   if(s.scrollLeft>=max-8){s.scrollTo({left:0,behavior:'smooth'});}
   else{s.scrollBy({left:Math.round(s.clientWidth*.85),behavior:'smooth'});}
-});})();
+});
+window.addEventListener('resize',sync);window.addEventListener('load',sync);sync();})();
 /* customers marquees: repeat logos to fill width + seamless, even-spaced loop */
 (function(){var tracks=document.querySelectorAll('.mtrack');if(!tracks.length)return;
 var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;

@@ -595,6 +595,15 @@ body{line-height:1.65}
   .brand .btxt strong{font-size:.78rem !important}
 }
 
+/* ---------- SYSTEM TILE STRIP ----------
+   Layout comes from site.css; these rules re-colour it for this section.
+   The product shots sit on white, so the label scrim is kept light-to-navy. */
+.tile{background:linear-gradient(150deg,var(--navy-800),var(--navy-700))}
+.tile::after{background:linear-gradient(180deg,transparent 45%,rgba(7,15,36,.82))}
+.tile img{object-fit:contain;background:linear-gradient(165deg,#f2f5fa 0%,#e2e9f3 100%)}
+.stripmore{background:var(--crimson)}
+.stripmore:hover{background:var(--crimson-600)}
+
 /* ---------- VISION & MISSION — layered card over a colour panel ----------
    The white card sits inset on a crimson/navy panel, with the step number
    showing in the strip beneath it. Declared last so the flat-treatment
