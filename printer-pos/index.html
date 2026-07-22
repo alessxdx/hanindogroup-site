@@ -21,6 +21,18 @@
    site.css drops it to 240px inside a .compact section. */
 .split-tight{gap:clamp(1.6rem,3vw,2.4rem)}
 .split-tight .lede{margin-top:.75rem}
+/* page-specific: customer wall, same as the one on the Hanindo Citra page.
+   Fixed-height cells so logos of very different proportions sit on a
+   consistent baseline. Names are hidden and surface only if a logo file
+   fails to load, so a cell is never empty. Cells are inert — no links out
+   to the customers, and so no hover state. */
+.custgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:1.6rem}
+@media(max-width:1000px){.custgrid{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:760px){.custgrid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:480px){.custgrid{grid-template-columns:repeat(2,1fr)}}
+.custgrid .cell{background:#fff;min-height:132px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;padding:1.1rem .9rem;text-align:center}
+.custgrid .cell img{width:100%;height:52px;object-fit:contain}
+.custgrid .cell .nm{font-size:.78rem;font-weight:600;color:var(--muted);line-height:1.25}
 </style>
 </head>
 <body>
@@ -146,21 +158,29 @@
 -->
 
 <!-- ============ CUSTOMER BASE ============ -->
-<!-- Blank for now. To fill: logos into /photos/customers/, one .cell
-     each, as in oil-and-gas/index.html. The customer name shows if the
-     logo file is missing, so a cell is never blank.
-     Carries "paper" on the assumption the white brands band above is
-     live by then. If you uncomment this one on its own, drop the
-     "paper" or it lands grey-on-grey under the scope of work. -->
-<!--
-<section class="customers paper" aria-label="Customer base">
+<!-- Ordered alphabetically, as every other logo wall on the site. No
+     "paper" class: the brands band above is still commented out, so this
+     would otherwise land grey-on-grey under the scope of work.
+     Logo files are in /photos/customers/, shared with the Hanindo Citra
+     wall. Names are listed in PHOTOS-NEEDED.txt. -->
+<section class="customers" aria-label="Customer base">
   <div class="chead reveal"><span class="kick">Customer base</span></div>
   <div class="wrap">
     <div class="custgrid">
+      <div class="cell reveal"><img src="../photos/customers/collins.png" alt="Collins Aerospace" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Collins Aerospace</span></div>
+      <div class="cell reveal"><img src="../photos/customers/jd-sports.png" alt="JD Sports" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm">JD Sports</span></div>
+      <div class="cell reveal"><img src="../photos/customers/nlb.png" alt="National Library Board Singapore" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">National Library Board</span></div>
+      <div class="cell reveal"><img src="../photos/customers/philippine-airlines.png" alt="Philippine Airlines" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Philippine Airlines</span></div>
+      <div class="cell reveal"><img src="../photos/customers/singapore-airlines.png" alt="Singapore Airlines" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Singapore Airlines</span></div>
+      <div class="cell reveal"><img src="../photos/customers/sg-cruise-centre.png" alt="Singapore Cruise Centre" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Singapore Cruise Centre</span></div>
+      <div class="cell reveal"><img src="../photos/customers/sg-pools.png" alt="Singapore Pools" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Singapore Pools</span></div>
+      <div class="cell reveal"><img src="../photos/customers/sita.png" alt="SITA" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">SITA</span></div>
+      <div class="cell reveal"><img src="../photos/customers/smrt.png" alt="SMRT Trains" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">SMRT Trains</span></div>
+      <div class="cell reveal"><img src="../photos/customers/st-engineering.png" alt="ST Engineering" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">ST Engineering</span></div>
+      <div class="cell reveal"><img src="../photos/customers/wei-long-electronics.png" alt="Wei Long Electronics" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Wei Long Electronics</span></div>
     </div>
   </div>
 </section>
--->
 
 <!-- ============ CONTACT ============ -->
 <section class="section contact">
