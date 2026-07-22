@@ -561,3 +561,23 @@ body{line-height:1.65}
   .topbar .brand img{height:32px}
   .brand .btxt strong{font-size:.78rem !important}
 }
+
+/* ---------- VISION & MISSION — layered card over a colour panel ----------
+   The white card sits inset on a crimson/navy panel, with the step number
+   showing in the strip beneath it. Declared last so the flat-treatment
+   block above does not strip the radii back to var(--r). */
+.vm-item{position:relative;border-radius:18px;padding:1.1rem 1.1rem 3rem;display:flex;flex-direction:column}
+.vm-item.vm-v{background:linear-gradient(160deg,var(--crimson),var(--crimson-600))}
+.vm-item.vm-m{background:linear-gradient(160deg,var(--navy-800),var(--navy-700))}
+.vmc{background:var(--white);border-radius:14px;padding:2rem 1.7rem;text-align:center;flex:1;box-shadow:0 18px 34px -22px rgba(7,15,36,.55)}
+.vmic{width:58px;height:58px;margin:0 auto 1.1rem;border-radius:50%;background:var(--paper);border:1px solid var(--line);display:flex;align-items:center;justify-content:center}
+.vmic svg{width:27px;height:27px;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.vm-v .vmic svg{stroke:var(--crimson)}
+.vm-m .vmic svg{stroke:var(--navy-800)}
+.vmc h3{font-weight:800;font-size:1.1rem;letter-spacing:.1em;text-transform:uppercase;color:var(--navy-800);margin-bottom:.85rem}
+.vmc>p{color:#33405c;font-size:.98rem}
+.vmno{position:absolute;left:50%;bottom:.95rem;transform:translateX(-50%);font-weight:800;font-size:1.05rem;letter-spacing:.14em;color:rgba(255,255,255,.92)}
+/* the mission list sits on white here, so re-colour it from the navy-card defaults */
+.vmc .mlist{gap:.9rem;text-align:left;margin-top:.2rem}
+.vmc .mlist p{color:#33405c;font-size:.95rem}
+@media(max-width:780px){.vmc{padding:1.6rem 1.3rem}}
