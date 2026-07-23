@@ -92,7 +92,6 @@ img{max-width:100%;display:block}
    height cap while wide wordmarks ran to the full width */
 .lgrid.brands3 .lcell{min-height:112px}
 .lgrid.brands3 .lcell img{width:126px;height:72px}
-.lgrid.brands3 .lcell:hover{background:var(--white)}
 /* top-brands logo grid — white cards on the paper band */
 .brandgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2rem}
 @media(max-width:900px){.brandgrid{grid-template-columns:repeat(2,1fr);gap:.9rem}}
@@ -232,6 +231,11 @@ img{max-width:100%;display:block}
 .burger span{width:24px;height:2px;background:#fff}
 @media(max-width:860px){
   .top-right{display:none}.burger{display:flex}
+  /* On a phone the bar stays with the page instead of sticking to the top.
+     Stuck, it rode over the content as you scrolled and clipped whatever
+     was behind it, on a screen that has little height to spare. The menu
+     is reached from the top of the page. */
+  .navbar{position:static}
   .navbar .wrap{position:relative;justify-content:flex-end}
   .tabs{position:absolute;left:0;right:0;top:100%;flex-direction:column;background:var(--blue-800);opacity:0;visibility:hidden;transition:opacity .18s,visibility .18s;max-height:calc(100vh - 120px);overflow-y:auto;border-top:1px solid rgba(255,255,255,.08)}
   .tabs.open{opacity:1;visibility:visible}
@@ -579,8 +583,9 @@ img{max-width:100%;display:block}
    block. Bordering the cells instead means the grid simply stops where
    the logos do. */
 .lgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
-.lcell{background:var(--white);display:flex;align-items:center;justify-content:center;min-height:98px;padding:1rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line);transition:background .18s}
-.lcell:hover{background:var(--paper)}
+/* No hover state: the cells are not links, they are a wall of marks the
+   reader looks at. A tint on hover invites a click that goes nowhere. */
+.lcell{background:var(--white);display:flex;align-items:center;justify-content:center;min-height:98px;padding:1rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
 /* fixed box + contain, so a small source file is scaled to the same
    optical size as a large one instead of rendering at its natural size */
 .lcell img{width:118px;height:46px;object-fit:contain}
