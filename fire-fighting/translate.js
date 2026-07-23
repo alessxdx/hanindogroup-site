@@ -17,7 +17,6 @@
     "Products & Services": "Produk & Layanan",
     "Projects": "Proyek",
     "Contact Us": "Hubungi Kami",
-    "Call Center :": "Pusat Panggilan :",
 
     /* ---- home hero ---- */
     "Hanindo Citra — Fire Fighting Department,": "Hanindo Citra — Departemen Pemadam Kebakaran,",

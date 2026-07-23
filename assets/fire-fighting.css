@@ -55,8 +55,6 @@ img{max-width:100%;display:block}
 .brand .btxt strong{font-weight:800;color:#42506a;font-size:1.28rem;display:block;line-height:1.1}
 .brand .btxt span{font-weight:700;font-size:.72rem;letter-spacing:.03em;text-transform:uppercase;color:var(--crimson);display:block}
 .top-right{display:flex;align-items:center;gap:1.3rem}
-.callcenter{font-size:.86rem;color:var(--muted);font-weight:500;white-space:nowrap}
-.callcenter b{color:var(--navy-800);font-weight:700}
 .searchbox{display:flex;height:38px}
 .searchbox input{border:1px solid var(--line);border-right:0;border-radius:var(--r) 0 0 var(--r);padding:0 .9rem;font-family:var(--font);font-size:.86rem;width:170px;outline:none;background:var(--white)}
 .searchbox input:focus{border-color:var(--navy-700)}
@@ -73,7 +71,7 @@ img{max-width:100%;display:block}
 .searchstack{display:flex;flex-direction:column;align-items:flex-end;gap:.25rem}
 .searchstack .langtoggle{height:22px;border-radius:6px}
 .searchstack .langtoggle button{font-size:.66rem;padding:0 .5rem}
-@media(max-width:860px){.topbar .top-right{display:flex;gap:.7rem}.topbar .top-right .callcenter,.topbar .top-right .searchbox{display:none}}
+@media(max-width:860px){.topbar .top-right{display:flex;gap:.7rem}.topbar .top-right .searchbox{display:none}}
 .navbar{position:sticky;top:0;z-index:100;background:var(--navy-800);box-shadow:0 6px 20px -12px rgba(0,0,0,.5)}
 .navbar .wrap{display:flex;align-items:stretch;justify-content:space-between}
 .tabs{display:flex;list-style:none}
