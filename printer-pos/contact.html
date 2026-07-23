@@ -10,6 +10,18 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607240900" />
+<style>
+/* The per-market cards now sit under the office details in the same
+   section rather than in one of their own, so they are pared back to a
+   contact list: the pin icon sits inline against the country instead of
+   on a line of its own, and the cells lose most of their padding. */
+.mkt{margin-top:.9rem}
+.mkt .svc{padding:.9rem 1rem}
+.mkt .svc h3{display:flex;align-items:center;gap:.4rem;font-size:.88rem;margin-bottom:.3rem;line-height:1.3}
+.mkt .svc .ic{width:15px;height:15px;flex:none;margin:0}
+.mkt .svc p{font-size:.82rem;line-height:1.55}
+.mkt .svc b{color:var(--blue-800)}
+</style>
 </head>
 <body>
 
@@ -62,7 +74,12 @@
 </section>
 
 <!-- ============ CONTACT DETAIL ============ -->
-<section class="section white">
+<!-- The Singapore office details and the per-market contacts were two
+     separate sections, which made the page ask twice how to get in
+     touch. They are one section now: office on the left, photo on the
+     right, then the market cards beneath. The mailbox pattern is
+     csea-<country>@ -->
+<section class="section white compact">
   <div class="wrap">
     <div class="split">
       <div class="reveal">
@@ -75,7 +92,7 @@
           <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Email</b> &mdash; csea-sg@hanindogroup.com</span></li>
           <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Office hours</b> &mdash; Monday to Friday, 08.00 &ndash; 17.00 SGT</span></li>
         </ul>
-        <div style="margin-top:2rem">
+        <div style="margin-top:1.4rem">
           <a class="btn btn-dark" href="mailto:csea-sg@hanindogroup.com">Email Printer &amp; POS <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></a>
         </div>
       </div>
@@ -87,37 +104,23 @@
         <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- ============ REGIONAL CONTACTS ============ -->
-<!-- One card per market. The mailbox pattern is csea-<country>@ -->
-<section class="section paper">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="kicker">Across the region</span>
-      <h2 class="h2">Who to contact, by market.</h2>
-      <p class="lede">Enquiries are handled by market. Write to the address for the country you are in, or call the person named.</p>
-    </div>
-    <div class="svc-grid">
+    <p class="plist-lead reveal" style="margin-top:1.8rem">Enquiries are handled by market &mdash; write to the address for your country, or call the person named:</p>
+    <div class="svc-grid mkt">
       <div class="svc reveal">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
-        <h3>Singapore, Malaysia &amp; Vietnam</h3>
+        <h3><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>Singapore, Malaysia &amp; Vietnam</h3>
         <p><b>Harris Muk</b><br/><a href="mailto:csea-sg@hanindogroup.com">csea-sg@hanindogroup.com</a><br/>+65 6908 0281</p>
       </div>
       <div class="svc reveal d1">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
-        <h3>Indonesia</h3>
+        <h3><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>Indonesia</h3>
         <p><b>Andrea Calamai</b><br/><a href="mailto:csea-in@hanindogroup.com">csea-in@hanindogroup.com</a></p>
       </div>
       <div class="svc reveal d2">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
-        <h3>Philippines</h3>
+        <h3><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>Philippines</h3>
         <p><b>Fernando</b><br/><a href="mailto:csea-ph@hanindogroup.com">csea-ph@hanindogroup.com</a><br/>+63 915 356 9964</p>
       </div>
       <div class="svc reveal d3">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
-        <h3>Thailand</h3>
+        <h3><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>Thailand</h3>
         <p><a href="mailto:csea-th@hanindogroup.com">csea-th@hanindogroup.com</a></p>
       </div>
     </div>
