@@ -110,6 +110,11 @@ img{max-width:100%;display:block}
 .tilestrip .strip{display:flex;gap:.8rem;overflow-x:auto;scroll-behavior:smooth;scrollbar-width:none;-ms-overflow-style:none}
 .tilestrip .strip::-webkit-scrollbar{display:none}
 .tilestrip .tile{flex:none;width:190px}
+/* .tilestrip fixes tiles at 190px, which suits a long scrolling strip.
+   Where there are only four, let them share the row instead of leaving a
+   gap on the right; below ~820px they hit the floor and the strip goes
+   back to scrolling. Used by the Gralessando and Hanindo Shanghai pages. */
+.strip-4 .tile{flex:1 1 0;min-width:190px}
 .tilestrip .tile span{font-size:.88rem;left:.7rem;bottom:.6rem;right:.7rem}
 .stripmore{position:absolute;right:-6px;top:50%;transform:translateY(-50%);z-index:3;width:42px;height:42px;border-radius:50%;border:0;background:var(--brand);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px -10px rgba(0,0,0,.55);transition:background .15s}
 .stripmore:hover{background:var(--brand-600)}
@@ -181,6 +186,50 @@ img{max-width:100%;display:block}
 .mlist li{display:flex;gap:.8rem;align-items:flex-start}
 .mlist .n{flex:none;width:26px;height:26px;border-radius:var(--r);background:var(--blue-800);color:#fff;font-size:.8rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:.1rem}
 .mlist p{color:var(--muted);font-size:.95rem}
+/* Inside a .compact section the pair tightens: smaller gap, less padding,
+   shorter type. Carried here rather than repeated page-local now that the
+   Gralessando and Hanindo Shanghai About pages both use it. */
+.section.compact .vm{gap:1rem;margin-top:1.1rem}
+.section.compact .vm-card{padding:1.25rem 1.3rem}
+.section.compact .vm-card h3{font-size:1.1rem;margin:.35rem 0 .5rem}
+.section.compact .vm-card>p,.section.compact .mlist p{font-size:.9rem;line-height:1.55}
+.section.compact .mlist{gap:.6rem}
+
+/* ---------- OFFICE CARDS ----------
+   A photograph over the address, for pages that list where a company
+   works. Flat like the rest of the system: hairline border, no shadow,
+   hover changes the border colour only. */
+.offgrid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.4rem}
+@media(max-width:820px){.offgrid{grid-template-columns:1fr}}
+.off{background:var(--white);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:border-color .18s}
+.off:hover{border-color:var(--blue-800)}
+.off .shot{position:relative;height:190px;background:var(--blue-900);border-bottom:1px solid var(--line)}
+.off .shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.off .shot .ph{background:var(--blue-900);color:#7b8ea9}
+.off .shot .ph svg{stroke:#5d6f8c}
+.offbody{padding:1.1rem 1.2rem 1.25rem}
+.offbody h3{font-weight:700;font-size:1.1rem;color:var(--blue-800);margin-bottom:.4rem}
+.offbody p{color:var(--muted);font-size:.9rem;line-height:1.55}
+.offbody .addr{margin-top:.7rem;font-size:.84rem;color:var(--ink);opacity:.75}
+
+/* ---------- WHY CHOOSE US ----------
+   No card box: a tinted icon tile over centred copy, each column ending
+   in its own link. The fire-fighting site has its own crimson-era copy of
+   this in fire-fighting.css; these are the Hanindo blues, shared by the
+   automotive, Gralessando and Hanindo Shanghai About pages. */
+.adv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.5rem}
+@media(max-width:860px){.adv-grid{grid-template-columns:1fr}}
+.adv{padding:1.5rem 1.3rem;text-align:center;display:flex;flex-direction:column}
+.advic{width:50px;height:50px;margin:0 auto .85rem;border-radius:var(--r);display:flex;align-items:center;justify-content:center}
+.advic svg{width:23px;height:23px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.adv-1 .advic{background:#e6f2fb}.adv-1 .advic svg{stroke:var(--brand)}
+.adv-2 .advic{background:#e8eef6}.adv-2 .advic svg{stroke:var(--blue-800)}
+.adv-3 .advic{background:#e3f5fd}.adv-3 .advic svg{stroke:var(--brand-600)}
+.adv h3{font-weight:800;font-size:1.02rem;color:var(--blue-800);margin-bottom:.45rem}
+.adv p{color:var(--muted);font-size:.9rem;max-width:32ch;margin:0 auto}
+.advlink{display:inline-flex;align-items:center;align-self:center;gap:.35rem;margin-top:auto;padding-top:.9rem;font-weight:700;font-size:.84rem;color:var(--brand)}
+.advlink svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2.2}
+.advlink:hover{color:var(--brand-600);text-decoration:underline}
 .wcgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2rem}
 @media(max-width:860px){.wcgrid{grid-template-columns:1fr}}
 .wccard{background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--blue-800);border-radius:var(--r);padding:1.6rem 1.4rem;text-align:center}
@@ -269,6 +318,31 @@ img{max-width:100%;display:block}
    come through while keeping the white heading and the paler intro
    line legible over it. Used by the Hanindo Shanghai pages. */
 .pagehero.hero-photo .ov{background:linear-gradient(90deg,rgba(4,32,58,.78),rgba(7,46,82,.62) 60%,rgba(11,63,110,.45))}
+/* Hero product line-up — Custom units standing on the right of the hero,
+   the way a manufacturer shoots a range. Static and always on screen: no
+   script, no fade, nothing to fail. A common baseline and two different
+   sizes are what stop a set of cut-outs photographed at the same scale
+   from reading as a flat repeat.
+   Three units in a pyramid: the monitor across the top, the two smaller
+   machines beneath it. The rows carry explicit heights and each image
+   fills its row — a percentage max-height cannot resolve against an fr
+   row, so the images would render at natural size and overflow. Sizing by
+   row also means the two machines below come out matched without a width
+   per image; every Custom shot is on the same 270x221 canvas.
+   Below 900px the stage is dropped: there is no room beside a wrapping
+   heading, and stacking it underneath pushes the page down for pure
+   decoration. Shared by the Gralessando and Hanindo Shanghai home pages. */
+.hero-show .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(1.2rem,2.4vw,2rem);align-items:center}
+.hstage{display:grid;grid-template-columns:1fr 1fr;
+  grid-template-rows:clamp(105px,18vh,176px) clamp(85px,13vh,128px);
+  gap:clamp(.3rem,.8vw,.55rem);justify-items:center;align-items:end}
+.hstage img{height:100%;width:auto;max-width:100%;object-fit:contain;
+  filter:drop-shadow(0 14px 20px rgba(0,0,0,.5))}
+.hstage .top{grid-column:1 / -1}
+@media(max-width:900px){
+  .hero-show .wrap{display:block}
+  .hstage{display:none}
+}
 .pagehero .glow{display:none}
 .pagehero .wrap{position:relative;z-index:2;padding-bottom:clamp(1.8rem,4vw,2.8rem);padding-top:clamp(3rem,7vw,4.2rem);width:100%}
 .pagehero .crumb{font-size:.78rem;color:#a9bcd6;font-weight:500}
@@ -364,9 +438,24 @@ img{max-width:100%;display:block}
 .split .shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .split .shot .ph{background:var(--blue-900);color:#7b8ea9}
 .split .shot .ph svg{stroke:#5d6f8c}
+/* Two photographs in the column the split gives to one. Each box is
+   shorter than the single .shot so the pair together matches the height
+   of the text beside it; below the split's own breakpoint they sit side
+   by side rather than stacking, which would run the page too long. */
+.split .shotstack{display:grid;gap:1rem}
+.split .shotstack .shot{min-height:210px}
+@media(max-width:900px){.split .shotstack{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.split .shotstack{grid-template-columns:1fr}}
 .checks{list-style:none;display:grid;gap:.75rem;margin-top:1.7rem}
 .checks li{display:flex;gap:.7rem;align-items:flex-start;color:var(--ink);font-size:.95rem}
 .checks li svg{flex:none;width:17px;height:17px;margin-top:.28rem;fill:none;stroke:var(--brand);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+/* A tick list where each item carries a bold label above a line of detail,
+   rather than a bare phrase. Used by the Gralessando and Hanindo Shanghai
+   home pages, which describe the same Custom range. */
+.checks-desc{gap:.55rem;margin-top:1.1rem}
+.checks-desc li{align-items:flex-start}
+.checks-desc b{display:block;font-weight:700;color:var(--blue-800);margin-bottom:.12rem}
+.checks-desc span{font-size:.88rem;color:var(--muted);line-height:1.5}
 
 /* ---------- CROSS-LINK BAND ---------- */
 .xlink{background:var(--blue-900);color:#fff;border-radius:var(--r);padding:clamp(1.8rem,3vw,2.4rem);display:grid;grid-template-columns:1fr auto;gap:1.6rem;align-items:center;border-left:3px solid var(--brand)}

@@ -5,15 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="robots" content="noindex" />
 <title>Hanindo Shanghai — Hanindo (Shanghai) International | Hanindo Group</title>
-<meta name="description" content="Hanindo (Shanghai) International Co. Ltd — the Hanindo Group's Custom printing, scanning and reading business in China, from Shanghai and Shenzhen." />
+<meta name="description" content="Hanindo (Shanghai) International Co., Ltd — the Hanindo Group's Custom printing, scanning and reading business in China, from Shanghai and Shenzhen." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607261200" />
-<style>
-/* page-specific: 3-up market grid reads better than the default 4-up */
-@media(min-width:1001px){.svc-grid.three{grid-template-columns:repeat(3,1fr)}}
-</style>
 </head>
 <body>
 
@@ -26,7 +22,7 @@
         <span class="btxt" style="display:none"><strong>HANINDOGROUP</strong><span>Your Solution Provider</span></span>
       </a>
       <a class="cobrand" href="index.html" aria-label="Hanindo Shanghai &mdash; home">
-        <img class="cologo" src="../photos/brand/logo-shanghai.png" alt="Hanindo Shanghai &mdash; Hanindo (Shanghai) International Co. Ltd, Member of the Hanindo Group of Companies" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
+        <img class="cologo" src="../photos/brand/logo-shanghai.png" alt="Hanindo Shanghai &mdash; Hanindo (Shanghai) International Co., Ltd, Member of the Hanindo Group of Companies" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
         <span class="colabel" style="display:none">HANINDO SHANGHAI</span>
       </a>
     </div>
@@ -47,19 +43,33 @@
       <li><a href="about.html">About Us</a></li>
       <li><a href="products-services.html">Products &amp; Services</a></li>
       <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
     </ul>
   </div>
 </header>
 <!-- END SITE HEADER -->
 
 <!-- ============ PAGE HERO ============ -->
-<section class="pagehero hero-tall hero-photo">
+<section class="pagehero hero-tall hero-photo hero-show">
   <div class="bg"><img src="../photos/group/hero/hero-overseas.jpg?v=2" alt="" onerror="this.style.display='none'" /></div>
   <div class="ov"></div><div class="glow"></div>
   <div class="wrap">
-    <div class="crumb"><a href="../">Home</a><span class="sep">/</span><a href="../about/">About Us</a><span class="sep">/</span>Hanindo Shanghai</div>
-    <h1>Beyond Indonesia,<br/><span class="fx">from Shanghai outward.</span></h1>
-    <p class="intro">Hanindo (Shanghai) International Co. Ltd carries the group's Custom printing, scanning and reading business into the Chinese market.</p>
+    <div class="hcopy">
+      <div class="crumb"><a href="../">Home</a><span class="sep">/</span><a href="../about/">About Us</a><span class="sep">/</span>Hanindo Shanghai</div>
+      <h1>Hanindo (Shanghai)<br/><span class="fx">International Co., Ltd</span></h1>
+      <p class="intro">Hanindo CUSTOM China</p>
+    </div>
+    <!-- Decorative product group, the same line-up the Gralessando home
+         page carries and drawn from the same shared product shots. The
+         families are listed properly further down the page, so this is
+         aria-hidden and the images carry empty alt text. Markup order is
+         grid order: the monitor spans the top row, the other two share
+         the row beneath it. A missing file removes only its own image. -->
+    <div class="hstage" aria-hidden="true">
+      <img class="top" src="../photos/printer-pos/products/dc-pos.png" alt="" onerror="this.remove()" />
+      <img src="../photos/printer-pos/products/scanning.png" alt="" onerror="this.remove()" />
+      <img src="../photos/printer-pos/products/professional-printing.png" alt="" onerror="this.remove()" />
+    </div>
   </div>
 </section>
 
@@ -68,62 +78,89 @@
   <div class="wrap">
     <div class="split">
       <div class="reveal">
-        <span class="kicker">Hanindo (Shanghai) International Co. Ltd</span>
-        <h2 class="h2">The group's international arm.</h2>
-        <p class="lede">Established in 2007, Hanindo (Shanghai) International Co. Ltd is the Hanindo Group's company in China, where it goes to market as Hanindo CUSTOM China. It represents Custom, the manufacturer of hardware and software for automation with printing, scanning and reading solutions — the same business the group runs across South East Asia through Custom (S.E.A) Gralessando, divided by market rather than by trade.</p>
-        <p class="lede">It draws on a group that began in Jakarta, Indonesia in 1987 and has since built a portfolio of partnerships with leading global manufacturers across the industries it serves.</p>
+        <span class="kicker">Hanindo (Shanghai) International Co., Ltd</span>
+        <h2 class="h2">Printing, scanning, and point of sale.</h2>
+        <p class="lede">Established in 2007, Hanindo (Shanghai) International Co., Ltd is the Hanindo Group's company in China, where it goes to market as Hanindo CUSTOM China. It represents Custom, the manufacturer of hardware and software for automation with printing, scanning and reading solutions — the same business the group runs across South East Asia through Custom (S.E.A) Gralessando.</p>
         <p class="lede">Within China the company works from two locations: its Shanghai base and a second office in Shenzhen.</p>
-        <ul class="checks">
-          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Printing solutions</span></li>
-          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Scanning solutions</span></li>
-          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Reading solutions</span></li>
+        <!-- The same three lines the Gralessando home page carries: both
+             companies sell the identical Custom range, split by market, so
+             the descriptions must be changed together. -->
+        <ul class="checks checks-desc">
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Professional printing</b>POS, fiscal, ticket, label and mobile printers.</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Point of sale &amp; data capture</b>Terminals, touch systems, cash registers, scanners and payment terminals.</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Scanning</b>Document scanners and multifunction print-and-scan systems.</span></li>
         </ul>
       </div>
-      <div class="shot reveal d2">
-        <img src="../photos/group/shanghai/ovs-shanghai.jpg?v=2" alt="Shanghai, base of Hanindo (Shanghai) International Co. Ltd" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
-        <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
+      <!-- Two photographs stacked in the column the split normally gives to
+           one, so both Shanghai shots sit beside the text instead of pushing
+           the section taller. They collapse to a side-by-side pair on narrow
+           screens, where a stack would run too long. -->
+      <div class="shotstack reveal d2">
+        <div class="shot">
+          <img src="../photos/group/shanghai/ovs-shanghai.jpg?v=2" alt="Shanghai, base of Hanindo (Shanghai) International Co., Ltd" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
+        </div>
+        <div class="shot">
+          <img src="../photos/group/shanghai/ovs-shanghai-2.jpg" alt="Hanindo (Shanghai) International Co., Ltd, Shanghai" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ STATS ============ -->
-<section class="section stats">
-  <div class="glow"></div>
-  <div class="wrap">
-    <div class="grid">
-      <div class="stat txt reveal"><div class="num">2007</div><div class="lbl">Year Hanindo (Shanghai) International was established</div></div>
-      <div class="stat txt reveal d1"><div class="num">1987</div><div class="lbl">Year the parent group was founded in Jakarta, Indonesia</div></div>
-      <div class="stat txt reveal d2"><div class="num">Shanghai</div><div class="lbl">Base of operations</div></div>
-      <div class="stat txt reveal d3"><div class="num">Asia Pacific, Middle East &amp; Africa</div><div class="lbl">Export markets served</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ MARKETS ============ -->
-<section class="section paper">
+<!-- ============ WHAT WE SUPPLY ============ -->
+<!-- The same four tiles the Gralessando home page carries: both companies
+     sell the identical Custom range, split by market, so the strip must be
+     changed on both pages together. Product shots live in
+     /photos/printer-pos/products/ and are shared rather than duplicated —
+     both pages sit one level deep, so the relative paths match. Every tile
+     opens its section of the Custom catalogue in a new tab. -->
+<section class="section paper compact">
   <div class="wrap">
     <div class="reveal">
-      <span class="kicker">Reach</span>
-      <h2 class="h2">Markets we serve.</h2>
-      <p class="lede">From Shanghai, the company works outward into three export regions. Beyond these, its leadership has planned to expand activities by setting up another branch in Europe — a plan for the future rather than a current location.</p>
+      <span class="kicker">What we supply</span>
     </div>
-    <div class="svc-grid three">
-      <div class="svc reveal">
-        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 010 18a15 15 0 010-18z"/></svg></div>
-        <h3>Asia Pacific</h3>
-        <p>The company's primary export region, extending the group's total solution capability across the markets nearest its Shanghai base.</p>
+    <div class="tilestrip reveal">
+      <div class="strip strip-4" id="tilestrip">
+        <a class="tile" href="https://www.custom.biz/en_GB/catalog/printers" target="_blank" rel="noopener"><img src="../photos/printer-pos/products/professional-printing.png" alt="" loading="lazy" onerror="this.remove()" /><span>Professional Printing Solutions</span></a>
+        <a class="tile" href="https://www.custom.biz/en_GB/catalog/dc-pos-solutions" target="_blank" rel="noopener"><img src="../photos/printer-pos/products/dc-pos.png" alt="" loading="lazy" onerror="this.remove()" /><span>DC / POS Solutions</span></a>
+        <a class="tile" href="https://www.custom.biz/en_GB/catalog/scanning-solutions" target="_blank" rel="noopener"><img src="../photos/printer-pos/products/scanning.png" alt="" loading="lazy" onerror="this.remove()" /><span>Scanning Solutions</span></a>
+        <a class="tile" href="https://www.custom.biz/en_GB/catalog/self-service-solutions" target="_blank" rel="noopener"><img src="../photos/printer-pos/products/self-service.png" alt="" loading="lazy" onerror="this.remove()" /><span>Self-Service Solutions</span></a>
       </div>
-      <div class="svc reveal d1">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M6 21V10l6-4 6 4v11"/><path d="M10 21v-5h4v5"/></svg></div>
-        <h3>Middle East</h3>
-        <p>Supply of petroleum equipment, automation and fuel management solutions to customers across the Middle East.</p>
-      </div>
-      <div class="svc reveal d2">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
-        <h3>Africa</h3>
-        <p>The furthest reach of the export programme, taking the group's product portfolio as far as the African market.</p>
-      </div>
+      <button class="stripmore" type="button" aria-label="Show more products"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CUSTOMER BASE ============ -->
+<!-- Same wall as the Citra and Gralessando pages. Each slot falls back to
+     the customer's name if its logo file is missing — which is what the
+     placeholder row below is doing until the China customer list arrives.
+     Replace each .w with a real one:
+
+       <div class="w t2 reveal"><img src="../photos/customers/NAME.png"
+         alt="Customer Name" loading="lazy"
+         onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'"
+         /><span class="nm" style="display:none">Customer Name</span></div>
+
+     The tier class sets how large the logo is drawn: .t1 for the biggest
+     accounts, .t2 for the body of the list, .t3 for the rest. Order by
+     tier, then alphabetically within it — the placeholders are all .t2
+     because nothing is ranked yet. Logo files go in /photos/customers/,
+     shared with the other two walls, so any customer already listed there
+     needs no new file.
+     No "paper": the product strip above is already grey, and this would
+     otherwise land grey on grey. -->
+<section class="customers" aria-label="Customer base">
+  <div class="chead reveal"><span class="kick">Customer base</span></div>
+  <div class="wrap">
+    <div class="wall">
+      <div class="w t2 reveal"><span class="nm">Logo to come</span></div>
+      <div class="w t2 reveal"><span class="nm">Logo to come</span></div>
+      <div class="w t2 reveal"><span class="nm">Logo to come</span></div>
+      <div class="w t2 reveal"><span class="nm">Logo to come</span></div>
+      <div class="w t2 reveal"><span class="nm">Logo to come</span></div>
     </div>
   </div>
 </section>
@@ -134,11 +171,11 @@
   <div class="wrap">
     <div>
       <span class="eyebrow">Talk to Hanindo Shanghai</span>
-      <h2>Sourcing from Asia,<br/>for an international project?</h2>
-      <p class="sub">Tell us which market you are supplying and our international team will scope the right equipment, automation and fuel management package.</p>
+      <h2>Sourcing printing or POS,<br/>for the Chinese market?</h2>
+      <p class="sub">Tell us the sites and volumes you handle and our team will match the right printing, scanning and POS package.</p>
       <div class="actions">
         <a class="btn btn-fire" href="mailto:info@hanindogroup.com">Email our team <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></a>
-        <a class="btn btn-ghost" href="../contact/">Contact page <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="contact.html">Contact page <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
     <div class="info">
@@ -160,6 +197,16 @@
         <p>Your technology one stop solution — serving the oil &amp; gas, automation, automotive and fire protection industries in Indonesia since 1987.</p>
       </div>
       <div>
+        <h4>Hanindo Shanghai</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products-services.html">Products &amp; Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
         <h4>Our Companies</h4>
         <ul>
           <li><a href="../citra/">Hanindo Citra</a></li>
@@ -171,20 +218,11 @@
         </ul>
       </div>
       <div>
-        <h4>Hanindo Shanghai</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="products-services.html">Products &amp; Services</a></li>
-          <li><a href="projects.html">Projects</a></li>
-        </ul>
-      </div>
-      <div>
         <h4>Shanghai Office</h4>
         <span class="cl"><b>Room 3211-3212, Tower B, City Center</b></span><span class="cl">No. 100 Zunyi Rd, Changning District</span><span class="cl">Shanghai, China</span><span class="cl">Tel: <b>+86 21 6237 0600</b></span><span class="cl">Fax: +86 21 6237 0598</span>
       </div>
     </div>
-    <div class="foot-bottom"><span>© 2026 Hanindo Group. All Rights Reserved.</span><span>Hanindo (Shanghai) International Co. Ltd</span></div>
+    <div class="foot-bottom"><span>© 2026 Hanindo Group. All Rights Reserved.</span><span>Hanindo (Shanghai) International Co., Ltd</span></div>
   </div>
 </footer>
 
@@ -199,6 +237,16 @@ function hsearch(f){var q=(f.q.value||'').trim();if(!q)return false;window.open(
 (function(){var done=new WeakSet();function run(el){var end=+el.getAttribute('data-count'),t0=null,dur=1400;function step(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/dur,1);el.textContent=Math.round(p*end);if(p<1)requestAnimationFrame(step);else el.textContent=end;}requestAnimationFrame(step);}
 var nums=document.querySelectorAll('.num[data-count]');if(!nums.length)return;if(!('IntersectionObserver'in window)){nums.forEach(function(n){n.textContent=n.getAttribute('data-count')});return;}
 var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting&&!done.has(x.target)){done.add(x.target);run(x.target);io.unobserve(x.target);}});},{threshold:.5});nums.forEach(function(n){io.observe(n)});})();
+/* product strip: advance a screenful, wrap back to the start at the end.
+   The button hides itself when everything already fits. */
+(function(){var s=document.getElementById('tilestrip'),b=document.querySelector('.stripmore');if(!s||!b)return;
+function sync(){b.style.display=(s.scrollWidth-s.clientWidth>4)?'':'none';}
+b.addEventListener('click',function(){
+  var max=s.scrollWidth-s.clientWidth;
+  if(s.scrollLeft>=max-8){s.scrollTo({left:0,behavior:'smooth'});}
+  else{s.scrollBy({left:Math.round(s.clientWidth*.85),behavior:'smooth'});}
+});
+window.addEventListener('resize',sync);window.addEventListener('load',sync);sync();})();
 </script>
 </body>
 </html>

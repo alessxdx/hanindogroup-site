@@ -395,8 +395,22 @@ flow-automotive-garages.jpg    Sector card — completed garage build
 --------------------------------------------------
 HANINDO OVERSEAS  (/shanghai/)
 --------------------------------------------------
-hero-overseas.jpg         Page hero — Shanghai skyline or office
-ovs-shanghai.jpg          Intro section — Shanghai office or team
+hero-overseas.jpg         Page hero — Shanghai skyline or office   [COMPLETE]
+ovs-shanghai.jpg          Intro section, first of the pair          [COMPLETE]
+ovs-shanghai-2.jpg        Intro section, second of the pair         [COMPLETE]
+ovs-office-shanghai.jpg   "Where we are" on About Us, Shanghai   [COMPLETE]
+ovs-office-shenzhen.jpg   "Where we are" on About Us, Shenzhen   [COMPLETE]
+                          NOTE: ovs-office-shanghai.jpg is currently the
+                          same file as ovs-shanghai-2.jpg, so the same
+                          photograph appears on the home page pair and on
+                          the About page Shanghai card. Swap one if that
+                          repetition is not wanted.
+
+The "Customer base" wall on /shanghai/index.html is waiting on the China
+customer list and currently shows five "Logo to come" placeholder cells.
+Logos go in /photos/customers/ with the other two walls — one pool for
+the whole site, so a customer already listed under CUSTOMER LOGOS below
+needs no new file, only a cell.
 
 
 --------------------------------------------------

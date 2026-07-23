@@ -11,46 +11,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607261200" />
 <style>
-/* .checks is a plain one-line tick list in site.css. Here each tick
-   carries a sentence, so the label goes on its own line above it. */
-.checks-desc li{align-items:flex-start}
-.checks-desc b{display:block;font-weight:700;color:var(--blue-800);margin-bottom:.12rem}
-.checks-desc span{font-size:.88rem;color:var(--muted);line-height:1.5}
-.checks-desc{gap:.55rem;margin-top:1.1rem}
+/* .checks-desc moved to site.css — the Hanindo Shanghai home page
+   carries the same three lines and needs the same treatment. */
 /* Pull the two columns closer. The photo panel shrinks on its own —
    site.css drops it to 240px inside a .compact section. */
 .split-tight{gap:clamp(1.6rem,3vw,2.4rem)}
 .split-tight .lede{margin-top:.75rem}
-/* .tilestrip sizes tiles at a fixed 190px, which suits a long scrolling
-   strip. There are only four here, so let them share the row instead of
-   leaving a gap on the right; below ~820px they hit the floor and the
-   strip goes back to scrolling. */
-.strip-4 .tile{flex:1 1 0;min-width:190px}
-/* Hero product line-up — two Custom units standing on the right of the
-   hero, the way a manufacturer shoots a range. Static and always on
-   screen: no script, no fade, nothing to fail. A common baseline and
-   two different sizes are what stop a pair of cut-outs photographed at
-   the same scale from reading as a flat repeat.
-   Below 900px it is dropped — there is no room beside a wrapping
-   heading, and stacking it underneath pushes the page down for pure
-   decoration. */
-.hero-show .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(1.2rem,2.4vw,2rem);align-items:center}
-/* Three units in a pyramid: the monitor across the top, the two smaller
-   machines beneath it. The rows carry explicit heights and each image
-   fills its row — a percentage max-height cannot resolve against an fr
-   row, so the images would render at natural size and overflow. Sizing
-   by row also means the two machines below come out matched without a
-   width per image; every Custom shot is on the same 270x221 canvas. */
-.hstage{display:grid;grid-template-columns:1fr 1fr;
-  grid-template-rows:clamp(105px,18vh,176px) clamp(85px,13vh,128px);
-  gap:clamp(.3rem,.8vw,.55rem);justify-items:center;align-items:end}
-.hstage img{height:100%;width:auto;max-width:100%;object-fit:contain;
-  filter:drop-shadow(0 14px 20px rgba(0,0,0,.5))}
-.hstage .top{grid-column:1 / -1}
-@media(max-width:900px){
-  .hero-show .wrap{display:block}
-  .hstage{display:none}
-}
+/* .strip-4 moved to site.css — the Hanindo Shanghai home page carries
+   the same four tiles. */
+/* .hero-show and .hstage moved to site.css — the Hanindo Shanghai home
+   page carries the same line-up. */
+/* The customer wall is the shared .wall from site.css — nothing
+   page-local is needed for it. */
 </style>
 </head>
 <body>
