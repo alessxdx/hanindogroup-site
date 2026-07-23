@@ -275,6 +275,12 @@ img{max-width:100%;display:block}
 .pagehero .bg{position:absolute;inset:0;z-index:0}
 .pagehero .bg img{width:100%;height:100%;object-fit:cover}
 .pagehero .ov{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(4,32,58,.94),rgba(7,46,82,.84) 60%,rgba(11,63,110,.72))}
+/* Heroes meant to READ as a photograph rather than a tinted band. The
+   default overlay above sits at 94% on the left, which leaves the image
+   as barely-there texture; this lightens it enough for the picture to
+   come through while keeping the white heading and the paler intro
+   line legible over it. Used by the Hanindo Shanghai pages. */
+.pagehero.hero-photo .ov{background:linear-gradient(90deg,rgba(4,32,58,.78),rgba(7,46,82,.62) 60%,rgba(11,63,110,.45))}
 .pagehero .glow{display:none}
 .pagehero .wrap{position:relative;z-index:2;padding-bottom:clamp(1.8rem,4vw,2.8rem);padding-top:clamp(3rem,7vw,4.2rem);width:100%}
 .pagehero .crumb{font-size:.78rem;color:#a9bcd6;font-weight:500}
