@@ -36,10 +36,10 @@ OLD (Joomla)                                          NEW
 /contact-us                                           /contact/                  [PENDING]
 /about                                                /about/                    [PENDING]
 
-EXTERNAL — leave alone, do NOT redirect. These already point off-site
-and should keep doing so:
-/  (menu item "Printer & POS System")                 https://custom-sea.com/
-/  (menu item "Custom (S.E.A) Gralessando")           https://custom-sea.com/
+WAS EXTERNAL — now internal. Both of these pointed at custom-sea.com,
+which does not exist. Send them to the section instead:
+/  (menu item "Printer & POS System")                 /printer-pos/   [PENDING]
+/  (menu item "Custom (S.E.A) Gralessando")           /printer-pos/   [PENDING]
 
 UNRESOLVED — decide before go-live:
 /gralessando          Linked from the old site's "Our Websites" menu.
