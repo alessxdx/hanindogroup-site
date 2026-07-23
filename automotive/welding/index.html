@@ -47,6 +47,18 @@ details.specs td:first-child{color:var(--muted);width:46%}
 details.specs td:last-child{color:var(--ink);font-weight:600}
 details.specs .acc{margin:.8rem 0 0;padding-left:1.1rem;font-size:.84rem;color:var(--ink)}
 details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-transform:uppercase;letter-spacing:.08em;margin-top:.9rem}
+/* accessories as a picture grid. Each cell keeps its caption whether or not
+   the photo has arrived, so the list still reads as a list of what is in the
+   box; a missing photo leaves a dashed tile with a neutral icon. */
+ul.accgrid{list-style:none;margin:.85rem 0 0;padding:0;display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(104px,1fr));gap:.85rem}
+ul.accgrid li{text-align:center}
+ul.accgrid .ashot{display:flex;align-items:center;justify-content:center;height:76px;
+  background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:.35rem;margin-bottom:.4rem}
+ul.accgrid .ashot img{max-width:100%;max-height:100%;width:auto;object-fit:contain}
+ul.accgrid .ashot svg{width:26px;height:26px;fill:none;stroke:var(--line);stroke-width:1.6}
+ul.accgrid .ashot.nophoto{border-style:dashed;background:#fafbfc}
+ul.accgrid .acap{display:block;font-size:.75rem;line-height:1.35;color:var(--muted)}
 .catnav{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.8rem}
 .catnav a{font-size:.86rem;font-weight:600;padding:.5rem 1rem;border:1px solid var(--line);border-radius:var(--r);color:var(--blue-800);transition:border-color .15s,color .15s}
 .catnav a:hover{border-color:var(--brand);color:var(--brand)}
@@ -179,6 +191,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
           <li>2.0 m 35 mm² 300 A clamp</li>
         </ul>
       </details>
+      <p class="note">Shares its cabinet with the MMA-700F — the two look alike; the difference is in the rating.</p>
     </div>
   </div>
 </article>
@@ -213,6 +226,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
           <li>1.2 m 16 mm² 700 A clamp</li>
         </ul>
       </details>
+      <p class="note">Shares its cabinet with the MMA-400F — the two look alike; the difference is in the rating.</p>
     </div>
   </div>
 </article>
@@ -253,6 +267,12 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>MIG / MMA Welding Machine <span class="mdl">— MIG/MMA-500F</span></h3>
+      <ul class="feat">
+        <li>MIG/MMA big current, for industrial duty</li>
+        <li>Auto-set function, 3 in 1</li>
+        <li>2T/4T heavy duty</li>
+        <li>Spot welding</li>
+      </ul>
       <table class="spectable">
         <tr><td>Type</td><td>IGBT – Module, 15 kg wire spool</td></tr>
         <tr><td>AC input voltage</td><td>3-phase 380 V</td></tr>
@@ -273,16 +293,16 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
         <tr><td>Dimensions</td><td>580 × 300 × 510 mm</td></tr>
         <tr><td>Weight (G.W/N.W)</td><td>25.35 / 28.67 kg</td></tr>
       </table>
-      <details class="specs">
+      <details class="specs" open>
         <summary>Supplied with</summary>
-        <ul class="acc">
-          <li>Manual</li>
-          <li>Mask and brush</li>
-          <li>1.8 m 35 mm² 500 A holder</li>
-          <li>1.2 m 35 mm² 500 A clamp</li>
-          <li>5 m 36AK 35 mm² torch</li>
-          <li>36 V CO₂ relief valve</li>
-          <li>Hose clamp</li>
+        <ul class="accgrid">
+          <li><span class="ashot"><img src="../../photos/automotive/products/accessories/weldann-acc-holder-500a.png" alt="1.8 m 35 mm² 500 A electrode holder" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('nophoto');var s=this.nextElementSibling;if(s)s.style.display='block'" /><svg viewBox="0 0 24 24" style="display:none" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M3 11h18"/></svg></span><span class="acap">1.8 m 35 mm² 500 A holder</span></li>
+          <li><span class="ashot"><img src="../../photos/automotive/products/accessories/weldann-acc-clamp-500a.png" alt="1.2 m 35 mm² 500 A earth clamp" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('nophoto');var s=this.nextElementSibling;if(s)s.style.display='block'" /><svg viewBox="0 0 24 24" style="display:none" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M3 11h18"/></svg></span><span class="acap">1.2 m 35 mm² 500 A clamp</span></li>
+          <li><span class="ashot"><img src="../../photos/automotive/products/accessories/weldann-acc-hose-clamp.png" alt="Hose clamp" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('nophoto');var s=this.nextElementSibling;if(s)s.style.display='block'" /><svg viewBox="0 0 24 24" style="display:none" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M3 11h18"/></svg></span><span class="acap">Hose clamp</span></li>
+          <li><span class="ashot"><img src="../../photos/automotive/products/accessories/weldann-acc-mask-brush.png" alt="Welding mask and chipping brush" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('nophoto');var s=this.nextElementSibling;if(s)s.style.display='block'" /><svg viewBox="0 0 24 24" style="display:none" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M3 11h18"/></svg></span><span class="acap">Mask and brush</span></li>
+          <li><span class="ashot"><img src="../../photos/automotive/products/accessories/weldann-acc-manual.png" alt="User manual" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('nophoto');var s=this.nextElementSibling;if(s)s.style.display='block'" /><svg viewBox="0 0 24 24" style="display:none" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M3 11h18"/></svg></span><span class="acap">Manual</span></li>
+          <li><span class="ashot"><img src="../../photos/automotive/products/accessories/weldann-acc-torch-36ak.png" alt="5 m 36AK 35 mm² MIG torch" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('nophoto');var s=this.nextElementSibling;if(s)s.style.display='block'" /><svg viewBox="0 0 24 24" style="display:none" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M3 11h18"/></svg></span><span class="acap">5 m 36AK 35 mm² torch</span></li>
+          <li><span class="ashot"><img src="../../photos/automotive/products/accessories/weldann-acc-co2-valve.png" alt="36 V CO₂ relief valve" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('nophoto');var s=this.nextElementSibling;if(s)s.style.display='block'" /><svg viewBox="0 0 24 24" style="display:none" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M3 11h18"/></svg></span><span class="acap">36 V CO₂ relief valve</span></li>
         </ul>
       </details>
     </div>

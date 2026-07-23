@@ -74,6 +74,40 @@ hpa-c880-inext.png C880 i-Next 3D Wheel Alignment     [NEEDED]
 
 
 --------------------------------------------------
+WELDANN WELDING  (/automotive/welding/)
+--------------------------------------------------
+Five machines, all with their photo in place in
+/photos/automotive/products/. Replacements keep the same filename:
+
+weldann-mma-200a.png       MMA-200A portable            [COMPLETE]
+weldann-mma-400f.png       MMA-400F                     [COMPLETE]
+weldann-mma-700f.png       MMA-700F                     [COMPLETE]
+weldann-mig-mma-350f.png   MIG/MMA-350F                 [COMPLETE]
+weldann-mig-mma-500f.png   MIG/MMA-500F                 [COMPLETE]
+
+The 400F and 700F share a cabinet — same machine, different rating —
+so the two files are deliberately the same shot. Both cards say so.
+
+ACCESSORIES  ("Supplied with" grid on the MIG/MMA-500F card)
+These go in /photos/automotive/products/accessories/. Cut-out on
+white, ~400px, square-ish; the tile contains rather than crops. A
+tile with no photo shows a dashed outline and keeps its caption, so
+the grid reads as a list of what is in the box either way.
+
+weldann-acc-holder-500a.png   1.8 m 35 mm2 500 A holder    [NEEDED]
+weldann-acc-clamp-500a.png    1.2 m 35 mm2 500 A clamp     [NEEDED]
+weldann-acc-hose-clamp.png    Hose clamp                   [NEEDED]
+weldann-acc-mask-brush.png    Mask and chipping brush      [NEEDED]
+weldann-acc-manual.png        User manual                  [NEEDED]
+weldann-acc-torch-36ak.png    5 m 36AK 35 mm2 torch        [NEEDED]
+weldann-acc-co2-valve.png     36 V CO2 relief valve        [NEEDED]
+
+The MIG/MMA-350F ships with the same seven items, so once these land
+the same grid can be copied onto its card with no new photos. The
+three MMA models ship a shorter list and still show it as plain text.
+
+
+--------------------------------------------------
 COMPANY LOGOS  (header of each company's pages)
 --------------------------------------------------
 Each company site's header has a fixed logo slot. Drop a PNG with the
