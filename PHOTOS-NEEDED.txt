@@ -71,6 +71,11 @@ hpa-m424.png      M424 Tyre Changer 24" 3ph           [COMPLETE]
 hpa-c880-std.png  C880 STD 3D Wheel Alignment         [COMPLETE]
 hpa-c880-inext.png C880 i-Next 3D Wheel Alignment     [COMPLETE]
 
+Other brands on the same page:
+hakiro-ja-c01.png  Hakiro JA-C01 Tyre Changer          [NEEDED]
+                   Cut-out on white like the HPA shots. Specifications
+                   are already in; only the photo is outstanding.
+
 
 --------------------------------------------------
 WELDANN WELDING  (/automotive/welding/)
