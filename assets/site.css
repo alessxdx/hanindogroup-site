@@ -247,6 +247,13 @@ img{max-width:100%;display:block}
 
 /* ---------- PAGE HERO ---------- */
 .pagehero{position:relative;overflow:hidden;color:#fff;background:var(--blue-900);min-height:clamp(240px,32vh,330px);display:flex;align-items:flex-end}
+/* Each company's HOME page gets a taller hero than its inner pages —
+   414px against 288px on a 1280x900 screen. Add to the section tag:
+   <section class="pagehero hero-tall">. Below 900px it drops back to
+   the standard height, so a phone is not made to scroll past a tall
+   band before reaching the page. */
+.pagehero.hero-tall{min-height:clamp(240px,46vh,420px)}
+@media(max-width:900px){.pagehero.hero-tall{min-height:clamp(240px,32vh,330px)}}
 .pagehero .bg{position:absolute;inset:0;z-index:0}
 .pagehero .bg img{width:100%;height:100%;object-fit:cover}
 .pagehero .ov{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(4,32,58,.94),rgba(7,46,82,.84) 60%,rgba(11,63,110,.72))}

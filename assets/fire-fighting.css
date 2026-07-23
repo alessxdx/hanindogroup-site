@@ -228,6 +228,11 @@ img{max-width:100%;display:block}
 /* hero sizing matches the group default in site.css so every company
    mini-site opens with an identically proportioned banner */
 .pagehero{position:relative;overflow:hidden;color:#fff;background:var(--navy-950);min-height:clamp(240px,32vh,330px);display:flex;align-items:flex-end}
+/* Home page hero, taller than the inner pages. Mirrors the rule of the
+   same name in site.css — this file redeclares .pagehero, so the shared
+   modifier would otherwise be overridden here. */
+.pagehero.hero-tall{min-height:clamp(240px,46vh,420px)}
+@media(max-width:900px){.pagehero.hero-tall{min-height:clamp(240px,32vh,330px)}}
 .pagehero .bg{position:absolute;inset:0;z-index:0}
 .pagehero .bg img{width:100%;height:100%;object-fit:cover;transform:scale(1.05)}
 .pagehero .ov{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(7,15,36,.95),rgba(10,20,48,.8) 55%,rgba(15,29,68,.55))}
