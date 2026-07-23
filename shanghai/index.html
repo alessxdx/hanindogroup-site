@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/site.css?v=202607241700" />
+<link rel="stylesheet" href="../assets/site.css?v=202607241800" />
 </head>
 <body>
 
@@ -96,6 +96,47 @@
   </div>
 </section>
 
+<!-- ============ WHAT WE SUPPLY ============ -->
+<!-- The same four tiles the Gralessando home page carries: both companies
+     sell the identical Custom range, split by market, so the strip must be
+     changed on both pages together. Product shots live in
+     /photos/printer-pos/products/ and are shared rather than duplicated —
+     both pages sit one level deep, so the relative paths match. Every tile
+     opens its section of the Custom catalogue in a new tab. -->
+<section class="section paper compact">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">What we supply</span>
+    </div>
+    <div class="tilestrip reveal">
+      <div class="strip strip-4" id="tilestrip">
+        <a class="tile" href="https://www.custom.biz/en_GB/catalog/printers" target="_blank" rel="noopener"><img src="../photos/printer-pos/products/professional-printing.png" alt="" loading="lazy" onerror="this.remove()" /><span>Professional Printing Solutions</span></a>
+        <a class="tile" href="https://www.custom.biz/en_GB/catalog/dc-pos-solutions" target="_blank" rel="noopener"><img src="../photos/printer-pos/products/dc-pos.png" alt="" loading="lazy" onerror="this.remove()" /><span>DC / POS Solutions</span></a>
+        <a class="tile" href="https://www.custom.biz/en_GB/catalog/scanning-solutions" target="_blank" rel="noopener"><img src="../photos/printer-pos/products/scanning.png" alt="" loading="lazy" onerror="this.remove()" /><span>Scanning Solutions</span></a>
+        <a class="tile" href="https://www.custom.biz/en_GB/catalog/self-service-solutions" target="_blank" rel="noopener"><img src="../photos/printer-pos/products/self-service.png" alt="" loading="lazy" onerror="this.remove()" /><span>Self-Service Solutions</span></a>
+      </div>
+      <button class="stripmore" type="button" aria-label="Show more products"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CUSTOMER BASE ============ -->
+<!-- Waiting on the China customer list. Uncomment and add one .cell per
+     logo, ordered alphabetically like every other wall on the site; logo
+     files go in /photos/customers/, shared with the Citra and Gralessando
+     walls, so any customer already listed there needs no new file.
+     No "paper": the product strip above is already grey, and this would
+     otherwise land grey on grey. -->
+<!--
+<section class="customers" aria-label="Customer base">
+  <div class="chead reveal"><span class="kick">Customer base</span></div>
+  <div class="wrap">
+    <div class="custgrid">
+    </div>
+  </div>
+</section>
+-->
+
 <!-- ============ CONTACT ============ -->
 <section class="section contact">
   <div class="glow"></div>
@@ -167,6 +208,16 @@ function hsearch(f){var q=(f.q.value||'').trim();if(!q)return false;window.open(
 (function(){var done=new WeakSet();function run(el){var end=+el.getAttribute('data-count'),t0=null,dur=1400;function step(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/dur,1);el.textContent=Math.round(p*end);if(p<1)requestAnimationFrame(step);else el.textContent=end;}requestAnimationFrame(step);}
 var nums=document.querySelectorAll('.num[data-count]');if(!nums.length)return;if(!('IntersectionObserver'in window)){nums.forEach(function(n){n.textContent=n.getAttribute('data-count')});return;}
 var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting&&!done.has(x.target)){done.add(x.target);run(x.target);io.unobserve(x.target);}});},{threshold:.5});nums.forEach(function(n){io.observe(n)});})();
+/* product strip: advance a screenful, wrap back to the start at the end.
+   The button hides itself when everything already fits. */
+(function(){var s=document.getElementById('tilestrip'),b=document.querySelector('.stripmore');if(!s||!b)return;
+function sync(){b.style.display=(s.scrollWidth-s.clientWidth>4)?'':'none';}
+b.addEventListener('click',function(){
+  var max=s.scrollWidth-s.clientWidth;
+  if(s.scrollLeft>=max-8){s.scrollTo({left:0,behavior:'smooth'});}
+  else{s.scrollBy({left:Math.round(s.clientWidth*.85),behavior:'smooth'});}
+});
+window.addEventListener('resize',sync);window.addEventListener('load',sync);sync();})();
 </script>
 </body>
 </html>

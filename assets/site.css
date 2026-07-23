@@ -122,6 +122,11 @@ img{max-width:100%;display:block}
 .tilestrip .strip{display:flex;gap:.8rem;overflow-x:auto;scroll-behavior:smooth;scrollbar-width:none;-ms-overflow-style:none}
 .tilestrip .strip::-webkit-scrollbar{display:none}
 .tilestrip .tile{flex:none;width:190px}
+/* .tilestrip fixes tiles at 190px, which suits a long scrolling strip.
+   Where there are only four, let them share the row instead of leaving a
+   gap on the right; below ~820px they hit the floor and the strip goes
+   back to scrolling. Used by the Gralessando and Hanindo Shanghai pages. */
+.strip-4 .tile{flex:1 1 0;min-width:190px}
 .tilestrip .tile span{font-size:.88rem;left:.7rem;bottom:.6rem;right:.7rem}
 .stripmore{position:absolute;right:-6px;top:50%;transform:translateY(-50%);z-index:3;width:42px;height:42px;border-radius:50%;border:0;background:var(--brand);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px -10px rgba(0,0,0,.55);transition:background .15s}
 .stripmore:hover{background:var(--brand-600)}
