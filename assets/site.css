@@ -230,13 +230,21 @@ img{max-width:100%;display:block}
 .burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:12px;align-self:center}
 .burger span{width:24px;height:2px;background:#fff}
 @media(max-width:860px){
-  .top-right{display:none}.burger{display:flex}
-  /* On a phone the bar stays with the page instead of sticking to the top.
-     Stuck, it rode over the content as you scrolled and clipped whatever
-     was behind it, on a screen that has little height to spare. The menu
-     is reached from the top of the page. */
-  .navbar{position:static}
-  .navbar .wrap{position:relative;justify-content:flex-end}
+  .top-right{display:none}
+  /* One white header row on a phone: the logo on the left, the menu button
+     on the right. The blue strip is dropped — with the tab row hidden
+     behind the burger it was an empty band of colour, and the button reads
+     better sitting on the same white bar as the logo. */
+  .burger{display:flex;margin-left:auto;padding:10px 0 10px 12px}
+  .burger span{background:var(--blue-800)}
+  .topbar .wrap{min-height:64px;gap:.6rem}
+  /* The bar stays with the page rather than sticking to the top: stuck, it
+     rode over the content as you scrolled, on the screen with the least
+     height to spare. position:relative, NOT static — the drop-down is
+     absolutely positioned and needs this stacking context, or it opens
+     behind the hero and the button looks dead. */
+  .navbar{position:relative;background:transparent;border-bottom:0}
+  .navbar .wrap{position:relative;justify-content:flex-end;min-height:0;padding-top:0;padding-bottom:0}
   .tabs{position:absolute;left:0;right:0;top:100%;flex-direction:column;background:var(--blue-800);opacity:0;visibility:hidden;transition:opacity .18s,visibility .18s;max-height:calc(100vh - 120px);overflow-y:auto;border-top:1px solid rgba(255,255,255,.08)}
   .tabs.open{opacity:1;visibility:visible}
   .tabs>li{display:block}
