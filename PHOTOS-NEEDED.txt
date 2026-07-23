@@ -385,6 +385,10 @@ HANINDO OVERSEAS  (/shanghai/)
 hero-overseas.jpg         Page hero — Shanghai skyline or office   [COMPLETE]
 ovs-shanghai.jpg          Intro section, first of the pair          [COMPLETE]
 ovs-shanghai-2.jpg        Intro section, second of the pair         [COMPLETE]
+ovs-office-shanghai.jpg   "Where we are" on About Us — the Shanghai office
+ovs-office-shenzhen.jpg   "Where we are" on About Us — the Shenzhen office
+                          Shown at 190px tall and cropped to fill, so a
+                          landscape frame of the room or the building suits.
 
 The "Customer base" wall on /shanghai/index.html is waiting on the China
 customer list and currently shows five "Logo to come" placeholder cells.
