@@ -121,21 +121,34 @@
 </section>
 
 <!-- ============ CUSTOMER BASE ============ -->
-<!-- Waiting on the China customer list. Uncomment and add one .cell per
-     logo, ordered alphabetically like every other wall on the site; logo
-     files go in /photos/customers/, shared with the Citra and Gralessando
-     walls, so any customer already listed there needs no new file.
+<!-- Same wall as the Citra and Gralessando pages. Fixed-height cells so
+     logos of very different proportions sit on a consistent baseline, and
+     each cell falls back to the customer's name if its logo file is
+     missing — which is what the placeholder row below is doing until the
+     China customer list arrives. Replace each .cell with a real one:
+
+       <div class="cell reveal"><img src="../photos/customers/NAME.png"
+         alt="Customer Name" loading="lazy"
+         onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'"
+         /><span class="nm" style="display:none">Customer Name</span></div>
+
+     Order alphabetically, as every other wall on the site does. Logo files
+     go in /photos/customers/, shared with the other two walls, so any
+     customer already listed there needs no new file.
      No "paper": the product strip above is already grey, and this would
      otherwise land grey on grey. -->
-<!--
 <section class="customers" aria-label="Customer base">
   <div class="chead reveal"><span class="kick">Customer base</span></div>
   <div class="wrap">
     <div class="custgrid">
+      <div class="cell reveal"><span class="nm">Logo to come</span></div>
+      <div class="cell reveal"><span class="nm">Logo to come</span></div>
+      <div class="cell reveal"><span class="nm">Logo to come</span></div>
+      <div class="cell reveal"><span class="nm">Logo to come</span></div>
+      <div class="cell reveal"><span class="nm">Logo to come</span></div>
     </div>
   </div>
 </section>
--->
 
 <!-- ============ CONTACT ============ -->
 <section class="section contact">
