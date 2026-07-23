@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/site.css?v=202607222115" />
+<link rel="stylesheet" href="../assets/site.css?v=202607240900" />
 <style>
 /* .checks is a plain one-line tick list in site.css. Here each tick
    carries a sentence, so the label goes on its own line above it. */
@@ -34,7 +34,6 @@
    Below 900px it is dropped — there is no room beside a wrapping
    heading, and stacking it underneath pushes the page down for pure
    decoration. */
-.hero-show{min-height:clamp(240px,46vh,420px)}
 .hero-show .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(1.2rem,2.4vw,2rem);align-items:center}
 /* Three units in a pyramid: the monitor across the top, the two smaller
    machines beneath it. The rows carry explicit heights and each image
@@ -51,8 +50,6 @@
 @media(max-width:900px){
   .hero-show .wrap{display:block}
   .hstage{display:none}
-  /* the extra height existed only to hold the products */
-  .hero-show{min-height:clamp(240px,32vh,330px)}
 }
 /* page-specific: customer wall, same as the one on the Hanindo Citra page.
    Fixed-height cells so logos of very different proportions sit on a
@@ -108,7 +105,7 @@
 <!-- END SITE HEADER -->
 
 <!-- ============ PAGE HERO ============ -->
-<section class="pagehero hero-show">
+<section class="pagehero hero-tall hero-show">
   <div class="bg"><img src="../photos/printer-pos/hero/hero-printer-pos.jpg" alt="" style="object-position:center 70%" onerror="this.style.display='none'" /></div>
   <div class="ov"></div><div class="glow"></div>
   <div class="wrap">
