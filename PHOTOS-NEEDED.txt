@@ -22,7 +22,7 @@ Put a new photo in the folder for the site that uses it:
 
   photos/group/hero/          homepage and group-page heroes
   photos/group/divisions/     the division cards on the homepage
-  photos/group/overseas/      Hanindo Overseas page
+  photos/group/shanghai/      Hanindo Shanghai page
 
   photos/automotive/hero/     Hanindo Automotive banners
   photos/automotive/brands/   ATOM and WELDANN brand shots
@@ -105,6 +105,7 @@ text lockup automatically. Wide lockup format, ~640px wide (shown at
 logo-citra.png            Hanindo Citra                   [COMPLETE]
 logo-automotive.png       Hanindo Automotive              [COMPLETE]
 logo-automation.png       Hanindo Automation Solutions    [NEEDED]
+logo-shanghai.png         Hanindo Shanghai                [COMPLETE]
 
 
 --------------------------------------------------
@@ -376,7 +377,7 @@ flow-automotive-garages.jpg    Sector card — completed garage build
 
 
 --------------------------------------------------
-HANINDO OVERSEAS  (/overseas/)
+HANINDO OVERSEAS  (/shanghai/)
 --------------------------------------------------
 hero-overseas.jpg         Page hero — Shanghai skyline or office
 ovs-shanghai.jpg          Intro section — Shanghai office or team
