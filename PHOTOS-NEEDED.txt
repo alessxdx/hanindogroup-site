@@ -1,27 +1,55 @@
 HANINDO GROUP SITE — PHOTOS NEEDED
 ==================================================
 Every slot below is already wired into a page. Drop a file with the
-EXACT filename into /photos/ and it appears automatically — no code
-changes needed. Until then the page shows a styled "Photo needed"
-placeholder, so nothing looks broken.
+EXACT filename into the folder named in its section and it appears
+automatically — no code changes needed. Until then the page shows a
+styled "Photo needed" placeholder, so nothing looks broken.
 
 Format: JPG for photos, PNG for logos. At least ~1000px wide for
 heroes and ~800px for cards. Landscape suits heroes and cards.
 
-Currently in /photos/:  see each section below. The 21 partner logos
-                        are in /photos/partners/, not /photos/ itself.
+
+FOLDER LAYOUT
+--------------------------------------------------
+/photos/ is grouped by company site, then by what the photo is for.
+Put a new photo in the folder for the site that uses it:
+
+  photos/brand/               company logos and the group lockup
+  photos/shared/hero/         heroes used by more than one site
+  photos/shared/certificates/ ISO and SKK certificates
+  photos/partners/            principal / supplier logos (26)
+  photos/customers/           customer logos, shared by both walls (39)
+
+  photos/group/hero/          homepage and group-page heroes
+  photos/group/divisions/     the division cards on the homepage
+  photos/group/overseas/      Hanindo Overseas page
+
+  photos/automotive/hero/     Hanindo Automotive banners
+  photos/automotive/brands/   ATOM and WELDANN brand shots
+  photos/automotive/products/ the 36 catalogue product shots
+  photos/oil-and-gas/hero/    + /products/
+  photos/printer-pos/hero/    + /products/
+  photos/automation/hero/     + /products/
+  photos/flowtech/hero/       + /sectors/
+
+  photos/not-used/            on disk but referenced by no page
+
+Folders with nothing in them yet hold a .gitkeep note saying which
+filenames they are waiting for.
 
 NOTE: the /fire-fighting/ section has its OWN photos folder
-(/fire-fighting/photos/) which is already fully populated. Do not
-move those files — that section is finished and references them
-relatively.
+(/fire-fighting/photos/) which is already fully populated and is NOT
+part of the layout above. Do not move those files and do not add
+photos/fire-fighting/ — those pages reference their local folder as
+plain "photos/...", so a root-level folder of the same name would
+silently shadow nothing and just confuse the next person.
 
 
 --------------------------------------------------
 HPA-Faip TYRE SERVICE  (/automotive/tyre-service/)
 --------------------------------------------------
 Fourteen HPA-Faip models are listed with their photo slots already
-wired. Drop a PNG with the EXACT filename into /photos/automotive/ and
+wired. Drop a PNG with the EXACT filename into /photos/automotive/products/ and
 it replaces the "Photo to follow" placeholder. Cut-out product shot on
 white, ~800px wide; the card contains rather than crops it.
 
@@ -49,7 +77,7 @@ hpa-c880-inext.png C880 i-Next 3D Wheel Alignment     [NEEDED]
 COMPANY LOGOS  (header of each company's pages)
 --------------------------------------------------
 Each company site's header has a fixed logo slot. Drop a PNG with the
-EXACT filename into /photos/ and it replaces the "HANINDOGROUP | NAME"
+EXACT filename into /photos/brand/ and it replaces the "HANINDOGROUP | NAME"
 text lockup automatically. Wide lockup format, ~640px wide (shown at
 48px tall), white or transparent background.
 
@@ -90,7 +118,7 @@ div-printer-pos.png       Division card — POS / ticket printer hardware
                           arrangement was tried and reverted.
 
 PARTNER LOGOS                                     [COMPLETE]
-All 21 principal logos live in /photos/partners/ — NOT in /photos/
+All 26 principal logos live in /photos/partners/ — NOT in /photos/
 directly. They appear as a static grid on the homepage and on the
 /partners/ page. Filenames match the brand, for example:
   gilbarco.webp   opw1.webp   raasm.png   cebora.png   itl.webp
@@ -184,7 +212,7 @@ auto-workshop.jpg         Intro section — garage fitted with our kit
 
 The eight auto-*.jpg product cards that used to sit here are gone. The
 Products & Services page now indexes the four catalogue sub-pages
-instead, using the real product shots already in /photos/automotive/,
+instead, using the real product shots already in /photos/automotive/products/,
 so no placeholder slots remain on that page.
 
 
@@ -216,8 +244,8 @@ pos-terminal.jpg          DONE — intro section, the office signboard
                           repeating the hero's subject.
 
 PRODUCT TILES  ("What we supply" strip on the home page)
-These go in /photos/printer-pos/ — a folder that does not exist yet;
-create it. Cut-out product shot on white, ~800px, square-ish: the tile
+These go in /photos/printer-pos/products/. Cut-out product shot on
+white, ~800px, square-ish: the tile
 is a square and contains rather than crops. A tile whose photo is
 missing shows as a plain panel with its label, so the strip looks
 deliberate while they are outstanding.

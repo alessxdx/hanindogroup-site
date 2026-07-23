@@ -46,7 +46,7 @@ img{max-width:100%;display:block}
    icon composited in; it is drawn at 3x so it stays sharp on retina screens */
 .brand img{height:44px;width:auto}
 /* Brand lockup. Colours are sampled from the official logo artwork
-   (photos/logo.png); the face is Arial/Helvetica to match the printed
+   (photos/brand/logo.png); the face is Arial/Helvetica to match the printed
    wordmark rather than the Open Sans used elsewhere on the site. */
 .brand .btxt{font-family:Arial,Helvetica,'Liberation Sans',sans-serif}
 .brand .btxt strong{font-weight:700;color:#6b6459;font-size:1.28rem;display:block;line-height:1.05;letter-spacing:-.005em}
@@ -60,7 +60,7 @@ img{max-width:100%;display:block}
 /* Company header: the group lockup stays on the left and always links
    back to the main page; the company's own logo sits to its right and
    links to the company home. The logo is a fixed-file slot
-   (photos/logo-citra.png, logo-automotive.png, logo-automation.png, ...) —
+   (photos/brand/logo-citra.png, logo-automotive.png, logo-automation.png, ...) —
    swap the file to change it; while it is missing, onerror reveals the
    .colabel company-name text instead. */
 .brands{display:flex;align-items:center;gap:1rem;min-width:0}
