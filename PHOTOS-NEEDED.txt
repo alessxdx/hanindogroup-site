@@ -53,10 +53,7 @@ wired. Drop a PNG with the EXACT filename into /photos/automotive/products/ and
 it replaces the "Photo to follow" placeholder. Cut-out product shot on
 white, ~800px wide; the card contains rather than crops it.
 
-Specifications are in for B35, B55, B60, B75, B225, B325, M31, M54,
-M422 and M424.
-The two C880 alignment cards still show a "Full specifications to
-follow" line until their tables arrive.
+Specifications are in for every model on the page.
 
 B45 and B50 were dropped from the page at the business's request,
 taking HPA-Faip from fourteen models to twelve.
@@ -71,8 +68,8 @@ hpa-m31.png       M31 Tyre Changer 21" 1ph            [COMPLETE]
 hpa-m54.png       M54 Tyre Changer 24" 1 or 3ph       [COMPLETE]
 hpa-m422.png      M422 Tyre Changer 22" 3ph           [COMPLETE]
 hpa-m424.png      M424 Tyre Changer 24" 3ph           [COMPLETE]
-hpa-c880-std.png  C880 STD 3D Wheel Alignment         [NEEDED]
-hpa-c880-inext.png C880 i-Next 3D Wheel Alignment     [NEEDED]
+hpa-c880-std.png  C880 STD 3D Wheel Alignment         [COMPLETE]
+hpa-c880-inext.png C880 i-Next 3D Wheel Alignment     [COMPLETE]
 
 
 --------------------------------------------------
