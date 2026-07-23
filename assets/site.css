@@ -231,6 +231,11 @@ img{max-width:100%;display:block}
 .burger span{width:24px;height:2px;background:#fff}
 @media(max-width:860px){
   .top-right{display:none}.burger{display:flex}
+  /* On a phone the bar stays with the page instead of sticking to the top.
+     Stuck, it rode over the content as you scrolled and clipped whatever
+     was behind it, on a screen that has little height to spare. The menu
+     is reached from the top of the page. */
+  .navbar{position:static}
   .navbar .wrap{position:relative;justify-content:flex-end}
   .tabs{position:absolute;left:0;right:0;top:100%;flex-direction:column;background:var(--blue-800);opacity:0;visibility:hidden;transition:opacity .18s,visibility .18s;max-height:calc(100vh - 120px);overflow-y:auto;border-top:1px solid rgba(255,255,255,.08)}
   .tabs.open{opacity:1;visibility:visible}
