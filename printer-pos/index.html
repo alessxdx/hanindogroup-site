@@ -34,23 +34,25 @@
    Below 900px it is dropped — there is no room beside a wrapping
    heading, and stacking it underneath pushes the page down for pure
    decoration. */
-.hero-show{min-height:clamp(240px,44vh,430px)}
-.hero-show .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.2rem,2.4vw,2rem);align-items:center}
-.hstage{display:flex;align-items:flex-end;justify-content:flex-end;gap:clamp(.35rem,.9vw,.6rem)}
-/* Every Custom shot is on the same 270x221 canvas, so capping by height
-   would size them all identically. Widths are set per image instead,
-   and they total well under the column so the four stay inside their
-   half rather than spilling under the copy. The differing widths are
-   what stop four same-scale cut-outs reading as a flat repeat. */
-.hstage img{width:auto;height:auto;object-fit:contain;
+.hero-show{min-height:clamp(240px,54vh,500px)}
+.hero-show .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(1.2rem,2.4vw,2rem);align-items:center}
+/* Three units in a pyramid: the monitor across the top, the two smaller
+   machines beneath it. The rows carry explicit heights and each image
+   fills its row — a percentage max-height cannot resolve against an fr
+   row, so the images would render at natural size and overflow. Sizing
+   by row also means the two machines below come out matched without a
+   width per image; every Custom shot is on the same 270x221 canvas. */
+.hstage{display:grid;grid-template-columns:1fr 1fr;
+  grid-template-rows:clamp(118px,21vh,205px) clamp(92px,15vh,148px);
+  gap:clamp(.3rem,.8vw,.55rem);justify-items:center;align-items:end}
+.hstage img{height:100%;width:auto;max-width:100%;object-fit:contain;
   filter:drop-shadow(0 14px 20px rgba(0,0,0,.5))}
-.hstage .p1{max-width:20%}
-.hstage .p2{max-width:25%}
-.hstage .p3{max-width:22%}
-.hstage .p4{max-width:27%}
+.hstage .top{grid-column:1 / -1}
 @media(max-width:900px){
   .hero-show .wrap{display:block}
   .hstage{display:none}
+  /* the extra height existed only to hold the products */
+  .hero-show{min-height:clamp(240px,32vh,330px)}
 }
 /* page-specific: customer wall, same as the one on the Hanindo Citra page.
    Fixed-height cells so logos of very different proportions sit on a
@@ -115,16 +117,15 @@
       <h1>Custom (S.E.A) <span class="fx">Gralessando</span></h1>
       <p class="intro">Custom (S.E.A) Gralessando supplies the printing, scanning and point-of-sale hardware and software behind retail and hospitality automation.</p>
     </div>
-    <!-- Decorative product line-up, one per family. The same four are
-         listed properly further down the page, so this is aria-hidden
-         and the images carry empty alt text. Sizes alternate small and
-         large rather than climbing left to right, which would read as a
-         staircase; a missing file removes only its own image. -->
+    <!-- Decorative product group. The families are listed properly
+         further down the page, so this is aria-hidden and the images
+         carry empty alt text. Markup order is grid order: the monitor
+         spans the top row, the other two share the row beneath it. A
+         missing file removes only its own image. -->
     <div class="hstage" aria-hidden="true">
-      <img class="p1" src="../photos/printer-pos/scanning.png" alt="" onerror="this.remove()" />
-      <img class="p2" src="../photos/printer-pos/professional-printing.png" alt="" onerror="this.remove()" />
-      <img class="p3" src="../photos/printer-pos/dc-pos.png" alt="" onerror="this.remove()" />
-      <img class="p4" src="../photos/printer-pos/self-service.png" alt="" onerror="this.remove()" />
+      <img class="top" src="../photos/printer-pos/dc-pos.png" alt="" onerror="this.remove()" />
+      <img src="../photos/printer-pos/scanning.png" alt="" onerror="this.remove()" />
+      <img src="../photos/printer-pos/professional-printing.png" alt="" onerror="this.remove()" />
     </div>
   </div>
 </section>
