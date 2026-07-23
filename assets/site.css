@@ -377,6 +377,13 @@ img{max-width:100%;display:block}
 .contact .info .ic svg{width:17px;height:17px;fill:none;stroke:var(--sky);stroke-width:1.7}
 .contact .info .k{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:#8fa0bc;font-weight:600}
 .contact .info .v{font-weight:500;font-size:.95rem;margin-top:.15rem}
+/* Optional footnote under the contact details, for a company whose band
+   shows one office but which is contacted differently in other markets.
+   Hairline rule above it so it reads as a caveat on the rows, not a
+   fourth row. */
+.contact .info .mktnote{font-size:.82rem;line-height:1.55;color:#8fa0bc;border-top:1px solid rgba(255,255,255,.12);padding-top:.9rem}
+.contact .info .mktnote a{color:var(--sky);font-weight:600;text-decoration:underline}
+.contact .info .mktnote a:hover{color:#fff}
 
 /* ---------- FOOTER ---------- */
 .footer{background:var(--blue-950);color:#93a5c0;padding:clamp(48px,6vw,72px) 0 1.8rem;font-size:.88rem;border-top:1px solid rgba(255,255,255,.08)}
