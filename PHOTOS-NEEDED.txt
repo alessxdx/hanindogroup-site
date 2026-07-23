@@ -27,7 +27,7 @@ Put a new photo in the folder for the site that uses it:
   photos/automotive/hero/     Hanindo Automotive banners
   photos/automotive/brands/   ATOM and WELDANN brand shots
   photos/automotive/products/ the 36 catalogue product shots
-  photos/oil-and-gas/hero/    + /products/
+  photos/citra/hero/    + /products/
   photos/printer-pos/hero/    + /products/
   photos/automation/hero/     + /products/
   photos/flowtech/hero/       + /sectors/
@@ -154,19 +154,19 @@ otherwise the cell falls back to showing the brand name as text.
 
 
 --------------------------------------------------
-OIL & GAS  (/oil-and-gas/)
+HANINDO CITRA  (/citra/)
 --------------------------------------------------
-hero-oil-and-gas.webp     DONE — page hero, forecourt at dusk (1536x1024)
-oag-forecourt.jpg         Intro section — station Hanindo equipped
-oag-dispenser.jpg         Product card — pumps & dispensers
-oag-advanz.jpg            Product card — AdvanZ POS/BOS screen or terminal
-oag-flowmeter.jpg         Product card — flow meter unit
-oag-atg.jpg               Product card — automatic tank gauging console
-oag-stp.jpg               Product card — submersible turbine pump
-oag-piping.jpg            Product card — piping / fueling components
+hero-citra.webp           DONE — page hero, forecourt at dusk (1536x1024)
+citra-forecourt.jpg         Intro section — station Hanindo equipped
+citra-dispenser.jpg         Product card — pumps & dispensers
+citra-advanz.jpg            Product card — AdvanZ POS/BOS screen or terminal
+citra-flowmeter.png         Product card — TCS flow meters            [DONE]
+citra-atg.webp              Product card — Veeder-Root TLS-450 PLUS   [DONE]
+citra-stp.jpg               Product card — submersible turbine pump
+citra-piping.jpg            Product card — piping / fueling components
 
 CUSTOMER LOGOS
-The "Customer base" wall on /oil-and-gas/index.html has 19 logo slots.
+The "Customer base" wall on /citra/index.html has 19 logo slots.
 They live in /photos/customers/ — NOT in /photos/ itself. Drop a PNG
 with the EXACT filename below and it appears; until then the cell shows
 the customer name on its own, which looks deliberate rather than
