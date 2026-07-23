@@ -17,7 +17,7 @@ Put a new photo in the folder for the site that uses it:
   photos/brand/               company logos and the group lockup
   photos/shared/hero/         heroes used by more than one site
   photos/shared/certificates/ ISO and SKK certificates
-  photos/partners/            principal / supplier logos (26)
+  photos/partners/            principal / supplier logos (27)
   photos/customers/           customer logos, shared by both walls (39)
 
   photos/group/hero/          homepage and group-page heroes
@@ -72,9 +72,7 @@ hpa-c880-std.png  C880 STD 3D Wheel Alignment         [COMPLETE]
 hpa-c880-inext.png C880 i-Next 3D Wheel Alignment     [COMPLETE]
 
 Other brands on the same page:
-hakiro-ja-c01.png  Hakiro JA-C01 Tyre Changer          [NEEDED]
-                   Cut-out on white like the HPA shots. Specifications
-                   are already in; only the photo is outstanding.
+hakiro-ja-c01.png  Hakiro JA-C01 Tyre Changer          [COMPLETE]
 
 
 --------------------------------------------------
@@ -145,7 +143,7 @@ div-printer-pos.png       Division card — POS / ticket printer hardware
                           arrangement was tried and reverted.
 
 PARTNER LOGOS                                     [COMPLETE]
-All 26 principal logos live in /photos/partners/ — NOT in /photos/
+All 27 principal logos live in /photos/partners/ — NOT in /photos/
 directly. They appear as a static grid on the homepage and on the
 /partners/ page. Filenames match the brand, for example:
   gilbarco.webp   opw1.webp   raasm.png   cebora.png   itl.webp
