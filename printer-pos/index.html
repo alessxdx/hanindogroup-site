@@ -35,17 +35,19 @@
    heading, and stacking it underneath pushes the page down for pure
    decoration. */
 .hero-show{min-height:clamp(240px,44vh,430px)}
-.hero-show .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(1.5rem,3vw,2.6rem);align-items:center}
-.hstage{display:flex;align-items:flex-end;justify-content:center;gap:clamp(.5rem,1.4vw,1rem);
-  height:clamp(170px,25vh,240px)}
+.hero-show .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.2rem,2.4vw,2rem);align-items:center}
+.hstage{display:flex;align-items:flex-end;justify-content:flex-end;gap:clamp(.35rem,.9vw,.6rem)}
 /* Every Custom shot is on the same 270x221 canvas, so capping by height
-   would size them all identically. Widths are set per image instead —
-   they add up to well under the column, which is what keeps the pair
-   inside its half rather than spilling under the copy. */
-.hstage img{width:auto;height:auto;object-fit:contain;max-height:100%;
-  filter:drop-shadow(0 16px 22px rgba(0,0,0,.5))}
-.hstage .p1{max-width:41%}
-.hstage .p2{max-width:53%}
+   would size them all identically. Widths are set per image instead,
+   and they total well under the column so the four stay inside their
+   half rather than spilling under the copy. The differing widths are
+   what stop four same-scale cut-outs reading as a flat repeat. */
+.hstage img{width:auto;height:auto;object-fit:contain;
+  filter:drop-shadow(0 14px 20px rgba(0,0,0,.5))}
+.hstage .p1{max-width:20%}
+.hstage .p2{max-width:25%}
+.hstage .p3{max-width:22%}
+.hstage .p4{max-width:27%}
 @media(max-width:900px){
   .hero-show .wrap{display:block}
   .hstage{display:none}
@@ -113,13 +115,16 @@
       <h1>Custom (S.E.A) <span class="fx">Gralessando</span></h1>
       <p class="intro">Custom (S.E.A) Gralessando supplies the printing, scanning and point-of-sale hardware and software behind retail and hospitality automation.</p>
     </div>
-    <!-- Decorative product line-up. The same families are listed
-         properly further down the page, so this is aria-hidden and the
-         images carry empty alt text. Ordered short to tall left to
-         right; a missing file removes only its own image. -->
+    <!-- Decorative product line-up, one per family. The same four are
+         listed properly further down the page, so this is aria-hidden
+         and the images carry empty alt text. Sizes alternate small and
+         large rather than climbing left to right, which would read as a
+         staircase; a missing file removes only its own image. -->
     <div class="hstage" aria-hidden="true">
-      <img class="p1" src="../photos/printer-pos/professional-printing.png" alt="" onerror="this.remove()" />
-      <img class="p2" src="../photos/printer-pos/self-service.png" alt="" onerror="this.remove()" />
+      <img class="p1" src="../photos/printer-pos/scanning.png" alt="" onerror="this.remove()" />
+      <img class="p2" src="../photos/printer-pos/professional-printing.png" alt="" onerror="this.remove()" />
+      <img class="p3" src="../photos/printer-pos/dc-pos.png" alt="" onerror="this.remove()" />
+      <img class="p4" src="../photos/printer-pos/self-service.png" alt="" onerror="this.remove()" />
     </div>
   </div>
 </section>
