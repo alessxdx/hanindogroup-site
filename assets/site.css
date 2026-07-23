@@ -330,6 +330,31 @@ img{max-width:100%;display:block}
    come through while keeping the white heading and the paler intro
    line legible over it. Used by the Hanindo Shanghai pages. */
 .pagehero.hero-photo .ov{background:linear-gradient(90deg,rgba(4,32,58,.78),rgba(7,46,82,.62) 60%,rgba(11,63,110,.45))}
+/* Hero product line-up — Custom units standing on the right of the hero,
+   the way a manufacturer shoots a range. Static and always on screen: no
+   script, no fade, nothing to fail. A common baseline and two different
+   sizes are what stop a set of cut-outs photographed at the same scale
+   from reading as a flat repeat.
+   Three units in a pyramid: the monitor across the top, the two smaller
+   machines beneath it. The rows carry explicit heights and each image
+   fills its row — a percentage max-height cannot resolve against an fr
+   row, so the images would render at natural size and overflow. Sizing by
+   row also means the two machines below come out matched without a width
+   per image; every Custom shot is on the same 270x221 canvas.
+   Below 900px the stage is dropped: there is no room beside a wrapping
+   heading, and stacking it underneath pushes the page down for pure
+   decoration. Shared by the Gralessando and Hanindo Shanghai home pages. */
+.hero-show .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(1.2rem,2.4vw,2rem);align-items:center}
+.hstage{display:grid;grid-template-columns:1fr 1fr;
+  grid-template-rows:clamp(105px,18vh,176px) clamp(85px,13vh,128px);
+  gap:clamp(.3rem,.8vw,.55rem);justify-items:center;align-items:end}
+.hstage img{height:100%;width:auto;max-width:100%;object-fit:contain;
+  filter:drop-shadow(0 14px 20px rgba(0,0,0,.5))}
+.hstage .top{grid-column:1 / -1}
+@media(max-width:900px){
+  .hero-show .wrap{display:block}
+  .hstage{display:none}
+}
 .pagehero .glow{display:none}
 .pagehero .wrap{position:relative;z-index:2;padding-bottom:clamp(1.8rem,4vw,2.8rem);padding-top:clamp(3rem,7vw,4.2rem);width:100%}
 .pagehero .crumb{font-size:.78rem;color:#a9bcd6;font-weight:500}

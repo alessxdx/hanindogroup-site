@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/site.css?v=202607241900" />
+<link rel="stylesheet" href="../assets/site.css?v=202607242000" />
 </head>
 <body>
 
@@ -50,13 +50,26 @@
 <!-- END SITE HEADER -->
 
 <!-- ============ PAGE HERO ============ -->
-<section class="pagehero hero-tall hero-photo">
+<section class="pagehero hero-tall hero-photo hero-show">
   <div class="bg"><img src="../photos/group/hero/hero-overseas.jpg?v=2" alt="" onerror="this.style.display='none'" /></div>
   <div class="ov"></div><div class="glow"></div>
   <div class="wrap">
-    <div class="crumb"><a href="../">Home</a><span class="sep">/</span><a href="../about/">About Us</a><span class="sep">/</span>Hanindo Shanghai</div>
-    <h1>Hanindo (Shanghai)<br/><span class="fx">International Co., Ltd</span></h1>
-    <p class="intro">Hanindo CUSTOM China</p>
+    <div class="hcopy">
+      <div class="crumb"><a href="../">Home</a><span class="sep">/</span><a href="../about/">About Us</a><span class="sep">/</span>Hanindo Shanghai</div>
+      <h1>Hanindo (Shanghai)<br/><span class="fx">International Co., Ltd</span></h1>
+      <p class="intro">Hanindo CUSTOM China</p>
+    </div>
+    <!-- Decorative product group, the same line-up the Gralessando home
+         page carries and drawn from the same shared product shots. The
+         families are listed properly further down the page, so this is
+         aria-hidden and the images carry empty alt text. Markup order is
+         grid order: the monitor spans the top row, the other two share
+         the row beneath it. A missing file removes only its own image. -->
+    <div class="hstage" aria-hidden="true">
+      <img class="top" src="../photos/printer-pos/products/dc-pos.png" alt="" onerror="this.remove()" />
+      <img src="../photos/printer-pos/products/scanning.png" alt="" onerror="this.remove()" />
+      <img src="../photos/printer-pos/products/professional-printing.png" alt="" onerror="this.remove()" />
+    </div>
   </div>
 </section>
 
