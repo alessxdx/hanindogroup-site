@@ -77,6 +77,11 @@
     "your project.": "proyek Anda.",
     "Planning a new installation, upgrading an existing system, or need maintenance and testing? Our engineers are ready to help you protect what matters — reach us using the details below.": "Merencanakan instalasi baru, meningkatkan sistem yang ada, atau membutuhkan pemeliharaan dan pengujian? Para insinyur kami siap membantu Anda melindungi hal yang penting — hubungi kami melalui detail di bawah ini.",
 
+    /* ---- contact page: other companies band ---- */
+    "Elsewhere in the group": "Di lingkungan grup",
+    "Looking for another company?": "Mencari perusahaan lain?",
+    "All four companies share the Fatmawati head office. If your enquiry sits with one of the others, go straight to them.": "Keempat perusahaan berbagi kantor pusat Fatmawati. Jika pertanyaan Anda terkait salah satu perusahaan lainnya, silakan hubungi langsung.",
+
     /* ---- footer ---- */
     "Explore": "Jelajahi",
     "Fire Fighting Department": "Departemen Pemadam Kebakaran",

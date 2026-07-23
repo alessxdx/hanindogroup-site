@@ -312,7 +312,7 @@ img{max-width:100%;display:block}
 .svc h3{font-size:.87rem;line-height:1.3;margin-bottom:.3rem}
 .svc p{font-size:.79rem;line-height:1.45}
 .pills{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.6rem}
-.pill{background:var(--white);border:1px solid var(--line);border-radius:40px;padding:.6rem 1.15rem;font-size:.88rem;font-weight:700;color:var(--navy-800);transition:.18s}
+.pill{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:.6rem 1.15rem;font-size:.88rem;font-weight:700;color:var(--navy-800);transition:.18s}
 .pill:hover{background:var(--navy-800);color:#fff;border-color:var(--navy-800)}
 
 /* ---------- projects page ---------- */
@@ -660,9 +660,9 @@ body{line-height:1.65}
 /* ---------- WHY CHOOSE US — soft icon tiles with a follow-on link ---------- */
 .adv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.5rem}
 @media(max-width:860px){.adv-grid{grid-template-columns:1fr}}
-.adv{background:var(--white);border-radius:16px;padding:1.5rem 1.3rem;text-align:center;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
-.adv:hover{transform:translateY(-3px);box-shadow:0 24px 42px -28px rgba(4,32,58,.55)}
-.advic{width:50px;height:50px;margin:0 auto .85rem;border-radius:14px;display:flex;align-items:center;justify-content:center}
+.adv{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:1.5rem 1.3rem;text-align:center;transition:border-color .2s;display:flex;flex-direction:column}
+.adv:hover{transform:none;box-shadow:none;border-color:var(--crimson)}
+.advic{width:50px;height:50px;margin:0 auto .85rem;border-radius:var(--r);display:flex;align-items:center;justify-content:center}
 .advic svg{width:23px;height:23px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .adv-1 .advic{background:#e6f2fb}.adv-1 .advic svg{stroke:var(--crimson)}
 .adv-2 .advic{background:#eaeff9}.adv-2 .advic svg{stroke:var(--navy-800)}
@@ -677,12 +677,12 @@ body{line-height:1.65}
 .adv:hover .advlink svg{transform:translateX(3px)}
 
 /* ---------- CREDENTIAL CARDS — white card, tinted icon tile, colour foot ---------- */
-.ccard{background:var(--white);border-radius:16px;padding:1.6rem 1.5rem 1.5rem;position:relative;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 14px 30px -24px rgba(4,32,58,.5);transition:transform .2s,box-shadow .2s}
-.ccard:hover{transform:translateY(-3px);box-shadow:0 26px 46px -30px rgba(4,32,58,.55)}
-.ccard::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px}
+.ccard{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:1.6rem 1.5rem 1.5rem;position:relative;overflow:hidden;display:flex;flex-direction:column;box-shadow:none;transition:border-color .2s}
+.ccard:hover{transform:none;box-shadow:none;border-color:var(--crimson)}
+.ccard::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px}
 .cc-red::after{background:var(--fire)}
 .cc-navy::after{background:var(--navy-800)}
-.ccic{width:50px;height:50px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
+.ccic{width:50px;height:50px;border-radius:var(--r);display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
 .cc-red .ccic{background:#e6f2fb}
 .cc-navy .ccic{background:#eaeff9}
 .ccic svg{width:24px;height:24px;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
@@ -693,7 +693,7 @@ body{line-height:1.65}
 .ccard>p{color:var(--muted);font-size:.92rem}
 .ccard>p i{font-style:italic;color:var(--navy-700)}
 .ccpills{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.9rem}
-.ccpill{font-size:.75rem;font-weight:700;padding:.38rem .72rem;border-radius:8px;background:var(--paper);color:var(--navy-800);border:1px solid var(--line)}
+.ccpill{font-size:.75rem;font-weight:700;padding:.38rem .72rem;border-radius:var(--r);background:var(--paper);color:var(--navy-800);border:1px solid var(--line)}
 .cclink{margin-top:auto;padding-top:1rem;align-self:flex-start;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:var(--crimson);text-decoration:none}
 .cclink:hover{text-decoration:underline}
 
