@@ -48,18 +48,20 @@ silently shadow nothing and just confuse the next person.
 --------------------------------------------------
 HPA-Faip TYRE SERVICE  (/automotive/tyre-service/)
 --------------------------------------------------
-Fourteen HPA-Faip models are listed with their photo slots already
+Twelve HPA-Faip models are listed with their photo slots already
 wired. Drop a PNG with the EXACT filename into /photos/automotive/products/ and
 it replaces the "Photo to follow" placeholder. Cut-out product shot on
 white, ~800px wide; the card contains rather than crops it.
 
-Specifications are in for B35, B55, B60, B75, B225, B325, M31 and M54.
-The other six cards still show a "Full specifications to follow" line
-until their tables arrive: B45, B50, M422, M424 and the two C880s.
+Specifications are in for B35, B55, B60, B75, B225, B325, M31, M54,
+M422 and M424.
+The two C880 alignment cards still show a "Full specifications to
+follow" line until their tables arrive.
+
+B45 and B50 were dropped from the page at the business's request,
+taking HPA-Faip from fourteen models to twelve.
 
 hpa-b35.png       B35 Digital Wheel Balancer          [COMPLETE]
-hpa-b45.png       B45 Digital Wheel Balancer          [NEEDED]
-hpa-b50.png       B50 TV Monitor Wheel Balancer       [NEEDED]
 hpa-b55.png       B55 Digital Wheel Balancer          [COMPLETE]
 hpa-b60.png       B60 TV Monitor Wheel Balancer       [COMPLETE]
 hpa-b75.png       B75 Digital Wheel Balancer (Truck)  [COMPLETE]
@@ -88,23 +90,11 @@ weldann-mig-mma-500f.png   MIG/MMA-500F                 [COMPLETE]
 The 400F and 700F share a cabinet — same machine, different rating —
 so the two files are deliberately the same shot. Both cards say so.
 
-ACCESSORIES  ("Supplied with" grid on the MIG/MMA-500F card)
-These go in /photos/automotive/products/accessories/. Cut-out on
-white, ~400px, square-ish; the tile contains rather than crops. A
-tile with no photo shows a dashed outline and keeps its caption, so
-the grid reads as a list of what is in the box either way.
-
-weldann-acc-holder-500a.png   1.8 m 35 mm2 500 A holder    [NEEDED]
-weldann-acc-clamp-500a.png    1.2 m 35 mm2 500 A clamp     [NEEDED]
-weldann-acc-hose-clamp.png    Hose clamp                   [NEEDED]
-weldann-acc-mask-brush.png    Mask and chipping brush      [NEEDED]
-weldann-acc-manual.png        User manual                  [NEEDED]
-weldann-acc-torch-36ak.png    5 m 36AK 35 mm2 torch        [NEEDED]
-weldann-acc-co2-valve.png     36 V CO2 relief valve        [NEEDED]
-
-The MIG/MMA-350F ships with the same seven items, so once these land
-the same grid can be copied onto its card with no new photos. The
-three MMA models ship a shorter list and still show it as plain text.
+The "Supplied with" list on each card is plain text. A picture grid
+of the accessories was tried on the MIG/MMA-500F and taken back out —
+the accessory shots would have had to be cropped from the marketing
+sheet at around 270px, too soft for the tile. Revisit if Weldann
+supply a media kit.
 
 
 --------------------------------------------------
