@@ -717,3 +717,15 @@ body{line-height:1.65}
 .stat .num,
 .pagehero h1 .fx,
 .footer .fbrand span{background:var(--ember);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* ---------- INDUSTRIES SERVED ----------
+   Square-cornered cells in one row rather than the wrapping pill row,
+   matching the Gralessando products page.
+   Sized to their labels rather than eight equal columns: equal columns
+   come out 127px, which wraps "Transportation & Rail" and drags every
+   cell to three lines. Growing from content keeps each on one line and
+   still fills the row, and it wraps by itself on a narrow screen with
+   no breakpoint to maintain. */
+.indgrid{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+.indgrid .pill{flex:1 1 auto;white-space:nowrap;display:flex;align-items:center;justify-content:center;
+  text-align:center;border-radius:var(--r);padding:.6rem .7rem;font-size:.8rem;line-height:1.25}
