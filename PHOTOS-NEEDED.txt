@@ -209,6 +209,12 @@ hero-printer-pos.jpg      DONE — page hero, reception with the Custom
                           pages, each cropped to object-position
                           center 70% so the heading falls on the counter
                           rather than the signage.
+pos-about.jpg             About page, beside the Company overview
+                          [NEEDED]. Landscape, ~1200px wide; the panel
+                          crops to fill, so keep the subject central.
+                          The office, the team, or a Custom system in
+                          use somewhere — NOT the signboard, which the
+                          hero on the same page already shows.
 pos-terminal.jpg          DONE — intro section, the office signboard
                           (2560x1920). Still a stand-in: a product shot
                           of a Custom terminal or printer would suit the
