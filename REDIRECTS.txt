@@ -20,12 +20,12 @@ OLD (Joomla)                                          NEW
 /about-hanindo-group/flowtech-engineering             /flowtech-engineering/
 /about-hanindo-group/hanindo-automotive               /automotive/
 /about-hanindo-group/hanindo-automation-solutions     /automation/
-/about-hanindo-group/hanindo-overseas                 /overseas/
+/about-hanindo-group/hanindo-overseas                 /shanghai/
 /pt-hanindo-citra                                     /oil-and-gas/
 /pt-flowtech-engineering                              /flowtech-engineering/
 /pt-hanindo-automotive                                /automotive/
 /hanindo-automation-solutions                         /automation/
-/pt-hanindo-overseas                                  /overseas/
+/pt-hanindo-overseas                                  /shanghai/
 /hanindo-product                                      /                          (no direct equivalent -> home)
 /oil-and-gas                                          /oil-and-gas/
 /home-automotive                                      /automotive/
@@ -35,6 +35,11 @@ OLD (Joomla)                                          NEW
 /news-info/career-hanindo-group-gilbarco-veeder-root-indonesia-thermal-printer   /career/   [PENDING]
 /contact-us                                           /contact/                  [PENDING]
 /about                                                /about/                    [PENDING]
+
+THIS SITE'S OWN URL CHANGE. /overseas/ was the path during the build;
+the company is Hanindo Shanghai, so the section moved to /shanghai/.
+Anyone who was sent the preview link needs this one too:
+/overseas/                                            /shanghai/
 
 WAS EXTERNAL — now internal. Both of these pointed at custom-sea.com,
 which does not exist. Send them to the section instead:
@@ -64,13 +69,13 @@ Redirect 301 /about-hanindo-group/hanindo-citra                /oil-and-gas/
 Redirect 301 /about-hanindo-group/flowtech-engineering         /flowtech-engineering/
 Redirect 301 /about-hanindo-group/hanindo-automotive           /automotive/
 Redirect 301 /about-hanindo-group/hanindo-automation-solutions /automation/
-Redirect 301 /about-hanindo-group/hanindo-overseas             /overseas/
+Redirect 301 /about-hanindo-group/hanindo-overseas             /shanghai/
 Redirect 301 /about-hanindo-group                              /about/
 Redirect 301 /pt-hanindo-citra                                 /oil-and-gas/
 Redirect 301 /pt-flowtech-engineering                          /flowtech-engineering/
 Redirect 301 /pt-hanindo-automotive                            /automotive/
 Redirect 301 /hanindo-automation-solutions                     /automation/
-Redirect 301 /pt-hanindo-overseas                              /overseas/
+Redirect 301 /pt-hanindo-overseas                              /shanghai/
 Redirect 301 /hanindo-product                                  /
 Redirect 301 /oil-and-gas                                      /oil-and-gas/
 Redirect 301 /home-automotive                                  /automotive/
@@ -78,6 +83,7 @@ Redirect 301 /partners-a-principals                            /partners/
 Redirect 301 /training-gilbarco-veeder-root-thermal-printer-indonesia  /training/
 Redirect 301 /news-info/career-hanindo-group-gilbarco-veeder-root-indonesia-thermal-printer  /career/
 Redirect 301 /contact-us                                       /contact/
+Redirect 301 /overseas                                         /shanghai/
 Redirect 301 /about                                            /about/
 
 # IMPORTANT: order matters. The longer /about-hanindo-group/* rules
