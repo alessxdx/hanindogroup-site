@@ -143,14 +143,27 @@ div-printer-pos.png       Division card — POS / ticket printer hardware
                           arrangement was tried and reverted.
 
 PARTNER LOGOS                                     [COMPLETE]
-All 27 principal logos live in /photos/partners/ — NOT in /photos/
-directly. They appear as a static grid on the homepage and on the
+All principal logos live in /photos/partners/ — NOT in /photos/
+directly. They appear as a static wall on the homepage and on the
 /partners/ page. Filenames match the brand, for example:
   gilbarco.webp   opw1.webp   raasm.png   cebora.png   itl.webp
 
 Most are .webp, a few are .png. Any <img> must use the exact
 extension. To replace one, keep the same filename AND extension,
-otherwise the cell falls back to showing the brand name as text.
+otherwise the slot falls back to showing the brand name as text.
+
+Lafon, PIUSI, TransTank and Transponder Technologies were dropped from
+every wall at the business's request, taking the homepage and /partners/
+lists from 21 brands to 17. Their files (lafon.webp, piusi.svg,
+transtank.webp, tt.webp) are still in /photos/partners/ but nothing
+points at them — delete them, or leave them in case a brand comes back.
+
+The walls are no longer a grid of equal boxes. Each logo carries a tier
+class that sets how large it is drawn — .t1 for the biggest principals,
+.t2 for the body of the list, .t3 for the rest — so the wall shows which
+relationships are the largest. To promote or demote a brand, change its
+tier class; nothing else needs touching. Entries are listed by tier and
+then alphabetically within it.
 
 
 --------------------------------------------------
@@ -364,7 +377,7 @@ cropped — SITA's final A and PAL's sunburst were sliced in the supplied
 files — so they were replaced with public-domain vectors from Wikimedia
 Commons. Being vector they cannot go soft or clip at any size, which
 also settles the blur on the PAL logo. The partners wall already uses
-SVG (opw.svg, piusi.svg), so nothing special is needed to serve them.
+SVG (opw.svg), so nothing special is needed to serve them.
 
 
 

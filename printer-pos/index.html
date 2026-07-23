@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/site.css?v=202607241600" />
+<link rel="stylesheet" href="../assets/site.css?v=202607261200" />
 <style>
 /* .checks is a plain one-line tick list in site.css. Here each tick
    carries a sentence, so the label goes on its own line above it. */
@@ -51,18 +51,6 @@
   .hero-show .wrap{display:block}
   .hstage{display:none}
 }
-/* page-specific: customer wall, same as the one on the Hanindo Citra page.
-   Fixed-height cells so logos of very different proportions sit on a
-   consistent baseline. Names are hidden and surface only if a logo file
-   fails to load, so a cell is never empty. Cells are inert — no links out
-   to the customers, and so no hover state. */
-.custgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:1.6rem}
-@media(max-width:1000px){.custgrid{grid-template-columns:repeat(4,1fr)}}
-@media(max-width:760px){.custgrid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:480px){.custgrid{grid-template-columns:repeat(2,1fr)}}
-.custgrid .cell{background:#fff;min-height:132px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;padding:1.1rem .9rem;text-align:center}
-.custgrid .cell img{width:100%;height:52px;object-fit:contain}
-.custgrid .cell .nm{font-size:.78rem;font-weight:600;color:var(--muted);line-height:1.25}
 </style>
 </head>
 <body>
@@ -185,50 +173,55 @@
 <!-- ============ PARTNERS & PRINCIPALS ============ -->
 <!-- Blank for now. Sits between the product strip and the customers so
      this page runs in the same order as the other company sites.
-     To fill: logos into /photos/partners/, one .lcell each, as in
-     automotive/index.html. .lgrid comes from site.css. -->
+     To fill: logos into /photos/partners/, one .w each with a tier class
+     (.t1 biggest, .t3 smallest), as in automotive/index.html. .wall comes
+     from site.css. -->
 <!--
 <section class="section white">
   <div class="wrap">
     <div class="reveal" style="text-align:center;margin-bottom:1.4rem">
       <span class="kicker">Partners &amp; Principals</span>
     </div>
-    <div class="lgrid reveal">
+    <div class="wall">
     </div>
   </div>
 </section>
 -->
 
 <!-- ============ CUSTOMER BASE ============ -->
-<!-- Ordered alphabetically, as every other logo wall on the site.
-     No "paper": the product strip above it is already grey, so this
+<!-- No "paper": the product strip above it is already grey, so this
      would land grey-on-grey. Logo files are in /photos/customers/, shared with the Hanindo
-     Citra wall. Names are listed in PHOTOS-NEEDED.txt. -->
+     Citra wall. Names are listed in PHOTOS-NEEDED.txt.
+
+     The shared weighted .wall from site.css, matching the Hanindo Citra
+     wall: .t1 are the accounts that carry the most weight, .t3 the
+     smallest, ordered by tier and then alphabetically within it. To move
+     a customer up or down, change its tier class. -->
 <section class="customers" aria-label="Customer base">
   <div class="chead reveal"><span class="kick">Customer base</span></div>
   <div class="wrap">
-    <div class="custgrid">
-      <div class="cell reveal"><img src="../photos/customers/aboitiz.png" alt="Aboitiz InfraCapital" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Aboitiz InfraCapital</span></div>
-      <div class="cell reveal"><img src="../photos/customers/airasia.png" alt="AirAsia" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">AirAsia</span></div>
-      <div class="cell reveal"><img src="../photos/customers/amadeus.png" alt="Amadeus" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Amadeus</span></div>
-      <div class="cell reveal"><img src="../photos/customers/burger-king.png" alt="Burger King" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Burger King</span></div>
-      <div class="cell reveal"><img src="../photos/customers/cebu-pacific.png" alt="Cebu Pacific" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Cebu Pacific</span></div>
-      <div class="cell reveal"><img src="../photos/customers/collins.png" alt="Collins Aerospace" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Collins Aerospace</span></div>
-      <div class="cell reveal"><img src="../photos/customers/daifuku.png" alt="Daifuku" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Daifuku</span></div>
-      <div class="cell reveal"><img src="../photos/customers/idemia.png" alt="IDEMIA" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">IDEMIA</span></div>
-      <div class="cell reveal"><img src="../photos/customers/injourney-airports.png" alt="InJourney Airports" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">InJourney Airports</span></div>
-      <div class="cell reveal"><img src="../photos/customers/jd-sports.png" alt="JD Sports" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm">JD Sports</span></div>
-      <div class="cell reveal"><img src="../photos/customers/nlb.png" alt="National Library Board" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">National Library Board</span></div>
-      <div class="cell reveal"><img src="../photos/customers/philippine-airlines.svg" alt="Philippine Airlines" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Philippine Airlines</span></div>
-      <div class="cell reveal"><img src="../photos/customers/pt-murni.png" alt="PT Murni" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Murni</span></div>
-      <div class="cell reveal"><img src="../photos/customers/singapore-airlines.png" alt="Singapore Airlines" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Singapore Airlines</span></div>
-      <div class="cell reveal"><img src="../photos/customers/sg-cruise-centre.png" alt="Singapore Cruise Centre" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Singapore Cruise Centre</span></div>
-      <div class="cell reveal"><img src="../photos/customers/sg-pools.png" alt="Singapore Pools" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Singapore Pools</span></div>
-      <div class="cell reveal"><img src="../photos/customers/sita.svg" alt="SITA" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">SITA</span></div>
-      <div class="cell reveal"><img src="../photos/customers/smrt.png" alt="SMRT Trains" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">SMRT Trains</span></div>
-      <div class="cell reveal"><img src="../photos/customers/st-engineering.png" alt="ST Engineering" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">ST Engineering</span></div>
-      <div class="cell reveal"><img src="../photos/customers/strides.png" alt="Strides" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Strides</span></div>
-      <div class="cell reveal"><img src="../photos/customers/wei-long-electronics.png" alt="Wei Long Electronics" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm">Wei Long Electronics</span></div>
+    <div class="wall">
+      <div class="w t1 reveal"><img src="../photos/customers/collins.png" alt="Collins Aerospace" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Collins Aerospace</span></div>
+      <div class="w t1 reveal"><img src="../photos/customers/injourney-airports.png" alt="InJourney Airports" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">InJourney Airports</span></div>
+      <div class="w t1 reveal"><img src="../photos/customers/singapore-airlines.png" alt="Singapore Airlines" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Singapore Airlines</span></div>
+      <div class="w t1 reveal"><img src="../photos/customers/sita.svg" alt="SITA" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">SITA</span></div>
+      <div class="w t1 reveal"><img src="../photos/customers/st-engineering.png" alt="ST Engineering" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">ST Engineering</span></div>
+      <div class="w t2 reveal"><img src="../photos/customers/aboitiz.png" alt="Aboitiz InfraCapital" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Aboitiz InfraCapital</span></div>
+      <div class="w t2 reveal"><img src="../photos/customers/airasia.png" alt="AirAsia" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">AirAsia</span></div>
+      <div class="w t2 reveal"><img src="../photos/customers/amadeus.png" alt="Amadeus" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Amadeus</span></div>
+      <div class="w t2 reveal"><img src="../photos/customers/burger-king.png" alt="Burger King" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Burger King</span></div>
+      <div class="w t2 reveal"><img src="../photos/customers/cebu-pacific.png" alt="Cebu Pacific" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Cebu Pacific</span></div>
+      <div class="w t2 reveal"><img src="../photos/customers/daifuku.png" alt="Daifuku" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Daifuku</span></div>
+      <div class="w t2 reveal"><img src="../photos/customers/idemia.png" alt="IDEMIA" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">IDEMIA</span></div>
+      <div class="w t2 reveal"><img src="../photos/customers/philippine-airlines.svg" alt="Philippine Airlines" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Philippine Airlines</span></div>
+      <div class="w t2 reveal"><img src="../photos/customers/sg-pools.png" alt="Singapore Pools" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Singapore Pools</span></div>
+      <div class="w t2 reveal"><img src="../photos/customers/smrt.png" alt="SMRT Trains" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">SMRT Trains</span></div>
+      <div class="w t3 reveal"><img src="../photos/customers/jd-sports.png" alt="JD Sports" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">JD Sports</span></div>
+      <div class="w t3 reveal"><img src="../photos/customers/nlb.png" alt="National Library Board" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">National Library Board</span></div>
+      <div class="w t3 reveal"><img src="../photos/customers/pt-murni.png" alt="PT Murni" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Murni</span></div>
+      <div class="w t3 reveal"><img src="../photos/customers/sg-cruise-centre.png" alt="Singapore Cruise Centre" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Singapore Cruise Centre</span></div>
+      <div class="w t3 reveal"><img src="../photos/customers/strides.png" alt="Strides" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Strides</span></div>
+      <div class="w t3 reveal"><img src="../photos/customers/wei-long-electronics.png" alt="Wei Long Electronics" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Wei Long Electronics</span></div>
     </div>
   </div>
 </section>

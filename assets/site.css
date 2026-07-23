@@ -86,15 +86,6 @@ img{max-width:100%;display:block}
 .searchbox button{border:0;background:var(--blue-800);color:#fff;padding:0 .9rem;border-radius:0 var(--r) var(--r) 0;cursor:pointer;display:flex;align-items:center;transition:background .18s}
 .searchbox button:hover{background:var(--brand)}
 .searchbox button svg{width:15px;height:15px;fill:none;stroke:#fff;stroke-width:2}
-/* nine own-brand logos in the flat partner-grid style, kept to three
-   columns so the rows divide evenly instead of leaving an orphan */
-.lgrid.brands3{grid-template-columns:repeat(3,1fr)}
-@media(max-width:720px){.lgrid.brands3{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:420px){.lgrid.brands3{grid-template-columns:1fr}}
-/* a taller logo box: square marks like ATOM were being pinned to the 46px
-   height cap while wide wordmarks ran to the full width */
-.lgrid.brands3 .lcell{min-height:112px}
-.lgrid.brands3 .lcell img{width:126px;height:72px}
 /* top-brands logo grid — white cards on the paper band */
 .brandgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2rem}
 @media(max-width:900px){.brandgrid{grid-template-columns:repeat(2,1fr);gap:.9rem}}
@@ -576,37 +567,63 @@ img{max-width:100%;display:block}
 @media(max-width:520px){.brandcard{height:108px;margin-right:2rem}.brandcard img{max-height:92px;max-width:210px}.brandcard .btext{font-size:.92rem}}
 @media(prefers-reduced-motion:reduce){.mtrack{animation:none;flex-wrap:wrap;justify-content:center}.brandcard{margin:0 .65rem 1rem}}
 
-/* customer wall — the static alternative to the marquee above, for pages
-   with enough customers that scrolling them would be slower than showing
-   them. Same fixed-height cell approach as the /partners/ logo grid, so
-   logos of very different proportions still sit on a consistent baseline.
-   Names are hidden — these logos are well enough known to stand alone —
-   and surface only if a logo file fails to load, so a cell is never
-   empty. Cells are inert: no links out to the customers, no hover. */
-.custgrid{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:1.6rem}
-@media(max-width:1000px){.custgrid{grid-template-columns:repeat(4,1fr)}}
-@media(max-width:760px){.custgrid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:480px){.custgrid{grid-template-columns:repeat(2,1fr)}}
-.custgrid .cell{background:#fff;min-height:132px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;padding:1.1rem .9rem;text-align:center;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
-.custgrid .cell img{width:100%;height:52px;object-fit:contain}
-.custgrid .cell .nm{font-size:.78rem;font-weight:600;color:var(--muted);line-height:1.25}
+/* ---------- LOGO WALL ---------- */
+/* One component for both the principals walls and the customer walls,
+   replacing the older ruled grids where every mark sat in an identical
+   box. Two things change. The boxes and their rules are gone, so the
+   logos read as a wall of marks rather than a spreadsheet. And each
+   logo carries a tier class that sets how large it is drawn: .t1 for
+   the principals we do the most business with and the customers whose
+   names carry the most weight, .t2 for the body of the list, .t3 for
+   the rest. Weighting the marks is the point — an equal grid says every
+   relationship is the same size, which is not true of either wall.
 
-/* partner logo grid — static, all logos visible at once, no motion.
-   auto-fill keeps the rows tidy at any width without hand-tuned
-   breakpoints, which matters because the count is not a round number. */
-/* Rules are drawn per cell rather than as a 1px gap over a tinted
-   container: the count is rarely a multiple of the column count, and a
-   tinted container paints the leftover cells of the last row as a solid
-   block. Bordering the cells instead means the grid simply stops where
-   the logos do. */
-.lgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
-/* No hover state: the cells are not links, they are a wall of marks the
-   reader looks at. A tint on hover invites a click that goes nowhere. */
-.lcell{background:var(--white);display:flex;align-items:center;justify-content:center;min-height:98px;padding:1rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
-/* fixed box + contain, so a small source file is scaled to the same
-   optical size as a large one instead of rendering at its natural size */
-.lcell img{width:118px;height:46px;object-fit:contain}
-.lcell span{font-size:.82rem;font-weight:600;color:var(--muted);text-align:center;line-height:1.3}
+   Sizing is on the img, not the cell. Each tier caps both height and
+   width, so a tall square mark and a long wordmark come out at roughly
+   equal optical area instead of the wordmark running away with the row.
+   object-fit:contain means a logo that hits the width cap letterboxes
+   within its box rather than distorting.
+
+   Rows are centred and wrap freely, so the wall has no orphan cells to
+   fill at the end of a row and needs no per-count breakpoints. Cells
+   are inert: no links out, and so no hover state. */
+.wall{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  column-gap:3.2rem;row-gap:2.4rem;margin-top:2.1rem}
+.wall .w{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.55rem;text-align:center}
+.wall .w img{display:block;width:auto;object-fit:contain}
+/* The same cap goes on the cell and on its logo, so a long name like
+   Integration Technologies Limited wraps under the mark rather than
+   pushing its neighbours apart. Caps are plain pixels and the phone
+   sizes come from the media query below rather than a viewport unit: the
+   three weights only have to stay distinct from each other, which they
+   do at two fixed steps, and a cap of min(px,vw) collapses the whole
+   wall to nothing in any context where vw resolves as zero. */
+/* biggest principals / anchor customers */
+.wall .t1,.wall .t1 img{max-width:258px}
+.wall .t1 img{height:64px}
+/* the main body of the wall */
+.wall .t2,.wall .t2 img{max-width:196px}
+.wall .t2 img{height:46px}
+/* smallest — still legible, clearly subordinate */
+.wall .t3,.wall .t3 img{max-width:150px}
+.wall .t3 img{height:34px}
+/* Phones: everything comes down a step, and the gaps close with it, so
+   the wall still reads as three weights rather than one long column. */
+@media(max-width:640px){
+  .wall{column-gap:1.5rem;row-gap:1.4rem}
+  .wall .t1,.wall .t1 img{max-width:180px}
+  .wall .t1 img{height:48px}
+  .wall .t2,.wall .t2 img{max-width:140px}
+  .wall .t2 img{height:36px}
+  .wall .t3,.wall .t3 img{max-width:112px}
+  .wall .t3 img{height:28px}
+}
+/* Names are hidden on most walls and surface only when a logo file
+   fails to load, so a slot is never empty. /partners/ names every brand
+   outright, and there the label scales with the tier as well. */
+.wall .nm,.wall .w>span{font-size:.78rem;font-weight:600;color:var(--muted);line-height:1.25}
+.wall .t1 .nm,.wall .t1>span{font-size:.86rem;color:var(--blue-800)}
+.wall .t3 .nm,.wall .t3>span{font-size:.72rem}
 
 /* ---------- CATALOGUE GRID ---------- */
 /* Product-category cards: one photo, one label, one link. Used on the

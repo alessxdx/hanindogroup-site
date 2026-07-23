@@ -9,14 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/site.css?v=202607241600" />
-<style>
-/* The wall is the shared .custgrid from site.css. Only two rules are
-   local: this page names every brand and tints a cell on hover, where
-   the customer walls elsewhere are inert. */
-.custgrid .cell{transition:background .15s}
-.custgrid .cell:hover{background:var(--paper)}
-</style>
+<link rel="stylesheet" href="../assets/site.css?v=202607261200" />
 </head>
 <body>
 
@@ -101,28 +94,30 @@
       <span class="kicker">Our principals</span>
       <h2 class="h2">Brands we supply and service.</h2>
     </div>
-    <div class="custgrid">
-      <div class="cell reveal"><img src="../photos/partners/airtec.png" alt="Airtec" /><span class="nm">Airtec</span></div>
-      <div class="cell reveal"><img src="../photos/partners/brainbee.webp" alt="Brain Bee" /><span class="nm">Brain Bee</span></div>
-      <div class="cell reveal"><img src="../photos/partners/cebora.png" alt="Cebora" /><span class="nm">Cebora</span></div>
-      <div class="cell reveal"><img src="../photos/partners/custom.png" alt="Custom" /><span class="nm">Custom</span></div>
-      <div class="cell reveal"><img src="../photos/partners/doms.webp" alt="DOMS" /><span class="nm">DOMS</span></div>
-      <div class="cell reveal"><img src="../photos/partners/durapipe.webp" alt="Durapipe" /><span class="nm">Durapipe</span></div>
-      <div class="cell reveal"><img src="../photos/partners/gasboy.webp" alt="Gasboy" /><span class="nm">Gasboy</span></div>
-      <div class="cell reveal"><img src="../photos/partners/gilbarco.webp" alt="Gilbarco Veeder-Root" /><span class="nm">Gilbarco Veeder-Root</span></div>
-      <div class="cell reveal"><img src="../photos/partners/honeywell.webp" alt="Honeywell" /><span class="nm">Honeywell</span></div>
-      <div class="cell reveal"><img src="../photos/partners/hpa.webp" alt="HPA" /><span class="nm">HPA</span></div>
-      <div class="cell reveal"><img src="../photos/partners/itl.webp" alt="Integration Technologies Limited" /><span class="nm">Integration Technologies Limited</span></div>
-      <div class="cell reveal"><img src="../photos/partners/lafon.webp" alt="Lafon" /><span class="nm">Lafon</span></div>
-      <div class="cell reveal"><img src="../photos/partners/opw.svg" alt="OPW" /><span class="nm">OPW</span></div>
-      <div class="cell reveal"><img src="../photos/partners/piusi.svg" alt="PIUSI" /><span class="nm">PIUSI</span></div>
-      <div class="cell reveal"><img src="../photos/partners/postec.webp" alt="Postec" /><span class="nm">Postec</span></div>
-      <div class="cell reveal"><img src="../photos/partners/raasm.png" alt="RAASM" /><span class="nm">RAASM</span></div>
-      <div class="cell reveal"><img src="../photos/partners/redjacket.webp" alt="Red Jacket" /><span class="nm">Red Jacket</span></div>
-      <div class="cell reveal"><img src="../photos/partners/tcs.webp" alt="TCS" /><span class="nm">TCS</span></div>
-      <div class="cell reveal"><img src="../photos/partners/tt.webp" alt="Transponder Technologies" /><span class="nm">Transponder Technologies</span></div>
-      <div class="cell reveal"><img src="../photos/partners/transtank.webp" alt="TransTank" /><span class="nm">TransTank</span></div>
-      <div class="cell reveal"><img src="../photos/partners/wincor.webp" alt="Wincor Nixdorf" /><span class="nm">Wincor Nixdorf</span></div>
+    <!-- The shared .wall from site.css, sized by tier: .t1 are the
+         principals the group does the most business with, .t3 the
+         smallest. Unlike the walls on the company pages this one names
+         every brand outright — it is the reference list, so a reader who
+         does not recognise a mark should not have to guess. Ordered by
+         tier, then alphabetically within it. -->
+    <div class="wall">
+      <div class="w t1 reveal"><img src="../photos/partners/custom.png" alt="Custom" /><span class="nm">Custom</span></div>
+      <div class="w t1 reveal"><img src="../photos/partners/gilbarco.webp" alt="Gilbarco Veeder-Root" /><span class="nm">Gilbarco Veeder-Root</span></div>
+      <div class="w t1 reveal"><img src="../photos/partners/honeywell.webp" alt="Honeywell" /><span class="nm">Honeywell</span></div>
+      <div class="w t1 reveal"><img src="../photos/partners/opw.svg" alt="OPW" /><span class="nm">OPW</span></div>
+      <div class="w t1 reveal"><img src="../photos/partners/wincor.webp" alt="Wincor Nixdorf" /><span class="nm">Wincor Nixdorf</span></div>
+      <div class="w t2 reveal"><img src="../photos/partners/brainbee.webp" alt="Brain Bee" /><span class="nm">Brain Bee</span></div>
+      <div class="w t2 reveal"><img src="../photos/partners/doms.webp" alt="DOMS" /><span class="nm">DOMS</span></div>
+      <div class="w t2 reveal"><img src="../photos/partners/durapipe.webp" alt="Durapipe" /><span class="nm">Durapipe</span></div>
+      <div class="w t2 reveal"><img src="../photos/partners/gasboy.webp" alt="Gasboy" /><span class="nm">Gasboy</span></div>
+      <div class="w t2 reveal"><img src="../photos/partners/redjacket.webp" alt="Red Jacket" /><span class="nm">Red Jacket</span></div>
+      <div class="w t2 reveal"><img src="../photos/partners/tcs.webp" alt="TCS" /><span class="nm">TCS</span></div>
+      <div class="w t3 reveal"><img src="../photos/partners/airtec.png" alt="Airtec" /><span class="nm">Airtec</span></div>
+      <div class="w t3 reveal"><img src="../photos/partners/cebora.png" alt="Cebora" /><span class="nm">Cebora</span></div>
+      <div class="w t3 reveal"><img src="../photos/partners/hpa.webp" alt="HPA" /><span class="nm">HPA</span></div>
+      <div class="w t3 reveal"><img src="../photos/partners/itl.webp" alt="Integration Technologies Limited" /><span class="nm">Integration Technologies Limited</span></div>
+      <div class="w t3 reveal"><img src="../photos/partners/postec.webp" alt="Postec" /><span class="nm">Postec</span></div>
+      <div class="w t3 reveal"><img src="../photos/partners/raasm.png" alt="RAASM" /><span class="nm">RAASM</span></div>
     </div>
   </div>
 </section>
