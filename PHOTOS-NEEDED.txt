@@ -25,9 +25,9 @@ wired. Drop a PNG with the EXACT filename into /photos/automotive/ and
 it replaces the "Photo to follow" placeholder. Cut-out product shot on
 white, ~800px wide; the card contains rather than crops it.
 
-Specifications are in for B35, B55, B60, B75, B225 and B325. The other
-eight cards still show a "Full specifications to follow" line until
-their tables arrive: B45, B50, M31, M54, M422, M424 and the two C880s.
+Specifications are in for B35, B55, B60, B75, B225, B325, M31 and M54.
+The other six cards still show a "Full specifications to follow" line
+until their tables arrive: B45, B50, M422, M424 and the two C880s.
 
 hpa-b35.png       B35 Digital Wheel Balancer          [COMPLETE]
 hpa-b45.png       B45 Digital Wheel Balancer          [NEEDED]
@@ -37,8 +37,8 @@ hpa-b60.png       B60 TV Monitor Wheel Balancer       [COMPLETE]
 hpa-b75.png       B75 Digital Wheel Balancer (Truck)  [COMPLETE]
 hpa-b225.png      B225 Digital Wheel Balancer         [COMPLETE]
 hpa-b325.png      B325 TV Monitor Wheel Balancer      [COMPLETE]
-hpa-m31.png       M31 Tyre Changer 21" 1ph            [NEEDED]
-hpa-m54.png       M54 Tyre Changer 24" 1 or 3ph       [NEEDED]
+hpa-m31.png       M31 Tyre Changer 21" 1ph            [COMPLETE]
+hpa-m54.png       M54 Tyre Changer 24" 1 or 3ph       [COMPLETE]
 hpa-m422.png      M422 Tyre Changer 22" 3ph           [NEEDED]
 hpa-m424.png      M424 Tyre Changer 24" 3ph           [NEEDED]
 hpa-c880-std.png  C880 STD 3D Wheel Alignment         [NEEDED]
