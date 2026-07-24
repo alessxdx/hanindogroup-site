@@ -33,6 +33,9 @@
 @media(max-width:900px){.indgrid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:560px){.indgrid{grid-template-columns:repeat(2,1fr)}}
 .indgrid .pill{display:flex;align-items:center;justify-content:center;text-align:center;padding:.6rem .7rem;font-size:.84rem;line-height:1.25}
+/* Two sister companies to point at rather than one, so the cross-link
+   bands stack with a gap instead of sitting alone in the section. */
+.xstack{display:grid;gap:1rem}
 </style>
 </head>
 <body>
@@ -173,19 +176,30 @@
     </div>
   </div>
 </section>
-<!-- ============ CROSS-LINK: THE OTHER CUSTOM COMPANY ============ -->
-<!-- The mirror of the band on shanghai/products-services.html. The two
-     companies sell the identical Custom range, split by market, so each
-     catalogue points at the other. -->
+<!-- ============ CROSS-LINK: THE OTHER CUSTOM COMPANIES ============ -->
+<!-- The mirror of the bands on shanghai/products-services.html and
+     automation/products-services.html. The three companies sell the
+     identical Custom range, split by market, so each catalogue points at
+     the other two. -->
 <section class="section white">
   <div class="wrap">
-    <div class="xlink reveal">
-      <div>
-        <span class="eyebrow">The same range, another market</span>
-        <h3>Hanindo Shanghai</h3>
-        <p>The identical Custom range is supplied across China by Hanindo (Shanghai) International Co., Ltd, which goes to market as Hanindo CUSTOM China.</p>
+    <div class="xstack">
+      <div class="xlink reveal">
+        <div>
+          <span class="eyebrow">The same range, another market</span>
+          <h3>Hanindo Automation Solutions</h3>
+          <p>The identical Custom range is supplied in Indonesia by PT. Hanindo Automation Solutions, the group&rsquo;s Jakarta company.</p>
+        </div>
+        <div><a class="btn btn-fire" href="../automation/products-services.html">Automation Solutions products <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
       </div>
-      <div><a class="btn btn-fire" href="../shanghai/products-services.html">Hanindo Shanghai products <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      <div class="xlink reveal d1">
+        <div>
+          <span class="eyebrow">The same range, another market</span>
+          <h3>Hanindo Shanghai</h3>
+          <p>The identical Custom range is supplied across China by Hanindo (Shanghai) International Co., Ltd, which goes to market as Hanindo CUSTOM China.</p>
+        </div>
+        <div><a class="btn btn-fire" href="../shanghai/products-services.html">Hanindo Shanghai products <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      </div>
     </div>
   </div>
 </section>

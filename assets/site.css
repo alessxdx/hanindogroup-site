@@ -700,6 +700,14 @@ img{max-width:100%;display:block}
   width:100%;column-gap:clamp(1.7rem,2.9vw,2.9rem);row-gap:clamp(1.4rem,2.2vw,2rem)}
 .wall .w{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.55rem;text-align:center}
 .wall .w img{display:block;width:auto;object-fit:contain}
+/* Several of the supplied logo files carry a baked-in white background,
+   which reads as a white box floating on a tinted band. Multiply blends
+   that white into whatever sits behind it, so the marks all sit flat on
+   the section. Only needed where the band is tinted — on a white section
+   the boxes are already invisible, and blending there costs nothing but
+   is pointless. The marks themselves are dark on light, so multiply
+   leaves them untouched. */
+.section.paper .wall .w img,.customers.paper .wall .w img{mix-blend-mode:multiply}
 /* TIER sets the base size; SHAPE corrects it.
 
    Sizing on height alone is not enough, because these logos are wildly

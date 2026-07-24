@@ -34,6 +34,9 @@
 @media(max-width:900px){.indgrid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:560px){.indgrid{grid-template-columns:repeat(2,1fr)}}
 .indgrid .pill{display:flex;align-items:center;justify-content:center;text-align:center;padding:.6rem .7rem;font-size:.84rem;line-height:1.25}
+/* Two sister companies to point at rather than one, so the cross-link
+   bands stack with a gap instead of sitting alone in the section. */
+.xstack{display:grid;gap:1rem}
 @media(min-width:901px){.foot-grid{grid-template-columns:1.6fr 1fr 1fr 1fr 1fr}}
 </style>
 </head>
@@ -158,16 +161,26 @@
     </div>
   </div>
 </section>
-<!-- ============ CROSS-LINK: THE OTHER CUSTOM COMPANY ============ -->
+<!-- ============ CROSS-LINK: THE OTHER CUSTOM COMPANIES ============ -->
 <section class="section white">
   <div class="wrap">
-    <div class="xlink reveal">
-      <div>
-        <span class="eyebrow">The same range, another market</span>
-        <h3>Gralessando Pte Ltd</h3>
-        <p>The identical Custom range is supplied across South East Asia by Gralessando Pte Ltd, the group&rsquo;s Singapore company.</p>
+    <div class="xstack">
+      <div class="xlink reveal">
+        <div>
+          <span class="eyebrow">The same range, another market</span>
+          <h3>Gralessando Pte Ltd</h3>
+          <p>The identical Custom range is supplied across South East Asia by Gralessando Pte Ltd, the group&rsquo;s Singapore company.</p>
+        </div>
+        <div><a class="btn btn-fire" href="../printer-pos/products-services.html">Gralessando products <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
       </div>
-      <div><a class="btn btn-fire" href="../printer-pos/products-services.html">Gralessando products <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      <div class="xlink reveal d1">
+        <div>
+          <span class="eyebrow">The same range, another market</span>
+          <h3>Hanindo Automation Solutions</h3>
+          <p>The identical Custom range is supplied in Indonesia by PT. Hanindo Automation Solutions, the group&rsquo;s Jakarta company.</p>
+        </div>
+        <div><a class="btn btn-fire" href="../automation/products-services.html">Automation Solutions products <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      </div>
     </div>
   </div>
 </section>
