@@ -23,15 +23,8 @@
 .orgrow .go svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2.2;transition:transform .18s}
 .orgrow .go:hover svg{transform:translateX(3px)}
 @media(max-width:760px){.orgrow .go{padding-top:.45rem}}
-/* vision & mission */
-.vm{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-top:2.4rem}
-@media(max-width:820px){.vm{grid-template-columns:1fr}}
-.vmcard{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:1.9rem 1.7rem}
-.vmcard.dark{background:var(--blue-900);border-color:var(--blue-900)}
-.vmcard h3{font-weight:700;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand);margin-bottom:1rem}
-.vmcard.dark h3{color:var(--sky)}
-.vmcard p{font-size:1rem;color:var(--ink);line-height:1.7}
-.vmcard.dark p{color:#c3d0e4}
+/* Vision & Mission uses the shared .vm / .vm-card block from site.css,
+   the same as the company About pages. */
 /* milestones timeline — horizontal on desktop, vertical rail on mobile.
    The dot sits on the connecting line and carries a ring in the section
    background colour, which masks the line behind it without a shadow. */
@@ -106,7 +99,7 @@
 
 <!-- ============ PAGE HERO ============ -->
 <section class="pagehero">
-  <div class="bg"><img src="../photos/shared/hero/hero-about.jpg" alt="" onerror="this.style.display='none'" /></div>
+  <div class="bg"><img src="../photos/group/hero/hero-sky.jpg" alt="" onerror="this.style.display='none'" /></div>
   <div class="ov"></div>
   <div class="wrap">
     <div class="crumb"><a href="../">Home</a><span class="sep">/</span>About Us</div>
@@ -135,18 +128,20 @@
 </section>
 
 <!-- ============ VISION & MISSION ============ -->
-<section class="section paper">
+<section class="section paper compact">
   <div class="wrap">
     <div class="reveal">
-      <span class="kicker">Vision &amp; mission</span>
-      <h2 class="h2">What we set out to do.</h2>
+      <span class="kicker">Our direction</span>
+      <h2 class="h2">Vision &amp; Mission</h2>
     </div>
     <div class="vm">
-      <div class="vmcard dark reveal">
+      <div class="vm-card reveal">
+        <span class="tag">01 / Vision</span>
         <h3>Vision</h3>
         <p>To be a company that provides a “tomorrow” solution to achieve customer needs, valuing customer satisfaction as the key to success.</p>
       </div>
-      <div class="vmcard reveal d1">
+      <div class="vm-card reveal d1">
+        <span class="tag">02 / Mission</span>
         <h3>Mission</h3>
         <p>To supply the latest technology and innovation to our customers — products recognised for improving efficiency, effectiveness and productivity, while respecting the environment they operate in.</p>
       </div>
