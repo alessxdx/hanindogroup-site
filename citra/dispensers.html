@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex" />
+<title>Pumps &amp; Dispensers — Hanindo Citra | Hanindo Group</title>
+<meta name="description" content="Gilbarco Veeder-Root retail fuel dispensers supplied by PT. Hanindo Citra — Latitude, Frontier and Encore, in the nozzle configurations your forecourt needs." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/site.css?v=202607251030" />
+<style>
+/* One wide row per dispenser family: product shot on the left, the copy
+   and nozzle configurations on the right. The shots are manufacturer
+   images on a plain white background, so the panel is white too and the
+   image is contained — cropping one cuts the dispenser in half. */
+.drow{display:grid;grid-template-columns:minmax(0,400px) 1fr;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-top:1.5rem}
+@media(max-width:860px){.drow{grid-template-columns:1fr}}
+.drow .shot{display:flex;align-items:center;justify-content:center;min-height:320px;padding:1.7rem;background:var(--white);border-right:1px solid var(--line)}
+.drow .shot img{max-width:100%;max-height:300px;object-fit:contain}
+@media(max-width:860px){.drow .shot{min-height:240px;border-right:0;border-bottom:1px solid var(--line)}}
+
+.drow .txt{padding:1.9rem 2.1rem}
+.drow .sub{display:block;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--brand);margin-bottom:.35rem}
+.drow h3{font-size:1.45rem;font-weight:800;color:var(--blue-800);margin-bottom:.6rem}
+.drow p{font-size:.92rem;line-height:1.65;color:var(--muted)}
+
+/* Feature points read as a compact wrapped list rather than a stacked
+   bulleted column — there are only three or four per family. */
+.dfeat{display:flex;flex-wrap:wrap;gap:.35rem 1.2rem;margin:1rem 0 1.3rem;list-style:none}
+.dfeat li{position:relative;padding-left:.95rem;font-size:.85rem;color:var(--muted)}
+.dfeat li::before{content:"";position:absolute;left:0;top:.62em;width:5px;height:5px;border-radius:50%;background:var(--brand)}
+
+.dspec .k{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue-800);margin-bottom:.5rem}
+.dspec .tag{font-size:.8rem;padding:.35rem .7rem}
+</style>
+</head>
+<body>
+
+<!-- ============ SITE HEADER (company-local) ============ -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="brands">
+      <a class="brand" href="../" aria-label="Hanindo Group — main page">
+        <img src="../photos/brand/logo-lockup.png" alt="Hanindo Group — Your Solution Provider" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
+        <span class="btxt" style="display:none"><strong>HANINDOGROUP</strong><span>Your Solution Provider</span></span>
+      </a>
+      <a class="cobrand" href="index.html" aria-label="Hanindo Citra — home">
+        <img class="cologo" src="../photos/brand/logo-citra.png" alt="Hanindo Citra — Member of the Hanindo Group of Companies" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
+        <span class="colabel" style="display:none">HANINDO CITRA</span>
+      </a>
+    </div>
+    <div class="top-right">
+      <a class="grouplink" href="../" aria-label="Back to Hanindo Group"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg><span>Hanindo Group</span></a>
+      <form class="searchbox" role="search" onsubmit="return hsearch(this)">
+        <input type="text" name="q" placeholder="Search" aria-label="Search" />
+        <button type="submit" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></button>
+      </form>
+    </div>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</div>
+<header class="navbar">
+  <div class="wrap">
+    <ul class="tabs" id="tabs">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="active"><a href="products-services.html">Products &amp; Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</header>
+<!-- END SITE HEADER -->
+
+<!-- ============ PAGE HERO ============ -->
+<section class="pagehero">
+  <div class="bg"><img src="../photos/citra/hero/hero-citra.webp" alt="" onerror="this.style.display='none'" /></div>
+  <div class="ov"></div><div class="glow"></div>
+  <div class="wrap">
+    <div class="crumb"><a href="../">Hanindo Group</a><span class="sep">/</span><a href="index.html">Hanindo Citra</a><span class="sep">/</span><a href="products-services.html">Products &amp; Services</a><span class="sep">/</span>Pumps &amp; Dispensers</div>
+    <h1>Dispensers for <span class="fx">every forecourt.</span></h1>
+    <p class="intro">Three Gilbarco Veeder-Root families cover the whole range &mdash; from a single-grade island pump to ultra-high-flow truck lanes &mdash; each ordered in the nozzle count the site needs.</p>
+  </div>
+</section>
+
+<!-- ============ DISPENSER RANGE ============ -->
+<section class="section white">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">Gilbarco Veeder-Root</span>
+      <h2 class="h2">The range we supply.</h2>
+      <p class="lede">Hanindo Citra has supplied, installed and serviced Gilbarco dispensers on Indonesian forecourts since 1987. Below is the current line-up and the configurations each family is available in.</p>
+    </div>
+
+    <article class="drow reveal">
+      <div class="shot">
+        <img src="../photos/citra/products/dispensers/gilbarco-latitude.jpg" alt="Gilbarco Latitude dispenser family — LS-100, LS-200 and LS-300 models side by side" loading="lazy" onerror="this.style.display='none'" />
+      </div>
+      <div class="txt">
+        <span class="sub">LS-100 &middot; LS-200 &middot; LS-300</span>
+        <h3>Latitude</h3>
+        <p>Gilbarco&rsquo;s current-generation dispenser, built to be specified once and grown into. A large multimedia screen and bold EasyView display sit above Opti-Flow hydraulics for better suction lift and higher average flow rates, and the lighted canopy signals bay availability from the road. LS-100 suits low-throughput sites, LS-200 medium to high, and LS-300 sites carrying up to four grades.</p>
+        <ul class="dfeat">
+          <li>EasyView display</li>
+          <li>Opti-Flow hydraulics</li>
+          <li>PowerSafe electronics</li>
+          <li>Lighted canopy</li>
+          <li>Vapour recovery</li>
+        </ul>
+        <div class="dspec">
+          <div class="k">Nozzle configurations</div>
+          <div class="taglist"><span class="tag">2 nozzle</span><span class="tag">4 nozzle</span><span class="tag">6 nozzle</span><span class="tag">8 nozzle</span></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="drow reveal">
+      <div class="shot">
+        <img src="../photos/citra/products/dispensers/gilbarco-frontier.jpg" alt="Gilbarco Frontier Series II fuel dispenser" loading="lazy" onerror="this.style.display='none'" />
+      </div>
+      <div class="txt">
+        <span class="sub">Series I &middot; Series II</span>
+        <h3>Frontier</h3>
+        <p>The workhorse of the range, in single and dual configurations. Big, bold displays and a high-accuracy meter, with the Series II high-hose island models built for high-throughput sites that need dependable performance above all else. Series I covers the F160 and F210; Series II the F170, F230 and F230 4x4.</p>
+        <ul class="dfeat">
+          <li>Single and dual configurations</li>
+          <li>High-accuracy meter</li>
+          <li>High-hose island models</li>
+        </ul>
+        <div class="dspec">
+          <div class="k">Nozzle configurations</div>
+          <div class="taglist"><span class="tag">2 nozzle</span><span class="tag">4 nozzle</span><span class="tag">6 nozzle</span></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="drow reveal">
+      <div class="shot">
+        <img src="../photos/citra/products/dispensers/gilbarco-encore.jpg" alt="Gilbarco Encore Ultra-Hi Flow fuel dispenser" loading="lazy" onerror="this.style.display='none'" />
+      </div>
+      <div class="txt">
+        <span class="sub">NP-3 &middot; Ultra-Hi Flow</span>
+        <h3>Encore</h3>
+        <p>Built for truck stops and commercial lanes, where pumping time is the constraint rather than forecourt space. Ultra-high-flow masters and satellites roughly halve the time it takes to fill and pay, reaching a combined flow rate of up to 63&nbsp;gpm when a master and satellite are used together &mdash; so more fuel moves during the busy hours and drivers get back on the road faster.</p>
+        <ul class="dfeat">
+          <li>Master and satellite pairing</li>
+          <li>Up to 63 gpm combined</li>
+          <li>Built for truck stop duty</li>
+        </ul>
+        <div class="dspec">
+          <div class="k">Model</div>
+          <div class="taglist"><span class="tag">NP-3 high flow</span></div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ ALSO SUPPLIED ============ -->
+<!-- Earlier Gilbarco platforms still running on Indonesian forecourts. We
+     supply, service and carry parts for these, so they are listed rather
+     than given a block of their own. -->
+<section class="section paper compact">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">Also supplied</span>
+      <h2 class="h2">Earlier platforms, still supported.</h2>
+      <p class="lede">Plenty of these are still pumping. We supply, service and hold parts for the older Gilbarco platforms alongside the current range.</p>
+      <div class="taglist" style="margin-top:1.2rem">
+        <span class="tag">Encore S</span><span class="tag">Advantage Plus 2H1P</span><span class="tag">Advantage Plus 4H2P2D</span><span class="tag">Endeavor Series</span><span class="tag">Legacy JHB800</span><span class="tag">SK700-II</span>
+      </div>
+      <div class="actions" style="margin-top:1.6rem">
+        <a class="btn btn-ghost" href="products-services.html">Back to Products &amp; Services <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact">
+  <div class="glow"></div>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Talk to Hanindo Citra</span>
+      <h2>Not sure which<br/>configuration you need?</h2>
+      <p class="sub">Tell us the throughput, the grades and the island layout and our team will scope the right dispenser, nozzle count and installation package.</p>
+      <div class="actions">
+        <a class="btn btn-fire" href="mailto:info@hanindogroup.com">Email our team <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></a>
+        <a class="btn btn-ghost" href="contact.html">Contact page <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+    <div class="info">
+      <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div><div><div class="k">Head Office</div><div class="v">Jl. Fatmawati No. 55, Jakarta 12410, Indonesia</div></div></div>
+      <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 5c0 8 7 15 15 15v-3l-4-2-2 2a12 12 0 01-6-6l2-2-2-4H4z"/></svg></div><div><div class="k">Phone</div><div class="v">+62 21 75900909</div></div></div>
+      <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></div><div><div class="k">Email</div><div class="v">info@hanindogroup.com</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="fbrand">
+        <strong>HANINDO GROUP</strong><span>Your Solution Provider</span>
+        <p>Your technology one stop solution &mdash; serving the oil &amp; gas, automation, automotive and fire protection industries in Indonesia since 1987.</p>
+      </div>
+      <div>
+        <h4>Hanindo Citra</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products-services.html">Products &amp; Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Our Companies</h4>
+        <ul>
+          <li><a href="../citra/">Hanindo Citra</a></li>
+          <li><a href="../flowtech-engineering/">Flowtech Engineering</a></li>
+          <li><a href="../automotive/">Hanindo Automotive</a></li>
+          <li><a href="../automation/">Hanindo Automation Solutions</a></li>
+          <li><a href="../printer-pos/">Gralessando Pte Ltd</a></li>
+          <li><a href="../shanghai/">Hanindo Shanghai</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Head Office</h4>
+        <span class="cl"><b>Jl. Fatmawati No. 55</b></span><span class="cl">Jakarta 12410, Indonesia</span><span class="cl">Tel: <b>+62 21 75900909</b></span><span class="cl">info@hanindogroup.com</span>
+      </div>
+    </div>
+    <div class="foot-bottom"><span>&copy; 2026 Hanindo Group. All Rights Reserved.</span><span>PT. Hanindo Citra</span></div>
+  </div>
+</footer>
+
+<script>
+/* header search -> site-scoped web search */
+function hsearch(f){var q=(f.q.value||'').trim();if(!q)return false;window.open('https://www.google.com/search?q=site%3Ahanindogroup.com+'+encodeURIComponent(q),'_blank','noopener');return false;}
+/* mobile menu */
+(function(){var b=document.getElementById('burger'),t=document.getElementById('tabs');if(b&&t){b.addEventListener('click',function(){var o=t.classList.toggle('open');b.setAttribute('aria-expanded',o);});}})();
+/* reveal */
+(function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
+</script>
+</body>
+</html>
