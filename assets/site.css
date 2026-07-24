@@ -697,7 +697,7 @@ img{max-width:100%;display:block}
    with no .banded) stays available for short walls. */
 .wall.banded{flex-direction:column;flex-wrap:nowrap;row-gap:clamp(2rem,3.2vw,3.1rem)}
 .wall.banded .tier{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
-  width:100%;column-gap:clamp(2rem,3.4vw,3.4rem);row-gap:clamp(1.4rem,2.2vw,2rem)}
+  width:100%;column-gap:clamp(1.7rem,2.9vw,2.9rem);row-gap:clamp(1.4rem,2.2vw,2rem)}
 .wall .w{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.55rem;text-align:center}
 .wall .w img{display:block;width:auto;object-fit:contain}
 /* TIER sets the base size; SHAPE corrects it.
@@ -725,9 +725,9 @@ img{max-width:100%;display:block}
    under its mark instead of shoving neighbours apart. Fixed px, not vw:
    a min(px,vw) cap collapses the wall to nothing wherever the browser
    resolves vw as zero. */
-.wall .t1{--logo-h:58px;--logo-max:340px}
-.wall .t2{--logo-h:40px;--logo-max:240px}
-.wall .t3{--logo-h:28px;--logo-max:165px}
+.wall .t1{--logo-h:53px;--logo-max:320px}
+.wall .t2{--logo-h:37px;--logo-max:225px}
+.wall .t3{--logo-h:26px;--logo-max:155px}
 .wall .t1,.wall .t2,.wall .t3{max-width:var(--logo-max)}
 .wall .w img{height:var(--logo-h);max-width:var(--logo-max)}
 /* aspect roughly 2.0-3.6 — a touch narrow, needs a small lift */
