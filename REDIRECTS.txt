@@ -53,7 +53,8 @@ which does not exist. Send them to the section instead:
 UNRESOLVED — decide before go-live:
 /gralessando          Linked from the old site's "Our Websites" menu.
                       LIKELY -> /printer-pos/  — the printing and POS
-                      company is named Custom (S.E.A) Gralessando, so
+                      company is Gralessando Pte Ltd, represented as
+                      Custom (S.E.A), so
                       this old URL probably belongs to it. NOT YET
                       CONFIRMED by Graziella, so do not apply this
                       redirect until she says so. Otherwise let it 404.
