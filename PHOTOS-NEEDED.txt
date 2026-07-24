@@ -160,26 +160,33 @@ were added to the homepage and /partners/ walls, so those lists now hold
 
 The walls are no longer a grid of equal boxes. Each logo carries a tier
 class that sets how large it is drawn — .t1 for the biggest principals,
-.t2 for the body of the list, .t3 for the rest — so the wall shows which
-relationships are the largest. Sizing is height-driven: the tier fixes
-the logo's height and its width follows its own shape, so the marks sit
-at natural, varied widths rather than in equal boxes. To promote or
-demote a brand, change its tier class; nothing else needs touching.
-Entries are listed by tier and then alphabetically within it.
+.t2 for the rest — so the wall shows which relationships are the largest.
+Sizing is height-driven: the tier fixes the logo's height and its width
+follows its own shape, so the marks sit at natural, varied widths rather
+than in equal boxes. The walls are also BANDED: each tier is wrapped in a
+.tier row-group so a whole row is one size and a tier never shares a row
+with another. To promote or demote a brand, move its cell into the other
+tier's .tier group and change its class. Entries are listed by tier and
+then alphabetically within it. (A third size, .t3, still exists in the
+CSS for the customer walls; the principals wall stopped using it — the
+list is short enough that two sizes read more cleanly.)
 
 Current principals tiering (homepage + /partners/):
-  t1  Custom, Gilbarco Veeder-Root, HPA-Faip, ITL Technologies, RAASM,
-      Red Jacket
-  t2  Airtec, DOMS, Durapipe, Gasboy, Honeywell, Invenco, OPW, Orpak,
-      Postec, TCS, Wincor Nixdorf
-  t3  Brain Bee, Cebora
+  t1  Airtec, Custom, Gilbarco Veeder-Root, HPA-Faip, ITL Technologies,
+      RAASM, Red Jacket, TCS
+  t2  Brain Bee, Cebora, DOMS, Durapipe, Gasboy, Honeywell, Invenco, OPW,
+      Orpak, Postec, Wincor Nixdorf
 The Hanindo Citra page shows its own petroleum-relevant subset of these,
 tiered the same way.
 
-invenco.jpg has a faint off-white (#f7f7f7) canvas, which shows as a
-barely-there box on the pure-white homepage band. A version with a
-transparent or true-white background would sit perfectly flush — low
-priority, but worth swapping if a clean file turns up.
+orpak.jpg and invenco.jpg were shipped with wide blank margins baked into
+the canvas (Orpak filled only 43% of its height, Invenco 67%), so at a
+fixed row height their marks rendered far smaller than neighbours like
+Gasboy and Postec. Both files were trimmed to their content bounding box,
+so they now fill the row height like every other logo. Trimming Invenco
+also removed the faint off-white (#f7f7f7) margin that used to show as a
+box on the white band. If either is ever replaced, supply a tightly
+cropped file (no surrounding whitespace) so it renders at full size.
 
 
 --------------------------------------------------
@@ -195,7 +202,7 @@ citra-stp.jpg               Product card — submersible turbine pump
 citra-piping.jpg            Product card — piping / fueling components
 
 CUSTOMER LOGOS
-The "Customer base" wall on /citra/index.html has 19 logo slots.
+The "Customer base" wall on /citra/index.html has 30 logo slots.
 They live in /photos/customers/ — NOT in /photos/ itself. Drop a PNG
 with the EXACT filename below and it appears; until then the cell shows
 the customer name on its own, which looks deliberate rather than
@@ -232,10 +239,34 @@ exxonmobil.png                Exxon Mobil Cepu Ltd            [COMPLETE]
 
 star-energy.png               Star Energy Geothermal Salak    [COMPLETE]
 
-All 19 slots are filled.
+Added from the "Project Installation — PT Hanindo Citra" map slide
+(2026-07-24). Sourced from Wikimedia Commons / company sites and cut
+out to transparent to match the wall:
+
+chevron.svg                   Chevron Pacific Indonesia       [COMPLETE]
+medcoenergi.png               Medco Energi                    [COMPLETE]
+totalenergies.png             TotalEnergies (Total E&P)       [COMPLETE]
+toyota.svg                    Toyota                          [COMPLETE]
+rapp.png                      Riau Andalan P&P (APRIL Group)  [COMPLETE]
+akr.png                       PT AKR Corporindo               [COMPLETE]
+dsn-group.png                 DSN Group (Dharma Satya)        [COMPLETE]
+leighton.svg                  Leighton Contractors Indonesia  [COMPLETE]
+tps.png                       PT Terminal Petikemas Surabaya  [COMPLETE]
+agro-indomas.png              PT Agro Indomas                 [COMPLETE]
+mineral-alam-abadi.png        PT Mineral Alam Abadi           [COMPLETE]
+pertamina-retail.png          PT Pertamina Retail             [COMPLETE]
+
+rapp.png is the APRIL Group parent mark (the group RAPP operates under);
+swap for a dedicated RAPP leaf logo if one is obtained.
+
+All 31 slots are filled. Agro Indomas and Mineral Alam Abadi logos were
+supplied by the business; Pertamina Retail was added later — the clean
+logo came from pertaminaretail.com/logo/logo.png (the gstatic thumbnail
+first tried was cropped to "PERTAMIN", so it was replaced).
 
 Malaysia Truck Terminal was dropped from the wall at the business's
-request, taking it from 20 customers to 19.
+request, taking it from 20 customers to 19; the map slide then took it
+to 30.
 
 The wall lives on the Hanindo Citra page only. It was briefly on the
 group homepage too, but customers belong to the individual companies —
