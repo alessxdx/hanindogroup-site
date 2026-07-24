@@ -774,3 +774,15 @@ img{max-width:100%;display:block}
 .cat .go{margin-top:auto;font-size:.84rem;font-weight:600;color:var(--brand);display:inline-flex;align-items:center;gap:.4rem}
 .cat .go svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2}
 .cat:hover .go{color:var(--blue-800)}
+/* .cat-tiles is the centred variant used by the catalogue pages, where the
+   shot is a cut-out product rather than a photo that fills the frame. It
+   carries no fill and no frame: a white panel behind a cut-out reads as a
+   box drawn around the product, not as a card. The border stays in the box
+   model at zero opacity so nothing shifts when hover brings it back.
+
+   Dropping the panel exposes the product files themselves, several of
+   which carry a baked-in white background. Multiply blends that white into
+   the band behind it, the same treatment the .tile strip already gives
+   these same product shots. */
+.cat-tiles .cat{background:transparent;border-color:transparent}
+.cat-tiles .cat .shot img{mix-blend-mode:multiply}

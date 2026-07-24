@@ -146,7 +146,7 @@ PARTNER LOGOS                                     [COMPLETE]
 All principal logos live in /photos/partners/ — NOT in /photos/
 directly. They appear as a static wall on the homepage and on the
 /partners/ page. Filenames match the brand, for example:
-  gilbarco.webp   opw1.webp   raasm.png   cebora.png   itl.webp
+  gilbarco.webp   opw1.webp   raasm.png   custom.png   itl.webp
 
 Most are .webp, a few are .png. Any <img> must use the exact
 extension. To replace one, keep the same filename AND extension,
@@ -157,6 +157,9 @@ every wall at the business's request. Their logo files (lafon.webp,
 piusi.svg, transtank.webp, tt.webp) have been deleted. Orpak and Invenco
 were added to the homepage and /partners/ walls, so those lists now hold
 19 brands (orpak.jpg and invenco.jpg were already in the folder).
+
+Cebora was dropped from both walls at the business's request, and its
+logo file (cebora.png) has been deleted.
 
 The walls are no longer a grid of equal boxes. Each logo carries a tier
 class that sets how large it is drawn — .t1 for the biggest principals,
@@ -174,7 +177,7 @@ list is short enough that two sizes read more cleanly.)
 Current principals tiering (homepage + /partners/):
   t1  Airtec, Custom, Gilbarco Veeder-Root, HPA-Faip, ITL Technologies,
       RAASM, Red Jacket, TCS
-  t2  Brain Bee, Cebora, DOMS, Durapipe, Gasboy, Honeywell, Invenco, OPW,
+  t2  Brain Bee, DOMS, Durapipe, Gasboy, Honeywell, Invenco, OPW,
       Orpak, Postec, Wincor Nixdorf
 The Hanindo Citra page shows its own petroleum-relevant subset of these,
 tiered the same way.
