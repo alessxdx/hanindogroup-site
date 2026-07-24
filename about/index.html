@@ -11,38 +11,24 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607251030" />
 <style>
-/* page-specific: the group companies, listed as rows rather than cards so
-   the differing amounts of detail per company do not fight each other */
-.orgrow{display:grid;grid-template-columns:auto 1fr auto;gap:1.1rem;align-items:start;padding:1.05rem 0;border-bottom:1px solid var(--line)}
-.orgrow:first-of-type{border-top:1px solid var(--line)}
-@media(max-width:760px){.orgrow{grid-template-columns:1fr;gap:.35rem;padding:.95rem 0}}
-.orgrow .no{font-weight:700;font-size:.72rem;color:var(--brand);letter-spacing:.08em;padding-top:.3rem;min-width:1.9rem}
-.orgrow h3{font-weight:700;font-size:.97rem;color:var(--blue-800);margin-bottom:.2rem}
-.orgrow p{font-size:.86rem;line-height:1.55;color:var(--muted);max-width:74ch}
-.orgrow .go{display:inline-flex;align-items:center;gap:.35rem;font-weight:600;font-size:.78rem;color:var(--brand);white-space:nowrap;padding-top:.28rem}
-.orgrow .go svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2.2;transition:transform .18s}
-.orgrow .go:hover svg{transform:translateX(3px)}
-@media(max-width:760px){.orgrow .go{padding-top:.45rem}}
+/* The group's companies as three routes: two rows expand to the companies
+   they cover, Automotive links straight through. Rows are hairline-ruled
+   rather than carded, so the block stays short. */
+.colist{margin-top:1.5rem;border-top:1px solid var(--line)}
+.corow{border-bottom:1px solid var(--line)}
+.corow>summary,a.corow{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.1rem .2rem;font-weight:700;font-size:1.02rem;color:var(--blue-800);cursor:pointer;list-style:none}
+.corow>summary::-webkit-details-marker{display:none}
+.corow>summary:hover,a.corow:hover{color:var(--brand)}
+.cocaret,.cogo{width:16px;height:16px;flex:none;fill:none;stroke:currentColor;stroke-width:2.2;transition:transform .18s}
+details.corow[open] .cocaret{transform:rotate(180deg)}
+a.corow:hover .cogo{transform:translateX(3px)}
+.colinks{list-style:none;padding:0 0 .85rem;display:grid;gap:.2rem}
+.colinks a{display:flex;align-items:center;justify-content:space-between;gap:.6rem;padding:.6rem .75rem;border-radius:10px;font-size:.9rem;font-weight:600;color:var(--muted);transition:background .16s,color .16s}
+.colinks a:hover{background:var(--paper);color:var(--brand)}
+.colinks svg{width:14px;height:14px;flex:none;fill:none;stroke:currentColor;stroke-width:2.2;transition:transform .16s}
+.colinks a:hover svg{transform:translateX(3px)}
 /* Vision & Mission uses the shared .vm / .vm-card block from site.css,
    the same as the company About pages. */
-/* milestones timeline — horizontal on desktop, vertical rail on mobile.
-   The dot sits on the connecting line and carries a ring in the section
-   background colour, which masks the line behind it without a shadow. */
-.tl{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:2.2rem;margin-top:2.8rem}
-.tl::before{content:"";position:absolute;left:0;right:0;top:8px;height:2px;background:var(--line)}
-.tlitem{position:relative;padding-top:2.4rem}
-.tlitem::before{content:"";position:absolute;left:0;top:0;width:18px;height:18px;border-radius:50%;
-  background:var(--brand);border:4px solid var(--white);box-sizing:border-box}
-.tlitem .yr{font-weight:700;font-size:1.5rem;line-height:1;color:var(--blue-800);margin-bottom:.6rem;letter-spacing:-.01em}
-.tlitem p{font-size:.93rem;color:var(--muted);max-width:34ch}
-@media(max-width:760px){
-  .tl{grid-template-columns:1fr;gap:0;margin-top:2.2rem}
-  .tl::before{left:8px;right:auto;top:6px;bottom:6px;width:2px;height:auto}
-  .tlitem{padding-top:0;padding-left:2.4rem;padding-bottom:1.9rem}
-  .tlitem:last-child{padding-bottom:0}
-  .tlitem::before{top:2px}
-  .tlitem p{max-width:none}
-}
 /* Tighter section rhythm on this group page. */
 .section{padding:clamp(40px,5vw,64px) 0}
 </style>
@@ -143,99 +129,48 @@
       <div class="vm-card reveal d1">
         <span class="tag">02 / Mission</span>
         <h3>Mission</h3>
-        <p>To supply the latest technology and innovation to our customers — products recognised for improving efficiency, effectiveness and productivity, while respecting the environment they operate in.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ MILESTONES ============ -->
-<section class="section white">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="kicker">Milestones</span>
-      <h2 class="h2">How we got here.</h2>
-    </div>
-    <div class="tl reveal d1">
-      <div class="tlitem">
-        <div class="yr">1987</div>
-        <p>The petroleum equipment division of PT. Sugiron Citra begins operating in Jakarta. It becomes the embryo of the Hanindo Group.</p>
-      </div>
-      <div class="tlitem">
-        <div class="yr">2007</div>
-        <p>Hanindo (Shanghai) International Co., Ltd is incorporated, opening export markets in Asia Pacific, the Middle East and Africa. Its Shanghai office follows in 2008.</p>
-      </div>
-      <div class="tlitem">
-        <div class="yr">2024</div>
-        <p>PT. Hanindo Citra is certified to ISO 9001:2015, ISO 14001:2015 and ISO 45001:2018, issued 8 November 2024.</p>
+        <ul class="mlist">
+          <li><span class="n">1</span><p>Supply the latest technology and innovation to our customers.</p></li>
+          <li><span class="n">2</span><p>Deliver products recognised for improving efficiency, effectiveness and productivity.</p></li>
+          <li><span class="n">3</span><p>Respect the environment they operate in.</p></li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ============ THE COMPANIES ============ -->
-<section class="section paper">
+<!-- Three routes rather than a row per company: the two groupings expand
+     to the companies they cover, Automotive links straight through. Built
+     on <details> so it works without JavaScript. -->
+<section class="section white">
   <div class="wrap">
     <div class="reveal">
       <span class="kicker">The group</span>
       <h2 class="h2">Specialists under one roof.</h2>
-      <p class="lede">Each company is a specialist in its own field. Together they cover a project from permits and construction, through equipment and automation, to service for the life of the asset.</p>
     </div>
+    <div class="colist reveal d1">
 
-    <div class="reveal d1" style="margin-top:2rem">
-      <div class="orgrow">
-        <span class="no">01</span>
-        <div>
-          <h3>PT. Hanindo Citra</h3>
-          <p>Sales and after-sales service of petroleum equipment and product supply, continuing the work started by PT. Sugiron Citra. Also provides construction for the retail petroleum industry, plus sign boards and forecourt lighting, and houses the group's Fire Fighting Department.</p>
-        </div>
-        <a class="go" href="../citra/">Oil &amp; Gas <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
+      <details class="corow">
+        <summary><span class="conm">PT. Hanindo Citra</span><svg class="cocaret" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></summary>
+        <ul class="colinks">
+          <li><a href="../citra/">Oil &amp; Gas <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+          <li><a href="../fire-fighting/">Fire Fighting Department <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+          <li><a href="../flowtech-engineering/">PT. Flowtech Engineering <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+        </ul>
+      </details>
 
-      <div class="orgrow">
-        <span class="no">02</span>
-        <div>
-          <h3>PT. Flowtech Engineering</h3>
-          <p>Fuel station construction. Every aspect is handled in-house: permits, materials, labour, mechanical and electrical installation, and training staff on operation and safety. Also serves the oil and gas industry and automotive garage construction.</p>
-        </div>
-        <a class="go" href="../flowtech-engineering/">Flowtech <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
+      <a class="corow" href="../automotive/"><span class="conm">PT. Hanindo Automotive</span><svg class="cogo" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
 
-      <div class="orgrow">
-        <span class="no">03</span>
-        <div>
-          <h3>PT. Hanindo Automotive</h3>
-          <p>Autoshop equipment built on the latest technology, to increase efficiency, productivity and ease of use. Sole distributor for garage equipment covering lifting, diagnostics, emissions testing, tyre service and lubrication.</p>
-        </div>
-        <a class="go" href="../automotive/">Automotive <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
+      <details class="corow">
+        <summary><span class="conm">Printing &amp; POS</span><svg class="cocaret" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></summary>
+        <ul class="colinks">
+          <li><a href="../printer-pos/">Custom (S.E.A) Gralessando <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+          <li><a href="../shanghai/">Hanindo Shanghai <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+          <li><a href="../automation/">PT. Hanindo Automation Solutions <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+        </ul>
+      </details>
 
-      <div class="orgrow">
-        <span class="no">04</span>
-        <div>
-          <h3>PT. Hanindo Automation Solutions</h3>
-          <p>Retail and commercial fuel automation, so stations can be controlled and managed securely and remotely. Covers the AdvanZ&reg; family, fleet and fuel card management, forecourt terminals, fuel management for commercial sites and fleets, and access control.</p>
-        </div>
-        <a class="go" href="../automation/">Automation <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-
-      <div class="orgrow">
-        <span class="no">05</span>
-        <div>
-          <h3>Gralessando Pte Ltd</h3>
-          <p>Printing, scanning and reading systems, with the hardware and software behind them, from the group's principal Custom. The company is Gralessando (S) Pte Ltd, incorporated in Singapore and part of the Hanindo Group representing Custom (S.E.A). It serves the South East Asian market.</p>
-        </div>
-        <a class="go" href="../printer-pos/">Printer &amp; POS <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-
-      <div class="orgrow">
-        <span class="no">06</span>
-        <div>
-          <h3>Hanindo (Shanghai) International</h3>
-          <p>The company is Hanindo (Shanghai) International Co., Ltd, incorporated in 2007 and part of the Hanindo Group representing Hanindo CUSTOM China. It works from Shanghai and a representative office in Shenzhen, handling the same Custom printing, scanning and reading business as Gralessando, for the Chinese market.</p>
-        </div>
-        <a class="go" href="../shanghai/">Hanindo Shanghai <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
     </div>
   </div>
 </section>
