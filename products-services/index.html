@@ -4,25 +4,30 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="robots" content="noindex" />
-<title>Contact Us — Hanindo Group</title>
-<meta name="description" content="Contact Hanindo Group — choose the business your enquiry is about and reach the right team: oil &amp; gas, fire protection, automotive, printing and POS." />
+<title>Products &amp; Services — Hanindo Group</title>
+<meta name="description" content="What the Hanindo Group supplies — petroleum equipment and fire protection, autoshop equipment, and printing, scanning and point-of-sale systems." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607251030" />
 <style>
-/* Router cards: one per vertical, each leading to the contact page of the
-   company (or companies) that handle that business. Cards with two
-   destinations list them as stacked option rows; the rows sit at the
-   bottom of the card so they line up across differing amounts of copy. */
-.vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-top:1.7rem;align-items:start}
-@media(max-width:900px){.vgrid{grid-template-columns:1fr}}
-.vcard{display:flex;flex-direction:column;background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:1.7rem 1.6rem}
-.vcard .ic{width:44px;height:44px;border-radius:12px;background:var(--paper);display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
-.vcard .ic svg{width:22px;height:22px;fill:none;stroke:var(--brand);stroke-width:1.8}
-.vcard h3{font-size:1.08rem;font-weight:700;color:var(--blue-800);margin-bottom:.4rem}
-.vcard p{font-size:.88rem;line-height:1.55;color:var(--muted);margin-bottom:1.2rem}
-.vcard .opts{display:flex;flex-direction:column;gap:.55rem}
+/* Catalogue cards: a strip of product shots over the copy, then the links
+   through to each company's own Products & Services page. Same card body
+   and .vopt links as the About and Contact Us routers so the three group
+   pages read as one system — the shot strip is the only addition.
+   align-items:start lets each card size to its own content. */
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-top:1.7rem;align-items:start}
+@media(max-width:900px){.pgrid{grid-template-columns:1fr}}
+.pcard{display:flex;flex-direction:column;background:var(--white);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+/* Flex rather than a fixed three-column grid so a card carrying two shots
+   fills the strip just as evenly as one carrying three. */
+.pshots{display:flex;gap:.5rem;background:var(--paper);border-bottom:1px solid var(--line);padding:1.15rem 1rem}
+.pshots span{flex:1;min-width:0;display:flex;align-items:center;justify-content:center;height:78px}
+.pshots img{max-width:100%;max-height:78px;width:auto;height:auto;object-fit:contain}
+.pbody{padding:1.4rem 1.5rem 1.5rem}
+.pbody h3{font-size:1.08rem;font-weight:700;color:var(--blue-800);margin-bottom:.4rem}
+.pbody>p{font-size:.88rem;line-height:1.55;color:var(--muted);margin-bottom:1.2rem}
+.opts{display:flex;flex-direction:column;gap:.55rem}
 .vopt{display:flex;align-items:center;justify-content:space-between;gap:.6rem;padding:.7rem .95rem;border:1px solid var(--line);border-radius:10px;font-weight:600;font-size:.85rem;color:var(--blue-800);transition:border-color .16s,background .16s}
 .vopt:hover{border-color:var(--brand);background:var(--paper)}
 .vopt svg{width:15px;height:15px;flex:none;fill:none;stroke:currentColor;stroke-width:2.2;transition:transform .16s}
@@ -67,16 +72,16 @@
           <li><span class="glabel">Custom SEA Hanindo</span>
             <ul class="subdrop">
               <li><a href="../automation/">Hanindo Automation Solutions (Indonesia)</a></li>
-              <li><a href="../printer-pos/">Gralessando Pte Ltd (Singapore)</a></li>
+              <li><a href="../printer-pos/">Custom (S.E.A) Gralessando (Singapore)</a></li>
               <li><a href="../shanghai/">Hanindo Shanghai (China)</a></li>
             </ul>
           </li>
         </ul>
       </li>
-      <li><a href="../products-services/">Products &amp; Services</a></li>
+      <li class="active"><a href="../products-services/">Products &amp; Services</a></li>
       <li><a href="../partners/">Partners</a></li>
       <li><a href="../career/">Career</a></li>
-      <li class="active"><a href="../contact/">Contact Us</a></li>
+      <li><a href="../contact/">Contact Us</a></li>
     </ul>
   </div>
 </header>
@@ -85,80 +90,92 @@
 <!-- ============ PAGE HERO ============ -->
 <section class="pagehero">
   <div class="bg"><img src="../photos/group/hero/hero-sky.jpg" alt="" onerror="this.style.display='none'" /></div>
-  <div class="ov"></div><div class="glow"></div>
+  <div class="ov"></div>
   <div class="wrap">
-    <div class="crumb"><a href="../">Home</a><span class="sep">/</span>Contact Us</div>
-    <h1>Let's get you to<br/><span class="fx">the right team.</span></h1>
-    <p class="intro">Hanindo Group brings together several specialist companies. Choose the business your enquiry is about and we will take you straight to their contact page.</p>
+    <div class="crumb"><a href="../">Home</a><span class="sep">/</span>Products &amp; Services</div>
+    <h1>Products &amp; <span class="fx">Services</span></h1>
+    <p class="intro">Equipment, systems and service from across the group &mdash; petroleum, fire protection, automotive, and printing and point of sale.</p>
   </div>
 </section>
 
-<!-- ============ VERTICAL ROUTER ============ -->
-<section class="section white">
+<!-- ============ WHAT WE SUPPLY ============ -->
+<!-- Grouped the same way as the About and Contact Us routers, so a visitor
+     meets the same three routes on every group page. Each link goes to that
+     company's own Products & Services page. Flowtech Engineering is absent
+     because it has no Products & Services page yet — add it to the Citra
+     card once it does. -->
+<section class="section paper">
   <div class="wrap">
     <div class="reveal">
-      <span class="kicker">Who can we connect you with?</span>
-      <h2 class="h2">Contact by business.</h2>
-      <p class="lede">Each of our companies runs its own enquiries. Pick the one that fits and you will land on the team that can help.</p>
+      <span class="kicker">What we supply</span>
+      <h2 class="h2">Everything the group supplies.</h2>
+      <p class="lede">A sample of the range below. Click through to any of the companies to see its full catalogue.</p>
     </div>
 
-    <div class="vgrid reveal d1">
+    <div class="pgrid reveal d1">
 
-      <!-- Hanindo Citra: oil & gas, station construction and fire protection.
-           Flowtech has no contact page of its own, so it routes to the
-           contact section on its company page. -->
-      <div class="vcard">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3s6 5.5 6 11a6 6 0 01-12 0c0-2 1-3.8 2-5"/></svg></div>
-        <h3>PT. Hanindo Citra</h3>
-        <p>Petroleum equipment, station construction and fire protection.</p>
-        <div class="opts">
-          <a class="vopt" href="../citra/contact.html">Oil &amp; Gas <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a class="vopt" href="../fire-fighting/contact.html">Fire Fighting Department <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a class="vopt" href="../flowtech-engineering/#contact">PT. Flowtech Engineering <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <article class="pcard">
+        <div class="pshots">
+          <span><img src="../photos/citra/products/citra-flowmeter.png" alt="Flow meter" loading="lazy" onerror="this.parentElement.remove()" /></span>
+          <span><img src="../photos/citra/products/citra-atg.webp" alt="Automatic tank gauging" loading="lazy" onerror="this.parentElement.remove()" /></span>
         </div>
-      </div>
+        <div class="pbody">
+          <h3>PT. Hanindo Citra</h3>
+          <p>Dispensing pumps, automatic tank gauging, flow meters, and fire protection systems.</p>
+          <div class="opts">
+            <a class="vopt" href="../citra/products-services.html">Oil &amp; Gas <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="vopt" href="../fire-fighting/products-services.html">Fire Fighting Department <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </article>
 
-      <!-- Hanindo Automotive -->
-      <div class="vcard">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l1.5-4.5A2 2 0 018.4 7h7.2a2 2 0 011.9 1.5L19 13v5h-2v-2H7v2H5z"/><circle cx="8" cy="16" r="1"/><circle cx="16" cy="16" r="1"/></svg></div>
-        <h3>PT. Hanindo Automotive</h3>
-        <p>Workshop and garage equipment for the service bay.</p>
-        <div class="opts">
-          <a class="vopt" href="../automotive/contact.html">PT. Hanindo Automotive <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <article class="pcard">
+        <div class="pshots">
+          <span><img src="../photos/automotive/products/hpa-c880-std.png" alt="Wheel alignment system" loading="lazy" onerror="this.parentElement.remove()" /></span>
+          <span><img src="../photos/automotive/products/atom-dl-40lm.png" alt="Car lift" loading="lazy" onerror="this.parentElement.remove()" /></span>
+          <span><img src="../photos/automotive/products/weldann-ac-900.png" alt="A/C service station" loading="lazy" onerror="this.parentElement.remove()" /></span>
         </div>
-      </div>
+        <div class="pbody">
+          <h3>PT. Hanindo Automotive</h3>
+          <p>Lifts and handling, tyre service, diagnostics, welding and lubrication for the service bay.</p>
+          <div class="opts">
+            <a class="vopt" href="../automotive/products-services.html">PT. Hanindo Automotive <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </article>
 
-      <!-- Printing & POS: the three companies grouped as Custom SEA Hanindo
-           in the menu — Automation Solutions (Indonesia), Gralessando
-           (Singapore) and Shanghai (China). They carry the same product
-           line, split by market, so this card routes to all three. -->
-      <div class="vcard">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M6 9V4h12v5"/><rect x="4" y="9" width="16" height="7" rx="1.5"/><path d="M8 16h8v4H8z"/></svg></div>
-        <h3>Printing &amp; POS</h3>
-        <p>Printing, scanning and point-of-sale systems.</p>
-        <div class="opts">
-          <a class="vopt" href="../printer-pos/contact.html">Custom (S.E.A) Gralessando <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a class="vopt" href="../shanghai/contact.html">Hanindo Shanghai <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a class="vopt" href="../automation/#contact">PT. Hanindo Automation Solutions <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <article class="pcard">
+        <div class="pshots">
+          <span><img src="../photos/printer-pos/products/professional-printing.png" alt="Professional printer" loading="lazy" onerror="this.parentElement.remove()" /></span>
+          <span><img src="../photos/printer-pos/products/dc-pos.png" alt="POS terminal" loading="lazy" onerror="this.parentElement.remove()" /></span>
+          <span><img src="../photos/printer-pos/products/scanning.png" alt="Scanner" loading="lazy" onerror="this.parentElement.remove()" /></span>
         </div>
-      </div>
+        <div class="pbody">
+          <h3>Printing &amp; POS</h3>
+          <p>Printers, point-of-sale terminals, scanners and self-service kiosks, with the software that runs them.</p>
+          <div class="opts">
+            <a class="vopt" href="../printer-pos/products-services.html">Custom (S.E.A) Gralessando <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="vopt" href="../shanghai/products-services.html">Hanindo Shanghai <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="vopt" href="../automation/products-services.html">PT. Hanindo Automation Solutions <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </article>
 
     </div>
   </div>
 </section>
 
-<!-- ============ HEAD OFFICE / GENERAL ============ -->
-<!-- Everything that is not a specific company enquiry, and the companies
-     without their own contact page, reaches the group head office here. -->
+<!-- ============ CONTACT ============ -->
 <section class="section contact">
   <div class="glow"></div>
   <div class="wrap">
     <div>
-      <span class="eyebrow">Not sure who to ask?</span>
-      <h2>Reach the head office.</h2>
-      <p class="sub">For general enquiries &mdash; or anything about Flowtech Engineering or Hanindo Automation Solutions &mdash; contact the group head office in Jakarta and we will point you to the right team.</p>
+      <span class="eyebrow">Not sure what you need?</span>
+      <h2>Tell us about the job.</h2>
+      <p class="sub">Describe the site, the equipment or the volumes you are working with and we will point you to the company that handles it.</p>
       <div class="actions">
         <a class="btn btn-fire" href="mailto:info@hanindogroup.com">Email the group <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></a>
+        <a class="btn btn-ghost" href="../contact/">Contact page <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
     <div class="info">
@@ -184,7 +201,7 @@
           <li><a href="../flowtech-engineering/">Flowtech Engineering</a></li>
           <li><a href="../automotive/">Hanindo Automotive</a></li>
           <li><a href="../automation/">Hanindo Automation Solutions</a></li>
-          <li><a href="../printer-pos/">Gralessando Pte Ltd</a></li>
+          <li><a href="../printer-pos/">Custom (S.E.A) Gralessando</a></li>
           <li><a href="../shanghai/">Hanindo Shanghai</a></li>
         </ul>
       </div>
@@ -192,6 +209,7 @@
         <h4>Group</h4>
         <ul>
           <li><a href="../about/">About Us</a></li>
+          <li><a href="../products-services/">Products &amp; Services</a></li>
           <li><a href="../partners/">Partners &amp; Principals</a></li>
           <li><a href="../career/">Career</a></li>
           <li><a href="../contact/">Contact Us</a></li>
