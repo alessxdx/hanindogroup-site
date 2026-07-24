@@ -10,7 +10,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607242130" />
-<style>@media(min-width:901px){.foot-grid{grid-template-columns:1.6fr 1fr 1fr 1fr 1fr}}</style>
+<style>
+@media(min-width:901px){.foot-grid{grid-template-columns:1.6fr 1fr 1fr 1fr 1fr}}
+/* Growth timeline — shared with the Custom (S.E.A) Gralessando About page.
+   Flat vertical rail, on-brand blue dots. Ring is white here because the
+   timeline sits on a white section. */
+.gtl{position:relative;margin:2rem 0 0;padding-left:1.9rem;list-style:none}
+.gtl::before{content:"";position:absolute;left:5px;top:7px;bottom:7px;width:2px;background:var(--line)}
+.gtl .gitem{position:relative;padding-bottom:1.7rem}
+.gtl .gitem:last-child{padding-bottom:0}
+.gtl .gitem::before{content:"";position:absolute;left:-1.9rem;top:2px;width:13px;height:13px;border-radius:50%;background:var(--brand);box-shadow:0 0 0 4px var(--white);box-sizing:border-box}
+.gtl .yr{font-weight:800;font-size:1rem;color:var(--brand);line-height:1;letter-spacing:.01em}
+.gtl h3{font-weight:700;font-size:.95rem;color:var(--blue-800);margin:.3rem 0 .2rem}
+.gtl p{font-size:.86rem;line-height:1.55;color:var(--muted);max-width:62ch;margin:0}
+</style>
 </head>
 <body>
 
@@ -60,6 +73,31 @@
     <p class="intro">Established in 2007, carrying the Custom range into the Chinese market.</p>
   </div>
 </section>
+
+<!-- ============ GROWTH TIMELINE ============ -->
+<!-- Same Custom & Hanindo growth timeline as the Custom (S.E.A)
+     Gralessando About page; the China milestones (Shanghai 2008, Beijing
+     & Shenzhen 2010) sit in the same regional story. -->
+<section class="section white compact">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">Our journey</span>
+      <h2 class="h2">Custom &amp; Hanindo growth.</h2>
+      <p class="lede" style="max-width:70ch">From a single printer integration in Indonesia to a network of offices and partnerships across South East Asia and China.</p>
+    </div>
+    <ol class="gtl">
+      <li class="gitem reveal"><div class="yr">2005</div><h3>Initial partnership</h3><p>Custom printer integration for local kiosks in Indonesia.</p></li>
+      <li class="gitem reveal"><div class="yr">2008</div><h3>Opening in China</h3><p>Hanindo and Custom Italy open their first office in Shanghai.</p></li>
+      <li class="gitem reveal"><div class="yr">2010</div><h3>China market expansion</h3><p>New offices open in Beijing and Shenzhen.</p></li>
+      <li class="gitem reveal"><div class="yr">2012</div><h3>Into South East Asia</h3><p>New Custom SEA office in Jakarta, Indonesia.</p></li>
+      <li class="gitem reveal"><div class="yr">2014</div><h3>Singapore office</h3><p>A new office opens in Singapore.</p></li>
+      <li class="gitem reveal"><div class="yr">2016</div><h3>Vietnam partnership</h3><p>Partnership established in Vietnam.</p></li>
+      <li class="gitem reveal"><div class="yr">2019</div><h3>Thailand partnership</h3><p>Partnership established in Thailand.</p></li>
+      <li class="gitem reveal"><div class="yr">2023</div><h3>Manila office</h3><p>A new office opens in Manila, Philippines.</p></li>
+    </ol>
+  </div>
+</section>
+
 <!-- ============ WHERE WE ARE ============ -->
 <!-- A photograph over the address for each office rather than the plain
      icon cards this section used to carry, so the two locations read as
