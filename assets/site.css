@@ -690,24 +690,30 @@ img{max-width:100%;display:block}
    wraps under its mark instead of pushing neighbours apart. Fixed px,
    not vw: a min(px,vw) cap collapses the wall to nothing wherever the
    browser resolves vw as zero. */
+/* The steps between tiers are deliberately uneven. Because width follows
+   the logo's own shape, a wide mark one tier down can still cover more
+   area than a compact mark one tier up — so equal height ratios leave
+   t2 and t3 hard to tell apart. Widening the t2->t3 drop more than the
+   t1->t2 drop makes the smallest tier read as clearly minor even when
+   its logo happens to be a wide one. */
 /* biggest principals / anchor customers */
 .wall .t1,.wall .t1 img{max-width:320px}
-.wall .t1 img{height:60px}
+.wall .t1 img{height:62px}
 /* the main body of the wall */
-.wall .t2,.wall .t2 img{max-width:240px}
-.wall .t2 img{height:43px}
-/* smallest — still legible, clearly subordinate */
-.wall .t3,.wall .t3 img{max-width:175px}
-.wall .t3 img{height:32px}
+.wall .t2,.wall .t2 img{max-width:236px}
+.wall .t2 img{height:45px}
+/* smallest — a clear step down, still legible */
+.wall .t3,.wall .t3 img{max-width:160px}
+.wall .t3 img{height:28px}
 /* Phones: every tier comes down a step and the rails close with it, so
    the wall still reads as three weights rather than one long column. */
 @media(max-width:640px){
   .wall .t1,.wall .t1 img{max-width:230px}
-  .wall .t1 img{height:46px}
-  .wall .t2,.wall .t2 img{max-width:170px}
+  .wall .t1 img{height:47px}
+  .wall .t2,.wall .t2 img{max-width:168px}
   .wall .t2 img{height:35px}
-  .wall .t3,.wall .t3 img{max-width:130px}
-  .wall .t3 img{height:27px}
+  .wall .t3,.wall .t3 img{max-width:120px}
+  .wall .t3 img{height:23px}
 }
 /* Names are hidden on most walls and surface only when a logo file
    fails to load, so a slot is never empty. /partners/ names every brand
