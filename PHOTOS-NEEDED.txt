@@ -153,17 +153,33 @@ extension. To replace one, keep the same filename AND extension,
 otherwise the slot falls back to showing the brand name as text.
 
 Lafon, PIUSI, TransTank and Transponder Technologies were dropped from
-every wall at the business's request, taking the homepage and /partners/
-lists from 21 brands to 17. Their files (lafon.webp, piusi.svg,
-transtank.webp, tt.webp) are still in /photos/partners/ but nothing
-points at them — delete them, or leave them in case a brand comes back.
+every wall at the business's request. Their logo files (lafon.webp,
+piusi.svg, transtank.webp, tt.webp) have been deleted. Orpak and Invenco
+were added to the homepage and /partners/ walls, so those lists now hold
+19 brands (orpak.jpg and invenco.jpg were already in the folder).
 
 The walls are no longer a grid of equal boxes. Each logo carries a tier
 class that sets how large it is drawn — .t1 for the biggest principals,
 .t2 for the body of the list, .t3 for the rest — so the wall shows which
-relationships are the largest. To promote or demote a brand, change its
-tier class; nothing else needs touching. Entries are listed by tier and
-then alphabetically within it.
+relationships are the largest. Sizing is height-driven: the tier fixes
+the logo's height and its width follows its own shape, so the marks sit
+at natural, varied widths rather than in equal boxes. To promote or
+demote a brand, change its tier class; nothing else needs touching.
+Entries are listed by tier and then alphabetically within it.
+
+Current principals tiering (homepage + /partners/):
+  t1  Custom, Gilbarco Veeder-Root, HPA-Faip, ITL Technologies, RAASM,
+      Red Jacket
+  t2  Airtec, DOMS, Durapipe, Gasboy, Honeywell, Invenco, OPW, Orpak,
+      Postec, TCS, Wincor Nixdorf
+  t3  Brain Bee, Cebora
+The Hanindo Citra page shows its own petroleum-relevant subset of these,
+tiered the same way.
+
+invenco.jpg has a faint off-white (#f7f7f7) canvas, which shows as a
+barely-there box on the pure-white homepage band. A version with a
+transparent or true-white background would sit perfectly flush — low
+priority, but worth swapping if a clean file turns up.
 
 
 --------------------------------------------------
