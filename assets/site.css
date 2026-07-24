@@ -681,6 +681,17 @@ img{max-width:100%;display:block}
    are inert: no links out, and so no hover state. */
 .wall{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
   column-gap:clamp(2rem,3.4vw,3.4rem);row-gap:clamp(1.6rem,2.6vw,2.6rem);margin-top:2.1rem}
+/* Banded mode: each tier is wrapped in its own .tier row-group and the
+   groups stack, so a whole row is one weight — a tier never shares a row
+   with another. That is what makes the ranking legible: the row a logo
+   sits in tells you its tier, with no guessing at a mixed row. A tier
+   with more logos than fit on a line wraps within its own band, still
+   all one size. The band gap is a little wider than the wrap gap inside
+   a band, so the three weights read as three groups. Free-flow (a .wall
+   with no .banded) stays available for short walls. */
+.wall.banded{flex-direction:column;flex-wrap:nowrap;row-gap:clamp(2rem,3.2vw,3.1rem)}
+.wall.banded .tier{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  width:100%;column-gap:clamp(2rem,3.4vw,3.4rem);row-gap:clamp(1.4rem,2.2vw,2rem)}
 .wall .w{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.55rem;text-align:center}
 .wall .w img{display:block;width:auto;object-fit:contain}
 /* Height is the tier signal; the width cap is a rail, held a step wider
