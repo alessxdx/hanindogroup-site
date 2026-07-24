@@ -694,37 +694,46 @@ img{max-width:100%;display:block}
   width:100%;column-gap:clamp(2rem,3.4vw,3.4rem);row-gap:clamp(1.4rem,2.2vw,2rem)}
 .wall .w{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.55rem;text-align:center}
 .wall .w img{display:block;width:auto;object-fit:contain}
-/* Height is the tier signal; the width cap is a rail, held a step wider
-   than any real logo needs so aspect ratio can show through. The cap
-   also sits on the cell, so on /partners/ — the one wall that always
-   shows names — a long label like Integration Technologies Limited
-   wraps under its mark instead of pushing neighbours apart. Fixed px,
-   not vw: a min(px,vw) cap collapses the wall to nothing wherever the
-   browser resolves vw as zero. */
-/* The steps between tiers are deliberately uneven. Because width follows
-   the logo's own shape, a wide mark one tier down can still cover more
-   area than a compact mark one tier up — so equal height ratios leave
-   t2 and t3 hard to tell apart. Widening the t2->t3 drop more than the
-   t1->t2 drop makes the smallest tier read as clearly minor even when
-   its logo happens to be a wide one. */
-/* biggest principals / anchor customers */
-.wall .t1,.wall .t1 img{max-width:320px}
-.wall .t1 img{height:62px}
-/* the main body of the wall */
-.wall .t2,.wall .t2 img{max-width:236px}
-.wall .t2 img{height:45px}
-/* smallest — a clear step down, still legible */
-.wall .t3,.wall .t3 img{max-width:160px}
-.wall .t3 img{height:28px}
-/* Phones: every tier comes down a step and the rails close with it, so
-   the wall still reads as three weights rather than one long column. */
+/* TIER sets the base size; SHAPE corrects it.
+
+   Sizing on height alone is not enough, because these logos are wildly
+   different proportions — from RAASM at 1:1 to Custom at 5.7:1. Drawn at
+   one height a square mark comes out five times narrower than a wordmark
+   and reads as far smaller, even in the same tier. So each logo also
+   carries a shape class that raises its height to bring its AREA back
+   into line: .mid for the middling proportions, .sq for the square-ish
+   marks, nothing for ordinary wide wordmarks.
+
+   The multipliers approximate equal optical area — height scaled by
+   sqrt(reference aspect / this aspect), then eased back to about 70% of
+   that, because full area parity makes a square mark tower over its
+   neighbours. The result is a square logo noticeably taller but similar
+   in overall presence, which is how it reads as the same rank.
+
+   Tier is then a clean multiplier over the top: every t1 size is 1.45x
+   its t2 counterpart, in every shape class, so the two ranks stay
+   obviously different whatever a logo's proportions.
+
+   --logo-max is only a runaway rail; it also sits on the cell so that on
+   /partners/ — the one wall that always shows names — a long label wraps
+   under its mark instead of shoving neighbours apart. Fixed px, not vw:
+   a min(px,vw) cap collapses the wall to nothing wherever the browser
+   resolves vw as zero. */
+.wall .t1{--logo-h:58px;--logo-max:340px}
+.wall .t2{--logo-h:40px;--logo-max:240px}
+.wall .t3{--logo-h:28px;--logo-max:165px}
+.wall .t1,.wall .t2,.wall .t3{max-width:var(--logo-max)}
+.wall .w img{height:var(--logo-h);max-width:var(--logo-max)}
+/* aspect roughly 2.0-3.6 — a touch narrow, needs a small lift */
+.wall .w.mid img{height:calc(var(--logo-h) * 1.22)}
+/* aspect under 2.0 — square-ish, needs a real lift to hold its rank */
+.wall .w.sq img{height:calc(var(--logo-h) * 1.75)}
+/* Phones: every tier steps down together and the rails close with it, so
+   the ranks stay distinct rather than collapsing into one column. */
 @media(max-width:640px){
-  .wall .t1,.wall .t1 img{max-width:230px}
-  .wall .t1 img{height:47px}
-  .wall .t2,.wall .t2 img{max-width:168px}
-  .wall .t2 img{height:35px}
-  .wall .t3,.wall .t3 img{max-width:120px}
-  .wall .t3 img{height:23px}
+  .wall .t1{--logo-h:44px;--logo-max:230px}
+  .wall .t2{--logo-h:30px;--logo-max:165px}
+  .wall .t3{--logo-h:22px;--logo-max:120px}
 }
 /* Names are hidden on most walls and surface only when a logo file
    fails to load, so a slot is never empty. /partners/ names every brand
