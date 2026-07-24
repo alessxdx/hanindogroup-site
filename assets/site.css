@@ -266,6 +266,11 @@ img{max-width:100%;display:block}
    parent instead of listing it as a peer. Rendered inline, not as a
    flyout — one child item does not justify a second hover target. */
 .subdrop{list-style:none;background:rgba(0,0,0,.22);border-top:1px solid rgba(255,255,255,.06)}
+/* Custom SEA Hanindo groups the three companies that carry the same
+   products and services in their own market. It is a grouping rather
+   than a company with a page of its own, so its row is a heading and
+   not a link — the three companies beneath it are the destinations. */
+.drop .glabel{display:block;padding:.8rem 1.15rem;font-size:.87rem;font-weight:700;color:#fff;white-space:nowrap;border-left:2px solid transparent;cursor:default}
 .subdrop a{padding-left:2.3rem;font-size:.83rem;color:#b9c6d8;position:relative}
 /* short elbow marking the item as a child of the entry above it */
 .subdrop a::before{content:"";position:absolute;left:1.45rem;top:50%;width:9px;height:1px;background:rgba(255,255,255,.32)}
@@ -296,6 +301,7 @@ img{max-width:100%;display:block}
   .tabs>li>a .caret{display:none}
   .drop{position:static;opacity:1;visibility:visible;min-width:0;background:rgba(0,0,0,.2);border-top:0}
   .drop a{padding:.68rem var(--pad) .68rem calc(var(--pad) + 1rem);font-size:.84rem;color:#b9c6d8}
+  .drop .glabel{padding:.68rem var(--pad) .68rem calc(var(--pad) + 1rem);font-size:.84rem;white-space:normal}
   .subdrop a{padding-left:calc(var(--pad) + 2.2rem);font-size:.82rem}
   .subdrop a::before{left:calc(var(--pad) + 1.35rem)}
 }
