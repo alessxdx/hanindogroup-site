@@ -317,7 +317,7 @@ img{max-width:100%;display:block}
    as barely-there texture; this lightens it enough for the picture to
    come through while keeping the white heading and the paler intro
    line legible over it. Used by the Hanindo Shanghai pages. */
-.pagehero.hero-photo .ov{background:linear-gradient(90deg,rgba(4,32,58,.78),rgba(7,46,82,.62) 60%,rgba(11,63,110,.45))}
+.pagehero.hero-photo .ov{background:linear-gradient(90deg,rgba(4,32,58,.88),rgba(7,46,82,.74) 60%,rgba(11,63,110,.58))}
 /* Hero product line-up — Custom units standing on the right of the hero,
    the way a manufacturer shoots a range. Static and always on screen: no
    script, no fade, nothing to fail. A common baseline and two different
