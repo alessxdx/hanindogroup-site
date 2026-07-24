@@ -23,6 +23,12 @@
    page carries the same line-up. */
 /* The customer wall is the shared .wall from site.css — nothing
    page-local is needed for it. */
+/* Sister markets. Gralessando, Hanindo Shanghai and Hanindo Automation
+   Solutions carry the same Custom range for different countries, so each
+   of the three home heroes offers the other two. Keep all three in step. */
+.mktsw{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin-top:1.5rem}
+.mktsw .lab{width:100%;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--sky)}
+.mktsw .btn{padding:.6rem 1.1rem;font-size:.83rem}
 </style>
 </head>
 <body>
@@ -72,6 +78,11 @@
       <div class="crumb"><a href="../">Hanindo Group</a><span class="sep">/</span><a href="index.html">Gralessando Pte Ltd</a></div>
       <h1>Gralessando <span class="fx">Pte Ltd</span></h1>
       <p class="intro">Gralessando Pte Ltd supplies the printing, scanning and point-of-sale hardware and software behind retail and hospitality automation.</p>
+      <div class="mktsw">
+        <span class="lab">Other markets</span>
+        <a class="btn btn-ghost" href="../shanghai/">Hanindo Shanghai (China) <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="../automation/">Hanindo Automation Solutions (Indonesia) <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
     </div>
     <!-- Decorative product group. The families are listed properly
          further down the page, so this is aria-hidden and the images
@@ -92,7 +103,7 @@
       <div class="reveal">
         <span class="kicker">Gralessando Pte Ltd</span>
         <h2 class="h2">Printing, scanning, and point of sale.</h2>
-        <p class="lede">Gralessando Pte Ltd is incorporated in Singapore and is represented as Custom (S.E.A). It covers South East Asia — Singapore, Malaysia, Vietnam, Indonesia, Thailand and the Philippines — with three offices in Singapore, Indonesia, and Philippines.</p>
+        <p class="lede">Gralessando Pte Ltd is incorporated in Singapore and is represented as Custom (S.E.A). It covers South East Asia — Singapore, Malaysia, Vietnam, Thailand and the Philippines. The Indonesian market is served by PT. Hanindo Automation Solutions, the group's Jakarta company.</p>
         <!-- The three areas Custom organises its own catalogue around,
              taken from custom.biz. "Reading solutions" was folded into
              data capture, which is where the scanners and payment
@@ -224,7 +235,7 @@
            three of the six markets. The rest are named on the contact
            page, so say so rather than let a Thai or Philippine visitor
            write to the wrong mailbox. -->
-      <div class="mktnote">This contact handles <b>Singapore, Malaysia and Vietnam</b>. For Indonesia, the Philippines or Thailand, see the <a href="contact.html">contact page</a>.</div>
+      <div class="mktnote">This contact handles <b>Singapore, Malaysia and Vietnam</b>. For the Philippines or Thailand, see the <a href="contact.html">contact page</a>. Indonesia is served by <a href="../automation/">PT. Hanindo Automation Solutions</a>, and China by <a href="../shanghai/">Hanindo Shanghai</a>.</div>
     </div>
   </div>
 </section>

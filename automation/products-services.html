@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="robots" content="noindex" />
 <title>Products &amp; Services — PT. Hanindo Automation Solutions | Hanindo Group</title>
-<meta name="description" content="Printing solutions, scanning and reading, POS hardware and software from PT. Hanindo Automation Solutions, the Custom company for Indonesia." />
+<meta name="description" content="Printing solutions, scanning and reading, POS hardware and software from PT. Hanindo Automation Solutions." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -14,7 +14,7 @@
 /* Catalogue cards in the arrangement the automotive Products & Services
    page uses: category name above the product shot, supporting copy
    beneath, everything centred on a plain white card. Same block as
-   printer-pos/products-services.html and shanghai/products-services.html. */
+   automotive/products-services.html. */
 .cat-tiles{gap:1rem;margin-top:1.3rem}
 .cat-tiles .cat{text-align:center;padding:1.1rem .9rem 1.2rem}
 .cat-tiles .cat:hover{border-color:var(--brand)}
@@ -48,8 +48,8 @@
         <img src="../photos/brand/logo-lockup.png" alt="Hanindo Group — Your Solution Provider" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
         <span class="btxt" style="display:none"><strong>HANINDOGROUP</strong><span>Your Solution Provider</span></span>
       </a>
-      <a class="cobrand" href="index.html" aria-label="Hanindo Automation Solutions — home">
-        <img class="cologo" src="../photos/brand/logo-automation.png" alt="Hanindo Automation Solutions — Member of the Hanindo Group of Companies" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
+      <a class="cobrand" href="index.html" aria-label="PT. Hanindo Automation Solutions — home">
+        <img class="cologo" src="../photos/brand/logo-automation.png" alt="PT. Hanindo Automation Solutions — Member of the Hanindo Group of Companies" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
         <span class="colabel" style="display:none">HANINDO AUTOMATION SOLUTIONS</span>
       </a>
     </div>
@@ -81,28 +81,33 @@
   <div class="bg"><img src="../photos/automation/hero/hero-automation.jpg" alt="" onerror="this.style.display='none'" /></div>
   <div class="ov"></div><div class="glow"></div>
   <div class="wrap">
-    <div class="crumb"><a href="../">Hanindo Group</a><span class="sep">/</span><a href="index.html">Hanindo Automation Solutions</a><span class="sep">/</span>Products &amp; Services</div>
+    <div class="crumb"><a href="../">Hanindo Group</a><span class="sep">/</span><a href="index.html">PT. Hanindo Automation Solutions</a><span class="sep">/</span>Products &amp; Services</div>
     <h1>Products &amp; <span class="fx">Services</span></h1>
     <p class="intro">Printing, scanning and point of sale — supplied, integrated and supported.</p>
   </div>
 </section>
 <!-- ============ WHAT WE OFFER ============ -->
-<!-- PAIRED PAGE: this catalogue is identical to the ones on
-     /printer-pos/products-services.html and
+<!-- PAIRED PAGE: this catalogue is identical to the one on
      /shanghai/products-services.html, apart from the market named in the
-     lede. The three companies sell the same Custom range, split by
-     market, so all three must be changed together — the cards, the
-     industries list and the page-local CSS above.
+     lede. Both companies sell the same Custom range, split by market, so
+     the two must be changed together — the cards, the industries list
+     and the page-local CSS above.
 
-     The product shots live in /photos/printer-pos/products/ and are
-     shared with the other two rather than duplicated: all three pages
-     sit one level deep, so the relative paths are identical on each. -->
+     Same card treatment as the automotive Products & Services page:
+     category name above the product shot, supporting copy beneath,
+     centred, with a link out of each one. Photos are the same four in
+     /photos/printer-pos/products/ that the home-page strip uses, shared
+     with the Shanghai page rather than duplicated.
+
+     No model counts here — unlike the automotive catalogue, the range
+     is not listed on this site, so each card links straight to its
+     section of the Custom catalogue instead. -->
 <section class="section paper compact">
   <div class="wrap">
     <div class="reveal">
       <span class="kicker">What we offer</span>
       <h2 class="h2">Automation hardware, counter to kiosk</h2>
-      <p class="lede" style="max-width:none">Four families of Custom hardware and the software that runs them, supplied, integrated and supported across Indonesia. Each links through to the full Custom catalogue.</p>
+      <p class="lede" style="max-width:none">Four families of Custom hardware and the software that runs them, supplied, integrated and supported across South East Asia. Each links through to the full Custom catalogue.</p>
     </div>
     <div class="catgrid cat-tiles">
 
@@ -145,7 +150,14 @@
     </div>
     <!-- The sectors Custom organises its own solutions around, taken from
          custom.biz. Plain spans: .pill is a link elsewhere on the site,
-         but there is nowhere for these to point. -->
+         but there is nowhere for these to point. Moved here from the home
+         page, where it sat in a half-width column.
+
+         Laid out as an equal-column grid rather than the wrapping flex
+         .pills row, so the block squares off against the cards above.
+         Eleven sectors will not fit one row at a readable size — the
+         longest labels alone run past the container — so it is six
+         across and two deep. -->
     <div class="inds reveal d3">
       <span class="indlabel">Industries served</span>
       <div class="indgrid">
@@ -165,8 +177,8 @@
   </div>
 </section>
 <!-- ============ CROSS-LINK: THE OTHER CUSTOM COMPANIES ============ -->
-<!-- The mirror of the bands on printer-pos/products-services.html and
-     shanghai/products-services.html. The three companies sell the
+<!-- The mirror of the bands on shanghai/products-services.html and
+     automation/products-services.html. The three companies sell the
      identical Custom range, split by market, so each catalogue points at
      the other two. -->
 <section class="section white">
@@ -176,9 +188,9 @@
         <div>
           <span class="eyebrow">The same range, another market</span>
           <h3>Gralessando Pte Ltd</h3>
-          <p>The identical Custom range is supplied across the rest of South East Asia by Gralessando Pte Ltd, the group&rsquo;s Singapore company.</p>
+          <p>The identical Custom range is supplied across South East Asia by Gralessando Pte Ltd, the group&rsquo;s Singapore company trading as Custom (S.E.A).</p>
         </div>
-        <div><a class="btn btn-fire" href="../printer-pos/products-services.html">Gralessando Pte Ltd products <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+        <div><a class="btn btn-fire" href="../printer-pos/products-services.html">Gralessando products <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
       </div>
       <div class="xlink reveal d1">
         <div>
@@ -197,18 +209,19 @@
   <div class="glow"></div>
   <div class="wrap">
     <div>
-      <span class="eyebrow">Talk to Hanindo Automation Solutions</span>
+      <span class="eyebrow">Talk to PT. Hanindo Automation Solutions</span>
       <h2>Rolling out POS,<br/>or replacing a printer fleet?</h2>
       <p class="sub">Tell us the sites and volumes you handle and our team will match the right printing, scanning and POS package.</p>
       <div class="actions">
-        <a class="btn btn-fire" href="mailto:info@hanindogroup.com">Email our team <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></a>
+        <a class="btn btn-fire" href="mailto:csea-in@hanindogroup.com">Email our team <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></a>
         <a class="btn btn-ghost" href="contact.html">Contact page <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
     <div class="info">
-      <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div><div><div class="k">Head Office</div><div class="v">Jl. Fatmawati No. 55, Jakarta 12410, Indonesia</div></div></div>
+      <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div><div><div class="k">Office</div><div class="v">Jl. Fatmawati No. 55, Jakarta 12410, Indonesia</div></div></div>
       <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 5c0 8 7 15 15 15v-3l-4-2-2 2a12 12 0 01-6-6l2-2-2-4H4z"/></svg></div><div><div class="k">Phone</div><div class="v">+62 21 75900909</div></div></div>
-      <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></div><div><div class="k">Email</div><div class="v">info@hanindogroup.com</div></div></div>
+      <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></div><div><div class="k">Email</div><div class="v">csea-in@hanindogroup.com</div></div></div>
+      <div class="mktnote">This contact handles <b>Indonesia</b>. For Singapore, Malaysia, Vietnam, the Philippines or Thailand, see <a href="../printer-pos/contact.html">Gralessando Pte Ltd</a>. For <b>China</b>, see <a href="../shanghai/contact.html">Hanindo Shanghai</a>.</div>
     </div>
   </div>
 </section>
@@ -222,7 +235,7 @@
         <p>Your technology one stop solution &mdash; serving the oil &amp; gas, automation, automotive and fire protection industries in Indonesia since 1987.</p>
       </div>
       <div>
-        <h4>Hanindo Automation Solutions</h4>
+        <h4>PT. Hanindo Automation Solutions</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
@@ -243,8 +256,8 @@
         </ul>
       </div>
       <div>
-        <h4>Head Office</h4>
-        <span class="cl"><b>Jl. Fatmawati No. 55</b></span><span class="cl">Jakarta 12410, Indonesia</span><span class="cl">Tel: <b>+62 21 75900909</b></span><span class="cl">info@hanindogroup.com</span>
+        <h4>Jakarta Office</h4>
+        <span class="cl"><b>Jl. Fatmawati No. 55</b></span><span class="cl">Jakarta 12410, Indonesia</span><span class="cl">Tel: <b>+62 21 75900909</b></span><span class="cl">csea-in@hanindogroup.com</span>
       </div>
     </div>
     <div class="foot-bottom"><span>&copy; 2026 Hanindo Group. All Rights Reserved.</span><span>PT. Hanindo Automation Solutions</span></div>

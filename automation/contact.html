@@ -9,7 +9,19 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/site.css?v=202607250915" />
+<link rel="stylesheet" href="../assets/site.css?v=202607251030" />
+<style>
+/* The per-market cards now sit under the office details in the same
+   section rather than in one of their own, so they are pared back to a
+   contact list: the pin icon sits inline against the country instead of
+   on a line of its own, and the cells lose most of their padding. */
+.mkt{margin-top:.9rem}
+.mkt .svc{padding:.9rem 1rem}
+.mkt .svc h3{display:flex;align-items:center;gap:.4rem;font-size:.88rem;margin-bottom:.3rem;line-height:1.3}
+.mkt .svc .ic{width:15px;height:15px;flex:none;margin:0}
+.mkt .svc p{font-size:.82rem;line-height:1.55}
+.mkt .svc b{color:var(--blue-800)}
+</style>
 </head>
 <body>
 
@@ -21,8 +33,8 @@
         <img src="../photos/brand/logo-lockup.png" alt="Hanindo Group — Your Solution Provider" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
         <span class="btxt" style="display:none"><strong>HANINDOGROUP</strong><span>Your Solution Provider</span></span>
       </a>
-      <a class="cobrand" href="index.html" aria-label="Hanindo Automation Solutions — home">
-        <img class="cologo" src="../photos/brand/logo-automation.png" alt="Hanindo Automation Solutions — Member of the Hanindo Group of Companies" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
+      <a class="cobrand" href="index.html" aria-label="PT. Hanindo Automation Solutions — home">
+        <img class="cologo" src="../photos/brand/logo-automation.png" alt="PT. Hanindo Automation Solutions — Member of the Hanindo Group of Companies" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
         <span class="colabel" style="display:none">HANINDO AUTOMATION SOLUTIONS</span>
       </a>
     </div>
@@ -54,60 +66,54 @@
   <div class="bg"><img src="../photos/automation/hero/hero-automation.jpg" alt="" onerror="this.style.display='none'" /></div>
   <div class="ov"></div><div class="glow"></div>
   <div class="wrap">
-    <div class="crumb"><a href="../">Hanindo Group</a><span class="sep">/</span><a href="index.html">Hanindo Automation Solutions</a><span class="sep">/</span>Contact Us</div>
+    <div class="crumb"><a href="../">Hanindo Group</a><span class="sep">/</span><a href="index.html">PT. Hanindo Automation Solutions</a><span class="sep">/</span>Contact Us</div>
     <h1>Let's talk about <span class="fx">your project.</span></h1>
     <p class="intro">Tell us what you are running or building, and we will put the right person on it.</p>
   </div>
 </section>
 
 <!-- ============ CONTACT DETAIL ============ -->
-<!-- Same layout as the other Indonesian companies' contact pages: office
-     details on the left, the Fatmawati reception on the right. -->
+<!-- The Jakarta office details and the Indonesia contact were two
+     separate sections, which made the page ask twice how to get in
+     touch. They are one section now: office on the left, photo on the
+     right, then the market cards beneath. The mailbox pattern is
+     csea-<country>@ -->
 <section class="section white compact">
   <div class="wrap">
     <div class="split">
       <div class="reveal">
         <span class="kicker">PT. Hanindo Automation Solutions</span>
         <h2 class="h2">How to reach us.</h2>
-        <p class="lede">For site automation, fuel and card management, or printing, scanning and POS supply and service, reach the Jakarta head office.</p>
+        <p class="lede">For printer and POS supply, integration, consumables or service, reach the Jakarta office of PT. Hanindo Automation Solutions.</p>
         <ul class="checks">
-          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Head Office</b> &mdash; Jl. Fatmawati No. 55, Jakarta 12410, Indonesia</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Office</b> &mdash; Jl. Fatmawati No. 55, Jakarta 12410, Indonesia</span></li>
           <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Telephone</b> &mdash; +62 21 75900909</span></li>
-          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Email</b> &mdash; info@hanindogroup.com</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Email</b> &mdash; csea-in@hanindogroup.com</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Person in charge</b> &mdash; Andrea Calamai</span></li>
           <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Office hours</b> &mdash; Monday to Friday, 08.00 &ndash; 17.00 WIB</span></li>
         </ul>
-        <div style="margin-top:2rem">
-          <a class="btn btn-dark" href="mailto:info@hanindogroup.com">Email Hanindo Automation Solutions <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></a>
+        <div style="margin-top:1.4rem">
+          <a class="btn btn-dark" href="mailto:csea-in@hanindogroup.com">Email our team <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></a>
         </div>
       </div>
       <div class="shot reveal d2">
-        <img src="../photos/shared/hero/hero-reception.png" alt="Hanindo Group reception, Jl. Fatmawati No. 55, Jakarta" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+        <!-- The Jakarta head office, the same shot the other Indonesian
+             companies carry — this company sits at Fatmawati with them.
+             No company-specific photography has been supplied yet. -->
+        <img src="../photos/shared/hero/hero-reception.png" alt="Hanindo Group head office, Jl. Fatmawati No. 55, Jakarta" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
         <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- ============ THE SAME RANGE, OTHER MARKETS ============ -->
-<!-- The Custom range this company supplies in Indonesia is the same one
-     Gralessando and Hanindo Shanghai supply in their markets, so an
-     enquiry from outside Indonesia belongs with one of them. -->
-<section class="section paper">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="kicker">Outside Indonesia</span>
-      <h2 class="h2">Same range, another market?</h2>
-      <p class="lede">The Custom printing, scanning and point-of-sale range is supplied across the rest of South East Asia by Gralessando Pte Ltd in Singapore, and across China by Hanindo Shanghai.</p>
-    </div>
-    <div class="pills reveal d1">
-      <a class="pill" href="../printer-pos/contact.html">Gralessando Pte Ltd</a>
-      <a class="pill" href="../shanghai/contact.html">Hanindo Shanghai</a>
-    </div>
+    <!-- One market, so no per-country cards: the Indonesia contact sits in
+         the details list above. The note below points at the sister
+         companies that carry the other markets. -->
+    <div class="mktnote" style="margin-top:1.6rem">For <b>Singapore, Malaysia, Vietnam, the Philippines or Thailand</b>, the same Custom range is supplied by <a href="../printer-pos/contact.html">Gralessando Pte Ltd</a>. For <b>China</b>, see <a href="../shanghai/contact.html">Hanindo Shanghai</a>.</div>
   </div>
 </section>
 
 <!-- ============ OTHER COMPANIES ============ -->
-<section class="section white">
+<section class="section paper">
   <div class="wrap">
     <div class="reveal">
       <span class="kicker">Elsewhere in the group</span>
@@ -118,7 +124,7 @@
       <a class="pill" href="../citra/contact.html">Hanindo Citra</a>
       <a class="pill" href="../automotive/contact.html">Hanindo Automotive</a>
       <a class="pill" href="../fire-fighting/contact.html">Fire Fighting</a>
-      <a class="pill" href="../flowtech-engineering/">Flowtech Engineering</a>
+      <a class="pill" href="../printer-pos/contact.html">Gralessando Pte Ltd</a>
     </div>
   </div>
 </section>
@@ -132,7 +138,7 @@
         <p>Your technology one stop solution &mdash; serving the oil &amp; gas, automation, automotive and fire protection industries in Indonesia since 1987.</p>
       </div>
       <div>
-        <h4>Hanindo Automation Solutions</h4>
+        <h4>PT. Hanindo Automation Solutions</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
@@ -153,8 +159,8 @@
         </ul>
       </div>
       <div>
-        <h4>Head Office</h4>
-        <span class="cl"><b>Jl. Fatmawati No. 55</b></span><span class="cl">Jakarta 12410, Indonesia</span><span class="cl">Tel: <b>+62 21 75900909</b></span><span class="cl">info@hanindogroup.com</span>
+        <h4>Jakarta Office</h4>
+        <span class="cl"><b>Jl. Fatmawati No. 55</b></span><span class="cl">Jakarta 12410, Indonesia</span><span class="cl">Tel: <b>+62 21 75900909</b></span><span class="cl">csea-in@hanindogroup.com</span>
       </div>
     </div>
     <div class="foot-bottom"><span>&copy; 2026 Hanindo Group. All Rights Reserved.</span><span>PT. Hanindo Automation Solutions</span></div>

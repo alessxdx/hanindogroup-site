@@ -21,6 +21,11 @@
 .mkt .svc .ic{width:15px;height:15px;flex:none;margin:0}
 .mkt .svc p{font-size:.82rem;line-height:1.55}
 .mkt .svc b{color:var(--blue-800)}
+/* Three markets, not four, now that Indonesia sits with PT. Hanindo
+   Automation Solutions. The shared grid is a fixed four across, which
+   would paint an empty fourth cell in the grid's own line colour — so
+   match the track count to the cards. */
+@media(min-width:561px){.mkt{grid-template-columns:repeat(3,1fr)}}
 </style>
 </head>
 <body>
@@ -109,10 +114,6 @@
       <div class="svc reveal">
         <h3><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>Singapore, Malaysia &amp; Vietnam</h3>
         <p><b>Harris Muk</b><br/><a href="mailto:csea-sg@hanindogroup.com">csea-sg@hanindogroup.com</a><br/>+65 6908 0281</p>
-      </div>
-      <div class="svc reveal d1">
-        <h3><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>Indonesia</h3>
-        <p><b>Andrea Calamai</b><br/><a href="mailto:csea-in@hanindogroup.com">csea-in@hanindogroup.com</a></p>
       </div>
       <div class="svc reveal d2">
         <h3><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>Philippines</h3>

@@ -10,7 +10,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607251030" />
-<style>@media(min-width:901px){.foot-grid{grid-template-columns:1.6fr 1fr 1fr 1fr 1fr}}</style>
+<style>
+@media(min-width:901px){.foot-grid{grid-template-columns:1.6fr 1fr 1fr 1fr 1fr}}
+/* Sister markets. Gralessando, Hanindo Shanghai and Hanindo Automation
+   Solutions carry the same Custom range for different countries, so each
+   of the three home heroes offers the other two. Keep all three in step. */
+.mktsw{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin-top:1.5rem}
+.mktsw .lab{width:100%;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--sky)}
+.mktsw .btn{padding:.6rem 1.1rem;font-size:.83rem}
+</style>
 </head>
 <body>
 
@@ -59,6 +67,11 @@
       <div class="crumb"><a href="../">Home</a><span class="sep">/</span><a href="../about/">About Us</a><span class="sep">/</span>Hanindo Shanghai</div>
       <h1>Hanindo (Shanghai)<br/><span class="fx">International Co., Ltd</span></h1>
       <p class="intro">Hanindo Shanghai supplies the printing, scanning and point-of-sale hardware and software behind retail and hospitality automation.</p>
+      <div class="mktsw">
+        <span class="lab">Other markets</span>
+        <a class="btn btn-ghost" href="../printer-pos/">Gralessando Pte Ltd (Singapore) <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="../automation/">Hanindo Automation Solutions (Indonesia) <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
     </div>
     <!-- Decorative product group, the same line-up the Gralessando home
          page carries and drawn from the same shared product shots. The
