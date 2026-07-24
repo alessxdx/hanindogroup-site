@@ -13,10 +13,10 @@
 <!-- .adv-* and the compact Vision & Mission tightening moved to site.css —
      the Hanindo Shanghai About page carries both blocks too. -->
 <style>
-/* Growth timeline — a single vertical rail with year-anchored milestones.
-   Deliberately flat and on-brand (blue rail dots, no coloured clip-art
-   icons or gradients) rather than the SmartArt reference. Reads top to
-   bottom in date order and keeps the same single column at every width. */
+/* Growth timeline — one horizontal row of year-anchored milestones, with a
+   connecting segment between each dot. Deliberately flat and on-brand
+   (blue dots, no coloured clip-art or gradients) rather than the SmartArt
+   reference. Scrolls sideways rather than wrapping on narrow screens. */
 .gtl{list-style:none;margin:1.8rem 0 0;padding:0 0 .4rem;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(116px,1fr);gap:1rem;overflow-x:auto}
 .gtl .gitem{position:relative;padding-top:1.5rem;text-align:center}
 .gtl .gitem::after{content:"";position:absolute;top:6px;left:50%;width:calc(100% + 1rem);height:2px;background:var(--line);z-index:0}
@@ -102,26 +102,24 @@
 </section>
 
 <!-- ============ GROWTH TIMELINE ============ -->
-<!-- Custom & Hanindo growth across the region. Distinct titles per year
-     rather than the reference's repeated "SEA Expansion Continue"; the
-     facts are kept, the wording tightened. Update the entries here as new
-     offices and partnerships are added. -->
+<!-- Custom & Hanindo growth across the region. Copy is supplied by the
+     business — keep this list and the one on the Hanindo Shanghai About
+     page in step when new offices or partnerships are added. -->
 <section class="section paper compact">
   <div class="wrap">
     <div class="reveal">
       <span class="kicker">Our journey</span>
-      <h2 class="h2">Custom &amp; Hanindo growth.</h2>
-      <p class="lede" style="max-width:70ch">From a single printer integration in Indonesia to a network of offices and partnerships across South East Asia and China.</p>
+      <h2 class="h2">Custom Hanindo Growth</h2>
     </div>
     <ol class="gtl">
-      <li class="gitem reveal"><div class="yr">2005</div><h3>Initial partnership</h3><p>Custom printer integration for local kiosks in Indonesia.</p></li>
-      <li class="gitem reveal"><div class="yr">2008</div><h3>Opening in China</h3><p>Hanindo and Custom Italy open their first office in Shanghai.</p></li>
-      <li class="gitem reveal"><div class="yr">2010</div><h3>China market expansion</h3><p>New offices open in Beijing and Shenzhen.</p></li>
-      <li class="gitem reveal"><div class="yr">2012</div><h3>Into South East Asia</h3><p>New Custom SEA office in Jakarta, Indonesia.</p></li>
-      <li class="gitem reveal"><div class="yr">2014</div><h3>Singapore office</h3><p>A new office opens in Singapore.</p></li>
+      <li class="gitem reveal"><div class="yr">2005</div><h3>Initial partnership</h3><p>Custom printer integration for Indonesia market.</p></li>
+      <li class="gitem reveal"><div class="yr">2008</div><h3>Shanghai office</h3><p>Custom Hanindo open their first office in China.</p></li>
+      <li class="gitem reveal"><div class="yr">2010</div><h3>China market expansion</h3><p>New office open in Shenzhen.</p></li>
+      <li class="gitem reveal"><div class="yr">2012</div><h3>South East Asia market expansion</h3><p>New office open in Jakarta, Indonesia.</p></li>
+      <li class="gitem reveal"><div class="yr">2014</div><h3>Singapore office</h3><p>New office open in Singapore.</p></li>
       <li class="gitem reveal"><div class="yr">2016</div><h3>Vietnam partnership</h3><p>Partnership established in Vietnam.</p></li>
       <li class="gitem reveal"><div class="yr">2019</div><h3>Thailand partnership</h3><p>Partnership established in Thailand.</p></li>
-      <li class="gitem reveal"><div class="yr">2023</div><h3>Manila office</h3><p>A new office opens in Manila, Philippines.</p></li>
+      <li class="gitem reveal"><div class="yr">2023</div><h3>Manila office</h3><p>New office open in Manila, Philippines.</p></li>
     </ol>
   </div>
 </section>
