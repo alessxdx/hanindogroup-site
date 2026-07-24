@@ -11,22 +11,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607251030" />
 <style>
-/* The group's companies as three routes: two rows expand to the companies
-   they cover, Automotive links straight through. Rows are hairline-ruled
-   rather than carded, so the block stays short. */
-.colist{margin-top:1.5rem;border-top:1px solid var(--line)}
-.corow{border-bottom:1px solid var(--line)}
-.corow>summary,a.corow{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.1rem .2rem;font-weight:700;font-size:1.02rem;color:var(--blue-800);cursor:pointer;list-style:none}
-.corow>summary::-webkit-details-marker{display:none}
-.corow>summary:hover,a.corow:hover{color:var(--brand)}
-.cocaret,.cogo{width:16px;height:16px;flex:none;fill:none;stroke:currentColor;stroke-width:2.2;transition:transform .18s}
-details.corow[open] .cocaret{transform:rotate(180deg)}
-a.corow:hover .cogo{transform:translateX(3px)}
-.colinks{list-style:none;padding:0 0 .85rem;display:grid;gap:.2rem}
-.colinks a{display:flex;align-items:center;justify-content:space-between;gap:.6rem;padding:.6rem .75rem;border-radius:10px;font-size:.9rem;font-weight:600;color:var(--muted);transition:background .16s,color .16s}
-.colinks a:hover{background:var(--paper);color:var(--brand)}
-.colinks svg{width:14px;height:14px;flex:none;fill:none;stroke:currentColor;stroke-width:2.2;transition:transform .16s}
-.colinks a:hover svg{transform:translateX(3px)}
+/* The group's companies as three boxes, always visible — same card block
+   as the Contact Us router so the two pages read alike. align-items:start
+   lets each card size to its own content, so the single-link Automotive
+   card does not carry dead space to match the taller two. */
+.vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-top:1.7rem;align-items:start}
+@media(max-width:900px){.vgrid{grid-template-columns:1fr}}
+.vcard{display:flex;flex-direction:column;background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:1.7rem 1.6rem}
+.vcard .ic{width:44px;height:44px;border-radius:12px;background:var(--paper);display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
+.vcard .ic svg{width:22px;height:22px;fill:none;stroke:var(--brand);stroke-width:1.8}
+.vcard h3{font-size:1.08rem;font-weight:700;color:var(--blue-800);margin-bottom:.4rem}
+.vcard p{font-size:.88rem;line-height:1.55;color:var(--muted);margin-bottom:1.2rem}
+.vcard .opts{display:flex;flex-direction:column;gap:.55rem}
+.vopt{display:flex;align-items:center;justify-content:space-between;gap:.6rem;padding:.7rem .95rem;border:1px solid var(--line);border-radius:10px;font-weight:600;font-size:.85rem;color:var(--blue-800);transition:border-color .16s,background .16s}
+.vopt:hover{border-color:var(--brand);background:var(--paper)}
+.vopt svg{width:15px;height:15px;flex:none;fill:none;stroke:currentColor;stroke-width:2.2;transition:transform .16s}
+.vopt:hover svg{transform:translateX(3px);stroke:var(--brand)}
 /* Vision & Mission uses the shared .vm / .vm-card block from site.css,
    the same as the company About pages. */
 /* Tighter section rhythm on this group page. */
@@ -113,6 +113,53 @@ a.corow:hover .cogo{transform:translateX(3px)}
   </div>
 </section>
 
+<!-- ============ THE COMPANIES ============ -->
+<!-- The same card block as the Contact Us router, so the two pages read
+     alike. Deliberately left open rather than behind a disclosure: this is
+     the map of the group, so nothing here should need a click to be seen. -->
+<section class="section white">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">The group</span>
+      <h2 class="h2">Specialists under one roof.</h2>
+    </div>
+    <div class="vgrid reveal d1">
+
+      <div class="vcard">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3s6 5.5 6 11a6 6 0 01-12 0c0-2 1-3.8 2-5"/></svg></div>
+        <h3>PT. Hanindo Citra</h3>
+        <p>Petroleum equipment, station construction and fire protection.</p>
+        <div class="opts">
+          <a class="vopt" href="../citra/">Oil &amp; Gas <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="vopt" href="../fire-fighting/">Fire Fighting Department <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="vopt" href="../flowtech-engineering/">PT. Flowtech Engineering <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="vcard">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l1.5-4.5A2 2 0 018.4 7h7.2a2 2 0 011.9 1.5L19 13v5h-2v-2H7v2H5z"/><circle cx="8" cy="16" r="1"/><circle cx="16" cy="16" r="1"/></svg></div>
+        <h3>PT. Hanindo Automotive</h3>
+        <p>Workshop and garage equipment for the service bay.</p>
+        <div class="opts">
+          <a class="vopt" href="../automotive/">PT. Hanindo Automotive <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="vcard">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M6 9V4h12v5"/><rect x="4" y="9" width="16" height="7" rx="1.5"/><path d="M8 16h8v4H8z"/></svg></div>
+        <h3>Printing &amp; POS</h3>
+        <p>Printing, scanning and point-of-sale systems.</p>
+        <div class="opts">
+          <a class="vopt" href="../printer-pos/">Custom (S.E.A) Gralessando <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="vopt" href="../shanghai/">Hanindo Shanghai <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="vopt" href="../automation/">PT. Hanindo Automation Solutions <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ============ VISION & MISSION ============ -->
 <section class="section paper compact">
   <div class="wrap">
@@ -135,42 +182,6 @@ a.corow:hover .cogo{transform:translateX(3px)}
           <li><span class="n">3</span><p>Respect the environment they operate in.</p></li>
         </ul>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ THE COMPANIES ============ -->
-<!-- Three routes rather than a row per company: the two groupings expand
-     to the companies they cover, Automotive links straight through. Built
-     on <details> so it works without JavaScript. -->
-<section class="section white">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="kicker">The group</span>
-      <h2 class="h2">Specialists under one roof.</h2>
-    </div>
-    <div class="colist reveal d1">
-
-      <details class="corow">
-        <summary><span class="conm">PT. Hanindo Citra</span><svg class="cocaret" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></summary>
-        <ul class="colinks">
-          <li><a href="../citra/">Oil &amp; Gas <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
-          <li><a href="../fire-fighting/">Fire Fighting Department <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
-          <li><a href="../flowtech-engineering/">PT. Flowtech Engineering <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
-        </ul>
-      </details>
-
-      <a class="corow" href="../automotive/"><span class="conm">PT. Hanindo Automotive</span><svg class="cogo" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-
-      <details class="corow">
-        <summary><span class="conm">Printing &amp; POS</span><svg class="cocaret" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></summary>
-        <ul class="colinks">
-          <li><a href="../printer-pos/">Custom (S.E.A) Gralessando <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
-          <li><a href="../shanghai/">Hanindo Shanghai <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
-          <li><a href="../automation/">PT. Hanindo Automation Solutions <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
-        </ul>
-      </details>
-
     </div>
   </div>
 </section>
