@@ -376,7 +376,7 @@ raasm-lineup.png              [COMPLETE]
 AIRTEC PAGE  (/automotive/airtec/)
 Airtec had no products anywhere on the site before this page — unlike
 HPA FAIP, whose twelve products all sit on the Tyre Service page — so a
-brand page was the only place its range could live. Six models, with
+brand page was the only place its range could live. Eight models, with
 descriptions and specifications taken from airtecasia.com. Reached from
 the Products & Services dropdown, the catalogue and brand grids on that
 page, and the distributor grid on About Us.
@@ -385,16 +385,23 @@ Shots live in /photos/automotive/products/ with the rest of the
 company's product photography, named for the model, all supplied and in
 place:
 
-89mxa.png                     Compact, machine-mounted        [COMPLETE]
-89mda.png                     General purpose, wall mounted   [COMPLETE]
-89xda-xdd.png                 Heavy duty, diecast aluminium   [COMPLETE]
-89xdb-xde.png                 High flow                       [COMPLETE]
-89xhb.png                     High pressure, to 12.5 bar      [COMPLETE]
-89xtc.png                     Temperature compensating        [COMPLETE]
+airtec-89mxa.png              Compact, machine-mounted        [COMPLETE]
+airtec-89mda.png              General purpose, wall mounted   [COMPLETE]
+airtec-89xda-xdd.png          Heavy duty, diecast aluminium   [COMPLETE]
+airtec-89xdb-xde.png          High flow                       [COMPLETE]
+airtec-89xhb.png              High pressure, to 12.5 bar      [COMPLETE]
+airtec-89xtc.png              Temperature compensating        [COMPLETE]
+airtec-89bep-bed.png          Freestanding forecourt, round   [COMPLETE]
+airtec-89fep-fed.png          Freestanding forecourt, square  [COMPLETE]
 
-Nothing outstanding. Airtec publish a further eighteen or so categories
-— aircraft inflators, nitrogen analysers, axle load monitoring, forecourt
-pedestals — none of which are on the page. Add a card and a shot to the
+Every file carries the airtec- prefix so the brand is readable from the
+filename, which matters in a folder shared with the Weldann, ATOM and
+HPA product shots.
+
+Nothing outstanding. Airtec publish a further sixteen or so categories
+— aircraft inflators, nitrogen analysers, axle load monitoring, stainless
+steel cabinets, large-display and mobile units — none of which are on the
+page. Add a card and a shot to the
 same folder if any of those are carried.
 
 RAASM PAGE  (/automotive/raasm/)
