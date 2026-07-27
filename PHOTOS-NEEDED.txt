@@ -398,6 +398,13 @@ Every file carries the airtec- prefix so the brand is readable from the
 filename, which matters in a folder shared with the Weldann, ATOM and
 HPA product shots.
 
+The range carries a setting filter — All / Workshop / Mining /
+Forecourt. Each card is tagged in data-sector on the <article>, and a
+model can hold more than one: the high flow and high pressure units are
+wall-mounted workshop equipment that mines also run, so they appear
+under both. A new model needs that attribute set or it will vanish from
+every filter except All.
+
 Nothing outstanding. Airtec publish a further sixteen or so categories
 — aircraft inflators, nitrogen analysers, axle load monitoring, stainless
 steel cabinets, large-display and mobile units — none of which are on the
