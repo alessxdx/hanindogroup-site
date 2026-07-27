@@ -338,7 +338,16 @@ planet-ban.png                Planet Ban                      [COMPLETE]
 suzuki.png                    Suzuki                          [COMPLETE]
 wuling.png                    Wuling                          [COMPLETE]
 
-STILL NEEDED — nine files, all of them Indonesian companies or brands
+indotruck-utama.png           PT Indotruck Utama              [COMPLETE]
+intraco-penta.png             PT Intraco Penta Tbk (INTA)     [COMPLETE]
+puninar-logistics.png         Puninar Logistics               [COMPLETE]
+                              (these three came from Google thumbnail
+                              previews, trimmed to the artwork here. They
+                              are sharp enough at cell size but are not
+                              originals — replace with press-kit files if
+                              they can be obtained, same filenames.)
+
+STILL NEEDED — six files, all of them Indonesian companies or brands
 with no freely licensed mark in circulation. Ask each company for its
 logo, or lift it from their own site or press kit:
 
@@ -347,10 +356,7 @@ goodyear.png                  Goodyear
 accelera.png                  Accelera
 bquik.png                     B-Quik
 bmt.png                       PT Burangkeng Maju Tehnik
-indotruck-utama.png           PT Indotruck Utama
-intraco-penta.png             PT Intraco Penta Tbk (INTA)
 mobeng.png                    Mobeng
-puninar-logistics.png         Puninar Logistics
 
 SOURCING NOTE for the twenty already in place: each came from Wikimedia
 Commons, resolved through the company's Wikidata entity and its P154
