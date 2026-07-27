@@ -370,26 +370,32 @@ drawn 132px tall.
 airtec-lineup.png             The five Airtec inflators together
 raasm-lineup.png              RAASM drainers, reels and pumps together
 
-Until they arrive both cards show their title and text with no image —
-the .cat card hides a failed shot rather than showing a placeholder, so
-the card stays tidy but looks empty next to the other four. These two
-are worth doing before the page is shown to anyone.
+airtec-lineup.png             [COMPLETE]
+raasm-lineup.png              [COMPLETE]
 
 AIRTEC PAGE  (/automotive/airtec/)
 Airtec had no products anywhere on the site before this page — unlike
 HPA FAIP, whose twelve products all sit on the Tyre Service page — so a
-brand page was the only place its range could live. Content taken from
-airtecasia.com. Reached from the Products & Services dropdown, the
-brand grid on that page, and the distributor grid on About Us.
+brand page was the only place its range could live. Six models, with
+descriptions and specifications taken from airtecasia.com. Reached from
+the Products & Services dropdown, the catalogue and brand grids on that
+page, and the distributor grid on About Us.
 
-Product shots live in /photos/automotive/airtec/, one per card, four
-cards. Missing ones fall back to the "photo needed" placeholder. Cut
-out on white, ~800px wide, shown up to about 260px tall.
+Shots live in /photos/automotive/products/ with the rest of the
+company's product photography, named for the model, all supplied and in
+place:
 
-airtec-89mxa.jpg              89MXA compact, machine-mounted
-airtec-89mda.jpg              89MDA general purpose, wall mounted
-airtec-89xda.jpg              89XDA / XDD heavy duty, diecast aluminium
-airtec-89xdb.jpg              89XDB / XDE high flow
+89mxa.png                     Compact, machine-mounted        [COMPLETE]
+89mda.png                     General purpose, wall mounted   [COMPLETE]
+89xda-xdd.png                 Heavy duty, diecast aluminium   [COMPLETE]
+89xdb-xde.png                 High flow                       [COMPLETE]
+89xhb.png                     High pressure, to 12.5 bar      [COMPLETE]
+89xtc.png                     Temperature compensating        [COMPLETE]
+
+Nothing outstanding. Airtec publish a further eighteen or so categories
+— aircraft inflators, nitrogen analysers, axle load monitoring, forecourt
+pedestals — none of which are on the page. Add a card and a shot to the
+same folder if any of those are carried.
 
 RAASM PAGE  (/automotive/raasm/)
 A page for the brand rather than for a product category, because RAASM

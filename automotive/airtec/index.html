@@ -29,9 +29,33 @@
 .seccell:hover{background:var(--paper)}
 .secname{font-size:.98rem;font-weight:700;color:var(--blue-800);line-height:1.35}
 .secwhat{font-size:.88rem;color:var(--muted);line-height:1.45;margin-top:.3rem}
-/* Model number sits above the card title, the way the catalogue pages
-   badge a brand above a product name. */
-.mdlno{display:inline-block;font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700;color:#fff;background:var(--blue-800);padding:.24rem .55rem;border-radius:2px;margin-bottom:.5rem}
+/* Product cards: photo left, specification right, stacking on narrow
+   screens. Same component the lifts, service, tyre-service and welding
+   pages use — those rules are page-local to each of them rather than in
+   site.css, so they are restated here. */
+.prod{border:1px solid var(--line);border-radius:var(--r);background:#fff;margin-bottom:1.1rem;overflow:hidden}
+.prod .inner{display:grid;grid-template-columns:280px 1fr;gap:0}
+@media(max-width:820px){.prod .inner{grid-template-columns:1fr}}
+.prod .shot{background:#fff;border-right:1px solid var(--line);display:flex;align-items:center;justify-content:center;padding:1.4rem;min-height:230px}
+@media(max-width:820px){.prod .shot{border-right:0;border-bottom:1px solid var(--line);min-height:0}}
+.prod .shot img{max-width:100%;max-height:210px;width:auto;object-fit:contain}
+.prod .body{padding:1.3rem 1.4rem 1.5rem}
+.prod .brandtag{display:inline-block;font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700;color:#fff;background:var(--blue-800);padding:.24rem .55rem;border-radius:2px;margin-bottom:.55rem}
+.prod h3{font-size:1.12rem;font-weight:700;color:var(--blue-900);line-height:1.25}
+.prod h3 .mdl{color:var(--muted);font-weight:600}
+/* One line of plain English above the numbers: the spec table says what a
+   model is, not what it is for. */
+.prod .pdesc{font-size:.89rem;color:var(--ink);line-height:1.6;margin:.7rem 0 0}
+/* Two columns on wide screens so a long parameter list does not push the
+   card metres tall. */
+table.spectable{width:100%;border-collapse:collapse;margin-top:.9rem;font-size:.85rem;
+  column-count:2;column-gap:2rem;display:block}
+@media(max-width:1100px){table.spectable{column-count:1}}
+table.spectable tr{display:flex;justify-content:space-between;gap:1rem;
+  border-bottom:1px solid var(--line);padding:.34rem 0;break-inside:avoid}
+table.spectable td{padding:0}
+table.spectable td:first-child{color:var(--muted)}
+table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
 </style>
 </head>
 <body>
@@ -112,9 +136,9 @@
       <span class="kicker">Sole distributor for Indonesia</span>
       <h2 class="h2">Set the pressure, walk away.</h2>
       <p class="lede" style="max-width:none">Airtec Corporation designs and builds digital inflation equipment at its head office in Singapore, to ISO 9001:2015 certified by SGS. Hanindo Automotive is its sole distributor in Indonesia.</p>
-      <p class="lede" style="max-width:none">An automatic inflator takes a target pressure and holds a tyre to it &mdash; no gauge, no guesswork, no operator standing over it. Every model reads to &plusmn;0.5% of full scale and covers 5 to 145 psi, so one specification suits a passenger car, a truck and a piece of plant.</p>
+      <p class="lede" style="max-width:none">An automatic inflator takes a target pressure and holds a tyre to it &mdash; no gauge, no guesswork, no operator standing over it. Every model reads to &plusmn;0.5% of full scale. Most cover 5 to 145 psi, which takes in everything from a passenger car to a truck; the high pressure unit carries on to 182 psi, and the temperature compensating one corrects for the heat in an OTR tyre.</p>
       <ul class="checks">
-        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Accurate to &plusmn;0.5% of full scale across the range, 5&ndash;145 psi / 0.3&ndash;10.0 bar</span></li>
+        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Accurate to &plusmn;0.5% of full scale on every model, 5&ndash;145 psi standard and 182 psi on the high pressure unit</span></li>
         <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>IP66 weather-sealed enclosures on the wall-mounted models &mdash; indoor or outdoor</span></li>
         <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Manufactured to ISO 9001:2015, accredited by SGS International Certification Services</span></li>
       </ul>
@@ -123,76 +147,149 @@
 </section>
 
 <!-- ============ THE RANGE ============ -->
-<!-- Four model families, as Airtec group them. Photographs go in
-     /photos/automotive/airtec/ and are tracked in PHOTOS-NEEDED.txt; until
-     they land each card shows the "photo needed" placeholder, so the page
-     is safe to ship without them. The Airtec mark itself stays in
-     /photos/partners/ with the other principal logos. -->
+<!-- Six models, as Airtec group them, with the figures they publish.
+     Photographs live in /photos/automotive/products/ with the rest of the
+     company's product shots, named for the model. The Airtec mark itself
+     stays in /photos/partners/ with the other principal logos. -->
 <section class="section paper">
   <div class="wrap">
     <div class="reveal">
       <span class="kicker">The range</span>
-      <h2 class="h2">Four inflators, one pressure range.</h2>
-      <p class="lede">They differ by where they mount and how much air they move, not by what they can inflate.</p>
+      <h2 class="h2">Six inflators.</h2>
+      <p class="lede">Every one reads to the same accuracy. They differ by where they mount, how much air they move and how high they go.</p>
     </div>
-    <div class="pgrid">
 
-      <div class="pcard reveal">
-        <div class="pbox">
-          <img src="../../photos/automotive/airtec/airtec-89mxa.jpg" alt="Airtec 89MXA compact tyre inflator" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
-          <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
-        </div>
-        <div class="pbody">
-          <span class="mdlno">89MXA</span>
-          <h4>Compact</h4>
-          <p>Light enough to mount on the tyre changer itself, so the inflator sits where the wheel already is. Passenger cars and vans.</p>
-          <div class="taglist"><span class="tag">Machine-mounted</span><span class="tag">IP40</span><span class="tag">&plusmn;0.5% FS</span></div>
+    <article class="prod reveal">
+      <div class="inner">
+        <div class="shot"><img src="../../photos/automotive/products/89mxa.png" alt="Airtec 89MXA compact tyre inflator" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div></div>
+        <div class="body">
+          <span class="brandtag">AIRTEC</span>
+          <h3>Compact Inflator <span class="mdl">&mdash; 89MXA</span></h3>
+          <p class="pdesc">Small enough to mount on the tyre changer itself, so the inflator sits where the wheel already is. Passenger cars, vans and light commercials.</p>
+          <table class="spectable">
+            <tr><td>Pressure range</td><td>5&ndash;145 psi / 35&ndash;1000 kPa / 0.3&ndash;10.0 bar</td></tr>
+            <tr><td>Accuracy</td><td>&plusmn;0.5% FS</td></tr>
+            <tr><td>Enclosure</td><td>High impact polycarbonate (IP40)</td></tr>
+            <tr><td>Dimensions</td><td>155 W &times; 155 H &times; 90 D mm</td></tr>
+            <tr><td>Hose kit</td><td>2 m supplied</td></tr>
+            <tr><td>Power supply</td><td>220&ndash;240 VAC (12 VDC or 100&ndash;120 VAC optional)</td></tr>
+            <tr><td>Units</td><td>psi / kPa / bar / kg/cm&sup2;</td></tr>
+          </table>
         </div>
       </div>
+    </article>
 
-      <div class="pcard reveal d1">
-        <div class="pbox">
-          <img src="../../photos/automotive/airtec/airtec-89mda.jpg" alt="Airtec 89MDA general purpose tyre inflator" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
-          <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
-        </div>
-        <div class="pbody">
-          <span class="mdlno">89MDA</span>
-          <h4>General Purpose</h4>
-          <p>The workshop default. Wall or surface mounted, sealed to IP66 for indoor or outdoor bays, and rated for anything pneumatic from a trolley wheel to a truck tyre.</p>
-          <div class="taglist"><span class="tag">Wall or surface</span><span class="tag">IP66</span><span class="tag">Trolley to truck</span></div>
+    <article class="prod reveal">
+      <div class="inner">
+        <div class="shot"><img src="../../photos/automotive/products/89mda.png" alt="Airtec 89MDA general purpose tyre inflator" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div></div>
+        <div class="body">
+          <span class="brandtag">AIRTEC</span>
+          <h3>General Purpose Inflator <span class="mdl">&mdash; 89MDA</span></h3>
+          <p class="pdesc">The workshop default. Wall or surface mounted and sealed against weather, so it works in an open bay, and rated for anything pneumatic from a trolley wheel to a truck tyre.</p>
+          <table class="spectable">
+            <tr><td>Pressure range</td><td>5&ndash;145 psi / 35&ndash;1000 kPa / 0.3&ndash;10.0 bar</td></tr>
+            <tr><td>Accuracy</td><td>&plusmn;0.5% FS</td></tr>
+            <tr><td>Enclosure</td><td>High impact polycarbonate (IP66)</td></tr>
+            <tr><td>Dimensions</td><td>220 W &times; 220 H &times; 100 D mm</td></tr>
+            <tr><td>Hose kit</td><td>10 m supplied</td></tr>
+            <tr><td>Power supply</td><td>220&ndash;240 VAC (12 VDC or 100&ndash;120 VAC optional)</td></tr>
+            <tr><td>Units</td><td>psi / kPa / bar / kg/cm&sup2;</td></tr>
+          </table>
         </div>
       </div>
+    </article>
 
-      <div class="pcard reveal d2">
-        <div class="pbox">
-          <img src="../../photos/automotive/airtec/airtec-89xda.jpg" alt="Airtec 89XDA and XDD heavy duty tyre inflator" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
-          <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
-        </div>
-        <div class="pbody">
-          <span class="mdlno">89XDA / XDD</span>
-          <h4>Heavy Duty</h4>
-          <p>Diecast aluminium housing for bays that take knocks. The XDD variant shows set and actual pressure on separate displays, so an operator can watch a tyre come up.</p>
-          <div class="taglist"><span class="tag">Diecast aluminium</span><span class="tag">IP66</span><span class="tag">Dual display (XDD)</span></div>
+    <article class="prod reveal">
+      <div class="inner">
+        <div class="shot"><img src="../../photos/automotive/products/89xda-xdd.png" alt="Airtec 89XDA and 89XDD heavy duty tyre inflators" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div></div>
+        <div class="body">
+          <span class="brandtag">AIRTEC</span>
+          <h3>Heavy Duty Inflator <span class="mdl">&mdash; 89XDA / XDD</span></h3>
+          <p class="pdesc">Diecast aluminium for bays that take knocks. The XDD carries two displays, set pressure and actual, so an operator can watch a tyre come up rather than wait for the beep.</p>
+          <table class="spectable">
+            <tr><td>Pressure range</td><td>5&ndash;145 psi / 35&ndash;1000 kPa / 0.3&ndash;10.0 bar</td></tr>
+            <tr><td>Accuracy</td><td>&plusmn;0.5% FS</td></tr>
+            <tr><td>Enclosure</td><td>Diecast aluminium, wall or surface mount (IP66)</td></tr>
+            <tr><td>Dimensions</td><td>269 W &times; 285 H &times; 106 D mm</td></tr>
+            <tr><td>Hose kit</td><td>10 m supplied</td></tr>
+            <tr><td>Switches</td><td>Stainless steel (piezo optional)</td></tr>
+            <tr><td>XDD variant</td><td>Dual display &mdash; set and actual pressure</td></tr>
+            <tr><td>Power supply</td><td>220&ndash;240 VAC (12 VDC or 100&ndash;120 VAC optional)</td></tr>
+            <tr><td>Units</td><td>psi / kPa / bar / kg/cm&sup2;</td></tr>
+          </table>
         </div>
       </div>
+    </article>
 
-      <div class="pcard reveal">
-        <div class="pbox">
-          <img src="../../photos/automotive/airtec/airtec-89xdb.jpg" alt="Airtec 89XDB and XDE high flow tyre inflator" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
-          <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
-        </div>
-        <div class="pbody">
-          <span class="mdlno">89XDB / XDE</span>
-          <h4>High Flow</h4>
-          <p>Over 4,000 litres a minute, and able to run more than one tyre at once. For fleet and plant work, where the job is a set of six rather than a single wheel.</p>
-          <div class="taglist"><span class="tag">4,000+ l/min</span><span class="tag">Multi-tyre</span><span class="tag">IP66</span></div>
+    <article class="prod reveal">
+      <div class="inner">
+        <div class="shot"><img src="../../photos/automotive/products/89xdb-xde.png" alt="Airtec 89XDB and 89XDE high flow tyre inflators" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div></div>
+        <div class="body">
+          <span class="brandtag">AIRTEC</span>
+          <h3>High Flow Inflator <span class="mdl">&mdash; 89XDB / XDE</span></h3>
+          <p class="pdesc">Built for volume. A half-inch valve moves over 4,000 litres a minute, and a four-way manifold lets one unit fill several tyres at once &mdash; fleet and plant work, where the job is a set of six rather than a single wheel.</p>
+          <table class="spectable">
+            <tr><td>Pressure range</td><td>5&ndash;145 psi / 35&ndash;1000 kPa / 0.3&ndash;10.0 bar</td></tr>
+            <tr><td>Accuracy</td><td>&plusmn;0.5% FS</td></tr>
+            <tr><td>Flow rate</td><td>Over 4,000 l/min (141 cfm) at 10 bar</td></tr>
+            <tr><td>Valve</td><td>High flow &frac12;&Prime;</td></tr>
+            <tr><td>Enclosure</td><td>Diecast aluminium wall mount (IP66)</td></tr>
+            <tr><td>Dimensions</td><td>269 W &times; 285 H &times; 106 D mm</td></tr>
+            <tr><td>Multi-tyre</td><td>4-way manifold kit available</td></tr>
+            <tr><td>XDE variant</td><td>Dual display</td></tr>
+            <tr><td>Power supply</td><td>220&ndash;240 VAC (12 VDC or 100&ndash;120 VAC optional)</td></tr>
+            <tr><td>Units</td><td>psi / kPa / bar / kg/cm&sup2;</td></tr>
+          </table>
         </div>
       </div>
+    </article>
 
-    </div>
+    <article class="prod reveal">
+      <div class="inner">
+        <div class="shot"><img src="../../photos/automotive/products/89xhb.png" alt="Airtec 89XHB high pressure tyre inflator" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div></div>
+        <div class="body">
+          <span class="brandtag">AIRTEC</span>
+          <h3>High Pressure Inflator <span class="mdl">&mdash; 89XHB</span></h3>
+          <p class="pdesc">Takes the pressure ceiling to 12.5 bar for truck and heavy vehicle tyres, and moves the same volume as the high flow unit. Works with standard or large-bore valves and core extraction tools.</p>
+          <table class="spectable">
+            <tr><td>Pressure range</td><td>5&ndash;182 psi / 35&ndash;1250 kPa / 0.3&ndash;12.5 bar</td></tr>
+            <tr><td>Accuracy</td><td>&plusmn;0.5% FS</td></tr>
+            <tr><td>Flow rate</td><td>Over 4,000 l/min (141 cfm)</td></tr>
+            <tr><td>Valve</td><td>High flow &frac12;&Prime;, standard or large bore</td></tr>
+            <tr><td>Enclosure</td><td>Diecast aluminium wall mount (IP66)</td></tr>
+            <tr><td>Dimensions</td><td>269 W &times; 285 H &times; 106 D mm</td></tr>
+            <tr><td>Multi-tyre</td><td>4-way manifold kit available</td></tr>
+            <tr><td>Power supply</td><td>220&ndash;240 VAC (12 VDC or 100&ndash;120 VAC optional)</td></tr>
+            <tr><td>Units</td><td>psi / kPa / bar / kg/cm&sup2;</td></tr>
+          </table>
+        </div>
+      </div>
+    </article>
+
+    <article class="prod reveal">
+      <div class="inner">
+        <div class="shot"><img src="../../photos/automotive/products/89xtc.png" alt="Airtec 89XTC temperature compensating tyre inflator" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" /><div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div></div>
+        <div class="body">
+          <span class="brandtag">AIRTEC</span>
+          <h3>Temperature Compensating Inflator <span class="mdl">&mdash; 89XTC</span></h3>
+          <p class="pdesc">For OTR and mining tyres. It reads the air temperature inside the tyre as well as the pressure, then corrects the fill against a defined ambient using a programmed temperature/pressure table &mdash; so a tyre set hot in the pit is still right once it cools.</p>
+          <table class="spectable">
+            <tr><td>Pressure range</td><td>5&ndash;145 psi / 35&ndash;1000 kPa / 0.3&ndash;10.0 bar</td></tr>
+            <tr><td>Accuracy</td><td>&plusmn;0.5% FS</td></tr>
+            <tr><td>Compensation</td><td>Wet and dry tyre, against defined ambient</td></tr>
+            <tr><td>Enclosure</td><td>Diecast aluminium (IP66)</td></tr>
+            <tr><td>Dimensions</td><td>269 W &times; 285 H &times; 106 D mm</td></tr>
+            <tr><td>Hose kit</td><td>20 m supplied</td></tr>
+            <tr><td>Switches</td><td>Vandal resistant piezo</td></tr>
+            <tr><td>Power supply</td><td>220&ndash;240 VAC (12 VDC or 100&ndash;120 VAC optional)</td></tr>
+            <tr><td>Units</td><td>psi / kPa / bar / kg/cm&sup2;</td></tr>
+          </table>
+        </div>
+      </div>
+    </article>
+
   </div>
 </section>
-
 <!-- ============ SECTORS ============ -->
 <section class="section white">
   <div class="wrap">
