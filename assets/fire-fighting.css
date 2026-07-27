@@ -71,23 +71,35 @@ img{max-width:100%;display:block}
 .searchstack{display:flex;flex-direction:column;align-items:flex-end;gap:.25rem}
 .searchstack .langtoggle{height:22px;border-radius:6px}
 .searchstack .langtoggle button{font-size:.66rem;padding:0 .5rem}
-@media(max-width:860px){.topbar .top-right{display:flex;gap:.7rem}.topbar .top-right .searchbox{display:none}}
-/* Phone: the search field is hidden above, which leaves .searchstack a
-   one-item column still shrinking the toggle to the 22px it needs when
-   tucked underneath — 31x20 buttons, below any usable tap target, and
-   floating at a height that lines up with neither the group link nor
-   the burger. On phones it is a row at full size, with 44px targets and
-   centred against the burger. */
+/* The language toggle moves into the menu on phones, so it is a nav
+   item there and hidden in the horizontal tab bar on desktop. Both the
+   hide and the show have to out-specify .tabs>li in site.css, which
+   sets display on every tab item at each width. */
+.tabs>li.tablang{display:none}
 @media(max-width:860px){
-  .topbar .top-right{align-items:center}
-  .searchstack{flex-direction:row;align-items:center;gap:0}
-  .searchstack .langtoggle{height:40px;border-radius:8px}
-  .searchstack .langtoggle button{font-size:.8rem;padding:0;min-width:44px}
-  /* The group link's widened tap area is a positioned pseudo-element, so
-     it paints over this toggle and took the EN button's first pixel.
-     Positioning the toggle too puts it back on top, being the later
-     sibling. */
-  .searchstack .langtoggle{position:relative}
+  /* The topbar fits the two logos and the burger, and nothing else. With
+     the logos actually loaded, .brands is squeezed to 149px at 390px
+     wide while the department label — white-space:nowrap — spills out of
+     it to 261px. Anything placed in .top-right starts at 189px and lands
+     on top of that label, which is what put the toggle over the words
+     FIRE FIGHTING DEPARTMENT.
+
+     Every other company already hides .top-right at this width. Citra
+     was overriding that to keep the toggle reachable; now the toggle is
+     in the menu, the override goes and this topbar matches the rest. */
+  /* .tabs>li{display:block} in site.css outranks a bare .tablang, so the
+     tab-item selector has to be matched here. */
+  .tabs>li.tablang{display:flex;align-items:center;justify-content:space-between;gap:1rem;
+    padding:.85rem var(--pad);border-top:1px solid rgba(255,255,255,.16)}
+  /* The department label is nowrap and spills out of the squeezed
+     .brands box — at 390px it reaches 352px, under the burger at 322px.
+     The two logos already identify the company on a phone. */
+  .cobrand .deptlabel{display:none}
+  .tablang-lab{font-size:.95rem;font-weight:600;color:#eef1f7}
+  .tablang .langtoggle{height:40px;border-radius:8px;border-color:rgba(255,255,255,.35)}
+  .tablang .langtoggle button{font-size:.82rem;padding:0;min-width:60px;background:transparent;color:#cfd8e6}
+  .tablang .langtoggle button+button{border-left-color:rgba(255,255,255,.35)}
+  .tablang .langtoggle button.active{background:var(--white);color:var(--navy-800)}
 }
 .navbar{position:sticky;top:0;z-index:100;background:var(--navy-800);box-shadow:0 6px 20px -12px rgba(0,0,0,.5)}
 .navbar .wrap{display:flex;align-items:stretch;justify-content:space-between}
