@@ -837,6 +837,39 @@ img{max-width:100%;display:block}
   .wall .t2{--logo-h:30px;--logo-max:165px}
   .wall .t3{--logo-h:22px;--logo-max:120px}
 }
+/* RANKED: rank legibility over exact area parity.
+
+   The shape lift and the tier gap fight each other. .sq raises a square
+   mark 1.75x to even out optical area, but t1 is only 1.43x t2 (53/37) —
+   a bigger shape lift than tier gap, so on a wall carrying both tiers a t2
+   square draws TALLER than a t1 wordmark and the two ranks stop reading as
+   ranks. Whichever wall the eye is on, it sees one size.
+
+   .ranked resolves it the other way: the tier gap widens to 1.57x and the
+   square lift drops to 1.32x, under the gap. Every t1 mark then draws
+   taller than every t2 mark. The cost is real — a square logo sits further
+   below its wordmark neighbours in area than it does on an unranked wall —
+   so this is opt-in, and the principals walls keep the default.
+
+   The rails are set by the widest mark each tier actually carries: Freeport
+   at 9.3:1 in a Citra t1, Michelin at 9.8:1 in an Automotive t2. Too tight
+   a rail is worse than useless here — object-fit shrinks the whole mark to
+   fit, so a wide wordmark ends up SHORTER than the tier below it, which is
+   the exact failure this is meant to remove. Freeport was drawn at 34px
+   against a 65px t2 square before this existed. */
+.wall.ranked .t1{--logo-h:58px;--logo-max:545px}
+.wall.ranked .t2{--logo-h:37px;--logo-max:365px}
+.wall.ranked .w.mid img{height:calc(var(--logo-h) * 1.22)}
+.wall.ranked .w.sq img{height:calc(var(--logo-h) * 1.32)}
+/* Phones: the wrap is too narrow to give a 9:1 wordmark the width it needs,
+   so it tops out around 36px whatever the rail says. The shape lifts come
+   down to match rather than letting a t2 square overtake it. */
+@media(max-width:640px){
+  .wall.ranked .t1{--logo-h:42px;--logo-max:340px}
+  .wall.ranked .t2{--logo-h:30px;--logo-max:200px}
+  .wall.ranked .w.mid img{height:calc(var(--logo-h) * 1.10)}
+  .wall.ranked .w.sq img{height:calc(var(--logo-h) * 1.10)}
+}
 /* Names are hidden on most walls and surface only when a logo file
    fails to load, so a slot is never empty. /partners/ names every brand
    outright, and there the label scales with the tier as well. */
