@@ -19,9 +19,18 @@
     "Contact Us": "Hubungi Kami",
 
     /* ---- home hero ----
-       The company name carries the heading on its own now, so the only
-       part that translates is the department, which already has an
-       entry further down for the co-brand label. */
+       On index.html the company name carries the heading on its own, so
+       the only part that translates is the department, which already has
+       an entry further down for the co-brand label.
+
+       The three headings below are the hero carousel on the one-page
+       hanindo-citra-website.html, which still runs the older copy. They
+       are the last user of these keys — the multi-page heroes are named
+       after their pages now. "Hanindo Group." is deliberately absent:
+       it is the company name and stays as it is. */
+    "Fire protection,": "Proteksi kebakaran,",
+    "engineered end to end.": "direkayasa menyeluruh.",
+    "A cornerstone of the": "Pilar utama",
     "We design, supply, install and maintain complete fire-fighting systems — reliable on day one, and every day after.": "Kami merancang, memasok, memasang, dan memelihara sistem pemadam kebakaran yang lengkap — andal sejak hari pertama, dan setiap hari sesudahnya.",
     "Our products & services": "Produk & layanan kami",
     "About Hanindo Citra": "Tentang Hanindo Citra",
@@ -140,9 +149,6 @@
     /* ---- products & services page ---- */
     "Products &": "Produk &",
     "Services": "Layanan",
-    /* The old hero, still on the one-page hanindo-citra-website.html */
-    "Every discipline,": "Setiap disiplin,",
-    "one partner.": "satu mitra.",
     "Complete fire protection and building services — operational on day one, and every day after.": "Layanan proteksi kebakaran dan bangunan yang lengkap — beroperasi sejak hari pertama, dan setiap hari sesudahnya.",
     "What we do": "Yang kami lakukan",
     "Comprehensive services": "Layanan menyeluruh",
@@ -202,9 +208,6 @@
        breadcrumb label, which has to stay Proyek on its own. */
     "Selected": "Proyek",
     "Projects.": "Terpilih.",
-    /* The old hero, still on the one-page hanindo-citra-website.html */
-    "Proven in the field,": "Terbukti di lapangan,",
-    "across Indonesia.": "di seluruh Indonesia.",
     "Complex fire-safety installations delivered across oil & gas, government, banking and industrial sectors.": "Instalasi keselamatan kebakaran yang kompleks di sektor migas, pemerintah, perbankan, dan industri.",
     "Projects completed": "Proyek selesai",
     "Service divisions": "Divisi layanan",
