@@ -157,10 +157,29 @@
     "For printer and POS supply, integration, consumables or service, reach the Jakarta office of PT. Hanindo Automation Solutions.": "Untuk pengadaan printer dan POS, integrasi, consumable, atau layanan, hubungi kantor Jakarta PT. Hanindo Automation Solutions.",
     "Telephone": "Telepon",
     "Office hours": "Jam operasional",
+    /* The details list puts the value in the same text node as the dash
+       that introduces it, so the dash has to be part of the key. */
+    "— Monday to Friday, 08.00 – 17.00 WIB": "— Senin – Jumat, 08.00 – 17.00 WIB",
     "Person in charge": "Penanggung jawab",
     "For": "Untuk",
     "Singapore, Malaysia, Vietnam, the Philippines or Thailand": "Singapura, Malaysia, Vietnam, Filipina, atau Thailand",
     ", the same Custom range is supplied by": ", rangkaian Custom yang sama dipasok oleh",
+
+    /* ---- projects page ----
+       Still a placeholder page: it carries the "Content needed" panel
+       rather than real references. When the project cards arrive, the
+       panel copy below can go and the card text takes its place. */
+    "Projects": "Proyek",
+    "Rollouts,": "Penggelaran,",
+    "site by site.": "lokasi demi lokasi.",
+    "POS and printing deployments across retail, hospitality and entertainment.": "Penerapan POS dan pencetakan di sektor ritel, perhotelan, dan hiburan.",
+    "Selected work": "Pekerjaan terpilih",
+    "Deployments we have delivered.": "Penerapan yang telah kami kerjakan.",
+    "Retail chains, hospitality groups and entertainment venues.": "Jaringan ritel, grup perhotelan, dan tempat hiburan.",
+    "Content needed": "Perlu konten",
+    "Add PT. Hanindo Automation Solutions project references here": "Tambahkan referensi proyek PT. Hanindo Automation Solutions di sini",
+    "This page is built and linked, but no project references have been supplied for PT. Hanindo Automation Solutions yet. Add each project as a card — client, location, scope and a photo — following the pattern used on the Fire Fighting projects page.": "Halaman ini sudah dibuat dan ditautkan, tetapi belum ada referensi proyek yang disediakan untuk PT. Hanindo Automation Solutions. Tambahkan setiap proyek sebagai kartu — klien, lokasi, lingkup pekerjaan, dan foto — mengikuti pola yang digunakan pada halaman proyek Fire Fighting.",
+    "See the pattern": "Lihat polanya",
 
     /* ---- misc ---- */
     "Photo needed": "Perlu foto"
