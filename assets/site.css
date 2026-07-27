@@ -433,25 +433,19 @@ img{max-width:100%;display:block}
    of its own, and the cells lose most of their padding. Lived in each
    page's head until all three carried it.
 
-   .mkt-6 is the full set of markets the Custom business answers, six
-   across on one line. That is tight -- about 178px a cell inside the
-   1072px wrap -- so the type steps down again and the addresses are
-   allowed to break mid-token rather than push the cell wide. Below
-   1000px six across stops being readable at all and it falls to three,
-   then to one on phones. */
+   Only the markets a company answers itself get a card. The rest are a
+   line of prose underneath -- see .mktnote below. The shared grid is a
+   fixed four across and would paint empty cells in its own line colour,
+   so the track count has to match the cards: .mkt-3 for Gralessando's
+   three, .mkt-1 for the single Shenzhen card on Shanghai. */
 .mkt{margin-top:.9rem}
 .mkt .svc{padding:.9rem 1rem}
 .mkt .svc h3{display:flex;align-items:center;gap:.4rem;font-size:.88rem;margin-bottom:.3rem;line-height:1.3}
 .mkt .svc .ic{width:15px;height:15px;flex:none;margin:0}
 .mkt .svc p{font-size:.82rem;line-height:1.55}
 .mkt .svc b{color:var(--blue-800)}
-.mkt-6 .svc{padding:.85rem .75rem}
-.mkt-6 .svc h3{font-size:.82rem}
-.mkt-6 .svc p{font-size:.76rem;line-height:1.5;overflow-wrap:anywhere}
-.mkt-6 .svc .go{display:inline-block;margin-top:.35rem;font-weight:600;color:var(--brand);text-decoration:none}
-.mkt-6 .svc .go:hover{text-decoration:underline}
-@media(min-width:1001px){.mkt-6{grid-template-columns:repeat(6,1fr)}}
-@media(min-width:561px) and (max-width:1000px){.mkt-6{grid-template-columns:repeat(3,1fr)}}
+.mkt-1{grid-template-columns:1fr}
+@media(min-width:561px){.mkt-3{grid-template-columns:repeat(3,1fr)}}
 .section.dark .svc p{color:#b9c6d8}
 .section.dark .svc .ic svg{stroke:var(--sky)}
 
@@ -528,6 +522,12 @@ img{max-width:100%;display:block}
    shows one office but which is contacted differently in other markets.
    Hairline rule above it so it reads as a caveat on the rows, not a
    fourth row. */
+/* The markets a company does not answer itself, as a line of prose under
+   its own market cards. Set on a light section by default; the dark
+   contact band overrides the colours below. */
+.mktnote{font-size:.85rem;line-height:1.6;color:var(--muted);border-top:1px solid var(--line);padding-top:.9rem;margin-top:1.4rem}
+.mktnote a{color:var(--brand);font-weight:600;text-decoration:underline}
+.mktnote a:hover{color:var(--blue-800)}
 .contact .info .mktnote{font-size:.82rem;line-height:1.55;color:#8fa0bc;border-top:1px solid rgba(255,255,255,.12);padding-top:.9rem}
 .contact .info .mktnote a{color:var(--sky);font-weight:600;text-decoration:underline}
 .contact .info .mktnote a:hover{color:#fff}
