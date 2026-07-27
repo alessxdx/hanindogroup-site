@@ -83,6 +83,11 @@ img{max-width:100%;display:block}
   .searchstack{flex-direction:row;align-items:center;gap:0}
   .searchstack .langtoggle{height:40px;border-radius:8px}
   .searchstack .langtoggle button{font-size:.8rem;padding:0;min-width:44px}
+  /* The group link's widened tap area is a positioned pseudo-element, so
+     it paints over this toggle and took the EN button's first pixel.
+     Positioning the toggle too puts it back on top, being the later
+     sibling. */
+  .searchstack .langtoggle{position:relative}
 }
 .navbar{position:sticky;top:0;z-index:100;background:var(--navy-800);box-shadow:0 6px 20px -12px rgba(0,0,0,.5)}
 .navbar .wrap{display:flex;align-items:stretch;justify-content:space-between}
