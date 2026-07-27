@@ -9,13 +9,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/site.css?v=202607271830" />
+<link rel="stylesheet" href="../../assets/site.css?v=202607271830" />
 <style>
-/* Tighter section rhythm, matching the Partners index this page hangs off. */
+/* Tighter section rhythm than the company home, as on the other
+   automotive sub-pages. */
 .section{padding:clamp(40px,5vw,64px) 0}
-/* The brand mark sits on its own above the intro rather than in the hero:
-   the hero art is the group sky shot, shared with the Partners index, and
-   a logo dropped on top of it reads as a watermark. */
+/* The brand mark sits above the intro rather than in the hero: the banner
+   is the flat one the sibling sub-pages use, and a logo dropped on it
+   reads as a watermark. */
 .brandmark{display:flex;align-items:center;gap:1.1rem;margin-bottom:1.4rem}
 .brandmark img{height:64px;width:auto;max-width:220px;object-fit:contain}
 @media(max-width:640px){.brandmark img{height:48px}}
@@ -38,11 +39,18 @@
 <!-- ============ SITE HEADER ============ -->
 <div class="topbar">
   <div class="wrap">
-    <a class="brand" href="../">
-      <img src="../photos/brand/logo-lockup.png" alt="Hanindo Group — Your Solution Provider" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
-      <span class="btxt" style="display:none"><strong>HANINDOGROUP</strong><span>Your Solution Provider</span></span>
-    </a>
+    <div class="brands">
+      <a class="brand" href="../../" aria-label="Hanindo Group — main page">
+        <img src="../../photos/brand/logo-lockup.png" alt="Hanindo Group — Your Solution Provider" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
+        <span class="btxt" style="display:none"><strong>HANINDOGROUP</strong><span>Your Solution Provider</span></span>
+      </a>
+      <a class="cobrand" href="../index.html" aria-label="Hanindo Automotive — home">
+        <img class="cologo" src="../../photos/brand/logo-automotive.png" alt="Hanindo Automotive — Member of the Hanindo Group of Companies" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
+        <span class="colabel" style="display:none">HANINDO AUTOMOTIVE</span>
+      </a>
+    </div>
     <div class="top-right">
+      <a class="grouplink" href="../../" aria-label="Back to Hanindo Group"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg><span>Hanindo Group</span></a>
       <form class="searchbox" role="search" onsubmit="return hsearch(this)">
         <input type="text" name="q" placeholder="Search" aria-label="Search" />
         <button type="submit" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></button>
@@ -54,43 +62,11 @@
 <header class="navbar">
   <div class="wrap">
     <ul class="tabs" id="tabs">
-      <li><a href="../">Home</a></li>
-      <li><a href="../about/">About Us</a></li>
-      <li class="has-drop">
-        <a href="../#companies">Our Companies <svg class="caret" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
-        <ul class="drop">
-          <li><a href="../citra/">Hanindo Citra</a>
-            <ul class="subdrop">
-              <li><a href="../fire-fighting/">Fire Fighting Department</a></li>
-            </ul>
-          </li>
-          <li><a href="../flowtech-engineering/">Flowtech Engineering</a></li>
-          <li><a href="../automotive/">Hanindo Automotive</a></li>
-          <li><span class="glabel">Custom SEA Hanindo</span>
-            <ul class="subdrop">
-              <li><a href="../automation/">Hanindo Automation Solutions (Indonesia)</a></li>
-              <li><a href="../printer-pos/">Gralessando Pte Ltd (Singapore)</a></li>
-            </ul>
-          </li>
-          <li><span class="glabel">Custom China Hanindo</span>
-            <ul class="subdrop">
-              <li><a href="../shanghai/">Hanindo Shanghai</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li class="has-drop">
-        <a href="../products-services/">Products &amp; Services <svg class="caret" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
-        <ul class="drop">
-          <li><a href="../citra/products-services.html">Oil &amp; Gas</a></li>
-          <li><a href="../automotive/products-services.html">Automotive</a></li>
-          <li><a href="../fire-fighting/products-services.html">Fire Fighting</a></li>
-          <li><a href="../printer-pos/products-services.html">Printer &amp; POS</a></li>
-        </ul>
-      </li>
-      <li class="active"><a href="../partners/">Partners</a></li>
-      <li><a href="../career/">Career</a></li>
-      <li><a href="../contact/">Contact Us</a></li>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About Us</a></li>
+      <li class="active"><a href="../products-services.html">Products &amp; Services</a></li>
+      <li><a href="../projects.html">Projects</a></li>
+      <li><a href="../contact.html">Contact Us</a></li>
     </ul>
   </div>
 </header>
@@ -98,10 +74,9 @@
 
 <!-- ============ PAGE HERO ============ -->
 <section class="pagehero">
-  <div class="bg"><img src="../photos/group/hero/hero-sky.jpg" alt="" onerror="this.style.display='none'" /></div>
-  <div class="ov"></div><div class="glow"></div>
+  <div class="ov"></div>
   <div class="wrap">
-    <div class="crumb"><a href="../">Home</a><span class="sep">/</span><a href="index.html">Partners</a><span class="sep">/</span>RAASM</div>
+    <div class="crumb"><a href="../../">Hanindo Group</a><span class="sep">/</span><a href="../index.html">Hanindo Automotive</a><span class="sep">/</span><a href="../products-services.html">Products &amp; Services</a><span class="sep">/</span>RAASM</div>
     <h1>RAASM</h1>
     <p class="intro">Fluid handling and lubrication equipment from Vicenza, Italy &mdash; hose reels, pumps, dispensing and centralised lubrication systems. Wherever a fluid has to be stored, moved, measured or dispensed, in a workshop or on a plant floor.</p>
   </div>
@@ -112,7 +87,7 @@
   <div class="wrap">
     <div class="reveal">
       <div class="brandmark">
-        <img src="../photos/partners/raasm.png" alt="RAASM" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
+        <img src="../../photos/partners/raasm.png" alt="RAASM" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
         <span style="display:none;font-weight:800;letter-spacing:.08em">RAASM</span>
       </div>
       <span class="kicker">Sole distributor for Indonesia</span>
@@ -130,9 +105,10 @@
 
 <!-- ============ PRODUCT RANGE ============ -->
 <!-- Six cards covering the catalogue as RAASM group it. Photographs go in
-     /photos/partners/raasm/ and are tracked in PHOTOS-NEEDED.txt; until
+     /photos/automotive/raasm/ and are tracked in PHOTOS-NEEDED.txt; until
      they land each card shows the "photo needed" placeholder, so the page
-     is safe to ship without them. -->
+     is safe to ship without them. The RAASM mark itself stays in
+     /photos/partners/ with the other principal logos. -->
 <section class="section paper">
   <div class="wrap">
     <div class="reveal">
@@ -144,7 +120,7 @@
 
       <div class="pcard reveal">
         <div class="pbox">
-          <img src="../photos/partners/raasm/raasm-hose-reels.jpg" alt="RAASM hose reels" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <img src="../../photos/automotive/raasm/raasm-hose-reels.jpg" alt="RAASM hose reels" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
           <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
         </div>
         <div class="pbody">
@@ -156,7 +132,7 @@
 
       <div class="pcard reveal d1">
         <div class="pbox">
-          <img src="../photos/partners/raasm/raasm-pumps.jpg" alt="RAASM pneumatic and diaphragm pumps" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <img src="../../photos/automotive/raasm/raasm-pumps.jpg" alt="RAASM pneumatic and diaphragm pumps" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
           <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
         </div>
         <div class="pbody">
@@ -168,7 +144,7 @@
 
       <div class="pcard reveal d2">
         <div class="pbox">
-          <img src="../photos/partners/raasm/raasm-dispensing.jpg" alt="RAASM oil and grease dispensing equipment" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <img src="../../photos/automotive/raasm/raasm-dispensing.jpg" alt="RAASM oil and grease dispensing equipment" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
           <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
         </div>
         <div class="pbody">
@@ -180,7 +156,7 @@
 
       <div class="pcard reveal">
         <div class="pbox">
-          <img src="../photos/partners/raasm/raasm-waste-oil.jpg" alt="RAASM waste oil drainers and suction units" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <img src="../../photos/automotive/raasm/raasm-waste-oil.jpg" alt="RAASM waste oil drainers and suction units" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
           <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
         </div>
         <div class="pbody">
@@ -192,7 +168,7 @@
 
       <div class="pcard reveal d1">
         <div class="pbox">
-          <img src="../photos/partners/raasm/raasm-centralised-lubrication.jpg" alt="RAASM centralised lubrication system" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <img src="../../photos/automotive/raasm/raasm-centralised-lubrication.jpg" alt="RAASM centralised lubrication system" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
           <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
         </div>
         <div class="pbody">
@@ -204,7 +180,7 @@
 
       <div class="pcard reveal d2">
         <div class="pbox">
-          <img src="../photos/partners/raasm/raasm-fluid-control.jpg" alt="RAASM fluid level and control systems" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <img src="../../photos/automotive/raasm/raasm-fluid-control.jpg" alt="RAASM fluid level and control systems" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
           <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
         </div>
         <div class="pbody">
@@ -242,8 +218,8 @@
       <div class="seccell reveal"><div class="secname">Cleaning</div><div class="secwhat">Pressure washing and detergent distribution</div></div>
     </div>
     <div class="actions reveal" style="margin-top:2.2rem">
-      <a class="btn btn-ghost" href="index.html">All partners &amp; principals <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <a class="btn btn-ghost" href="../automotive/">Hanindo Automotive <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-ghost" href="../../partners/">All partners &amp; principals <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-ghost" href="../products-services.html">Products &amp; Services <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
   </div>
 </section>
@@ -258,7 +234,7 @@
       <p class="sub">Tell us the fluid, the distance and the duty &mdash; a single reel over a service bay, or a lubrication system across a plant &mdash; and our engineers will specify the RAASM equipment for it, supply it and commission it.</p>
       <div class="actions">
         <a class="btn btn-fire" href="mailto:info@hanindogroup.com">Email our team <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></a>
-        <a class="btn btn-ghost" href="../automotive/contact.html">Contact page <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="../contact.html">Contact page <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
     <div class="info">
@@ -275,27 +251,27 @@
     <div class="foot-grid">
       <div class="fbrand">
         <strong>HANINDO GROUP</strong><span>Your Solution Provider</span>
-        <p>Your technology one stop solution &mdash; serving the oil &amp; gas, automation, automotive and fire protection industries in Indonesia since 1987.</p>
+        <p>Your technology one stop solution — serving the oil &amp; gas, automation, automotive and fire protection industries in Indonesia since 1987.</p>
+      </div>
+      <div>
+        <h4>Hanindo Automotive</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../products-services.html">Products &amp; Services</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../contact.html">Contact Us</a></li>
+        </ul>
       </div>
       <div>
         <h4>Our Companies</h4>
         <ul>
-          <li><a href="../citra/">Hanindo Citra</a></li>
-          <li><a href="../flowtech-engineering/">Flowtech Engineering</a></li>
-          <li><a href="../automotive/">Hanindo Automotive</a></li>
-          <li><a href="../automation/">Hanindo Automation Solutions</a></li>
-          <li><a href="../printer-pos/">Gralessando Pte Ltd</a></li>
-          <li><a href="../shanghai/">Hanindo Shanghai</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Group</h4>
-        <ul>
-          <li><a href="../about/">About Us</a></li>
-          <li><a href="../partners/">Partners &amp; Principals</a></li>
-          <li><a href="../automation/">Automation</a></li>
-          <li><a href="../flowtech-engineering/">Flowtech Engineering</a></li>
-          <li><a href="../shanghai/">Hanindo Shanghai</a></li>
+          <li><a href="../../citra/">Hanindo Citra</a></li>
+          <li><a href="../../flowtech-engineering/">Flowtech Engineering</a></li>
+          <li><a href="../../automotive/">Hanindo Automotive</a></li>
+          <li><a href="../../automation/">Hanindo Automation Solutions</a></li>
+          <li><a href="../../printer-pos/">Gralessando Pte Ltd</a></li>
+          <li><a href="../../shanghai/">Hanindo Shanghai</a></li>
         </ul>
       </div>
       <div>
@@ -303,7 +279,7 @@
         <span class="cl"><b>Jl. Fatmawati No. 55</b></span><span class="cl">Jakarta 12410, Indonesia</span><span class="cl">Tel: <b>+62 21 75900909</b></span><span class="cl">info@hanindogroup.com</span>
       </div>
     </div>
-    <div class="foot-bottom"><span>&copy; 2026 Hanindo Group. All Rights Reserved.</span><span>RAASM &mdash; Partners &amp; Principals</span></div>
+    <div class="foot-bottom"><span>© 2026 Hanindo Group. All Rights Reserved.</span><span>PT. Hanindo Automotive &mdash; RAASM</span></div>
   </div>
 </footer>
 
