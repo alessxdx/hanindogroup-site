@@ -657,6 +657,31 @@ hero-partners.jpg         Page hero. Optional — without it the banner
                           shows flat deep blue. Equipment, a branded
                           product wall, or a wide site shot suits.
 
+RAASM PAGE  (/partners/raasm.html)
+The first principal with a page of its own, because RAASM sells into
+eleven sectors and reading it off the automotive wall alone undersells
+it. Hanindo Automotive is the sole distributor for the whole range,
+industrial included, so the page sits under Partners rather than under
+Automotive — the URL should not claim a sector the brand is not limited
+to.
+
+Product shots live in /photos/partners/raasm/, one per card, six cards.
+Missing ones fall back to the "photo needed" placeholder, so the page is
+safe to ship without them. Cut out on white, ~800px wide, shown up to
+about 260px tall.
+
+raasm-hose-reels.jpg              Hose & cable reels
+raasm-pumps.jpg                   Pneumatic and diaphragm pumps
+raasm-dispensing.jpg              Oil & grease dispensing, service columns
+raasm-waste-oil.jpg               Waste oil drainers and suction units
+raasm-centralised-lubrication.jpg Centralised lubrication system
+raasm-fluid-control.jpg           FLS level / FCS fluid control
+
+Worth choosing at least two of the six from a non-automotive setting —
+a plant floor or a mine workshop rather than a service bay. The whole
+argument of the page is that RAASM is not workshop-only, and six
+photographs of service bays would quietly contradict it.
+
 
 --------------------------------------------------
 ABOUT US  (/about/)
