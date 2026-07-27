@@ -18,13 +18,13 @@
     "Projects": "Proyek",
     "Contact Us": "Hubungi Kami",
 
-    /* ---- home hero ---- */
-    "Hanindo Citra — Fire Fighting Department,": "Hanindo Citra — Departemen Pemadam Kebakaran,",
-    "engineered end to end.": "direkayasa menyeluruh.",
+    /* ---- home hero ----
+       The company name carries the heading on its own now, so the only
+       part that translates is the department, which already has an
+       entry further down for the co-brand label. */
     "We design, supply, install and maintain complete fire-fighting systems — reliable on day one, and every day after.": "Kami merancang, memasok, memasang, dan memelihara sistem pemadam kebakaran yang lengkap — andal sejak hari pertama, dan setiap hari sesudahnya.",
     "Our products & services": "Produk & layanan kami",
     "About Hanindo Citra": "Tentang Hanindo Citra",
-    "A cornerstone of the": "Pilar utama",
     "The fire fighting department of the Hanindo Group — delivering advanced, end-to-end fire-protection systems that safeguard lives and property across Indonesia.": "Departemen pemadam kebakaran Hanindo Group — menghadirkan sistem proteksi kebakaran mutakhir dan menyeluruh yang melindungi jiwa dan properti di seluruh Indonesia.",
     "About us": "Tentang kami",
     "Proven track record": "Rekam jejak terbukti",
@@ -87,7 +87,12 @@
     "A specialist division of the Hanindo Group, delivering end-to-end fire protection — from design and engineering through supply, installation, testing and long-term maintenance.": "Divisi spesialis dari Hanindo Group, menghadirkan proteksi kebakaran menyeluruh — dari desain dan rekayasa hingga pengadaan, pemasangan, pengujian, dan pemeliharaan jangka panjang.",
     "© 2026 Hanindo Group. All Rights Reserved.": "© 2026 Hanindo Group. Hak Cipta Dilindungi.",
 
-    /* ---- about page ---- */
+    /* ---- about page ----
+       "About" and "Us" are separate keys because the hero splits them
+       across a <span> for the two-tone treatment, the same as the
+       Automation and Shanghai About pages. */
+    "About": "Tentang",
+    "Us": "Kami",
     "Specialising in advanced fire-fighting systems — end-to-end solutions designed to protect lives and property.": "Berspesialisasi dalam sistem pemadam kebakaran mutakhir — solusi menyeluruh yang dirancang untuk melindungi jiwa dan properti.",
     "Company overview": "Sekilas Perusahaan",
     "Excellence and safety,": "Keunggulan dan keselamatan,",
@@ -133,6 +138,9 @@
     "Fast response, free consultation, on-site surveys and committed after-sales support.": "Respons cepat, konsultasi gratis, survei lokasi, dan dukungan purnajual yang berkomitmen.",
 
     /* ---- products & services page ---- */
+    "Products &": "Produk &",
+    "Services": "Layanan",
+    /* The old hero, still on the one-page hanindo-citra-website.html */
     "Every discipline,": "Setiap disiplin,",
     "one partner.": "satu mitra.",
     "Complete fire protection and building services — operational on day one, and every day after.": "Layanan proteksi kebakaran dan bangunan yang lengkap — beroperasi sejak hari pertama, dan setiap hari sesudahnya.",
@@ -186,7 +194,15 @@
     "Commercial Buildings": "Gedung Komersial",
     "F&B Production": "Produksi Makanan & Minuman",
 
-    /* ---- projects page ---- */
+    /* ---- projects page ----
+       Indonesian puts the adjective after the noun, so the two halves of
+       the heading swap sense: "Selected" carries Proyek and the coloured
+       half carries Terpilih. That is also why the coloured half is
+       "Projects." with the full stop — a bare "Projects" is the nav and
+       breadcrumb label, which has to stay Proyek on its own. */
+    "Selected": "Proyek",
+    "Projects.": "Terpilih.",
+    /* The old hero, still on the one-page hanindo-citra-website.html */
     "Proven in the field,": "Terbukti di lapangan,",
     "across Indonesia.": "di seluruh Indonesia.",
     "Complex fire-safety installations delivered across oil & gas, government, banking and industrial sectors.": "Instalasi keselamatan kebakaran yang kompleks di sektor migas, pemerintah, perbankan, dan industri.",
