@@ -197,12 +197,28 @@ HANINDO CITRA  (/citra/)
 --------------------------------------------------
 hero-citra.webp           DONE — page hero, forecourt at dusk (1536x1024)
 citra-forecourt.jpg         Intro section — station Hanindo equipped
-citra-dispenser.jpg         Product card — pumps & dispensers
 citra-advanz.jpg            Product card — AdvanZ POS/BOS screen or terminal
 citra-flowmeter.png         Product card — TCS flow meters            [DONE]
-citra-atg.webp              Product card — Veeder-Root TLS-450 PLUS   [DONE]
-citra-stp.jpg               Product card — submersible turbine pump
+citra-atg.webp              Product card — Veeder-Root ATG range      [DONE]
+citra-stp.webp              Product card — submersible turbine pumps  [DONE]
 citra-piping.jpg            Product card — piping / fueling components
+
+The dispenser, ATG and STP cards carry manufacturer shots cut out onto
+pure white (#fff), and their tiles are white to match — see .pcard.cutout
+in products-services.html. A replacement must be cut out the same way: on
+the --paper tiles the cutout would show as a white rectangle, and a shot
+with its own grey studio backdrop shows as a grey one. Keep them wide if
+possible; a near-square shot renders small in a 180px-tall tile.
+
+TANK GAUGING PAGE  (/citra/tank-gauging.html)
+Product shots live in /photos/citra/products/atg/. Missing ones fall back
+to the "photo needed" placeholder, so the page is safe to ship without
+them. Cut out on white, ~1400px wide, shown up to 300px tall.
+tls-450plus.webp            TLS-450 PLUS console                      [DONE]
+tls4.webp                   TLS4 console
+tls4b.webp                  TLS4B console
+mag-plus.webp               Mag Plus in-tank probe
+mag-xl.webp                 Mag-XL flexible probe for tall tanks
 
 CUSTOMER LOGOS
 The "Customer base" wall on /citra/index.html has 30 logo slots.
@@ -311,6 +327,13 @@ file. Same rules as those walls: trimmed to the artwork, ~400px wide or
 more, on white or transparent. Names are hidden and appear only if a
 file is missing, so every cell reads correctly meanwhile.
 
+The wall is banded 8 / 15 / 9. The top band leads with the accounts
+rather than the marques, so B-Quik, BYD and Petrosea sit above BMW,
+Mercedes-Benz, Isuzu and Suzuki, which close the wall in the bottom
+band. That ranking is deliberate — it reads as a customer list rather
+than a wall of borrowed badges — so keep it in mind before promoting a
+marque on name recognition alone.
+
 honda-prospect-motor.png      PT Honda Prospect Motor         [COMPLETE]
 toyota.svg                    Toyota                          [COMPLETE]
 astra-daihatsu.png            PT Astra Daihatsu Motor         [COMPLETE]
@@ -357,15 +380,18 @@ united-tractors.png           PT United Tractors Tbk          [COMPLETE]
                               soften if ever drawn larger, so swap in
                               bigger originals if they turn up.)
 
-STILL NEEDED — three files, for the accounts added last:
+sefas.png                     Sefas                           [COMPLETE]
+pana-oil.png                  Pana Oil                        [COMPLETE]
+jantrakakikaki.png            Jantrakakikaki                  [COMPLETE]
+                              (supplied by Custom. Sefas is 166px wide
+                              and Pana Oil 200px, both well under the
+                              usual width — fine at cell size, soft if
+                              drawn larger.)
 
-sefas.png                     Sefas
-pana-oil.png                  Pana Oil
-jantrakakikaki.png            Jantrakakikaki
-
-Goodyear, Accelera and PT Burangkeng Maju Tehnik were dropped from the
-wall rather than left standing as text. Add a cell back alongside the
-file if any of them is wanted again.
+Nothing outstanding: all 32 cells carry a logo. Goodyear, Accelera and
+PT Burangkeng Maju Tehnik were dropped from the wall rather than left
+standing as text — add a cell back alongside the file if any of them is
+wanted again.
 
 SOURCING NOTE for the twenty already in place: each came from Wikimedia
 Commons, resolved through the company's Wikidata entity and its P154
