@@ -92,9 +92,15 @@ img{max-width:100%;display:block}
 .langtoggle button.active{background:var(--blue-800);color:#fff}
 /* The menu copy: hidden in the desktop tab bar, a full row on phones.
    Both states must out-specify .tabs>li, which sets display at each
-   width. */
+   width.
+
+   860px, not 900px: that is where .top-right goes and the burger
+   arrives, and the row is only reachable once the tabs are a dropdown.
+   Showing it at 900 put a full-width language row inside the still-
+   horizontal tab bar for 40px of width, pushing the tabs off the
+   right edge. */
 .tabs>li.tablang{display:none}
-@media(max-width:900px){
+@media(max-width:860px){
   .tabs>li.tablang{display:flex;align-items:center;justify-content:space-between;gap:1rem;
     padding:.85rem var(--pad);border-top:1px solid rgba(255,255,255,.14)}
   .tablang-lab{display:inline-flex;align-items:center;gap:.5rem;font-size:.95rem;font-weight:600;color:#eef1f7}

@@ -8,8 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/site.css?v=202607272045" />
-<link rel="stylesheet" href="../assets/fire-fighting.css?v=202607271920" />
+<link rel="stylesheet" href="../assets/site.css?v=202607280030" />
+<link rel="stylesheet" href="../assets/fire-fighting.css?v=202607280030" />
 </head>
 <body>
 <!-- ============ SITE HEADER (Hanindo two-row — kept) ============ -->
@@ -21,11 +21,11 @@
     </a>
     <div class="top-right">
       <a class="grouplink" href="../" aria-label="Back to Hanindo Group"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg><span>Hanindo Group</span></a>
+      <div class="langtoggle" role="group" aria-label="Language"><svg class="globe" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.7 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.7-3.9-9S9.4 5.6 12 3z"/></svg><button type="button" data-lang="en" class="active" aria-pressed="true">EN</button><button type="button" data-lang="id" aria-pressed="false">ID</button></div>
       <form class="searchbox" role="search" onsubmit="return hsearch(this)">
         <input type="text" name="q" placeholder="Search" aria-label="Search" />
         <button type="submit" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></button>
       </form>
-      <div class="langtoggle" role="group" aria-label="Language"><button type="button" data-lang="en" class="active" aria-pressed="true">EN</button><button type="button" data-lang="id" aria-pressed="false">ID</button></div>
     </div>
     <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
@@ -38,7 +38,7 @@
       <li data-page="products"><a href="#products">Products &amp; Services</a></li>
       <li data-page="projects"><a href="#projects">Projects</a></li>
       <li data-page="contact-us"><a href="#contact-us">Contact Us</a></li>
-      <li class="tablang"><span class="tablang-lab">Language</span><div class="langtoggle" role="group" aria-label="Language"><button type="button" data-lang="en" class="active" aria-pressed="true">EN</button><button type="button" data-lang="id" aria-pressed="false">ID</button></div></li>
+      <li class="tablang"><span class="tablang-lab"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.7 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.7-3.9-9S9.4 5.6 12 3z"/></svg>Bahasa</span><div class="langtoggle" role="group" aria-label="Language"><button type="button" data-lang="en" class="active" aria-pressed="true">EN</button><button type="button" data-lang="id" aria-pressed="false">ID</button></div></li>
     </ul>
   </div>
 </header>
@@ -887,6 +887,6 @@ if(document.readyState==='complete')build();else window.addEventListener('load',
   document.addEventListener('keydown',function(e){if(e.key==='Escape'){[].slice.call(document.querySelectorAll('.pmodal.open')).forEach(close);}});
 })();
 </script>
-<script src="translate.js?v=202607272200"></script>
+<script src="translate.js?v=202607280030"></script>
 </body>
 </html>

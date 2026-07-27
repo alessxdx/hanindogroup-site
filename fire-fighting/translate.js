@@ -260,7 +260,7 @@
   function setLang(lang) {
     if (!store) collect();
     each(store, function (o) { o.node.nodeValue = (lang === 'id') ? o.id : o.en; });
-    var s = document.querySelector('input[name="searchword"]');
+    var s = document.querySelector('.searchbox input[name="q"]');
     if (s) s.setAttribute('placeholder', lang === 'id' ? 'Cari' : 'Search');
     each(document.querySelectorAll('.langtoggle [data-lang]'), function (b) {
       var on = b.getAttribute('data-lang') === lang;
