@@ -352,6 +352,14 @@ much. Four files arrived that way and were cropped in place:
                   of the artwork and showed as a box on the wall
   honda + daihatsu carried their PT company name under the logo as
                   part of the image
+  planet-ban      the mark filled two thirds of a square canvas
+  pana-oil        a little padding left after the first crop
+
+One logo also carries a shape class the aspect rule would not give it.
+United Tractors stacks its badge over its wordmark and measures 2.17,
+a hair over the .sq threshold, so the rule handed it the smaller .mid
+lift and it drew visibly under its neighbours. It is pinned to .sq in
+the page. Any other badge-over-wordmark lockup will need the same.
 
 honda-prospect-motor.png and astra-daihatsu.png are shared with the
 Citra wall, so cropping the captions off changed that wall too. Both
