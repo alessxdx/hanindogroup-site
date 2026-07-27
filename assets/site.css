@@ -820,6 +820,12 @@ img{max-width:100%;display:block}
 .wall .t3{--logo-h:26px;--logo-max:155px}
 .wall .t1,.wall .t2,.wall .t3{max-width:var(--logo-max)}
 .wall .w img{height:var(--logo-h);max-width:var(--logo-max)}
+/* Every logo here is cropped to its mark with a 4.5% margin so they all
+   draw at the same weight. .tight does that in CSS for a file that
+   cannot be recropped — a WebP, which the tooling here cannot decode.
+   Give it the mark's true aspect inline and object-fit:cover trims the
+   padding away instead of letter-boxing it. */
+.wall .w img.tight{object-fit:cover}
 /* aspect roughly 2.0-3.6 — a touch narrow, needs a small lift */
 .wall .w.mid img{height:calc(var(--logo-h) * 1.22)}
 /* aspect under 2.0 — square-ish, needs a real lift to hold its rank */
