@@ -545,6 +545,10 @@ img{max-width:100%;display:block}
 /* ---------- FOOTER ---------- */
 .footer{background:var(--blue-950);color:#93a5c0;padding:clamp(48px,6vw,72px) 0 1.8rem;font-size:.88rem;border-top:1px solid rgba(255,255,255,.08)}
 .foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:2.4rem}
+/* Group-level pages carry no company-nav column, so their footer runs three
+   wide rather than four — without this the last track sits empty and the
+   whole footer reads as shoved to the left. */
+.foot-grid.three{grid-template-columns:1.6fr 1fr 1fr}
 @media(max-width:900px){.foot-grid{grid-template-columns:1fr 1fr;gap:2rem}}
 @media(max-width:560px){.foot-grid{grid-template-columns:1fr}}
 .footer .fbrand strong{font-weight:700;font-size:1.2rem;color:#fff;display:block;letter-spacing:-.01em}
