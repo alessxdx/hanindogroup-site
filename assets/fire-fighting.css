@@ -72,6 +72,18 @@ img{max-width:100%;display:block}
 .searchstack .langtoggle{height:22px;border-radius:6px}
 .searchstack .langtoggle button{font-size:.66rem;padding:0 .5rem}
 @media(max-width:860px){.topbar .top-right{display:flex;gap:.7rem}.topbar .top-right .searchbox{display:none}}
+/* Phone: the search field is hidden above, which leaves .searchstack a
+   one-item column still shrinking the toggle to the 22px it needs when
+   tucked underneath — 31x20 buttons, below any usable tap target, and
+   floating at a height that lines up with neither the group link nor
+   the burger. On phones it is a row at full size, with 44px targets and
+   centred against the burger. */
+@media(max-width:860px){
+  .topbar .top-right{align-items:center}
+  .searchstack{flex-direction:row;align-items:center;gap:0}
+  .searchstack .langtoggle{height:40px;border-radius:8px}
+  .searchstack .langtoggle button{font-size:.8rem;padding:0;min-width:44px}
+}
 .navbar{position:sticky;top:0;z-index:100;background:var(--navy-800);box-shadow:0 6px 20px -12px rgba(0,0,0,.5)}
 .navbar .wrap{display:flex;align-items:stretch;justify-content:space-between}
 .tabs{display:flex;list-style:none}
