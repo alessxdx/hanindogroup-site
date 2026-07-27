@@ -347,16 +347,25 @@ puninar-logistics.png         Puninar Logistics               [COMPLETE]
                               originals — replace with press-kit files if
                               they can be obtained, same filenames.)
 
-STILL NEEDED — six files, all of them Indonesian companies or brands
-with no freely licensed mark in circulation. Ask each company for its
-logo, or lift it from their own site or press kit:
+bquik.png                     B-Quik                          [COMPLETE]
+mobeng.png                    Mobeng                          [COMPLETE]
+united-tractors.png           PT United Tractors Tbk          [COMPLETE]
+                              (supplied by Custom, trimmed and converted
+                              to PNG. All three are small — 208 to 242px
+                              wide against the ~400px the other walls
+                              use. They hold up at cell size but will
+                              soften if ever drawn larger, so swap in
+                              bigger originals if they turn up.)
 
-united-tractors.png           PT United Tractors Tbk
-goodyear.png                  Goodyear
-accelera.png                  Accelera
-bquik.png                     B-Quik
-bmt.png                       PT Burangkeng Maju Tehnik
-mobeng.png                    Mobeng
+STILL NEEDED — three files, for the accounts added last:
+
+sefas.png                     Sefas
+pana-oil.png                  Pana Oil
+jantrakakikaki.png            Jantrakakikaki
+
+Goodyear, Accelera and PT Burangkeng Maju Tehnik were dropped from the
+wall rather than left standing as text. Add a cell back alongside the
+file if any of them is wanted again.
 
 SOURCING NOTE for the twenty already in place: each came from Wikimedia
 Commons, resolved through the company's Wikidata entity and its P154
