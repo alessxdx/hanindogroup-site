@@ -108,7 +108,26 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <ul class="tabs" id="tabs">
       <li><a href="../index.html">Home</a></li>
       <li><a href="../about.html">About Us</a></li>
-      <li class="active"><a href="../products-services.html">Products &amp; Services</a></li>
+      <li class="has-drop active">
+        <a href="../products-services.html">Products &amp; Services <svg class="caret" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
+        <ul class="drop">
+          <li><span class="glabel">By category</span>
+            <ul class="subdrop">
+              <li><a href="../tyre-service/">Tyre Service</a></li>
+              <li><a href="../lifts/">Lifts &amp; Handling</a></li>
+              <li><a href="../service/">Service Equipment</a></li>
+              <li><a href="../welding/">Welding</a></li>
+            </ul>
+          </li>
+          <li><span class="glabel">By brand</span>
+            <ul class="subdrop">
+              <li><a href="../airtec/">Airtec</a></li>
+              <li><a href="../tyre-service/">HPA FAIP</a></li>
+              <li><a href="../raasm/">RAASM</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
       <li><a href="../projects.html">Projects</a></li>
       <li><a href="../contact.html">Contact Us</a></li>
     </ul>

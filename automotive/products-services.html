@@ -42,6 +42,19 @@
 .cmeta{font-size:.8rem;font-weight:600;color:var(--blue-700);margin-bottom:.55rem}
 .course p{font-size:.87rem;color:var(--muted);line-height:1.55}
 .cnote{margin-top:1rem;font-size:.85rem;color:var(--muted);line-height:1.6}
+/* Brand route through the catalogue, mirroring the "By brand" half of the
+   Products & Services dropdown. Own class names on purpose: site.css uses
+   .dgrid for the homepage division cards and about.html overrides it
+   page-locally for its distributor grid, so neither name is safe to borrow. */
+.brandgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:2rem}
+@media(max-width:820px){.brandgrid{grid-template-columns:1fr}}
+.brandcell{background:var(--white);display:flex;flex-direction:column;align-items:center;text-align:center;gap:.85rem;padding:1.9rem 1.4rem;transition:background .18s}
+.brandcell:hover{background:var(--paper)}
+.brandlogo{height:58px;display:flex;align-items:center;justify-content:center}
+.brandlogo img{max-width:150px;max-height:58px;width:auto;height:auto;object-fit:contain}
+.brandlogo .wm{font-size:.9rem;font-weight:800;letter-spacing:.04em;color:var(--blue-800);line-height:1.25}
+.brandname{font-size:.98rem;font-weight:700;color:var(--blue-800);line-height:1.35}
+.brandwhat{font-size:.88rem;color:var(--muted);line-height:1.45;margin-top:.25rem}
 </style>
 </head>
 <body>
@@ -74,7 +87,26 @@
     <ul class="tabs" id="tabs">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
-      <li class="active"><a href="products-services.html">Products &amp; Services</a></li>
+      <li class="has-drop active">
+        <a href="products-services.html">Products &amp; Services <svg class="caret" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
+        <ul class="drop">
+          <li><span class="glabel">By category</span>
+            <ul class="subdrop">
+              <li><a href="tyre-service/">Tyre Service</a></li>
+              <li><a href="lifts/">Lifts &amp; Handling</a></li>
+              <li><a href="service/">Service Equipment</a></li>
+              <li><a href="welding/">Welding</a></li>
+            </ul>
+          </li>
+          <li><span class="glabel">By brand</span>
+            <ul class="subdrop">
+              <li><a href="airtec/">Airtec</a></li>
+              <li><a href="tyre-service/">HPA FAIP</a></li>
+              <li><a href="raasm/">RAASM</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact Us</a></li>
     </ul>
@@ -142,6 +174,27 @@
         </div>
       </a>
 
+    </div>
+  </div>
+</section>
+
+<!-- ============ BY BRAND ============ -->
+<!-- The second way through the catalogue, matching the "By brand" half of
+     the Products & Services dropdown. Airtec and RAASM have pages of their
+     own because neither brand's range appears on a category page; HPA FAIP
+     points at Tyre Service, where all twelve of its products already sit,
+     rather than repeating them here. -->
+<section class="section white compact">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">By brand</span>
+      <h2 class="h2">The principals we distribute</h2>
+      <p class="lede">Hanindo Automotive is sole distributor in Indonesia for each of these.</p>
+    </div>
+    <div class="brandgrid">
+      <a class="brandcell" href="airtec/"><div class="brandlogo"><img src="../photos/partners/airtec.png" alt="Airtec" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="wm" style="display:none">AIRTEC</span></div><div><div class="brandname">Airtec</div><div class="brandwhat">Digital tyre inflators &mdash; workshop, forecourt and plant</div></div></a>
+      <a class="brandcell" href="tyre-service/"><div class="brandlogo"><img src="../photos/partners/hpa.webp?v=2" alt="HPA FAIP" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="wm" style="display:none">HPA FAIP</span></div><div><div class="brandname">HPA FAIP</div><div class="brandwhat">Aligners, balancers &amp; tyre changers</div></div></a>
+      <a class="brandcell" href="raasm/"><div class="brandlogo"><img src="../photos/partners/raasm.png" alt="RAASM" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="wm" style="display:none">RAASM</span></div><div><div class="brandname">RAASM</div><div class="brandwhat">Oil &amp; lubrication equipment &mdash; workshop and industrial</div></div></a>
     </div>
   </div>
 </section>

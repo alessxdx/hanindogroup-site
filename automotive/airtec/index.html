@@ -4,8 +4,8 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="robots" content="noindex" />
-<title>RAASM — Fluid Handling &amp; Lubrication Equipment | Hanindo Group</title>
-<meta name="description" content="Hanindo Automotive is the sole Indonesian distributor for RAASM — hose reels, pumps, oil and grease dispensing, waste oil handling and centralised lubrication, for workshops and for industry." />
+<title>Airtec — Digital Tyre Inflation | Hanindo Automotive</title>
+<meta name="description" content="Hanindo Automotive is the sole Indonesian distributor for Airtec Corporation — digital tyre inflators for workshops, forecourts, hangars, mines and transport depots." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -16,15 +16,12 @@
 .section{padding:clamp(40px,5vw,64px) 0}
 /* The brand mark sits above the intro rather than in the hero: the banner
    is the flat one the sibling sub-pages use, and a logo dropped on it
-   reads as a watermark. */
+   reads as a watermark. Same treatment as the RAASM page. */
 .brandmark{display:flex;align-items:center;gap:1.1rem;margin-bottom:1.4rem}
 .brandmark img{height:64px;width:auto;max-width:220px;object-fit:contain}
 @media(max-width:640px){.brandmark img{height:48px}}
-/* Sector list. The distributor grid on automotive/about.html looks like
-   this but is built around a logo per cell and is page-local to that file,
-   so these carry their own names rather than borrowing classes that mean
-   something else. Hairline gaps over a tinted background give the ruled
-   table look without eleven separate borders. */
+/* Sector list, shared shape with the RAASM page. Hairline gaps over a
+   tinted background give the ruled table look without a border each. */
 .secgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:1.6rem}
 @media(max-width:900px){.secgrid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.secgrid{grid-template-columns:1fr}}
@@ -32,6 +29,9 @@
 .seccell:hover{background:var(--paper)}
 .secname{font-size:.98rem;font-weight:700;color:var(--blue-800);line-height:1.35}
 .secwhat{font-size:.88rem;color:var(--muted);line-height:1.45;margin-top:.3rem}
+/* Model number sits above the card title, the way the catalogue pages
+   badge a brand above a product name. */
+.mdlno{display:inline-block;font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700;color:#fff;background:var(--blue-800);padding:.24rem .55rem;border-radius:2px;margin-bottom:.5rem}
 </style>
 </head>
 <body>
@@ -95,9 +95,9 @@
 <section class="pagehero">
   <div class="ov"></div>
   <div class="wrap">
-    <div class="crumb"><a href="../../">Hanindo Group</a><span class="sep">/</span><a href="../index.html">Hanindo Automotive</a><span class="sep">/</span><a href="../products-services.html">Products &amp; Services</a><span class="sep">/</span>RAASM</div>
-    <h1>RAASM</h1>
-    <p class="intro">Fluid handling and lubrication equipment from Vicenza, Italy &mdash; hose reels, pumps, dispensing and centralised lubrication systems. Wherever a fluid has to be stored, moved, measured or dispensed, in a workshop or on a plant floor.</p>
+    <div class="crumb"><a href="../../">Hanindo Group</a><span class="sep">/</span><a href="../index.html">Hanindo Automotive</a><span class="sep">/</span><a href="../products-services.html">Products &amp; Services</a><span class="sep">/</span>Airtec</div>
+    <h1>Airtec</h1>
+    <p class="intro">Digital tyre inflation, built in Singapore. Wall-mounted, machine-mounted and high-flow inflators for the service bay, the forecourt, the hangar and the mine.</p>
   </div>
 </section>
 
@@ -106,106 +106,86 @@
   <div class="wrap">
     <div class="reveal">
       <div class="brandmark">
-        <img src="../../photos/partners/raasm.png" alt="RAASM" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
-        <span style="display:none;font-weight:800;letter-spacing:.08em">RAASM</span>
+        <img src="../../photos/partners/airtec.png" alt="Airtec Corporation" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
+        <span style="display:none;font-weight:800;letter-spacing:.08em">AIRTEC CORPORATION</span>
       </div>
       <span class="kicker">Sole distributor for Indonesia</span>
-      <h2 class="h2">One principal, two markets.</h2>
-      <p class="lede" style="max-width:none">RAASM has built fluid handling equipment in Vicenza since 1973, and Hanindo Automotive is its sole distributor in Indonesia. The name is best known here from the workshop &mdash; oil and grease reels, dispensing guns, waste oil drainers &mdash; but that is one of eleven sectors RAASM builds for, and the smaller half of the catalogue.</p>
-      <p class="lede" style="max-width:none">The same pumps, reels and lubrication systems that serve a service bay serve a manufacturing plant, a mine workshop, a fleet depot or a vessel. Hanindo Automotive carries the range for both, with the same stock, parts and factory support behind it.</p>
+      <h2 class="h2">Set the pressure, walk away.</h2>
+      <p class="lede" style="max-width:none">Airtec Corporation designs and builds digital inflation equipment at its head office in Singapore, to ISO 9001:2015 certified by SGS. Hanindo Automotive is its sole distributor in Indonesia.</p>
+      <p class="lede" style="max-width:none">An automatic inflator takes a target pressure and holds a tyre to it &mdash; no gauge, no guesswork, no operator standing over it. Every model reads to &plusmn;0.5% of full scale and covers 5 to 145 psi, so one specification suits a passenger car, a truck and a piece of plant.</p>
       <ul class="checks">
-        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Sole distributor in Indonesia, for the automotive and the industrial range alike</span></li>
-        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Factory-backed parts and support, direct from Vicenza</span></li>
-        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Systems specified, supplied and commissioned by our own engineers</span></li>
+        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Accurate to &plusmn;0.5% of full scale across the range, 5&ndash;145 psi / 0.3&ndash;10.0 bar</span></li>
+        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>IP66 weather-sealed enclosures on the wall-mounted models &mdash; indoor or outdoor</span></li>
+        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Manufactured to ISO 9001:2015, accredited by SGS International Certification Services</span></li>
       </ul>
     </div>
   </div>
 </section>
 
-<!-- ============ PRODUCT RANGE ============ -->
-<!-- Six cards covering the catalogue as RAASM group it. Photographs go in
-     /photos/automotive/raasm/ and are tracked in PHOTOS-NEEDED.txt; until
+<!-- ============ THE RANGE ============ -->
+<!-- Four model families, as Airtec group them. Photographs go in
+     /photos/automotive/airtec/ and are tracked in PHOTOS-NEEDED.txt; until
      they land each card shows the "photo needed" placeholder, so the page
-     is safe to ship without them. The RAASM mark itself stays in
+     is safe to ship without them. The Airtec mark itself stays in
      /photos/partners/ with the other principal logos. -->
 <section class="section paper">
   <div class="wrap">
     <div class="reveal">
       <span class="kicker">The range</span>
-      <h2 class="h2">What RAASM builds.</h2>
-      <p class="lede">Six families, sold as single units or specified together as a system.</p>
+      <h2 class="h2">Four inflators, one pressure range.</h2>
+      <p class="lede">They differ by where they mount and how much air they move, not by what they can inflate.</p>
     </div>
     <div class="pgrid">
 
       <div class="pcard reveal">
         <div class="pbox">
-          <img src="../../photos/automotive/raasm/raasm-hose-reels.jpg" alt="RAASM hose reels" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <img src="../../photos/automotive/airtec/airtec-89mxa.jpg" alt="Airtec 89MXA compact tyre inflator" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
           <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
         </div>
         <div class="pbody">
-          <h4>Hose &amp; Cable Reels</h4>
-          <p>Spring, manual and motorised reels for oil, grease, air, water, diesel and AdBlue, plus cable reels for the same bays.</p>
-          <div class="taglist"><span class="tag">Spring</span><span class="tag">Motorised</span><span class="tag">Trolley-mounted</span></div>
+          <span class="mdlno">89MXA</span>
+          <h4>Compact</h4>
+          <p>Light enough to mount on the tyre changer itself, so the inflator sits where the wheel already is. Passenger cars and vans.</p>
+          <div class="taglist"><span class="tag">Machine-mounted</span><span class="tag">IP40</span><span class="tag">&plusmn;0.5% FS</span></div>
         </div>
       </div>
 
       <div class="pcard reveal d1">
         <div class="pbox">
-          <img src="../../photos/automotive/raasm/raasm-pumps.jpg" alt="RAASM pneumatic and diaphragm pumps" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <img src="../../photos/automotive/airtec/airtec-89mda.jpg" alt="Airtec 89MDA general purpose tyre inflator" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
           <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
         </div>
         <div class="pbody">
-          <h4>Pumps</h4>
-          <p>Pneumatic ratio pumps and air-operated diaphragm pumps, sized by the fluid and the distance it has to travel.</p>
-          <div class="taglist"><span class="tag">Pneumatic</span><span class="tag">Diaphragm</span><span class="tag">Ratio pumps</span></div>
+          <span class="mdlno">89MDA</span>
+          <h4>General Purpose</h4>
+          <p>The workshop default. Wall or surface mounted, sealed to IP66 for indoor or outdoor bays, and rated for anything pneumatic from a trolley wheel to a truck tyre.</p>
+          <div class="taglist"><span class="tag">Wall or surface</span><span class="tag">IP66</span><span class="tag">Trolley to truck</span></div>
         </div>
       </div>
 
       <div class="pcard reveal d2">
         <div class="pbox">
-          <img src="../../photos/automotive/raasm/raasm-dispensing.jpg" alt="RAASM oil and grease dispensing equipment" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <img src="../../photos/automotive/airtec/airtec-89xda.jpg" alt="Airtec 89XDA and XDD heavy duty tyre inflator" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
           <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
         </div>
         <div class="pbody">
-          <h4>Oil &amp; Grease Dispensing</h4>
-          <p>Metered guns, dispensers and service columns for oil, grease, antifreeze and screenwash, plus brake bleeders and tyre inflators.</p>
-          <div class="taglist"><span class="tag">Metered guns</span><span class="tag">Service columns</span><span class="tag">Trolleys</span></div>
+          <span class="mdlno">89XDA / XDD</span>
+          <h4>Heavy Duty</h4>
+          <p>Diecast aluminium housing for bays that take knocks. The XDD variant shows set and actual pressure on separate displays, so an operator can watch a tyre come up.</p>
+          <div class="taglist"><span class="tag">Diecast aluminium</span><span class="tag">IP66</span><span class="tag">Dual display (XDD)</span></div>
         </div>
       </div>
 
       <div class="pcard reveal">
         <div class="pbox">
-          <img src="../../photos/automotive/raasm/raasm-waste-oil.jpg" alt="RAASM waste oil drainers and suction units" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <img src="../../photos/automotive/airtec/airtec-89xdb.jpg" alt="Airtec 89XDB and XDE high flow tyre inflator" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
           <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
         </div>
         <div class="pbody">
-          <h4>Waste Oil Handling</h4>
-          <p>Gravity drainers, suction units and combined drainer-suction trolleys for taking used oil out cleanly and storing it safely.</p>
-          <div class="taglist"><span class="tag">Drainers</span><span class="tag">Suction units</span><span class="tag">Ram hoists</span></div>
-        </div>
-      </div>
-
-      <div class="pcard reveal d1">
-        <div class="pbox">
-          <img src="../../photos/automotive/raasm/raasm-centralised-lubrication.jpg" alt="RAASM centralised lubrication system" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
-          <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
-        </div>
-        <div class="pbody">
-          <h4>Centralised Lubrication</h4>
-          <p>Single-line, dual-line and progressive systems that lubricate a machine or a whole line on schedule, without stopping it.</p>
-          <div class="taglist"><span class="tag">Single line</span><span class="tag">Dual line</span><span class="tag">Progressive</span></div>
-        </div>
-      </div>
-
-      <div class="pcard reveal d2">
-        <div class="pbox">
-          <img src="../../photos/automotive/raasm/raasm-fluid-control.jpg" alt="RAASM fluid level and control systems" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
-          <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
-        </div>
-        <div class="pbody">
-          <h4>Fluid Level &amp; Control</h4>
-          <p>FLS level monitoring and FCS fluid control &mdash; knowing what is in every drum and tank, and who drew what from it.</p>
-          <div class="taglist"><span class="tag">FLS</span><span class="tag">FCS</span><span class="tag">Rotary slip rings</span></div>
+          <span class="mdlno">89XDB / XDE</span>
+          <h4>High Flow</h4>
+          <p>Over 4,000 litres a minute, and able to run more than one tyre at once. For fleet and plant work, where the job is a set of six rather than a single wheel.</p>
+          <div class="taglist"><span class="tag">4,000+ l/min</span><span class="tag">Multi-tyre</span><span class="tag">IP66</span></div>
         </div>
       </div>
 
@@ -214,31 +194,24 @@
 </section>
 
 <!-- ============ SECTORS ============ -->
-<!-- The point of the page: RAASM is not an automotive-only brand. Listed as
-     text rather than photo cards so the section carries no photo debt. -->
 <section class="section white">
   <div class="wrap">
     <div class="reveal">
       <span class="kicker">Sectors</span>
-      <h2 class="h2">Eleven industries, one catalogue.</h2>
-      <p class="lede" style="max-width:none">RAASM equipment is specified across eleven sectors. The workshop is the one most people know, but the pumps and reels on a service bay are the same ones feeding a production line or a mine fleet &mdash; and Hanindo Automotive supplies both.</p>
+      <h2 class="h2">Anywhere a tyre holds air.</h2>
+      <p class="lede" style="max-width:none">The workshop range is one part of what Airtec build. The same inflation technology runs on forecourts, in hangars and across mine sites, and Hanindo Automotive can supply beyond the service bay.</p>
     </div>
     <div class="secgrid">
-      <div class="seccell reveal"><div class="secname">Automotive</div><div class="secwhat">Service bays, fast-fit chains and dealer workshops</div></div>
-      <div class="seccell reveal"><div class="secname">Manufacturing</div><div class="secwhat">Production lines and machine lubrication</div></div>
-      <div class="seccell reveal"><div class="secname">Mining</div><div class="secwhat">Fleet workshops and heavy equipment servicing</div></div>
-      <div class="seccell reveal"><div class="secname">Chemical Industry</div><div class="secwhat">Transfer and dosing of aggressive fluids</div></div>
-      <div class="seccell reveal"><div class="secname">Lube Trucks &amp; Transport</div><div class="secwhat">Mobile lubrication units and depot fleets</div></div>
-      <div class="seccell reveal"><div class="secname">Shipping &amp; Offshore</div><div class="secwhat">Engine rooms, deck equipment and yards</div></div>
-      <div class="seccell reveal"><div class="secname">Railway</div><div class="secwhat">Rolling stock depots and maintenance sheds</div></div>
-      <div class="seccell reveal"><div class="secname">Aeronautics</div><div class="secwhat">Hangar servicing and ground support</div></div>
-      <div class="seccell reveal"><div class="secname">Agriculture</div><div class="secwhat">Machinery servicing and on-farm fuel handling</div></div>
-      <div class="seccell reveal"><div class="secname">Building &amp; Road Construction</div><div class="secwhat">Plant maintenance on and off site</div></div>
-      <div class="seccell reveal"><div class="secname">Cleaning</div><div class="secwhat">Pressure washing and detergent distribution</div></div>
+      <div class="seccell reveal"><div class="secname">Automotive</div><div class="secwhat">Workshops, tyre shops and service centres</div></div>
+      <div class="seccell reveal"><div class="secname">Petroleum Retail</div><div class="secwhat">Forecourt inflators for customer use</div></div>
+      <div class="seccell reveal"><div class="secname">Aviation</div><div class="secwhat">High-pressure aircraft tyre inflation</div></div>
+      <div class="seccell reveal"><div class="secname">Mining &amp; Construction</div><div class="secwhat">OTR tyres and high-flow plant work</div></div>
+      <div class="seccell reveal"><div class="secname">Transport</div><div class="secwhat">Depot inflation and axle load indicators</div></div>
+      <div class="seccell reveal"><div class="secname">OEM &amp; Vending</div><div class="secwhat">Inflation kits, vending units and nitrogen analysers</div></div>
     </div>
     <div class="actions reveal" style="margin-top:2.2rem">
-      <a class="btn btn-ghost" href="../../partners/">All partners &amp; principals <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <a class="btn btn-ghost" href="../products-services.html">Products &amp; Services <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-ghost" href="../raasm/">RAASM <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
   </div>
 </section>
@@ -249,8 +222,8 @@
   <div class="wrap">
     <div>
       <span class="eyebrow">Talk to Hanindo Automotive</span>
-      <h2>Moving a fluid,<br/>wherever you are moving it.</h2>
-      <p class="sub">Tell us the fluid, the distance and the duty &mdash; a single reel over a service bay, or a lubrication system across a plant &mdash; and our engineers will specify the RAASM equipment for it, supply it and commission it.</p>
+      <h2>How many bays,<br/>and how big are the tyres?</h2>
+      <p class="sub">Tell us where the inflator has to sit and what it has to fill &mdash; a changer in one bay, a row of them, a forecourt or a mine workshop &mdash; and we will specify the model, supply it and install it.</p>
       <div class="actions">
         <a class="btn btn-fire" href="mailto:info@hanindogroup.com">Email our team <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></a>
         <a class="btn btn-ghost" href="../contact.html">Contact page <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -270,7 +243,7 @@
     <div class="foot-grid">
       <div class="fbrand">
         <strong>HANINDO GROUP</strong><span>Your Solution Provider</span>
-        <p>Your technology one stop solution — serving the oil &amp; gas, automation, automotive and fire protection industries in Indonesia since 1987.</p>
+        <p>Your technology one stop solution &mdash; serving the oil &amp; gas, automation, automotive and fire protection industries in Indonesia since 1987.</p>
       </div>
       <div>
         <h4>Hanindo Automotive</h4>
@@ -298,7 +271,7 @@
         <span class="cl"><b>Jl. Fatmawati No. 55</b></span><span class="cl">Jakarta 12410, Indonesia</span><span class="cl">Tel: <b>+62 21 75900909</b></span><span class="cl">info@hanindogroup.com</span>
       </div>
     </div>
-    <div class="foot-bottom"><span>© 2026 Hanindo Group. All Rights Reserved.</span><span>PT. Hanindo Automotive &mdash; RAASM</span></div>
+    <div class="foot-bottom"><span>&copy; 2026 Hanindo Group. All Rights Reserved.</span><span>PT. Hanindo Automotive &mdash; Airtec</span></div>
   </div>
 </footer>
 

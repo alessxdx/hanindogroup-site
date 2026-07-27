@@ -359,6 +359,22 @@ Products & Services page now indexes the four catalogue sub-pages
 instead, using the real product shots already in /photos/automotive/products/,
 so no placeholder slots remain on that page.
 
+AIRTEC PAGE  (/automotive/airtec/)
+Airtec had no products anywhere on the site before this page — unlike
+HPA FAIP, whose twelve products all sit on the Tyre Service page — so a
+brand page was the only place its range could live. Content taken from
+airtecasia.com. Reached from the Products & Services dropdown, the
+brand grid on that page, and the distributor grid on About Us.
+
+Product shots live in /photos/automotive/airtec/, one per card, four
+cards. Missing ones fall back to the "photo needed" placeholder. Cut
+out on white, ~800px wide, shown up to about 260px tall.
+
+airtec-89mxa.jpg              89MXA compact, machine-mounted
+airtec-89mda.jpg              89MDA general purpose, wall mounted
+airtec-89xda.jpg              89XDA / XDD heavy duty, diecast aluminium
+airtec-89xdb.jpg              89XDB / XDE high flow
+
 RAASM PAGE  (/automotive/raasm/)
 A page for the brand rather than for a product category, because RAASM
 sells into eleven sectors and the workshop is the smaller half of its
