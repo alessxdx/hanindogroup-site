@@ -198,19 +198,25 @@ img{max-width:100%;display:block}
 /* ---------- OFFICE CARDS ----------
    A photograph over the address, for pages that list where a company
    works. Flat like the rest of the system: hairline border, no shadow,
-   hover changes the border colour only. */
-.offgrid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.4rem}
+   hover changes the border colour only.
+
+   Sized tight on purpose. These cards carry three or four lines of copy
+   between them, so at the old 190px photo and 1.1rem body padding the
+   pair ran taller than the section above and read as the page's main
+   event rather than a footnote to it. The photo is a signboard, legible
+   well below that height. */
+.offgrid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.15rem}
 @media(max-width:820px){.offgrid{grid-template-columns:1fr}}
 .off{background:var(--white);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:border-color .18s}
 .off:hover{border-color:var(--blue-800)}
-.off .shot{position:relative;height:190px;background:var(--blue-900);border-bottom:1px solid var(--line)}
+.off .shot{position:relative;height:148px;background:var(--blue-900);border-bottom:1px solid var(--line)}
 .off .shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .off .shot .ph{background:var(--blue-900);color:#7b8ea9}
 .off .shot .ph svg{stroke:#5d6f8c}
-.offbody{padding:1.1rem 1.2rem 1.25rem}
-.offbody h3{font-weight:700;font-size:1.1rem;color:var(--blue-800);margin-bottom:.4rem}
-.offbody p{color:var(--muted);font-size:.9rem;line-height:1.55}
-.offbody .addr{margin-top:.7rem;font-size:.84rem;color:var(--ink);opacity:.75}
+.offbody{padding:.85rem 1rem .95rem}
+.offbody h3{font-weight:700;font-size:1.02rem;color:var(--blue-800);margin-bottom:.28rem}
+.offbody p{color:var(--muted);font-size:.86rem;line-height:1.5}
+.offbody .addr{margin-top:.5rem;font-size:.8rem;color:var(--ink);opacity:.75}
 
 /* ---------- WHY CHOOSE US ----------
    No card box: a tinted icon tile over centred copy, each column ending
