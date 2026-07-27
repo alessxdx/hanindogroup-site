@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex" />
+<title>Automatic Tank Gauging — Hanindo Citra | Hanindo Group</title>
+<meta name="description" content="Veeder-Root automatic tank gauging supplied by PT. Hanindo Citra — TLS-450 PLUS, TLS4 and TLS4B consoles with Mag Plus and Mag-XL magnetostrictive probes." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/site.css?v=202607251030" />
+<style>
+/* Same wide-row treatment as the dispensers page: manufacturer shot on the
+   left, copy and figures on the right. The shots are cut out onto white, so
+   the panel is white too and the image is contained rather than cropped. */
+.drow{display:grid;grid-template-columns:minmax(0,400px) 1fr;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-top:1.5rem}
+@media(max-width:860px){.drow{grid-template-columns:1fr}}
+.drow .shot{display:flex;align-items:center;justify-content:center;min-height:320px;padding:1.7rem;background:var(--white);border-right:1px solid var(--line);position:relative}
+.drow .shot img{max-width:100%;max-height:300px;object-fit:contain}
+@media(max-width:860px){.drow .shot{min-height:240px;border-right:0;border-bottom:1px solid var(--line)}}
+
+.drow .txt{padding:1.9rem 2.1rem}
+.drow .sub{display:block;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--brand);margin-bottom:.35rem}
+.drow h3{font-size:1.45rem;font-weight:800;color:var(--blue-800);margin-bottom:.6rem}
+.drow p{font-size:.92rem;line-height:1.65;color:var(--muted)}
+
+.dfeat{display:flex;flex-wrap:wrap;gap:.35rem 1.2rem;margin:1rem 0 1.3rem;list-style:none}
+.dfeat li{position:relative;padding-left:.95rem;font-size:.85rem;color:var(--muted)}
+.dfeat li::before{content:"";position:absolute;left:0;top:.62em;width:5px;height:5px;border-radius:50%;background:var(--brand)}
+
+.dspec .k{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue-800);margin-bottom:.5rem}
+.dspec .tag{font-size:.8rem;padding:.35rem .7rem}
+
+/* A console and a probe are different kinds of thing; the range splits in
+   two rather than running as one undifferentiated list. */
+.grouphead{margin-top:3.2rem}
+.grouphead:first-of-type{margin-top:0}
+</style>
+</head>
+<body>
+
+<!-- ============ SITE HEADER (company-local) ============ -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="brands">
+      <a class="brand" href="../" aria-label="Hanindo Group — main page">
+        <img src="../photos/brand/logo-lockup.png" alt="Hanindo Group — Your Solution Provider" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
+        <span class="btxt" style="display:none"><strong>HANINDOGROUP</strong><span>Your Solution Provider</span></span>
+      </a>
+      <a class="cobrand" href="index.html" aria-label="Hanindo Citra — home">
+        <img class="cologo" src="../photos/brand/logo-citra.png" alt="Hanindo Citra — Member of the Hanindo Group of Companies" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
+        <span class="colabel" style="display:none">HANINDO CITRA</span>
+      </a>
+    </div>
+    <div class="top-right">
+      <a class="grouplink" href="../" aria-label="Back to Hanindo Group"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg><span>Hanindo Group</span></a>
+      <form class="searchbox" role="search" onsubmit="return hsearch(this)">
+        <input type="text" name="q" placeholder="Search" aria-label="Search" />
+        <button type="submit" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></button>
+      </form>
+    </div>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</div>
+<header class="navbar">
+  <div class="wrap">
+    <ul class="tabs" id="tabs">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="active"><a href="products-services.html">Products &amp; Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</header>
+<!-- END SITE HEADER -->
+
+<!-- ============ PAGE HERO ============ -->
+<section class="pagehero">
+  <div class="bg"><img src="../photos/citra/hero/hero-citra.webp" alt="" onerror="this.style.display='none'" /></div>
+  <div class="ov"></div><div class="glow"></div>
+  <div class="wrap">
+    <div class="crumb"><a href="../">Hanindo Group</a><span class="sep">/</span><a href="index.html">Hanindo Citra</a><span class="sep">/</span><a href="products-services.html">Products &amp; Services</a><span class="sep">/</span>Automatic Tank Gauging</div>
+    <h1>Know what is in <span class="fx">every tank.</span></h1>
+    <p class="intro">A Veeder-Root tank gauging system is a console and a probe working as a pair &mdash; the probe measures the tank, the console turns those readings into inventory, alarms and compliance records. Three consoles and two probe variants cover sites from a single filling station to a bulk terminal.</p>
+  </div>
+</section>
+
+<!-- ============ CONSOLES ============ -->
+<section class="section white">
+  <div class="wrap">
+    <div class="reveal grouphead">
+      <span class="kicker">Veeder-Root consoles</span>
+      <h2 class="h2">The console.</h2>
+      <p class="lede">The console is sized by how many tanks and sensors the site has to carry, and by whether it needs continuous leak testing. All three run a colour touchscreen, calculate temperature-compensated volumes, and can be reached remotely from a browser.</p>
+    </div>
+
+    <article class="drow reveal">
+      <div class="shot">
+        <img src="../photos/citra/products/atg/tls-450plus.webp" alt="Veeder-Root TLS-450 PLUS automatic tank gauge console" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+        <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
+      </div>
+      <div class="txt">
+        <span class="sub">Connected &middot; secure &middot; compliant</span>
+        <h3>TLS-450 PLUS</h3>
+        <p>The flagship console, for mid to large sites and for anywhere the tank count is likely to grow. Standard configuration carries up to 64 inputs and expands to 256, so a site adds tanks and sensors rather than replacing the console. An 8&Prime; colour WVGA touchscreen fronts it, and against the previous generation of tank gauge it brings five times the processing speed, eight times the memory and twice the data storage. Static tank testing is standard; continuous statistical leak detection and pressurised line leak detection are ordered as options. Inventory, alarms and diagnostics can be reached from a phone, a tablet or a browser, so a site is checked &mdash; and often resolved &mdash; without anyone driving to it.</p>
+        <ul class="dfeat">
+          <li>8&Prime; colour WVGA touchscreen</li>
+          <li>Workflow Wizard configuration</li>
+          <li>TLS-XB expansion boxes</li>
+          <li>Switched Ethernet and SSL</li>
+          <li>Three years of stored data</li>
+        </ul>
+        <div class="dspec">
+          <div class="k">Inputs</div>
+          <div class="taglist"><span class="tag">64 standard</span><span class="tag">256 expanded</span><span class="tag">Up to 15 lines leak tested</span></div>
+        </div>
+        <div class="dspec" style="margin-top:1rem">
+          <div class="k">Remote access</div>
+          <div class="taglist"><span class="tag">PLUS VIEW app</span><span class="tag">Remote View app</span><span class="tag">Web-enabled</span></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="drow reveal">
+      <div class="shot">
+        <img src="../photos/citra/products/atg/tls4.webp" alt="Veeder-Root TLS4 and TLS4B automatic tank gauge consoles" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+        <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
+      </div>
+      <div class="txt">
+        <span class="sub">Compact and powerful &middot; 6 to 12 tanks</span>
+        <h3>TLS4 and TLS4B</h3>
+        <p>Two variants of one compact, self-contained console, for the smaller service station and for commercial and industrial sites monitoring six to twelve tanks. They differ in capacity and nothing else that matters day to day: TLS4 takes up to 12 inputs in standard configuration, TLS4B up to 6. Both reconcile meter transaction sales against AccuChart 3.0 tank calibration, so site variance is visible rather than inferred, and both flag unexplained inventory movements during quiet periods.</p>
+        <ul class="dfeat">
+          <li>Workflow Wizard configuration</li>
+          <li>Customised home screen and favourites</li>
+          <li>Business inventory reconciliation</li>
+          <li>Timed sudden loss detection</li>
+          <li>Calibration in as little as 14 days</li>
+          <li>Daily, monthly and rolling reports</li>
+          <li>Built-in help for troubleshooting</li>
+        </ul>
+        <div class="dspec">
+          <div class="k">Variants</div>
+          <div class="taglist"><span class="tag">TLS4 &mdash; 12 inputs</span><span class="tag">TLS4B &mdash; 6 inputs</span></div>
+        </div>
+      </div>
+    </article>
+
+    <div class="reveal grouphead">
+      <span class="kicker">Veeder-Root probes</span>
+      <h2 class="h2">The probe.</h2>
+      <p class="lede">Magnetostrictive probes read product height, temperature and water continuously, with no moving parts to service. Which one a tank takes depends on how tall it is and whether it sits below ground or above it.</p>
+    </div>
+
+    <article class="drow reveal">
+      <div class="shot">
+        <img src="../photos/citra/products/atg/mag-probe.webp" alt="Veeder-Root magnetostrictive in-tank probe" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+        <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
+      </div>
+      <div class="txt">
+        <span class="sub">Mag Plus &middot; Mag-XL</span>
+        <h3>Magnetostrictive probes</h3>
+        <p>Stainless steel tubing with a high-grade polymer canister, reading product height, temperature and water continuously with nothing that wears. Water is the reading that earns its keep: catching it in the tank is what stops it reaching the submersible pump. Petrol, diesel, LPG and biofuels all report into the same system, and a probe is ordered for inventory control alone or with leak detection, with or without water detection.</p>
+        <p style="margin-top:.8rem">Two variants cover the tank types. <strong>Mag Plus</strong> is the standard in-tank probe for forecourt tanks, underground or above. <strong>Mag-XL</strong> is the flexible version for tall aboveground tanks &mdash; fuel depots, marine terminals, aviation fuelling &mdash; measuring to 16.6&nbsp;m on the TLS-450 family and putting bulk storage on the same console as the forecourt, rather than on a system of its own.</p>
+        <ul class="dfeat">
+          <li>Multipoint temperature measurement</li>
+          <li>Water detection before dispensing</li>
+          <li>2&Prime; and 4&Prime; float kits</li>
+          <li>Fits tank entries from 1&Prime;</li>
+          <li>Tanks to 12&prime; diameter; custom lengths</li>
+          <li>Linearity &plusmn;0.01% (Mag-XL)</li>
+          <li>No routine maintenance</li>
+        </ul>
+        <div class="dspec">
+          <div class="k">Certified tank testing</div>
+          <div class="taglist"><span class="tag">US EPA 0.38 lph</span><span class="tag">ICIM 0.10 lph</span><span class="tag">Inventory-only variant</span></div>
+        </div>
+      </div>
+    </article>
+
+    <div class="actions reveal" style="margin-top:2rem">
+      <a class="btn btn-ghost" href="products-services.html">Back to Products &amp; Services <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact">
+  <div class="glow"></div>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Talk to Hanindo Citra</span>
+      <h2>Not sure which console<br/>your site needs?</h2>
+      <p class="sub">Tell us the tank count, the tank heights and whether you need continuous leak testing, and our team will scope the console, probes and sensors to match &mdash; and install and commission them.</p>
+      <div class="actions">
+        <a class="btn btn-fire" href="mailto:info@hanindogroup.com">Email our team <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></a>
+        <a class="btn btn-ghost" href="contact.html">Contact page <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+    <div class="info">
+      <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div><div><div class="k">Head Office</div><div class="v">Jl. Fatmawati No. 55, Jakarta 12410, Indonesia</div></div></div>
+      <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 5c0 8 7 15 15 15v-3l-4-2-2 2a12 12 0 01-6-6l2-2-2-4H4z"/></svg></div><div><div class="k">Phone</div><div class="v">+62 21 75900909</div></div></div>
+      <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></div><div><div class="k">Email</div><div class="v">info@hanindogroup.com</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="fbrand">
+        <strong>HANINDO GROUP</strong><span>Your Solution Provider</span>
+        <p>Your technology one stop solution &mdash; serving the oil &amp; gas, automation, automotive and fire protection industries in Indonesia since 1987.</p>
+      </div>
+      <div>
+        <h4>Hanindo Citra</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products-services.html">Products &amp; Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Our Companies</h4>
+        <ul>
+          <li><a href="../citra/">Hanindo Citra</a></li>
+          <li><a href="../flowtech-engineering/">Flowtech Engineering</a></li>
+          <li><a href="../automotive/">Hanindo Automotive</a></li>
+          <li><a href="../automation/">Hanindo Automation Solutions</a></li>
+          <li><a href="../printer-pos/">Gralessando Pte Ltd</a></li>
+          <li><a href="../shanghai/">Hanindo Shanghai</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Head Office</h4>
+        <span class="cl"><b>Jl. Fatmawati No. 55</b></span><span class="cl">Jakarta 12410, Indonesia</span><span class="cl">Tel: <b>+62 21 75900909</b></span><span class="cl">info@hanindogroup.com</span>
+      </div>
+    </div>
+    <div class="foot-bottom"><span>&copy; 2026 Hanindo Group. All Rights Reserved.</span><span>PT. Hanindo Citra</span></div>
+  </div>
+</footer>
+
+<script>
+/* header search -> site-scoped web search */
+function hsearch(f){var q=(f.q.value||'').trim();if(!q)return false;window.open('https://www.google.com/search?q=site%3Ahanindogroup.com+'+encodeURIComponent(q),'_blank','noopener');return false;}
+/* mobile menu */
+(function(){var b=document.getElementById('burger'),t=document.getElementById('tabs');if(b&&t){b.addEventListener('click',function(){var o=t.classList.toggle('open');b.setAttribute('aria-expanded',o);});}})();
+/* reveal */
+(function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
+</script>
+</body>
+</html>

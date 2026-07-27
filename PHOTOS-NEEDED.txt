@@ -214,11 +214,12 @@ TANK GAUGING PAGE  (/citra/tank-gauging.html)
 Product shots live in /photos/citra/products/atg/. Missing ones fall back
 to the "photo needed" placeholder, so the page is safe to ship without
 them. Cut out on white, ~1400px wide, shown up to 300px tall.
+TLS4 and TLS4B share a row (same console, two capacities), and Mag Plus
+and Mag-XL share one (same probe, two tank types), so each pair needs one
+shot rather than two.
 tls-450plus.webp            TLS-450 PLUS console                      [DONE]
-tls4.webp                   TLS4 console
-tls4b.webp                  TLS4B console
-mag-plus.webp               Mag Plus in-tank probe
-mag-xl.webp                 Mag-XL flexible probe for tall tanks
+tls4.webp                   TLS4 and TLS4B consoles together
+mag-probe.webp              Magnetostrictive in-tank probe
 
 CUSTOMER LOGOS
 The "Customer base" wall on /citra/index.html has 30 logo slots.
