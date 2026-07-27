@@ -213,10 +213,17 @@ img{max-width:100%;display:block}
 .off .shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .off .shot .ph{background:var(--blue-900);color:#7b8ea9}
 .off .shot .ph svg{stroke:#5d6f8c}
-.offbody{padding:.85rem 1rem .95rem}
+/* The body fills the card and the address is pushed to its foot, so the
+   addresses sit on a common line across the row however long each
+   description runs. The grid already stretches the cards to equal
+   height, so bottom-aligning the block aligns its first line too while
+   the two addresses wrap to the same number of lines. margin-top:auto
+   does the pushing; the padding keeps a floor under the gap for the
+   case where a description grows enough to close it up. */
+.offbody{padding:.85rem 1rem .95rem;flex:1;display:flex;flex-direction:column}
 .offbody h3{font-weight:700;font-size:1.02rem;color:var(--blue-800);margin-bottom:.28rem}
 .offbody p{color:var(--muted);font-size:.86rem;line-height:1.5}
-.offbody .addr{margin-top:.5rem;font-size:.8rem;color:var(--ink);opacity:.75}
+.offbody .addr{margin-top:auto;padding-top:.55rem;font-size:.8rem;color:var(--ink);opacity:.75}
 
 /* ---------- WHY CHOOSE US ----------
    No card box: a tinted icon tile over centred copy, each column ending
