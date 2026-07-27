@@ -416,10 +416,16 @@ united-tractors.png           PT United Tractors Tbk          [COMPLETE]
 sefas.png                     Sefas                           [COMPLETE]
 pana-oil.png                  Pana Oil                        [COMPLETE]
 jantrakakikaki.png            Jantrakakikaki                  [COMPLETE]
-                              (supplied by Custom. Sefas is 166px wide
-                              and Pana Oil 200px, both well under the
-                              usual width — fine at cell size, soft if
-                              drawn larger.)
+                              (Pana Oil and Jantra came from Custom.
+                              Sefas is now the 543x150 original from
+                              sefasgroup.com/public/images/logo-tagline.png,
+                              replacing a 142x38 copy that was being
+                              stretched to fill a 53px cell and showed
+                              it. The same folder has logo.png, the
+                              wordmark without the tagline, if the fine
+                              "Your Business Our Service" line is ever
+                              dropped the way the Honda and Daihatsu
+                              captions were.)
 
 Nothing outstanding: all 32 cells carry a logo. Goodyear, Accelera and
 PT Burangkeng Maju Tehnik were dropped from the wall rather than left
