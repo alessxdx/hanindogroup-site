@@ -111,6 +111,11 @@ img{max-width:100%;display:block}
 .burger span{width:24px;height:2px;background:#fff;border-radius:2px}
 @media(max-width:860px){
   .top-right{display:none}.burger{display:flex}
+  /* The bars are white for a burger sitting in the dark navbar, but this
+     one sits in the white topbar, so it was white on white and read as
+     missing. site.css recolours its own burger the same way at this
+     width; this sheet loads after it and has to repeat it. */
+  .burger span{background:var(--navy-800)}
   .tabs{position:absolute;left:0;right:0;top:100%;flex-direction:column;background:var(--navy-800);transform:translateY(-12px);opacity:0;visibility:hidden;transition:.2s;box-shadow:0 24px 40px -24px rgba(0,0,0,.5)}
   .navbar .wrap{position:relative;justify-content:flex-end}
   .tabs.open{transform:translateY(0);opacity:1;visibility:visible}
