@@ -359,6 +359,22 @@ Products & Services page now indexes the four catalogue sub-pages
 instead, using the real product shots already in /photos/automotive/products/,
 so no placeholder slots remain on that page.
 
+CATALOGUE CARD THUMBNAILS  (/automotive/products-services.html)
+The "What we offer" grid runs six cards. Four use a single product shot
+already in /photos/automotive/products/. The two new ones want the
+supplied lineup images — several units composited on white, the way
+citra-atg-lineup.png works on the Citra card. Both go in
+/photos/automotive/products/, ~800px wide, transparent or white,
+drawn 132px tall.
+
+airtec-lineup.png             The five Airtec inflators together
+raasm-lineup.png              RAASM drainers, reels and pumps together
+
+Until they arrive both cards show their title and text with no image —
+the .cat card hides a failed shot rather than showing a placeholder, so
+the card stays tidy but looks empty next to the other four. These two
+are worth doing before the page is shown to anyone.
+
 AIRTEC PAGE  (/automotive/airtec/)
 Airtec had no products anywhere on the site before this page — unlike
 HPA FAIP, whose twelve products all sit on the Tyre Service page — so a
