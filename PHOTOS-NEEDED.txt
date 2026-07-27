@@ -198,7 +198,7 @@ HANINDO CITRA  (/citra/)
 hero-citra.webp           DONE — page hero, forecourt at dusk (1536x1024)
 citra-forecourt.jpg         Intro section — station Hanindo equipped
 citra-advanz.jpg            Product card — AdvanZ POS/BOS screen or terminal
-citra-enabler.webp          Product card — ITL Enabler controller range
+citra-enabler.webp          Product card — ITL Enabler controller range [DONE]
 citra-flowmeter.png         Product card — TCS flow meters            [DONE]
 citra-atg.webp              Product card — Veeder-Root ATG range      [DONE]
 citra-stp.webp              Product card — submersible turbine pumps  [DONE]
@@ -215,17 +215,24 @@ FORECOURT CONTROLLER PAGE  (/citra/forecourt-controllers.html)
 Product shots live in /photos/citra/products/enabler/. Missing ones fall
 back to the "photo needed" placeholder, so the page is safe to ship
 without them. Cut out on white, ~1400px wide, shown up to 300px tall.
-All four appear in the ITL Enabler Express brochure and can be lifted
-from it if ITL do not supply separates.
-enabler-express.webp        Enabler Express PCI Express card
-enabler-ethernet.webp       Enabler Ethernet appliance
-enabler-embedded.webp       Enabler Embedded unit
-fdm.webp                    Forecourt Distribution Module board
+enabler-express.webp        Enabler Express PCI Express card           [DONE]
+enabler-ethernet.webp       Enabler Ethernet appliance                 [DONE]
+enabler-embedded.webp       Enabler Embedded unit                      [DONE]
+fdm.webp                    Forecourt Distribution Module board        [DONE]
 
-The Express card and the FDM board are the two shots the brochure carries
-at usable size; the Ethernet and Embedded units are not pictured in it, so
-those two need to come from ITL. Do NOT stand in an Express card photo for
-either — they are visibly different products.
+All four are in, supplied as PNG and converted to WebP alongside — the
+.png is the source, the .webp is what the page loads. They came in at
+370-620px tall rather than the ~1400px wide the slot is specced for, so
+they render roughly 1:1 at the 300px display height and will look soft
+on a high-density screen. Fine to ship; ask ITL for press-resolution
+originals if the page is ever printed or the panel grows.
+
+Ethernet and Embedded are both black wall-boxes with a window onto the
+board and are easy to mix up. The Embedded is the taller unit with the
+LCD reading "Network Status"; the Ethernet is the squarer one with no
+display. Neither is pictured in the Express brochure, so there is no
+second source to check a swap against — if either is ever replaced,
+confirm the unit with ITL rather than matching on appearance.
 
 TANK GAUGING PAGE  (/citra/tank-gauging.html)
 Product shots live in /photos/citra/products/atg/. Missing ones fall back
