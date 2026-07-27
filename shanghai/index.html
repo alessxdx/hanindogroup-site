@@ -149,21 +149,19 @@
 
 <!-- ============ CUSTOMER BASE ============ -->
 <!-- Same wall as the Citra and Gralessando pages. Each slot falls back to
-     the customer's name if its logo file is missing — which is what the
-     placeholder row below is doing until the China customer list arrives.
-     Replace each .w with a real one:
+     the customer's name if its logo file is missing.
 
-       <div class="w t2 reveal"><img src="../photos/customers/NAME.png"
-         alt="Customer Name" loading="lazy"
-         onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'"
-         /><span class="nm" style="display:none">Customer Name</span></div>
+     Two bands: .t1 for the five accounts that carry the most weight, .t2
+     for the rest. The t1 band is in the order the business ranks them
+     rather than alphabetically — the other walls sort within a tier, but
+     these five were handed over ranked. The t2 band is alphabetical.
 
-     The tier class sets how large the logo is drawn: .t1 for the biggest
-     accounts, .t2 for the body of the list, .t3 for the rest. Order by
-     tier, then alphabetically within it — the placeholders are all .t2
-     because nothing is ranked yet. Logo files go in /photos/customers/,
-     shared with the other two walls, so any customer already listed there
-     needs no new file.
+     The shape class after the tier corrects for proportion: .sq for the
+     square-ish marks, .mid for the middling ones, nothing for wide
+     wordmarks. See the LOGO WALL block in site.css for why.
+
+     Logo files live in /photos/customers/, shared with the other two
+     walls, so any customer already listed there needs no new file.
      No "paper": the product strip above is already grey, and this would
      otherwise land grey on grey. -->
 <section class="customers" aria-label="Customer base">
@@ -171,11 +169,24 @@
   <div class="wrap">
     <div class="wall banded">
       <div class="tier">
-        <div class="w t2 reveal"><span class="nm">Logo to come</span></div>
-        <div class="w t2 reveal"><span class="nm">Logo to come</span></div>
-        <div class="w t2 reveal"><span class="nm">Logo to come</span></div>
-        <div class="w t2 reveal"><span class="nm">Logo to come</span></div>
-        <div class="w t2 reveal"><span class="nm">Logo to come</span></div>
+        <div class="w t1 mid reveal"><img src="../photos/customers/histonetec.jpg" alt="HiStone" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">HiStone</span></div>
+        <div class="w t1 mid reveal"><img src="../photos/customers/inspur.jpg" alt="Inspur" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Inspur</span></div>
+        <div class="w t1 mid reveal"><img src="../photos/customers/ccl.jpg" alt="CCL" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">CCL</span></div>
+        <div class="w t1 reveal"><img src="../photos/customers/elis-infotech.png" alt="Elis Infotech" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Elis Infotech</span></div>
+        <div class="w t1 mid reveal"><img src="../photos/customers/getinge.jpg" alt="Getinge" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Getinge</span></div>
+      </div>
+      <div class="tier">
+        <div class="w t2 mid reveal"><img src="../photos/customers/damo.jpg" alt="DEMO" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">DEMO</span></div>
+        <div class="w t2 sq reveal"><img src="../photos/customers/golong.jpg" alt="Hangzhou GOLONG Technology" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Hangzhou GOLONG Technology</span></div>
+        <div class="w t2 mid reveal"><img src="../photos/customers/hantai.jpg" alt="Hantai Precision Industry" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Hantai Precision Industry</span></div>
+        <!-- Name-only until a usable mark arrives: the supplied file was a
+             blurred thumbnail fragment rather than a logo, so it was not
+             committed. Drop a real ht-kiosk.png in /photos/customers/ and
+             give this cell the same img as its neighbours. -->
+        <div class="w t2 reveal"><span class="nm">HT Kiosk</span></div>
+        <div class="w t2 mid reveal"><img src="../photos/customers/kioskidea.png" alt="Kioskidea" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Kioskidea</span></div>
+        <div class="w t2 reveal"><img src="../photos/customers/legate.png" alt="Suzhou Legate" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Suzhou Legate</span></div>
+        <div class="w t2 reveal"><img src="../photos/customers/polysoude.jpg" alt="Polysoude" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Polysoude</span></div>
       </div>
     </div>
   </div>
