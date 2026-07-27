@@ -303,6 +303,74 @@ Products & Services page now indexes the four catalogue sub-pages
 instead, using the real product shots already in /photos/automotive/products/,
 so no placeholder slots remain on that page.
 
+CUSTOMER LOGOS
+The "Customer base" wall on /automotive/index.html has 32 slots and
+shares the /photos/customers/ folder with the Citra and Gralessando
+walls — one pool for the whole site, so three of the 32 needed no new
+file. Same rules as those walls: trimmed to the artwork, ~400px wide or
+more, on white or transparent. Names are hidden and appear only if a
+file is missing, so every cell reads correctly meanwhile.
+
+honda-prospect-motor.png      PT Honda Prospect Motor         [COMPLETE]
+toyota.svg                    Toyota                          [COMPLETE]
+astra-daihatsu.png            PT Astra Daihatsu Motor         [COMPLETE]
+                              (all three reused from the Citra wall)
+
+astra-international.png       PT Astra International Tbk      [COMPLETE]
+blue-bird.png                 PT Blue Bird Tbk                [COMPLETE]
+bmw.png                       BMW                             [COMPLETE]
+bridgestone.png               Bridgestone                     [COMPLETE]
+byd.png                       BYD                             [COMPLETE]
+chery.png                     Chery                           [COMPLETE]
+dunlop.png                    Dunlop                          [COMPLETE]
+hankook.png                   Hankook                         [COMPLETE]
+hyundai.png                   Hyundai                         [COMPLETE]
+indomobil-group.png           Indomobil Group                 [COMPLETE]
+isuzu.png                     Isuzu                           [COMPLETE]
+kia.png                       Kia                             [COMPLETE]
+mercedes-benz.png             Mercedes-Benz                   [COMPLETE]
+michelin.png                  Michelin                        [COMPLETE]
+mitsubishi-motors.png         Mitsubishi Motors               [COMPLETE]
+                              (PT Krama Yudha Tiga Berlian Motors)
+nissan.png                    Nissan                          [COMPLETE]
+petrosea.png                  PT Petrosea Tbk                 [COMPLETE]
+planet-ban.png                Planet Ban                      [COMPLETE]
+suzuki.png                    Suzuki                          [COMPLETE]
+wuling.png                    Wuling                          [COMPLETE]
+
+STILL NEEDED — nine files, all of them Indonesian companies or brands
+with no freely licensed mark in circulation. Ask each company for its
+logo, or lift it from their own site or press kit:
+
+united-tractors.png           PT United Tractors Tbk
+goodyear.png                  Goodyear
+accelera.png                  Accelera
+bquik.png                     B-Quik
+bmt.png                       PT Burangkeng Maju Tehnik
+indotruck-utama.png           PT Indotruck Utama
+intraco-penta.png             PT Intraco Penta Tbk (INTA)
+mobeng.png                    Mobeng
+puninar-logistics.png         Puninar Logistics
+
+SOURCING NOTE for the twenty already in place: each came from Wikimedia
+Commons, resolved through the company's Wikidata entity and its P154
+"logo image" claim rather than a text search. A plain Commons search
+returned a photograph of BMW headquarters, a Mercedes tail-light, a
+bicycle tyre for Michelin, an "OLIVER" tractor badge for United
+Tractors and the wrong company entirely for Petrosea — so if any of
+these ever need replacing, go through Wikidata, not search.
+
+Two marks are the CURRENT corporate logo where the company slides used
+an older one: Kia is the 2021 wordmark, not the red "KIA MOTORS" oval,
+and Nissan is the flat 2020 mark, not the chrome badge. Swap them if
+the older versions are wanted deliberately.
+
+Note that many of these are vehicle and tyre marques rather than
+accounts in the way Blue Bird or Petrosea are. Check we have permission
+to display each mark before the site goes public — marque owners
+police their logos more closely than fleet operators do, and a Commons
+file being freely licensed says nothing about trademark use.
+
 
 --------------------------------------------------
 AUTOMATION  (/automation/)
