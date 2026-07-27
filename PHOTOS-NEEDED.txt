@@ -336,9 +336,28 @@ badges — so keep it in mind before promoting a marque on name
 recognition alone.
 
 .t3 is not used here. At 26px any mark carrying fine print stopped
-being readable, and several of these do: INTA and Astra Daihatsu set
-their full PT name under the logo, Jantra its second word. Anything
-added later belongs in .t1 or .t2.
+being readable, and several of these do. Anything added later belongs
+in .t1 or .t2.
+
+TRIM THE PADDING OFF A LOGO BEFORE DROPPING IT IN. The tier and shape
+classes size the FILE, not the mark inside it, so white space around
+the artwork is drawn at full size and shrinks the logo by exactly as
+much. Four files arrived that way and were cropped in place:
+
+  jantrakakikaki  the mark filled half a square canvas, so it drew at
+                  half the height of its neighbours
+  sefas           a wide mark sat in a tall canvas, which read as
+                  square, took the .sq boost and still drew tiny
+  bquik           came as a bordered white card; the border was part
+                  of the artwork and showed as a box on the wall
+  honda + daihatsu carried their PT company name under the logo as
+                  part of the image
+
+honda-prospect-motor.png and astra-daihatsu.png are shared with the
+Citra wall, so cropping the captions off changed that wall too. Both
+now match the bare-mark treatment every other logo on both walls gets,
+and the full company name still reaches screen readers through the alt
+text and the .nm span.
 
 honda-prospect-motor.png      PT Honda Prospect Motor         [COMPLETE]
 toyota.svg                    Toyota                          [COMPLETE]
