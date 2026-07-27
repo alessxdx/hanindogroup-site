@@ -76,6 +76,34 @@ img{max-width:100%;display:block}
 @media(max-width:640px){.brands{gap:.6rem}.cobrand{padding-left:.6rem}.brands .brand img{height:34px}.cobrand img.cologo{height:38px}}
 .top-right{display:flex;align-items:center;gap:1.3rem}
 /* "back to the group" escape hatch, present on every mini-site page */
+/* ---------- LANGUAGE TOGGLE ----------
+   Shared by the Shanghai (EN/中文) and Automation (EN/ID) sites, and
+   shaped like the Citra one so all three read as the same control. It
+   carries a globe so it is recognisable as a language switch before the
+   labels are read.
+
+   On desktop it sits in the topbar. On phones .top-right is hidden, so
+   a second copy appears as a row in the burger menu — see .tablang.
+   translate.js drives every copy at once, so the two stay in step. */
+.langtoggle{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:8px;overflow:hidden;flex:none;height:34px;background:var(--white)}
+.langtoggle .globe{width:15px;height:15px;flex:none;margin:0 .1rem 0 .5rem;fill:none;stroke:var(--muted);stroke-width:1.9}
+.langtoggle button{border:0;background:transparent;color:var(--muted);font-family:inherit;font-weight:700;font-size:.76rem;padding:0 .6rem;height:100%;cursor:pointer;transition:.15s;line-height:1}
+.langtoggle button:hover{color:var(--blue-800)}
+.langtoggle button.active{background:var(--blue-800);color:#fff}
+/* The menu copy: hidden in the desktop tab bar, a full row on phones.
+   Both states must out-specify .tabs>li, which sets display at each
+   width. */
+.tabs>li.tablang{display:none}
+@media(max-width:900px){
+  .tabs>li.tablang{display:flex;align-items:center;justify-content:space-between;gap:1rem;
+    padding:.85rem var(--pad);border-top:1px solid rgba(255,255,255,.14)}
+  .tablang-lab{display:inline-flex;align-items:center;gap:.5rem;font-size:.95rem;font-weight:600;color:#eef1f7}
+  .tablang-lab svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.9}
+  .tablang .langtoggle{height:40px;background:transparent;border-color:rgba(255,255,255,.35)}
+  .tablang .langtoggle .globe{display:none}
+  .tablang .langtoggle button{font-size:.82rem;padding:0;min-width:60px;color:#cfd8e6}
+  .tablang .langtoggle button.active{background:var(--white);color:var(--blue-800)}
+}
 .grouplink{display:inline-flex;align-items:center;gap:.35rem;font-size:.82rem;font-weight:600;color:var(--muted);white-space:nowrap;transition:color .18s}
 .grouplink:hover{color:var(--blue-800)}
 .grouplink svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2.5}
