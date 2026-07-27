@@ -327,12 +327,17 @@ file. Same rules as those walls: trimmed to the artwork, ~400px wide or
 more, on white or transparent. Names are hidden and appear only if a
 file is missing, so every cell reads correctly meanwhile.
 
-The wall is banded 8 / 15 / 9. The top band leads with the accounts
-rather than the marques, so B-Quik, BYD and Petrosea sit above BMW,
-Mercedes-Benz, Isuzu and Suzuki, which close the wall in the bottom
-band. That ranking is deliberate — it reads as a customer list rather
-than a wall of borrowed badges — so keep it in mind before promoting a
-marque on name recognition alone.
+The wall is banded 8 / 24, two tiers only, as on the Citra wall. The
+top band leads with the accounts rather than the marques, so B-Quik,
+BYD and Petrosea sit above BMW and Mercedes-Benz. That ranking is
+deliberate — it reads as a customer list rather than a wall of borrowed
+badges — so keep it in mind before promoting a marque on name
+recognition alone.
+
+.t3 is not used here. At 26px any mark carrying fine print stopped
+being readable, and several of these do: INTA and Astra Daihatsu set
+their full PT name under the logo, Jantra its second word. Anything
+added later belongs in .t1 or .t2.
 
 honda-prospect-motor.png      PT Honda Prospect Motor         [COMPLETE]
 toyota.svg                    Toyota                          [COMPLETE]
