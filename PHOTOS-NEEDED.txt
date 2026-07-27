@@ -198,17 +198,34 @@ HANINDO CITRA  (/citra/)
 hero-citra.webp           DONE — page hero, forecourt at dusk (1536x1024)
 citra-forecourt.jpg         Intro section — station Hanindo equipped
 citra-advanz.jpg            Product card — AdvanZ POS/BOS screen or terminal
+citra-enabler.webp          Product card — ITL Enabler controller range
 citra-flowmeter.png         Product card — TCS flow meters            [DONE]
 citra-atg.webp              Product card — Veeder-Root ATG range      [DONE]
 citra-stp.webp              Product card — submersible turbine pumps  [DONE]
 citra-piping.jpg            Product card — piping / fueling components
 
-The dispenser, ATG and STP cards carry manufacturer shots cut out onto
+The dispenser, Enabler, ATG and STP cards carry manufacturer shots cut out onto
 pure white (#fff), and their tiles are white to match — see .pcard.cutout
 in products-services.html. A replacement must be cut out the same way: on
 the --paper tiles the cutout would show as a white rectangle, and a shot
 with its own grey studio backdrop shows as a grey one. Keep them wide if
 possible; a near-square shot renders small in a 180px-tall tile.
+
+FORECOURT CONTROLLER PAGE  (/citra/forecourt-controllers.html)
+Product shots live in /photos/citra/products/enabler/. Missing ones fall
+back to the "photo needed" placeholder, so the page is safe to ship
+without them. Cut out on white, ~1400px wide, shown up to 300px tall.
+All four appear in the ITL Enabler Express brochure and can be lifted
+from it if ITL do not supply separates.
+enabler-express.webp        Enabler Express PCI Express card
+enabler-ethernet.webp       Enabler Ethernet appliance
+enabler-embedded.webp       Enabler Embedded unit
+fdm.webp                    Forecourt Distribution Module board
+
+The Express card and the FDM board are the two shots the brochure carries
+at usable size; the Ethernet and Embedded units are not pictured in it, so
+those two need to come from ITL. Do NOT stand in an Express card photo for
+either — they are visibly different products.
 
 TANK GAUGING PAGE  (/citra/tank-gauging.html)
 Product shots live in /photos/citra/products/atg/. Missing ones fall back
@@ -218,8 +235,23 @@ TLS4 and TLS4B share a row (same console, two capacities), and Mag Plus
 and Mag-XL share one (same probe, two tank types), so each pair needs one
 shot rather than two.
 tls-450plus.webp            TLS-450 PLUS console                      [DONE]
-tls4.webp                   TLS4 and TLS4B consoles together
-mag-probe.webp              Magnetostrictive in-tank probe
+tls4.webp                   TLS4 and TLS4B consoles together          [DONE]
+mag-probe.webp              Magnetostrictive in-tank probe            [DONE]
+
+SUBMERSIBLE PUMP PAGE  (/citra/submersible-pumps.html)
+Product shots live in /photos/citra/products/stp/. Same rules as above.
+redjacket-stp.webp          Red Jacket STP and packer manifold        [DONE]
+redjacket-control-box.webp  Standard, IQ and ISOTROL control boxes    [DONE]
+
+Both files were cut out of the composite citra-stp.webp used on the
+products card, not supplied separately — so they are only ~550-700px wide
+and will look soft on a high-density screen. Replace them with proper
+single-product shots when Red Jacket supply them.
+
+The AG alternative-fuel series was dropped from the page at the business's
+request. If it ever goes back, it needs its own shot — do NOT reuse the
+standard Red Jacket photo, since the two series share a body and the
+picture would look right while captioning a product it is not.
 
 CUSTOMER LOGOS
 The "Customer base" wall on /citra/index.html has 30 logo slots.
