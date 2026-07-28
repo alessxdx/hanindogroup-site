@@ -349,30 +349,27 @@ img{max-width:100%;display:block}
 
    Scoped to .drop-co — the Products & Services and Automotive menus
    keep the plain list. */
-.drop-co{min-width:342px}
+/* No company marks. They were tried and taken out: the logos are
+   wordmarks carrying their own "Member of the Hanindo Group of
+   Companies" microtext, which is unreadable at menu size, and the one
+   company without a logo file had to fall back to type, so the column
+   never read as one set. The names alone are cleaner. */
+.drop-co{min-width:288px}
 .drop-co li+li{border-top:0}
 .drop-co .dgrp{padding:.8rem 1.15rem .35rem;font-size:.65rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--sky);white-space:nowrap;cursor:default}
 .drop-co li.dgrp+li{border-top:0}
 .drop-co li.dgrp:not(:first-child){margin-top:.4rem;padding-top:.8rem;border-top:1px solid rgba(255,255,255,.12)}
-.drop-co a{display:flex;align-items:center;gap:.65rem;padding:.45rem 1.15rem}
-/* The marks are wordmarks, 2.4:1 to 4.2:1, and most are dark ink on
-   transparent — unreadable at icon size and invisible on the navy. A
-   white chip sized to the widest of them fixes both, and lines the
-   names up on one rail. */
-.cmark{flex:none;width:76px;height:23px;background:#fff;border-radius:3px;display:flex;align-items:center;justify-content:center;padding:2px 4px}
-.cmark img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
-.cmark b{font-size:.55rem;font-weight:800;letter-spacing:.03em;color:var(--blue-800);line-height:1}
+.drop-co a{padding:.52rem 1.15rem}
 .cwhere{color:#8ba3bf;font-weight:400}
-/* the nested division takes the indent instead of a mark of its own —
-   repeating its parent's logo would say it is a separate company */
+/* the nested division takes an indent rather than a dash */
 .drop-co .subdrop{background:transparent;border-top:0}
-.drop-co .subdrop a{padding-left:calc(1.15rem + 76px + .65rem);font-size:.83rem;color:#aebfd4}
+.drop-co .subdrop a{padding-left:2.2rem;font-size:.83rem;color:#aebfd4}
 .drop-co .subdrop a::before{display:none}
 @media(max-width:860px){
   .drop-co{min-width:0}
-  .drop-co a{padding:.55rem var(--pad) .55rem calc(var(--pad) + 1rem);white-space:normal}
+  .drop-co a{padding:.6rem var(--pad) .6rem calc(var(--pad) + 1rem);white-space:normal}
   .drop-co .dgrp{padding:.7rem var(--pad) .25rem calc(var(--pad) + 1rem);white-space:normal}
-  .drop-co .subdrop a{padding-left:calc(var(--pad) + 1rem + 76px + .65rem)}
+  .drop-co .subdrop a{padding-left:calc(var(--pad) + 2.1rem)}
 }
 .subdrop a{padding-left:2.3rem;font-size:.83rem;color:#b9c6d8;position:relative}
 /* short elbow marking the item as a child of the entry above it */
