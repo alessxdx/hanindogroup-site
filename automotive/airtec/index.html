@@ -68,6 +68,10 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
 .catnav button:hover{border-color:var(--brand);color:var(--brand)}
 .catnav button.on{background:var(--blue-800);color:#fff;border-color:var(--blue-800)}
 .catnav button:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+.sectorfilter{align-items:center}
+/* The row above this one navigates; this one filters. Same pills, so
+   it says which it is. */
+.filterlab{font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700;color:var(--muted);margin-right:.35rem}
 .filternone{color:var(--muted);font-size:.92rem;padding:1.4rem 0}
 </style>
 </head>
@@ -136,6 +140,14 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
 <!-- ============ INTRO ============ -->
 <section class="section white">
   <div class="wrap">
+    <div class="catnav">
+  <a href="../tyre-service/">Tyre Service</a>
+  <a href="../airtec/" class="on">Tyre Inflation</a>
+  <a href="../lifts/">Lifts &amp; Handling</a>
+  <a href="../service/">Service Equipment</a>
+  <a href="../raasm/">Fluid Handling</a>
+  <a href="../welding/">Welding</a>
+</div>
     <div class="reveal">
       <div class="brandmark">
         <img src="../../photos/partners/airtec.png" alt="Airtec Corporation" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
@@ -171,6 +183,7 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
     </div>
 
     <div class="catnav sectorfilter reveal" role="group" aria-label="Filter by setting">
+      <span class="filterlab">Setting</span>
       <button type="button" class="on" data-filter="all" aria-pressed="true">All models</button>
       <button type="button" data-filter="workshop" aria-pressed="false">Workshop</button>
       <button type="button" data-filter="mining" aria-pressed="false">Mining</button>
