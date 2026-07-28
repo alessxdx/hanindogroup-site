@@ -14,16 +14,11 @@
 /* Tighter section rhythm on this group page. */
 .section{padding:clamp(40px,5vw,64px) 0}
 
-/* The point of this page is the logo wall, and it was starting 278px
-   below the fold on a 900px screen — so the page opened on a block of
-   text with no sign of what sits under it. Everything above the wall is
-   pulled in until the first row of logos breaks the fold. Page-local:
-   the other group pages want the standard rhythm. */
-.pagehero{min-height:0;padding:0}
-/* the hero's own padding is not the space — .wrap carries 67px/45px */
-.pagehero .wrap{padding-top:1.5rem;padding-bottom:1.4rem}
-.pagehero h1{font-size:clamp(1.7rem,3.2vw,2.4rem);margin:.3rem 0 .3rem}
-.pagehero p.intro{max-width:86ch;font-size:.94rem;margin-top:.5rem}
+/* The intro block only. It sits between the hero and the logo wall, and
+   at full spacing it pushed the first row of logos well under the fold —
+   so the page opened on prose with no sign of the brands below. Trimmed
+   here and nowhere else: the hero and the wall keep their normal rhythm.
+   Page-local, so the other group pages are untouched. */
 #intro.section{padding-top:1.2rem;padding-bottom:1.1rem}
 #intro .h2{margin-bottom:.55rem}
 #intro .lede+.lede{margin-top:.55rem}
@@ -32,11 +27,6 @@
    columns. Back to one column when there is no room for two. */
 #intro .checks{margin-top:.9rem;gap:.45rem 2.4rem;grid-template-columns:1fr 1fr}
 @media(max-width:700px){#intro .checks{grid-template-columns:1fr}}
-#wall.section{padding-top:.9rem}
-#wall .kicker{margin-bottom:.1rem}
-#wall .h2{font-size:clamp(1.25rem,2vw,1.6rem);margin-bottom:.15rem}
-#wall .wall{margin-top:.5rem}
-#wall .tier{padding-top:.4rem}
 </style>
 </head>
 <body>
