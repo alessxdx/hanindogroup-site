@@ -138,7 +138,7 @@
     "Custom partnership": "Kemitraan Custom",
     "Partnered to expand Custom products to China Market.": "Kemitraan untuk memperluas produk Custom ke pasar Tiongkok.",
     "China Expansion": "Ekspansi Tiongkok",
-    "Shanghai office opens, Shenzhen office follows in 2010.": "Kantor Shanghai dibuka, kantor Shenzhen menyusul pada 2010.",
+    "Shanghai office opens, Shenzhen office follows in 2009.": "Kantor Shanghai dibuka, kantor Shenzhen menyusul pada 2009.",
     "Southeast Asia Expansion": "Ekspansi Asia Tenggara",
     "Custom products expanded to SEA.": "Produk Custom diperluas ke Asia Tenggara.",
     "Gralessando": "Gralessando",
