@@ -1,0 +1,266 @@
+/* =====================================================================
+   Hanindo Group (group-level pages) — EN / Bahasa Indonesia toggle
+   ---------------------------------------------------------------------
+   Same mechanism as automation/translate.js: on load it walks the
+   visible text and, where a phrase matches an entry below, swaps
+   English <-> Bahasa Indonesia. The choice is remembered
+   (localStorage) across the group pages.
+
+   This file serves the six group pages — the home page and about/,
+   products-services/, partners/, career/ and contact/. The company
+   mini-sites each carry their own dictionary; nothing here is shared
+   with them, so a phrase used on both has to be listed in both.
+
+   To EDIT a translation: find the English on the left, change the
+   Indonesian on the right. To ADD one: copy a line and fill in both
+   sides. The English side must match the page EXACTLY, including
+   punctuation — the match is on the whole trimmed text node, not a
+   substring.
+
+   Deliberately NOT translated: company and brand names (Hanindo Citra,
+   Flowtech Engineering, Gralessando Pte Ltd, Custom, Gilbarco
+   Veeder-Root and the rest of the principals), the street address,
+   which is needed in its postal form, and the phone and email.
+
+   Wording for the shared items — the footer blurb, the copyright line,
+   the nav labels — follows the company sites so the whole group reads
+   the same in Indonesian.
+   ===================================================================== */
+(function () {
+  var DICT = {
+    /* ---- navigation / header ---- */
+    "Home": "Beranda",
+    "About Us": "Tentang Kami",
+    "Our Companies": "Perusahaan Kami",
+    "Products & Services": "Produk & Layanan",
+    "Partners": "Mitra",
+    "Career": "Karier",
+    "Contact Us": "Hubungi Kami",
+    "Your Solution Provider": "Mitra Solusi Anda",
+    "Fire Fighting Department": "Departemen Pemadam Kebakaran",
+    /* the Products & Services drop-down, by industry */
+    "Oil & Gas": "Minyak & Gas",
+    "Automotive": "Otomotif",
+    "Fire Fighting": "Pemadam Kebakaran",
+
+    /* ---- home: slide 1, welcome ---- */
+    "Welcome": "Selamat datang",
+    "Welcome to the": "Selamat datang di",
+    "Six specialist companies working under one roof at Jl. Fatmawati No. 55, Jakarta — covering equipment, automation, construction and service across the industries we serve.": "Enam perusahaan spesialis yang bekerja dalam satu atap di Jl. Fatmawati No. 55, Jakarta — mencakup peralatan, otomasi, konstruksi, dan layanan di berbagai industri yang kami layani.",
+    "About the group": "Tentang grup",
+    "Our companies": "Perusahaan kami",
+
+    /* ---- home: slide 2, one stop solution ---- */
+    "Hanindo Group — Your Solution Provider": "Hanindo Group — Mitra Solusi Anda",
+    "Your technology": "Solusi teknologi",
+    "one stop solution.": "satu atap Anda.",
+    "Petroleum equipment, retail and industrial automation, automotive workshop equipment, printing & POS and fire protection — delivered by one group, from Jakarta since 1987.": "Peralatan perminyakan, otomasi ritel dan industri, peralatan bengkel otomotif, pencetakan & POS, serta proteksi kebakaran — dihadirkan oleh satu grup, dari Jakarta sejak 1987.",
+    "Your technology one stop solution for": "Solusi teknologi satu atap Anda untuk",
+    "Oil & Gas industry": "Industri minyak & gas",
+    "F&B and entertainment": "Makanan & minuman dan hiburan",
+    "Retail and industrial automation": "Otomasi ritel dan industri",
+    "Telemetry": "Telemetri",
+    "Automotive industry": "Industri otomotif",
+    "Telecommunication": "Telekomunikasi",
+    "Hospitality": "Perhotelan",
+    "Energy": "Energi",
+
+    /* ---- home: slide 3, professional advice ---- */
+    "Looking for professional advice?": "Mencari saran profesional?",
+    "Our team is ready": "Tim kami siap",
+    "for your project.": "untuk proyek Anda.",
+    "The best partners for your business are those who know the paths to follow, to achieve the highest levels of success.": "Mitra terbaik bagi bisnis Anda adalah mereka yang mengetahui jalan yang harus ditempuh untuk mencapai tingkat keberhasilan tertinggi.",
+    "Our expert team will find the right solution for the development of your project and business, being the ideal partner for the biggest challenges.": "Tim ahli kami akan menemukan solusi yang tepat bagi pengembangan proyek dan bisnis Anda, menjadi mitra ideal untuk tantangan terbesar sekalipun.",
+    "Talk to our team": "Hubungi tim kami",
+    "Email us": "Email kami",
+
+    /* ---- home: verticals ---- */
+    "Our Verticals": "Lini Usaha Kami",
+    "Each vertical runs its own site — with its own products, projects and contact team. Choose the one you need.": "Setiap lini usaha memiliki situsnya sendiri — dengan produk, proyek, dan tim kontaknya sendiri. Pilih yang Anda butuhkan.",
+    "Petroleum equipment & station construction": "Peralatan perminyakan & konstruksi SPBU",
+    "Autoshop equipment — diagnostics, lifts, tyre & lube": "Peralatan bengkel — diagnostik, lift, ban & pelumasan",
+    "End-to-end fire-protection systems, pumps & hydrants": "Sistem proteksi kebakaran menyeluruh, pompa & hidran",
+    "Printing, scanning & point-of-sale hardware and software": "Perangkat keras dan lunak pencetakan, pemindaian & point-of-sale",
+    "Visit site": "Kunjungi situs",
+
+    /* ---- partners strip + partners page ---- */
+    "Partners & Principals": "Mitra & Prinsipal",
+    "Hanindo Group works with established equipment manufacturers from Europe, North America and Asia, bringing their products, parts and factory support to customers across Indonesia.": "Hanindo Group bekerja sama dengan produsen peralatan mapan dari Eropa, Amerika Utara, dan Asia, menghadirkan produk, suku cadang, dan dukungan pabrik mereka bagi pelanggan di seluruh Indonesia.",
+    "Represented in Indonesia by Hanindo.": "Diwakili di Indonesia oleh Hanindo.",
+    "Since 1987 the group has built a portfolio of partnerships with leading global manufacturers in petrol dispensing pumps, automatic tank gauging, automation, petrol station equipment and automotive garage equipment. Those relationships are what let us supply genuine parts, factory-trained service and warranty support rather than acting as a reseller alone.": "Sejak 1987 grup ini membangun portofolio kemitraan dengan produsen global terkemuka di bidang pompa dispenser BBM, pengukuran tangki otomatis, otomasi, peralatan SPBU, dan peralatan bengkel otomotif. Hubungan itulah yang memungkinkan kami menyediakan suku cadang asli, layanan oleh teknisi terlatih pabrik, dan dukungan garansi — bukan sekadar bertindak sebagai penjual ulang.",
+    "Those manufacturers are spread across the world — among them long-standing principals in the United States and Italy, alongside others in Europe and Asia. Hanindo brings the whole portfolio into Indonesia under one roof, so a customer deals with a single supplier rather than a dozen factories in a dozen time zones.": "Para produsen tersebut tersebar di berbagai belahan dunia — di antaranya prinsipal lama di Amerika Serikat dan Italia, serta lainnya di Eropa dan Asia. Hanindo membawa seluruh portofolio itu ke Indonesia dalam satu atap, sehingga pelanggan cukup berurusan dengan satu pemasok, bukan belasan pabrik di belasan zona waktu.",
+    "Genuine parts and consumables": "Suku cadang dan consumable asli",
+    "Factory-trained service engineers": "Teknisi servis terlatih pabrik",
+    "Warranty and after-sales support": "Dukungan garansi dan purnajual",
+    "Local stock and nationwide delivery": "Stok lokal dan pengiriman ke seluruh Indonesia",
+    "Our partners and principals": "Mitra dan prinsipal kami",
+    "Brands we supply and service.": "Merek yang kami pasok dan layani.",
+    "Enquiries": "Pertanyaan",
+    "Looking for a particular brand?": "Mencari merek tertentu?",
+    "Tell us which equipment you need and we will put you in touch with the division that handles it — whether that is fuel dispensing, workshop equipment, automation or fire protection.": "Beri tahu kami peralatan yang Anda butuhkan dan kami akan menghubungkan Anda dengan divisi yang menanganinya — baik dispenser BBM, peralatan bengkel, otomasi, maupun proteksi kebakaran.",
+    "Contact us": "Hubungi kami",
+
+    /* ---- home: closing contact band ---- */
+    "Work with Hanindo Group": "Bekerja sama dengan Hanindo Group",
+    "Start business with us.": "Mulai bisnis bersama kami.",
+    "Tell us what you are building or operating, and we will point you to the division — and the people — who can deliver it.": "Beri tahu kami apa yang sedang Anda bangun atau operasikan, dan kami akan mengarahkan Anda ke divisi — dan orang — yang dapat mewujudkannya.",
+    "Email our team": "Email tim kami",
+    "Contact page": "Halaman kontak",
+    "Head Office": "Kantor Pusat",
+    "Phone": "Telepon",
+    "Email": "Email",
+    "Tel:": "Tel:",
+
+    /* ---- footer ---- */
+    "Your technology one stop solution — serving the oil & gas, automation, automotive and fire protection industries in Indonesia since 1987.": "Solusi teknologi satu atap Anda — melayani industri minyak & gas, otomasi, otomotif, dan proteksi kebakaran di Indonesia sejak 1987.",
+    "© 2026 Hanindo Group. All Rights Reserved.": "© 2026 Hanindo Group. Hak Cipta Dilindungi.",
+
+    /* ---- about: hero + history ---- */
+    "About": "Tentang",
+    "Us": "Kami",
+    "Serving many industries in Indonesia from Jakarta since 1987.": "Melayani berbagai industri di Indonesia dari Jakarta sejak 1987.",
+    "Our history": "Sejarah kami",
+    "It started with one dream.": "Berawal dari satu mimpi.",
+    "Hanindo Group was established out of a single ambition — to lead the petroleum equipment and automotive equipment business in Indonesia.": "Hanindo Group didirikan atas satu ambisi — menjadi yang terdepan dalam bisnis peralatan perminyakan dan peralatan otomotif di Indonesia.",
+    "The group grew out of the petroleum equipment division of PT. Sugiron Citra, which began operating in 1987. That division became the embryo of the Hanindo Group, and expanded into an independent organisation while keeping the same commitment to customer service and to the technology behind it.": "Grup ini tumbuh dari divisi peralatan perminyakan PT. Sugiron Citra yang mulai beroperasi pada 1987. Divisi tersebut menjadi cikal bakal Hanindo Group dan berkembang menjadi organisasi mandiri dengan tetap memegang komitmen yang sama terhadap layanan pelanggan dan teknologi di baliknya.",
+    "Today the group brings together six companies covering equipment supply, station construction, retail and industrial automation, workshop equipment, printing and POS, and fire protection.": "Kini grup ini menghimpun enam perusahaan yang mencakup pengadaan peralatan, konstruksi SPBU, otomasi ritel dan industri, peralatan bengkel, pencetakan dan POS, serta proteksi kebakaran.",
+
+    /* ---- about + contact: the company cards ---- */
+    "The group": "Grup",
+    "Specialists under one roof.": "Para spesialis dalam satu atap.",
+    "Click through to any of the companies below to find out more about what they do.": "Klik salah satu perusahaan di bawah ini untuk mengetahui lebih lanjut tentang apa yang mereka kerjakan.",
+    "Petroleum equipment, station construction and fire protection.": "Peralatan perminyakan, konstruksi SPBU, dan proteksi kebakaran.",
+    "Workshop and garage equipment for the service bay.": "Peralatan bengkel dan garasi untuk service bay.",
+    "Printing, scanning and point-of-sale systems.": "Sistem pencetakan, pemindaian, dan point-of-sale.",
+
+    /* ---- about: vision & mission ---- */
+    "Our direction": "Arah kami",
+    "Vision & Mission": "Visi & Misi",
+    "01 / Vision": "01 / Visi",
+    "Vision": "Visi",
+    "To be a company that provides a “tomorrow” solution to achieve customer needs, valuing customer satisfaction as the key to success.": "Menjadi perusahaan yang menghadirkan solusi “masa depan” untuk memenuhi kebutuhan pelanggan, dengan menjunjung kepuasan pelanggan sebagai kunci keberhasilan.",
+    "02 / Mission": "02 / Misi",
+    "Mission": "Misi",
+    "Supply the latest technology and innovation to our customers.": "Menyediakan teknologi dan inovasi terkini bagi pelanggan kami.",
+    "Deliver products recognised for improving efficiency, effectiveness and productivity.": "Menghadirkan produk yang diakui mampu meningkatkan efisiensi, efektivitas, dan produktivitas.",
+    "Respect the environment they operate in.": "Menghormati lingkungan tempat produk tersebut digunakan.",
+    "Start business": "Mulai bisnis",
+    "with us.": "bersama kami.",
+    "Tell us what you are building or operating, and we will point you to the company — and the people — who can deliver it.": "Beri tahu kami apa yang sedang Anda bangun atau operasikan, dan kami akan mengarahkan Anda ke perusahaan — dan orang — yang dapat mewujudkannya.",
+
+    /* ---- products & services ---- */
+    "Products &": "Produk &",
+    "Services": "Layanan",
+    "Equipment, systems and service from across the group — petroleum, fire protection, automotive, and printing and point of sale.": "Peralatan, sistem, dan layanan dari seluruh grup — perminyakan, proteksi kebakaran, otomotif, serta pencetakan dan point of sale.",
+    "What we supply": "Yang kami sediakan",
+    "Everything the group supplies.": "Semua yang disediakan grup.",
+    "A sample of the range below. Click through to any of the companies to see its full catalogue.": "Berikut sebagian dari rangkaian produk kami. Klik salah satu perusahaan untuk melihat katalog lengkapnya.",
+    "Dispensing pumps, automatic tank gauging, flow meters, fire protection systems, and station construction.": "Pompa dispenser, pengukuran tangki otomatis, flow meter, sistem proteksi kebakaran, dan konstruksi SPBU.",
+    "Lifts and handling, tyre service, diagnostics, welding and lubrication for the service bay.": "Lift dan penanganan, layanan ban, diagnostik, pengelasan, dan pelumasan untuk service bay.",
+    "Printers, point-of-sale terminals, scanners and self-service kiosks, with the software that runs them.": "Printer, terminal point-of-sale, pemindai, dan kios layanan mandiri, beserta perangkat lunak yang menjalankannya.",
+    "Not sure what you need?": "Belum yakin apa yang Anda butuhkan?",
+    "Tell us about the job.": "Ceritakan pekerjaan Anda.",
+    "Describe the site, the equipment or the volumes you are working with and we will point you to the company that handles it.": "Jelaskan lokasi, peralatan, atau volume yang Anda tangani, dan kami akan mengarahkan Anda ke perusahaan yang menanganinya.",
+    "Email the group": "Email grup",
+
+    /* ---- career ---- */
+    "Build your career": "Bangun karier Anda",
+    "with Hanindo Group.": "bersama Hanindo Group.",
+    "Since 1987 we have supplied and serviced the equipment that keeps fuel stations, workshops and retailers working across Indonesia. Join us and you work with recognised international principals, learn the technical side of a real industry, and grow with a group that promotes from within.": "Sejak 1987 kami memasok dan merawat peralatan yang menjaga SPBU, bengkel, dan peritel tetap beroperasi di seluruh Indonesia. Bergabunglah dan Anda akan bekerja dengan prinsipal internasional ternama, mendalami sisi teknis industri yang nyata, serta berkembang bersama grup yang mengutamakan promosi dari dalam.",
+    "Open positions": "Lowongan terbuka",
+    "Current openings.": "Lowongan saat ini.",
+    "Here is what we are hiring for right now. Read the role, then apply by email using the button on the posting.": "Berikut posisi yang sedang kami cari. Baca deskripsinya, lalu lamar melalui email menggunakan tombol pada lowongan tersebut.",
+    "Sales — Automotive Equipment": "Sales — Peralatan Otomotif",
+    "Jakarta · Full-time": "Jakarta · Penuh waktu",
+    "Sell automotive equipment to workshops and dealers, open new accounts through active canvassing, and hit the sales targets that keep the territory growing.": "Menjual peralatan otomotif ke bengkel dan dealer, membuka pelanggan baru melalui canvassing aktif, serta mencapai target penjualan yang menjaga pertumbuhan wilayah.",
+    "What you'll do": "Yang akan Anda kerjakan",
+    "Promote and sell automotive equipment products": "Mempromosikan dan menjual produk peralatan otomotif",
+    "Canvass to widen the customer network": "Melakukan canvassing untuk memperluas jaringan pelanggan",
+    "Meet the sales targets that have been set": "Mencapai target penjualan yang telah ditetapkan",
+    "Coordinate with other departments on delivery and payment": "Berkoordinasi dengan departemen lain terkait pengiriman dan pembayaran",
+    "Maintain strong relationships with customers": "Menjaga hubungan baik dengan pelanggan",
+    "What we're looking for": "Yang kami cari",
+    "Minimum Diploma (D3)": "Minimal Diploma (D3)",
+    "Computer literate": "Menguasai komputer",
+    "Age 23–35": "Usia 23–35 tahun",
+    "Own vehicle and a SIM C licence (SIM A a plus)": "Memiliki kendaraan sendiri dan SIM C (SIM A menjadi nilai tambah)",
+    "Good communication and teamwork skills": "Kemampuan komunikasi dan kerja sama tim yang baik",
+    "Apply for this role": "Lamar posisi ini",
+    "Opens your email — attach your CV (PDF) and send.": "Membuka aplikasi email Anda — lampirkan CV (PDF) lalu kirim.",
+    "If you are shortlisted, our team will contact you to arrange the next step.": "Jika Anda masuk tahap seleksi, tim kami akan menghubungi Anda untuk mengatur langkah berikutnya.",
+    "Don't see the right role?": "Belum menemukan posisi yang cocok?",
+    "Send us your CV anyway.": "Tetap kirimkan CV Anda.",
+    "We are always glad to hear from strong candidates. Tell us where you would fit and attach your CV — we will keep it on file for openings across the group.": "Kami selalu senang menerima kandidat yang kuat. Beri tahu kami posisi yang Anda rasa sesuai dan lampirkan CV Anda — akan kami simpan untuk lowongan di seluruh grup.",
+    "Send an open application": "Kirim lamaran terbuka",
+    "Applications": "Lamaran",
+
+    /* ---- contact ---- */
+    "Let's get you to": "Mari hubungkan Anda",
+    "the right team.": "dengan tim yang tepat.",
+    "Hanindo Group brings together several specialist companies. Choose the business your enquiry is about and we will take you straight to their contact page.": "Hanindo Group menghimpun beberapa perusahaan spesialis. Pilih bidang usaha yang Anda tanyakan dan kami akan mengarahkan Anda langsung ke halaman kontaknya.",
+    "Who can we connect you with?": "Dengan siapa kami dapat menghubungkan Anda?",
+    "Contact by business.": "Kontak menurut bidang usaha.",
+    "Each of our companies runs its own enquiries. Pick the one that fits and you will land on the team that can help.": "Setiap perusahaan kami menangani pertanyaannya sendiri. Pilih yang sesuai dan Anda akan langsung terhubung dengan tim yang dapat membantu.",
+    "Not sure who to ask?": "Belum yakin harus bertanya ke siapa?",
+    "Reach the head office.": "Hubungi kantor pusat.",
+    "For general enquiries — or anything about Flowtech Engineering or Hanindo Automation Solutions — contact the group head office in Jakarta and we will point you to the right team.": "Untuk pertanyaan umum — atau apa pun mengenai Flowtech Engineering atau Hanindo Automation Solutions — hubungi kantor pusat grup di Jakarta dan kami akan mengarahkan Anda ke tim yang tepat.",
+
+    /* ---- misc ---- */
+    "Photo needed": "Perlu foto"
+  };
+
+  var LANG_KEY = 'hg_lang', ALT = 'id', HTML_LANG = 'id';
+  var store = null;
+
+  function each(list, fn) { Array.prototype.forEach.call(list, fn); }
+
+  function translatable(node) {
+    var p = node.parentNode;
+    if (!p) return false;
+    var nm = p.nodeName;
+    if (nm === 'SCRIPT' || nm === 'STYLE' || nm === 'NOSCRIPT') return false;
+    if (p.closest && (p.closest('svg') || p.closest('.langtoggle'))) return false;
+    return true;
+  }
+
+  function collect() {
+    store = [];
+    if (!document.body || !document.createTreeWalker) return;
+    var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null);
+    var n;
+    while ((n = w.nextNode())) {
+      if (!translatable(n)) continue;
+      var raw = n.nodeValue, key = raw.trim();
+      if (key && Object.prototype.hasOwnProperty.call(DICT, key)) {
+        store.push({ node: n, en: raw, alt: raw.replace(key, DICT[key]) });
+      }
+    }
+  }
+
+  function setLang(lang) {
+    if (!store) collect();
+    each(store, function (o) { o.node.nodeValue = (lang === ALT) ? o.alt : o.en; });
+    var s = document.querySelector('.searchbox input[name="q"]');
+    if (s) s.setAttribute('placeholder', lang === ALT ? 'Cari' : 'Search');
+    each(document.querySelectorAll('.langtoggle [data-lang]'), function (b) {
+      var on = b.getAttribute('data-lang') === lang;
+      b.classList.toggle('active', on);
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+    document.documentElement.setAttribute('lang', lang === ALT ? HTML_LANG : 'en');
+    try { localStorage.setItem(LANG_KEY, lang); } catch (e) {}
+  }
+
+  function init() {
+    collect();
+    each(document.querySelectorAll('.langtoggle [data-lang]'), function (b) {
+      b.addEventListener('click', function () { setLang(b.getAttribute('data-lang')); });
+    });
+    var saved = 'en';
+    try { saved = localStorage.getItem(LANG_KEY) || 'en'; } catch (e) {}
+    setLang(saved);
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
