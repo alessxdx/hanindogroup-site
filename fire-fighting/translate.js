@@ -19,28 +19,19 @@
     "Contact Us": "Hubungi Kami",
 
     /* ---- home hero ----
-       On index.html the company name carries the heading on its own, so
-       the only part that translates is the department, which already has
-       an entry further down for the co-brand label.
-
-       The three headings below are the hero carousel on the one-page
-       hanindo-citra-website.html, which still runs the older copy. They
-       are the last user of these keys — the multi-page heroes are named
-       after their pages now. "Hanindo Group." is deliberately absent:
-       it is the company name and stays as it is. */
-    "Fire protection,": "Proteksi kebakaran,",
-    "engineered end to end.": "direkayasa menyeluruh.",
-    "A cornerstone of the": "Pilar utama",
+       Both home heroes are the company name now — index.html and the
+       three carousel slides on hanindo-citra-website.html — so no
+       heading key is needed here. Hanindo Citra is a company name and
+       stays as it is; the eyebrows, body copy and buttons below are the
+       parts that still translate. */
     "We design, supply, install and maintain complete fire-fighting systems — reliable on day one, and every day after.": "Kami merancang, memasok, memasang, dan memelihara sistem pemadam kebakaran yang lengkap — andal sejak hari pertama, dan setiap hari sesudahnya.",
     "Our products & services": "Produk & layanan kami",
     "About Hanindo Citra": "Tentang Hanindo Citra",
     "The fire fighting department of the Hanindo Group — delivering advanced, end-to-end fire-protection systems that safeguard lives and property across Indonesia.": "Departemen pemadam kebakaran Hanindo Group — menghadirkan sistem proteksi kebakaran mutakhir dan menyeluruh yang melindungi jiwa dan properti di seluruh Indonesia.",
     "About us": "Tentang kami",
     "Proven track record": "Rekam jejak terbukti",
-    "Trusted across oil & gas,": "Dipercaya di sektor migas,",
-    "government & industry.": "pemerintah & industri.",
     "Complex fire-safety installations delivered throughout Indonesia — from petroleum storage terminals to government rail infrastructure.": "Instalasi keselamatan kebakaran yang kompleks di seluruh Indonesia — dari terminal penyimpanan minyak hingga infrastruktur perkeretaapian pemerintah.",
-    "View projects": "Lihat proyek",
+    "Talk to us": "Hubungi kami",
     "Scroll": "Gulir",
 
     /* ---- home hero + intro split (new layout) ---- */
@@ -80,7 +71,11 @@
     "Business Hours": "Jam Operasional",
     "Monday – Friday, 08:00 – 17:00 WIB": "Senin – Jumat, 08.00 – 17.00 WIB",
 
-    /* ---- contact page hero ---- */
+    /* ---- contact page hero ----
+       "Contact" and "Us" are separate keys because the hero splits them
+       across the colour change, the same as About Us. "Let's talk about"
+       is the multi-page contact.html hero, which keeps that wording. */
+    "Contact": "Hubungi",
     "Let's talk about": "Mari bicarakan",
     "your project.": "proyek Anda.",
     "Planning a new installation, upgrading an existing system, or need maintenance and testing? Our engineers are ready to help you protect what matters — reach us using the details below.": "Merencanakan instalasi baru, meningkatkan sistem yang ada, atau membutuhkan pemeliharaan dan pengujian? Para insinyur kami siap membantu Anda melindungi hal yang penting — hubungi kami melalui detail di bawah ini.",
