@@ -424,12 +424,18 @@ cards. Missing ones fall back to the "photo needed" placeholder, so the
 page is safe to ship without them. Cut out on white, ~800px wide, shown
 up to about 260px tall.
 
-raasm-hose-reels.jpg              Hose & cable reels
-raasm-pumps.jpg                   Pneumatic and diaphragm pumps
-raasm-dispensing.jpg              Oil & grease dispensing, service columns
-raasm-waste-oil.jpg               Waste oil drainers and suction units
-raasm-centralised-lubrication.jpg Centralised lubrication system
-raasm-fluid-control.jpg           FLS level / FCS fluid control
+raasm-hose-reel.jpg                   Hose Reels
+raasm-cable-reel.jpg                  Cable Reels
+raasm-pneumatic-pumps.jpg             Pneumatic Pumps
+raasm-diaphragm-pumps.jpg             Diaphragm Pumps
+raasm-oil-equipment.jpg               Oil Equipment
+raasm-grease-equipment.jpg            Grease Equipment
+raasm-ram-hoists.jpg                  Waste Oil Ram Hoists
+raasm-centralized-lubrication-system.jpg Centralised Lubrication
+raasm-fls-fluids-level-system.jpg     Fluid Level FLS
+raasm-fcs-fluids-control-system.jpg   Fluid Control FCS
+raasm-service-columns-and-trolleys.jpg Service Columns Trolleys
+raasm-diesel-fuel-equipment.jpg       Diesel Fuel Equipment
 
 Worth choosing at least two of the six from a non-automotive setting —
 a plant floor or a mine workshop rather than a service bay. The whole

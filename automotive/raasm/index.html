@@ -125,96 +125,186 @@
 </section>
 
 <!-- ============ PRODUCT RANGE ============ -->
-<!-- Six cards covering the catalogue as RAASM group it. Photographs go in
-     /photos/automotive/raasm/ and are tracked in PHOTOS-NEEDED.txt; until
-     they land each card shows the "photo needed" placeholder, so the page
-     is safe to ship without them. The RAASM mark itself stays in
-     /photos/partners/ with the other principal logos. -->
+<!-- Twelve cards, one per RAASM product category, each opening that
+     category on raasm.com. One card, one destination: the six grouped
+     cards this replaces covered two to four RAASM categories each, so a
+     link on any of them would have dropped whatever it did not point at.
+
+     The cards carry no visible "opens elsewhere" line, so each anchor
+     says so in aria-label instead — a new tab with no warning is worse
+     for someone who cannot see it happen than for someone who can.
+
+     Photographs go in /photos/automotive/raasm/, named for the category,
+     and are tracked in PHOTOS-NEEDED.txt. Until one lands its card shows
+     the photo-needed placeholder. -->
 <section class="section paper">
   <div class="wrap">
     <div class="reveal">
       <span class="kicker">The range</span>
       <h2 class="h2">What RAASM builds.</h2>
-      <p class="lede">Six families, sold as single units or specified together as a system.</p>
+      <p class="lede">Twelve families, sold as single units or specified together as a system. Each one opens the maker&rsquo;s own catalogue.</p>
     </div>
     <div class="pgrid">
 
-      <div class="pcard reveal">
+      <a class="pcard cutout reveal" href="https://www.raasm.com/eng/products/hose-reel/" target="_blank" rel="noopener"
+         aria-label="Hose Reels &mdash; opens the RAASM catalogue on raasm.com in a new tab">
         <div class="pbox">
-          <img src="../../photos/automotive/raasm/raasm-hose-reels.jpg" alt="RAASM hose reels" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <img src="../../photos/automotive/raasm/raasm-hose-reel.jpg" alt="RAASM Hose Reels" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
           <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
         </div>
         <div class="pbody">
-          <h4>Hose &amp; Cable Reels</h4>
-          <p>Spring, manual and motorised reels for oil, grease, air, water, diesel and AdBlue, plus cable reels for the same bays.</p>
+          <h4>Hose Reels</h4>
+          <p>Spring, manual and motorised reels for oil, grease, air, water and diesel.</p>
           <div class="taglist"><span class="tag">Spring</span><span class="tag">Motorised</span><span class="tag">Trolley-mounted</span></div>
         </div>
-      </div>
+      </a>
 
-      <div class="pcard reveal d1">
+      <a class="pcard cutout reveal d1" href="https://www.raasm.com/eng/products/cable-reel/" target="_blank" rel="noopener"
+         aria-label="Cable Reels &mdash; opens the RAASM catalogue on raasm.com in a new tab">
         <div class="pbox">
-          <img src="../../photos/automotive/raasm/raasm-pumps.jpg" alt="RAASM pneumatic and diaphragm pumps" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <img src="../../photos/automotive/raasm/raasm-cable-reel.jpg" alt="RAASM Cable Reels" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
           <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
         </div>
         <div class="pbody">
-          <h4>Pumps</h4>
-          <p>Pneumatic ratio pumps and air-operated diaphragm pumps, sized by the fluid and the distance it has to travel.</p>
-          <div class="taglist"><span class="tag">Pneumatic</span><span class="tag">Diaphragm</span><span class="tag">Ratio pumps</span></div>
+          <h4>Cable Reels</h4>
+          <p>Cable reels in the same bodies, for power and light over the same bay.</p>
+          <div class="taglist"><span class="tag">Spring</span><span class="tag">Motorised</span></div>
         </div>
-      </div>
+      </a>
 
-      <div class="pcard reveal d2">
+      <a class="pcard cutout reveal d2" href="https://www.raasm.com/eng/products/pneumatic-pumps/" target="_blank" rel="noopener"
+         aria-label="Pneumatic Pumps &mdash; opens the RAASM catalogue on raasm.com in a new tab">
         <div class="pbox">
-          <img src="../../photos/automotive/raasm/raasm-dispensing.jpg" alt="RAASM oil and grease dispensing equipment" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <img src="../../photos/automotive/raasm/raasm-pneumatic-pumps.jpg" alt="RAASM Pneumatic Pumps" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
           <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
         </div>
         <div class="pbody">
-          <h4>Oil &amp; Grease Dispensing</h4>
-          <p>Metered guns, dispensers and service columns for oil, grease, antifreeze and screenwash, plus brake bleeders and tyre inflators.</p>
-          <div class="taglist"><span class="tag">Metered guns</span><span class="tag">Service columns</span><span class="tag">Trolleys</span></div>
+          <h4>Pneumatic Pumps</h4>
+          <p>Air-driven ratio pumps, sized by the fluid and the distance it has to travel.</p>
+          <div class="taglist"><span class="tag">Ratio pumps</span><span class="tag">Air driven</span></div>
         </div>
-      </div>
+      </a>
 
-      <div class="pcard reveal">
+      <a class="pcard cutout reveal" href="https://www.raasm.com/eng/products/diaphragm-pumps/" target="_blank" rel="noopener"
+         aria-label="Diaphragm Pumps &mdash; opens the RAASM catalogue on raasm.com in a new tab">
         <div class="pbox">
-          <img src="../../photos/automotive/raasm/raasm-waste-oil.jpg" alt="RAASM waste oil drainers and suction units" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <img src="../../photos/automotive/raasm/raasm-diaphragm-pumps.jpg" alt="RAASM Diaphragm Pumps" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
           <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
         </div>
         <div class="pbody">
-          <h4>Waste Oil Handling</h4>
-          <p>Gravity drainers, suction units and combined drainer-suction trolleys for taking used oil out cleanly and storing it safely.</p>
+          <h4>Diaphragm Pumps</h4>
+          <p>Air-operated double-diaphragm pumps for transfer duty and thicker fluids.</p>
+          <div class="taglist"><span class="tag">Double diaphragm</span><span class="tag">Transfer</span></div>
+        </div>
+      </a>
+
+      <a class="pcard cutout reveal d1" href="https://www.raasm.com/eng/products/oil-equipment/" target="_blank" rel="noopener"
+         aria-label="Oil Equipment &mdash; opens the RAASM catalogue on raasm.com in a new tab">
+        <div class="pbox">
+          <img src="../../photos/automotive/raasm/raasm-oil-equipment.jpg" alt="RAASM Oil Equipment" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
+        </div>
+        <div class="pbody">
+          <h4>Oil Equipment</h4>
+          <p>Metered guns, dispensers and oil handling for the service bay.</p>
+          <div class="taglist"><span class="tag">Metered guns</span><span class="tag">Dispensers</span></div>
+        </div>
+      </a>
+
+      <a class="pcard cutout reveal d2" href="https://www.raasm.com/eng/products/grease-equipment/" target="_blank" rel="noopener"
+         aria-label="Grease Equipment &mdash; opens the RAASM catalogue on raasm.com in a new tab">
+        <div class="pbox">
+          <img src="../../photos/automotive/raasm/raasm-grease-equipment.jpg" alt="RAASM Grease Equipment" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
+        </div>
+        <div class="pbody">
+          <h4>Grease Equipment</h4>
+          <p>Grease pumps, guns and reels for chassis work and plant maintenance.</p>
+          <div class="taglist"><span class="tag">Pumps</span><span class="tag">Guns</span><span class="tag">Reels</span></div>
+        </div>
+      </a>
+
+      <a class="pcard cutout reveal" href="https://www.raasm.com/eng/products/ram-hoists/" target="_blank" rel="noopener"
+         aria-label="Waste Oil Ram Hoists &mdash; opens the RAASM catalogue on raasm.com in a new tab">
+        <div class="pbox">
+          <img src="../../photos/automotive/raasm/raasm-ram-hoists.jpg" alt="RAASM Waste Oil Ram Hoists" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
+        </div>
+        <div class="pbody">
+          <h4>Waste Oil &amp; Ram Hoists</h4>
+          <p>Gravity drainers, suction units and ram hoists for taking used oil out cleanly.</p>
           <div class="taglist"><span class="tag">Drainers</span><span class="tag">Suction units</span><span class="tag">Ram hoists</span></div>
         </div>
-      </div>
+      </a>
 
-      <div class="pcard reveal d1">
+      <a class="pcard cutout reveal d1" href="https://www.raasm.com/eng/products/centralized-lubrication-system/" target="_blank" rel="noopener"
+         aria-label="Centralised Lubrication &mdash; opens the RAASM catalogue on raasm.com in a new tab">
         <div class="pbox">
-          <img src="../../photos/automotive/raasm/raasm-centralised-lubrication.jpg" alt="RAASM centralised lubrication system" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <img src="../../photos/automotive/raasm/raasm-centralized-lubrication-system.jpg" alt="RAASM Centralised Lubrication" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
           <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
         </div>
         <div class="pbody">
           <h4>Centralised Lubrication</h4>
-          <p>Single-line, dual-line and progressive systems that lubricate a machine or a whole line on schedule, without stopping it.</p>
+          <p>Single-line, dual-line and progressive systems that lubricate on schedule.</p>
           <div class="taglist"><span class="tag">Single line</span><span class="tag">Dual line</span><span class="tag">Progressive</span></div>
         </div>
-      </div>
+      </a>
 
-      <div class="pcard reveal d2">
+      <a class="pcard cutout reveal d2" href="https://www.raasm.com/eng/products/fls-fluids-level-system/" target="_blank" rel="noopener"
+         aria-label="Fluid Level FLS &mdash; opens the RAASM catalogue on raasm.com in a new tab">
         <div class="pbox">
-          <img src="../../photos/automotive/raasm/raasm-fluid-control.jpg" alt="RAASM fluid level and control systems" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <img src="../../photos/automotive/raasm/raasm-fls-fluids-level-system.jpg" alt="RAASM Fluid Level FLS" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
           <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
         </div>
         <div class="pbody">
-          <h4>Fluid Level &amp; Control</h4>
-          <p>FLS level monitoring and FCS fluid control &mdash; knowing what is in every drum and tank, and who drew what from it.</p>
-          <div class="taglist"><span class="tag">FLS</span><span class="tag">FCS</span><span class="tag">Rotary slip rings</span></div>
+          <h4>Fluid Level &mdash; FLS</h4>
+          <p>Level monitoring: what is in every drum and tank, without opening one.</p>
+          <div class="taglist"><span class="tag">FLS</span><span class="tag">Monitoring</span></div>
         </div>
-      </div>
+      </a>
+
+      <a class="pcard cutout reveal" href="https://www.raasm.com/eng/products/fcs-fluids-control-system/" target="_blank" rel="noopener"
+         aria-label="Fluid Control FCS &mdash; opens the RAASM catalogue on raasm.com in a new tab">
+        <div class="pbox">
+          <img src="../../photos/automotive/raasm/raasm-fcs-fluids-control-system.jpg" alt="RAASM Fluid Control FCS" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
+        </div>
+        <div class="pbody">
+          <h4>Fluid Control &mdash; FCS</h4>
+          <p>Fluid control: who drew what, how much of it, and against which job.</p>
+          <div class="taglist"><span class="tag">FCS</span><span class="tag">Metering</span></div>
+        </div>
+      </a>
+
+      <a class="pcard cutout reveal d1" href="https://www.raasm.com/eng/products/service-columns-and-trolleys/" target="_blank" rel="noopener"
+         aria-label="Service Columns Trolleys &mdash; opens the RAASM catalogue on raasm.com in a new tab">
+        <div class="pbox">
+          <img src="../../photos/automotive/raasm/raasm-service-columns-and-trolleys.jpg" alt="RAASM Service Columns Trolleys" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
+        </div>
+        <div class="pbody">
+          <h4>Service Columns &amp; Trolleys</h4>
+          <p>Columns and mobile trolleys that carry the reels and guns to the work.</p>
+          <div class="taglist"><span class="tag">Columns</span><span class="tag">Trolleys</span></div>
+        </div>
+      </a>
+
+      <a class="pcard cutout reveal d2" href="https://www.raasm.com/eng/products/diesel-fuel-equipment/" target="_blank" rel="noopener"
+         aria-label="Diesel Fuel Equipment &mdash; opens the RAASM catalogue on raasm.com in a new tab">
+        <div class="pbox">
+          <img src="../../photos/automotive/raasm/raasm-diesel-fuel-equipment.jpg" alt="RAASM Diesel Fuel Equipment" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
+        </div>
+        <div class="pbody">
+          <h4>Diesel Fuel Equipment</h4>
+          <p>Diesel dispensing and transfer for depots, plant and standby tanks.</p>
+          <div class="taglist"><span class="tag">Dispensing</span><span class="tag">Transfer</span></div>
+        </div>
+      </a>
 
     </div>
   </div>
 </section>
-
 <!-- ============ SECTORS ============ -->
 <!-- The point of the page: RAASM is not an automotive-only brand. Listed as
      text rather than photo cards so the section carries no photo debt. -->
