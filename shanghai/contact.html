@@ -60,7 +60,16 @@
     <ul class="tabs" id="tabs">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
-      <li><a href="products-services.html">Products &amp; Services</a></li>
+      <li class="has-drop">
+        <a href="products-services.html">Products &amp; Services <svg class="caret" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
+        <ul class="drop drop-co">
+          <li class="dgrp">By category</li>
+          <li><a href="https://www.custom.biz/en_GB/catalog/printers" target="_blank" rel="noopener">Professional Printing Solutions</a></li>
+          <li><a href="https://www.custom.biz/en_GB/catalog/dc-pos-solutions" target="_blank" rel="noopener">DC / POS Solutions</a></li>
+          <li><a href="https://www.custom.biz/en_GB/catalog/scanning-solutions" target="_blank" rel="noopener">Scanning Solutions</a></li>
+          <li><a href="https://www.custom.biz/en_GB/catalog/self-service-solutions" target="_blank" rel="noopener">Self-Service Solutions</a></li>
+        </ul>
+      </li>
       <li class="active"><a href="contact.html">Contact Us</a></li>
       <li class="tablang"><span class="tablang-lab"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.7 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.7-3.9-9S9.4 5.6 12 3z"/></svg>Language / 语言</span><div class="langtoggle" role="group" aria-label="Language"><button type="button" data-lang="en" class="active" aria-pressed="true">EN</button><button type="button" data-lang="zh" aria-pressed="false">中文</button></div></li>
     </ul>

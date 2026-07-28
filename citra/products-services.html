@@ -25,6 +25,11 @@ a.pcard:hover .more svg{transform:translateX(3px)}
    letterboxing either side reads as one continuous surface. */
 .pcard.cutout .pbox{background:var(--white)}
 .pcard.cutout .pbox img{object-fit:contain;padding:.55rem .35rem}
+
+/* Three cards have no page of their own, so the Products & Services
+   drop-down points at the cards themselves. The navbar is sticky, and
+   without this the card a visitor jumped to lands underneath it. */
+.pcard[id]{scroll-margin-top:76px}
 </style>
 </head>
 <body>
@@ -57,7 +62,19 @@ a.pcard:hover .more svg{transform:translateX(3px)}
     <ul class="tabs" id="tabs">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
-      <li class="active"><a href="products-services.html">Products &amp; Services</a></li>
+      <li class="has-drop active">
+        <a href="products-services.html">Products &amp; Services <svg class="caret" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
+        <ul class="drop drop-co">
+          <li class="dgrp">By category</li>
+          <li><a href="dispensers.html">Pumps &amp; Dispensers</a></li>
+          <li><a href="forecourt-controllers.html">Forecourt Controllers</a></li>
+          <li><a href="products-services.html#fuel-management">Fuel Management Systems</a></li>
+          <li><a href="products-services.html#flow-meters">Flow Meters</a></li>
+          <li><a href="tank-gauging.html">Automatic Tank Gauging</a></li>
+          <li><a href="submersible-pumps.html">Submersible Turbine Pumps</a></li>
+          <li><a href="products-services.html#piping">Piping &amp; Fueling Components</a></li>
+        </ul>
+      </li>
       <li><a href="contact.html">Contact Us</a></li>
     </ul>
   </div>
@@ -118,7 +135,7 @@ a.pcard:hover .more svg{transform:translateX(3px)}
         </div>
       </a>
 
-      <div class="pcard reveal d2">
+      <div class="pcard reveal d2" id="fuel-management">
         <div class="pbox">
           <img src="../photos/citra/products/citra-advanz.jpg" alt="AdvanZ fuel management systems" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
           <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
@@ -132,7 +149,7 @@ a.pcard:hover .more svg{transform:translateX(3px)}
         </div>
       </div>
 
-      <div class="pcard reveal">
+      <div class="pcard reveal" id="flow-meters">
         <div class="pbox">
           <img src="../photos/citra/products/citra-flowmeter.png" alt="TCS positive displacement flow meters" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
           <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
@@ -176,7 +193,7 @@ a.pcard:hover .more svg{transform:translateX(3px)}
         </div>
       </a>
 
-      <div class="pcard reveal">
+      <div class="pcard reveal" id="piping">
         <div class="pbox">
           <img src="../photos/citra/products/citra-piping.jpg" alt="Flexible piping systems" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
           <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
