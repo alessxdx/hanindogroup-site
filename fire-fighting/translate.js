@@ -203,11 +203,11 @@
     /* ---- projects page ----
        Indonesian puts the adjective after the noun, so the two halves of
        the heading swap sense: "Selected" carries Proyek and the coloured
-       half carries Terpilih. That is also why the coloured half is
-       "Projects." with the full stop — a bare "Projects" is the nav and
-       breadcrumb label, which has to stay Proyek on its own. */
+       half carries Terpilih. The coloured half is tagged
+       data-t="Projects (hero)" because a bare "Projects" is also the nav
+       and breadcrumb label, which has to stay Proyek on its own. */
     "Selected": "Proyek",
-    "Projects.": "Terpilih.",
+    "Projects (hero)": "Terpilih",
     "Complex fire-safety installations delivered across oil & gas, government, banking and industrial sectors.": "Instalasi keselamatan kebakaran yang kompleks di sektor migas, pemerintah, perbankan, dan industri.",
     "Projects completed": "Proyek selesai",
     "Service divisions": "Divisi layanan",
@@ -270,8 +270,14 @@
     while ((n = w.nextNode())) {
       if (!translatable(n)) continue;
       var raw = n.nodeValue, key = raw.trim();
+      /* data-t lets an element name its own dictionary entry. Needed when
+         the same English word wants two different Indonesian ones on the
+         same page — see "Projects (hero)". Everything else matches on the
+         visible text, which is still the normal way to add a phrase. */
+      var p = n.parentNode, forced = p && p.getAttribute && p.getAttribute('data-t');
+      if (forced) key = forced;
       if (key && Object.prototype.hasOwnProperty.call(DICT, key)) {
-        store.push({ node: n, en: raw, id: raw.replace(key, DICT[key]) });
+        store.push({ node: n, en: raw, id: raw.replace(raw.trim(), DICT[key]) });
       }
     }
   }
