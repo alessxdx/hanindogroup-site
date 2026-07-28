@@ -156,7 +156,11 @@
     "Click through to any of the companies below to find out more about what they do.": "Klik salah satu perusahaan di bawah ini untuk mengetahui lebih lanjut tentang apa yang mereka kerjakan.",
     "Petroleum equipment, station construction and fire protection.": "Peralatan perminyakan, konstruksi SPBU, dan proteksi kebakaran.",
     "Workshop and garage equipment for the service bay.": "Peralatan bengkel dan garasi untuk service bay.",
-    "Printing, scanning and point-of-sale systems.": "Sistem pencetakan, pemindaian, dan point-of-sale.",
+    "Printing, scanning and point-of-sale systems — the Custom range, carried by three companies in their own markets.": "Sistem pencetakan, pemindaian, dan point-of-sale — rangkaian Custom, dibawakan oleh tiga perusahaan di pasarnya masing-masing.",
+    /* the market under each of the three Printer & POS companies */
+    "Indonesia": "Indonesia",
+    "Singapore": "Singapura",
+    "China": "Tiongkok",
 
     /* ---- about: vision & mission ---- */
     "Our direction": "Arah kami",
