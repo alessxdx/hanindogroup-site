@@ -41,8 +41,6 @@
     "Projects": "Proyek",
     "Contact Us": "Hubungi Kami",
     "Your Solution Provider": "Mitra Solusi Anda",
-    "By category": "Menurut kategori",
-    "By brand": "Menurut merek",
     "Training Service": "Layanan Pelatihan",
     "Tyre Service": "Layanan Ban",
     "Lifts & Handling": "Lift & Penanganan",

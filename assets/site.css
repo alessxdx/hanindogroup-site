@@ -418,21 +418,13 @@ img{max-width:100%;display:block}
 }
 
 /* ---------- PAGE HERO ---------- */
-.pagehero{position:relative;overflow:hidden;color:#fff;background:var(--blue-900);min-height:clamp(240px,32vh,330px);display:flex;align-items:flex-end}
+.pagehero{position:relative;overflow:hidden;color:#fff;background:var(--blue-900);min-height:clamp(240px,32vh,330px);display:flex;align-items:center}
 /* Each company's HOME page gets a taller hero than its inner pages —
    414px against 288px on a 1280x900 screen. Add to the section tag:
    <section class="pagehero hero-tall">. Below 900px it drops back to
    the standard height, so a phone is not made to scroll past a tall
    band before reaching the page. */
 .pagehero.hero-tall{min-height:clamp(240px,46vh,420px)}
-/* The catalogue and brand sub-pages carry no banner photograph, so their
-   hero is a plain gradient. The hero bottom-aligns its content inside a
-   240-330px box, which behind a photograph reads as breathing room and
-   without one reads as a deep empty band above the breadcrumb. These get
-   a shorter box and a shorter lead-in, so the content sits where the eye
-   arrives rather than at the foot of an empty panel. */
-.pagehero.hero-flat{min-height:clamp(170px,20vh,230px)}
-.pagehero.hero-flat .wrap{padding-top:clamp(1.8rem,3.5vw,2.4rem)}
 @media(max-width:900px){.pagehero.hero-tall{min-height:clamp(240px,32vh,330px)}}
 .pagehero .bg{position:absolute;inset:0;z-index:0}
 .pagehero .bg img{width:100%;height:100%;object-fit:cover}
@@ -469,7 +461,9 @@ img{max-width:100%;display:block}
   .hstage{display:none}
 }
 .pagehero .glow{display:none}
-.pagehero .wrap{position:relative;z-index:2;padding-bottom:clamp(1.8rem,4vw,2.8rem);padding-top:clamp(3rem,7vw,4.2rem);width:100%}
+/* Even top and bottom: the content is centred, so an asymmetric pad
+   would push it back off centre. */
+.pagehero .wrap{position:relative;z-index:2;padding-top:clamp(2rem,4.5vw,3rem);padding-bottom:clamp(2rem,4.5vw,3rem);width:100%}
 .pagehero .crumb{font-size:.78rem;color:#a9bcd6;font-weight:500}
 .pagehero .crumb a:hover{color:#fff}
 .pagehero .crumb .sep{opacity:.45;margin:0 .45rem}
@@ -944,6 +938,14 @@ img{max-width:100%;display:block}
 .wall .nm,.wall .w>span{font-size:.78rem;font-weight:600;color:var(--muted);line-height:1.25}
 .wall .t1 .nm,.wall .t1>span{font-size:.86rem;color:var(--blue-800)}
 .wall .t3 .nm,.wall .t3>span{font-size:.72rem}
+
+/* Sitting in the first section with its full lead-in, the row read as a
+   line of boxes adrift above the content. Tight to the banner and closed
+   with a hairline, it reads as a strip of siblings belonging to it. The
+   filter form on the Airtec range is the same component doing a different
+   job, so it takes neither. */
+.section.catbar{padding-top:1.5rem}
+.catnav:not(.sectorfilter){padding-bottom:1.3rem;border-bottom:1px solid var(--line);margin-bottom:2rem}
 
 /* ---------- CATEGORY NAV ---------- */
 /* The pill row under a catalogue or brand banner: jump to a sibling
