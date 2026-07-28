@@ -328,6 +328,12 @@ img{max-width:100%;display:block}
    than a company with a page of its own, so its row is a heading and
    not a link — the three companies beneath it are the destinations. */
 .drop .glabel{display:block;padding:.8rem 1.15rem;font-size:.87rem;font-weight:700;color:#fff;white-space:nowrap;border-left:2px solid transparent;cursor:default}
+/* A .glabel that is also a link — the Training Service entry at the foot
+   of the Automotive drop-down. It wants the group headings' weight, so
+   it reuses the class, including its phone padding; all it needs back is
+   the pointer. The hover highlight comes free: .drop a:hover out-specifies
+   .drop .glabel. */
+.drop a.glabel{cursor:pointer}
 .subdrop a{padding-left:2.3rem;font-size:.83rem;color:#b9c6d8;position:relative}
 /* short elbow marking the item as a child of the entry above it */
 .subdrop a::before{content:"";position:absolute;left:1.45rem;top:50%;width:9px;height:1px;background:rgba(255,255,255,.32)}
