@@ -347,8 +347,10 @@ img{max-width:100%;display:block}
    that goes somewhere. And an em dash doing the work of an indent.
    All three are gone here.
 
-   Scoped to .drop-co — the Products & Services and Automotive menus
-   keep the plain list. */
+   Carried by .drop-co, which the Automotive Products & Services menu
+   uses as well: its rows had the same three problems. The group-level
+   Products & Services menu is four flat entries with no headings, so
+   it has nothing to gain and stays on the plain list. */
 /* No company marks. They were tried and taken out: the logos are
    wordmarks carrying their own "Member of the Hanindo Group of
    Companies" microtext, which is unreadable at menu size, and the one
@@ -423,6 +425,14 @@ img{max-width:100%;display:block}
    the standard height, so a phone is not made to scroll past a tall
    band before reaching the page. */
 .pagehero.hero-tall{min-height:clamp(240px,46vh,420px)}
+/* The catalogue and brand sub-pages carry no banner photograph, so their
+   hero is a plain gradient. The hero bottom-aligns its content inside a
+   240-330px box, which behind a photograph reads as breathing room and
+   without one reads as a deep empty band above the breadcrumb. These get
+   a shorter box and a shorter lead-in, so the content sits where the eye
+   arrives rather than at the foot of an empty panel. */
+.pagehero.hero-flat{min-height:clamp(170px,20vh,230px)}
+.pagehero.hero-flat .wrap{padding-top:clamp(1.8rem,3.5vw,2.4rem)}
 @media(max-width:900px){.pagehero.hero-tall{min-height:clamp(240px,32vh,330px)}}
 .pagehero .bg{position:absolute;inset:0;z-index:0}
 .pagehero .bg img{width:100%;height:100%;object-fit:cover}
