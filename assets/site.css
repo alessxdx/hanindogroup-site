@@ -350,8 +350,17 @@ img{max-width:100%;display:block}
      behind the hero and the button looks dead. */
   .navbar{position:relative;background:transparent;border-bottom:0}
   .navbar .wrap{position:relative;justify-content:flex-end;min-height:0;padding-top:0;padding-bottom:0}
-  .tabs{position:absolute;left:0;right:0;top:100%;flex-direction:column;background:var(--blue-800);opacity:0;visibility:hidden;transition:opacity .18s,visibility .18s;max-height:calc(100vh - 120px);overflow-y:auto;border-top:1px solid rgba(255,255,255,.08)}
-  .tabs.open{opacity:1;visibility:visible}
+  /* pointer-events, not just opacity and visibility. The closed menu is
+     absolutely positioned over the hero, and .drop below re-declares
+     visibility:visible so the sub-lists show once the menu opens — which
+     also re-enables hit-testing on them while it is shut. The invisible
+     dropdown links then sat on top of the hero and swallowed the taps
+     meant for it: tapping Hanindo Automotive in the companies panel
+     opened the Citra site, because an unseen "Oil & Gas" link was over
+     it. Killing pointer events on the closed menu settles it whatever
+     the descendants do with visibility. */
+  .tabs{position:absolute;left:0;right:0;top:100%;flex-direction:column;background:var(--blue-800);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .18s,visibility .18s;max-height:calc(100vh - 120px);overflow-y:auto;border-top:1px solid rgba(255,255,255,.08)}
+  .tabs.open{opacity:1;visibility:visible;pointer-events:auto}
   .tabs>li{display:block}
   .tabs>li>a{padding:.9rem var(--pad);border-bottom:0;border-left:2px solid transparent}
   .tabs>li.active>a{border-left-color:var(--brand)}
