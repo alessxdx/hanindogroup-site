@@ -939,31 +939,50 @@ img{max-width:100%;display:block}
 .wall .t1 .nm,.wall .t1>span{font-size:.86rem;color:var(--blue-800)}
 .wall .t3 .nm,.wall .t3>span{font-size:.72rem}
 
-/* Sitting in the first section with its full lead-in, the row read as a
-   line of boxes adrift above the content. Tight to the banner and closed
-   with a hairline, it reads as a strip of siblings belonging to it. The
-   filter form on the Airtec range is the same component doing a different
-   job, so it takes neither. */
+/* The row sits tight under the banner rather than a full section's
+   lead-in below it. No rule under it: as type rather than boxes it
+   needs no closing edge, and the first card below supplies one. */
 .section.catbar{padding-top:1.5rem}
-.catnav:not(.sectorfilter){padding-bottom:1.3rem;border-bottom:1px solid var(--line);margin-bottom:2rem}
 
 /* ---------- CATEGORY NAV ---------- */
-/* The pill row under a catalogue or brand banner: jump to a sibling
-   category, the current one filled in. Anchors on the six catalogue and
-   brand pages; buttons where the same row filters in place rather than
-   navigating, as on the Airtec range.
+/* The row under a catalogue or brand banner: jump to a sibling category,
+   the current one marked. Two forms, and they are not interchangeable —
+   the anchors navigate, so they read as tabs; the Airtec range filter is
+   a button that changes what is already on screen, so it keeps the pill.
+   A filter that looks like a link promises a page it does not deliver.
 
-   This lived in five separate page <style> blocks and the copies drifted
-   apart — four styled the anchor, Airtec styled only the button, and the
-   RAASM page had no copy at all, so its row came out as bare text. Kept
-   here so there is one of it. */
-.catnav{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.8rem}
-.catnav a,.catnav button{font-family:inherit;font-size:.86rem;font-weight:600;padding:.5rem 1rem;border:1px solid var(--line);border-radius:var(--r);color:var(--blue-800);background:transparent;transition:border-color .15s,color .15s,background .15s}
-/* the filter form sits on a tinted panel, so it carries its own white */
-.catnav button{background:var(--white);cursor:pointer}
-.catnav a:hover,.catnav button:hover{border-color:var(--brand);color:var(--brand)}
-.catnav a.on,.catnav button.on{background:var(--blue-800);color:#fff;border-color:var(--blue-800)}
-.catnav a:focus-visible,.catnav button:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+   The tab underline grows from the centre out rather than fading in,
+   which is the treatment on raasm.com's own menu: a 2px bar going from
+   no width at the midpoint to full width, over .3s.
+
+   These rules lived in five separate page <style> blocks and the copies
+   drifted apart, so they are kept here only. */
+.catnav{display:flex;flex-wrap:wrap;gap:1.7rem;margin-bottom:2rem}
+
+/* --- tabs (navigate) --- */
+.catnav a{position:relative;font-family:inherit;font-size:.9rem;font-weight:600;
+  padding:.25rem 0;color:var(--muted);background:transparent;transition:color .3s ease-in-out}
+.catnav a::after{content:'';display:block;position:absolute;bottom:-4px;left:50%;
+  width:0;height:2px;background:var(--brand);transition:.3s all ease-in-out}
+.catnav a:hover{color:var(--blue-900)}
+.catnav a:hover::after{width:100%;left:0}
+.catnav a.on{color:var(--blue-900);font-weight:700}
+.catnav a.on::after{width:100%;left:0}
+.catnav a:focus-visible{outline:2px solid var(--brand);outline-offset:3px}
+/* The bar is the only thing marking the current tab, so it must not be
+   the only thing that moves for someone who has asked motion to stop. */
+@media(prefers-reduced-motion:reduce){
+  .catnav a,.catnav a::after{transition:none}
+}
+
+/* --- pills (filter in place) --- */
+.catnav.sectorfilter{gap:.5rem;align-items:center}
+.catnav button{font-family:inherit;font-size:.86rem;font-weight:600;padding:.5rem 1rem;
+  border:1px solid var(--line);border-radius:var(--r);color:var(--blue-800);
+  background:var(--white);cursor:pointer;transition:border-color .15s,color .15s,background .15s}
+.catnav button:hover{border-color:var(--brand);color:var(--brand)}
+.catnav button.on{background:var(--blue-800);color:#fff;border-color:var(--blue-800)}
+.catnav button:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
 
 /* ---------- CATALOGUE GRID ---------- */
 /* Product-category cards: one photo, one label, one link. Used on the
