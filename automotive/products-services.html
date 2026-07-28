@@ -29,6 +29,16 @@
    column count to the cards. If a fourth service is added, remove the
    svc-3 class and the four-column default takes over. */
 @media(min-width:1001px){.svc-3{grid-template-columns:repeat(3,1fr)}}
+/* Tighter than the shared .svc. These three are one-line summaries with
+   the detail underneath them, so the roomier padding site.css gives the
+   Flowtech and Citra service grids left them looking half empty. Scoped
+   to .svc-3 rather than changed in site.css — those other grids carry
+   longer copy and still want the space. */
+.svc-3{margin-top:1.6rem}
+.svc-3 .svc{padding:1.25rem 1.2rem}
+.svc-3 .svc .ic{width:27px;height:27px;margin-bottom:.7rem}
+.svc-3 .svc h3{font-size:.98rem;margin-bottom:.3rem}
+.svc-3 .svc p{font-size:.86rem;line-height:1.5}
 
 /* The two training courses. Same flat card as the rest of the page —
    hairline border, no fill — so they read as detail hanging off the
@@ -219,7 +229,7 @@
       <div class="svc reveal">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M12 4L2.5 8.5 12 13l9.5-4.5z"/><path d="M6.5 10.7V15c0 1.3 2.5 2.6 5.5 2.6s5.5-1.3 5.5-2.6v-4.3"/><path d="M21.5 8.5V14"/></svg></div>
         <h3>Technical Training</h3>
-        <p>Spooring and balancing courses for workshop mechanics and sales counter staff, run at your premises.</p>
+        <p>Spooring and balancing courses.</p>
       </div>
       <div class="svc reveal d1">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.8-3.8a6 6 0 01-7.9 7.9l-6.9 6.9a2.1 2.1 0 01-3-3l6.9-6.9a6 6 0 017.9-7.9z"/></svg></div>
@@ -232,7 +242,7 @@
         <p>Service visits and genuine spare parts, backed by after-sales support from the team that installed the machine.</p>
       </div>
     </div>
-    <p class="plist-lead reveal d3" style="margin-top:1.6rem">The training programme covers theory and practice:</p>
+    <p class="plist-lead reveal d3" style="margin-top:1.2rem">The training programme covers theory and practice:</p>
     <div class="courses reveal d3">
       <div class="course">
         <span class="clbl">Technical training</span>
