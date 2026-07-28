@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/site.css?v=202607280900" />
+<link rel="stylesheet" href="../assets/site.css?v=202607281400" />
 <style>
 /* The group's companies as three boxes, always visible — same card block
    as the Contact Us router so the two pages read alike. align-items:start
@@ -59,25 +59,19 @@
       <li class="active"><a href="../about/">About Us</a></li>
       <li class="has-drop">
         <a href="../#companies">Our Companies <svg class="caret" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
-        <ul class="drop">
-          <li><a href="../citra/">Hanindo Citra</a>
+        <ul class="drop drop-co">
+          <li class="dgrp">By industry</li>
+          <li><a href="../citra/"><span class="cmark"><img src="../photos/brand/logo-citra.png" alt="" loading="lazy" onerror="this.style.display=&#39;none&#39;;var s=this.nextElementSibling;if(s)s.style.display=&#39;block&#39;" /><b style="display:none">HANINDO CITRA</b></span>Hanindo Citra</a>
             <ul class="subdrop">
               <li><a href="../fire-fighting/">Fire Fighting Department</a></li>
             </ul>
           </li>
-          <li><a href="../flowtech-engineering/">Flowtech Engineering</a></li>
-          <li><a href="../automotive/">Hanindo Automotive</a></li>
-          <li><span class="glabel">Custom SEA Hanindo</span>
-            <ul class="subdrop">
-              <li><a href="../automation/">Hanindo Automation Solutions (Indonesia)</a></li>
-              <li><a href="../printer-pos/">Gralessando Pte Ltd (Singapore)</a></li>
-            </ul>
-          </li>
-          <li><span class="glabel">Custom China Hanindo</span>
-            <ul class="subdrop">
-              <li><a href="../shanghai/">Hanindo Shanghai</a></li>
-            </ul>
-          </li>
+          <li><a href="../flowtech-engineering/"><span class="cmark"><b>FLOWTECH</b></span>Flowtech Engineering</a></li>
+          <li><a href="../automotive/"><span class="cmark"><img src="../photos/brand/logo-automotive.png" alt="" loading="lazy" onerror="this.style.display=&#39;none&#39;;var s=this.nextElementSibling;if(s)s.style.display=&#39;block&#39;" /><b style="display:none">HANINDO AUTOMOTIVE</b></span>Hanindo Automotive</a></li>
+          <li class="dgrp">Printer &amp; POS, by market</li>
+          <li><a href="../automation/"><span class="cmark"><img src="../photos/brand/logo-automation.png" alt="" loading="lazy" onerror="this.style.display=&#39;none&#39;;var s=this.nextElementSibling;if(s)s.style.display=&#39;block&#39;" /><b style="display:none">AUTOMATION</b></span>Hanindo Automation Solutions <span class="cwhere">(Indonesia)</span></a></li>
+          <li><a href="../printer-pos/"><span class="cmark"><img src="../photos/brand/logo-gralessando.png" alt="" loading="lazy" onerror="this.style.display=&#39;none&#39;;var s=this.nextElementSibling;if(s)s.style.display=&#39;block&#39;" /><b style="display:none">GRALESSANDO</b></span>Gralessando Pte Ltd <span class="cwhere">(Singapore)</span></a></li>
+          <li><a href="../shanghai/"><span class="cmark"><img src="../photos/brand/logo-shanghai.png" alt="" loading="lazy" onerror="this.style.display=&#39;none&#39;;var s=this.nextElementSibling;if(s)s.style.display=&#39;block&#39;" /><b style="display:none">HANINDO SHANGHAI</b></span>Hanindo Shanghai <span class="cwhere">(China)</span></a></li>
         </ul>
       </li>
       <li class="has-drop">
@@ -259,6 +253,6 @@ function hsearch(f){var q=(f.q.value||'').trim();if(!q)return false;window.open(
 /* reveal */
 (function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
 </script>
-<script src="../translate.js?v=202607281130"></script>
+<script src="../translate.js?v=202607281400"></script>
 </body>
 </html>

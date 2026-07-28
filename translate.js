@@ -32,6 +32,16 @@
     "Home": "Beranda",
     "About Us": "Tentang Kami",
     "Our Companies": "Perusahaan Kami",
+    /* the two headings inside the Our Companies menu. They group by what
+       the companies do and by the market they serve, not by country —
+       three of the six are Indonesian. */
+    "By industry": "Menurut industri",
+    "Printer & POS, by market": "Printer & POS, menurut pasar",
+    "Fire Fighting Department": "Departemen Pemadam Kebakaran",
+    "Hanindo Automation Solutions": "Hanindo Automation Solutions",
+    "(Indonesia)": "(Indonesia)",
+    "(Singapore)": "(Singapura)",
+    "(China)": "(Tiongkok)",
     "Products & Services": "Produk & Layanan",
     "Partners": "Mitra",
     "Career": "Karier",
