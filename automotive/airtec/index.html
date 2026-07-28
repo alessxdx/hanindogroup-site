@@ -59,15 +59,6 @@ table.spectable tr{display:flex;justify-content:space-between;gap:1rem;
 table.spectable td{padding:0}
 table.spectable td:first-child{color:var(--muted)}
 table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
-/* Setting filter over the range. .catnav is the pill row the catalogue
-   pages use for cross-links; those rules are page-local to each of them,
-   so they are restated here and given button semantics — this filters in
-   place rather than navigating. */
-.catnav{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.8rem}
-.catnav button{font-family:inherit;font-size:.86rem;font-weight:600;padding:.5rem 1rem;border:1px solid var(--line);border-radius:var(--r);color:var(--blue-800);background:var(--white);cursor:pointer;transition:border-color .15s,color .15s,background .15s}
-.catnav button:hover{border-color:var(--brand);color:var(--brand)}
-.catnav button.on{background:var(--blue-800);color:#fff;border-color:var(--blue-800)}
-.catnav button:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
 .sectorfilter{align-items:center}
 /* The row above this one navigates; this one filters. Same pills, so
    it says which it is. */
@@ -109,7 +100,6 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
       <li class="has-drop active">
         <a href="../products-services.html">Products &amp; Services <svg class="caret" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
         <ul class="drop drop-co">
-          <li class="dgrp">By category</li>
           <li><a href="../tyre-service/">Tyre Service</a></li>
           <li><a href="../airtec/">Tyre Inflation</a></li>
           <li><a href="../lifts/">Lifts &amp; Handling</a></li>

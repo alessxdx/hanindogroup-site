@@ -945,6 +945,24 @@ img{max-width:100%;display:block}
 .wall .t1 .nm,.wall .t1>span{font-size:.86rem;color:var(--blue-800)}
 .wall .t3 .nm,.wall .t3>span{font-size:.72rem}
 
+/* ---------- CATEGORY NAV ---------- */
+/* The pill row under a catalogue or brand banner: jump to a sibling
+   category, the current one filled in. Anchors on the six catalogue and
+   brand pages; buttons where the same row filters in place rather than
+   navigating, as on the Airtec range.
+
+   This lived in five separate page <style> blocks and the copies drifted
+   apart — four styled the anchor, Airtec styled only the button, and the
+   RAASM page had no copy at all, so its row came out as bare text. Kept
+   here so there is one of it. */
+.catnav{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.8rem}
+.catnav a,.catnav button{font-family:inherit;font-size:.86rem;font-weight:600;padding:.5rem 1rem;border:1px solid var(--line);border-radius:var(--r);color:var(--blue-800);background:transparent;transition:border-color .15s,color .15s,background .15s}
+/* the filter form sits on a tinted panel, so it carries its own white */
+.catnav button{background:var(--white);cursor:pointer}
+.catnav a:hover,.catnav button:hover{border-color:var(--brand);color:var(--brand)}
+.catnav a.on,.catnav button.on{background:var(--blue-800);color:#fff;border-color:var(--blue-800)}
+.catnav a:focus-visible,.catnav button:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+
 /* ---------- CATALOGUE GRID ---------- */
 /* Product-category cards: one photo, one label, one link. Used on the
    company Products & Services pages so a single grid replaces the older
