@@ -1,0 +1,632 @@
+/* =====================================================================
+   Hanindo Automotive — EN / Bahasa Indonesia toggle
+   ---------------------------------------------------------------------
+   Same mechanism as the other company sites: on load it walks the
+   visible text and, where a phrase matches an entry below, swaps
+   English <-> Bahasa Indonesia. The choice is remembered
+   (localStorage) across the pages of this site only.
+
+   Eleven pages: the five main ones and the six catalogue pages
+   (airtec, lifts, raasm, service, tyre-service, welding).
+
+   To EDIT a translation: find the English on the left, change the
+   Indonesian on the right. To ADD one: copy a line and fill in both
+   sides. The English side must match the page EXACTLY, including
+   punctuation — the match is on the whole trimmed text node, not a
+   substring.
+
+   DELIBERATELY LEFT IN ENGLISH
+   1. Names — the company, the principals (Airtec, HPA-Faip, RAASM,
+      Brain Bee), our own brands (WELDANN, ATOM, HAKIRO), and every
+      customer on the wall.
+   2. Model codes — 89MXA, DL-3.5YD, GC-4.0PRO and the rest.
+   3. Measurements and units — 3.5 T, 110–1000 mm, 220–240 VAC,
+      ±0.5% FS. Numbers and SI units read the same either way.
+   4. The street address, the phone number and the mailbox.
+   5. Workshop vocabulary that Indonesian mechanics say in English.
+      The Indonesian reviewer confirmed this for spooring, balancing,
+      toe, camber and caster; the same applies to the rest of the
+      alignment and tyre-machine set — setback, thrust angle, king pin
+      angle, bead breaker, chuck, self-centring, unbalance, run-out.
+      Translating those would read as less professional, not more.
+      That list is the one worth a second opinion, rather than the
+      three hundred strings around it.
+   ===================================================================== */
+(function () {
+  var DICT = {
+    /* ---- navigation / header ---- */
+    "Home": "Beranda",
+    "About Us": "Tentang Kami",
+    "Products & Services": "Produk & Layanan",
+    "Projects": "Proyek",
+    "Contact Us": "Hubungi Kami",
+    "Your Solution Provider": "Mitra Solusi Anda",
+    "By category": "Menurut kategori",
+    "By brand": "Menurut merek",
+    "Training Service": "Layanan Pelatihan",
+    "Tyre Service": "Layanan Ban",
+    "Lifts & Handling": "Lift & Penanganan",
+    "Service Equipment": "Peralatan Servis",
+    "Welding": "Pengelasan",
+
+    /* ---- home ---- */
+    "Automotive": "Otomotif",
+    "PT. Hanindo Automotive equips the modern service bay — diagnostics, lifting and handling, tyre service and lubrication.": "PT. Hanindo Automotive melengkapi service bay modern — diagnostik, pengangkatan dan penanganan, layanan ban, dan pelumasan.",
+    "The workshop, fully equipped.": "Bengkel, lengkap sepenuhnya.",
+    "As one of the companies under the flag of Hanindo Group, PT. Hanindo Automotive inherits the same tradition of continuously offering innovative and fully dedicated service. Specializing in the autoshop equipment business, it offers products built on the latest technology.": "Sebagai salah satu perusahaan di bawah bendera Hanindo Group, PT. Hanindo Automotive mewarisi tradisi yang sama dalam menghadirkan layanan yang inovatif dan sepenuh hati. Berfokus pada bisnis peralatan bengkel, perusahaan ini menawarkan produk yang dibangun di atas teknologi terkini.",
+    "Specialists in autoshop and garage equipment for the automotive service industry": "Spesialis peralatan bengkel dan garasi untuk industri jasa otomotif",
+    "Products selected to increase efficiency, productivity and user friendliness": "Produk yang dipilih untuk meningkatkan efisiensi, produktivitas, dan kemudahan penggunaan",
+    "Sole distributor in Indonesia for a range of international garage equipment principals": "Distributor tunggal di Indonesia untuk sejumlah prinsipal peralatan garasi internasional",
+    "What we supply": "Yang kami sediakan",
+    "Wheel Alignment": "Spooring Roda",
+    "Tyre Changer": "Tyre Changer",
+    "Wheel Balancer": "Wheel Balancer",
+    "Tyre Inflator": "Pengisi Angin Ban",
+    "Car Lift": "Car Lift",
+    "Lubrication": "Pelumasan",
+    "Our Brands": "Merek Kami",
+    "Customer base": "Basis pelanggan",
+    "Talk to Hanindo Automotive": "Hubungi Hanindo Automotive",
+    "Fitting out a workshop,": "Melengkapi bengkel,",
+    "or replacing a bay?": "atau mengganti isi satu bay?",
+    "Tell us the bays you run and our team will specify the lifts, diagnostics and tyre equipment to match.": "Beri tahu kami bay yang Anda operasikan dan tim kami akan menentukan lift, alat diagnostik, dan peralatan ban yang sesuai.",
+    "Email our team": "Email tim kami",
+    "Contact page": "Halaman kontak",
+    "Head Office": "Kantor Pusat",
+    "Head office": "Kantor pusat",
+    "Phone": "Telepon",
+    "Email": "Email",
+    "Tel:": "Tel:",
+    "Photo needed": "Perlu foto",
+    "Photo to follow": "Foto menyusul",
+
+    /* ---- footer ---- */
+    "Your technology one stop solution — serving the oil & gas, automation, automotive and fire protection industries in Indonesia since 1987.": "Solusi teknologi satu atap Anda — melayani industri minyak & gas, otomasi, otomotif, dan proteksi kebakaran di Indonesia sejak 1987.",
+    "Our Companies": "Perusahaan Kami",
+    "© 2026 Hanindo Group. All Rights Reserved.": "© 2026 Hanindo Group. Hak Cipta Dilindungi.",
+
+    /* ---- about ---- */
+    "About": "Tentang",
+    "Us": "Kami",
+    "Supplying, installing and servicing autoshop equipment, and building our own brands.": "Memasok, memasang, dan merawat peralatan bengkel, serta membangun merek kami sendiri.",
+    "Company overview": "Profil perusahaan",
+    "The principals we distribute": "Prinsipal yang kami distribusikan",
+    "PT. Hanindo Automotive continuously offers innovative breakthroughs and fully dedicated service. It offers products built on the latest technology to increase efficiency, productivity and user friendliness.": "PT. Hanindo Automotive terus menghadirkan terobosan inovatif dan layanan sepenuh hati. Perusahaan ini menawarkan produk yang dibangun di atas teknologi terkini untuk meningkatkan efisiensi, produktivitas, dan kemudahan penggunaan.",
+    "Some of the brands that rely on Hanindo Automotive as their sole distributor:": "Beberapa merek yang mempercayakan Hanindo Automotive sebagai distributor tunggalnya:",
+    "Digital tyre inflators — workshop, forecourt and plant": "Pengisi angin ban digital — bengkel, SPBU, dan pabrik",
+    "Aligners, balancers & tyre changers": "Alat spooring, balancing & tyre changer",
+    "Oil & lubrication equipment — workshop and industrial": "Peralatan oli & pelumasan — bengkel dan industri",
+    "Our own brands": "Merek kami sendiri",
+    "WELDANN and ATOM.": "WELDANN dan ATOM.",
+    "Alongside the manufacturers we represent, Hanindo Automotive builds and supplies equipment under two brands of our own. We control Weldann and ATOM specification, hold the spare parts, and back them with our own warranty, training and service.": "Selain produsen yang kami wakili, Hanindo Automotive juga membuat dan memasok peralatan di bawah dua merek milik kami sendiri. Kami menentukan spesifikasi Weldann dan ATOM, menyediakan suku cadangnya, serta mendukungnya dengan garansi, pelatihan, dan layanan kami sendiri.",
+    "Professional-grade welding and workshop equipment — tyre service, lifts, fluid exchange, brake and diagnostic machines. Built for heavy-duty use with long service life, and supported by warranty, training and after-sales service across South East Asia.": "Peralatan las dan bengkel kelas profesional — layanan ban, lift, penggantian fluida, mesin rem, dan mesin diagnostik. Dirancang untuk pemakaian berat dengan usia pakai panjang, serta didukung garansi, pelatihan, dan layanan purnajual di seluruh Asia Tenggara.",
+    "Vehicle lifts — mid-rise, in-ground and on-ground scissor lifts and two-post lifts from 3.5 to 4 tonnes. ISO 9001 certified, with CNC-machined cylinders, imported seals and 24 V safety control circuits.": "Lift kendaraan — scissor lift mid-rise, tanam, dan permukaan, serta lift dua tiang dari 3,5 hingga 4 ton. Bersertifikat ISO 9001, dengan silinder hasil permesinan CNC, seal impor, dan rangkaian kontrol keselamatan 24 V.",
+    "Our direction": "Arah kami",
+    "Vision & Mission": "Visi & Misi",
+    "01 / Vision": "01 / Visi",
+    "Vision": "Visi",
+    "To be the workshop-equipment partner Indonesia's automotive service industry trusts.": "Menjadi mitra peralatan bengkel yang dipercaya industri jasa otomotif Indonesia.",
+    "02 / Mission": "02 / Misi",
+    "Mission": "Misi",
+    "Supply equipment built on the latest technology.": "Menyediakan peralatan yang dibangun di atas teknologi terkini.",
+    "Back every installation with training, spare parts and after-sales service.": "Mendukung setiap pemasangan dengan pelatihan, suku cadang, dan layanan purnajual.",
+    "Grow WELDANN and ATOM to international standards of quality and safety.": "Mengembangkan WELDANN dan ATOM ke standar mutu dan keselamatan internasional.",
+    "Why choose us": "Mengapa memilih kami",
+    "Why clients trust us": "Mengapa klien mempercayai kami",
+    "Three things you can count on, from specifying the first bay through to long-term service.": "Tiga hal yang dapat Anda andalkan, dari penentuan bay pertama hingga layanan jangka panjang.",
+    "Trusted": "Terpercaya",
+    "One of the Hanindo Group companies, sole distributor to Indonesia's automotive service industry.": "Salah satu perusahaan Hanindo Group, distributor tunggal bagi industri jasa otomotif Indonesia.",
+    "Best Quality": "Kualitas Terbaik",
+    "Products built on the latest technology — from the makers we represent and our own WELDANN and ATOM brands.": "Produk yang dibangun di atas teknologi terkini — dari produsen yang kami wakili serta merek WELDANN dan ATOM milik kami sendiri.",
+    "Excellent Service": "Pelayanan Prima",
+    "Installation, training, spare parts and committed after-sales support from our own team.": "Pemasangan, pelatihan, suku cadang, dan dukungan purnajual yang berkomitmen dari tim kami sendiri.",
+
+    /* ---- products & services ---- */
+    "Products &": "Produk &",
+    "Services": "Layanan",
+    "Tyre service and inflation, lifting and handling, service equipment, lubrication and welding — six ranges across the catalogue.": "Layanan ban dan pengisian angin, pengangkatan dan penanganan, peralatan servis, pelumasan, dan pengelasan — enam rangkaian dalam katalog.",
+    "What we offer": "Yang kami tawarkan",
+    "Professional equipment, from the service bay to the plant floor": "Peralatan profesional, dari service bay hingga lantai pabrik",
+    "Equipment from leading international manufacturers, chosen to improve productivity, safety and service quality. Most of it fits out a workshop. The inflation and lubrication ranges reach further — the same equipment runs on forecourts, in depots and plants, and across mine sites.": "Peralatan dari produsen internasional terkemuka, dipilih untuk meningkatkan produktivitas, keselamatan, dan mutu layanan. Sebagian besar untuk melengkapi bengkel. Rangkaian pengisian angin dan pelumasan menjangkau lebih jauh — peralatan yang sama dipakai di SPBU, depo, pabrik, dan area tambang.",
+    "Tyre changers, wheel balancers and 3D wheel alignment.": "Tyre changer, wheel balancer, dan spooring roda 3D.",
+    "View products": "Lihat produk",
+    "Tyre Inflation": "Pengisian Angin Ban",
+    "Digital inflators — machine-mounted, high flow, high pressure and temperature compensating.": "Pengisi angin digital — terpasang pada mesin, aliran tinggi, tekanan tinggi, dan berkompensasi suhu.",
+    "Scissor, two-post and four-post lifts, 3.5 to 4 tonnes.": "Scissor lift, lift dua tiang, dan lift empat tiang, 3,5 hingga 4 ton.",
+    "Fluid exchange, brake lathe, A/C recycling and diagnostics.": "Penggantian fluida, bubut rem, daur ulang A/C, dan diagnostik.",
+    "Lubrication & Fluid Handling": "Pelumasan & Penanganan Fluida",
+    "Reels, pumps, dispensing, waste oil and centralised lubrication.": "Reel, pompa, dispensing, oli bekas, dan pelumasan terpusat.",
+    "MMA and MIG/MMA inverters, 200 A to 700 A.": "Inverter MMA dan MIG/MMA, 200 A hingga 700 A.",
+
+    /* ---- products & services: the services block ---- */
+    "Support beyond the equipment": "Dukungan lebih dari sekadar alat",
+    "Supplying the machine is the start. These services are quoted separately, so you take only what you need — and the training is open to anyone, not only to customers who buy equipment from us.": "Pengadaan mesin hanyalah awal. Layanan berikut ditawarkan terpisah, sehingga Anda hanya mengambil yang Anda butuhkan — dan pelatihannya terbuka untuk siapa saja, tidak hanya bagi pelanggan yang membeli peralatan dari kami.",
+    "Technical Training": "Pelatihan Teknis",
+    "Spooring and balancing courses.": "Pelatihan spooring dan balancing.",
+    "Installation & Commissioning": "Pemasangan & Commissioning",
+    "Delivery, installation and commissioning by our own team, with handover once the equipment is running.": "Pengiriman, pemasangan, dan commissioning oleh tim kami sendiri, dengan serah terima setelah alat berjalan.",
+    "Maintenance & Spare Parts": "Pemeliharaan & Suku Cadang",
+    "Service visits and genuine spare parts, backed by after-sales support from the team that installed the machine.": "Kunjungan servis dan suku cadang asli, didukung layanan purnajual dari tim yang memasang mesin tersebut.",
+    "The training programme covers theory and practice, and is open to everyone:": "Program Pelatihan Meliputi Teori dan Praktek, Terbuka untuk Umum:",
+    "Technical training": "Pelatihan Teknik",
+    "Counter staff training": "Pelatihan Staf Konter",
+    "Spooring & Balancing": "Spooring & Balancing",
+    "30 hours · 12 theory, 18 practical · 10–15 per class": "30 jam · 12 teori, 18 praktik · 10–15 peserta per kelas",
+    "24 hours · 12 theory, 12 practical · 15–20 per class": "24 jam · 12 teori, 12 praktik · 15–20 peserta per kelas",
+    "Suspension and steering, the wheel angles that govern the direction a car travels — toe, camber, caster — and wheel balance. Practice covers setting the angles, reading alignment data and optimising balance.": "Suspensi dan kemudi, sudut-sudut roda yang menentukan arah jalannya mobil — toe, camber, caster — serta keseimbangan roda. Praktik mencakup penyetelan sudut, pembacaan data spooring, dan optimalisasi balancing.",
+    "The same fundamentals, angled at the customer conversation: why a vehicle needs alignment and balancing, how to diagnose the complaint behind the booking, and how to talk a customer through the alignment printout.": "Dasar yang sama, difokuskan pada percakapan dengan pelanggan: mengapa kendaraan memerlukan spooring dan balancing, cara mengenali keluhan di balik permintaan servis, dan cara menjelaskan hasil cetak spooring kepada pelanggan.",
+    "Courses run on site — a meeting room for the theory, a service bay for the practice — with materials supplied. Taught by a trainer with 33 years in spooring and balancing instruction, an automotive engineering graduate and BNSP Master Assessor. Every participant receives a Hanindo Automotive certificate of training; national competency certification through LSP Global Otomotif is available on request.": "Pelatihan diselenggarakan di lokasi — ruang rapat untuk teori, service bay untuk praktik — dengan materi disediakan. Diajar oleh instruktur dengan 33 tahun pengalaman mengajar spooring dan balancing, lulusan teknik otomotif dan Master Assessor BNSP. Setiap peserta menerima sertifikat pelatihan Hanindo Automotive; sertifikasi kompetensi nasional melalui LSP Global Otomotif tersedia atas permintaan.",
+    "Ask for a quote": "Minta penawaran",
+    "Request a quotation": "Minta penawaran",
+
+    /* ---- projects ---- */
+    "Workshops we have": "Bengkel yang telah",
+    "fitted out.": "kami lengkapi.",
+    "Complete service bays, delivered and commissioned.": "Service bay lengkap, dikirim dan dioperasikan.",
+    "Selected work": "Pekerjaan terpilih",
+    "Workshops we have equipped.": "Bengkel yang telah kami lengkapi.",
+    "Dealer workshops, independent garages and fleet service centres.": "Bengkel dealer, bengkel independen, dan pusat layanan armada.",
+    "Content needed": "Perlu konten",
+    "Add Hanindo Automotive project references here": "Tambahkan referensi proyek Hanindo Automotive di sini",
+    "This page is built and linked, but no project references have been supplied for Hanindo Automotive yet. Add each project as a card — client, location, scope and a photo — following the pattern used on the Fire Fighting projects page.": "Halaman ini sudah dibuat dan ditautkan, tetapi belum ada referensi proyek yang disediakan untuk Hanindo Automotive. Tambahkan setiap proyek sebagai kartu — klien, lokasi, lingkup pekerjaan, dan foto — mengikuti pola yang digunakan pada halaman proyek Fire Fighting.",
+    "See the pattern": "Lihat polanya",
+
+    /* ---- contact ---- */
+    "Let's talk about": "Mari bicarakan",
+    "your project.": "proyek Anda.",
+    "Tell us what you are running or building, and we will put the right person on it.": "Beri tahu kami apa yang sedang Anda jalankan atau bangun, dan kami akan menugaskan orang yang tepat.",
+    "How to reach us.": "Cara menghubungi kami.",
+    "For workshop equipment, installation, calibration or spare parts, our Jakarta team is the first point of contact.": "Untuk peralatan bengkel, pemasangan, kalibrasi, atau suku cadang, tim Jakarta kami adalah kontak pertama Anda.",
+    "Call center": "Call center",
+    "Office hours": "Jam operasional",
+    "— Monday to Friday, 08.00 – 17.00 WIB": "— Senin – Jumat, 08.00 – 17.00 WIB",
+    "Email Hanindo Automotive": "Email Hanindo Automotive",
+
+    /* ---- catalogue pages: shared furniture ---- */
+    "The range": "Rangkaian produk",
+    "All models": "Semua model",
+    "Workshop": "Bengkel",
+    "Mining": "Pertambangan",
+    "Forecourt": "SPBU",
+    "No models in that setting.": "Tidak ada model untuk penggunaan tersebut.",
+    "Sectors": "Sektor",
+    "Sole distributor for Indonesia": "Distributor tunggal untuk Indonesia",
+    "All partners & principals": "Semua mitra & prinsipal",
+    "Also supplied as the": "Juga dipasok sebagai",
+    "Supplied with": "Disertakan dengan",
+
+    /* ---- airtec ---- */
+    "Eight inflators.": "Delapan pengisi angin.",
+    "Every one reads to the same accuracy. They differ by where they mount, how much air they move, how high they go and who works them.": "Semuanya membaca dengan akurasi yang sama. Perbedaannya pada tempat pemasangan, besar aliran udara, tekanan maksimum, dan siapa yang mengoperasikannya.",
+    "Compact Inflator": "Pengisi Angin Kompak",
+    "General Purpose Inflator": "Pengisi Angin Serbaguna",
+    "Heavy Duty Inflator": "Pengisi Angin Heavy Duty",
+    "High Flow Inflator": "Pengisi Angin Aliran Tinggi",
+    "High Pressure Inflator": "Pengisi Angin Tekanan Tinggi",
+    "Temperature Compensating Inflator": "Pengisi Angin Berkompensasi Suhu",
+    "Freestanding Inflator, Round": "Pengisi Angin Berdiri, Bulat",
+    "Freestanding Inflator, Square": "Pengisi Angin Berdiri, Persegi",
+    "Anywhere a tyre holds air.": "Di mana pun ban menahan angin.",
+    "The workshop range is one part of what Airtec build. The same inflation technology runs on forecourts, in hangars and across mine sites, and Hanindo Automotive can supply beyond the service bay.": "Rangkaian untuk bengkel hanyalah sebagian dari yang dibuat Airtec. Teknologi pengisian angin yang sama dipakai di SPBU, hanggar, dan area tambang, dan Hanindo Automotive dapat memasok di luar service bay.",
+    "Workshops, tyre shops and service centres": "Bengkel, toko ban, dan pusat layanan",
+    "Petroleum Retail": "Ritel Perminyakan",
+    "Forecourt inflators for customer use": "Pengisi angin SPBU untuk digunakan pelanggan",
+    "Aviation": "Penerbangan",
+    "High-pressure aircraft tyre inflation": "Pengisian angin ban pesawat bertekanan tinggi",
+    "Mining & Construction": "Pertambangan & Konstruksi",
+    "OTR tyres and high-flow plant work": "Ban OTR dan pekerjaan pabrik beraliran tinggi",
+    "Transport": "Transportasi",
+    "Depot inflation and axle load indicators": "Pengisian angin depo dan indikator beban gandar",
+    "OEM & Vending": "OEM & Vending",
+    "Inflation kits, vending units and nitrogen analysers": "Kit pengisian angin, unit vending, dan penganalisis nitrogen",
+    "How many bays,": "Berapa bay,",
+    "and how big are the tyres?": "dan sebesar apa bannya?",
+    "Tell us where the inflator has to sit and what it has to fill — a changer in one bay, a row of them, a forecourt or a mine workshop — and we will specify the model, supply it and install it.": "Beri tahu kami di mana pengisi angin akan dipasang dan apa yang harus diisi — satu tyre changer di satu bay, sederet bay, SPBU, atau bengkel tambang — dan kami akan menentukan modelnya, memasoknya, dan memasangnya.",
+
+    /* ---- lifts, service, welding, raasm, tyre-service: headings ---- */
+    "Scissor, two-post and four-post lifts from 3.5 to 4 tonnes.": "Scissor lift, lift dua tiang, dan lift empat tiang dari 3,5 hingga 4 ton.",
+    "Mid-Rise Scissor Car Lift": "Scissor Car Lift Mid-Rise",
+    "In-Ground Mini Scissor Lift": "Mini Scissor Lift Tanam",
+    "On-Ground Mini Scissor Lift": "Mini Scissor Lift Permukaan",
+    "Ultra-Thin Main/Sub Scissor Car Lift": "Scissor Car Lift Utama/Sub Ultra-Tipis",
+    "2-Post Car Lift": "Car Lift 2 Tiang",
+    "4-Post Car Lift": "Car Lift 4 Tiang",
+    "Automatic Tyre Changer": "Tyre Changer Otomatis",
+    "Semi-Automatic Tyre Changer": "Tyre Changer Semi-Otomatis",
+    "Semi-Automatic Car Tyre Changer": "Tyre Changer Mobil Semi-Otomatis",
+    "Digital Wheel Balancer": "Wheel Balancer Digital",
+    "Digital Wheel Balancer (Truck)": "Wheel Balancer Digital (Truk)",
+    "Semi-Automatic Car Wheel Balancer": "Wheel Balancer Mobil Semi-Otomatis",
+    "TV Monitor Wheel Balancer": "Wheel Balancer dengan Monitor TV",
+    "Automatic Transmission Oil Exchanger": "Alat Ganti Oli Transmisi Otomatis",
+    "Brake Lathe Bench Machine": "Mesin Bubut Rem Duduk",
+    "A/C Recycling Service Station": "Stasiun Servis Daur Ulang A/C",
+    "Catalytic Converter Cleaning Machine": "Mesin Pembersih Catalytic Converter",
+    "Radiator Cooling System Machine": "Mesin Sistem Pendingin Radiator",
+    "Oil Flushing Machine": "Mesin Flushing Oli",
+    "Nitrogen Generator": "Generator Nitrogen",
+    "Shaking Machine": "Mesin Pengocok",
+    "Diagnostic Scan Tool": "Alat Pindai Diagnostik",
+    "MMA Welding Machine": "Mesin Las MMA",
+    "Hose & Cable Reels": "Reel Selang & Kabel",
+    "Oil & Grease Dispensing": "Dispensing Oli & Gemuk",
+    "Waste Oil Handling": "Penanganan Oli Bekas",
+    "Fluid Level & Control": "Level & Kontrol Fluida",
+    "Centralised Lubrication": "Pelumasan Terpusat",
+    "Lube Trucks & Transport": "Truk Pelumas & Transportasi",
+    "Moving a fluid,": "Memindahkan fluida,",
+    "What RAASM builds.": "Yang dibuat RAASM.",
+    "One principal, two markets.": "Satu prinsipal, dua pasar.",
+    "Eleven industries, one catalogue.": "Sebelas industri, satu katalog.",
+    "Manufacturing": "Manufaktur",
+    "Chemical Industry": "Industri Kimia",
+    "Building & Road Construction": "Konstruksi Bangunan & Jalan",
+    "Shipping & Offshore": "Pelayaran & Lepas Pantai",
+    "Railway": "Perkeretaapian",
+    "Agriculture": "Pertanian",
+    "Aeronautics": "Aeronautika",
+
+    /* ---- specification labels ----
+       These repeat across every model, so a short list covers a great
+       many rows. Values are left alone: numbers and SI units read the
+       same in both languages. */
+    "Pressure range": "Rentang tekanan",
+    "Accuracy": "Akurasi",
+    "Enclosure": "Casing",
+    "Dimensions": "Dimensi",
+    "Hose kit": "Set selang",
+    "Hose": "Selang",
+    "Hose clamp": "Klem selang",
+    "Power supply": "Catu daya",
+    "Units": "Satuan",
+    "Flow rate": "Laju aliran",
+    "Valve": "Katup",
+    "Switches": "Sakelar",
+    "Compensation": "Kompensasi",
+    "Multi-tyre": "Multi-ban",
+    "Column": "Kolom",
+    "Column height": "Tinggi kolom",
+    "Vandal resistant": "Tahan vandalisme",
+    "Capacity": "Kapasitas",
+    "Rated capacity": "Kapasitas terukur",
+    "Lifting capacity": "Kapasitas angkat",
+    "Lifting height": "Tinggi angkat",
+    "Lifting time": "Waktu naik",
+    "Decline time": "Waktu turun",
+    "Table length": "Panjang meja",
+    "Table width": "Lebar meja",
+    "Total width": "Lebar total",
+    "Total height": "Tinggi total",
+    "Overall width": "Lebar keseluruhan",
+    "Original height": "Tinggi awal",
+    "Max lifting height": "Tinggi angkat maks.",
+    "Min lifting height": "Tinggi angkat min.",
+    "Min height": "Tinggi min.",
+    "Secondary lifting height": "Tinggi angkat sekunder",
+    "Main scissor capacity": "Kapasitas scissor utama",
+    "Main lifting height": "Tinggi angkat utama",
+    "Main table length": "Panjang meja utama",
+    "Main table width": "Lebar meja utama",
+    "Sub scissor capacity": "Kapasitas scissor sub",
+    "Sub lifting height": "Tinggi angkat sub",
+    "Sub table length": "Panjang meja sub",
+    "Sub table width": "Lebar meja sub",
+    "Pass width": "Lebar lintasan",
+    "Single lane width": "Lebar jalur tunggal",
+    "Lane spacing": "Jarak antar jalur",
+    "Width between columns": "Lebar antar kolom",
+    "Working height": "Tinggi kerja",
+    "Air pressure": "Tekanan udara",
+    "Working pressure": "Tekanan kerja",
+    "Working air pressure": "Tekanan udara kerja",
+    "Working gas pressure": "Tekanan gas kerja",
+    "Operating pressure": "Tekanan operasi",
+    "Max pressure": "Tekanan maks.",
+    "Input air": "Udara masuk",
+    "Pneumatic air supply": "Suplai udara pneumatik",
+    "Weight": "Berat",
+    "Net weight": "Berat bersih",
+    "Gross weight": "Berat kotor",
+    "Machine weight (net)": "Berat mesin (bersih)",
+    "Machine weight (gross)": "Berat mesin (kotor)",
+    "Machine dimensions": "Dimensi mesin",
+    "Package": "Paket",
+    "Packaging size": "Ukuran kemasan",
+    "Voltage": "Tegangan",
+    "Input voltage": "Tegangan input",
+    "AC input voltage": "Tegangan input AC",
+    "Supply voltage": "Tegangan suplai",
+    "No-load voltage": "Tegangan tanpa beban",
+    "Input frequency": "Frekuensi input",
+    "Input power cable": "Kabel daya input",
+    "Power": "Daya",
+    "Motor power": "Daya motor",
+    "Maximum power": "Daya maksimum",
+    "Power consumption": "Konsumsi daya",
+    "Power absorption": "Serapan daya",
+    "Rated input power": "Daya input terukur",
+    "Real current": "Arus nyata",
+    "Current display range": "Rentang tampilan arus",
+    "Rated duty cycle": "Siklus kerja terukur",
+    "Insulation class": "Kelas isolasi",
+    "Insulation level": "Tingkat isolasi",
+    "Protection class": "Kelas proteksi",
+    "Protection grade": "Tingkat proteksi",
+    "Efficiency": "Efisiensi",
+    "Cooling mode": "Mode pendinginan",
+    "Air cooling": "Pendinginan udara",
+    "Noise level": "Tingkat kebisingan",
+    "Noise level running": "Tingkat kebisingan saat beroperasi",
+    "Working temperature": "Suhu kerja",
+    "Ambient temperature": "Suhu lingkungan",
+    "Working humidity": "Kelembapan kerja",
+    "Display": "Tampilan",
+    "Display precision": "Presisi tampilan",
+    "Dual display": "Tampilan ganda",
+    "Camera resolution": "Resolusi kamera",
+    "Measuring time": "Waktu pengukuran",
+    "Spinning speed": "Kecepatan putar",
+    "Drive speed": "Kecepatan penggerak",
+    "Chuck rotation speed": "Kecepatan putar chuck",
+    "Shaft diameter": "Diameter poros",
+    "Rim diameter": "Diameter pelek",
+    "Rim diameter (measurable)": "Diameter pelek (terukur)",
+    "Rim diameter (setting range)": "Diameter pelek (rentang setelan)",
+    "Rim width range": "Rentang lebar pelek",
+    "Max tyre diameter": "Diameter ban maks.",
+    "Max tyre width": "Lebar ban maks.",
+    "Max tyre weight": "Berat ban maks.",
+    "Max wheel diameter": "Diameter roda maks.",
+    "Max wheel width": "Lebar roda maks.",
+    "Max wheel weight": "Berat roda maks.",
+    "Bead-breaker opening": "Bukaan bead breaker",
+    "Bead-breaking power": "Daya bead breaker",
+    "Inner clamping size": "Ukuran cekam dalam",
+    "Outer clamping size": "Ukuran cekam luar",
+    "Inside clamp": "Cekam dalam",
+    "Outside clamp": "Cekam luar",
+    "Max self-centring torque": "Torsi self-centring maks.",
+    "Balancing accuracy": "Akurasi balancing",
+    "Unbalance accuracy": "Akurasi unbalance",
+    "Max unbalance calculated": "Unbalance maks. terhitung",
+    "Turning accuracy": "Akurasi putar",
+    "Individual toe": "Toe individual",
+    "Total toe": "Toe total",
+    "Steering angle difference": "Selisih sudut kemudi",
+    "Max steering": "Sudut kemudi maks.",
+    "Track width": "Lebar jejak",
+    "Wheelbase": "Jarak sumbu roda",
+    "Flange to machine distance": "Jarak flange ke mesin",
+    "Brake runout": "Run-out rem",
+    "Type": "Tipe",
+    "Configuration": "Konfigurasi",
+    "Tank": "Tangki",
+    "Storage tank capacity": "Kapasitas tangki penyimpanan",
+    "New/used fluid tank": "Tangki fluida baru/bekas",
+    "Fluid draining hose": "Selang pembuangan fluida",
+    "Fluid outlet hose": "Selang keluar fluida",
+    "Fluid return hose": "Selang balik fluida",
+    "Quick joint size": "Ukuran quick joint",
+    "Oil bottle": "Botol oli",
+    "Mask and brush": "Masker dan sikat",
+    "Refrigerant": "Refrigeran",
+    "Vacuum pump": "Pompa vakum",
+    "Ultimate vacuum": "Vakum akhir",
+    "Filter precision": "Presisi filter",
+    "Water consumption": "Konsumsi air",
+    "Nitrogen purity": "Kemurnian nitrogen",
+    "Nitrogen process speed": "Kecepatan proses nitrogen",
+    "Rated gas production": "Produksi gas terukur",
+    "Compressor": "Kompresor",
+    "Diaphragm": "Diafragma",
+    "Belt": "Sabuk",
+    "Spring": "Pegas",
+    "Pneumatic": "Pneumatik",
+    "Manual": "Manual",
+    "Motorised": "Bermotor",
+    "Trolley-mounted": "Terpasang pada troli",
+    "Swing-arm": "Lengan ayun",
+    "Printer": "Printer",
+    "Gas loadcell": "Load cell gas",
+    "Rotary slip rings": "Slip ring rotari",
+    "Pressure gauge": "Alat ukur tekanan",
+    "Electrode diameter": "Diameter elektroda",
+    "MMA electrode": "Elektroda MMA",
+    "MIG solid wire diameter": "Diameter kawat solid MIG",
+    "MIG flux wire diameter": "Diameter kawat flux MIG",
+    "Spot welding": "Las titik",
+    "Cleaning": "Pembersihan",
+    "Service columns": "Kolom servis",
+    "Ram hoists": "Ram hoist",
+    "Metered guns": "Gun terukur",
+    "Ratio pumps": "Pompa rasio",
+    "Pumps": "Pompa",
+    "Drainers": "Alat pembuangan",
+    "Suction units": "Unit pengisap",
+    "Trolleys": "Troli",
+    "Single line": "Jalur tunggal",
+    "Dual line": "Jalur ganda",
+    "Progressive": "Progresif",
+    "Round profile": "Profil bulat",
+    "Square profile": "Profil persegi",
+    "Low range option": "Opsi rentang rendah",
+    "Yes": "Ya",
+
+    /* ---- catalogue prose: airtec ---- */
+    "Digital tyre inflation, built in Singapore. Wall-mounted, machine-mounted and high-flow inflators for the service bay, the forecourt, the hangar and the mine.": "Pengisian angin ban digital, dibuat di Singapura. Pengisi angin dinding, terpasang mesin, dan aliran tinggi untuk service bay, SPBU, hanggar, dan tambang.",
+    "Set the pressure, walk away.": "Atur tekanannya, lalu tinggalkan.",
+    "Airtec Corporation designs and builds digital inflation equipment at its head office in Singapore, to ISO 9001:2015 certified by SGS. Hanindo Automotive is its sole distributor in Indonesia.": "Airtec Corporation merancang dan membuat peralatan pengisian angin digital di kantor pusatnya di Singapura, dengan sertifikasi ISO 9001:2015 dari SGS. Hanindo Automotive adalah distributor tunggalnya di Indonesia.",
+    "An automatic inflator takes a target pressure and holds a tyre to it — no gauge, no guesswork, no operator standing over it. Every model reads to ±0.5% of full scale. Most cover 5 to 145 psi, which takes in everything from a passenger car to a truck; the high pressure unit carries on to 182 psi, and the temperature compensating one corrects for the heat in an OTR tyre.": "Pengisi angin otomatis menerima tekanan target dan menjaga ban tetap pada tekanan itu — tanpa alat ukur, tanpa terkaan, tanpa operator yang harus menunggui. Setiap model membaca dengan akurasi ±0,5% dari skala penuh. Sebagian besar mencakup 5 hingga 145 psi, yang meliputi mulai dari mobil penumpang hingga truk; unit tekanan tinggi mencapai 182 psi, dan unit berkompensasi suhu mengoreksi panas pada ban OTR.",
+    "Accurate to ±0.5% of full scale on every model, 5–145 psi standard and 182 psi on the high pressure unit": "Akurasi ±0,5% dari skala penuh pada setiap model, 5–145 psi standar dan 182 psi pada unit tekanan tinggi",
+    "IP66 weather-sealed enclosures on the wall-mounted models — indoor or outdoor": "Casing tersegel cuaca IP66 pada model dinding — dalam maupun luar ruangan",
+    "Manufactured to ISO 9001:2015, accredited by SGS International Certification Services": "Diproduksi sesuai ISO 9001:2015, terakreditasi oleh SGS International Certification Services",
+    "Small enough to mount on the tyre changer itself, so the inflator sits where the wheel already is. Passenger cars, vans and light commercials.": "Cukup kecil untuk dipasang langsung pada tyre changer, sehingga pengisi angin berada tepat di tempat roda sudah berada. Mobil penumpang, van, dan kendaraan niaga ringan.",
+    "The workshop default. Wall or surface mounted and sealed against weather, so it works in an open bay, and rated for anything pneumatic from a trolley wheel to a truck tyre.": "Pilihan standar bengkel. Dipasang di dinding atau permukaan dan tersegel terhadap cuaca, sehingga dapat bekerja di bay terbuka, serta sanggup menangani segala kebutuhan pneumatik dari roda troli hingga ban truk.",
+    "Diecast aluminium for bays that take knocks. The XDD carries two displays, set pressure and actual, so an operator can watch a tyre come up rather than wait for the beep.": "Aluminium cetak untuk bay yang sering terbentur. XDD memiliki dua tampilan, tekanan setelan dan tekanan aktual, sehingga operator dapat memantau ban terisi alih-alih menunggu bunyi bip.",
+    "Built for volume. A half-inch valve moves over 4,000 litres a minute, and a four-way manifold lets one unit fill several tyres at once — fleet workshops and mine sites, where the job is a set of six rather than a single wheel.": "Dirancang untuk volume besar. Katup setengah inci mengalirkan lebih dari 4.000 liter per menit, dan manifold empat arah memungkinkan satu unit mengisi beberapa ban sekaligus — bengkel armada dan area tambang, di mana pekerjaannya satu set enam roda, bukan satu roda.",
+    "Takes the ceiling to 12.5 bar for truck, heavy vehicle and mining tyres, and moves the same volume as the high flow unit. Works with standard or large-bore valves and core extraction tools.": "Menaikkan batas hingga 12,5 bar untuk ban truk, kendaraan berat, dan tambang, dengan volume aliran yang sama seperti unit aliran tinggi. Bekerja dengan katup standar maupun large bore serta alat pelepas core.",
+    "For OTR and mining tyres. It reads the air temperature inside the tyre as well as the pressure, then corrects the fill against a defined ambient using a programmed temperature/pressure table — so a tyre set hot in the pit is still right once it cools.": "Untuk ban OTR dan tambang. Unit ini membaca suhu udara di dalam ban selain tekanannya, lalu mengoreksi pengisian terhadap suhu lingkungan yang ditentukan menggunakan tabel suhu/tekanan terprogram — sehingga ban yang diisi dalam keadaan panas di area tambang tetap tepat setelah dingin.",
+    "A pedestal for the forecourt, where the customer works the unit rather than a technician. Round column, and a vandal-resistant faceplate because it stands unattended.": "Unit berdiri untuk SPBU, di mana pelanggan yang mengoperasikannya, bukan teknisi. Kolom bulat, dengan faceplate tahan vandalisme karena berdiri tanpa penjagaan.",
+    "The same forecourt duty on a square column, which suits a site whose canopy and pump islands are already squared off.": "Fungsi SPBU yang sama pada kolom persegi, cocok untuk lokasi yang kanopi dan pulau pompanya sudah bergaris persegi.",
+
+    /* ---- catalogue prose: raasm ---- */
+    "Fluid handling and lubrication equipment from Vicenza, Italy — hose reels, pumps, dispensing and centralised lubrication systems. Wherever a fluid has to be stored, moved, measured or dispensed, in a workshop or on a plant floor.": "Peralatan penanganan fluida dan pelumasan dari Vicenza, Italia — reel selang, pompa, dispensing, dan sistem pelumasan terpusat. Di mana pun fluida harus disimpan, dipindahkan, diukur, atau dikeluarkan, di bengkel maupun di lantai pabrik.",
+    "RAASM has built fluid handling equipment in Vicenza since 1973, and Hanindo Automotive is its sole distributor in Indonesia. The name is best known here from the workshop — oil and grease reels, dispensing guns, waste oil drainers — but that is one of eleven sectors RAASM builds for, and the smaller half of the catalogue.": "RAASM telah membuat peralatan penanganan fluida di Vicenza sejak 1973, dan Hanindo Automotive adalah distributor tunggalnya di Indonesia. Namanya paling dikenal di sini dari dunia bengkel — reel oli dan gemuk, gun dispensing, alat pembuangan oli bekas — tetapi itu hanya satu dari sebelas sektor yang dilayani RAASM, dan bagian yang lebih kecil dari katalognya.",
+    "The same pumps, reels and lubrication systems that serve a service bay serve a manufacturing plant, a mine workshop, a fleet depot or a vessel. Hanindo Automotive carries the range for both, with the same stock, parts and factory support behind it.": "Pompa, reel, dan sistem pelumasan yang sama yang melayani service bay juga melayani pabrik manufaktur, bengkel tambang, depo armada, atau kapal. Hanindo Automotive menyediakan rangkaian untuk keduanya, dengan stok, suku cadang, dan dukungan pabrik yang sama.",
+    "Sole distributor in Indonesia, for the automotive and the industrial range alike": "Distributor tunggal di Indonesia, untuk rangkaian otomotif maupun industri",
+    "Factory-backed parts and support, direct from Vicenza": "Suku cadang dan dukungan langsung dari pabrik di Vicenza",
+    "Systems specified, supplied and commissioned by our own engineers": "Sistem ditentukan, dipasok, dan dioperasikan oleh insinyur kami sendiri",
+    "Six families, sold as single units or specified together as a system.": "Enam rangkaian, dijual sebagai unit tunggal atau dirancang bersama sebagai satu sistem.",
+    "Spring, manual and motorised reels for oil, grease, air, water, diesel and AdBlue, plus cable reels for the same bays.": "Reel pegas, manual, dan bermotor untuk oli, gemuk, udara, air, solar, dan AdBlue, ditambah reel kabel untuk bay yang sama.",
+    "Pneumatic ratio pumps and air-operated diaphragm pumps, sized by the fluid and the distance it has to travel.": "Pompa rasio pneumatik dan pompa diafragma bertenaga udara, dipilih menurut jenis fluida dan jarak yang harus ditempuh.",
+    "Metered guns, dispensers and service columns for oil, grease, antifreeze and screenwash, plus brake bleeders and tyre inflators.": "Gun terukur, dispenser, dan kolom servis untuk oli, gemuk, antifreeze, dan air wiper, ditambah alat buang angin rem dan pengisi angin ban.",
+    "Gravity drainers, suction units and combined drainer-suction trolleys for taking used oil out cleanly and storing it safely.": "Alat pembuangan gravitasi, unit pengisap, dan troli gabungan pembuangan-pengisapan untuk mengeluarkan oli bekas secara bersih dan menyimpannya dengan aman.",
+    "Single-line, dual-line and progressive systems that lubricate a machine or a whole line on schedule, without stopping it.": "Sistem jalur tunggal, jalur ganda, dan progresif yang melumasi satu mesin atau seluruh lini sesuai jadwal, tanpa menghentikannya.",
+    "FLS level monitoring and FCS fluid control — knowing what is in every drum and tank, and who drew what from it.": "Pemantauan level FLS dan kontrol fluida FCS — mengetahui isi setiap drum dan tangki, serta siapa yang mengambil apa dari sana.",
+    "RAASM equipment is specified across eleven sectors. The workshop is the one most people know, but the pumps and reels on a service bay are the same ones feeding a production line or a mine fleet — and Hanindo Automotive supplies both.": "Peralatan RAASM digunakan di sebelas sektor. Bengkel adalah yang paling dikenal banyak orang, tetapi pompa dan reel di sebuah service bay sama dengan yang memasok lini produksi atau armada tambang — dan Hanindo Automotive memasok keduanya.",
+    "Service bays, fast-fit chains and dealer workshops": "Service bay, jaringan fast-fit, dan bengkel dealer",
+    "Production lines and machine lubrication": "Lini produksi dan pelumasan mesin",
+    "Fleet workshops and heavy equipment servicing": "Bengkel armada dan servis alat berat",
+    "Transfer and dosing of aggressive fluids": "Transfer dan dosis fluida agresif",
+    "Mobile lubrication units and depot fleets": "Unit pelumasan bergerak dan armada depo",
+    "Engine rooms, deck equipment and yards": "Ruang mesin, peralatan dek, dan galangan",
+    "Rolling stock depots and maintenance sheds": "Depo sarana perkeretaapian dan gudang pemeliharaan",
+    "Hangar servicing and ground support": "Servis hanggar dan dukungan darat",
+    "Machinery servicing and on-farm fuel handling": "Servis mesin dan penanganan bahan bakar di lahan pertanian",
+    "Plant maintenance on and off site": "Pemeliharaan pabrik di dalam maupun luar lokasi",
+    "Pressure washing and detergent distribution": "Pencucian bertekanan dan distribusi deterjen",
+    "wherever you are moving it.": "ke mana pun Anda memindahkannya.",
+    "Tell us the fluid, the distance and the duty — a single reel over a service bay, or a lubrication system across a plant — and our engineers will specify the RAASM equipment for it, supply it and commission it.": "Beri tahu kami jenis fluidanya, jaraknya, dan bebannya — satu reel di atas service bay, atau sistem pelumasan untuk seluruh pabrik — dan insinyur kami akan menentukan peralatan RAASM yang sesuai, memasoknya, dan mengoperasikannya.",
+
+    /* ---- catalogue prose: service equipment ---- */
+    "Fluid exchange, brake, air-conditioning, carbon cleaning and diagnostics.": "Penggantian fluida, rem, penyejuk udara, pembersihan karbon, dan diagnostik.",
+    "OE-level full system diagnostics — read and clear DTCs, read/compare/save data stream, version information, special functions and advanced coding": "Diagnostik sistem penuh setara OE — membaca dan menghapus DTC, membaca/membandingkan/menyimpan data stream, informasi versi, fungsi khusus, dan coding lanjutan",
+    "Supports DOIP diagnosis and CAN FD protocols with wide vehicle coverage": "Mendukung diagnosis DOIP dan protokol CAN FD dengan cakupan kendaraan yang luas",
+    "Plug and play; supports THINKCAR modules over USB or Bluetooth": "Plug and play; mendukung modul THINKCAR melalui USB atau Bluetooth",
+    "Supplied brand — not a Hanindo house brand.": "Merek yang dipasok — bukan merek milik Hanindo.",
+
+    /* ---- catalogue prose: tyre service ---- */
+    "Eighteen models from HPA-Faip, WELDANN and Hakiro. Specifications are taken from the Hanindo Automotive catalogue — contact us for pricing, lead time and installation.": "Delapan belas model dari HPA-Faip, WELDANN, dan Hakiro. Spesifikasi diambil dari katalog Hanindo Automotive — hubungi kami untuk harga, waktu pengiriman, dan pemasangan.",
+    "8 models. Specifications are taken from the Hanindo Automotive catalogue — contact us for pricing, lead time and installation.": "8 model. Spesifikasi diambil dari katalog Hanindo Automotive — hubungi kami untuk harga, waktu pengiriman, dan pemasangan.",
+    "Six models, digital and TV-monitor, car through truck.": "Enam model, digital dan monitor TV, dari mobil hingga truk.",
+    "Mechanically identical to the B60 — the B55 reads out on a high-brightness digital LED display panel.": "Secara mekanis identik dengan B60 — B55 menampilkan hasil pada panel LED digital dengan kecerahan tinggi.",
+    "Mechanically identical to the B55 — the B60 uses a high-resolution LCD monitor, giving the software a richer, more detailed graphical layout.": "Secara mekanis identik dengan B55 — B60 menggunakan monitor LCD resolusi tinggi, memberi perangkat lunaknya tampilan grafis yang lebih kaya dan rinci.",
+    "Mechanically identical to the B325 — the B225 reads out on a double digital LED display panel with a manual keyboard.": "Secara mekanis identik dengan B325 — B225 menampilkan hasil pada panel LED digital ganda dengan papan ketik manual.",
+    "Mechanically identical to the B225 — the B325 upgrades to a 19″ widescreen LCD colour monitor, showing high-resolution graphic interfaces.": "Secara mekanis identik dengan B225 — B325 ditingkatkan dengan monitor warna LCD layar lebar 19″, menampilkan antarmuka grafis resolusi tinggi.",
+    "Four models — one semi-automatic swing-arm, three automatic tilting-post, 21\" through 24\".": "Empat model — satu semi-otomatis lengan ayun, tiga otomatis tilting-post, 21″ hingga 24″.",
+    "The arm swings aside by hand rather than tilting back, so the machine can stand against a wall — the smallest footprint in the range. The mounting head is reset by hand for each wheel. Optional": "Lengannya diayun ke samping dengan tangan alih-alih dimiringkan ke belakang, sehingga mesin dapat ditempatkan menempel dinding — jejak ruang terkecil dalam rangkaian ini. Kepala pemasangan disetel ulang secara manual untuk setiap roda. Opsional",
+    "The heavy-duty model: a reinforced chassis that resists flex on stiff sidewalls, so it suits high-volume tyre centres, low-profile and run-flat work. Shown fitted with the optional": "Model heavy-duty: sasis diperkuat yang tahan lentur pada dinding ban kaku, sehingga cocok untuk pusat ban bervolume tinggi serta pekerjaan ban profil rendah dan run-flat. Ditampilkan dengan tambahan opsional",
+    "bead-pressing helper arm. Also available as the": "lengan bantu penekan bead. Tersedia juga sebagai",
+    ", a lever-less version that lifts the bead over the rim without a tyre iron.": ", versi tanpa tuas yang mengangkat bead melewati pelek tanpa linggis ban.",
+    "The general workshop model. The post tilts back on a pedal and returns the tool head to the same setting, so a matched set of wheels runs without readjusting. Needs clear space behind for the tilt.": "Model bengkel umum. Tiangnya dimiringkan ke belakang dengan pedal dan mengembalikan kepala alat ke setelan yang sama, sehingga satu set roda seragam dapat dikerjakan tanpa penyetelan ulang. Membutuhkan ruang kosong di belakang untuk kemiringannya.",
+    "The M422 with 24″ rim capacity — the same tilting post and pedal-set tool head, sized for larger alloy wheels and light SUVs.": "M422 dengan kapasitas pelek 24″ — tiang miring dan kepala alat berpedal yang sama, dirancang untuk pelek aloi lebih besar dan SUV ringan.",
+    "Bead-breaking power (at 10 bar)": "Daya bead breaker (pada 10 bar)",
+    ", the two-speed version — the weight above is for that model.": ", versi dua kecepatan — berat di atas adalah untuk model tersebut.",
+    "Two-camera 3D alignment, standard and i-Next.": "Spooring 3D dua kamera, standar dan i-Next.",
+    "Five models — tyre changers, wheel balancers and 3D alignment.": "Lima model — tyre changer, wheel balancer, dan spooring 3D.",
+    "Automatic Car Wheel Balancer with LCD Display": "Wheel Balancer Mobil Otomatis dengan Layar LCD",
+    "One model — a semi-automatic swing-arm tyre changer.": "Satu model — tyre changer semi-otomatis lengan ayun.",
+    "The arm swings aside by hand rather than tilting back, so the machine can stand against a wall — the same layout as the HPA-Faip M31.": "Lengannya diayun ke samping dengan tangan alih-alih dimiringkan ke belakang, sehingga mesin dapat ditempatkan menempel dinding — tata letak yang sama seperti HPA-Faip M31.",
+
+    /* ---- catalogue prose: welding ---- */
+    "MMA and MIG/MMA inverter welding machines for workshop and industrial use.": "Mesin las inverter MMA dan MIG/MMA untuk penggunaan bengkel dan industri.",
+    "Shares its cabinet with the MMA-700F — the two look alike; the difference is in the rating.": "Menggunakan kabinet yang sama dengan MMA-700F — keduanya tampak serupa; perbedaannya pada ratingnya.",
+    "Shares its cabinet with the MMA-400F — the two look alike; the difference is in the rating.": "Menggunakan kabinet yang sama dengan MMA-400F — keduanya tampak serupa; perbedaannya pada ratingnya.",
+    "MIG/MMA big current, for industrial duty": "MIG/MMA arus besar, untuk penggunaan industri",
+    "Auto-set function, 3 in 1": "Fungsi auto-set, 3 in 1",
+    "IGBT – Module, 15 kg wire spool": "Modul IGBT, spool kawat 15 kg",
+
+    /* ---- spec values that are words rather than numbers ----
+       Most values are left alone, being figures and SI units. These few
+       read as English sentences, so they translate. */
+    "Diecast aluminium, wall or surface mount (IP66)": "Aluminium cetak, pemasangan dinding atau permukaan (IP66)",
+    "Diecast aluminium wall mount (IP66)": "Aluminium cetak, pemasangan dinding (IP66)",
+    "Dual display — set and actual pressure": "Tampilan ganda — tekanan setelan dan aktual",
+    "High flow ½″, standard or large bore": "Aliran tinggi ½″, standar atau large bore",
+    "Wet and dry tyre, against defined ambient": "Ban basah dan kering, terhadap suhu lingkungan yang ditentukan",
+    "single speed — 0.75 kW": "kecepatan tunggal — 0,75 kW",
+    "Machine weight (M422 2V FS)": "Berat mesin (M422 2V FS)",
+    "Machine weight (M424 2V FS)": "Berat mesin (M424 2V FS)",
+    "±2 mm  (range 1219–2439 mm)": "±2 mm  (rentang 1219–2439 mm)",
+    "±2 mm  (range 2006–4572 mm)": "±2 mm  (rentang 2006–4572 mm)",
+
+    /* ---- model configuration lines ----
+       The code and the rim size stay; the layout and the phase count are
+       words, so they turn over. */
+    "— M31 · swing-arm · 21″ · 1ph": "— M31 · lengan ayun · 21″ · 1 fasa",
+    "— M54 · tilting-post, heavy-duty · 24″ · 1 or 3ph": "— M54 · tilting-post, heavy-duty · 24″ · 1 atau 3 fasa",
+    "— M422 · tilting-post · 22″ · 3ph": "— M422 · tilting-post · 22″ · 3 fasa",
+    "— M424 · tilting-post · 24″ · 3ph": "— M424 · tilting-post · 24″ · 3 fasa",
+    "— JA-C01 · swing-arm · 20″": "— JA-C01 · lengan ayun · 20″",
+    "— C880 STD · 2 camera": "— C880 STD · 2 kamera",
+    "— C880 i-Next · 2 camera": "— C880 i-Next · 2 kamera",
+    "High impact polycarbonate (IP40)": "Polikarbonat berdaya tahan benturan tinggi (IP40)",
+    "High impact polycarbonate (IP66)": "Polikarbonat berdaya tahan benturan tinggi (IP66)",
+    "Stainless steel (piezo optional)": "Baja tahan karat (piezo opsional)",
+    "Double digital LED panel": "Panel LED digital ganda",
+    "High-brightness LED panel": "Panel LED kecerahan tinggi",
+    "High-resolution LCD monitor": "Monitor LCD resolusi tinggi",
+    "Quantity per 20′ container": "Jumlah per kontainer 20′",
+    "Steering difference at 20°": "Selisih sudut kemudi pada 20°",
+    "Weight — camera arm": "Berat — lengan kamera",
+    "Weight — PC holder": "Berat — dudukan PC",
+    "Weight — pole": "Berat — tiang",
+    "Single phase 220 V": "Satu fasa 220 V",
+    "Weight (G.W/N.W)": "Berat (kotor/bersih)"
+  };
+
+  var LANG_KEY = 'ha_auto_lang', ALT = 'id', HTML_LANG = 'id';
+  var store = null;
+
+  function each(list, fn) { Array.prototype.forEach.call(list, fn); }
+
+  function translatable(node) {
+    var p = node.parentNode;
+    if (!p) return false;
+    var nm = p.nodeName;
+    if (nm === 'SCRIPT' || nm === 'STYLE' || nm === 'NOSCRIPT') return false;
+    if (p.closest && (p.closest('svg') || p.closest('.langtoggle'))) return false;
+    return true;
+  }
+
+  function collect() {
+    store = [];
+    if (!document.body || !document.createTreeWalker) return;
+    var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null);
+    var n;
+    while ((n = w.nextNode())) {
+      if (!translatable(n)) continue;
+      var raw = n.nodeValue, key = raw.trim();
+      if (key && Object.prototype.hasOwnProperty.call(DICT, key)) {
+        store.push({ node: n, en: raw, alt: raw.replace(key, DICT[key]) });
+      }
+    }
+  }
+
+  function setLang(lang) {
+    if (!store) collect();
+    each(store, function (o) { o.node.nodeValue = (lang === ALT) ? o.alt : o.en; });
+    var s = document.querySelector('.searchbox input[name="q"]');
+    if (s) s.setAttribute('placeholder', lang === ALT ? 'Cari' : 'Search');
+    each(document.querySelectorAll('.langtoggle [data-lang]'), function (b) {
+      var on = b.getAttribute('data-lang') === lang;
+      b.classList.toggle('active', on);
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+    document.documentElement.setAttribute('lang', lang === ALT ? HTML_LANG : 'en');
+    try { localStorage.setItem(LANG_KEY, lang); } catch (e) {}
+  }
+
+  function init() {
+    collect();
+    each(document.querySelectorAll('.langtoggle [data-lang]'), function (b) {
+      b.addEventListener('click', function () { setLang(b.getAttribute('data-lang')); });
+    });
+    var saved = 'en';
+    try { saved = localStorage.getItem(LANG_KEY) || 'en'; } catch (e) {}
+    setLang(saved);
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
