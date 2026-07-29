@@ -89,13 +89,13 @@
     "Shenzhen office": "深圳办公室",
     "A second China office as the market grows.": "随着市场增长，在中国设立第二个办公室。",
     "South East Asia expansion": "东南亚拓展",
-    "Hanindo Automation Solutions adds CUSTOM Indonesia.": "Hanindo Automation Solutions 引入 CUSTOM 印尼业务。",
+    "Hanindo Automation Solutions adds CUSTOM Hanindo Indonesia.": "Hanindo Automation Solutions 引入 CUSTOM Hanindo 印尼业务。",
     "Singapore office": "新加坡办公室",
-    "Gralessando Pte Ltd opens, covering CUSTOM South East Asia.": "Gralessando Pte Ltd 成立，覆盖 CUSTOM 东南亚市场。",
+    "Gralessando Pte Ltd opens, covering CUSTOM Hanindo South East Asia.": "Gralessando Pte Ltd 成立，覆盖 CUSTOM Hanindo 东南亚市场。",
     "Regional partnerships": "区域合作",
     "CUSTOM partnerships established in Vietnam, Thailand and the Philippines.": "在越南、泰国与菲律宾建立 CUSTOM 合作关系。",
     "Manila office": "马尼拉办公室",
-    "A CUSTOM office follows the Philippines partnership.": "继菲律宾合作之后设立 CUSTOM 办公室。",
+    "A CUSTOM Hanindo office follows the Philippines partnership.": "继菲律宾合作之后设立 CUSTOM Hanindo 办公室。",
 
     /* ---- about: where we are ---- */
     "Where we are": "我们的所在",

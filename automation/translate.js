@@ -89,13 +89,13 @@
     "Shenzhen office": "Kantor Shenzhen",
     "A second China office as the market grows.": "Kantor kedua di Tiongkok seiring pertumbuhan pasar.",
     "South East Asia expansion": "Ekspansi Asia Tenggara",
-    "Hanindo Automation Solutions adds CUSTOM Indonesia.": "Hanindo Automation Solutions menghadirkan CUSTOM Indonesia.",
+    "Hanindo Automation Solutions adds CUSTOM Hanindo Indonesia.": "Hanindo Automation Solutions menghadirkan CUSTOM Hanindo Indonesia.",
     "Singapore office": "Kantor Singapura",
-    "Gralessando Pte Ltd opens, covering CUSTOM South East Asia.": "Gralessando Pte Ltd dibuka, mencakup CUSTOM Asia Tenggara.",
+    "Gralessando Pte Ltd opens, covering CUSTOM Hanindo South East Asia.": "Gralessando Pte Ltd dibuka, mencakup CUSTOM Hanindo Asia Tenggara.",
     "Regional partnerships": "Kemitraan regional",
     "CUSTOM partnerships established in Vietnam, Thailand and the Philippines.": "Kemitraan CUSTOM dijalin di Vietnam, Thailand, dan Filipina.",
     "Manila office": "Kantor Manila",
-    "A CUSTOM office follows the Philippines partnership.": "Kantor CUSTOM menyusul setelah kemitraan Filipina.",
+    "A CUSTOM Hanindo office follows the Philippines partnership.": "Kantor CUSTOM Hanindo menyusul setelah kemitraan Filipina.",
 
     /* ---- about: direction ---- */
     "Our direction": "Arah kami",
