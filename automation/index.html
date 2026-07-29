@@ -23,6 +23,15 @@
 .bandlab{display:flex;align-items:center;gap:1rem;font-size:.72rem;font-weight:800;
   letter-spacing:.14em;text-transform:uppercase;color:var(--blue-800);margin-bottom:1.15rem}
 .bandlab::before,.bandlab::after{content:"";flex:1;height:1px;background:#c9d5e3}
+/* Three customers the business wants read first. They lead the Technology &
+   services band and draw a step larger than the rest of it — a lift on the
+   base height, so each keeps the .mid or .sq correction its own proportions
+   need rather than all three being forced to one size.
+   A class, not an inline style: an inline --logo-h would beat the 640px rule
+   below and leave these three full size on a phone while everything around
+   them stepped down. */
+.wall.flat .w.feature{--logo-h:52px}
+@media(max-width:640px){.wall.flat .w.feature{--logo-h:42px}}
 @media(max-width:640px){.wall.flat .w{--logo-h:34px;--logo-max:185px}}
 /* .checks-desc moved to site.css — the Hanindo Shanghai home page
    carries the same three lines and needs the same treatment. */
@@ -221,7 +230,7 @@
         </div>
       </div>
       <div class="band">
-        <span class="bandlab">Transportation</span>
+        <span class="bandlab">Transport</span>
         <div class="tier">
           <div class="w reveal"><img src="../photos/customers/jasamarga.png?v=5" alt="Jasa Marga" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Jasa Marga</span></div>
           <div class="w sq reveal"><img src="../photos/customers/cmnp.png?v=5" alt="Citra Marga Nusaphala Persada" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Citra Marga Nusaphala Persada</span></div>
@@ -237,13 +246,13 @@
         <div class="tier">
           <div class="w mid reveal"><img src="../photos/customers/altera.webp?v=5" alt="Altera Cipta Teknologi" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Altera Cipta Teknologi</span></div>
           <div class="w mid reveal"><img src="../photos/customers/asyst.png?v=5" alt="Asyst" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Asyst</span></div>
+          <div class="w feature reveal"><img src="../photos/customers/mco-jaya.png?v=5" alt="MCO Jaya" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">MCO Jaya</span></div>
+          <div class="w mid feature reveal"><img src="../photos/customers/nutech.png?v=5" alt="Nutech" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Nutech</span></div>
+          <div class="w sq feature reveal"><img src="../photos/customers/pt-murni.png?v=5" alt="PT Murni" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Murni</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/elta-prima.png?v=5" alt="Elta Prima" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Elta Prima</span></div>
           <div class="w reveal"><img class="tight" style="aspect-ratio:4.36" src="../photos/customers/ayu-berga.webp?v=5" alt="Ayu Berga" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Ayu Berga</span></div>
           <div class="w reveal"><img src="../photos/customers/brinks.png?v=5" alt="Brink&rsquo;s" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Brink&rsquo;s</span></div>
           <div class="w mid reveal"><img src="../photos/customers/corra.png?v=5" alt="Corra" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Corra</span></div>
-          <div class="w mid reveal"><img src="../photos/customers/elta-prima.png?v=5" alt="Elta Prima" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Elta Prima</span></div>
-          <div class="w reveal"><img src="../photos/customers/mco-jaya.png?v=5" alt="MCO Jaya" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">MCO Jaya</span></div>
-          <div class="w mid reveal"><img src="../photos/customers/nutech.png?v=5" alt="Nutech" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Nutech</span></div>
-          <div class="w sq reveal"><img src="../photos/customers/pt-murni.png?v=5" alt="PT Murni" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Murni</span></div>
           <div class="w mid reveal"><img src="../photos/customers/sbn.png?v=5" alt="SBN" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">SBN</span></div>
         </div>
       </div>
