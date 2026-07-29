@@ -85,6 +85,37 @@
   </div>
 </section>
 <!-- ============ WHAT WE DO ============ -->
+<!-- ============ PRODUCT TILES ============ -->
+<!-- Same strip component as the Hanindo Automotive home page: .tilestrip
+     from site.css plus the advance button, no page-local CSS. Kept on a
+     white section rather than paper so it reads as one block with the
+     intro above it; the next section is paper, which is where the break
+     falls.
+     ORDER IS BY PHOTO, NOT BY THE PRODUCTS & SERVICES ORDER. Fuel
+     Management and Piping have no product shot yet, so they sit last
+     where the strip has scrolled past — a tile with no image is a plain
+     gradient square with its label, which is tidy but says nothing. Move
+     them back into catalogue order once citra-advanz.jpg and
+     citra-piping.jpg land. -->
+<section class="section white compact">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">What we supply</span>
+    </div>
+    <div class="tilestrip reveal">
+      <div class="strip" id="tilestrip">
+        <a class="tile" href="dispensers.html"><img src="../photos/citra/products/dispensers/gilbarco-lineup.webp" alt="" loading="lazy" onerror="this.remove()" /><span>Pumps &amp; Dispensers</span></a>
+        <a class="tile" href="forecourt-controllers.html"><img src="../photos/citra/products/citra-enabler.webp" alt="" loading="lazy" onerror="this.remove()" /><span>Forecourt Controllers</span></a>
+        <a class="tile" href="tank-gauging.html"><img src="../photos/citra/products/citra-atg.webp" alt="" loading="lazy" onerror="this.remove()" /><span>Automatic Tank Gauging</span></a>
+        <a class="tile" href="submersible-pumps.html"><img src="../photos/citra/products/citra-stp.webp" alt="" loading="lazy" onerror="this.remove()" /><span>Submersible Turbine Pumps</span></a>
+        <a class="tile" href="products-services.html#flow-meters"><img src="../photos/citra/products/citra-flowmeter.png" alt="" loading="lazy" onerror="this.remove()" /><span>Flow Meters</span></a>
+        <a class="tile" href="products-services.html#fuel-management"><img src="../photos/citra/products/citra-advanz.jpg" alt="" loading="lazy" onerror="this.remove()" /><span>Fuel Management Systems</span></a>
+        <a class="tile" href="products-services.html#piping"><img src="../photos/citra/products/citra-piping.jpg" alt="" loading="lazy" onerror="this.remove()" /><span>Piping &amp; Fueling Components</span></a>
+      </div>
+      <button class="stripmore" type="button" aria-label="Show more products"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+    </div>
+  </div>
+</section>
 <section class="section paper">
   <div class="wrap">
     <div class="reveal">
@@ -280,6 +311,15 @@ function hsearch(f){var q=(f.q.value||'').trim();if(!q)return false;window.open(
 (function(){var b=document.getElementById('burger'),t=document.getElementById('tabs');if(b&&t){b.addEventListener('click',function(){var o=t.classList.toggle('open');b.setAttribute('aria-expanded',o);});}})();
 /* reveal */
 (function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
+/* tile strip: advance on click, loop back at the end */
+(function(){var s=document.getElementById('tilestrip'),b=document.querySelector('.stripmore');if(!s||!b)return;
+function sync(){b.style.display=(s.scrollWidth-s.clientWidth>4)?'':'none';}
+b.addEventListener('click',function(){
+  var max=s.scrollWidth-s.clientWidth;
+  if(s.scrollLeft>=max-8){s.scrollTo({left:0,behavior:'smooth'});}
+  else{s.scrollBy({left:Math.round(s.clientWidth*.85),behavior:'smooth'});}
+});
+window.addEventListener('resize',sync);window.addEventListener('load',sync);sync();})();
 </script>
 </body>
 </html>
