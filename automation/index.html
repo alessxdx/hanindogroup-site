@@ -31,7 +31,12 @@
    below and leave these three full size on a phone while everything around
    them stepped down. */
 .wall.flat .w.feature{--logo-h:52px}
-@media(max-width:640px){.wall.flat .w.feature{--logo-h:42px}}
+/* .stacked is the same lift for a different reason: Soekarno-Hatta is a
+   three-line lockup — name, then International Airport, then Operated by
+   Angkasa Pura II — so at the height a one-line wordmark takes, each of its
+   lines is a third the size and the whole mark reads small. */
+.wall.flat .w.stacked{--logo-h:52px}
+@media(max-width:640px){.wall.flat .w.feature,.wall.flat .w.stacked{--logo-h:42px}}
 @media(max-width:640px){.wall.flat .w{--logo-h:34px;--logo-max:185px}}
 /* .checks-desc moved to site.css — the Hanindo Shanghai home page
    carries the same three lines and needs the same treatment. */
@@ -220,7 +225,7 @@
       <div class="band">
         <span class="bandlab">Airports &amp; airlines</span>
         <div class="tier">
-          <div class="w mid reveal"><img src="../photos/customers/soekarno-hatta.png?v=5" alt="Soekarno-Hatta International Airport" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Soekarno-Hatta International Airport</span></div>
+          <div class="w mid stacked reveal"><img src="../photos/customers/soekarno-hatta.png?v=5" alt="Soekarno-Hatta International Airport" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Soekarno-Hatta International Airport</span></div>
           <div class="w reveal"><img src="../photos/customers/surabaya-airport.png?v=5" alt="Juanda International Airport" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Juanda International Airport</span></div>
           <div class="w reveal"><img src="../photos/customers/bali-airport.png?v=5" alt="I Gusti Ngurah Rai International Airport" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">I Gusti Ngurah Rai International Airport</span></div>
           <div class="w sq reveal"><img src="../photos/customers/kediri.png?v=5" alt="Dhoho Airport" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Dhoho Airport</span></div>
