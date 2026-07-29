@@ -18,6 +18,21 @@
    body-copy link on the site so far. */
 .about-copy a{color:var(--brand);font-weight:600}
 .about-copy a:hover{text-decoration:underline}
+
+/* Certificate cards, compact. site.css draws them at 300px tall with the
+   whole certificate letter-boxed inside and the label ranged left, which
+   makes the three cards the tallest thing on the page for no gain — the
+   document itself is unreadable at that size either way, and it opens full
+   size on click. Cropped to the header band instead, tall enough to show the
+   URS seal and "Certificate of Registration", with the label centred under
+   it. fire-fighting.css already does exactly this under .section.compact;
+   these are the same rules in the group palette, page-local because site.css
+   has no compact variant for this block. */
+.section.compact .isoimg{height:150px;overflow:hidden;display:block}
+.section.compact .isoimg img{width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;object-position:top center}
+.section.compact .isometa{padding:.75rem .9rem;text-align:center}
+.section.compact .isometa .std{font-size:.92rem;color:var(--brand)}
+.section.compact .isometa .lbl{font-size:.78rem;margin-top:.15rem}
 </style>
 </head>
 <body>
@@ -80,7 +95,7 @@
 </section>
 
 <!-- ============ 2. COMPANY OVERVIEW ============ -->
-<section class="section white">
+<section class="section white compact">
   <div class="wrap">
     <div class="about-grid">
       <div class="about-copy">
@@ -121,27 +136,32 @@
 </section>
 
 <!-- ============ 4. WHY CHOOSE US ============ -->
-<section class="section white">
+<!-- The shared .adv-* block from site.css, the same one the Hanindo
+     Automotive, Gralessando and Hanindo Shanghai About pages use. It
+     replaced the .wccard block that was here: bordered boxes with emoji
+     for icons, which sat apart from the rest of the site. -->
+<section class="section white compact">
   <div class="wrap">
     <div class="cert-head">
       <span class="kicker reveal">Why choose us</span>
       <h2 class="h2 reveal">Why clients trust us</h2>
+      <p class="reveal d1">Three things you can count on, from the first site survey through to long-term service.</p>
     </div>
-    <div class="wcgrid">
-      <div class="wccard reveal">
-        <div class="wcic">🏆</div>
+    <div class="adv-grid">
+      <div class="adv adv-1 reveal">
+        <div class="advic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 8.7l5.4-.8z"/></svg></div>
         <h3>Established</h3>
-        <p>Operating in petroleum equipment since 1987 — the company the Hanindo Group grew out of, with the client relationships to match.</p>
+        <p>Operating in petroleum equipment since 1987 &mdash; the company the Hanindo Group grew out of, with the client relationships to match.</p>
       </div>
-      <div class="wccard reveal d1">
-        <div class="wcic">⭐</div>
+      <div class="adv adv-2 reveal d1">
+        <div class="advic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3.3v5.2c0 4.5-3.1 8.4-7.5 9.9-4.4-1.5-7.5-5.4-7.5-9.9V6.1z"/><path d="M9 12l2.2 2.2L15.4 10"/></svg></div>
         <h3>Best Quality</h3>
         <p>Internationally branded equipment supplied from our principal partners, engineered to the standards the retail fuel industry is held to.</p>
       </div>
-      <div class="wccard reveal d2">
-        <div class="wcic">🤝</div>
+      <div class="adv adv-3 reveal d2">
+        <div class="advic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13a8 8 0 0116 0"/><path d="M4 13v3a2 2 0 002 2h1v-5H6a2 2 0 00-2 2z"/><path d="M20 13v3a2 2 0 01-2 2h-1v-5h1a2 2 0 012 2z"/><path d="M17 18v1a2 2 0 01-2 2h-2"/></svg></div>
         <h3>Excellent Service</h3>
-        <p>Fast response, free consultation, on-site surveys, and committed after-sales support — fully dedicated to our clients' satisfaction.</p>
+        <p>Fast response, free consultation, on-site surveys, and committed after-sales support &mdash; fully dedicated to our clients&#39; satisfaction.</p>
       </div>
     </div>
   </div>
@@ -151,7 +171,7 @@
 <!-- The scans live in fire-fighting/photos/ because that page shipped
      first. They certify PT. Hanindo Citra as a whole, so this page
      references them in place rather than holding a second copy. -->
-<section class="section paper">
+<section class="section paper compact">
   <div class="wrap">
     <div class="cert-head">
       <span class="kicker reveal">Credentials</span>
