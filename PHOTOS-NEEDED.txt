@@ -239,6 +239,39 @@ display. Neither is pictured in the Express brochure, so there is no
 second source to check a swap against — if either is ever replaced,
 confirm the unit with ITL rather than matching on appearance.
 
+FLOW METER PAGE  (/citra/flow-meters.html)
+Product shots live in /photos/citra/products/flow-meters/. Missing ones fall
+back to the "photo needed" placeholder, so the page is safe to ship without
+them. Cut out on white, ~1400px wide, shown up to 210px tall.
+tcs-682.jpg                 TCS 682 piston meter, registered          [DONE]
+tcs-700.png                 TCS 700 rotary meters, six sizes          [DONE]
+tcs-3000.png                TCS 3000 and TCS 3000ex registers         [DONE]
+
+ALL THREE ARE TOTAL CONTROL SYSTEMS' COPYRIGHT, taken from tcsmeters.com and
+used here as their distributor. Confirm this is covered by the distributor
+agreement, or ask TCS for a media kit, before the site goes public. This is
+the same open question the Custom printer tiles carry.
+
+tcs-682 is the only one that arrived at press resolution (3000px). It is a
+photograph rather than a flat cut-out, so PNG could not get it under 1.7MB; it
+was resized to 1400px, flattened onto #fff and saved as JPEG at 223KB. That is
+why it is the one .jpg in the folder. Its transparency is gone, which costs
+nothing while the panel behind it is white — if the .prod shot panel is ever
+tinted, re-cut this file rather than letting a white rectangle show. The same
+warning applies to seven other Citra shots: every .webp the product pages load
+is matted onto white, and only the .png sources beside them carry alpha.
+
+tcs-700 (500x193) and tcs-3000 (385x449) are the largest TCS publish. Both are
+well under the ~1400px the slot is specced for and render close to 1:1 at the
+210px display height, so they will look soft on a high-density screen. Fine to
+ship; ask TCS for press-resolution originals if the page is ever printed.
+
+TCS serve the 682 meter-types, 700 meter-types and 700 sizes diagrams through
+a JavaScript slider that would not load headlessly, so none of those are on
+the page. The 682's seven type codes are listed as plain tags instead. If the
+business wants the type and size drawings, they will have to come from the TCS
+product brochure PDF rather than the web page.
+
 TANK GAUGING PAGE  (/citra/tank-gauging.html)
 Product shots live in /photos/citra/products/atg/. Missing ones fall back
 to the "photo needed" placeholder, so the page is safe to ship without
