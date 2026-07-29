@@ -953,6 +953,31 @@ img{max-width:100%;display:block}
    needs no closing edge, and the first card below supplies one. */
 .section.catbar{padding-top:1.5rem}
 
+/* ---------- SECTOR LIST ---------- */
+/* The sectors or industries a brand serves. Used two ways: with a line of
+   description under each name (RAASM, Airtec) and with the name alone
+   (the three Custom product pages, via .tight).
+
+   Each cell carries its own hairline. The earlier version faked the rules
+   by letting a grid background show through 1px gaps, which works only
+   when the item count divides by the column count — and both lists hold
+   eleven, so the twelfth slot showed as a painted empty panel. A cell that
+   owns its border leaves nothing behind when the row runs short.
+
+   This lived in two page <style> blocks; kept here so there is one of it. */
+.secgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin-top:1rem}
+@media(max-width:900px){.secgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.secgrid{grid-template-columns:1fr}}
+.seccell{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:1.1rem 1.2rem;transition:border-color .18s}
+.seccell:hover{border-color:var(--blue-800)}
+.secname{font-size:.95rem;font-weight:700;color:var(--blue-800);line-height:1.35}
+.secwhat{font-size:.86rem;color:var(--muted);line-height:1.45;margin-top:.25rem}
+/* names only: same cell, more across, centred */
+.secgrid.tight{grid-template-columns:repeat(4,1fr)}
+@media(max-width:900px){.secgrid.tight{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.secgrid.tight{grid-template-columns:repeat(2,1fr)}}
+.secgrid.tight .seccell{padding:.75rem 1rem;text-align:center;display:flex;align-items:center;justify-content:center}
+
 /* ---------- CATEGORY NAV ---------- */
 /* The row under a catalogue or brand banner: jump to a sibling category,
    the current one marked. Two forms, and they are not interchangeable —

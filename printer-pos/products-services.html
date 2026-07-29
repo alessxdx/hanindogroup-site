@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/site.css?v=202607291120" />
+<link rel="stylesheet" href="../assets/site.css?v=202607291450" />
 <style>
 /* Catalogue cards in the arrangement the automotive Products & Services
    page uses: category name above the product shot, supporting copy
@@ -22,17 +22,7 @@
 .cat-tiles .cat .shot{background:transparent;border-bottom:0;height:132px;padding:0}
 .cat-tiles .cat .body{padding:.7rem 0 0;align-items:center}
 .cat-tiles .cat p{font-size:.82rem;margin:.3rem 0 .8rem}
-/* Industries served: an equal-column grid rather than the wrapping
-   .pills flex row, so the block runs the full container width and lines
-   up with the cards above instead of ragging out mid-row.
-   Six across, not five: with eleven sectors five would strand a single
-   pill alone on a third row, where six keeps it two deep. */
 .inds{margin-top:1.8rem}
-.indlabel{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--brand)}
-.indgrid{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:1fr;gap:.5rem;margin-top:.8rem}
-@media(max-width:900px){.indgrid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:560px){.indgrid{grid-template-columns:repeat(2,1fr)}}
-.indgrid .pill{display:flex;align-items:center;justify-content:center;text-align:center;padding:.6rem .7rem;font-size:.84rem;line-height:1.25}
 </style>
 </head>
 <body>
@@ -163,19 +153,19 @@
          longest labels alone run past the container — so it is six
          across and two deep. -->
     <div class="inds reveal d3">
-      <span class="indlabel">Industries served</span>
-      <div class="indgrid">
-        <span class="pill">Retail</span>
-        <span class="pill">Self-Payment &amp; Info Kiosk</span>
-        <span class="pill">Public Transport</span>
-        <span class="pill">Aviation</span>
-        <span class="pill">Healthcare</span>
-        <span class="pill">Parking</span>
-        <span class="pill">Logistics &amp; Postal</span>
-        <span class="pill">Entertainment</span>
-        <span class="pill">Lotteries &amp; Betting</span>
-        <span class="pill">Manufacturing</span>
-        <span class="pill">Banking &amp; Finance</span>
+      <span class="kicker">Industries served</span>
+      <div class="secgrid tight">
+        <div class="seccell"><div class="secname">Retail</div></div>
+        <div class="seccell"><div class="secname">Self-Payment &amp; Info Kiosk</div></div>
+        <div class="seccell"><div class="secname">Public Transport</div></div>
+        <div class="seccell"><div class="secname">Aviation</div></div>
+        <div class="seccell"><div class="secname">Healthcare</div></div>
+        <div class="seccell"><div class="secname">Parking</div></div>
+        <div class="seccell"><div class="secname">Logistics &amp; Postal</div></div>
+        <div class="seccell"><div class="secname">Entertainment</div></div>
+        <div class="seccell"><div class="secname">Lotteries &amp; Betting</div></div>
+        <div class="seccell"><div class="secname">Manufacturing</div></div>
+        <div class="seccell"><div class="secname">Banking &amp; Finance</div></div>
       </div>
     </div>
   </div>

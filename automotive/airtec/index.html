@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../../assets/site.css?v=202607291120" />
+<link rel="stylesheet" href="../../assets/site.css?v=202607291450" />
 <style>
 /* Tighter section rhythm than the company home, as on the other
    automotive sub-pages. */
@@ -20,15 +20,6 @@
 .brandmark{display:flex;align-items:center;gap:1.1rem;margin-bottom:1.4rem}
 .brandmark img{height:64px;width:auto;max-width:220px;object-fit:contain}
 @media(max-width:640px){.brandmark img{height:48px}}
-/* Sector list, shared shape with the RAASM page. Hairline gaps over a
-   tinted background give the ruled table look without a border each. */
-.secgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:1.6rem}
-@media(max-width:900px){.secgrid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:600px){.secgrid{grid-template-columns:1fr}}
-.seccell{background:var(--white);padding:1.35rem 1.4rem;transition:background .18s}
-.seccell:hover{background:var(--paper)}
-.secname{font-size:.98rem;font-weight:700;color:var(--blue-800);line-height:1.35}
-.secwhat{font-size:.88rem;color:var(--muted);line-height:1.45;margin-top:.3rem}
 /* Product cards: photo left, specification right, stacking on narrow
    screens. Same component the lifts, service, tyre-service and welding
    pages use — those rules are page-local to each of them rather than in
