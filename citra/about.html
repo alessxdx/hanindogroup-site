@@ -33,6 +33,30 @@
 .section.compact .isometa{padding:.75rem .9rem;text-align:center}
 .section.compact .isometa .std{font-size:.92rem;color:var(--brand)}
 .section.compact .isometa .lbl{font-size:.78rem;margin-top:.15rem}
+
+/* Sole-distributor brand grid — logo tile + what the brand covers. Same
+   block the Hanindo Automotive About page runs, restated here rather than
+   lifted into site.css: that page draws it three across at a fixed size and
+   site.css's .dgrid is a different, four-across layout used elsewhere.
+   House style: hairline borders, flat colour, 3px radii. A cell whose logo
+   file is missing falls back to a text wordmark automatically, so replacing
+   a PNG later needs no code change. */
+.dgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:1.1rem}
+@media(max-width:680px){.dgrid{grid-template-columns:1fr}}
+.dcell{background:var(--white);display:flex;flex-direction:column;align-items:center;text-align:center;gap:.85rem;padding:1.9rem 1.4rem;transition:background .18s}
+.dcell:hover{background:var(--paper)}
+.dlogo{height:58px;display:flex;align-items:center;justify-content:center}
+/* Fixed box rather than the auto/auto the Automotive page uses. Gilbarco is
+   an SVG, and with width:auto;height:auto it collapses to 0x0 — the three
+   logos there are all raster, so that page never hits it. A fixed box with
+   object-fit:contain sizes vector and raster alike. */
+.dlogo img{width:150px;height:58px;object-fit:contain}
+.dlogo .wm{font-size:.9rem;font-weight:800;letter-spacing:.04em;color:var(--blue-800);line-height:1.25}
+.dname{font-size:.98rem;font-weight:700;color:var(--blue-800);line-height:1.35}
+.dwhat{font-size:.88rem;color:var(--muted);line-height:1.45}
+/* The grid sits inside the Company overview section rather than in one of
+   its own, so the page keeps its white / paper alternation. */
+.principals{margin-top:2.6rem}
 </style>
 </head>
 <body>
@@ -106,6 +130,18 @@
       </div>
       <div class="about-media">
         <div class="aphoto reveal d1"><img src="../photos/group/divisions/div-oil-and-gas.jpg" alt="Retail fuel station forecourt" /><span class="cap">Retail forecourt equipment</span></div>
+      </div>
+    </div>
+
+    <div class="principals">
+      <span class="kicker reveal">The principals we distribute</span>
+      <h2 class="h2 reveal">Brands we represent</h2>
+      <p class="lede reveal" style="max-width:none">Hanindo Citra has supplied Indonesian forecourts since 1987, and represents the manufacturers whose equipment does the dispensing, the measuring and the controlling on those sites.</p>
+      <p class="plist-lead reveal">Some of the brands that rely on Hanindo Citra as their sole distributor:</p>
+      <div class="dgrid reveal">
+        <a class="dcell" href="dispensers.html"><div class="dlogo"><img src="../photos/partners/gilbarco.svg" alt="Gilbarco Veeder-Root" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="wm" style="display:none">GILBARCO VEEDER-ROOT</span></div><div><div class="dname">Gilbarco Veeder-Root</div><div class="dwhat">Fuel dispensers, tank gauging &amp; submersible pumps</div></div></a>
+        <a class="dcell" href="flow-meters.html"><div class="dlogo"><img src="../photos/partners/tcs.png" alt="Total Control Systems" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="wm" style="display:none">TOTAL CONTROL SYSTEMS</span></div><div><div class="dname">Total Control Systems</div><div class="dwhat">Positive displacement flow meters &amp; registers</div></div></a>
+        <a class="dcell" href="forecourt-controllers.html"><div class="dlogo"><img src="../photos/partners/itl.png" alt="ITL" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="wm" style="display:none">ITL</span></div><div><div class="dname">ITL</div><div class="dwhat">Forecourt controllers &amp; distribution modules</div></div></a>
       </div>
     </div>
   </div>
