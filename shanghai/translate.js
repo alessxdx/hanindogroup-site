@@ -93,9 +93,9 @@
     "Singapore office": "新加坡办公室",
     "Gralessando Pte Ltd opens, covering South East Asia.": "Gralessando Pte Ltd 成立，覆盖东南亚市场。",
     "Regional partnerships": "区域合作",
-    "Partnerships established in Vietnam and Thailand.": "在越南与泰国建立合作关系。",
+    "Partnerships established in Vietnam, Thailand and the Philippines.": "在越南、泰国与菲律宾建立合作关系。",
     "Manila office": "马尼拉办公室",
-    "The Philippines partnership and a new office in Manila.": "与菲律宾建立合作，并在马尼拉设立新办公室。",
+    "An office follows the Philippines partnership.": "继菲律宾合作之后设立办公室。",
 
     /* ---- about: where we are ---- */
     "Where we are": "我们的所在",

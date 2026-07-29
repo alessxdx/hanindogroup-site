@@ -93,9 +93,9 @@
     "Singapore office": "Kantor Singapura",
     "Gralessando Pte Ltd opens, covering South East Asia.": "Gralessando Pte Ltd dibuka, mencakup Asia Tenggara.",
     "Regional partnerships": "Kemitraan regional",
-    "Partnerships established in Vietnam and Thailand.": "Kemitraan dijalin di Vietnam dan Thailand.",
+    "Partnerships established in Vietnam, Thailand and the Philippines.": "Kemitraan dijalin di Vietnam, Thailand, dan Filipina.",
     "Manila office": "Kantor Manila",
-    "The Philippines partnership and a new office in Manila.": "Kemitraan Filipina dan kantor baru di Manila.",
+    "An office follows the Philippines partnership.": "Kantor menyusul setelah kemitraan Filipina.",
 
     /* ---- about: direction ---- */
     "Our direction": "Arah kami",
