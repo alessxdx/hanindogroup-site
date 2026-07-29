@@ -98,14 +98,7 @@
 
     /* ---- partners strip + partners page ---- */
     "Partners & Principals": "Mitra & Prinsipal",
-    "Hanindo Group works with established equipment manufacturers from Europe, North America and Asia, bringing their products, parts and factory support to customers across Indonesia.": "Hanindo Group bekerja sama dengan produsen peralatan mapan dari Eropa, Amerika Utara, dan Asia, menghadirkan produk, suku cadang, dan dukungan pabrik mereka bagi pelanggan di seluruh Indonesia.",
-    "Represented in Indonesia by Hanindo.": "Diwakili di Indonesia oleh Hanindo.",
-    "Since 1987, Hanindo has partnered with leading global manufacturers of fuel dispensing systems, automatic tank gauging, forecourt automation, petrol station equipment, and automotive garage equipment. These long-standing partnerships enable us to provide genuine parts, factory-trained service, warranty support, and reliable after-sales care.": "Sejak 1987, Hanindo bermitra dengan produsen global terkemuka di bidang sistem dispenser bahan bakar, pengukuran tangki otomatis, otomasi SPBU, peralatan SPBU, dan peralatan bengkel otomotif. Kemitraan jangka panjang ini memungkinkan kami menyediakan suku cadang asli, layanan oleh teknisi terlatih pabrik, dukungan garansi, serta layanan purnajual yang andal.",
-    "By bringing world-class brands under one roof, we give customers a single trusted partner backed by local expertise, stock, and nationwide support.": "Dengan menghadirkan merek-merek kelas dunia dalam satu atap, kami memberi pelanggan satu mitra tepercaya yang didukung keahlian lokal, ketersediaan stok, dan dukungan di seluruh Indonesia.",
-    "Genuine parts and consumables": "Suku cadang dan consumable asli",
-    "Factory-trained service engineers": "Teknisi servis terlatih pabrik",
-    "Warranty and after-sales support": "Dukungan garansi dan purnajual",
-    "Local stock and nationwide delivery": "Stok lokal dan pengiriman ke seluruh Indonesia",
+    "Hanindo has partnered with leading global manufacturers of fuel dispensing systems, automatic tank gauging, forecourt automation, petrol station equipment, and automotive garage equipment. These long-standing partnerships enable us to provide genuine parts, factory-trained service, warranty support, and reliable after-sales care.": "Hanindo bermitra dengan produsen global terkemuka di bidang sistem dispenser bahan bakar, pengukuran tangki otomatis, otomasi SPBU, peralatan SPBU, dan peralatan bengkel otomotif. Kemitraan jangka panjang ini memungkinkan kami menyediakan suku cadang asli, layanan oleh teknisi terlatih pabrik, dukungan garansi, serta layanan purnajual yang andal.",
     "Our partners and principals": "Mitra dan prinsipal kami",
     "Brands we supply and service.": "Merek yang kami pasok dan layani.",
     "Enquiries": "Pertanyaan",
