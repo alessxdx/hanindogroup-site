@@ -19,6 +19,11 @@
    one. The .mid and .sq shape lifts stay — they correct for aspect ratio
    rather than rank. */
 .wall.flat .band{width:100%}
+/* Row break inside a band. The wall wraps on width alone, which left the
+   public-service logos split 7 + 1 with BSN stranded. This puts the wrap at
+   the sub-group edge instead, so transport and retail take the first row and
+   public services the second. */
+.wall.flat .tier .brk{flex-basis:100%;height:0;margin:0;padding:0}
 .wall.flat .w{--logo-h:42px;--logo-max:280px;max-width:var(--logo-max)}
 .bandlab{display:flex;align-items:center;gap:1rem;font-size:.72rem;font-weight:800;
   letter-spacing:.14em;text-transform:uppercase;color:var(--blue-800);margin-bottom:1.15rem}
@@ -235,11 +240,12 @@
           <div class="w reveal"><img src="../photos/customers/smrt.png" alt="SMRT Trains" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">SMRT Trains</span></div>
           <div class="w reveal"><img src="../photos/customers/strides.png" alt="Strides" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Strides</span></div>
           <div class="w sq reveal"><img src="../photos/customers/sg-cruise-centre.png" alt="Singapore Cruise Centre" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Singapore Cruise Centre</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/burger-king.png" alt="Burger King" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Burger King</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/jd-sports.png" alt="JD Sports" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">JD Sports</span></div>
+          <div class="brk" aria-hidden="true"></div>
           <div class="w mid reveal"><img src="../photos/customers/nlb.png" alt="National Library Board" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">National Library Board</span></div>
           <div class="w sq reveal"><img src="../photos/customers/sg-pools.png" alt="Singapore Pools" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Singapore Pools</span></div>
           <div class="w mid reveal"><img src="../photos/customers/bsn.png" alt="Bank Simpanan Nasional" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Bank Simpanan Nasional</span></div>
-          <div class="w sq reveal"><img src="../photos/customers/burger-king.png" alt="Burger King" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Burger King</span></div>
-          <div class="w sq reveal"><img src="../photos/customers/jd-sports.png" alt="JD Sports" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">JD Sports</span></div>
         </div>
       </div>
       <div class="band">
@@ -247,12 +253,12 @@
         <div class="tier">
           <div class="w reveal"><img src="../photos/customers/st-engineering.png" alt="ST Engineering" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">ST Engineering</span></div>
           <div class="w mid reveal"><img src="../photos/customers/daifuku.png" alt="Daifuku" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Daifuku</span></div>
-          <div class="w reveal"><img src="../photos/customers/idemia.png" alt="IDEMIA" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">IDEMIA</span></div>
           <div class="w mid reveal"><img src="../photos/customers/aboitiz.png" alt="Aboitiz InfraCapital" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Aboitiz InfraCapital</span></div>
+          <div class="w reveal"><img src="../photos/customers/idemia.png" alt="IDEMIA" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">IDEMIA</span></div>
           <div class="w sq reveal"><img src="../photos/customers/wei-long-electronics.png" alt="Wei Long Electronics" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Wei Long Electronics</span></div>
-          <div class="w sq reveal"><img src="../photos/customers/aldan.png" alt="Aldan Technology" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Aldan Technology</span></div>
           <div class="w mid reveal"><img src="../photos/customers/xyreon.png" alt="Xyreon Technology" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Xyreon Technology</span></div>
           <div class="w reveal"><img src="../photos/customers/aogo.png" alt="AOGO Technologies" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">AOGO Technologies</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/aldan.png" alt="Aldan Technology" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Aldan Technology</span></div>
           <div class="w mid reveal"><img src="../photos/customers/epoint.png" alt="Epoint Systems" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Epoint Systems</span></div>
           <div class="w reveal"><img src="../photos/customers/iinnova.jpg" alt="i-innova" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">i-innova</span></div>
           <div class="w mid reveal"><img src="../photos/customers/genie.png" alt="Genie" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Genie</span></div>
