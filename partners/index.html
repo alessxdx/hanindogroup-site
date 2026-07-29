@@ -23,8 +23,16 @@
    are aspect-ratio correction, not rank. */
 .wall.flat .band{width:100%}
 .wall.flat .w{--logo-h:46px;--logo-max:280px;max-width:var(--logo-max)}
-.bandlab{display:block;text-align:center;font-size:.68rem;font-weight:800;
-  letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem}
+/* Navy with a hairline running out to both edges. The rule does the
+   separating, so the type does not have to carry it alone — the grey .68rem
+   caption this replaces was competing with logos several times its size, and
+   lost badly on a phone, where each band is only two rows tall and the labels
+   come thick and fast.
+   Rule is #c9d5e3 rather than var(--line): --line is tuned for borders on
+   white and all but vanishes on the paper sections these walls sit on. */
+.bandlab{display:flex;align-items:center;gap:1rem;font-size:.72rem;font-weight:800;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--blue-800);margin-bottom:1.15rem}
+.bandlab::before,.bandlab::after{content:"";flex:1;height:1px;background:#c9d5e3}
 @media(max-width:640px){.wall.flat .w{--logo-h:34px;--logo-max:185px}}
 </style>
 </head>
