@@ -424,18 +424,27 @@ cards. Missing ones fall back to the "photo needed" placeholder, so the
 page is safe to ship without them. Cut out on white, ~800px wide, shown
 up to about 260px tall.
 
-raasm-hose-reel.png                   Hose Reels
-raasm-cable-reel.png                  Cable Reels
-raasm-pneumatic-pumps.png             Pneumatic Pumps
-raasm-diaphragm-pumps.png             Diaphragm Pumps
-raasm-oil-equipment.png               Oil Equipment
-raasm-grease-equipment.png            Grease Equipment
-raasm-ram-hoists.png                  Waste Oil Ram Hoists
-raasm-centralized-lubrication-system.png Centralised Lubrication
-raasm-fls-fluids-level-system.png     Fluid Level FLS
-raasm-fcs-fluids-control-system.png   Fluid Control FCS
-raasm-service-columns-and-trolleys.png Service Columns Trolleys
-raasm-diesel-fuel-equipment.png       Diesel Fuel Equipment
+raasm-hose-reel.png               Hose Reels                      [COMPLETE]
+raasm-cable-reel.png              Cable Reels                     [COMPLETE]
+raasm-pneumatic-pumps.png         Pneumatic Pumps                 [COMPLETE]
+raasm-diaphragm-pumps.png         Diaphragm Pumps                 [COMPLETE]
+raasm-oil-equipment.png           Oil Equipment                   [COMPLETE]
+raasm-grease-equipment.png        Grease Equipment                [COMPLETE]
+raasm-fls.png                     Fluid Level, FLS                [COMPLETE]
+raasm-fcs.png                     Fluid Control, FCS              [COMPLETE]
+raasm-service-trolley.png         Service Columns & Trolleys      [COMPLETE]
+raasm-diesel-fuel-equipment.png   Diesel Fuel Equipment           [COMPLETE]
+
+Nothing outstanding. Ten cards, ten files.
+
+Ram Hoists and Centralised Lubrication were dropped from the page at the
+business's request, taking it from twelve cards to ten. Waste oil did not
+go with them: the Oil Equipment shot is the drainer range, and that card
+names it.
+
+Three files carry a short name rather than the RAASM URL slug the others
+use — fcs, fls and service-trolley against fcs-fluids-control-system and
+so on. The page follows the files, not the other way round.
 
 Worth choosing at least two of the six from a non-automotive setting —
 a plant floor or a mine workshop rather than a service bay. The whole
