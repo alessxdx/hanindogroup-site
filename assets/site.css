@@ -1006,6 +1006,13 @@ img{max-width:100%;display:block}
 .catnav{display:flex;flex-wrap:wrap;gap:1.7rem;margin-bottom:2rem}
 
 /* --- tabs (navigate) --- */
+/* A link may carry both a full and a short label. The Hanindo Citra product
+   names run much longer than the Automotive ones — "Submersible Turbine
+   Pumps" against "Welding" — and five of them wrapped the bar to seven
+   lines on a phone. Below 640px the short label takes over. A link with
+   only plain text is unaffected. */
+.catnav .sm{display:none}
+@media(max-width:640px){.catnav .lg{display:none}.catnav .sm{display:inline}}
 .catnav a{position:relative;font-family:inherit;font-size:.9rem;font-weight:600;
   padding:.25rem 0;color:var(--muted);background:transparent;transition:color .3s ease-in-out}
 .catnav a::after{content:'';display:block;position:absolute;bottom:-4px;left:50%;
