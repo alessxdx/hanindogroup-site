@@ -34,13 +34,13 @@
    match, or the bands will drift off their years. */
 .era{overflow-x:auto;padding-bottom:.4rem}
 .era .erabar,.era .gtl{grid-template-columns:repeat(7,minmax(116px,1fr));grid-auto-flow:row;gap:1rem;overflow:visible;margin:0}
-.erabar{display:grid;margin-bottom:.85rem}
-.eracell{padding:0 .5rem .1rem;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:.5rem}
-/* No card around the mark — the box competed with the rail below it, and the
-   year labels only repeated years the rail already carries. What is left is
-   the span bar: without it a mark centred over three stops reads as belonging
-   to the middle one. */
-.eracell::after{content:"";width:100%;height:2px;border-radius:2px;background:#cfe6f7}
+.erabar{display:grid;margin-top:1.15rem}
+.eracell{padding:.1rem .5rem 0;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:.5rem}
+/* The marks sign off under the rail rather than heading it. No card and no
+   year labels: the box competed with the rail and the labels only repeated
+   years the rail already carries. The span bar stays — without it a mark
+   centred under three stops reads as belonging to the middle one. */
+.eracell::before{content:"";width:100%;height:2px;border-radius:2px;background:#cfe6f7}
 .eracell.s1{grid-column:span 1}.eracell.s2{grid-column:span 2}.eracell.s3{grid-column:span 3}
 .eracell img{max-width:130px;max-height:34px;width:auto;height:auto;object-fit:contain;mix-blend-mode:multiply}
 
@@ -115,12 +115,6 @@
       <h2 class="h2">Custom Hanindo Growth</h2>
     </div>
     <div class="era">
-      <div class="erabar">
-        <div class="eracell s1"><img src="../photos/partners/custom.png" alt="Custom" onerror="this.style.display='none'" /></div>
-        <div class="eracell s2"><img src="../photos/brand/logo-shanghai.png" alt="Hanindo Shanghai" onerror="this.style.display='none'" /></div>
-        <div class="eracell s1"><img src="../photos/brand/logo-automation.png" alt="PT. Hanindo Automation Solutions" onerror="this.style.display='none'" /></div>
-        <div class="eracell s3"><img src="../photos/brand/logo-gralessando.png" alt="Gralessando Pte Ltd" onerror="this.style.display='none'" /></div>
-      </div>
       <ol class="gtl">
         <li class="gitem reveal"><div class="yr">2005</div><h3>Custom partnership</h3><p>Partnered to expand Custom products to the China market.</p></li>
         <li class="gitem reveal"><div class="yr">2007</div><h3>Shanghai office</h3><p>The group&rsquo;s first office in China.</p></li>
@@ -130,6 +124,12 @@
         <li class="gitem reveal"><div class="yr">2016&ndash;2019</div><h3>Regional partnerships</h3><p>Partnerships established in Vietnam, Thailand and the Philippines.</p></li>
         <li class="gitem reveal"><div class="yr">2023</div><h3>Manila office</h3><p>An office follows the Philippines partnership.</p></li>
       </ol>
+      <div class="erabar">
+        <div class="eracell s1"><img src="../photos/partners/custom.png" alt="Custom" onerror="this.style.display='none'" /></div>
+        <div class="eracell s2"><img src="../photos/brand/logo-shanghai.png" alt="Hanindo Shanghai" onerror="this.style.display='none'" /></div>
+        <div class="eracell s1"><img src="../photos/brand/logo-automation.png" alt="PT. Hanindo Automation Solutions" onerror="this.style.display='none'" /></div>
+        <div class="eracell s3"><img src="../photos/brand/logo-gralessando.png" alt="Gralessando Pte Ltd" onerror="this.style.display='none'" /></div>
+      </div>
     </div>
   </div>
 </section>
