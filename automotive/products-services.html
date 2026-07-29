@@ -9,25 +9,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/site.css?v=202607291450" />
+<link rel="stylesheet" href="../assets/site.css?v=202607291630" />
 <style>
-/* Catalogue tiles in the arrangement the fire-fighting products page
-   uses: category name above the product shot, supporting copy beneath,
-   everything centred on a plain white card. Those rules live in
-   fire-fighting.css, which this page does not load, so the shared .cat
-   card is restated here rather than pulling that stylesheet in. */
-.cat-tiles{gap:1rem;margin-top:1.3rem}
-/* Six cards here, so three across gives two even rows instead of four and
-   a stranded pair. Not in site.css: the Automation, Gralessando and
-   Shanghai products pages carry four cards each and are right at four
-   across. Below the breakpoint the shared auto-fit takes back over. */
-@media(min-width:900px){.cat-tiles{grid-template-columns:repeat(3,1fr)}}
-.cat-tiles .cat{text-align:center;padding:1.1rem .9rem 1.2rem}
-.cat-tiles .cat:hover{border-color:var(--brand)}
-.cat-tiles .cat h3{margin:0 0 .7rem;font-size:.95rem;line-height:1.3}
-.cat-tiles .cat .shot{background:transparent;border-bottom:0;height:132px;padding:0}
-.cat-tiles .cat .body{padding:.7rem 0 0;align-items:center}
-.cat-tiles .cat p{font-size:.82rem;margin:.3rem 0 .8rem}
+/* The catalogue runs the shared .pcard box, the same card the Hanindo Citra
+   products page uses — picture panel on top, name, one line, link. It used
+   to run centred .cat tiles with the name ABOVE the picture, which was the
+   opposite order to every other card on the site and left the two companies'
+   product pages looking unrelated.
+
+   Card bottom row: margin-top:auto pins it to the foot of the card, so every
+   card in a row ends on the same line however long its description runs. */
+a.pcard{color:inherit;text-decoration:none}
+a.pcard:hover{border-color:var(--blue-700)}
+.pcard .more{display:flex;align-items:center;gap:.45rem;margin-top:auto;padding-top:.9rem;font-size:.82rem;font-weight:700;color:var(--brand)}
+.pcard .more svg{width:15px;height:15px;flex:none;fill:none;stroke:currentColor;stroke-width:2.2;transition:transform .16s}
+a.pcard:hover .more svg{transform:translateX(3px)}
+.pcard .more.ask{color:var(--muted);font-weight:600}
 
 /* .svc-grid is a fixed four across in site.css. The services row runs
    three, which would leave a fourth cell painted empty — so match the
@@ -123,18 +120,21 @@
 <section class="section paper compact">
   <div class="wrap">
     <div class="reveal">
-      <span class="kicker">What we offer</span>
-      <h2 class="h2">Professional equipment, from the service bay to the plant floor</h2>
+      <span class="kicker">Products &amp; services</span>
+      <h2 class="h2">Our product range</h2>
       <p class="lede" style="max-width:none">Equipment from leading international manufacturers, chosen to improve productivity, safety and service quality. Most of it fits out a workshop. The inflation and lubrication ranges reach further &mdash; the same equipment runs on forecourts, in depots and plants, and across mine sites.</p>
     </div>
-    <div class="catgrid cat-tiles">
+    <div class="pgrid">
 
-      <a class="cat reveal" href="tyre-service/">
-        <h3>Tyre Service</h3>
-        <div class="shot"><img src="../photos/automotive/products/hpa-c880-std.png" alt="HPA-Faip C880 STD 3D wheel alignment system" onerror="this.style.display='none'" /></div>
-        <div class="body">
+      <a class="pcard cutout reveal" href="tyre-service/">
+        <div class="pbox">
+          <img src="../photos/automotive/products/hpa-c880-std.png" alt="HPA-Faip C880 STD 3D wheel alignment system" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
+        </div>
+        <div class="pbody">
+          <h4>Tyre Service</h4>
           <p>Tyre changers, wheel balancers and 3D wheel alignment.</p>
-          <span class="go">View products <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="more">View tyre service equipment <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </div>
       </a>
 
@@ -142,48 +142,63 @@
            category page of their own: for these two the brand IS the whole
            category, so the range already lives there and a category page
            would only restate it. -->
-      <a class="cat reveal d1" href="airtec/">
-        <h3>Tyre Inflation</h3>
-        <div class="shot"><img src="../photos/automotive/products/airtec-lineup.png" alt="Airtec digital tyre inflators — wall-mounted, pedestal and high-pressure models" onerror="this.style.display='none'" /></div>
-        <div class="body">
+      <a class="pcard cutout reveal d1" href="airtec/">
+        <div class="pbox">
+          <img src="../photos/automotive/products/airtec-lineup.png" alt="Airtec digital tyre inflators — wall-mounted, pedestal and high-pressure models" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
+        </div>
+        <div class="pbody">
+          <h4>Tyre Inflation</h4>
           <p>Digital inflators &mdash; machine-mounted, high flow, high pressure and temperature compensating.</p>
-          <span class="go">View products <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="more">View inflators <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </div>
       </a>
 
-      <a class="cat reveal d2" href="lifts/">
-        <h3>Lifts &amp; Handling</h3>
-        <div class="shot"><img src="../photos/automotive/products/atom-dl-40lm.png" alt="ATOM DL-4.0LM car lift" onerror="this.style.display='none'" /></div>
-        <div class="body">
+      <a class="pcard cutout reveal d2" href="lifts/">
+        <div class="pbox">
+          <img src="../photos/automotive/products/atom-dl-40lm.png" alt="ATOM DL-4.0LM car lift" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
+        </div>
+        <div class="pbody">
+          <h4>Lifts &amp; Handling</h4>
           <p>Scissor, two-post and four-post lifts, 3.5 to 4 tonnes.</p>
-          <span class="go">View products <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="more">View lifts &amp; handling <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </div>
       </a>
 
-      <a class="cat reveal d3" href="service/">
-        <h3>Service Equipment</h3>
-        <div class="shot"><img src="../photos/automotive/products/weldann-ac-900.png" alt="WELDANN AC-900 A/C recycling service station" onerror="this.style.display='none'" /></div>
-        <div class="body">
+      <a class="pcard cutout reveal d3" href="service/">
+        <div class="pbox">
+          <img src="../photos/automotive/products/weldann-ac-900.png" alt="WELDANN AC-900 A/C recycling service station" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
+        </div>
+        <div class="pbody">
+          <h4>Service Equipment</h4>
           <p>Fluid exchange, brake lathe, A/C recycling and diagnostics.</p>
-          <span class="go">View products <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="more">View service equipment <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </div>
       </a>
 
-      <a class="cat reveal" href="raasm/">
-        <h3>Fluid Handling</h3>
-        <div class="shot"><img src="../photos/automotive/products/raasm-lineup.png" alt="RAASM lubrication equipment — waste oil drainers, hose reels, diaphragm and grease pumps" onerror="this.style.display='none'" /></div>
-        <div class="body">
+      <a class="pcard cutout reveal" href="raasm/">
+        <div class="pbox">
+          <img src="../photos/automotive/products/raasm-lineup.png" alt="RAASM lubrication equipment — waste oil drainers, hose reels, diaphragm and grease pumps" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
+        </div>
+        <div class="pbody">
+          <h4>Fluid Handling</h4>
           <p>Reels, pumps, dispensing, waste oil and centralised lubrication.</p>
-          <span class="go">View products <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="more">View fluid handling <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </div>
       </a>
 
-      <a class="cat reveal d1" href="welding/">
-        <h3>Welding</h3>
-        <div class="shot"><img src="../photos/automotive/products/weldann-mig-mma-350f.png" alt="WELDANN MIG/MMA-350F welding machine" onerror="this.style.display='none'" /></div>
-        <div class="body">
+      <a class="pcard cutout reveal d1" href="welding/">
+        <div class="pbox">
+          <img src="../photos/automotive/products/weldann-mig-mma-350f.png" alt="WELDANN MIG/MMA-350F welding machine" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
+          <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
+        </div>
+        <div class="pbody">
+          <h4>Welding</h4>
           <p>MMA and MIG/MMA inverters, 200 A to 700 A.</p>
-          <span class="go">View products <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="more">View welding machines <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </div>
       </a>
 
