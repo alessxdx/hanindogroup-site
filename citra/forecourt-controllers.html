@@ -11,17 +11,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607291450" />
 <style>
-/* The brand mark sits on the heading's own line rather than in a band above
-   it. Stacked, the logo cost a 64px row plus its margin and pushed the first
-   product 444px down the page; sharing a baseline with the heading brings
-   that back without the brand reading any smaller. It still sits above the
-   intro rather than in the hero — the banner is the shared Citra forecourt
-   shot, and a logo dropped on it reads as a watermark. Wraps to two rows
-   below 640px, where there is no room for both. */
-.brandmark{display:flex;align-items:center;gap:1.3rem;flex-wrap:wrap;margin-bottom:1rem}
-.brandmark img{height:52px;width:auto;max-width:190px;object-fit:contain}
-.brandmark .h2{margin:0;font-size:clamp(1.35rem,2.3vw,1.8rem)}
-@media(max-width:640px){.brandmark img{height:44px}}
+/* The brand mark stands on its own above the intro, with no page heading
+   beside it — the group heading below does that job now. It stays out of
+   the hero: the banner is the shared Citra forecourt shot, and a logo
+   dropped on it reads as a watermark. */
+.brandmark{display:flex;align-items:center;margin-bottom:1.2rem}
+.brandmark img{height:64px;width:auto;max-width:220px;object-fit:contain}
+@media(max-width:640px){.brandmark img{height:48px}}
 
 /* The automotive catalogue's product card, restated here the way each of
    those six pages restates it — .prod is not in site.css. Shot left, detail
@@ -63,16 +59,13 @@ table.spectable td:first-child{color:var(--muted)}
 table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
 
 
-/* The controller and the modules that fan out to the pumps are separate
-   decisions; the page splits rather than running as one list. These are
-   group headings INSIDE a section, not section headings, and the intro
-   above them already carries the big type — so they take the automotive
-   catalogue's .grouphead rather than the shared .kicker + .h2 pairing,
-   which put 11.5px against 34.4px over two or three words. */
-.grouphead{margin:2.9rem 0 1.2rem;padding-top:1.7rem;border-top:1px solid var(--line)}
-.grouphead:first-of-type{margin-top:0;padding-top:0;border-top:0}
-.grouphead h2{font-size:1.15rem;font-weight:700;color:var(--blue-800);letter-spacing:-.005em}
-.grouphead p{font-size:.88rem;color:var(--muted);margin-top:.25rem;line-height:1.6}
+/* Group headings inside the section. With the page heading gone these are
+   the largest type in the body, so they carry the weight the .h2 used to —
+   and the hairline rule above them is dropped, since the size change now
+   does the separating on its own. */
+.grouphead{margin:2.6rem 0 1.2rem}
+.grouphead h2{font-size:1.5rem;font-weight:800;color:var(--blue-800);letter-spacing:-.012em}
+.grouphead p{font-size:.92rem;color:var(--muted);margin-top:.4rem;line-height:1.65}
 
 /* The device list is long enough that it wants columns rather than the
    inline .taglist wrap used elsewhere — a reader scans it for one brand. */
@@ -159,15 +152,14 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
       <div class="brandmark">
         <img src="../photos/partners/itl.png" alt="ITL Technologies" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
         <span style="display:none;font-weight:800;letter-spacing:.08em">ITL TECHNOLOGIES</span>
-        <h2 class="h2">One controller, every pump on the forecourt.</h2>
       </div>
-      <p class="lede" style="max-width:82ch">The forecourt controller is what lets a point of sale authorise a pump, read a delivery and price a grade &mdash; whatever brand of dispenser is standing on the island. ITL&rsquo;s Enabler does that through one open API, in three formats and with distribution modules that speak more than twenty pump protocols between them.</p>
-      <p class="lede" style="max-width:82ch">Hanindo Citra supplies the controllers, the modules and the integration work behind them.</p>
+      <p class="lede" style="max-width:none">The forecourt controller is what lets a point of sale authorise a pump, read a delivery and price a grade &mdash; whatever brand of dispenser is standing on the island. ITL&rsquo;s Enabler does that through one open API, in three formats and with distribution modules that speak more than twenty pump protocols between them.</p>
+      <p class="lede" style="max-width:none">Hanindo Citra supplies the controllers, the modules and the integration work behind them.</p>
     </div>
 
     <div class="grouphead reveal">
       <h2>Controllers</h2>
-      <p class="lede">Which format a site takes depends on whether there is a PC on the forecourt to host it, and on how many dispensers it has to carry. All three ship with the Version 4 software licence, the web interface and the same client API.</p>
+      <p>Which format a site takes depends on whether there is a PC on the forecourt to host it, and on how many dispensers it has to carry. All three ship with the Version 4 software licence, the web interface and the same client API.</p>
     </div>
 
     <article class="prod reveal">

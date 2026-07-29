@@ -11,17 +11,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607291450" />
 <style>
-/* The brand mark sits on the heading's own line rather than in a band above
-   it. Stacked, the logo cost a 64px row plus its margin and pushed the first
-   product 444px down the page; sharing a baseline with the heading brings
-   that back without the brand reading any smaller. It still sits above the
-   intro rather than in the hero — the banner is the shared Citra forecourt
-   shot, and a logo dropped on it reads as a watermark. Wraps to two rows
-   below 640px, where there is no room for both. */
-.brandmark{display:flex;align-items:center;gap:1.3rem;flex-wrap:wrap;margin-bottom:1rem}
-.brandmark img{height:52px;width:auto;max-width:190px;object-fit:contain}
-.brandmark .h2{margin:0;font-size:clamp(1.35rem,2.3vw,1.8rem)}
-@media(max-width:640px){.brandmark img{height:44px}}
+/* The brand mark stands on its own above the intro, with no page heading
+   beside it — the group heading below does that job now. It stays out of
+   the hero: the banner is the shared Citra forecourt shot, and a logo
+   dropped on it reads as a watermark. */
+.brandmark{display:flex;align-items:center;margin-bottom:1.2rem}
+.brandmark img{height:64px;width:auto;max-width:220px;object-fit:contain}
+@media(max-width:640px){.brandmark img{height:48px}}
 
 /* The automotive catalogue's product card, restated here the way each of
    those six pages restates it — .prod is not in site.css. Shot left, detail
@@ -51,6 +47,14 @@
 .prod .dspec{margin-top:1.1rem}
 .prod .dspec .k{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue-800);margin-bottom:.5rem}
 .prod .dspec .tag{font-size:.8rem;padding:.35rem .7rem}
+
+/* Group headings inside the section. With the page heading gone these are
+   the largest type in the body, so they carry the weight the .h2 used to —
+   and the hairline rule above them is dropped, since the size change now
+   does the separating on its own. */
+.grouphead{margin:2.6rem 0 1.2rem}
+.grouphead h2{font-size:1.5rem;font-weight:800;color:var(--blue-800);letter-spacing:-.012em}
+.grouphead p{font-size:.92rem;color:var(--muted);margin-top:.4rem;line-height:1.65}
 </style>
 </head>
 <body>
@@ -127,9 +131,13 @@
       <div class="brandmark">
         <img src="../photos/partners/gilbarco.svg" alt="Gilbarco Veeder-Root" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
         <span style="display:none;font-weight:800;letter-spacing:.08em">GILBARCO VEEDER-ROOT</span>
-        <h2 class="h2">The range we supply.</h2>
       </div>
-      <p class="lede" style="max-width:82ch">Hanindo Citra has supplied, installed and serviced Gilbarco dispensers on Indonesian forecourts since 1987. Below is the current line-up and the configurations each family is available in.</p>
+      <p class="lede" style="max-width:none">Hanindo Citra has supplied, installed and serviced Gilbarco dispensers on Indonesian forecourts since 1987. Below is the current line-up and the configurations each family is available in.</p>
+    </div>
+
+    <div class="grouphead reveal">
+      <h2>Dispenser families</h2>
+      <p>Three families cover the whole range &mdash; Latitude for sites being specified today, Frontier for dependable volume, Encore for commercial and truck lanes.</p>
     </div>
 
     <article class="prod reveal">
