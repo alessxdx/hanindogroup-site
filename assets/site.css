@@ -557,6 +557,15 @@ img{max-width:100%;display:block}
 .pcard:hover{border-color:var(--blue-700)}
 .pbox{background:var(--paper);height:180px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
 .pbox img{height:100%;width:100%;object-fit:cover;position:relative;z-index:1}
+/* A photograph fills its box and is cropped to it. A cut-out product shot
+   must not be: crop a reel and you lose the end of the hose. .cutout sits
+   the whole object on white inside the same box instead.
+
+   This lived only in the Citra products page, so the RAASM cards — which
+   are cut-outs and carry the class — were being cropped by the rule above
+   with nothing to stop it. Kept here so both pages get it. */
+.pcard.cutout .pbox{background:var(--white)}
+.pcard.cutout .pbox img{object-fit:contain;padding:.55rem .35rem}
 .ph{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;background:var(--paper);color:#93a3ba}
 .ph svg{width:28px;height:28px;fill:none;stroke:#a8b6ca;stroke-width:1.4}
 .ph span{font-size:.64rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
