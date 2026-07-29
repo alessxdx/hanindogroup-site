@@ -11,6 +11,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607291450" />
 <style>
+/* Customer wall, banded by sector — the same block the Hanindo Citra and
+   Hanindo Automotive walls carry.
+   .flat cancels the t1/t2/t3 tier sizes from site.css. Those rank a customer
+   by how much business we do with them, which becomes the wrong signal once a
+   row means a sector: the first band would simply look like the most important
+   one. The .mid and .sq shape lifts stay — they correct for aspect ratio
+   rather than rank. */
+.wall.flat .band{width:100%}
+.wall.flat .w{--logo-h:42px;--logo-max:280px;max-width:var(--logo-max)}
+.bandlab{display:flex;align-items:center;gap:1rem;font-size:.72rem;font-weight:800;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--blue-800);margin-bottom:1.15rem}
+.bandlab::before,.bandlab::after{content:"";flex:1;height:1px;background:#c9d5e3}
+@media(max-width:640px){.wall.flat .w{--logo-h:34px;--logo-max:185px}}
 /* .checks-desc moved to site.css — the Hanindo Shanghai home page
    carries the same three lines and needs the same treatment. */
 /* Pull the two columns closer. The photo panel shrinks on its own —
@@ -194,35 +207,46 @@
 <section class="customers" aria-label="Customer base">
   <div class="chead reveal"><span class="kick">Customer base</span></div>
   <div class="wrap">
-    <div class="wall banded ranked">
-      <div class="tier">
-        <div class="w t1 mid reveal"><img src="../photos/customers/altera.webp?v=5" alt="Altera Cipta Teknologi" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Altera Cipta Teknologi</span></div>
-        <div class="w t1 reveal"><img src="../photos/customers/garuda.png?v=5" alt="Garuda Indonesia" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Garuda Indonesia</span></div>
-        <div class="w t1 reveal"><img src="../photos/customers/mco-jaya.png?v=5" alt="MCO Jaya" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">MCO Jaya</span></div>
-        <div class="w t1 mid reveal"><img src="../photos/customers/nutech.png?v=5" alt="Nutech" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Nutech</span></div>
-        <div class="w t1 sq reveal"><img src="../photos/customers/pt-murni.png?v=5" alt="PT Murni" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Murni</span></div>
-        <div class="w t1 mid reveal"><img src="../photos/customers/sita.svg?v=5" alt="SITA" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">SITA</span></div>
+    <div class="wall banded flat">
+      <div class="band">
+        <span class="bandlab">Airports &amp; airlines</span>
+        <div class="tier">
+          <div class="w mid reveal"><img src="../photos/customers/soekarno-hatta.png?v=5" alt="Soekarno-Hatta International Airport" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Soekarno-Hatta International Airport</span></div>
+          <div class="w reveal"><img src="../photos/customers/surabaya-airport.png?v=5" alt="Juanda International Airport" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Juanda International Airport</span></div>
+          <div class="w reveal"><img src="../photos/customers/bali-airport.png?v=5" alt="I Gusti Ngurah Rai International Airport" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">I Gusti Ngurah Rai International Airport</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/kediri.png?v=5" alt="Dhoho Airport" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Dhoho Airport</span></div>
+          <div class="w reveal"><img src="../photos/customers/garuda.png?v=5" alt="Garuda Indonesia" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Garuda Indonesia</span></div>
+          <div class="w reveal"><img src="../photos/customers/citi-link.png?v=5" alt="Citilink" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Citilink</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/sita.svg?v=5" alt="SITA" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">SITA</span></div>
+        </div>
       </div>
-      <div class="tier">
-        <div class="w t2 mid reveal"><img src="../photos/customers/asyst.png?v=5" alt="Asyst" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Asyst</span></div>
-        <div class="w t2 reveal"><img class="tight" style="aspect-ratio:4.36" src="../photos/customers/ayu-berga.webp?v=5" alt="Ayu Berga" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Ayu Berga</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/brinks.png?v=5" alt="Brink&rsquo;s" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Brink&rsquo;s</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/citi-link.png?v=5" alt="Citilink" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Citilink</span></div>
-        <div class="w t2 sq reveal"><img src="../photos/customers/cmlj.png?v=5" alt="Citra Marga Lintas Jabar" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Citra Marga Lintas Jabar</span></div>
-        <div class="w t2 sq reveal"><img src="../photos/customers/cmnp.png?v=5" alt="Citra Marga Nusaphala Persada" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Citra Marga Nusaphala Persada</span></div>
-        <div class="w t2 mid reveal"><img src="../photos/customers/corra.png?v=5" alt="Corra" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Corra</span></div>
-        <div class="w t2 sq reveal"><img src="../photos/customers/kediri.png?v=5" alt="Dhoho Airport" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Dhoho Airport</span></div>
-        <div class="w t2 mid reveal"><img src="../photos/customers/elta-prima.png?v=5" alt="Elta Prima" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Elta Prima</span></div>
-        <div class="w t2 sq reveal"><img src="../photos/customers/hutama-karya.png?v=5" alt="Hutama Karya" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Hutama Karya</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/bali-airport.png?v=5" alt="I Gusti Ngurah Rai International Airport" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">I Gusti Ngurah Rai International Airport</span></div>
-        <div class="w t2 sq reveal"><img src="../photos/customers/jlj.webp?v=5" alt="Jalantol Lingkarluar Jakarta" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Jalantol Lingkarluar Jakarta</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/jasamarga.png?v=5" alt="Jasa Marga" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Jasa Marga</span></div>
-        <div class="w t2 sq reveal"><img src="../photos/customers/jasamarga-op.png?v=5" alt="Jasamarga Tollroad Operator" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Jasamarga Tollroad Operator</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/surabaya-airport.png?v=5" alt="Juanda International Airport" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Juanda International Airport</span></div>
-        <div class="w t2 sq reveal"><img src="../photos/customers/mtn.png?v=5" alt="Marga Trans Nusantara" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Marga Trans Nusantara</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/pbtr.png?v=5" alt="Pemalang Batang Tol Road" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Pemalang Batang Tol Road</span></div>
-        <div class="w t2 mid reveal"><img src="../photos/customers/sbn.png?v=5" alt="SBN" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">SBN</span></div>
-        <div class="w t2 mid reveal"><img src="../photos/customers/soekarno-hatta.png?v=5" alt="Soekarno-Hatta International Airport" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Soekarno-Hatta International Airport</span></div>
+      <div class="band">
+        <span class="bandlab">Toll roads</span>
+        <div class="tier">
+          <div class="w reveal"><img src="../photos/customers/jasamarga.png?v=5" alt="Jasa Marga" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Jasa Marga</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/jasamarga-op.png?v=5" alt="Jasamarga Tollroad Operator" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Jasamarga Tollroad Operator</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/cmnp.png?v=5" alt="Citra Marga Nusaphala Persada" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Citra Marga Nusaphala Persada</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/cmlj.png?v=5" alt="Citra Marga Lintas Jabar" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Citra Marga Lintas Jabar</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/jlj.webp?v=5" alt="Jalantol Lingkarluar Jakarta" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Jalantol Lingkarluar Jakarta</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/mtn.png?v=5" alt="Marga Trans Nusantara" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Marga Trans Nusantara</span></div>
+          <div class="w reveal"><img src="../photos/customers/pbtr.png?v=5" alt="Pemalang Batang Tol Road" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Pemalang Batang Tol Road</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/hutama-karya.png?v=5" alt="Hutama Karya" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Hutama Karya</span></div>
+        </div>
+      </div>
+      <div class="band">
+        <span class="bandlab">Technology &amp; services</span>
+        <div class="tier">
+          <div class="w mid reveal"><img src="../photos/customers/altera.webp?v=5" alt="Altera Cipta Teknologi" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Altera Cipta Teknologi</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/asyst.png?v=5" alt="Asyst" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Asyst</span></div>
+          <div class="w reveal"><img class="tight" style="aspect-ratio:4.36" src="../photos/customers/ayu-berga.webp?v=5" alt="Ayu Berga" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Ayu Berga</span></div>
+          <div class="w reveal"><img src="../photos/customers/brinks.png?v=5" alt="Brink&rsquo;s" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Brink&rsquo;s</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/corra.png?v=5" alt="Corra" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Corra</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/elta-prima.png?v=5" alt="Elta Prima" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Elta Prima</span></div>
+          <div class="w reveal"><img src="../photos/customers/mco-jaya.png?v=5" alt="MCO Jaya" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">MCO Jaya</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/nutech.png?v=5" alt="Nutech" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Nutech</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/pt-murni.png?v=5" alt="PT Murni" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Murni</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/sbn.png?v=5" alt="SBN" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">SBN</span></div>
+        </div>
       </div>
     </div>
   </div>

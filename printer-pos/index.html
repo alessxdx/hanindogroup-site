@@ -11,6 +11,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607291450" />
 <style>
+/* Customer wall, banded by sector — the same block the Hanindo Citra and
+   Hanindo Automotive walls carry.
+   .flat cancels the t1/t2/t3 tier sizes from site.css. Those rank a customer
+   by how much business we do with them, which becomes the wrong signal once a
+   row means a sector: the first band would simply look like the most important
+   one. The .mid and .sq shape lifts stay — they correct for aspect ratio
+   rather than rank. */
+.wall.flat .band{width:100%}
+.wall.flat .w{--logo-h:42px;--logo-max:280px;max-width:var(--logo-max)}
+.bandlab{display:flex;align-items:center;gap:1rem;font-size:.72rem;font-weight:800;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--blue-800);margin-bottom:1.15rem}
+.bandlab::before,.bandlab::after{content:"";flex:1;height:1px;background:#c9d5e3}
+@media(max-width:640px){.wall.flat .w{--logo-h:34px;--logo-max:185px}}
 /* .checks-desc moved to site.css — the Hanindo Shanghai home page
    carries the same three lines and needs the same treatment. */
 /* Pull the two columns closer. The photo panel shrinks on its own —
@@ -197,37 +210,48 @@
 <section class="customers" aria-label="Customer base">
   <div class="chead reveal"><span class="kick">Customer base</span></div>
   <div class="wrap">
-    <div class="wall banded ranked">
-      <div class="tier">
-        <div class="w t1 sq reveal"><img src="../photos/customers/changi-airport.webp" alt="Changi Airport Singapore" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Changi Airport Singapore</span></div>
-        <div class="w t1 mid reveal"><img src="../photos/customers/collins.png" alt="Collins Aerospace" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Collins Aerospace</span></div>
-        <div class="w t1 mid reveal"><img src="../photos/customers/injourney-airports.png" alt="InJourney Airports" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">InJourney Airports</span></div>
-        <div class="w t1 mid reveal"><img src="../photos/customers/singapore-airlines.png" alt="Singapore Airlines" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Singapore Airlines</span></div>
-        <div class="w t1 sq reveal"><img src="../photos/customers/sg-pools.png" alt="Singapore Pools" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Singapore Pools</span></div>
-        <div class="w t1 mid reveal"><img src="../photos/customers/sita.svg" alt="SITA" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">SITA</span></div>
-        <div class="w t1 reveal"><img src="../photos/customers/smrt.png" alt="SMRT Trains" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">SMRT Trains</span></div>
-        <div class="w t1 reveal"><img src="../photos/customers/st-engineering.png" alt="ST Engineering" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">ST Engineering</span></div>
+    <div class="wall banded flat">
+      <div class="band">
+        <span class="bandlab">Airports &amp; aviation</span>
+        <div class="tier">
+          <div class="w sq reveal"><img src="../photos/customers/changi-airport.webp" alt="Changi Airport Singapore" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Changi Airport Singapore</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/manila-airport.svg" alt="Manila International Airport Authority" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Manila International Airport Authority</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/mactan-cebu.png" alt="Mactan-Cebu International Airport Authority" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Mactan-Cebu International Airport Authority</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/don-mueang-bkk.svg" alt="Don Mueang International Airport" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Don Mueang International Airport</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/ventiane-laos.png" alt="Wattay International Airport" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Wattay International Airport</span></div>
+          <div class="w reveal"><img src="../photos/customers/acv-vietnam.png" alt="Airports Corporation of Vietnam" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Airports Corporation of Vietnam</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/injourney-airports.png" alt="InJourney Airports" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">InJourney Airports</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/singapore-airlines.png" alt="Singapore Airlines" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Singapore Airlines</span></div>
+          <div class="w reveal"><img src="../photos/customers/philippine-airlines.svg" alt="Philippine Airlines" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Philippine Airlines</span></div>
+          <div class="w reveal"><img src="../photos/customers/cebu-pacific.png" alt="Cebu Pacific" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Cebu Pacific</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/airasia.png" alt="AirAsia" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">AirAsia</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/sita.svg" alt="SITA" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">SITA</span></div>
+          <div class="w reveal"><img src="../photos/customers/amadeus.png" alt="Amadeus" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Amadeus</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/collins.png" alt="Collins Aerospace" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Collins Aerospace</span></div>
+        </div>
       </div>
-      <div class="tier">
-        <div class="w t2 mid reveal"><img src="../photos/customers/aboitiz.png" alt="Aboitiz InfraCapital" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Aboitiz InfraCapital</span></div>
-        <div class="w t2 sq reveal"><img src="../photos/customers/airasia.png" alt="AirAsia" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">AirAsia</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/acv-vietnam.png" alt="Airports Corporation of Vietnam" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Airports Corporation of Vietnam</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/amadeus.png" alt="Amadeus" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Amadeus</span></div>
-        <div class="w t2 mid reveal"><img src="../photos/customers/bsn.png" alt="Bank Simpanan Nasional" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Bank Simpanan Nasional</span></div>
-        <div class="w t2 sq reveal"><img src="../photos/customers/burger-king.png" alt="Burger King" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Burger King</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/cebu-pacific.png" alt="Cebu Pacific" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Cebu Pacific</span></div>
-        <div class="w t2 mid reveal"><img src="../photos/customers/daifuku.png" alt="Daifuku" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Daifuku</span></div>
-        <div class="w t2 sq reveal"><img src="../photos/customers/don-mueang-bkk.svg" alt="Don Mueang International Airport" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Don Mueang International Airport</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/idemia.png" alt="IDEMIA" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">IDEMIA</span></div>
-        <div class="w t2 sq reveal"><img src="../photos/customers/jd-sports.png" alt="JD Sports" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">JD Sports</span></div>
-        <div class="w t2 sq reveal"><img src="../photos/customers/mactan-cebu.png" alt="Mactan-Cebu International Airport Authority" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Mactan-Cebu International Airport Authority</span></div>
-        <div class="w t2 sq reveal"><img src="../photos/customers/manila-airport.svg" alt="Manila International Airport Authority" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Manila International Airport Authority</span></div>
-        <div class="w t2 mid reveal"><img src="../photos/customers/nlb.png" alt="National Library Board" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">National Library Board</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/philippine-airlines.svg" alt="Philippine Airlines" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Philippine Airlines</span></div>
-        <div class="w t2 sq reveal"><img src="../photos/customers/sg-cruise-centre.png" alt="Singapore Cruise Centre" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Singapore Cruise Centre</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/strides.png" alt="Strides" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Strides</span></div>
-        <div class="w t2 sq reveal"><img src="../photos/customers/ventiane-laos.png" alt="Wattay International Airport" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Wattay International Airport</span></div>
-        <div class="w t2 sq reveal"><img src="../photos/customers/wei-long-electronics.png" alt="Wei Long Electronics" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Wei Long Electronics</span></div>
+      <div class="band">
+        <span class="bandlab">Transport, retail &amp; public services</span>
+        <div class="tier">
+          <div class="w reveal"><img src="../photos/customers/smrt.png" alt="SMRT Trains" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">SMRT Trains</span></div>
+          <div class="w reveal"><img src="../photos/customers/strides.png" alt="Strides" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Strides</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/sg-cruise-centre.png" alt="Singapore Cruise Centre" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Singapore Cruise Centre</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/nlb.png" alt="National Library Board" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">National Library Board</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/sg-pools.png" alt="Singapore Pools" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Singapore Pools</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/bsn.png" alt="Bank Simpanan Nasional" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Bank Simpanan Nasional</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/burger-king.png" alt="Burger King" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Burger King</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/jd-sports.png" alt="JD Sports" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">JD Sports</span></div>
+        </div>
+      </div>
+      <div class="band">
+        <span class="bandlab">Industry &amp; technology</span>
+        <div class="tier">
+          <div class="w reveal"><img src="../photos/customers/st-engineering.png" alt="ST Engineering" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">ST Engineering</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/daifuku.png" alt="Daifuku" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Daifuku</span></div>
+          <div class="w reveal"><img src="../photos/customers/idemia.png" alt="IDEMIA" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">IDEMIA</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/aboitiz.png" alt="Aboitiz InfraCapital" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Aboitiz InfraCapital</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/wei-long-electronics.png" alt="Wei Long Electronics" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Wei Long Electronics</span></div>
+        </div>
       </div>
     </div>
   </div>
