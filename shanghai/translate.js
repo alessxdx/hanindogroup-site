@@ -93,7 +93,7 @@
     "Singapore office": "新加坡办公室",
     "Gralessando Pte Ltd opens, covering CUSTOM Hanindo South East Asia.": "Gralessando Pte Ltd 成立，覆盖 CUSTOM Hanindo 东南亚市场。",
     "Regional partnerships": "区域合作",
-    "CUSTOM partnerships established in Vietnam, Thailand and the Philippines.": "在越南、泰国与菲律宾建立 CUSTOM 合作关系。",
+    "CUSTOM Hanindo partnerships established in Vietnam, Thailand and the Philippines.": "在越南、泰国与菲律宾建立 CUSTOM Hanindo 合作关系。",
     "Manila office": "马尼拉办公室",
     "A CUSTOM Hanindo office follows the Philippines partnership.": "继菲律宾合作之后设立 CUSTOM Hanindo 办公室。",
 

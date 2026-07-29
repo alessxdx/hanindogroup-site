@@ -93,7 +93,7 @@
     "Singapore office": "Kantor Singapura",
     "Gralessando Pte Ltd opens, covering CUSTOM Hanindo South East Asia.": "Gralessando Pte Ltd dibuka, mencakup CUSTOM Hanindo Asia Tenggara.",
     "Regional partnerships": "Kemitraan regional",
-    "CUSTOM partnerships established in Vietnam, Thailand and the Philippines.": "Kemitraan CUSTOM dijalin di Vietnam, Thailand, dan Filipina.",
+    "CUSTOM Hanindo partnerships established in Vietnam, Thailand and the Philippines.": "Kemitraan CUSTOM Hanindo dijalin di Vietnam, Thailand, dan Filipina.",
     "Manila office": "Kantor Manila",
     "A CUSTOM Hanindo office follows the Philippines partnership.": "Kantor CUSTOM Hanindo menyusul setelah kemitraan Filipina.",
 
