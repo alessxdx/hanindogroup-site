@@ -302,7 +302,12 @@ img{max-width:100%;display:block}
 .bcard .bbody{padding:1.5rem 1.6rem}
 .bcard h3{font-weight:700;font-size:1.05rem;color:var(--blue-800);margin-bottom:.45rem}
 .bcard .bbody p{font-size:.9rem;color:var(--muted)}
-.navbar{position:sticky;top:0;z-index:100;background:var(--blue-800);border-bottom:1px solid rgba(255,255,255,.08)}
+/* The box-shadow is not decoration: the bar is sticky and its height lands on
+   a fraction of a pixel, so at some scroll offsets the browser rounds the
+   stuck bar and the content beneath it to different pixel rows and the white
+   page background flashed through the seam. The shadow repaints that row in
+   the bar's own blue, so there is nothing left to show through. */
+.navbar{position:sticky;top:0;z-index:100;background:var(--blue-800);border-bottom:1px solid rgba(255,255,255,.08);box-shadow:0 1px 0 var(--blue-800)}
 .navbar .wrap{display:flex;align-items:stretch;justify-content:space-between}
 .tabs{display:flex;list-style:none}
 .tabs>li{position:relative;display:flex}
@@ -393,7 +398,7 @@ img{max-width:100%;display:block}
      height to spare. position:relative, NOT static — the drop-down is
      absolutely positioned and needs this stacking context, or it opens
      behind the hero and the button looks dead. */
-  .navbar{position:relative;background:transparent;border-bottom:0}
+  .navbar{position:relative;background:transparent;border-bottom:0;box-shadow:none}
   .navbar .wrap{position:relative;justify-content:flex-end;min-height:0;padding-top:0;padding-bottom:0}
   /* pointer-events, not just opacity and visibility. The closed menu is
      absolutely positioned over the hero, and .drop below re-declares
