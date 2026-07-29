@@ -53,7 +53,7 @@
     "Oil, Gas & Fire Protection": "Minyak, Gas & Proteksi Kebakaran",
     "Automotive": "Otomotif",
     "Fuelling equipment & energy": "Peralatan pengisian bahan bakar & energi",
-    "Printing & F&B": "Pencetakan & F&B",
+    "Printing & POS": "Pencetakan & POS",
     "Fire Fighting": "Pemadam Kebakaran",
 
     /* ---- home: slide 1, welcome ---- */
@@ -98,7 +98,7 @@
 
     /* ---- partners strip + partners page ---- */
     "Partners & Principals": "Mitra & Prinsipal",
-    "Hanindo has partnered with leading global manufacturers of fuel dispensing systems, automatic tank gauging, forecourt automation, petrol station equipment, and automotive garage equipment. These long-standing partnerships enable us to provide genuine parts, factory-trained service, warranty support, and reliable after-sales care.": "Hanindo bermitra dengan produsen global terkemuka di bidang sistem dispenser bahan bakar, pengukuran tangki otomatis, otomasi SPBU, peralatan SPBU, dan peralatan bengkel otomotif. Kemitraan jangka panjang ini memungkinkan kami menyediakan suku cadang asli, layanan oleh teknisi terlatih pabrik, dukungan garansi, serta layanan purnajual yang andal.",
+    "Hanindo has partnered with leading global manufacturers for many industries. These long-standing partnerships enable us to provide genuine parts, factory-trained service, warranty support, and reliable after-sales care.": "Hanindo bermitra dengan produsen global terkemuka untuk berbagai industri. Kemitraan jangka panjang ini memungkinkan kami menyediakan suku cadang asli, layanan oleh teknisi terlatih pabrik, dukungan garansi, serta layanan purnajual yang andal.",
     "Our partners and principals": "Mitra dan prinsipal kami",
     "Brands we supply and service.": "Merek yang kami pasok dan layani.",
     "Enquiries": "Pertanyaan",
