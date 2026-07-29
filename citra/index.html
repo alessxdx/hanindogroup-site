@@ -27,6 +27,10 @@
    large type and twenty-six in small — a ranking of clients that the bands
    replace with something a reader can actually use. */
 .wall.flat .band{width:100%}
+/* Row break inside a band. The wall wraps on width alone, which split Mining
+   5 + 1 and left Kideco stranded. This puts the wrap on the sub-group edge:
+   the three metals miners on one row, the three coal miners on the next. */
+.wall.flat .tier .brk{flex-basis:100%;height:0;margin:0;padding:0}
 /* Navy with a hairline running out to both edges. The rule does the
    separating, so the type does not have to carry it alone — the grey .68rem
    caption this replaces was competing with logos several times its size, and
@@ -256,11 +260,12 @@
         <span class="bandlab">Mining</span>
         <div class="tier">
           <div class="w reveal"><img src="../photos/customers/freeport.png" alt="PT Freeport Indonesia" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Freeport Indonesia</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/newmont.png" alt="PT Newmont Nusa Tenggara" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Newmont Nusa Tenggara</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/mineral-alam-abadi.png" alt="PT Mineral Alam Abadi" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Mineral Alam Abadi</span></div>
+          <div class="brk" aria-hidden="true"></div>
           <div class="w reveal"><img src="../photos/customers/adaro.png" alt="PT Adaro Indonesia" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Adaro Indonesia</span></div>
           <div class="w mid reveal"><img src="../photos/customers/berau-coal.png" alt="PT Berau Coal" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Berau Coal</span></div>
           <div class="w reveal"><img src="../photos/customers/kideco.png" alt="PT Kideco Jaya Agung" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Kideco Jaya Agung</span></div>
-          <div class="w sq reveal"><img src="../photos/customers/newmont.png" alt="PT Newmont Nusa Tenggara" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Newmont Nusa Tenggara</span></div>
-          <div class="w mid reveal"><img src="../photos/customers/mineral-alam-abadi.png" alt="PT Mineral Alam Abadi" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Mineral Alam Abadi</span></div>
         </div>
       </div>
       <div class="band">
