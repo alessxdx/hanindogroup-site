@@ -13,6 +13,24 @@
 <style>
 /* Tighter section rhythm on this group page. */
 .section{padding:clamp(40px,5vw,64px) 0}
+/* Partner wall, industry-banded.
+
+   .flat cancels the t1/t2/t3 tier sizes from site.css. Those tiers rank a
+   brand by how much business the group does with it, which is the wrong
+   signal once a row means an industry: the first band would simply look
+   like the most important one. One --logo-h for every mark instead.
+
+   The .mid and .sq shape lifts in site.css still apply on top, and must —
+   they are aspect-ratio correction, not rank, so a square mark and a long
+   wordmark end up carrying the same optical weight.
+
+   Each band is label + .tier, so the label sits above its own row rather
+   than becoming a flex item inside it. */
+.wall.flat .band{width:100%}
+.wall.flat .w{--logo-h:46px;--logo-max:280px;max-width:var(--logo-max)}
+.bandlab{display:block;text-align:center;font-size:.68rem;font-weight:800;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem}
+@media(max-width:640px){.wall.flat .w{--logo-h:34px;--logo-max:185px}}
 </style>
 </head>
 <body>
@@ -211,33 +229,45 @@
 </section>
 
 <!-- ============ PARTNERS & PRINCIPALS ============ -->
-<!-- Weighted wall, not a grid of equal boxes: .t1 are the principals the
-     group does the most business with, .t3 the smallest. To move a brand
-     up or down, change its tier class — nothing else needs touching.
-     Ordered by tier and then alphabetically within it: with mixed sizes
-     a strict A-Z would scatter the large marks through the rows and lose
-     the hierarchy the sizing is there to show. -->
+<!-- Grouped by industry, not by how much business each brand does. Every mark
+     draws at one size (.wall.flat), because with bands meaning industry a size
+     difference would read as one industry outranking another. The .mid / .sq
+     shape classes stay: those are not rank, they correct for aspect ratio so a
+     square mark and a long wordmark carry the same optical weight.
+     Within Fuelling, the Gilbarco Veeder-Root family leads and TCS follows, so
+     the GVR brands read as one group rather than scattered. -->
 <section class="customers" aria-label="Our partners and principals">
   <div class="chead reveal"><span class="kick">Partners &amp; Principals</span></div>
   <div class="wrap">
-    <div class="wall banded reveal">
-      <div class="tier">
-        <div class="w t1 mid"><img src="photos/partners/airtec.png" alt="Airtec" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Airtec</span></div>
-        <div class="w t1"><img src="photos/partners/custom.png" alt="Custom" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Custom</span></div>
-        <div class="w t1 mid"><img src="photos/partners/gilbarco.svg" alt="Gilbarco Veeder-Root" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Gilbarco Veeder-Root</span></div>
-        <div class="w t1 sq"><img src="photos/partners/hpa.webp?v=2" alt="HPA-Faip" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">HPA-Faip</span></div>
-        <div class="w t1"><img src="photos/partners/itl.png" alt="ITL" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">ITL Technologies</span></div>
-        <div class="w t1 sq"><img src="photos/partners/raasm.png" alt="RAASM" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">RAASM</span></div>
-        <div class="w t1"><img src="photos/partners/redjacket.webp" alt="Red Jacket" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Red Jacket</span></div>
-        <div class="w t1 sq"><img src="photos/partners/tcs.png" alt="TCS" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">TCS</span></div>
+    <div class="wall banded flat reveal">
+      <div class="band">
+        <span class="bandlab">Fuelling equipment &amp; energy</span>
+        <div class="tier">
+          <div class="w mid"><img src="photos/partners/gilbarco.svg" alt="Gilbarco Veeder-Root" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Gilbarco Veeder-Root</span></div>
+          <div class="w"><img src="photos/partners/redjacket.webp" alt="Red Jacket" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Red Jacket</span></div>
+          <div class="w"><img src="photos/partners/gasboy.png" alt="Gasboy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Gasboy</span></div>
+          <div class="w mid"><img src="photos/partners/angi.png" alt="ANGI" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">ANGI</span></div>
+          <div class="w mid"><img src="photos/partners/doms.png" alt="DOMS" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">DOMS</span></div>
+          <div class="w mid"><img src="photos/partners/orpak.png" alt="Orpak" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Orpak</span></div>
+          <div class="w mid"><img src="photos/partners/invenco.jpg?v=2" alt="Invenco" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Invenco</span></div>
+          <div class="w mid"><img src="photos/partners/itl.png" alt="ITL" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">ITL</span></div>
+          <div class="w sq"><img src="photos/partners/tcs.png" alt="TCS" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">TCS</span></div>
+        </div>
       </div>
-      <div class="tier">
-        <div class="w t2 mid"><img src="photos/partners/angi.png" alt="ANGI" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">ANGI</span></div>
-        <div class="w t2"><img src="photos/partners/brainbee.webp" alt="Brain Bee" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Brain Bee</span></div>
-        <div class="w t2 mid"><img src="photos/partners/doms.png" alt="DOMS" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">DOMS</span></div>
-        <div class="w t2"><img src="photos/partners/gasboy.png" alt="Gasboy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Gasboy</span></div>
-        <div class="w t2 mid"><img src="photos/partners/invenco.jpg?v=2" alt="Invenco" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Invenco</span></div>
-        <div class="w t2 mid"><img src="photos/partners/orpak.png" alt="Orpak" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Orpak</span></div>
+      <div class="band">
+        <span class="bandlab">Printing &amp; F&amp;B</span>
+        <div class="tier">
+          <div class="w"><img src="photos/partners/custom.png" alt="Custom" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Custom</span></div>
+        </div>
+      </div>
+      <div class="band">
+        <span class="bandlab">Automotive</span>
+        <div class="tier">
+          <div class="w mid"><img src="photos/partners/airtec.png" alt="Airtec" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Airtec</span></div>
+          <div class="w sq"><img src="photos/partners/hpa.webp?v=2" alt="HPA-Faip" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">HPA-Faip</span></div>
+          <div class="w sq"><img src="photos/partners/raasm.png" alt="RAASM" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">RAASM</span></div>
+          <div class="w"><img src="photos/partners/brainbee.webp" alt="Brain Bee" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Brain Bee</span></div>
+        </div>
       </div>
     </div>
   </div>

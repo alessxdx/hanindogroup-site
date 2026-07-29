@@ -52,6 +52,8 @@
     "Oil & Gas": "Minyak & Gas",
     "Oil, Gas & Fire Protection": "Minyak, Gas & Proteksi Kebakaran",
     "Automotive": "Otomotif",
+    "Fuelling equipment & energy": "Peralatan pengisian bahan bakar & energi",
+    "Printing & F&B": "Pencetakan & F&B",
     "Fire Fighting": "Pemadam Kebakaran",
 
     /* ---- home: slide 1, welcome ---- */
