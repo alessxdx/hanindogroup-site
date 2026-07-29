@@ -177,6 +177,13 @@ img{max-width:100%;display:block}
 @media(max-width:900px){.about-grid{grid-template-columns:1fr}}
 .about-copy p{margin-bottom:1rem;color:var(--muted);font-size:1rem}
 .about-copy p:last-child{margin-bottom:0}
+/* Inline links in the overview copy. a{color:inherit} is set globally so nav
+   and card links take their container's colour, which leaves a link inside a
+   paragraph indistinguishable from the text around it. The Citra and
+   Automotive About pages both run body-copy links now, so this lives here
+   rather than page-local. */
+.about-copy a{color:var(--brand);font-weight:600}
+.about-copy a:hover{text-decoration:underline}
 .about-media{display:grid;gap:1rem}
 .aphoto{position:relative;border-radius:var(--r);overflow:hidden;min-height:210px;border:1px solid var(--line)}
 .aphoto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}

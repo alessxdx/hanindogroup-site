@@ -11,13 +11,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607291630" />
 <style>
-/* Links inside the overview copy. site.css sets a{color:inherit} globally so
-   that nav and card links inherit their container, which leaves an inline
-   link in body copy indistinguishable from the text around it. Scoped to
-   .about-copy rather than lifted into site.css, because this is the only
-   body-copy link on the site so far. */
-.about-copy a{color:var(--brand);font-weight:600}
-.about-copy a:hover{text-decoration:underline}
+/* .about-copy a moved to site.css — the Automotive About page carries
+   body-copy links now too. */
 
 /* Certificate cards, compact. site.css draws them at 300px tall with the
    whole certificate letter-boxed inside and the label ranged left, which
@@ -95,7 +90,6 @@
           <li><a href="flow-meters.html">Flow Meters</a></li>
           <li><a href="tank-gauging.html">Automatic Tank Gauging</a></li>
           <li><a href="submersible-pumps.html">Submersible Turbine Pumps</a></li>
-          <li><a href="products-services.html#piping">Piping &amp; Fueling Components</a></li>
         </ul>
       </li>
       <li><a href="contact.html">Contact Us</a></li>
