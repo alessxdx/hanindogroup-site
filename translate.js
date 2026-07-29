@@ -50,6 +50,7 @@
     "Fire Fighting Department": "Departemen Pemadam Kebakaran",
     /* the Products & Services drop-down, by industry */
     "Oil & Gas": "Minyak & Gas",
+    "Oil, Gas & Fire Protection": "Minyak, Gas & Proteksi Kebakaran",
     "Automotive": "Otomotif",
     "Fire Fighting": "Pemadam Kebakaran",
 
