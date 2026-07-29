@@ -81,7 +81,7 @@
     "Us": "我们",
     "From receipt printers to self-service kiosks, Hanindo Shanghai supplies and supports the systems that keep retail, transport and hospitality moving.": "从收据打印机到自助服务终端，汉琳德上海为零售、交通与酒店行业供应并支持保障其运转的系统。",
     "Our journey": "我们的历程",
-    "Custom Hanindo Growth": "Custom 与 Hanindo 的发展",
+    "CUSTOM HANINDO Growth": "CUSTOM 与 HANINDO 的发展",
     "CUSTOM partnership": "CUSTOM 合作",
     "Partnered to expand CUSTOM products to the China market.": "达成合作，将 CUSTOM 产品拓展至中国市场。",
     "Shanghai office": "上海办公室",

@@ -130,7 +130,7 @@
     "Us": "Kami",
     "Serving many industries in Indonesia from Jakarta since 1987.": "Melayani berbagai industri di Indonesia dari Jakarta sejak 1987.",
     "Our journey": "Perjalanan kami",
-    "Hanindo Group Growth": "Pertumbuhan Hanindo Group",
+    "HANINDO GROUP Growth": "Pertumbuhan HANINDO GROUP",
     "Where it began": "Awal mula",
     "Petroleum equipment at PT. Sugiron Citra.": "Peralatan perminyakan di PT. Sugiron Citra.",
     "Hanindo Group established": "Hanindo Group didirikan",

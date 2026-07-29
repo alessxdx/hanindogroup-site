@@ -81,7 +81,7 @@
     "Us": "Kami",
     "From receipt printers to self-service kiosks, PT. Hanindo Automation Solutions supplies and supports the systems that keep retail, transport and hospitality moving.": "Dari printer struk hingga kios layanan mandiri, PT. Hanindo Automation Solutions menyediakan dan mendukung sistem yang menjaga ritel, transportasi, dan perhotelan tetap berjalan.",
     "Our journey": "Perjalanan kami",
-    "Custom Hanindo Growth": "Pertumbuhan Custom Hanindo",
+    "CUSTOM HANINDO Growth": "Pertumbuhan CUSTOM HANINDO",
     "CUSTOM partnership": "Kemitraan CUSTOM",
     "Partnered to expand CUSTOM products to the China market.": "Kemitraan untuk memperluas produk CUSTOM ke pasar Tiongkok.",
     "Shanghai office": "Kantor Shanghai",
