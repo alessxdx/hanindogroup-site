@@ -10,6 +10,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607291120" />
+<style>
+/* Links inside the overview copy. site.css sets a{color:inherit} globally so
+   that nav and card links inherit their container, which leaves an inline
+   link in body copy indistinguishable from the text around it. Scoped to
+   .about-copy rather than lifted into site.css, because this is the only
+   body-copy link on the site so far. */
+.about-copy a{color:var(--brand);font-weight:600}
+.about-copy a:hover{text-decoration:underline}
+</style>
 </head>
 <body>
 
@@ -77,13 +86,11 @@
       <div class="about-copy">
         <span class="kicker reveal">Company overview</span>
         <h2 class="h2 reveal" style="margin-bottom:1.4rem">Four decades in<br/>petroleum equipment</h2>
-        <p class="reveal">PT. Hanindo Citra traces its work back to PT. Sugiron Citra, whose petroleum equipment division began operating in 1987. That division became the embryo of what is now the Hanindo Group — and the reason every company in it still measures itself against the same standard of after-sales support.</p>
-        <p class="reveal d1">Today Hanindo Citra supplies, installs and services the equipment that keeps Indonesia's retail fuel industry running: dispensers, tanks, forecourt automation, and the signage and lighting that go with them. The company also takes on construction work for retail petroleum sites, from consultation and drawings through to the day the station opens.</p>
-        <p class="reveal d2">The same legal entity delivers the group's fire-protection work through its Fire Fighting Department, which means the certifications, management systems and engineering discipline below apply across both.</p>
+        <p class="reveal">Hanindo Citra supplies, installs and services the equipment that keeps Indonesia&#39;s retail fuel industry running: dispensers, tanks, forecourt automation, and the signage and lighting that go with them. The company also takes on construction work for retail petroleum sites, from consultation and drawings through to the day the station opens.</p>
+        <p class="reveal d1">The same legal entity delivers the group&#39;s fire-protection work through its <a href="../fire-fighting/">Fire Fighting Department</a>.</p>
       </div>
       <div class="about-media">
         <div class="aphoto reveal d1"><img src="../photos/group/divisions/div-oil-and-gas.jpg" alt="Retail fuel station forecourt" /><span class="cap">Retail forecourt equipment</span></div>
-        <div class="aphoto reveal d2"><img src="../photos/shared/hero/hero-about.jpg" alt="Hanindo Group head office" /><span class="cap">Head office, Jakarta</span></div>
       </div>
     </div>
   </div>
