@@ -10,6 +10,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607291120" />
+<style>
+/* The intro runs as one column rather than the usual two — there is no photo
+   beside it any more, so the copy takes the full width of the wrap. One
+   measure for the whole block: the lede and the check list carry their own
+   max-widths in site.css, and left alone they would wrap at two different
+   points and read as two columns of different width. */
+.introcol{max-width:74ch}
+.introcol .lede,.introcol .checks{max-width:none}
+</style>
 </head>
 <body>
 
@@ -70,9 +79,9 @@
   </div>
 </section>
 <!-- ============ INTRO / SPLIT ============ -->
-<section class="section white">
+<section class="section white compact">
   <div class="wrap">
-    <div class="split">
+    <div class="introcol">
       <div class="reveal">
         <span class="kicker">PT. Hanindo Citra</span>
         <h2 class="h2">The company that started the group.</h2>
@@ -82,10 +91,6 @@
           <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Construction services for the retail petroleum industry — from consultation and drawing through building, until the gas station operates</span></li>
           <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Sign boards and lighting for gas stations</span></li>
         </ul>
-      </div>
-      <div class="shot reveal d2">
-        <img src="../photos/citra/products/citra-forecourt.jpg" alt="Fuel station forecourt" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" />
-        <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
       </div>
     </div>
   </div>

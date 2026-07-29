@@ -196,7 +196,8 @@ cropped file (no surrounding whitespace) so it renders at full size.
 HANINDO CITRA  (/citra/)
 --------------------------------------------------
 hero-citra.webp           DONE — page hero, forecourt at dusk (1536x1024)
-citra-forecourt.jpg         Intro section — station Hanindo equipped
+citra-forecourt.jpg         NO LONGER NEEDED — the intro runs as one column
+                            of copy now, with no photo beside it
 citra-advanz.jpg            Product card — AdvanZ POS/BOS screen or terminal
 citra-enabler.webp          Product card — ITL Enabler controller range [DONE]
 citra-flowmeter.png         Product card — TCS flow meters            [DONE]
