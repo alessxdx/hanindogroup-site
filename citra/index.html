@@ -10,6 +10,18 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607291120" />
+<style>
+/* One flat size for the partner wall. Every brand on this page is fuelling
+   and forecourt, so the t1/t2 ranking that site.css applies had nothing to
+   rank — it only left three different logo sizes in a wall that reads as one
+   group.
+   42px rather than the 46px the group walls use: eleven marks at 46px wrap
+   5 + 5 + 1 and leave Airtec stranded alone on the last row, which is the
+   ragged look this was meant to fix. 42px wraps 5 + 6. Re-check this if a
+   brand is added or removed. */
+.wall.flat .w{--logo-h:42px;--logo-max:280px;max-width:var(--logo-max)}
+@media(max-width:640px){.wall.flat .w{--logo-h:34px;--logo-max:185px}}
+</style>
 </head>
 <body>
 
@@ -84,7 +96,6 @@
     </div>
   </div>
 </section>
-<!-- ============ WHAT WE DO ============ -->
 <!-- ============ PRODUCT TILES ============ -->
 <!-- Same strip component as the Hanindo Automotive home page: .tilestrip
      from site.css plus the advance button, no page-local CSS. Kept on a
@@ -116,6 +127,7 @@
     </div>
   </div>
 </section>
+<!-- ============ WHAT WE DO ============ -->
 <section class="section paper">
   <div class="wrap">
     <div class="reveal">
@@ -147,32 +159,31 @@
   </div>
 </section>
 <!-- ============ PARTNERS & PRINCIPALS ============ -->
-<!-- Shown as logos rather than text pills. The files are the same ones
-     the /partners/ wall uses, so there is nothing new in /photos/ — and
-     .wall comes from the shared site.css, so there is no page-local CSS
-     either. A cell whose file is missing falls back to the brand name as
-     text. Two banded tiers: .t1 are the principals Citra does the most
-     business with, .t2 the rest, each tier in its own .tier row-group.
-     Ordered by tier, then alphabetically within it. -->
+<!-- Every brand here is fuelling and forecourt, so there are no industry
+     bands as there are on the group walls — one flat group instead, with
+     the Gilbarco Veeder-Root family leading and the rest after them.
+     .flat cancels the t1/t2 tier sizes from site.css: those rank a brand by
+     how much business the group does with it, and with one industry the
+     ranking bought nothing but a ragged wall of three different sizes. The
+     .mid and .sq shape lifts stay — they are aspect-ratio correction, so a
+     square mark and a long wordmark end up carrying the same weight.
+     The files are the same ones the /partners/ wall uses; nothing new in
+     /photos/. A cell whose file is missing falls back to the brand name. -->
 <section class="customers" aria-label="Our partners and principals">
   <div class="chead reveal"><span class="kick">Partners &amp; Principals</span></div>
   <div class="wrap">
-    <div class="wall banded reveal d1">
-      <div class="tier">
-        <div class="w t1 mid"><img src="../photos/partners/angi.png" alt="ANGI" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">ANGI</span></div>
-        <div class="w t1 mid"><img src="../photos/partners/gilbarco.svg" alt="Gilbarco Veeder-Root" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Gilbarco Veeder-Root</span></div>
-        <div class="w t1"><img src="../photos/partners/itl.png" alt="ITL" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">ITL Technologies</span></div>
-        <div class="w t1 mid"><img src="../photos/partners/orpak.png" alt="Orpak" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Orpak</span></div>
-        <div class="w t1"><img src="../photos/partners/redjacket.webp" alt="Red Jacket" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Red Jacket</span></div>
-        <div class="w t1 sq"><img src="../photos/partners/tcs.png" alt="TCS Flow Meters" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">TCS Flow Meters</span></div>
-      </div>
-      <div class="tier">
-        <div class="w t2 mid"><img src="../photos/partners/airtec.png" alt="Airtec" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Airtec</span></div>
-        <div class="w t2 mid"><img src="../photos/partners/doms.png" alt="DOMS" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">DOMS</span></div>
-        <div class="w t2"><img src="../photos/partners/gasboy.png" alt="Gasboy" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Gasboy</span></div>
-        <div class="w t2 mid"><img src="../photos/partners/invenco.jpg?v=2" alt="Invenco" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Invenco</span></div>
-        <div class="w t2 sq"><img src="../photos/partners/oti.png" alt="OTI — On Track Innovations" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">OTI — On Track Innovations</span></div>
-      </div>
+    <div class="wall flat reveal d1">
+      <div class="w mid"><img src="../photos/partners/gilbarco.svg" alt="Gilbarco Veeder-Root" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Gilbarco Veeder-Root</span></div>
+      <div class="w"><img src="../photos/partners/redjacket.webp" alt="Red Jacket" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Red Jacket</span></div>
+      <div class="w"><img src="../photos/partners/gasboy.png" alt="Gasboy" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Gasboy</span></div>
+      <div class="w mid"><img src="../photos/partners/angi.png" alt="ANGI" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">ANGI</span></div>
+      <div class="w mid"><img src="../photos/partners/doms.png" alt="DOMS" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">DOMS</span></div>
+      <div class="w mid"><img src="../photos/partners/orpak.png" alt="Orpak" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Orpak</span></div>
+      <div class="w mid"><img src="../photos/partners/invenco.jpg?v=2" alt="Invenco" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Invenco</span></div>
+      <div class="w mid"><img src="../photos/partners/itl.png" alt="ITL" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">ITL</span></div>
+      <div class="w sq"><img src="../photos/partners/tcs.png" alt="TCS Flow Meters" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">TCS Flow Meters</span></div>
+      <div class="w sq"><img src="../photos/partners/oti.png" alt="OTI — On Track Innovations" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">OTI</span></div>
+      <div class="w mid"><img src="../photos/partners/airtec.png" alt="Airtec" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Airtec</span></div>
     </div>
   </div>
 </section>
