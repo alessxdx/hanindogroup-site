@@ -10,6 +10,22 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607291450" />
+<style>
+/* Customer wall, banded by industry — the same block the Hanindo Citra wall
+   and the group principal walls carry.
+   .flat cancels the t1/t2/t3 tier sizes from site.css. Those rank a customer
+   by how much business we do with them, which is the wrong signal once a row
+   means a sector: the first band would just look like the most important one.
+   The .mid and .sq shape lifts stay, because those correct for aspect ratio
+   rather than rank — a square mark still needs to be taller than a long
+   wordmark to carry the same weight. */
+.wall.flat .band{width:100%}
+.wall.flat .w{--logo-h:42px;--logo-max:280px;max-width:var(--logo-max)}
+.bandlab{display:flex;align-items:center;gap:1rem;font-size:.72rem;font-weight:800;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--blue-800);margin-bottom:1.15rem}
+.bandlab::before,.bandlab::after{content:"";flex:1;height:1px;background:#c9d5e3}
+@media(max-width:640px){.wall.flat .w{--logo-h:34px;--logo-max:185px}}
+</style>
 </head>
 <body>
 
@@ -166,41 +182,52 @@
 <section class="customers paper" aria-label="Customer base">
   <div class="chead reveal"><span class="kick">Customer base</span></div>
   <div class="wrap">
-    <div class="wall banded ranked">
-      <div class="tier">
-        <div class="w t1 mid reveal"><img src="../photos/customers/astra-international.png" alt="PT Astra International Tbk" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Astra International Tbk</span></div>
-        <div class="w t1 mid reveal"><img src="../photos/customers/blue-bird.png" alt="PT Blue Bird Tbk" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Blue Bird Tbk</span></div>
-        <div class="w t1 mid reveal"><img src="../photos/customers/bquik.png" alt="B-Quik" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">B-Quik</span></div>
-        <div class="w t1 reveal"><img src="../photos/customers/byd.png" alt="BYD" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">BYD</span></div>
-        <div class="w t1 sq reveal"><img src="../photos/customers/honda-prospect-motor.png" alt="PT Honda Prospect Motor" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Honda Prospect Motor</span></div>
-        <div class="w t1 reveal"><img src="../photos/customers/petrosea.png" alt="PT Petrosea Tbk" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Petrosea Tbk</span></div>
-        <div class="w t1 reveal"><img src="../photos/customers/sefas.png" alt="Sefas" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Sefas</span></div>
-        <div class="w t1 reveal"><img src="../photos/customers/toyota.svg" alt="Toyota" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Toyota</span></div>
+    <div class="wall banded flat">
+      <div class="band">
+        <span class="bandlab">Vehicle manufacturers</span>
+        <div class="tier">
+          <div class="w reveal"><img src="../photos/customers/toyota.svg" alt="Toyota" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Toyota</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/honda-prospect-motor.png" alt="PT Honda Prospect Motor" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Honda Prospect Motor</span></div>
+          <div class="w reveal"><img src="../photos/customers/astra-daihatsu.png" alt="PT Astra Daihatsu Motor" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Astra Daihatsu Motor</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/mitsubishi-motors.png" alt="Mitsubishi Motors &mdash; PT Krama Yudha Tiga Berlian Motors" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Mitsubishi Motors &mdash; PT Krama Yudha Tiga Berlian Motors</span></div>
+          <div class="w reveal"><img src="../photos/customers/nissan.png" alt="Nissan" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Nissan</span></div>
+          <div class="w reveal"><img src="../photos/customers/suzuki.png" alt="Suzuki" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Suzuki</span></div>
+          <div class="w reveal"><img src="../photos/customers/isuzu.png" alt="Isuzu" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Isuzu</span></div>
+          <div class="w reveal"><img src="../photos/customers/hyundai.png" alt="Hyundai" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Hyundai</span></div>
+          <div class="w reveal"><img src="../photos/customers/kia.png" alt="Kia" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Kia</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/bmw.png" alt="BMW" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">BMW</span></div>
+          <div class="w reveal"><img src="../photos/customers/mercedes-benz.png" alt="Mercedes-Benz" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Mercedes-Benz</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/chery.png" alt="Chery" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Chery</span></div>
+          <div class="w reveal"><img src="../photos/customers/byd.png" alt="BYD" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">BYD</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/wuling.png" alt="Wuling" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Wuling</span></div>
+        </div>
       </div>
-      <div class="tier">
-        <div class="w t2 reveal"><img src="../photos/customers/astra-daihatsu.png" alt="PT Astra Daihatsu Motor" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Astra Daihatsu Motor</span></div>
-        <div class="w t2 sq reveal"><img src="../photos/customers/bmw.png" alt="BMW" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">BMW</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/bridgestone.png" alt="Bridgestone" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Bridgestone</span></div>
-        <div class="w t2 mid reveal"><img src="../photos/customers/chery.png" alt="Chery" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Chery</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/dunlop.png" alt="Dunlop" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Dunlop</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/hankook.png" alt="Hankook" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Hankook</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/hyundai.png" alt="Hyundai" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Hyundai</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/indotruck-utama.png" alt="PT Indotruck Utama" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Indotruck Utama</span></div>
-        <div class="w t2 mid reveal"><img src="../photos/customers/intraco-penta.png" alt="PT Intraco Penta Tbk (INTA)" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Intraco Penta Tbk</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/isuzu.png" alt="Isuzu" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Isuzu</span></div>
-        <div class="w t2 sq reveal"><img src="../photos/customers/jantrakakikaki.png" alt="Jantrakakikaki" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Jantrakakikaki</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/kia.png" alt="Kia" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Kia</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/mercedes-benz.png" alt="Mercedes-Benz" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Mercedes-Benz</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/michelin.png" alt="Michelin" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Michelin</span></div>
-        <div class="w t2 sq reveal"><img src="../photos/customers/mitsubishi-motors.png" alt="Mitsubishi Motors &mdash; PT Krama Yudha Tiga Berlian Motors" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Mitsubishi Motors</span></div>
-        <div class="w t2 sq reveal"><img src="../photos/customers/mobeng.png" alt="Mobeng" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Mobeng</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/nissan.png" alt="Nissan" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Nissan</span></div>
-        <div class="w t2 mid reveal"><img src="../photos/customers/pana-oil.png" alt="Pana Oil" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Pana Oil</span></div>
-        <div class="w t2 sq reveal"><img src="../photos/customers/planet-ban.png" alt="Planet Ban" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Planet Ban</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/puninar-logistics.png" alt="Puninar Logistics" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Puninar Logistics</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/suzuki.png" alt="Suzuki" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Suzuki</span></div>
-        <div class="w t2 mid reveal"><img src="../photos/customers/united-tractors.png" alt="PT United Tractors Tbk" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT United Tractors Tbk</span></div>
-        <div class="w t2 sq reveal"><img src="../photos/customers/wuling.png" alt="Wuling" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Wuling</span></div>
+      <div class="band">
+        <span class="bandlab">Tyre, lubricant &amp; service</span>
+        <div class="tier">
+          <div class="w reveal"><img src="../photos/customers/bridgestone.png" alt="Bridgestone" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Bridgestone</span></div>
+          <div class="w reveal"><img src="../photos/customers/michelin.png" alt="Michelin" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Michelin</span></div>
+          <div class="w reveal"><img src="../photos/customers/dunlop.png" alt="Dunlop" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Dunlop</span></div>
+          <div class="w reveal"><img src="../photos/customers/hankook.png" alt="Hankook" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Hankook</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/pana-oil.png" alt="Pana Oil" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Pana Oil</span></div>
+          <div class="w reveal"><img src="../photos/customers/sefas.png" alt="Sefas" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Sefas</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/bquik.png" alt="B-Quik" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">B-Quik</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/planet-ban.png" alt="Planet Ban" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Planet Ban</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/mobeng.png" alt="Mobeng" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Mobeng</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/jantrakakikaki.png" alt="Jantrakakikaki" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Jantrakakikaki</span></div>
+        </div>
+      </div>
+      <div class="band">
+        <span class="bandlab">Fleet, distribution &amp; heavy equipment</span>
+        <div class="tier">
+          <div class="w mid reveal"><img src="../photos/customers/astra-international.png" alt="PT Astra International Tbk" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Astra International Tbk</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/blue-bird.png" alt="PT Blue Bird Tbk" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Blue Bird Tbk</span></div>
+          <div class="w reveal"><img src="../photos/customers/puninar-logistics.png" alt="Puninar Logistics" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Puninar Logistics</span></div>
+          <div class="w reveal"><img src="../photos/customers/indotruck-utama.png" alt="PT Indotruck Utama" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Indotruck Utama</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/united-tractors.png" alt="PT United Tractors Tbk" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT United Tractors Tbk</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/intraco-penta.png" alt="PT Intraco Penta Tbk (INTA)" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Intraco Penta Tbk (INTA)</span></div>
+          <div class="w reveal"><img src="../photos/customers/petrosea.png" alt="PT Petrosea Tbk" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Petrosea Tbk</span></div>
+        </div>
       </div>
     </div>
   </div>
