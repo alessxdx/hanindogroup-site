@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/site.css?v=202607311720" />
+<link rel="stylesheet" href="../assets/site.css?v=202607311830" />
 <style>
 /* One flat size for the partner wall. Every brand on this page is fuelling
    and forecourt, so the t1/t2 ranking that site.css applies had nothing to
@@ -48,6 +48,31 @@
    everything else instead of being overridden. */
 .wall.flat .w.lockup{--logo-h:60px}
 @media(max-width:640px){.wall.flat .w.lockup{--logo-h:48px}}
+/* PRODUCT WALL. Page-local while it is only this page; lift it into
+   site.css once a second home page adopts it.
+   Three across, because six tiles divide evenly and a 3x2 block reads as
+   a complete set rather than a sample of one. Two across from 900px, and
+   two still fits a 360px phone at this aspect — a single column would run
+   the section to six screens of scrolling, which is the strip's fault in
+   the other direction. */
+.tilewall{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.9rem;margin-top:1.6rem}
+@media(max-width:900px){.tilewall{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* 4:3, and width:auto to undo the strip's fixed 190px. */
+.tilewall .tile{aspect-ratio:4/3;width:auto}
+/* The scrim has to clear two lines now, so it starts higher up the tile
+   and lands a little darker — a caption that wraps to two lines was
+   sitting half on the photo at the strip's 55%. */
+.tilewall .tile::after{background:linear-gradient(180deg,transparent 42%,rgba(4,32,58,.86))}
+.tilewall .tile span{left:1rem;right:1rem;bottom:.85rem;font-size:.95rem;line-height:1.3}
+.tilewall .tile small{display:block;margin-top:.15rem;font-size:.75rem;font-weight:600;
+  letter-spacing:.02em;color:var(--sky-2);opacity:.92}
+@media(max-width:600px){.tilewall{gap:.6rem}.tilewall .tile span{left:.7rem;right:.7rem;bottom:.6rem;font-size:.82rem}
+  .tilewall .tile small{font-size:.68rem}}
+/* No product shot yet. A bare gradient panel in the middle of a wall reads
+   as a tile that failed to load, so say what it is instead: the same
+   framed camera placeholder the Products & Services cards fall back to. */
+.tilewall .tile.nophoto::before{content:"";position:absolute;left:50%;top:44%;width:34px;height:30px;
+  transform:translate(-50%,-50%);border:2px solid #9fb3c8;border-radius:3px;opacity:.75}
 </style>
 </head>
 <body>
@@ -112,42 +137,53 @@
   <div class="wrap">
     <div class="reveal">
       <span class="kicker">PT. Hanindo Citra</span>
-      <h2 class="h2">The company that started the group.</h2>
-      <p class="lede" style="max-width:none">Hanindo Citra continues the work started by PT. Sugiron Citra — the company that became the embryo of the Hanindo Group when its petroleum equipment division began operating in 1987. Today it supplies, installs and services the equipment that keeps Indonesia's retail fuel industry running.</p>
+      <!-- Home says what a site operator can buy and who stands behind it.
+           The Sugiron Citra founding and this company's standing in the group
+           belong on About, which already tells that story twice — in the hero
+           and again on the Established card. -->
+      <h2 class="h2">Everything the forecourt runs on.</h2>
+      <p class="lede" style="max-width:none">Hanindo Citra supplies, installs and services the equipment a fuel station is built around — dispensers, submersible turbine pumps, automatic tank gauging, flow meters, forecourt controllers and fuel management — and builds the stations themselves, from consultation and drawings through to the day the site opens.</p>
       <ul class="checks">
-        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Sales &amp; after-sales service of petroleum equipment and product supply</span></li>
-        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Construction services for the retail petroleum industry — from consultation and drawing through building, until the gas station operates</span></li>
-        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Sign boards and lighting for gas stations</span></li>
+        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Sole distributor in Indonesia for Gilbarco Veeder-Root, carried since 1987, and for Total Control Systems and ITL</span></li>
+        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Construction for the retail petroleum industry — consultation and drawing through building, until the gas station operates</span></li>
+        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Sign boards and lighting for gas stations, and after-sales service for everything we install</span></li>
       </ul>
     </div>
   </div>
 </section>
 <!-- ============ PRODUCT TILES ============ -->
-<!-- Same strip component as the Hanindo Automotive home page: .tilestrip
-     from site.css plus the advance button, no page-local CSS. Kept on a
-     white section rather than paper so it reads as one block with the
-     intro above it; the next section is paper, which is where the break
-     falls.
+<!-- A wall, not a strip. The scroller this replaces showed 5.3 of the six
+     tiles and put the rest behind an arrow: a third of the range hidden,
+     and the sixth label sliced mid-word, which reads as a broken render
+     rather than an invitation. Six items fit on a screen — there was no
+     overflow to manage. site.css already conceded the point with .strip-4,
+     a rule whose whole job is to stop four tiles scrolling.
+     Tiles are 4:3 rather than the strip's square. Every shot here is a
+     landscape composition — the Gilbarco line-up, the Enabler on a laptop,
+     the meter cluster — and a square crop spent the extra height on
+     padding instead of product.
+     Each tile carries the principal under its label. We are a distributor;
+     the brand behind a category is the differentiating fact, and it was
+     only stated in the logo wall further down, with nothing tying it to
+     the categories it serves.
      ORDER IS BY PHOTO, NOT BY THE PRODUCTS & SERVICES ORDER. Fuel
-     Management has no product shot yet, so it sits last
-     where the strip has scrolled past — a tile with no image is a plain
-     gradient square with its label, which is tidy but says nothing. Move
-     it back into catalogue order once citra-advanz.jpg lands. -->
+     Management has no product shot yet. In the strip that tile scrolled
+     out of sight; in a wall it is a hole in plain view, so it takes the
+     .nophoto treatment — the same framed placeholder the Products &
+     Services cards use. Move it back into catalogue order and drop the
+     class once citra-advanz.jpg lands. -->
 <section class="section paper compact">
   <div class="wrap">
     <div class="reveal">
       <span class="kicker">What we supply</span>
     </div>
-    <div class="tilestrip reveal">
-      <div class="strip" id="tilestrip">
-        <a class="tile" href="dispensers.html"><img src="../photos/citra/products/dispensers/gilbarco-lineup.webp" alt="" loading="lazy" onerror="this.remove()" /><span>Pumps &amp; Dispensers</span></a>
-        <a class="tile" href="forecourt-controllers.html"><img src="../photos/citra/products/citra-enabler.webp" alt="" loading="lazy" onerror="this.remove()" /><span>Forecourt Controllers</span></a>
-        <a class="tile" href="tank-gauging.html"><img src="../photos/citra/products/citra-atg.webp" alt="" loading="lazy" onerror="this.remove()" /><span>Automatic Tank Gauging</span></a>
-        <a class="tile" href="submersible-pumps.html"><img src="../photos/citra/products/citra-stp.webp" alt="" loading="lazy" onerror="this.remove()" /><span>Submersible Turbine Pumps</span></a>
-        <a class="tile" href="flow-meters.html"><img src="../photos/citra/products/citra-flowmeter.png" alt="" loading="lazy" onerror="this.remove()" /><span>Flow Meters</span></a>
-        <a class="tile" href="products-services.html#fuel-management"><img src="../photos/citra/products/citra-advanz.jpg" alt="" loading="lazy" onerror="this.remove()" /><span>Fuel Management Systems</span></a>
-      </div>
-      <button class="stripmore" type="button" aria-label="Show more products"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+    <div class="tilewall reveal">
+      <a class="tile" href="dispensers.html"><img src="../photos/citra/products/dispensers/gilbarco-lineup.webp" alt="" loading="lazy" onerror="this.remove()" /><span>Pumps &amp; Dispensers<small>Gilbarco Veeder-Root</small></span></a>
+      <a class="tile" href="forecourt-controllers.html"><img src="../photos/citra/products/citra-enabler.webp" alt="" loading="lazy" onerror="this.remove()" /><span>Forecourt Controllers<small>ITL Enabler</small></span></a>
+      <a class="tile" href="tank-gauging.html"><img src="../photos/citra/products/citra-atg.webp" alt="" loading="lazy" onerror="this.remove()" /><span>Automatic Tank Gauging<small>Veeder-Root TLS</small></span></a>
+      <a class="tile" href="submersible-pumps.html"><img src="../photos/citra/products/citra-stp.webp" alt="" loading="lazy" onerror="this.remove()" /><span>Submersible Turbine Pumps<small>Red Jacket</small></span></a>
+      <a class="tile" href="flow-meters.html"><img src="../photos/citra/products/citra-flowmeter.png" alt="" loading="lazy" onerror="this.remove()" /><span>Flow Meters<small>Total Control Systems</small></span></a>
+      <a class="tile nophoto" href="products-services.html#fuel-management"><img src="../photos/citra/products/citra-advanz.jpg" alt="" loading="lazy" onerror="this.remove()" /><span>Fuel Management Systems<small>AdvanZ</small></span></a>
     </div>
   </div>
 </section>
@@ -194,7 +230,11 @@
      The files are the same ones the /partners/ wall uses; nothing new in
      /photos/. A cell whose file is missing falls back to the brand name. -->
 <section class="customers paper" aria-label="Our partners and principals">
-  <div class="chead reveal"><span class="kick">Partners &amp; Principals</span></div>
+  <!-- Ten brands here, but only three of them are exclusive to us. The line
+       says which, so the wall is not read as ten sole distributorships. -->
+  <div class="chead reveal"><span class="kick">Partners &amp; Principals</span>
+    <p class="lede" style="max-width:62ch;margin:.7rem auto 0">Three of these we hold exclusively for Indonesia: Gilbarco Veeder-Root, Total Control Systems and ITL.</p>
+  </div>
   <div class="wrap">
     <div class="wall flat reveal d1">
       <div class="w mid"><img src="../photos/partners/gilbarco.svg" alt="Gilbarco Veeder-Root" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Gilbarco Veeder-Root</span></div>
