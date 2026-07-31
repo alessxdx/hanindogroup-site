@@ -18,6 +18,24 @@
 .mktsw{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin-top:1.5rem}
 .mktsw .lab{width:100%;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--sky)}
 .mktsw .btn{padding:.6rem 1.1rem;font-size:.83rem}
+/* Customer wall, banded by sector — the same block the Hanindo Citra,
+   Hanindo Automotive and Hanindo Automation walls carry.
+   .flat cancels the t1/t2 tier sizes from site.css. Those ranked a customer
+   by how much business we do with them, which becomes the wrong signal once
+   a row means a sector: the first band would simply look like the most
+   important one. The .mid and .sq shape lifts stay — they correct for aspect
+   ratio rather than rank, so they are still needed here. */
+.wall.flat .band{width:100%}
+/* 40px rather than the 42px the other banded walls use. The twenty-two marks
+   in Transport wrap 5 + 4 + 4 + 4 + 4 + 1 at 42px on a full-width wrap and
+   leave Zhilai stranded alone on the last row — the ragged ending the bands
+   were meant to remove. 40px wraps 5 + 4 + 4 + 4 + 5. Re-check this if a
+   customer is added to or removed from that band. */
+.wall.flat .w{--logo-h:40px;--logo-max:280px;max-width:var(--logo-max)}
+.bandlab{display:flex;align-items:center;gap:1rem;font-size:.72rem;font-weight:800;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--blue-800);margin-bottom:1.15rem}
+.bandlab::before,.bandlab::after{content:"";flex:1;height:1px;background:#c9d5e3}
+@media(max-width:640px){.wall.flat .w{--logo-h:34px;--logo-max:185px}}
 </style>
 </head>
 <body>
@@ -157,58 +175,72 @@
 </section>
 
 <!-- ============ CUSTOMER BASE ============ -->
-<!-- Same wall as the Citra and Gralessando pages. Each slot falls back to
-     the customer's name if its logo file is missing.
+<!-- Same wall as the Citra, Automotive and Automation pages. Each slot
+     falls back to the customer's name if its logo file is missing.
 
-     Two bands: .t1 for the accounts that carry the most weight, .t2 for
-     the rest. The t1 band is in the order the business ranks them rather
-     than alphabetically — the other walls sort within a tier, but these
-     were handed over ranked. HiStone and Hisense sit together at the head
-     of it because they came through as one entry with two marks. The t2
-     band is alphabetical.
+     Banded by sector, not by rank. The wall used to run .ranked, with a
+     t1 band of six accounts drawn large over a t2 band of twenty-one
+     small ones — a public ranking of clients. The three bands replace it
+     with something a reader can use: which market each name sits in.
+     Sectors and the order within each are the ones the business handed
+     over, so leave them alone unless they hand over a new list.
 
-     The shape class after the tier corrects for proportion: .sq for the
-     square-ish marks, .mid for the middling ones, nothing for wide
-     wordmarks. See the LOGO WALL block in site.css for why.
+     The shape class corrects for proportion: .sq for the square-ish
+     marks, .mid for the middling ones, nothing for wide wordmarks. Still
+     needed under .flat — it is aspect correction, not ranking. See the
+     LOGO WALL block in site.css for why.
 
-     Logo files live in /photos/customers/, shared with the other two
-     walls, so any customer already listed there needs no new file.
+     Memorway and Tuopu are off the wall: both were on the old ranked
+     version and neither appears on the sector list. Their logo files are
+     still in /photos/customers/ if they are to come back.
+
+     Logo files live in /photos/customers/, shared with the other walls,
+     so any customer already listed there needs no new file.
      No "paper": the product strip above is already grey, and this would
      otherwise land grey on grey. -->
 <section class="customers" aria-label="Customer base">
   <div class="chead reveal"><span class="kick">Customer base</span></div>
   <div class="wrap">
-    <div class="wall banded ranked">
-      <div class="tier">
-        <div class="w t1 reveal"><img src="../photos/customers/histonetec.png?v=2" alt="HiStone" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">HiStone</span></div>
-        <div class="w t1 reveal"><img src="../photos/customers/hisense.svg?v=2" alt="Hisense" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Hisense</span></div>
-        <div class="w t1 reveal"><img src="../photos/customers/inspur.svg?v=2" alt="Inspur" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Inspur</span></div>
-        <div class="w t1 mid reveal"><img src="../photos/customers/ccl.png?v=2" alt="CCL" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">CCL</span></div>
-        <div class="w t1 reveal"><img src="../photos/customers/elis-infotech.png?v=2" alt="Elis Infotech" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Elis Infotech</span></div>
-        <div class="w t1 reveal"><img src="../photos/customers/getinge.svg?v=2" alt="Getinge" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Getinge</span></div>
+    <div class="wall banded flat">
+      <div class="band">
+        <span class="bandlab">Airports &amp; aviation</span>
+        <div class="tier">
+          <div class="w mid reveal"><img src="../photos/customers/zhongjia-jincheng.png?v=2" alt="Zhongjia Jincheng" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Zhongjia Jincheng</span></div>
+        </div>
       </div>
-      <div class="tier">
-        <div class="w t2 reveal"><img src="../photos/customers/damo.png?v=2" alt="DEMO" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">DEMO</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/gwi.png?v=2" alt="GreatWall Information" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">GreatWall Information</span></div>
-        <div class="w t2 mid reveal"><img src="../photos/customers/grg-banking.png?v=2" alt="GRGBanking" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">GRGBanking</span></div>
-        <div class="w t2 sq reveal"><img src="../photos/customers/golong.png?v=2" alt="Hangzhou GOLONG Technology" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Hangzhou GOLONG Technology</span></div>
-        <div class="w t2 mid reveal"><img src="../photos/customers/ht-kiosk.png?v=2" alt="Hangzhou Huiguang Technology" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Hangzhou Huiguang Technology</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/hantai.png?v=2" alt="Hantai Precision Industry" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Hantai Precision Industry</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/hongjiali-group.png?v=2" alt="Hongjiali Group" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Hongjiali Group</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/kioskidea.png?v=2" alt="Kioskidea" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Kioskidea</span></div>
-        <div class="w t2 sq reveal"><img src="../photos/customers/kmy.png?v=2" alt="KMY" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">KMY</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/memorway.png?v=2" alt="Memorway" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Memorway</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/micrown.png?v=2" alt="Micrown" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Micrown</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/polysoude.png?v=2" alt="Polysoude" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Polysoude</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/shenzhen-xufan.png?v=2" alt="Shenzhen Xufan Technology" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Shenzhen Xufan Technology</span></div>
-        <div class="w t2 mid reveal"><img src="../photos/customers/legate.png?v=2" alt="Suzhou Legate" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Suzhou Legate</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/szzt.png?v=2" alt="SZZT Electronics" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">SZZT Electronics</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/tuopu.png?v=2" alt="Tuopu" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Tuopu</span></div>
-        <div class="w t2 mid reveal"><img src="../photos/customers/yilianzhong.png?v=2" alt="Yilianzhong" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Yilianzhong</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/yilisha.png?v=2" alt="Yilisha" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Yilisha</span></div>
-        <div class="w t2 reveal"><img src="../photos/customers/yisida.png?v=2" alt="Yisida" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Yisida</span></div>
-        <div class="w t2 mid reveal"><img src="../photos/customers/zhilai.png?v=2" alt="Zhilai Sci &amp; Tech" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Zhilai Sci &amp; Tech</span></div>
-        <div class="w t2 mid reveal"><img src="../photos/customers/zhongjia-jincheng.png?v=2" alt="Zhongjia Jincheng" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Zhongjia Jincheng</span></div>
+      <div class="band">
+        <span class="bandlab">Transport, retail &amp; public services</span>
+        <div class="tier">
+          <div class="w reveal"><img src="../photos/customers/elis-infotech.png?v=2" alt="Elis Infotech" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Elis Infotech</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/grg-banking.png?v=2" alt="GRGBanking" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">GRGBanking</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/golong.png?v=2" alt="Hangzhou GOLONG Technology" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Hangzhou GOLONG Technology</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/legate.png?v=2" alt="Suzhou Legate" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Suzhou Legate</span></div>
+          <div class="w reveal"><img src="../photos/customers/histonetec.png?v=2" alt="HiStone" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">HiStone</span></div>
+          <div class="w reveal"><img src="../photos/customers/hisense.svg?v=2" alt="Hisense" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Hisense</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/ccl.png?v=2" alt="CCL" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">CCL</span></div>
+          <div class="w reveal"><img src="../photos/customers/kioskidea.png?v=2" alt="Kioskidea" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Kioskidea</span></div>
+          <div class="w reveal"><img src="../photos/customers/inspur.svg?v=2" alt="Inspur" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Inspur</span></div>
+          <div class="w reveal"><img src="../photos/customers/damo.png?v=2" alt="DEMO" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">DEMO</span></div>
+          <div class="w reveal"><img src="../photos/customers/gwi.png?v=2" alt="GreatWall Information" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">GreatWall Information</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/ht-kiosk.png?v=2" alt="Hangzhou Huiguang Technology" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Hangzhou Huiguang Technology</span></div>
+          <div class="w reveal"><img src="../photos/customers/hantai.png?v=2" alt="Hantai Precision Industry" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Hantai Precision Industry</span></div>
+          <div class="w reveal"><img src="../photos/customers/hongjiali-group.png?v=2" alt="Hongjiali Group" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Hongjiali Group</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/kmy.png?v=2" alt="KMY" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">KMY</span></div>
+          <div class="w reveal"><img src="../photos/customers/micrown.png?v=2" alt="Micrown" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Micrown</span></div>
+          <div class="w reveal"><img src="../photos/customers/shenzhen-xufan.png?v=2" alt="Shenzhen Xufan Technology" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Shenzhen Xufan Technology</span></div>
+          <div class="w reveal"><img src="../photos/customers/szzt.png?v=2" alt="SZZT Electronics" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">SZZT Electronics</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/yilianzhong.png?v=2" alt="Yilianzhong" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Yilianzhong</span></div>
+          <div class="w reveal"><img src="../photos/customers/yilisha.png?v=2" alt="Yilisha" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Yilisha</span></div>
+          <div class="w reveal"><img src="../photos/customers/yisida.png?v=2" alt="Yisida" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Yisida</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/zhilai.png?v=2" alt="Zhilai Sci &amp; Tech" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Zhilai Sci &amp; Tech</span></div>
+        </div>
+      </div>
+      <div class="band">
+        <span class="bandlab">Industry &amp; technology</span>
+        <div class="tier">
+          <div class="w reveal"><img src="../photos/customers/getinge.svg?v=2" alt="Getinge" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Getinge</span></div>
+          <div class="w reveal"><img src="../photos/customers/polysoude.png?v=2" alt="Polysoude" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Polysoude</span></div>
+        </div>
       </div>
     </div>
   </div>
