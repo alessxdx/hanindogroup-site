@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/site.css?v=202607291710" />
+<link rel="stylesheet" href="../assets/site.css?v=202607311720" />
 <style>
 /* Customer wall, banded by industry — the same block the Hanindo Citra wall
    and the group principal walls carry.
@@ -155,11 +155,15 @@
       <div class="reveal">
         <span class="kicker">PT. Hanindo Automotive</span>
         <h2 class="h2">The workshop, fully equipped.</h2>
-        <p class="lede">As one of the companies under the flag of Hanindo Group, PT. Hanindo Automotive inherits the same tradition of continuously offering innovative and fully dedicated service. Specializing in the autoshop equipment business, it offers products built on the latest technology.</p>
+        <!-- Home says what a workshop can buy and who stands behind it.
+             Who the company is — the Group flag, the founding, the vision —
+             belongs on About; it used to be repeated here almost word for
+             word, which left neither page with anything of its own. -->
+        <p class="lede">Hanindo Automotive fits out the service bay and keeps it running &mdash; tyre changers, wheel balancers and 3D wheel alignment, vehicle lifts, fluid exchange and diagnostics, lubrication systems and welding plant, specified from one supplier and backed by one team.</p>
         <ul class="checks">
-          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Specialists in autoshop and garage equipment for the automotive service industry</span></li>
-          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Products selected to increase efficiency, productivity and user friendliness</span></li>
-          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Sole distributor in Indonesia for a range of international garage equipment principals</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Sole distributor in Indonesia for Airtec, HPA-Faip and RAASM</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Two brands of our own, WELDANN and ATOM &mdash; our specification, our spare parts, our warranty</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Installed and commissioned by our own technicians, with operator training and after-sales service behind it</span></li>
           <!-- The workshop is not the whole of it: the RAASM range goes to
                lubricant distributors, plants and mine sites as readily as to
                a service bay, and that is not obvious from anything else in
@@ -200,6 +204,12 @@
   <div class="wrap">
     <div class="reveal" style="text-align:center;margin-bottom:1.4rem">
       <span class="kicker">Our Brands</span>
+      <!-- The first tier below is exactly the three principals we hold the
+           sole distributorship for, so the line names them and the wall
+           reads as a claim rather than a logo grid. Kept as one text node —
+           translate.js matches whole trimmed nodes, so an inline <strong>
+           here would split it and lose the Bahasa version. -->
+      <p class="lede" style="max-width:60ch;margin:.7rem auto 0">Sole distributor in Indonesia for Airtec, HPA-Faip and RAASM. WELDANN and ATOM are our own.</p>
     </div>
     <!-- Shared weighted .wall from site.css, sized by tier rather than
          laid out as equal boxes: .t1 are the brands this company leads
@@ -208,7 +218,7 @@
     <div class="wall banded reveal">
       <div class="tier">
         <div class="w t1 mid"><img src="../photos/partners/airtec.png" alt="AIRTEC" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">AIRTEC</span></div>
-        <div class="w t1 sq"><img src="../photos/partners/hpa.webp?v=2" alt="HPA FAIP" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">HPA FAIP</span></div>
+        <div class="w t1 sq"><img src="../photos/partners/hpa.webp?v=2" alt="HPA-Faip" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">HPA-Faip</span></div>
         <!-- RAASM is the one brand here with a page behind it. -->
         <a class="w t1 sq" href="raasm/"><img src="../photos/partners/raasm.png" alt="RAASM" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">RAASM</span></a>
       </div>
@@ -389,6 +399,6 @@ if(document.readyState==='complete')all();else window.addEventListener('load',al
 var nums=document.querySelectorAll('.num[data-count]');if(!('IntersectionObserver'in window)){nums.forEach(function(n){n.textContent=n.getAttribute('data-count')});return;}
 var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting&&!done.has(x.target)){done.add(x.target);run(x.target);io.unobserve(x.target);}});},{threshold:.5});nums.forEach(function(n){io.observe(n)});})();
 </script>
-<script src="translate.js?v=202607311600"></script>
+<script src="translate.js?v=202607311800"></script>
 </body>
 </html>
