@@ -392,6 +392,29 @@ AUTOMOTIVE  (/automotive/)
 hero-automotive.jpg       Page hero — busy workshop
 auto-workshop.jpg         Intro section — garage fitted with our kit
 
+PROJECT PHOTOS  (/automotive/projects.html)  ->  photos/automotive/projects/
+Unlike every other slot on this list, these have no fixed filenames: the
+page grows a new entry per project rather than filling a fixed layout.
+
+Each project is a SET of photos in one folder, named after the project
+with a number on the end:
+
+  <project>-1.jpg   the lead photo, the only one shown on the page
+  <project>-2.jpg   the rest, in the order to step through them
+  <project>-3.jpg   ...
+
+So a project filed as "dealer-workshop-jakarta" gives
+dealer-workshop-jakarta-1.jpg, -2.jpg, -3.jpg and so on. Landscape, at
+least ~1200px wide; they open full screen, so bigger is better here than
+on a card. Any number of photos per project — one photo is fine, it just
+shows without the stack behind it.
+
+Alongside the photos each project needs one line of scope ("lifts, tyre
+service and lubrication"), and a sector plus region ("dealer workshop,
+Jabodetabek"). A client NAME only where that customer has cleared being
+named publicly; otherwise the project runs anonymous and the sector and
+region carry it.
+
 The eight auto-*.jpg product cards that used to sit here are gone. The
 Products & Services page now indexes the four catalogue sub-pages
 instead, using the real product shots already in /photos/automotive/products/,

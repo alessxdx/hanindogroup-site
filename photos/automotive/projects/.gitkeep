@@ -1,0 +1,12 @@
+Awaiting photos - see /PHOTOS-NEEDED.txt for the filenames this folder expects.
+
+One folder for every project photo. Files are named after the project
+with a number on the end, and -1 is the one shown on the page:
+
+  <project>-1.jpg   the lead photo, the one visible in the deck
+  <project>-2.jpg   the rest, in the order they should be stepped through
+  <project>-3.jpg
+  ...
+
+The number of photos is whatever exists; a project with one photo shows
+as a single photo with no pile behind it.
