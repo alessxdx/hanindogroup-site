@@ -584,6 +584,18 @@ img{max-width:100%;display:block}
 .pbody{padding:1.2rem 1.25rem 1.4rem;display:flex;flex-direction:column;flex:1}
 .pbody h4{font-weight:700;font-size:1rem;color:var(--blue-800);margin-bottom:.4rem}
 .pbody p{font-size:.88rem;color:var(--muted)}
+/* Card as a link, and the link row at its foot. margin-top:auto pins that
+   row to the bottom, so every card in a line ends level however long its
+   description runs. Four products pages carry this block now — automotive,
+   Citra, Automation and Shanghai — so it lives here rather than being
+   restated page-local in each. .ask is the muted variant, for a card that
+   leads to an enquiry rather than a catalogue. */
+a.pcard{color:inherit;text-decoration:none}
+a.pcard:hover{border-color:var(--blue-700)}
+.pcard .more{display:flex;align-items:center;gap:.45rem;margin-top:auto;padding-top:.9rem;font-size:.82rem;font-weight:700;color:var(--brand)}
+.pcard .more svg{width:15px;height:15px;flex:none;fill:none;stroke:currentColor;stroke-width:2.2;transition:transform .16s}
+a.pcard:hover .more svg{transform:translateX(3px)}
+.pcard .more.ask{color:var(--muted);font-weight:600}
 .taglist{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.9rem}
 .tag{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:.26rem .55rem;font-size:.72rem;font-weight:600;color:var(--blue-700)}
 
@@ -865,13 +877,19 @@ img{max-width:100%;display:block}
   width:100%;column-gap:clamp(1.7rem,2.9vw,2.9rem);row-gap:clamp(1.4rem,2.2vw,2rem)}
 .wall .w{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.55rem;text-align:center}
 .wall .w img{display:block;width:auto;object-fit:contain}
-/* Several of the supplied logo files carry a baked-in white background,
-   which reads as a white box floating on a tinted band. Multiply blends
-   that white into whatever sits behind it, so the marks all sit flat on
-   the section. Only needed where the band is tinted — on a white section
-   the boxes are already invisible, and blending there costs nothing but
-   is pointless. The marks themselves are dark on light, so multiply
-   leaves them untouched. */
+/* The supplied logo files used to carry a baked-in white background, and
+   this multiply was what hid it. That was never sound: multiply blends
+   against the backdrop only while the image and the band share a stacking
+   context, and .reveal puts an opacity on the wall for the length of its
+   fade — so on every load the boxes flashed white on the way in and only
+   snapped flat once the transition finished. The backgrounds are gone from
+   the files themselves now, so nothing depends on this rule.
+
+   It stays for the white a mark encloses — the counter inside the Gilbarco
+   swirl, say — which is part of the artwork and cannot be cut out of the
+   file. Only worth it where the band is tinted; on a white section there is
+   nothing to blend. The marks are dark on light, so multiply leaves them
+   untouched. */
 .section.paper .wall .w img,.customers.paper .wall .w img{mix-blend-mode:multiply}
 /* TIER sets the base size; SHAPE corrects it.
 
