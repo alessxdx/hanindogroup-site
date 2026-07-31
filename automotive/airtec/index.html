@@ -9,17 +9,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../../assets/site.css?v=202607311830" />
+<link rel="stylesheet" href="../../assets/site.css?v=202607312140" />
 <style>
 /* Tighter section rhythm than the company home, as on the other
    automotive sub-pages. */
 .section{padding:clamp(40px,5vw,64px) 0}
-/* The brand mark sits above the intro rather than in the hero: the banner
-   is the flat one the sibling sub-pages use, and a logo dropped on it
-   reads as a watermark. Same treatment as the RAASM page. */
-.brandmark{display:flex;align-items:center;gap:1.1rem;margin-bottom:1.4rem}
-.brandmark img{height:64px;width:auto;max-width:220px;object-fit:contain}
-@media(max-width:640px){.brandmark img{height:48px}}
+/* .brandmark moved to site.css — all seven category pages carry one,
+   and the shape classes that size it belong with the wall rules that
+   use the same ratios. */
 /* Product cards: photo left, specification right, stacking on narrow
    screens. Same component the lifts, service, tyre-service and welding
    pages use — those rules are page-local to each of them rather than in
@@ -113,8 +110,11 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
   <div class="bg"><img src="../../photos/automotive/hero/hero-automotive.jpg" alt="" onerror="this.style.display='none'" /></div>
   <div class="ov"></div>
   <div class="wrap">
-    <div class="crumb"><a href="../../">Hanindo Group</a><span class="sep">/</span><a href="../index.html">Hanindo Automotive</a><span class="sep">/</span><a href="../products-services.html">Products &amp; Services</a><span class="sep">/</span>Airtec</div>
-    <h1>Airtec</h1>
+    <div class="crumb"><a href="../../">Hanindo Group</a><span class="sep">/</span><a href="../index.html">Hanindo Automotive</a><span class="sep">/</span><a href="../products-services.html">Products &amp; Services</a><span class="sep">/</span>Tyre Inflation</div>
+    <!-- Category name, not the brand: this is the Products & Services
+         entry the catalogue nav calls Tyre Inflation, and the reader arrived by
+         clicking that. The brand is named by the mark directly below. -->
+    <h1>Tyre Inflation</h1>
     <p class="intro">Digital inflators for the workshop, forecourt, depot and mine.</p>
   </div>
 </section>
@@ -131,7 +131,7 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
   <a href="../welding/">Welding</a>
 </div>
     <div class="reveal">
-      <div class="brandmark">
+      <div class="brandmark mid">
         <img src="../../photos/partners/airtec.png" alt="Airtec Corporation" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
         <span style="display:none;font-weight:800;letter-spacing:.08em">AIRTEC CORPORATION</span>
       </div>

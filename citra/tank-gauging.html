@@ -9,15 +9,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/site.css?v=202607311830" />
+<link rel="stylesheet" href="../assets/site.css?v=202607312140" />
 <style>
-/* The brand mark stands on its own above the intro, with no page heading
-   beside it — the group heading below does that job now. It stays out of
-   the hero: the banner is the shared Citra forecourt shot, and a logo
-   dropped on it reads as a watermark. */
-.brandmark{display:flex;align-items:center;margin-bottom:1.2rem}
-.brandmark img{height:64px;width:auto;max-width:220px;object-fit:contain}
-@media(max-width:640px){.brandmark img{height:48px}}
+/* .brandmark moved to site.css — all seven category pages carry one,
+   and the shape classes that size it belong with the wall rules that
+   use the same ratios. */
 
 /* The automotive catalogue's product card, restated here the way each of
    those six pages restates it — .prod is not in site.css. Shot left, detail
@@ -145,7 +141,7 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
     </div>
 
     <div class="reveal">
-      <div class="brandmark">
+      <div class="brandmark mid">
         <img src="../photos/partners/gilbarco.svg" alt="Gilbarco Veeder-Root" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
         <span style="display:none;font-weight:800;letter-spacing:.08em">GILBARCO VEEDER-ROOT</span>
       </div>

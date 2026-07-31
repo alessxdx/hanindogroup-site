@@ -9,17 +9,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../../assets/site.css?v=202607311830" />
+<link rel="stylesheet" href="../../assets/site.css?v=202607312140" />
 <style>
 /* Tighter section rhythm than the company home, as on the other
    automotive sub-pages. */
 .section{padding:clamp(40px,5vw,64px) 0}
-/* The brand mark sits above the intro rather than in the hero: the banner
-   is the flat one the sibling sub-pages use, and a logo dropped on it
-   reads as a watermark. */
-.brandmark{display:flex;align-items:center;gap:1.1rem;margin-bottom:1.4rem}
-.brandmark img{height:64px;width:auto;max-width:220px;object-fit:contain}
-@media(max-width:640px){.brandmark img{height:48px}}
+/* .brandmark moved to site.css — all seven category pages carry one,
+   and the shape classes that size it belong with the wall rules that
+   use the same ratios. */
 </style>
 </head>
 <body>
@@ -78,8 +75,11 @@
   <div class="bg"><img src="../../photos/automotive/hero/hero-automotive.jpg" alt="" onerror="this.style.display='none'" /></div>
   <div class="ov"></div>
   <div class="wrap">
-    <div class="crumb"><a href="../../">Hanindo Group</a><span class="sep">/</span><a href="../index.html">Hanindo Automotive</a><span class="sep">/</span><a href="../products-services.html">Products &amp; Services</a><span class="sep">/</span>RAASM</div>
-    <h1>RAASM</h1>
+    <div class="crumb"><a href="../../">Hanindo Group</a><span class="sep">/</span><a href="../index.html">Hanindo Automotive</a><span class="sep">/</span><a href="../products-services.html">Products &amp; Services</a><span class="sep">/</span>Fluid Handling</div>
+    <!-- Category name, not the brand: this is the Products & Services
+         entry the catalogue nav calls Fluid Handling, and the reader arrived by
+         clicking that. The brand is named by the mark directly below. -->
+    <h1>Fluid Handling</h1>
     <p class="intro">Hose reels, pumps, dispensing and centralised lubrication.</p>
   </div>
 </section>
@@ -96,19 +96,15 @@
   <a href="../welding/">Welding</a>
 </div>
     <div class="reveal">
-      <div class="brandmark">
+      <div class="brandmark sq">
         <img src="../../photos/partners/raasm.png" alt="RAASM" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
         <span style="display:none;font-weight:800;letter-spacing:.08em">RAASM</span>
       </div>
-      <span class="kicker">Sole distributor for Indonesia</span>
-      <h2 class="h2">One principal, two markets.</h2>
-      <p class="lede" style="max-width:none">RAASM has built fluid handling equipment in Vicenza since 1973, and Hanindo Automotive is its sole distributor in Indonesia. The name is best known here from the workshop &mdash; oil and grease reels, dispensing guns, waste oil drainers &mdash; but that is one of eleven sectors RAASM builds for, and the smaller half of the catalogue.</p>
-      <p class="lede" style="max-width:none">The same pumps, reels and lubrication systems that serve a service bay serve a manufacturing plant, a mine workshop, a fleet depot or a vessel. Hanindo Automotive carries the range for both, with the same stock, parts and factory support behind it.</p>
-      <ul class="checks">
-        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Sole distributor in Indonesia, for the automotive and the industrial range alike</span></li>
-        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Factory-backed parts and support, direct from Vicenza</span></li>
-        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Systems specified, supplied and commissioned by our own engineers</span></li>
-      </ul>
+      <!-- Mark, one paragraph, then the range — the shape the Hanindo Citra
+           category pages use. The history of the maker and the case for the
+           distributorship are About Us material and now live there; a
+           catalogue page says what the equipment is and gets on with it. -->
+      <p class="lede" style="max-width:none">RAASM builds fluid handling equipment in Vicenza &mdash; hose reels, pumps, oil and grease dispensing, waste oil handling and centralised lubrication. Hanindo Automotive is its sole distributor in Indonesia, for the industrial range as much as the workshop one.</p>
     </div>
   </div>
 </section>
