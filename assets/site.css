@@ -672,8 +672,14 @@ a.pcard:hover .more svg{transform:translateX(3px)}
    wide rather than four — without this the last track sits empty and the
    whole footer reads as shoved to the left. */
 .foot-grid.three{grid-template-columns:1.6fr 1fr 1fr}
-@media(max-width:900px){.foot-grid{grid-template-columns:1fr 1fr;gap:2rem}}
-@media(max-width:560px){.foot-grid{grid-template-columns:1fr}}
+/* .three has to be named in both of these. A media query does not raise
+   specificity, so .foot-grid.three beat a bare .foot-grid at every width
+   and the group pages stayed three columns on a phone — the address
+   column cannot shrink past the width of "info@hanindogroup.com", so the
+   footer pushed the whole page 48px wider than the screen and every page
+   on the site scrolled sideways. */
+@media(max-width:900px){.foot-grid,.foot-grid.three{grid-template-columns:1fr 1fr;gap:2rem}}
+@media(max-width:560px){.foot-grid,.foot-grid.three{grid-template-columns:1fr}}
 .footer .fbrand strong{font-weight:700;font-size:1.2rem;color:#fff;display:block;letter-spacing:-.01em}
 .footer .fbrand span{font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--sky);display:block;margin-top:.2rem}
 .footer .fbrand p{margin-top:1rem;max-width:42ch;color:#8394ae;font-size:.86rem}
