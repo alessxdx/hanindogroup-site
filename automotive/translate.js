@@ -176,21 +176,56 @@
     "Ask for a quote": "Minta penawaran",
     "Request a quotation": "Minta penawaran",
 
-    /* ---- projects ---- */
-    "Workshops we have": "Bengkel yang telah",
-    "fitted out.": "kami lengkapi.",
-    "Complete service bays, delivered and commissioned.": "Service bay lengkap, dikirim dan dioperasikan.",
+    /* ---- projects ----
+       The hero and the section head were about workshops only. The page now
+       also carries a service station, an LNG plant, a lube truck and a mine
+       supply base, so both were widened rather than left describing a third
+       of the page. */
+    "Work we have": "Pekerjaan yang telah",
+    "delivered.": "kami kerjakan.",
+    "Supplied, installed and commissioned across Indonesia.": "Dipasok, dipasang, dan dioperasikan di seluruh Indonesia.",
     "Selected work": "Pekerjaan terpilih",
-    "Workshops we have equipped.": "Bengkel yang telah kami lengkapi.",
-    "Dealer workshops, independent garages and fleet service centres.": "Bengkel dealer, bengkel independen, dan pusat layanan armada.",
+    "Equipment we have installed.": "Peralatan yang telah kami pasang.",
+    "Dealer workshops, tyre shops, service stations, plants and mine sites.": "Bengkel dealer, toko ban, SPBU, pabrik, dan area tambang.",
     /* The project decks. Each project adds a sector, a title and a scope
        line, so a new project needs three new entries here — the deck is
-       plain text on the page and stays English otherwise. "N photos" on the
-       count badge needs one entry per photo count in use. */
-    "Dealer workshop": "Bengkel dealer",
-    "ATOM two-post lifts": "Lift dua tiang ATOM",
-    "A full line of ATOM two-post lifts supplied and installed across the service bays of a Toyota dealer workshop.": "Satu lini penuh lift dua tiang ATOM yang dipasok dan dipasang di seluruh service bay bengkel dealer Toyota.",
+       plain text on the page and stays English otherwise. The count badge
+       needs one entry per photo count actually in use, and "1 photo" is
+       singular in both languages. */
+    "1 photo": "1 foto",
+    "2 photos": "2 foto",
+    "3 photos": "3 foto",
     "4 photos": "4 foto",
+    /* sectors */
+    "Dealer workshop": "Bengkel dealer",
+    "Lubrication bay": "Area pelumasan",
+    "Tyre shop": "Toko ban",
+    "Lube truck build": "Pembuatan truk pelumas",
+    "LNG plant": "Kilang LNG",
+    "Heavy equipment service": "Layanan alat berat",
+    "Service station": "SPBU",
+    /* titles */
+    "ATOM two-post lifts": "Lift dua tiang ATOM",
+    "RAASM lubrication systems": "Sistem pelumasan RAASM",
+    "HPA-Faip alignment and lifts": "Spooring dan lift HPA-Faip",
+    "HPA-Faip wheel alignment": "Spooring roda HPA-Faip",
+    "RAASM lube truck": "Truk pelumas RAASM",
+    "HPA-Faip alignment and tyre bay": "Spooring dan area ban HPA-Faip",
+    "RAASM oil drainers": "Penampung oli bekas RAASM",
+    "BrainBee gas and smoke analysers": "Penganalisis gas dan asap BrainBee",
+    "RAASM service module": "Modul servis RAASM",
+    "AIRTEC 89 BEP tyre inflator": "Pengisi angin ban AIRTEC 89 BEP",
+    /* scope lines */
+    "A full line of ATOM two-post lifts supplied and installed across the service bays of a Toyota dealer workshop.": "Satu lini penuh lift dua tiang ATOM yang dipasok dan dipasang di seluruh service bay bengkel dealer Toyota.",
+    "RAASM reels, meters and dispensing points built into a bulk lubrication bay for Sefas.": "Reel, meteran, dan titik dispensing RAASM yang dibangun dalam area pelumasan curah untuk Sefas.",
+    "An HPA-Faip C880 wheel alignment system and scissor lifts for a Nissan dealer workshop.": "Sistem spooring roda HPA-Faip C880 dan scissor lift untuk bengkel dealer Nissan.",
+    "HPA-Faip C880 wheel alignment and lifting equipment for a Daihatsu dealer workshop.": "Spooring roda HPA-Faip C880 dan peralatan pengangkat untuk bengkel dealer Daihatsu.",
+    "A lube truck built and fitted out with RAASM tanks, reels and dispensing for Primacon.": "Truk pelumas yang dibangun dan dilengkapi tangki, reel, serta dispensing RAASM untuk Primacon.",
+    "An HPA-Faip C800 alignment system and tyre-changing equipment for a Dunlop tyre shop.": "Sistem spooring HPA-Faip C800 dan peralatan ganti ban untuk toko ban Dunlop.",
+    "RAASM mobile oil drainers and dispensing units for a Toyota service outlet.": "Penampung oli bekas mobile dan unit dispensing RAASM untuk outlet servis Toyota.",
+    "BrainBee gas and smoke analysers supplied, commissioned and handed over at the LNG plant in Bontang.": "Penganalisis gas dan asap BrainBee yang dipasok, dioperasikan, dan diserahterimakan di kilang LNG Bontang.",
+    "A RAASM lubrication service module built onto a pickup for Intraco in Balikpapan.": "Modul servis pelumasan RAASM yang dibangun di atas pikap untuk Intraco di Balikpapan.",
+    "An AIRTEC 89 BEP digital tyre inflator installed on the forecourt of a Total service station.": "Pengisi angin ban digital AIRTEC 89 BEP yang dipasang di area SPBU Total.",
     "Content needed": "Perlu konten",
     "Add Hanindo Automotive project references here": "Tambahkan referensi proyek Hanindo Automotive di sini",
     "This page is built and linked, but no project references have been supplied for Hanindo Automotive yet. Add each project as a card — client, location, scope and a photo — following the pattern used on the Fire Fighting projects page.": "Halaman ini sudah dibuat dan ditautkan, tetapi belum ada referensi proyek yang disediakan untuk Hanindo Automotive. Tambahkan setiap proyek sebagai kartu — klien, lokasi, lingkup pekerjaan, dan foto — mengikuti pola yang digunakan pada halaman proyek Fire Fighting.",
