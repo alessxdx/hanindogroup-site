@@ -82,10 +82,18 @@
     "Your technology one stop solution — serving the oil & gas, automation, automotive and fire protection industries in Indonesia since 1987.": "Solusi teknologi satu atap Anda — melayani industri minyak & gas, otomasi, otomotif, dan proteksi kebakaran di Indonesia sejak 1987.",
     "© 2026 Hanindo Group. All Rights Reserved.": "© 2026 Hanindo Group. Hak Cipta Dilindungi.",
 
-    /* ---- about: hero + journey ---- */
+    /* ---- about: hero + overview + journey ---- */
     "About": "Tentang",
     "Us": "Kami",
-    "From receipt printers to self-service kiosks, PT. Hanindo Automation Solutions supplies and supports the systems that keep retail, transport and hospitality moving.": "Dari printer struk hingga kios layanan mandiri, PT. Hanindo Automation Solutions menyediakan dan mendukung sistem yang menjaga ritel, transportasi, dan perhotelan tetap berjalan.",
+    "One of the four companies the Hanindo Group was founded with, and the arm that brings CUSTOM’s printing, scanning and self-service systems to Indonesia.": "Salah satu dari empat perusahaan pendiri Hanindo Group, dan lini yang menghadirkan sistem pencetakan, pemindaian, dan layanan mandiri CUSTOM ke Indonesia.",
+
+    "Company overview": "Profil perusahaan",
+    "Founded with the group,": "Didirikan bersama grup,",
+    "and CUSTOM’s Indonesian arm": "dan lini CUSTOM di Indonesia",
+    "This company is older than the business it is best known for. PT. Hanindo Automation Solutions is one of the four the Hanindo Group was founded with in 2002, alongside Citra, Automotive and Flowtech, all formed within months of each other — and of the group’s three Custom companies, the only one already trading before there was a Custom business at all.": "Perusahaan ini lebih tua daripada bisnis yang membuatnya dikenal. PT. Hanindo Automation Solutions adalah satu dari empat perusahaan pendiri Hanindo Group pada tahun 2002, bersama Citra, Automotive, dan Flowtech, yang seluruhnya dibentuk dalam rentang beberapa bulan — dan dari tiga perusahaan Custom milik grup, satu-satunya yang sudah beroperasi sebelum bisnis Custom itu ada sama sekali.",
+    "That business came later, and it came from China. The partnership the group formed in 2005 had made its case there by the end of the decade, and in 2012 Automation Solutions brought it home as CUSTOM Hanindo Indonesia — the second market to take it on, and the work this company has done ever since.": "Bisnis itu datang belakangan, dan datang dari Tiongkok. Kemitraan yang dijalin grup pada tahun 2005 telah membuktikan dirinya di sana menjelang akhir dekade itu, dan pada tahun 2012 Automation Solutions membawanya pulang sebagai CUSTOM Hanindo Indonesia — pasar kedua yang menjalankannya, dan menjadi pekerjaan perusahaan ini sejak saat itu.",
+    "Point-of-sale in the field": "Point-of-sale di lapangan",
+
     "Our journey": "Perjalanan kami",
     "CUSTOM HANINDO Growth": "Pertumbuhan CUSTOM HANINDO",
     "CUSTOM partnership": "Kemitraan CUSTOM",

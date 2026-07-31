@@ -137,10 +137,18 @@ div-fire-fighting.jpg     Division card — OPTIONAL. If absent, falls
                           back automatically to the existing
                           fire-fighting/photos/mot-hydrant-pump.jpg
 div-printer-pos.png       Division card — POS / ticket printer hardware
-                          [DONE] four-printer product shot on white,
-                          shown whole via .dimg-contain (white panel,
-                          no crop). A navy-cut version of the same
-                          arrangement was tried and reverted.
+                          [DONE] shown whole via .dimg-contain (white
+                          panel, no crop). A navy-cut version of the
+                          same arrangement was tried and reverted.
+                          NOTE: the file is now a photograph of a card
+                          payment at a shop counter, not the four-
+                          printer product shot on white this entry
+                          used to describe. It is also the Company
+                          overview photo on the Automation About page,
+                          where it crops to fill. Automation has no
+                          office or install photograph of its own —
+                          one would suit that slot better and free
+                          this file to be a product shot again.
 
 PARTNER LOGOS                                     [COMPLETE]
 All principal logos live in /photos/partners/ — NOT in /photos/
@@ -686,11 +694,11 @@ hero-printer-pos.jpg      DONE — page hero, reception with the Custom
                           center 70% so the heading falls on the counter
                           rather than the signage.
 pos-about.jpg             About page, beside the Company overview
-                          [NEEDED]. Landscape, ~1200px wide; the panel
-                          crops to fill, so keep the subject central.
-                          The office, the team, or a Custom system in
-                          use somewhere — NOT the signboard, which the
-                          hero on the same page already shows.
+                          [COMPLETE] the Singapore office interior
+                          (2560x1920), the slot this file was reserved
+                          for. Also used on the contact page, so a
+                          second office or team shot would let the two
+                          pages stop sharing one photograph.
 pos-terminal.jpg          DONE — intro section, the office signboard
                           (2560x1920). Still a stand-in: a product shot
                           of a Custom terminal or printer would suit the
@@ -807,6 +815,7 @@ HANINDO OVERSEAS  (/shanghai/)
 --------------------------------------------------
 hero-overseas.jpg         Page hero — Shanghai skyline or office   [COMPLETE]
 ovs-shanghai.jpg          Intro section, first of the pair          [COMPLETE]
+                          Also the About page Company overview photo.
 ovs-shanghai-2.jpg        Intro section, second of the pair         [COMPLETE]
 ovs-office-shanghai.jpg   "Where we are" on About Us, Shanghai   [COMPLETE]
 ovs-office-shenzhen.jpg   "Where we are" on About Us, Shenzhen   [COMPLETE]

@@ -82,10 +82,20 @@
     "Your technology one stop solution — serving the oil & gas, automation, automotive and fire protection industries in Indonesia since 1987.": "您的一站式技术解决方案 — 自 1987 年起服务于印尼的石油天然气、自动化、汽车与消防行业。",
     "© 2026 Hanindo Group. All Rights Reserved.": "© 2026 Hanindo Group. 版权所有。",
 
-    /* ---- about: hero + journey ---- */
+    /* ---- about: hero + overview + journey ---- */
     "About": "关于",
     "Us": "我们",
-    "From receipt printers to self-service kiosks, Hanindo Shanghai supplies and supports the systems that keep retail, transport and hospitality moving.": "从收据打印机到自助服务终端，汉琳德上海为零售、交通与酒店行业供应并支持保障其运转的系统。",
+    "Where the CUSTOM partnership started. Hanindo Shanghai has supplied CUSTOM’s printing, scanning and self-service systems in China since 2007, from Shanghai and Shenzhen.": "CUSTOM 合作的起点。自 2007 年起，汉琳德上海立足上海与深圳，在中国供应 CUSTOM 的打印、扫描与自助服务系统。",
+
+    /* The closing sentence of the second paragraph is split by two inline
+       links, so it is stored here as the three fragments between them. */
+    "Company overview": "公司概况",
+    "Where the CUSTOM": "CUSTOM 合作",
+    "partnership started": "的起点",
+    "Hanindo (Shanghai) International Co., Ltd is the first of the group’s three Custom companies, and the one the other two grew out of. The group partnered with CUSTOM in 2005 to bring the range into China. It was a big market, already held by local brands, and one the group was confident it could compete in. The Shanghai office opened in 2007, the group’s first outside Indonesia, and Shenzhen followed in 2009 as the business grew.": "汉琳德（上海）系统集成有限公司是集团三家 Custom 公司中成立最早的一家，另外两家都由它发展而来。2005 年，集团与 CUSTOM 达成合作，将该系列产品引入中国。这是一个很大的市场，当时已由本地品牌占据，而集团有信心在其中竞争。上海办公室于 2007 年成立，是集团在印度尼西亚以外的首个办公室；随着业务增长，深圳办公室于 2009 年设立。",
+    "Establishing a registered company in China, rather than selling in through an agent, was a deliberate decision. It is what keeps the after-sales service, the spare parts and the technical support inside the company instead of a border away, for as long as the systems are running. It comes down to one rule the whole group works to — look after the customer first.": "在中国注册成立一家实体公司，而不是通过代理商销售，是一项审慎的决定。正因如此，只要系统还在运行，售后服务、备件与技术支持就始终留在公司内部，而不是隔着一道国境。归根结底，这就是整个集团遵循的一条准则 — 客户至上。",
+    "The Shanghai office": "上海办公室",
+
     "Our journey": "我们的历程",
     "CUSTOM HANINDO Growth": "CUSTOM 与 HANINDO 的发展",
     "CUSTOM partnership": "CUSTOM 合作",

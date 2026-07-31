@@ -28,6 +28,14 @@
 .dlogo .wm{font-size:.9rem;font-weight:800;letter-spacing:.04em;color:var(--blue-800);line-height:1.25}
 .dname{font-size:.98rem;font-weight:700;color:var(--blue-800);line-height:1.35}
 .dwhat{font-size:.88rem;color:var(--muted);line-height:1.45}
+/* Where the principal is from. Set below the description and quieter than
+   it — provenance is worth stating on a sole-distributor page, but it is
+   not what the reader came for. Pushed to the foot of the cell so the
+   three countries sit on one line: the descriptions above them run to
+   one line or two depending on the brand, and left to sit directly under
+   their own paragraph the three would step up and down across the grid. */
+.dcell>div:last-child{flex:1;display:flex;flex-direction:column}
+.dfrom{margin-top:auto;padding-top:.6rem;font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--brand)}
 
 /* Own-brand cards, laid out side-on rather than stacked — photo on the
    left, copy on the right. Much shorter than the stacked version the
@@ -116,7 +124,11 @@
              equipment list that used to open this section is Home's job and
              the Products & Services page's job, and saying it here a second
              time cost this page its own opening. -->
-        <h2 class="h2 reveal" style="margin-bottom:1.4rem">Sole distributor,<br/>and maker in our own right</h2>
+        <!-- Not "sole distributor" any more: the section directly below is
+             headed "Sole distributor for Indonesia." and led with the same
+             words twice in a row. This one takes its line from the end of
+             the paragraph under it, which is the actual claim. -->
+        <h2 class="h2 reveal" style="margin-bottom:1.4rem">Sold, fitted,<br/>and kept running</h2>
         <p class="reveal">PT. Hanindo Automotive was formed with the Hanindo Group in 2002 and works to the same brief as every company under the flag: innovative products built on the latest technology, chosen to raise efficiency, productivity and user friendliness. It sells nothing it cannot stand behind. The equipment is specified, installed and commissioned by our own people, the operators are trained on it, and the spare parts and service stay with us for as long as the machine runs.</p>
         <p class="reveal d1">Two things sit behind the catalogue. The company is sole distributor in Indonesia for three international principals &mdash; Airtec digital tyre inflation, HPA-Faip aligners, balancers and tyre changers, and RAASM fluid handling &mdash; and it builds two brands of its own, WELDANN and ATOM. Between them they equip a workshop from the bay floor up.</p>
       </div>
@@ -137,9 +149,9 @@
            only restates what is already directly below. -->
       <h2 class="h2">Sole distributor for Indonesia.</h2>
       <div class="dgrid">
-        <a class="dcell" href="airtec/"><div class="dlogo"><img src="../photos/partners/airtec.png" alt="Airtec" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="wm" style="display:none">AIRTEC</span></div><div><div class="dname">Airtec</div><div class="dwhat">Digital tyre inflators &mdash; workshop, forecourt and plant</div></div></a>
-        <a class="dcell" href="tyre-service/"><div class="dlogo"><img src="../photos/partners/hpa.webp?v=2" alt="HPA-Faip" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="wm" style="display:none">HPA-Faip</span></div><div><div class="dname">HPA-Faip</div><div class="dwhat">Aligners, balancers &amp; tyre changers</div></div></a>
-        <a class="dcell" href="raasm/"><div class="dlogo"><img src="../photos/partners/raasm.png" alt="RAASM" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="wm" style="display:none">RAASM</span></div><div><div class="dname">RAASM</div><div class="dwhat">Oil &amp; lubrication equipment &mdash; workshop and industrial</div></div></a>
+        <a class="dcell" href="airtec/"><div class="dlogo"><img src="../photos/partners/airtec.png" alt="Airtec" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="wm" style="display:none">AIRTEC</span></div><div><div class="dname">Airtec</div><div class="dwhat">Digital tyre inflators &mdash; workshop, forecourt and plant</div><div class="dfrom">Singapore</div></div></a>
+        <a class="dcell" href="tyre-service/"><div class="dlogo"><img src="../photos/partners/hpa.webp?v=2" alt="HPA-Faip" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="wm" style="display:none">HPA-Faip</span></div><div><div class="dname">HPA-Faip</div><div class="dwhat">Aligners, balancers &amp; tyre changers</div><div class="dfrom">Italy</div></div></a>
+        <a class="dcell" href="raasm/"><div class="dlogo"><img src="../photos/partners/raasm.png" alt="RAASM" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="wm" style="display:none">RAASM</span></div><div><div class="dname">RAASM</div><div class="dwhat">Oil &amp; lubrication equipment &mdash; workshop and industrial</div><div class="dfrom">Italy</div></div></a>
       </div>
     </div>
   </div>
