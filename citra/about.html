@@ -49,6 +49,13 @@
 .dlogo .wm{font-size:.9rem;font-weight:800;letter-spacing:.04em;color:var(--blue-800);line-height:1.25}
 .dname{font-size:.98rem;font-weight:700;color:var(--blue-800);line-height:1.35}
 .dwhat{font-size:.88rem;color:var(--muted);line-height:1.45}
+/* Where the principal is from. Set below the description and quieter than
+   it. Pushed to the foot of the cell so the three countries sit on one
+   line: the descriptions above them run to one line or two depending on
+   the brand, and left under their own paragraph the three would step up
+   and down across the grid. Same rule the Automotive grid uses. */
+.dcell>div:last-child{flex:1;display:flex;flex-direction:column}
+.dfrom{margin-top:auto;padding-top:.6rem;font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--brand)}
 </style>
 </head>
 <body>
@@ -106,7 +113,6 @@
   <div class="wrap">
     <div class="crumb"><a href="../">Hanindo Group</a><span class="sep">/</span><a href="index.html">Hanindo Citra</a><span class="sep">/</span>About Us</div>
     <h1>About <span class="fx">Us</span></h1>
-    <p class="intro">Four decades of petroleum equipment, and the company the rest of the group grew out of.</p>
   </div>
 </section>
 
@@ -141,9 +147,9 @@
          lead-in above them only restates what is already directly below. -->
     <h2 class="h2 reveal">Sole distributor for Indonesia.</h2>
     <div class="dgrid reveal">
-      <a class="dcell" href="dispensers.html"><div class="dlogo"><img src="../photos/partners/gilbarco.svg" alt="Gilbarco Veeder-Root" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="wm" style="display:none">GILBARCO VEEDER-ROOT</span></div><div><div class="dname">Gilbarco Veeder-Root</div><div class="dwhat">Fuel dispensers, tank gauging &amp; submersible pumps</div></div></a>
-      <a class="dcell" href="flow-meters.html"><div class="dlogo"><img src="../photos/partners/tcs.png" alt="Total Control Systems" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="wm" style="display:none">TOTAL CONTROL SYSTEMS</span></div><div><div class="dname">Total Control Systems</div><div class="dwhat">Positive displacement flow meters &amp; registers</div></div></a>
-      <a class="dcell" href="forecourt-controllers.html"><div class="dlogo"><img src="../photos/partners/itl.png" alt="ITL" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="wm" style="display:none">ITL</span></div><div><div class="dname">ITL</div><div class="dwhat">Forecourt controllers &amp; distribution modules</div></div></a>
+      <a class="dcell" href="dispensers.html"><div class="dlogo"><img src="../photos/partners/gilbarco.svg" alt="Gilbarco Veeder-Root" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="wm" style="display:none">GILBARCO VEEDER-ROOT</span></div><div><div class="dname">Gilbarco Veeder-Root</div><div class="dwhat">Fuel dispensers, tank gauging &amp; submersible pumps</div><div class="dfrom">United States</div></div></a>
+      <a class="dcell" href="flow-meters.html"><div class="dlogo"><img src="../photos/partners/tcs.png" alt="Total Control Systems" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="wm" style="display:none">TOTAL CONTROL SYSTEMS</span></div><div><div class="dname">Total Control Systems</div><div class="dwhat">Positive displacement flow meters &amp; registers</div><div class="dfrom">United States</div></div></a>
+      <a class="dcell" href="forecourt-controllers.html"><div class="dlogo"><img src="../photos/partners/itl.png" alt="ITL" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="wm" style="display:none">ITL</span></div><div><div class="dname">ITL</div><div class="dwhat">Forecourt controllers &amp; distribution modules</div><div class="dfrom">New Zealand</div></div></a>
     </div>
   </div>
 </section>
