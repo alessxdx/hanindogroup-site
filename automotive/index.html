@@ -43,7 +43,12 @@
      a5     3.1 - 4.2   43px     Kia, BYD, Mercedes-Benz, Astra
      a6     4.2 - 5.0   40px     Dunlop, Hankook, Puninar
      a7     5.0 - 6.5   35px     Toyota, Isuzu, Suzuki, Petrosea
-     a8     over 6.5    29px     Nissan, Michelin, Bridgestone, Hyundai
+     a8     over 6.5    27px     Nissan, Michelin, Bridgestone, Hyundai
+
+   a8 is 27px rather than the 29px area parity asks for. A mark at 9:1 is
+   drawn so wide that its sheer span reads as size whatever its area says --
+   Nissan and Michelin were the two widest on the wall and both read large.
+   The trim costs them a little area and takes about 20px off the width.
 
    To add a customer: measure the logo's aspect (width / height) and give it
    the matching class. Getting it wrong is visible immediately -- the mark
@@ -62,7 +67,20 @@
 .wall.flat .w.a5{--logo-h:calc(43px * var(--s))}
 .wall.flat .w.a6{--logo-h:calc(40px * var(--s))}
 .wall.flat .w.a7{--logo-h:calc(35px * var(--s))}
-.wall.flat .w.a8{--logo-h:calc(29px * var(--s))}
+.wall.flat .w.a8{--logo-h:calc(27px * var(--s))}
+/* Two corrections on top of the buckets, because equal AREA is not always
+   equal presence. Measured as inked pixels at the drawn size, the wall runs
+   about 1700-4700 per mark; these two sat outside that.
+
+   .lockup — an emblem beside a wordmark, so the emblem takes the full height
+   and the lettering is left at a third of it. Mercedes-Benz was the extreme
+   case on this wall: 1015 inked pixels against a 2400 median, the lightest of
+   all 31 and half the next lightest, which is why it read small next to a
+   solid wordmark like Nissan however much area it was given. Sized so its
+   lettering matches the cap height of the wordmarks around it, which puts the
+   whole lockup at about the width of Nissan. Same fix, same reason, as
+   .lockup on the Hanindo Citra wall. */
+.wall.flat .w.lockup{--logo-h:calc(64px * var(--s))}
 .bandlab{display:flex;align-items:center;gap:1rem;font-size:.72rem;font-weight:800;
   letter-spacing:.14em;text-transform:uppercase;color:var(--blue-800);margin-bottom:1.15rem}
 .bandlab::before,.bandlab::after{content:"";flex:1;height:1px;background:#c9d5e3}
@@ -237,7 +255,7 @@
           <div class="w a8 reveal"><img src="../photos/customers/hyundai.png" alt="Hyundai" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Hyundai</span></div>
           <div class="w a5 reveal"><img src="../photos/customers/kia.png" alt="Kia" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Kia</span></div>
           <div class="w a1 reveal"><img src="../photos/customers/bmw.png" alt="BMW" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">BMW</span></div>
-          <div class="w a5 reveal"><img src="../photos/customers/mercedes-benz.png" alt="Mercedes-Benz" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Mercedes-Benz</span></div>
+          <div class="w a5 lockup reveal"><img src="../photos/customers/mercedes-benz.png" alt="Mercedes-Benz" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Mercedes-Benz</span></div>
           <div class="w a4 reveal"><img src="../photos/customers/chery.png" alt="Chery" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Chery</span></div>
           <div class="w a5 reveal"><img src="../photos/customers/byd.png" alt="BYD" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">BYD</span></div>
           <div class="w a2 reveal"><img src="../photos/customers/wuling.png" alt="Wuling" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Wuling</span></div>
