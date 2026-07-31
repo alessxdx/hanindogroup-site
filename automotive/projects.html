@@ -23,10 +23,21 @@
    PHOTOS-NEEDED.txt: <base>-1.jpg is the lead, then -2, -3 and so on. So
    adding a photo to a project means dropping the file in and changing one
    number, with no new markup. */
-.decks{display:grid;gap:clamp(1.6rem,3vw,2.4rem);
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-top:2.2rem}
-.deck{position:relative;display:block;width:100%;padding:0;border:0;background:none;
-  cursor:pointer;text-align:left;-webkit-tap-highlight-color:transparent}
+/* Columns are capped as well as floored. With 1fr a single project stretches
+   to the full 1200px wrap and a lone deck reads as a hero banner rather than
+   one of a set; capping at 380px keeps the first project looking the same
+   size it will when there are six. The cap is 330px because the wrap gives
+   this grid 1072px of usable width on a desktop and the gap takes 38px of
+   it twice: (1072 - 76) / 3 = 331. Anything wider silently drops to two
+   across, which wastes most of a row. */
+.decks{display:grid;gap:clamp(1.6rem,3vw,2.6rem);justify-content:start;
+  grid-template-columns:repeat(auto-fit,minmax(280px,330px));margin-top:2.2rem}
+/* The pile sits OUTSIDE the front card, so the deck has to give up room on
+   the right for it or it pushes the page sideways. 32px covers the hover
+   spread as well as the resting offset; without it a narrow column scrolls
+   horizontally, which is the one layout bug that ruins a phone. */
+.deck{position:relative;display:block;width:auto;margin-right:32px;padding:0;border:0;
+  background:none;cursor:pointer;text-align:left;-webkit-tap-highlight-color:transparent}
 .deck .card{position:absolute;inset:0;border-radius:var(--r);overflow:hidden;
   border:3px solid #fff;box-shadow:0 8px 22px -10px rgba(4,32,58,.5);
   transition:transform .28s cubic-bezier(.2,.7,.3,1)}
@@ -44,7 +55,8 @@
   color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.06em;padding:.35rem .65rem;
   border-radius:100px;display:flex;align-items:center;gap:.35rem}
 .deck .more svg{width:13px;height:13px;fill:none;stroke:#fff;stroke-width:2}
-.dmeta{margin-top:1rem}
+/* Clear of the pile, which hangs about 26px below the front card on hover. */
+.dmeta{margin-top:2.4rem}
 .dmeta .sect{font-size:.7rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--brand-600)}
 .dmeta h3{font-size:1.08rem;font-weight:800;margin:.2rem 0 .3rem;color:var(--ink)}
 .dmeta p{margin:0;font-size:.9rem;color:var(--muted);max-width:52ch}
