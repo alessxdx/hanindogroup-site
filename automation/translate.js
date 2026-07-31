@@ -49,6 +49,12 @@
 
     /* ---- customers ---- */
     "Customer base": "Basis pelanggan",
+    /* The sector labels on the customer wall. These are headings, not
+       company names, so they translate — the logos and the .nm fallback
+       names beside them stay in their own form. */
+    "Airports & airlines": "Bandara & maskapai",
+    "Transport": "Transportasi",
+    "Technology & services": "Teknologi & layanan",
 
     /* ---- contact block ---- */
     "Talk to PT. Hanindo Automation Solutions": "Hubungi PT. Hanindo Automation Solutions",

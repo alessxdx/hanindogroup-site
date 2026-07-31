@@ -63,7 +63,17 @@
     "Car Lift": "Car Lift",
     "Lubrication": "Pelumasan",
     "Our Brands": "Merek Kami",
+    "Brands we represent": "Merek yang kami wakili",
+    /* The About hero splits across a <br/>, so each line is its own node. */
+    "Equipment for the": "Peralatan untuk",
+    "modern service bay": "bay servis modern",
     "Customer base": "Basis pelanggan",
+    /* The sector labels on the customer wall. These are headings, not
+       company names, so they translate — the logos and the .nm fallback
+       names beside them stay in their own form. */
+    "Vehicle manufacturers": "Produsen kendaraan",
+    "Tyre, lubricant & service": "Ban, pelumas & servis",
+    "Fleet, distribution & heavy equipment": "Armada, distribusi & alat berat",
     "Talk to Hanindo Automotive": "Hubungi Hanindo Automotive",
     "Fitting out a workshop,": "Melengkapi bengkel,",
     "or replacing a bay?": "atau mengganti isi satu bay?",
@@ -122,6 +132,13 @@
     /* ---- products & services ---- */
     "Products &": "Produk &",
     "Services": "Layanan",
+    /* The kicker over the range, lower-cased, so it is a different node from
+       the "Products &" / "Services" pair the hero splits. */
+    "Products & services": "Produk & layanan",
+    "Our product range": "Rangkaian produk kami",
+    /* The Fluid Handling tile and its drop-down entry. "Lubrication & Fluid
+       Handling" below is the longer form used on the range card. */
+    "Fluid Handling": "Penanganan Fluida",
     "Tyre service and inflation, lifting and handling, service equipment, lubrication and welding — six ranges across the catalogue.": "Layanan ban dan pengisian angin, pengangkatan dan penanganan, peralatan servis, pelumasan, dan pengelasan — enam rangkaian dalam katalog.",
     "What we offer": "Yang kami tawarkan",
     "Professional equipment, from the service bay to the plant floor": "Peralatan profesional, dari service bay hingga lantai pabrik",
@@ -246,6 +263,24 @@
     "Shaking Machine": "Mesin Pengocok",
     "Diagnostic Scan Tool": "Alat Pindai Diagnostik",
     "MMA Welding Machine": "Mesin Las MMA",
+    "MIG / MMA Welding Machine": "Mesin Las MIG / MMA",
+    "Automatic Tilt-Back Car Tyre Changer": "Tyre Changer Mobil Tilt-Back Otomatis",
+    "3D Wheel Alignment System": "Sistem Spooring Roda 3D",
+    "HHO Carbon Cleaning Machine — Automotive": "Mesin Pembersih Karbon HHO — Mobil",
+    "HHO Carbon Cleaning Machine — Motorcycle": "Mesin Pembersih Karbon HHO — Motor",
+    /* The RAASM catalogue's own sub-headings. "Hose & Cable Reels" below is
+       the range card; these are the sections inside the catalogue page, where
+       reels, pumps and equipment are listed apart. */
+    "Hose Reels": "Reel Selang",
+    "Cable Reels": "Reel Kabel",
+    "Diaphragm Pumps": "Pompa Diafragma",
+    "Pneumatic Pumps": "Pompa Pneumatik",
+    "Oil Equipment": "Peralatan Oli",
+    "Grease Equipment": "Peralatan Gemuk",
+    "Diesel Fuel Equipment": "Peralatan Bahan Bakar Diesel",
+    "Service Columns & Trolleys": "Kolom Servis & Troli",
+    "Fluid Control — FCS": "Kontrol Fluida — FCS",
+    "Fluid Level — FLS": "Level Fluida — FLS",
     "Hose & Cable Reels": "Reel Selang & Kabel",
     "Oil & Grease Dispensing": "Dispensing Oli & Gemuk",
     "Waste Oil Handling": "Penanganan Oli Bekas",
@@ -449,6 +484,14 @@
     "Square profile": "Profil persegi",
     "Low range option": "Opsi rentang rendah",
     "Yes": "Ya",
+
+    /* ---- catalogue page leads ----
+       The one-line summary under each catalogue hero. Shorter than the
+       full intros further down, and easy to miss because they sit in a
+       .lead rather than a paragraph. */
+    "Digital inflators for the workshop, forecourt, depot and mine.": "Pengisi angin digital untuk bengkel, SPBU, depo, dan tambang.",
+    "Hose reels, pumps, dispensing and centralised lubrication.": "Reel selang, pompa, dispensing, dan pelumasan terpusat.",
+    "MMA and MIG/MMA inverter welding machines, 200 A to 700 A.": "Mesin las inverter MMA dan MIG/MMA, 200 A hingga 700 A.",
 
     /* ---- catalogue prose: airtec ---- */
     "Digital tyre inflation, built in Singapore. Wall-mounted, machine-mounted and high-flow inflators for the service bay, the forecourt, the hangar and the mine.": "Pengisian angin ban digital, dibuat di Singapura. Pengisi angin dinding, terpasang mesin, dan aliran tinggi untuk service bay, SPBU, hanggar, dan tambang.",

@@ -82,11 +82,23 @@
 
     /* ---- contact page: other companies band ---- */
     "Elsewhere in the group": "Di lingkungan grup",
+    "How to reach us.": "Cara menghubungi kami.",
     "Looking for another company?": "Mencari perusahaan lain?",
+    /* The closing call-to-action, repeated on four pages. The heading splits
+       across a <br/>, so each line is its own text node and needs its own
+       entry — same as the "About"/"Us" pair below. */
+    "Talk to Hanindo Citra": "Hubungi Hanindo Citra",
+    "Protecting a new site,": "Melindungi lokasi baru,",
+    "or upgrading an existing one?": "atau meningkatkan yang sudah ada?",
+    "What we supply": "Yang kami sediakan",
+    "Why clients trust Hanindo Citra": "Mengapa klien mempercayai Hanindo Citra",
     "All four companies share the Fatmawati head office. If your enquiry sits with one of the others, go straight to them.": "Keempat perusahaan berbagi kantor pusat Fatmawati. Jika pertanyaan Anda terkait salah satu perusahaan lainnya, silakan hubungi langsung.",
 
     /* ---- footer ---- */
     "Explore": "Jelajahi",
+    /* The footer column heading, on every page of this site. Wording follows
+       the group and company footers so the whole site reads the same. */
+    "Our Companies": "Perusahaan Kami",
     "Fire Fighting Department": "Departemen Pemadam Kebakaran",
     "A specialist division of the Hanindo Group, delivering end-to-end fire protection — from design and engineering through supply, installation, testing and long-term maintenance.": "Divisi spesialis dari Hanindo Group, menghadirkan proteksi kebakaran menyeluruh — dari desain dan rekayasa hingga pengadaan, pemasangan, pengujian, dan pemeliharaan jangka panjang.",
     "© 2026 Hanindo Group. All Rights Reserved.": "© 2026 Hanindo Group. Hak Cipta Dilindungi.",

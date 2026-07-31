@@ -46,6 +46,12 @@
 
     /* ---- customers ---- */
     "Customer base": "客户群",
+    /* The sector labels on the customer wall. These are headings, not
+       company names, so they translate — the logos and the .nm fallback
+       names beside them stay in their own form. */
+    "Airports & aviation": "机场与航空",
+    "Transport, retail & public services": "交通、零售与公共服务",
+    "Industry & technology": "工业与科技",
 
     /* ---- contact block ---- */
     "Talk to Hanindo Shanghai": "联系汉琳德上海",
