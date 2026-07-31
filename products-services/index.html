@@ -22,11 +22,6 @@
    Hanindo Automation Solutions". Two-by-two keeps them on one line. */
 .pgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.3rem;margin-top:1.7rem;align-items:start}
 @media(max-width:900px){.pgrid{grid-template-columns:1fr}}
-/* Fire Fighting is catalogued ahead of its product shots. The slot keeps
-   the height the other strips have so the row does not jump when the
-   photos are dropped in. */
-.pshots .soon{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.4rem;height:130px;color:#9aa7b8;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
-.pshots .soon svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.4}
 .pcard{display:flex;flex-direction:column;background:var(--white);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
 /* Flex rather than a fixed three-column grid so a card carrying two shots
    fills the strip just as evenly as one carrying three. */
@@ -171,12 +166,16 @@
         </div>
       </article>
 
-      <!-- Product shots still to come: drop two or three cut-out PNGs into
-           the strip above, the same way the other three cards carry theirs,
-           and delete the .soon placeholder. -->
+      <!-- The two shots are the Fire Fighting Department's own product
+           photos, referenced in place from fire-fighting/photos/ rather than
+           copied here — the same files that page draws for its hydrant and
+           gas suppression blocks, so the two stay in step. Both are cut-outs
+           on white, so they multiply into the strip like every other shot on
+           this page. -->
       <article class="pcard">
         <div class="pshots">
-          <div class="soon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photos to come</span></div>
+          <span><img src="../fire-fighting/photos/prod-hydrant.jpg" alt="Pillar fire hydrant with landing valve and hose" loading="lazy" onerror="this.parentElement.remove()" /></span>
+          <span><img src="../fire-fighting/photos/prod-gas.jpg" alt="Clean agent gas suppression cylinder bank" loading="lazy" onerror="this.parentElement.remove()" /></span>
         </div>
         <div class="pbody">
           <h3>Fire Fighting</h3>
