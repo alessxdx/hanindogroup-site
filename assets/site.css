@@ -1100,7 +1100,12 @@ a.pcard:hover .more svg{transform:translateX(3px)}
 }
 
 /* --- pills (filter in place) --- */
-.catnav.sectorfilter{gap:.5rem;align-items:center}
+/* The filter bar sits under a paragraph, and .lede carries no bottom margin
+   while .catnav carries no top one — so the buttons butted straight onto
+   the text with 0px between them. It is a control group rather than part
+   of the text block, so it takes the same 2rem above as .catnav already
+   sets below, and now sits evenly between the copy and the first card. */
+.catnav.sectorfilter{gap:.5rem;align-items:center;margin-top:2rem}
 .catnav button{font-family:inherit;font-size:.86rem;font-weight:600;padding:.5rem 1rem;
   border:1px solid var(--line);border-radius:var(--r);color:var(--blue-800);
   background:var(--white);cursor:pointer;transition:border-color .15s,color .15s,background .15s}
