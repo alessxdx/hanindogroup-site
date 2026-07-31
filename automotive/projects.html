@@ -10,6 +10,69 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607311830" />
+<style>
+/* ---------- PROJECT DECKS ----------
+   One project is one deck: the lead photo face up with the rest of the set
+   stacked behind it, and a count so the reader knows there is more before
+   they click. Deliberately lighter than the Fire Fighting projects page —
+   no equipment tables, no dates, no drill-down page. A photo, a sector and
+   one line of scope.
+
+   Each deck carries data-base and data-count and nothing else. The viewer
+   builds its own filenames from those, following the convention in
+   PHOTOS-NEEDED.txt: <base>-1.jpg is the lead, then -2, -3 and so on. So
+   adding a photo to a project means dropping the file in and changing one
+   number, with no new markup. */
+.decks{display:grid;gap:clamp(1.6rem,3vw,2.4rem);
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-top:2.2rem}
+.deck{position:relative;display:block;width:100%;padding:0;border:0;background:none;
+  cursor:pointer;text-align:left;-webkit-tap-highlight-color:transparent}
+.deck .card{position:absolute;inset:0;border-radius:var(--r);overflow:hidden;
+  border:3px solid #fff;box-shadow:0 8px 22px -10px rgba(4,32,58,.5);
+  transition:transform .28s cubic-bezier(.2,.7,.3,1)}
+.deck .front{position:relative;z-index:3;aspect-ratio:4/3}
+.deck .card img{width:100%;height:100%;object-fit:cover;display:block}
+/* The two behind are decorative: they only have to read as "more photos".
+   They reuse the 2nd and 3rd files rather than being empty panels, so the
+   pile looks like the actual set rather than grey card stock. */
+.deck .b1{z-index:2;transform:translate(9px,9px) scale(.985)}
+.deck .b2{z-index:1;transform:translate(18px,18px) scale(.97)}
+.deck:hover .b1,.deck:focus-visible .b1{transform:translate(14px,13px) scale(.985)}
+.deck:hover .b2,.deck:focus-visible .b2{transform:translate(28px,26px) scale(.97)}
+.deck:focus-visible{outline:3px solid var(--brand);outline-offset:6px}
+.deck .more{position:absolute;right:10px;bottom:10px;z-index:4;background:rgba(4,32,58,.86);
+  color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.06em;padding:.35rem .65rem;
+  border-radius:100px;display:flex;align-items:center;gap:.35rem}
+.deck .more svg{width:13px;height:13px;fill:none;stroke:#fff;stroke-width:2}
+.dmeta{margin-top:1rem}
+.dmeta .sect{font-size:.7rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--brand-600)}
+.dmeta h3{font-size:1.08rem;font-weight:800;margin:.2rem 0 .3rem;color:var(--ink)}
+.dmeta p{margin:0;font-size:.9rem;color:var(--muted);max-width:52ch}
+
+/* ---------- VIEWER ----------
+   object-fit:contain, not cover: this set mixes landscape and portrait, and
+   a workshop shot cropped to fill would lose the thing it is a photo of. */
+.pv{position:fixed;inset:0;background:rgba(4,32,58,.94);display:none;
+  align-items:center;justify-content:center;z-index:120;padding:clamp(14px,4vw,56px)}
+.pv.on{display:flex}
+.pv img{max-width:min(1100px,92vw);max-height:82vh;width:auto;height:auto;
+  object-fit:contain;border-radius:var(--r);display:block}
+.pv button{position:absolute;background:rgba(255,255,255,.15);border:0;color:#fff;
+  cursor:pointer;border-radius:50%;width:46px;height:46px;display:flex;
+  align-items:center;justify-content:center;line-height:1}
+.pv button:hover{background:rgba(255,255,255,.3)}
+.pv button svg{width:20px;height:20px;fill:none;stroke:#fff;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.pv .x{top:18px;right:18px}
+.pv .prev{left:16px;top:50%;transform:translateY(-50%)}
+.pv .next{right:16px;top:50%;transform:translateY(-50%)}
+.pv .cap{position:absolute;bottom:20px;left:0;right:0;text-align:center;color:#b9d3e8;
+  font-size:.78rem;letter-spacing:.12em}
+@media(max-width:640px){
+  .pv .prev{left:8px}.pv .next{right:8px}
+  .pv button{width:40px;height:40px}
+  .pv img{max-height:70vh}
+}
+</style>
 </head>
 <body>
 
@@ -81,16 +144,44 @@
       <h2 class="h2">Workshops we have equipped.</h2>
       <p class="lede">Dealer workshops, independent garages and fleet service centres.</p>
     </div>
-    <div class="xlink reveal" style="margin-top:2.4rem">
-      <div>
-        <span class="eyebrow">Content needed</span>
-        <h3>Add Hanindo Automotive project references here</h3>
-        <p>This page is built and linked, but no project references have been supplied for Hanindo Automotive yet. Add each project as a card &mdash; client, location, scope and a photo &mdash; following the pattern used on the Fire Fighting projects page.</p>
+    <!-- To add a project: copy one .deck block, point data-base at the new
+         filename stem in /photos/automotive/projects/, set data-count to how
+         many photos it has, and update the three lines under it. The .b1/.b2
+         cards behind should use the 2nd and 3rd photos of that set. A project
+         with only one photo drops both .card divs and the .more badge, and
+         reads as a plain photo with nothing behind it. -->
+    <div class="decks">
+      <div class="reveal">
+        <button class="deck" type="button"
+                data-base="atom-lift-toyota" data-count="4"
+                data-title="ATOM two-post lifts &mdash; Toyota dealer workshop"
+                aria-label="View all 4 photos of the Toyota dealer workshop project">
+          <div class="card b2" aria-hidden="true"><img src="../photos/automotive/projects/atom-lift-toyota-3.jpg" alt="" loading="lazy" /></div>
+          <div class="card b1" aria-hidden="true"><img src="../photos/automotive/projects/atom-lift-toyota-2.jpg" alt="" loading="lazy" /></div>
+          <div class="card front"><img src="../photos/automotive/projects/atom-lift-toyota-1.jpg" alt="A row of ATOM two-post lifts installed across the service bays of a Toyota dealer workshop" loading="lazy" /></div>
+          <span class="more"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>4 photos</span>
+        </button>
+        <div class="dmeta">
+          <span class="sect">Dealer workshop</span>
+          <h3>ATOM two-post lifts</h3>
+          <p>A full line of ATOM two-post lifts supplied and installed across the service bays of a Toyota dealer workshop.</p>
+        </div>
       </div>
-      <div><a class="btn btn-dark" href="../fire-fighting/projects.html">See the pattern <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
     </div>
   </div>
 </section>
+
+<!-- ============ PHOTO VIEWER ============ -->
+<!-- One viewer serves every deck on the page. It is filled from the deck's
+     data-base and data-count when it opens, so it needs no markup per
+     project and no markup per photo. -->
+<div class="pv" id="pv" aria-hidden="true">
+  <button class="x" type="button" data-close aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button class="prev" type="button" data-step="-1" aria-label="Previous photo"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+  <img id="pvimg" src="" alt="" />
+  <button class="next" type="button" data-step="1" aria-label="Next photo"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+  <div class="cap" id="pvcap"></div>
+</div>
 
 <!-- ============ CONTACT ============ -->
 <section class="section contact">
@@ -158,7 +249,49 @@ function hsearch(f){var q=(f.q.value||'').trim();if(!q)return false;window.open(
 (function(){var b=document.getElementById('burger'),t=document.getElementById('tabs');if(b&&t){b.addEventListener('click',function(){var o=t.classList.toggle('open');b.setAttribute('aria-expanded',o);});}})();
 /* reveal */
 (function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
+/* Project photo viewer. Builds its filenames from the deck's data-base and
+   data-count, so a project gains a photo by dropping the file in and bumping
+   the number -- no markup and nothing here to change. */
+(function(){
+  var pv=document.getElementById('pv');if(!pv)return;
+  var img=document.getElementById('pvimg'),cap=document.getElementById('pvcap');
+  var base='',total=0,title='',cur=1,opener=null;
+  var DIR='../photos/automotive/projects/';
+
+  function paint(){
+    img.src=DIR+base+'-'+cur+'.jpg';
+    img.alt=title.replace(/&mdash;/g,'—')+' — photo '+cur+' of '+total;
+    cap.textContent=cur+' / '+total;
+  }
+  function open(btn){
+    opener=btn;base=btn.getAttribute('data-base');
+    total=parseInt(btn.getAttribute('data-count'),10)||1;
+    title=btn.getAttribute('data-title')||'';cur=1;paint();
+    pv.classList.add('on');pv.setAttribute('aria-hidden','false');
+    document.body.style.overflow='hidden';
+  }
+  function close(){
+    pv.classList.remove('on');pv.setAttribute('aria-hidden','true');
+    document.body.style.overflow='';if(opener)opener.focus();
+  }
+  function step(d){cur=((cur-1+d)+total)%total+1;paint();}
+
+  Array.prototype.forEach.call(document.querySelectorAll('.deck'),function(b){
+    b.addEventListener('click',function(){open(b)});
+  });
+  pv.addEventListener('click',function(e){
+    /* the backdrop and the X close; the photo itself must not */
+    if(e.target===pv||e.target.closest('[data-close]')){close();return;}
+    var s=e.target.closest('[data-step]');if(s)step(+s.getAttribute('data-step'));
+  });
+  document.addEventListener('keydown',function(e){
+    if(!pv.classList.contains('on'))return;
+    if(e.key==='Escape')close();
+    else if(e.key==='ArrowRight')step(1);
+    else if(e.key==='ArrowLeft')step(-1);
+  });
+})();
 </script>
-<script src="translate.js?v=202607311800"></script>
+<script src="translate.js?v=202607311830"></script>
 </body>
 </html>
