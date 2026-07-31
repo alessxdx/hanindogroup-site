@@ -110,20 +110,38 @@ img{max-width:100%;display:block}
   .tablang .langtoggle button{font-size:.82rem;padding:0;min-width:60px;color:#cfd8e6}
   .tablang .langtoggle button.active{background:var(--white);color:var(--blue-800)}
 }
-.grouplink{display:inline-flex;align-items:center;gap:.35rem;font-size:.82rem;font-weight:600;color:var(--muted);white-space:nowrap;transition:color .18s}
-.grouplink:hover{color:var(--blue-800)}
-.grouplink svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2.5}
-/* Phones drop the label, which leaves the link as its 13px chevron —
-   far too small to hit. The tap area is widened with a centred
-   pseudo-element rather than padding, so it reaches 44px without the
-   link itself getting wider and crowding the topbar on a 320px screen.
-   Where it overlaps the control beside it, that control paints later
-   and so still wins the tap. */
-@media(max-width:760px){
-  .grouplink span{display:none}
-  .grouplink{position:relative}
-  .grouplink::after{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:44px;height:44px}
-}
+/* Back to the group site, from any company page. This was bare grey text
+   with a 13px chevron, sitting immediately left of the bordered language
+   toggle and search box — next to them it read as something that had
+   missed its styling rather than a control.
+   Deliberately NOT given a box of its own. It does a different job from
+   the two controls beside it: they act on the page, this leaves it. A
+   third bordered chip would have set all three at equal weight. Instead
+   the chevron sits in a small tinted disc for a target the eye can find,
+   and a hairline rule does the separating.
+   The rule is on the link rather than a divider element so it travels
+   with it, and 1.3rem of right padding matches the .top-right gap, which
+   centres the rule between the label and the toggle.
+   The disc is drawn on the chevron itself — padding plus a round
+   background on the svg — rather than a wrapper span. The markup is
+   identical on all forty-four pages that carry this link, and none of
+   them needs touching for a change that is purely presentational.
+   Disc fill is --brand at about a tenth on white. Literal, because the
+   only alternatives are a fifth colour variable for one 22px circle or a
+   colour-mix() this stylesheet uses nowhere else.
+   No phone rules: .top-right is display:none from 860px down, so the
+   link never renders at any width one would cover. The block that used
+   to sit here hid the label and grew a 44px tap target for the bare
+   chevron, and had been unreachable since that breakpoint went in. */
+.grouplink{display:inline-flex;align-items:center;gap:.55rem;height:34px;flex:none;
+  padding-right:1.3rem;border-right:1px solid var(--line);
+  font-size:.82rem;font-weight:600;color:var(--blue-800);white-space:nowrap;
+  transition:color .18s}
+.grouplink svg{width:12px;height:12px;flex:none;box-sizing:content-box;padding:5px;
+  border-radius:50%;background:#eaf4fb;
+  fill:none;stroke:var(--brand);stroke-width:2.6;transition:transform .18s,background .18s}
+.grouplink:hover{color:var(--brand-600)}
+.grouplink:hover svg{background:#d7ebf9;transform:translateX(-2px)}
 .searchbox{display:flex;height:38px}
 .searchbox input{border:1px solid var(--line);border-right:0;border-radius:var(--r) 0 0 var(--r);padding:0 .9rem;font-family:var(--font);font-size:.86rem;width:170px;outline:none;background:var(--white)}
 .searchbox input:focus{border-color:var(--brand)}
