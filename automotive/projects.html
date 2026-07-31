@@ -11,55 +11,38 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202607311830" />
 <style>
-/* ---------- PROJECT DECKS ----------
-   One project is one deck: the lead photo face up with the rest of the set
-   stacked behind it, and a count so the reader knows there is more before
-   they click. Deliberately lighter than the Fire Fighting projects page —
-   no equipment tables, no dates, no drill-down page. A photo, a sector and
-   one line of scope.
+/* ---------- PROJECT CARDS ----------
+   A project is one card: photo, sector, title, and a link row that opens the
+   photo set. No description, no dates, no drill-down page — deliberately
+   lighter than the Fire Fighting projects page, since some of this work is
+   commercially sensitive.
 
-   Each deck carries data-base and data-count and nothing else. The viewer
+   This is the shared .pgrid / .pcard / .pbox / .pbody / .more component from
+   site.css, the same one the four products pages use. Only three things
+   differ, all below: the card is a button rather than a link, the photo box
+   is taller because these are photographs rather than product cut-outs, and
+   the sector eyebrow is new. An earlier version stacked the rest of the set
+   behind the lead photo as a pile; it read as clutter next to the square,
+   flat cards everywhere else on the site.
+
+   Each card carries data-base and data-count and nothing else. The viewer
    builds its own filenames from those, following the convention in
    PHOTOS-NEEDED.txt: <base>-1.jpg is the lead, then -2, -3 and so on. So
    adding a photo to a project means dropping the file in and changing one
    number, with no new markup. */
-/* Columns are capped as well as floored. With 1fr a single project stretches
-   to the full 1200px wrap and a lone deck reads as a hero banner rather than
-   one of a set; capping at 380px keeps the first project looking the same
-   size it will when there are six. The cap is 330px because the wrap gives
-   this grid 1072px of usable width on a desktop and the gap takes 38px of
-   it twice: (1072 - 76) / 3 = 331. Anything wider silently drops to two
-   across, which wastes most of a row. */
-.decks{display:grid;gap:clamp(1.6rem,3vw,2.6rem);justify-content:start;
-  grid-template-columns:repeat(auto-fit,minmax(280px,330px));margin-top:2.2rem}
-/* The pile sits OUTSIDE the front card, so the deck has to give up room on
-   the right for it or it pushes the page sideways. 32px covers the hover
-   spread as well as the resting offset; without it a narrow column scrolls
-   horizontally, which is the one layout bug that ruins a phone. */
-.deck{position:relative;display:block;width:auto;margin-right:32px;padding:0;border:0;
-  background:none;cursor:pointer;text-align:left;-webkit-tap-highlight-color:transparent}
-.deck .card{position:absolute;inset:0;border-radius:var(--r);overflow:hidden;
-  border:3px solid #fff;box-shadow:0 8px 22px -10px rgba(4,32,58,.5);
-  transition:transform .28s cubic-bezier(.2,.7,.3,1)}
-.deck .front{position:relative;z-index:3;aspect-ratio:4/3}
-.deck .card img{width:100%;height:100%;object-fit:cover;display:block}
-/* The two behind are decorative: they only have to read as "more photos".
-   They reuse the 2nd and 3rd files rather than being empty panels, so the
-   pile looks like the actual set rather than grey card stock. */
-.deck .b1{z-index:2;transform:translate(9px,9px) scale(.985)}
-.deck .b2{z-index:1;transform:translate(18px,18px) scale(.97)}
-.deck:hover .b1,.deck:focus-visible .b1{transform:translate(14px,13px) scale(.985)}
-.deck:hover .b2,.deck:focus-visible .b2{transform:translate(28px,26px) scale(.97)}
-.deck:focus-visible{outline:3px solid var(--brand);outline-offset:6px}
-.deck .more{position:absolute;right:10px;bottom:10px;z-index:4;background:rgba(4,32,58,.86);
-  color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.06em;padding:.35rem .65rem;
-  border-radius:100px;display:flex;align-items:center;gap:.35rem}
-.deck .more svg{width:13px;height:13px;fill:none;stroke:#fff;stroke-width:2}
-/* Clear of the pile, which hangs about 26px below the front card on hover. */
-.dmeta{margin-top:2.4rem}
-.dmeta .sect{font-size:.7rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--brand-600)}
-.dmeta h3{font-size:1.08rem;font-weight:800;margin:.2rem 0 .3rem;color:var(--ink)}
-.dmeta p{margin:0;font-size:.9rem;color:var(--muted);max-width:52ch}
+button.pcard{width:100%;padding:0;font:inherit;color:inherit;text-align:left;
+  cursor:pointer;-webkit-tap-highlight-color:transparent}
+button.pcard:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+/* 180px is tuned for a product shot on a plain box. A workshop photograph
+   needs the height to read at all, so the box follows the photo's shape. */
+.pcard.proj .pbox{height:auto;aspect-ratio:4/3}
+.pcard.proj .pbody{padding-top:1rem}
+.pcard.proj .sect{font-size:.68rem;font-weight:800;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--brand-600);margin-bottom:.3rem}
+/* site.css nudges the arrow on a.pcard:hover; these are buttons, so the
+   same nudge has to be restated for them. */
+.pcard.proj:hover{border-color:var(--blue-700)}
+.pcard.proj:hover .more svg{transform:translateX(3px)}
 
 /* ---------- VIEWER ----------
    object-fit:contain, not cover: this set mixes landscape and portrait, and
@@ -156,29 +139,23 @@
       <h2 class="h2">Workshops we have equipped.</h2>
       <p class="lede">Dealer workshops, independent garages and fleet service centres.</p>
     </div>
-    <!-- To add a project: copy one .deck block, point data-base at the new
+    <!-- To add a project: copy one .pcard block, point data-base at the new
          filename stem in /photos/automotive/projects/, set data-count to how
-         many photos it has, and update the three lines under it. The .b1/.b2
-         cards behind should use the 2nd and 3rd photos of that set. A project
-         with only one photo drops both .card divs and the .more badge, and
-         reads as a plain photo with nothing behind it. -->
-    <div class="decks">
-      <div class="reveal">
-        <button class="deck" type="button"
-                data-base="atom-lift-toyota" data-count="4"
-                data-title="ATOM two-post lifts &mdash; Toyota dealer workshop"
-                aria-label="View all 4 photos of the Toyota dealer workshop project">
-          <div class="card b2" aria-hidden="true"><img src="../photos/automotive/projects/atom-lift-toyota-3.jpg" alt="" loading="lazy" /></div>
-          <div class="card b1" aria-hidden="true"><img src="../photos/automotive/projects/atom-lift-toyota-2.jpg" alt="" loading="lazy" /></div>
-          <div class="card front"><img src="../photos/automotive/projects/atom-lift-toyota-1.jpg" alt="A row of ATOM two-post lifts installed across the service bays of a Toyota dealer workshop" loading="lazy" /></div>
-          <span class="more"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>4 photos</span>
-        </button>
-        <div class="dmeta">
+         many photos it has, and update the sector, the title, the photo and
+         the two counts in the link row and the aria-label. The photo shown is
+         always the -1 of the set. -->
+    <div class="pgrid">
+      <button class="pcard proj reveal" type="button"
+              data-base="atom-lift-toyota" data-count="4"
+              data-title="ATOM two-post lifts &mdash; Toyota dealer workshop"
+              aria-label="View all 4 photos of the Toyota dealer workshop project">
+        <div class="pbox"><img src="../photos/automotive/projects/atom-lift-toyota-1.jpg" alt="A row of ATOM two-post lifts installed across the service bays of a Toyota dealer workshop" loading="lazy" /></div>
+        <div class="pbody">
           <span class="sect">Dealer workshop</span>
-          <h3>ATOM two-post lifts</h3>
-          <p>A full line of ATOM two-post lifts supplied and installed across the service bays of a Toyota dealer workshop.</p>
+          <h4>ATOM two-post lifts</h4>
+          <span class="more">View 4 photos <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </div>
-      </div>
+      </button>
     </div>
   </div>
 </section>
@@ -288,7 +265,7 @@ function hsearch(f){var q=(f.q.value||'').trim();if(!q)return false;window.open(
   }
   function step(d){cur=((cur-1+d)+total)%total+1;paint();}
 
-  Array.prototype.forEach.call(document.querySelectorAll('.deck'),function(b){
+  Array.prototype.forEach.call(document.querySelectorAll('.pcard.proj'),function(b){
     b.addEventListener('click',function(){open(b)});
   });
   pv.addEventListener('click',function(e){
@@ -304,6 +281,6 @@ function hsearch(f){var q=(f.q.value||'').trim();if(!q)return false;window.open(
   });
 })();
 </script>
-<script src="translate.js?v=202607311830"></script>
+<script src="translate.js?v=202607311910"></script>
 </body>
 </html>

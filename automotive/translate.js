@@ -183,14 +183,13 @@
     "Selected work": "Pekerjaan terpilih",
     "Workshops we have equipped.": "Bengkel yang telah kami lengkapi.",
     "Dealer workshops, independent garages and fleet service centres.": "Bengkel dealer, bengkel independen, dan pusat layanan armada.",
-    /* The project decks. Each project adds a sector, a title and a scope
-       line, so a new project needs three new entries here — the deck is
-       plain text on the page and stays English otherwise. "N photos" on the
-       count badge needs one entry per photo count in use. */
+    /* The project cards. Each project adds a sector and a title, so a new
+       project needs two new entries here — the card is plain text on the
+       page and stays English otherwise. The link row carries the photo
+       count, so it needs one entry per count actually in use. */
     "Dealer workshop": "Bengkel dealer",
     "ATOM two-post lifts": "Lift dua tiang ATOM",
-    "A full line of ATOM two-post lifts supplied and installed across the service bays of a Toyota dealer workshop.": "Satu lini penuh lift dua tiang ATOM yang dipasok dan dipasang di seluruh service bay bengkel dealer Toyota.",
-    "4 photos": "4 foto",
+    "View 4 photos": "Lihat 4 foto",
     "Content needed": "Perlu konten",
     "Add Hanindo Automotive project references here": "Tambahkan referensi proyek Hanindo Automotive di sini",
     "This page is built and linked, but no project references have been supplied for Hanindo Automotive yet. Add each project as a card — client, location, scope and a photo — following the pattern used on the Fire Fighting projects page.": "Halaman ini sudah dibuat dan ditautkan, tetapi belum ada referensi proyek yang disediakan untuk Hanindo Automotive. Tambahkan setiap proyek sebagai kartu — klien, lokasi, lingkup pekerjaan, dan foto — mengikuti pola yang digunakan pada halaman proyek Fire Fighting.",
