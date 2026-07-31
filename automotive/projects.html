@@ -25,18 +25,26 @@
    number, with no new markup. */
 /* Columns are capped as well as floored. With 1fr a single project stretches
    to the full 1200px wrap and a lone deck reads as a hero banner rather than
-   one of a set; capping at 380px keeps the first project looking the same
-   size it will when there are six. The cap is 330px because the wrap gives
-   this grid 1072px of usable width on a desktop and the gap takes 38px of
-   it twice: (1072 - 76) / 3 = 331. Anything wider silently drops to two
-   across, which wastes most of a row. */
-.decks{display:grid;gap:clamp(1.6rem,3vw,2.6rem);justify-content:start;
-  grid-template-columns:repeat(auto-fit,minmax(280px,330px));margin-top:2.2rem}
+   one of a set; the cap keeps every project the same size whether there are
+   two on the page or twenty.
+
+   The cap is 239px, which is what fits FOUR across: the wrap gives this grid
+   1072px of usable width on a desktop and the gap takes 38px of it three
+   times, so (1072 - 114) / 4 = 239. Anything wider silently drops to three
+   across and the cards grow again. Recompute this if the gap changes. */
+.decks{display:grid;gap:clamp(1.4rem,3vw,2.6rem);justify-content:start;
+  grid-template-columns:repeat(auto-fit,minmax(210px,239px));margin-top:2.2rem}
+/* On a phone there is only ever one column, and the 239px cap then leaves a
+   third of the screen empty to the right of every card. Let it fill instead
+   — the cap exists to stop cards ballooning on a desktop, not to shrink them
+   where there is nothing to balloon against. */
+@media(max-width:640px){.decks{grid-template-columns:1fr}}
 /* The pile sits OUTSIDE the front card, so the deck has to give up room on
-   the right for it or it pushes the page sideways. 32px covers the hover
-   spread as well as the resting offset; without it a narrow column scrolls
-   horizontally, which is the one layout bug that ruins a phone. */
-.deck{position:relative;display:block;width:auto;margin-right:32px;padding:0;border:0;
+   the right for it or it pushes the page sideways — the one layout bug that
+   ruins a phone. 26px covers the hover spread as well as the resting offset.
+   It is a bigger share of a 239px column than it was of a 330px one, which
+   is why the offsets below came down with the cards. */
+.deck{position:relative;display:block;width:auto;margin-right:26px;padding:0;border:0;
   background:none;cursor:pointer;text-align:left;-webkit-tap-highlight-color:transparent}
 .deck .card{position:absolute;inset:0;border-radius:var(--r);overflow:hidden;
   border:3px solid #fff;box-shadow:0 8px 22px -10px rgba(4,32,58,.5);
@@ -46,20 +54,25 @@
 /* The two behind are decorative: they only have to read as "more photos".
    They reuse the 2nd and 3rd files rather than being empty panels, so the
    pile looks like the actual set rather than grey card stock. */
-.deck .b1{z-index:2;transform:translate(9px,9px) scale(.985)}
-.deck .b2{z-index:1;transform:translate(18px,18px) scale(.97)}
-.deck:hover .b1,.deck:focus-visible .b1{transform:translate(14px,13px) scale(.985)}
-.deck:hover .b2,.deck:focus-visible .b2{transform:translate(28px,26px) scale(.97)}
+.deck .b1{z-index:2;transform:translate(7px,7px) scale(.985)}
+.deck .b2{z-index:1;transform:translate(14px,14px) scale(.97)}
+.deck:hover .b1,.deck:focus-visible .b1{transform:translate(11px,10px) scale(.985)}
+.deck:hover .b2,.deck:focus-visible .b2{transform:translate(22px,20px) scale(.97)}
 .deck:focus-visible{outline:3px solid var(--brand);outline-offset:6px}
 .deck .more{position:absolute;right:10px;bottom:10px;z-index:4;background:rgba(4,32,58,.86);
   color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.06em;padding:.35rem .65rem;
   border-radius:100px;display:flex;align-items:center;gap:.35rem}
 .deck .more svg{width:13px;height:13px;fill:none;stroke:#fff;stroke-width:2}
-/* Clear of the pile, which hangs about 26px below the front card on hover. */
-.dmeta{margin-top:2.4rem}
-.dmeta .sect{font-size:.7rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--brand-600)}
-.dmeta h3{font-size:1.08rem;font-weight:800;margin:.2rem 0 .3rem;color:var(--ink)}
-.dmeta p{margin:0;font-size:.9rem;color:var(--muted);max-width:52ch}
+/* Clear of the pile, which hangs about 20px below the front card on hover.
+   Type steps down with the cards: at 239px wide a 1.08rem heading ran to
+   three lines on half the projects and the block read heavier than the
+   photograph above it. */
+.dmeta{margin-top:1.9rem}
+/* The customer, not the sector. A reader scanning this page is looking for
+   a name they recognise, and the sector is already in the line below. */
+.dmeta .sect{font-size:.66rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--brand-600)}
+.dmeta h3{font-size:.98rem;font-weight:800;margin:.18rem 0 .28rem;color:var(--ink);line-height:1.35}
+.dmeta p{margin:0;font-size:.84rem;line-height:1.5;color:var(--muted);max-width:46ch}
 
 /* ---------- VIEWER ----------
    object-fit:contain, not cover: this set mixes landscape and portrait, and
@@ -181,7 +194,7 @@
           <span class="more"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>4 photos</span>
         </button>
         <div class="dmeta">
-          <span class="sect">Dealer workshop</span>
+          <span class="sect">Toyota</span>
           <h3>ATOM two-post lifts</h3>
           <p>A full line of ATOM two-post lifts supplied and installed across the service bays of a Toyota dealer workshop.</p>
         </div>
@@ -197,7 +210,7 @@
           <span class="more"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>4 photos</span>
         </button>
         <div class="dmeta">
-          <span class="sect">Lubrication bay</span>
+          <span class="sect">Sefas</span>
           <h3>RAASM lubrication systems</h3>
           <p>RAASM reels, meters and dispensing points built into a bulk lubrication bay for Sefas.</p>
         </div>
@@ -212,7 +225,7 @@
           <span class="more"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>2 photos</span>
         </button>
         <div class="dmeta">
-          <span class="sect">Dealer workshop</span>
+          <span class="sect">Nissan</span>
           <h3>HPA-Faip alignment and lifts</h3>
           <p>An HPA-Faip C880 wheel alignment system and scissor lifts for a Nissan dealer workshop.</p>
         </div>
@@ -228,7 +241,7 @@
           <span class="more"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>3 photos</span>
         </button>
         <div class="dmeta">
-          <span class="sect">Dealer workshop</span>
+          <span class="sect">Daihatsu</span>
           <h3>HPA-Faip wheel alignment</h3>
           <p>HPA-Faip C880 wheel alignment and lifting equipment for a Daihatsu dealer workshop.</p>
         </div>
@@ -244,7 +257,7 @@
           <span class="more"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>3 photos</span>
         </button>
         <div class="dmeta">
-          <span class="sect">Lube truck build</span>
+          <span class="sect">Primacon</span>
           <h3>RAASM lube truck</h3>
           <p>A lube truck built and fitted out with RAASM tanks, reels and dispensing for Primacon.</p>
         </div>
@@ -258,7 +271,7 @@
           <span class="more"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>1 photo</span>
         </button>
         <div class="dmeta">
-          <span class="sect">Tyre shop</span>
+          <span class="sect">Dunlop</span>
           <h3>HPA-Faip alignment and tyre bay</h3>
           <p>An HPA-Faip C800 alignment system and tyre-changing equipment for a Dunlop tyre shop.</p>
         </div>
@@ -273,7 +286,7 @@
           <span class="more"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>2 photos</span>
         </button>
         <div class="dmeta">
-          <span class="sect">Dealer workshop</span>
+          <span class="sect">Toyota</span>
           <h3>RAASM oil drainers</h3>
           <p>RAASM mobile oil drainers and dispensing units for a Toyota service outlet.</p>
         </div>
@@ -289,7 +302,7 @@
           <span class="more"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>3 photos</span>
         </button>
         <div class="dmeta">
-          <span class="sect">LNG plant</span>
+          <span class="sect">LNG Bontang</span>
           <h3>BrainBee gas and smoke analysers</h3>
           <p>BrainBee gas and smoke analysers supplied, commissioned and handed over at the LNG plant in Bontang.</p>
         </div>
@@ -304,7 +317,7 @@
           <span class="more"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>2 photos</span>
         </button>
         <div class="dmeta">
-          <span class="sect">Heavy equipment service</span>
+          <span class="sect">Intraco</span>
           <h3>RAASM service module</h3>
           <p>A RAASM lubrication service module built onto a pickup for Intraco in Balikpapan.</p>
         </div>
@@ -319,7 +332,7 @@
           <span class="more"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>1 photo</span>
         </button>
         <div class="dmeta">
-          <span class="sect">Service station</span>
+          <span class="sect">Total</span>
           <h3>AIRTEC 89 BEP tyre inflator</h3>
           <p>An AIRTEC 89 BEP digital tyre inflator installed on the forecourt of a Total service station.</p>
         </div>
@@ -449,6 +462,6 @@ function hsearch(f){var q=(f.q.value||'').trim();if(!q)return false;window.open(
   });
 })();
 </script>
-<script src="translate.js?v=202607312010"></script>
+<script src="translate.js?v=202607312230"></script>
 </body>
 </html>

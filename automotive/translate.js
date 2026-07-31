@@ -196,14 +196,11 @@
     "2 photos": "2 foto",
     "3 photos": "3 foto",
     "4 photos": "4 foto",
-    /* sectors */
-    "Dealer workshop": "Bengkel dealer",
-    "Lubrication bay": "Area pelumasan",
-    "Tyre shop": "Toko ban",
-    "Lube truck build": "Pembuatan truk pelumas",
-    "LNG plant": "Kilang LNG",
-    "Heavy equipment service": "Layanan alat berat",
-    "Service station": "SPBU",
+    /* No sector entries here any more. The blue line on each deck is the
+       CUSTOMER now, not the sector — Toyota, Sefas, Nissan and so on — and
+       company names are deliberately left untranslated, as at the top of
+       this file. The sector still appears in the scope line below it, and
+       those lines are translated. */
     /* titles */
     "ATOM two-post lifts": "Lift dua tiang ATOM",
     "RAASM lubrication systems": "Sistem pelumasan RAASM",
