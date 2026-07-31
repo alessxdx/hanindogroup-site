@@ -9,24 +9,38 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/site.css?v=202607311720" />
+<link rel="stylesheet" href="../assets/site.css?v=202607311830" />
 <style>
 /* Catalogue cards: a strip of product shots over the copy, then the links
    through to each company's own Products & Services page. Same card body
    and .vopt links as the About and Contact Us routers so the three group
    pages read as one system — the shot strip is the only addition.
    align-items:start lets each card size to its own content. */
-.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-top:1.7rem;align-items:start}
+/* Two across, not four. One card per Products & Services menu entry, and
+   four of them at this container width leaves each about 250px — too
+   narrow for the .vopt rows, whose labels run to the length of "PT.
+   Hanindo Automation Solutions". Two-by-two keeps them on one line. */
+.pgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.3rem;margin-top:1.7rem;align-items:start}
 @media(max-width:900px){.pgrid{grid-template-columns:1fr}}
+/* Fire Fighting is catalogued ahead of its product shots. The slot keeps
+   the height the other strips have so the row does not jump when the
+   photos are dropped in. */
+.pshots .soon{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.4rem;height:130px;color:#9aa7b8;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+.pshots .soon svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.4}
 .pcard{display:flex;flex-direction:column;background:var(--white);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
 /* Flex rather than a fixed three-column grid so a card carrying two shots
    fills the strip just as evenly as one carrying three. */
-.pshots{display:flex;gap:.5rem;background:var(--paper);border-bottom:1px solid var(--line);padding:1.15rem 1rem}
-.pshots span{flex:1;min-width:0;display:flex;align-items:center;justify-content:center;height:78px}
+/* 130px, not the 78px this strip carried when the grid was three across.
+   The shots are portrait-ish and were capped by height long before they
+   ran out of width — a car lift drew 64px wide in a 159px slot — so the
+   strip read as a row of stamps with air either side of each one. At 130
+   the widest of them just fills its slot. */
+.pshots{display:flex;gap:.5rem;background:var(--paper);border-bottom:1px solid var(--line);padding:1.35rem 1.1rem}
+.pshots span{flex:1;min-width:0;display:flex;align-items:center;justify-content:center;height:130px}
 /* The product shots carry a baked-in white background, so multiply them
    into the strip the way .tile img already does in site.css — the white
    drops out and the paper shows through without editing the files. */
-.pshots img{max-width:100%;max-height:78px;width:auto;height:auto;object-fit:contain;mix-blend-mode:multiply}
+.pshots img{max-width:100%;max-height:130px;width:auto;height:auto;object-fit:contain;mix-blend-mode:multiply}
 .pbody{padding:1.4rem 1.5rem 1.5rem}
 .pbody h3{font-size:1.08rem;font-weight:700;color:var(--blue-800);margin-bottom:.4rem}
 .pbody>p{font-size:.88rem;line-height:1.55;color:var(--muted);margin-bottom:1.2rem}
@@ -110,9 +124,13 @@
 </section>
 
 <!-- ============ WHAT WE SUPPLY ============ -->
-<!-- Grouped the same way as the About and Contact Us routers, so a visitor
-     meets the same three routes on every group page. Each link goes to that
-     company's own Products & Services page. -->
+<!-- One card per entry in the Products & Services menu, in the same order:
+     Oil & Gas, Automotive, Fire Fighting, Printer & POS. The cards used to
+     be named after companies — Hanindo Citra, Hanindo Automotive, Custom
+     (S.E.A) — which did not answer the menu a visitor had just clicked
+     through. The card is now the category and the .vopt rows inside it are
+     the companies that serve it, so a category served by three companies
+     and one served by one still read the same way. -->
 <section class="section paper">
   <div class="wrap">
     <div class="reveal">
@@ -129,11 +147,10 @@
           <span><img src="../photos/citra/products/citra-atg.webp" alt="Automatic tank gauging" loading="lazy" onerror="this.parentElement.remove()" /></span>
         </div>
         <div class="pbody">
-          <h3>PT. Hanindo Citra</h3>
-          <p>Dispensing pumps, automatic tank gauging, flow meters, fire protection systems, and station construction.</p>
+          <h3>Oil &amp; Gas</h3>
+          <p>Dispensing pumps, automatic tank gauging, flow meters, submersible pumps and forecourt controllers, and station construction.</p>
           <div class="opts">
-            <a class="vopt" href="../citra/products-services.html">Oil &amp; Gas <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <a class="vopt" href="../fire-fighting/products-services.html">Fire Fighting Department <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="vopt" href="../citra/products-services.html">PT. Hanindo Citra <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
             <a class="vopt" href="../flowtech-engineering/products-services.html">PT. Flowtech Engineering <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           </div>
         </div>
@@ -146,10 +163,26 @@
           <span><img src="../photos/automotive/products/weldann-ac-900.png" alt="A/C service station" loading="lazy" onerror="this.parentElement.remove()" /></span>
         </div>
         <div class="pbody">
-          <h3>PT. Hanindo Automotive</h3>
+          <h3>Automotive</h3>
           <p>Lifts and handling, tyre service, diagnostics, welding and lubrication for the service bay.</p>
           <div class="opts">
             <a class="vopt" href="../automotive/products-services.html">PT. Hanindo Automotive <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product shots still to come: drop two or three cut-out PNGs into
+           the strip above, the same way the other three cards carry theirs,
+           and delete the .soon placeholder. -->
+      <article class="pcard">
+        <div class="pshots">
+          <div class="soon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photos to come</span></div>
+        </div>
+        <div class="pbody">
+          <h3>Fire Fighting</h3>
+          <p>Hydrant and sprinkler systems, foam and gas suppression, alarm and detection, with the mechanical, electrical and maintenance services around them.</p>
+          <div class="opts">
+            <a class="vopt" href="../fire-fighting/products-services.html">Fire Fighting Department <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           </div>
         </div>
       </article>
@@ -161,7 +194,7 @@
           <span><img src="../photos/printer-pos/products/scanning.png" alt="Scanner" loading="lazy" onerror="this.parentElement.remove()" /></span>
         </div>
         <div class="pbody">
-          <h3>Custom (S.E.A)</h3>
+          <h3>Printer &amp; POS</h3>
           <p>Printers, point-of-sale terminals, scanners and self-service kiosks, with the software that runs them.</p>
           <div class="opts">
             <a class="vopt" href="../printer-pos/products-services.html">Gralessando Pte Ltd <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
