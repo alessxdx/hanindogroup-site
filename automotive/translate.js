@@ -72,6 +72,7 @@
     "Vehicle manufacturers": "Produsen kendaraan",
     "Tyre, lubricant & service": "Ban, pelumas & servis",
     "Fleet, distribution & heavy equipment": "Armada, distribusi & alat berat",
+    "Energy & industry": "Energi & industri",
     "Talk to Hanindo Automotive": "Hubungi Hanindo Automotive",
     "Fitting out a workshop,": "Melengkapi bengkel,",
     "or replacing a bay?": "atau mengganti isi satu bay?",

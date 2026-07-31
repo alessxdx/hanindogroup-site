@@ -296,6 +296,23 @@
           <div class="w a3 reveal"><img src="../photos/customers/united-tractors.png" alt="PT United Tractors Tbk" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT United Tractors Tbk</span></div>
           <div class="w a3 reveal"><img src="../photos/customers/intraco-penta.png" alt="PT Intraco Penta Tbk (INTA)" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Intraco Penta Tbk (INTA)</span></div>
           <div class="w a7 reveal"><img src="../photos/customers/petrosea.png" alt="PT Petrosea Tbk" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Petrosea Tbk</span></div>
+          <!-- Logo file not supplied yet, so this cell falls back to the name.
+               Drop primacon.png into /photos/customers/ and it appears; the
+               aN class then has to be set from its real aspect ratio, which
+               is why it carries the middle bucket for now. -->
+          <div class="w a5 reveal"><img src="../photos/customers/primacon.png" alt="Primacon" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Primacon</span></div>
+        </div>
+      </div>
+      <!-- Neither of these is automotive, which is why they get their own
+           band rather than being pushed into Fleet. Both came onto this wall
+           with the projects page: an AIRTEC forecourt inflator for Total and
+           BrainBee analysers for the LNG plant at Bontang. -->
+      <div class="band">
+        <span class="bandlab">Energy &amp; industry</span>
+        <div class="tier">
+          <div class="w a1 reveal"><img src="../photos/customers/total.png" alt="Total" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Total</span></div>
+          <!-- Logo file not supplied yet — see the note on Primacon above. -->
+          <div class="w a5 reveal"><img src="../photos/customers/lng-bontang.png" alt="LNG Bontang" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">LNG Bontang</span></div>
         </div>
       </div>
     </div>
@@ -399,6 +416,6 @@ if(document.readyState==='complete')all();else window.addEventListener('load',al
 var nums=document.querySelectorAll('.num[data-count]');if(!('IntersectionObserver'in window)){nums.forEach(function(n){n.textContent=n.getAttribute('data-count')});return;}
 var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting&&!done.has(x.target)){done.add(x.target);run(x.target);io.unobserve(x.target);}});},{threshold:.5});nums.forEach(function(n){io.observe(n)});})();
 </script>
-<script src="translate.js?v=202607312230"></script>
+<script src="translate.js?v=202607312320"></script>
 </body>
 </html>

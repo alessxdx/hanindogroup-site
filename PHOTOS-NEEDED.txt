@@ -392,6 +392,24 @@ AUTOMOTIVE  (/automotive/)
 hero-automotive.jpg       Page hero — busy workshop
 auto-workshop.jpg         Intro section — garage fitted with our kit
 
+CUSTOMER LOGOS STILL WANTED  ->  photos/customers/
+Two cells on the Automotive customer wall are wired but have no artwork,
+so they currently show the customer's name as text instead of a mark.
+Both came onto the wall with the projects page.
+
+  primacon.png            Primacon — in the Fleet, distribution & heavy
+                          equipment band. The lube truck we built carries
+                          the mark on its bodywork, so a clean version of
+                          that is the one to match.
+  lng-bontang.png         LNG Bontang — in the Energy & industry band.
+
+PNG on transparent, cropped to the mark with a small margin, like the
+rest of /photos/customers/. AFTER dropping either file in, set the cell's
+aN class from the logo's real aspect ratio — both carry the middle bucket
+(a5) as a placeholder, and a square mark left at a5 draws visibly small.
+The table is in the EQUAL-SIZE CUSTOMER WALL comment in
+/automotive/index.html.
+
 PROJECT PHOTOS  (/automotive/projects.html)  ->  photos/automotive/projects/
 Unlike every other slot on this list, these have no fixed filenames: the
 page grows a new entry per project rather than filling a fixed layout.
