@@ -42,9 +42,15 @@
 .decks{display:grid;gap:clamp(1.4rem,2.6vw,2rem);justify-content:start;
   grid-template-columns:repeat(auto-fit,minmax(210px,242px));margin-top:2.2rem}
 @media(max-width:640px){.decks{grid-template-columns:1fr}}
+/* font:inherit is doing real work here, not tidying. A <button> does not
+   inherit the page font — the browser gives form controls their own default,
+   which on Windows is Arial — so every project title on this page was setting
+   in Arial while the rest of the site set in Open Sans. site.css already
+   guards against this on .langtoggle button and .catnav button; the deck
+   needed the same. */
 .deck{position:relative;display:block;width:100%;padding:0;border:0;cursor:pointer;
-  text-align:left;background:var(--blue-950);border-radius:var(--r);overflow:hidden;
-  -webkit-tap-highlight-color:transparent}
+  font:inherit;color:inherit;text-align:left;background:var(--blue-950);
+  border-radius:var(--r);overflow:hidden;-webkit-tap-highlight-color:transparent}
 .deck img{display:block;width:100%;height:100%;aspect-ratio:4/3;object-fit:cover;
   transition:transform .35s ease}
 .deck:hover img,.deck:focus-visible img{transform:scale(1.03)}
@@ -54,12 +60,19 @@
 .deck .lbl{position:absolute;left:0;right:0;bottom:0;padding:.8rem .85rem}
 .deck .cust{display:block;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;
   font-weight:700;color:var(--sky)}
-/* Clamped to two lines so every deck is the same height whatever the title
+/* Set like the site's own headings rather than like body copy. .h2 in
+   site.css is Open Sans 700 with letter-spacing -.015em and line-height
+   1.18; the card title now carries the same weight and the same negative
+   tracking, which is what gives a heading its tighter, more solid look.
+   Only the colour differs, and only because this one sits on a photograph
+   — .h2 is var(--blue-800), which would disappear here.
+
+   Clamped to two lines so every deck is the same height whatever the title
    runs to. min-height holds the space even for the one-line ones, which is
    what keeps the row of customers underneath on a single baseline. */
 .deck .ttl{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
-  overflow:hidden;margin-top:.2rem;font-size:.9rem;font-weight:700;color:#fff;
-  line-height:1.34;min-height:2.68em}
+  overflow:hidden;margin-top:.22rem;font-size:.97rem;font-weight:700;color:#fff;
+  letter-spacing:-.015em;line-height:1.28;min-height:2.56em}
 .deck .more{position:absolute;top:8px;right:8px;display:flex;align-items:center;gap:.3rem;
   background:rgba(4,32,58,.72);color:#fff;font-size:.64rem;font-weight:700;
   letter-spacing:.04em;padding:.24rem .45rem;border-radius:var(--r)}
