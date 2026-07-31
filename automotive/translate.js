@@ -150,6 +150,19 @@
     "Equipment from leading international manufacturers, chosen to improve productivity, safety and service quality. Most of it fits out a workshop. The inflation and lubrication ranges reach further — the same equipment runs on forecourts, in depots and plants, and across mine sites.": "Peralatan dari produsen internasional terkemuka, dipilih untuk meningkatkan produktivitas, keselamatan, dan mutu layanan. Sebagian besar untuk melengkapi bengkel. Rangkaian pengisian angin dan pelumasan menjangkau lebih jauh — peralatan yang sama dipakai di SPBU, depo, pabrik, dan area tambang.",
     "Tyre changers, wheel balancers and 3D wheel alignment.": "Tyre changer, wheel balancer, dan spooring roda 3D.",
     "View products": "Lihat produk",
+    /* Products & Services page: the catalogue was restyled and its heading,
+       kicker and per-card link text all changed. Each card names what it
+       leads to now, where every card used to say "View products". */
+    "Products & services": "Produk & Layanan",
+    "Our product range": "Rangkaian produk kami",
+    "View tyre service equipment": "Lihat peralatan layanan ban",
+    "View inflators": "Lihat pengisi angin",
+    "View lifts & handling": "Lihat lift & penanganan",
+    "View service equipment": "Lihat peralatan servis",
+    "View fluid handling": "Lihat penanganan fluida",
+    "View welding machines": "Lihat mesin las",
+    /* Airtec range heading: was "Eight inflators." */
+    "Digital tyre inflators.": "Pengisi angin ban digital.",
     "Tyre Inflation": "Pengisian Angin Ban",
     "Digital inflators — machine-mounted, high flow, high pressure and temperature compensating.": "Pengisi angin digital — terpasang pada mesin, aliran tinggi, tekanan tinggi, dan berkompensasi suhu.",
     "Scissor, two-post and four-post lifts, 3.5 to 4 tonnes.": "Scissor lift, lift dua tiang, dan lift empat tiang, 3,5 hingga 4 ton.",
