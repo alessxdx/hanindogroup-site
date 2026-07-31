@@ -215,7 +215,11 @@
     "BrainBee gas and smoke analysers": "Penganalisis gas dan asap BrainBee",
     "RAASM service module": "Modul servis RAASM",
     "AIRTEC 89 BEP tyre inflator": "Pengisi angin ban AIRTEC 89 BEP",
-    /* scope lines */
+    /* Scope lines. NOT on the page at the moment: the deck sets the customer
+       and the title over the photograph and has no room for a sentence under
+       it. Kept because they are written and translated, and an unmatched
+       entry costs nothing — DICT is only ever read, never walked against the
+       page. Put the <p> back in the deck and these light up again. */
     "A full line of ATOM two-post lifts supplied and installed across the service bays of a Toyota dealer workshop.": "Satu lini penuh lift dua tiang ATOM yang dipasok dan dipasang di seluruh service bay bengkel dealer Toyota.",
     "RAASM reels, meters and dispensing points built into a bulk lubrication bay for Sefas.": "Reel, meteran, dan titik dispensing RAASM yang dibangun dalam area pelumasan curah untuk Sefas.",
     "An HPA-Faip C880 wheel alignment system and scissor lifts for a Nissan dealer workshop.": "Sistem spooring roda HPA-Faip C880 dan scissor lift untuk bengkel dealer Nissan.",

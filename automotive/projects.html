@@ -12,67 +12,58 @@
 <link rel="stylesheet" href="../assets/site.css?v=202607312230" />
 <style>
 /* ---------- PROJECT DECKS ----------
-   One project is one deck: the lead photo face up with the rest of the set
-   stacked behind it, and a count so the reader knows there is more before
-   they click. Deliberately lighter than the Fire Fighting projects page —
-   no equipment tables, no dates, no drill-down page. A photo, a sector and
-   one line of scope.
+   One project is one photograph, with the customer and the job set on the
+   image itself. No card, no border, no shadow, no stack behind it.
 
-   Each deck carries data-base and data-count and nothing else. The viewer
-   builds its own filenames from those, following the convention in
-   PHOTOS-NEEDED.txt: <base>-1.jpg is the lead, then -2, -3 and so on. So
-   adding a photo to a project means dropping the file in and changing one
-   number, with no new markup. */
-/* Columns are capped as well as floored. With 1fr a single project stretches
-   to the full 1200px wrap and a lone deck reads as a hero banner rather than
-   one of a set; the cap keeps every project the same size whether there are
-   two on the page or twenty.
+   Two reasons for putting the words on the photo rather than under it.
+   Every deck becomes an identical rectangle, so ten of them line up — the
+   version before this had a stepped edge from the stack and titles that
+   wrapped to one line or two, and card heights varied by 21px across the
+   grid. And the wash evens out photographs taken on different sites in
+   different light, which is the honest problem with this set.
 
-   The cap is 239px, which is what fits FOUR across: the wrap gives this grid
-   1072px of usable width on a desktop and the gap takes 38px of it three
-   times, so (1072 - 114) / 4 = 239. Anything wider silently drops to three
-   across and the cards grow again. Recompute this if the gap changes. */
-.decks{display:grid;gap:clamp(1.4rem,3vw,2.6rem);justify-content:start;
-  grid-template-columns:repeat(auto-fit,minmax(210px,239px));margin-top:2.2rem}
-/* On a phone there is only ever one column, and the 239px cap then leaves a
-   third of the screen empty to the right of every card. Let it fill instead
-   — the cap exists to stop cards ballooning on a desktop, not to shrink them
-   where there is nothing to balloon against. */
+   Deliberately restrained, because the rest of the site is:
+     - weight 700, not 800. site.css uses 800 exactly twice and 700 forty
+       times, so 800 here read as someone else's page
+     - var(--r) corners on the badge. Nothing on this site is a pill;
+       border-radius:100px appears nowhere in site.css
+     - the wash is three stops and stops well short of the top. A heavier
+       gradient turns a workshop photo into a poster
+     - hover lifts the image 1.03, matching .tile in site.css, over .35s.
+       Anything longer reads as an effect rather than a response
+
+   The scope sentence that used to sit under each card has gone: there is
+   no room for it here. Its dictionary entries are kept — see the note in
+   translate.js — so it costs nothing to put back. */
+/* 242px is the widest that still fits four across: the grid gets 1072px on a
+   desktop and the 32px gap takes three bites out of it, so (1072 - 96) / 4 =
+   244. Recompute this if the gap changes — at 248 it silently fell back to
+   three across and the cards grew again. */
+.decks{display:grid;gap:clamp(1.4rem,2.6vw,2rem);justify-content:start;
+  grid-template-columns:repeat(auto-fit,minmax(210px,242px));margin-top:2.2rem}
 @media(max-width:640px){.decks{grid-template-columns:1fr}}
-/* The pile sits OUTSIDE the front card, so the deck has to give up room on
-   the right for it or it pushes the page sideways — the one layout bug that
-   ruins a phone. 26px covers the hover spread as well as the resting offset.
-   It is a bigger share of a 239px column than it was of a 330px one, which
-   is why the offsets below came down with the cards. */
-.deck{position:relative;display:block;width:auto;margin-right:26px;padding:0;border:0;
-  background:none;cursor:pointer;text-align:left;-webkit-tap-highlight-color:transparent}
-.deck .card{position:absolute;inset:0;border-radius:var(--r);overflow:hidden;
-  border:3px solid #fff;box-shadow:0 8px 22px -10px rgba(4,32,58,.5);
-  transition:transform .28s cubic-bezier(.2,.7,.3,1)}
-.deck .front{position:relative;z-index:3;aspect-ratio:4/3}
-.deck .card img{width:100%;height:100%;object-fit:cover;display:block}
-/* The two behind are decorative: they only have to read as "more photos".
-   They reuse the 2nd and 3rd files rather than being empty panels, so the
-   pile looks like the actual set rather than grey card stock. */
-.deck .b1{z-index:2;transform:translate(7px,7px) scale(.985)}
-.deck .b2{z-index:1;transform:translate(14px,14px) scale(.97)}
-.deck:hover .b1,.deck:focus-visible .b1{transform:translate(11px,10px) scale(.985)}
-.deck:hover .b2,.deck:focus-visible .b2{transform:translate(22px,20px) scale(.97)}
-.deck:focus-visible{outline:3px solid var(--brand);outline-offset:6px}
-.deck .more{position:absolute;right:10px;bottom:10px;z-index:4;background:rgba(4,32,58,.86);
-  color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.06em;padding:.35rem .65rem;
-  border-radius:100px;display:flex;align-items:center;gap:.35rem}
-.deck .more svg{width:13px;height:13px;fill:none;stroke:#fff;stroke-width:2}
-/* Clear of the pile, which hangs about 20px below the front card on hover.
-   Type steps down with the cards: at 239px wide a 1.08rem heading ran to
-   three lines on half the projects and the block read heavier than the
-   photograph above it. */
-.dmeta{margin-top:1.9rem}
-/* The customer, not the sector. A reader scanning this page is looking for
-   a name they recognise, and the sector is already in the line below. */
-.dmeta .sect{font-size:.66rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--brand-600)}
-.dmeta h3{font-size:.98rem;font-weight:800;margin:.18rem 0 .28rem;color:var(--ink);line-height:1.35}
-.dmeta p{margin:0;font-size:.84rem;line-height:1.5;color:var(--muted);max-width:46ch}
+.deck{position:relative;display:block;width:100%;padding:0;border:0;cursor:pointer;
+  text-align:left;background:var(--blue-950);border-radius:var(--r);overflow:hidden;
+  -webkit-tap-highlight-color:transparent}
+.deck img{display:block;width:100%;height:100%;aspect-ratio:4/3;object-fit:cover;
+  transition:transform .35s ease}
+.deck:hover img,.deck:focus-visible img{transform:scale(1.03)}
+.deck:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+.deck .wash{position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(4,32,58,.86) 0%,rgba(4,32,58,.34) 42%,rgba(4,32,58,0) 74%)}
+.deck .lbl{position:absolute;left:0;right:0;bottom:0;padding:.8rem .85rem}
+.deck .cust{display:block;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;
+  font-weight:700;color:var(--sky)}
+/* Clamped to two lines so every deck is the same height whatever the title
+   runs to. min-height holds the space even for the one-line ones, which is
+   what keeps the row of customers underneath on a single baseline. */
+.deck .ttl{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
+  overflow:hidden;margin-top:.2rem;font-size:.9rem;font-weight:700;color:#fff;
+  line-height:1.34;min-height:2.68em}
+.deck .more{position:absolute;top:8px;right:8px;display:flex;align-items:center;gap:.3rem;
+  background:rgba(4,32,58,.72);color:#fff;font-size:.64rem;font-weight:700;
+  letter-spacing:.04em;padding:.24rem .45rem;border-radius:var(--r)}
+.deck .more svg{width:12px;height:12px;fill:none;stroke:#fff;stroke-width:2}
 
 /* ---------- VIEWER ----------
    object-fit:contain, not cover: this set mixes landscape and portrait, and
@@ -171,15 +162,16 @@
     </div>
     <!-- To add a project: copy one .deck block, point data-base at the new
          filename stem in /photos/automotive/projects/, set data-count to how
-         many photos it has, and update the three lines under it plus the
-         badge and the aria-label.
+         many photos it has, and update the customer, the title, the badge,
+         the alt text and the aria-label. The photo shown is always the -1
+         of the set.
 
-         The pile behind is drawn from the set itself: .b1 takes the 2nd
-         photo, .b2 the 3rd. So a two-photo project carries .b1 only, and a
-         one-photo project carries neither and reads as a single photo —
-         see AIRTEC at the end. The badge stays either way, because it is
-         also the only cue that the card opens at all. -->
-    <!-- Ordered strongest first rather than by date. Nothing here implies a
+         Everything inside the button is phrasing content — spans and an img,
+         no divs or headings — because that is what a <button> is allowed to
+         contain. The old markup nested divs in here and browsers tolerated
+         it; there is no reason to keep doing that.
+
+         Ordered strongest first rather than by date. Nothing here implies a
          ranking of clients; it is a portfolio, so the photographs that show
          the most lead. -->
     <div class="decks">
@@ -187,155 +179,111 @@
         <button class="deck" type="button"
                 data-base="atom-lift-toyota" data-count="4"
                 data-title="ATOM two-post lifts &mdash; Toyota dealer workshop"
-                aria-label="View all 4 photos of the Toyota dealer workshop project">
-          <div class="card b2" aria-hidden="true"><img src="../photos/automotive/projects/atom-lift-toyota-3.jpg" alt="" loading="lazy" /></div>
-          <div class="card b1" aria-hidden="true"><img src="../photos/automotive/projects/atom-lift-toyota-2.jpg" alt="" loading="lazy" /></div>
-          <div class="card front"><img src="../photos/automotive/projects/atom-lift-toyota-1.jpg" alt="A row of ATOM two-post lifts installed across the service bays of a Toyota dealer workshop" loading="lazy" /></div>
-          <span class="more"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>4 photos</span>
+                aria-label="Toyota — ATOM two-post lifts. View all 4 photos.">
+          <img src="../photos/automotive/projects/atom-lift-toyota-1.jpg" alt="A row of ATOM two-post lifts installed across the service bays of a Toyota dealer workshop" loading="lazy" />
+          <span class="wash"></span>
+          <span class="more"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>4 photos</span>
+          <span class="lbl"><span class="cust">Toyota</span><span class="ttl">ATOM two-post lifts</span></span>
         </button>
-        <div class="dmeta">
-          <span class="sect">Toyota</span>
-          <h3>ATOM two-post lifts</h3>
-          <p>A full line of ATOM two-post lifts supplied and installed across the service bays of a Toyota dealer workshop.</p>
-        </div>
       </div>
       <div class="reveal">
         <button class="deck" type="button"
                 data-base="raasm-sefas" data-count="4"
                 data-title="RAASM lubrication systems &mdash; Sefas"
-                aria-label="View all 4 photos of the Sefas lubrication project">
-          <div class="card b2" aria-hidden="true"><img src="../photos/automotive/projects/raasm-sefas-3.jpg" alt="" loading="lazy" /></div>
-          <div class="card b1" aria-hidden="true"><img src="../photos/automotive/projects/raasm-sefas-2.jpg" alt="" loading="lazy" /></div>
-          <div class="card front"><img src="../photos/automotive/projects/raasm-sefas-1.jpg" alt="A row of RAASM hose reels and metered dispensing points fitted above bulk oil tanks in a lubrication bay" loading="lazy" /></div>
-          <span class="more"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>4 photos</span>
+                aria-label="Sefas — RAASM lubrication systems. View all 4 photos.">
+          <img src="../photos/automotive/projects/raasm-sefas-1.jpg" alt="A row of RAASM hose reels and metered dispensing points fitted above bulk oil tanks in a lubrication bay" loading="lazy" />
+          <span class="wash"></span>
+          <span class="more"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>4 photos</span>
+          <span class="lbl"><span class="cust">Sefas</span><span class="ttl">RAASM lubrication systems</span></span>
         </button>
-        <div class="dmeta">
-          <span class="sect">Sefas</span>
-          <h3>RAASM lubrication systems</h3>
-          <p>RAASM reels, meters and dispensing points built into a bulk lubrication bay for Sefas.</p>
-        </div>
       </div>
       <div class="reveal">
         <button class="deck" type="button"
                 data-base="hpafaip-nissan" data-count="2"
                 data-title="HPA-Faip alignment and lifts &mdash; Nissan dealer workshop"
-                aria-label="View both photos of the Nissan dealer workshop project">
-          <div class="card b1" aria-hidden="true"><img src="../photos/automotive/projects/hpafaip-nissan-2.jpg" alt="" loading="lazy" /></div>
-          <div class="card front"><img src="../photos/automotive/projects/hpafaip-nissan-1.jpg" alt="An HPA-Faip C880 wheel alignment column newly installed above a scissor lift in a Nissan dealer workshop" loading="lazy" /></div>
-          <span class="more"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>2 photos</span>
+                aria-label="Nissan — HPA-Faip alignment and lifts. View both photos.">
+          <img src="../photos/automotive/projects/hpafaip-nissan-1.jpg" alt="An HPA-Faip C880 wheel alignment column newly installed above a scissor lift in a Nissan dealer workshop" loading="lazy" />
+          <span class="wash"></span>
+          <span class="more"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>2 photos</span>
+          <span class="lbl"><span class="cust">Nissan</span><span class="ttl">HPA-Faip alignment and lifts</span></span>
         </button>
-        <div class="dmeta">
-          <span class="sect">Nissan</span>
-          <h3>HPA-Faip alignment and lifts</h3>
-          <p>An HPA-Faip C880 wheel alignment system and scissor lifts for a Nissan dealer workshop.</p>
-        </div>
       </div>
       <div class="reveal">
         <button class="deck" type="button"
                 data-base="hpafaip-daihatsu" data-count="3"
                 data-title="HPA-Faip wheel alignment &mdash; Daihatsu dealer workshop"
-                aria-label="View all 3 photos of the Daihatsu dealer workshop project">
-          <div class="card b2" aria-hidden="true"><img src="../photos/automotive/projects/hpafaip-daihatsu-3.jpg" alt="" loading="lazy" /></div>
-          <div class="card b1" aria-hidden="true"><img src="../photos/automotive/projects/hpafaip-daihatsu-2.jpg" alt="" loading="lazy" /></div>
-          <div class="card front"><img src="../photos/automotive/projects/hpafaip-daihatsu-1.jpg" alt="A van raised on an HPA-Faip scissor lift beside a C880 alignment column in a Daihatsu dealer workshop" loading="lazy" /></div>
-          <span class="more"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>3 photos</span>
+                aria-label="Daihatsu — HPA-Faip wheel alignment. View all 3 photos.">
+          <img src="../photos/automotive/projects/hpafaip-daihatsu-1.jpg" alt="A van raised on an HPA-Faip scissor lift beside a C880 alignment column in a Daihatsu dealer workshop" loading="lazy" />
+          <span class="wash"></span>
+          <span class="more"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>3 photos</span>
+          <span class="lbl"><span class="cust">Daihatsu</span><span class="ttl">HPA-Faip wheel alignment</span></span>
         </button>
-        <div class="dmeta">
-          <span class="sect">Daihatsu</span>
-          <h3>HPA-Faip wheel alignment</h3>
-          <p>HPA-Faip C880 wheel alignment and lifting equipment for a Daihatsu dealer workshop.</p>
-        </div>
       </div>
       <div class="reveal">
         <button class="deck" type="button"
                 data-base="raasm-lubetruck" data-count="3"
                 data-title="RAASM lube truck &mdash; Primacon"
-                aria-label="View all 3 photos of the Primacon lube truck project">
-          <div class="card b2" aria-hidden="true"><img src="../photos/automotive/projects/raasm-lubetruck-3.jpg" alt="" loading="lazy" /></div>
-          <div class="card b1" aria-hidden="true"><img src="../photos/automotive/projects/raasm-lubetruck-2.jpg" alt="" loading="lazy" /></div>
-          <div class="card front"><img src="../photos/automotive/projects/raasm-lubetruck-1.jpg" alt="A lube truck built on a Hino chassis, fitted with bulk tanks and a RAASM dispensing compartment" loading="lazy" /></div>
-          <span class="more"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>3 photos</span>
+                aria-label="Primacon — RAASM lube truck. View all 3 photos.">
+          <img src="../photos/automotive/projects/raasm-lubetruck-1.jpg" alt="A lube truck built on a Hino chassis, fitted with bulk tanks and a RAASM dispensing compartment" loading="lazy" />
+          <span class="wash"></span>
+          <span class="more"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>3 photos</span>
+          <span class="lbl"><span class="cust">Primacon</span><span class="ttl">RAASM lube truck</span></span>
         </button>
-        <div class="dmeta">
-          <span class="sect">Primacon</span>
-          <h3>RAASM lube truck</h3>
-          <p>A lube truck built and fitted out with RAASM tanks, reels and dispensing for Primacon.</p>
-        </div>
       </div>
       <div class="reveal">
         <button class="deck" type="button"
                 data-base="hpafaip-dunlop" data-count="1"
                 data-title="HPA-Faip alignment and tyre bay &mdash; Dunlop tyre shop"
-                aria-label="View the photo of the Dunlop tyre shop project">
-          <div class="card front"><img src="../photos/automotive/projects/hpafaip-dunlop-1.jpg" alt="An HPA-Faip C800 wheel alignment system installed in the service bay of a Dunlop tyre shop" loading="lazy" /></div>
-          <span class="more"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>1 photo</span>
+                aria-label="Dunlop — HPA-Faip alignment and tyre bay. View the photo.">
+          <img src="../photos/automotive/projects/hpafaip-dunlop-1.jpg" alt="An HPA-Faip C800 wheel alignment system installed in the service bay of a Dunlop tyre shop" loading="lazy" />
+          <span class="wash"></span>
+          <span class="more"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>1 photo</span>
+          <span class="lbl"><span class="cust">Dunlop</span><span class="ttl">HPA-Faip alignment and tyre bay</span></span>
         </button>
-        <div class="dmeta">
-          <span class="sect">Dunlop</span>
-          <h3>HPA-Faip alignment and tyre bay</h3>
-          <p>An HPA-Faip C800 alignment system and tyre-changing equipment for a Dunlop tyre shop.</p>
-        </div>
       </div>
       <div class="reveal">
         <button class="deck" type="button"
                 data-base="raasm-oildrainer" data-count="2"
                 data-title="RAASM oil drainers &mdash; Toyota service outlet"
-                aria-label="View both photos of the Toyota service outlet project">
-          <div class="card b1" aria-hidden="true"><img src="../photos/automotive/projects/raasm-oildrainer-2.jpg" alt="" loading="lazy" /></div>
-          <div class="card front"><img src="../photos/automotive/projects/raasm-oildrainer-1.jpg" alt="A RAASM mobile oil drainer standing ready in the service bay of a Toyota outlet" loading="lazy" /></div>
-          <span class="more"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>2 photos</span>
+                aria-label="Toyota — RAASM oil drainers. View both photos.">
+          <img src="../photos/automotive/projects/raasm-oildrainer-1.jpg" alt="A RAASM mobile oil drainer standing ready in the service bay of a Toyota outlet" loading="lazy" />
+          <span class="wash"></span>
+          <span class="more"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>2 photos</span>
+          <span class="lbl"><span class="cust">Toyota</span><span class="ttl">RAASM oil drainers</span></span>
         </button>
-        <div class="dmeta">
-          <span class="sect">Toyota</span>
-          <h3>RAASM oil drainers</h3>
-          <p>RAASM mobile oil drainers and dispensing units for a Toyota service outlet.</p>
-        </div>
       </div>
       <div class="reveal">
         <button class="deck" type="button"
                 data-base="brainbee-lng" data-count="3"
                 data-title="BrainBee gas and smoke analysers &mdash; LNG plant, Bontang"
-                aria-label="View all 3 photos of the LNG plant project">
-          <div class="card b2" aria-hidden="true"><img src="../photos/automotive/projects/brainbee-lng-3.jpg" alt="" loading="lazy" /></div>
-          <div class="card b1" aria-hidden="true"><img src="../photos/automotive/projects/brainbee-lng-2.jpg" alt="" loading="lazy" /></div>
-          <div class="card front"><img src="../photos/automotive/projects/brainbee-lng-1.jpg" alt="The site team with a BrainBee AGS-688 gas analyser after commissioning at an LNG plant" loading="lazy" /></div>
-          <span class="more"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>3 photos</span>
+                aria-label="LNG Bontang — BrainBee gas and smoke analysers. View all 3 photos.">
+          <img src="../photos/automotive/projects/brainbee-lng-1.jpg" alt="The site team with a BrainBee AGS-688 gas analyser after commissioning at an LNG plant" loading="lazy" />
+          <span class="wash"></span>
+          <span class="more"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>3 photos</span>
+          <span class="lbl"><span class="cust">LNG Bontang</span><span class="ttl">BrainBee gas and smoke analysers</span></span>
         </button>
-        <div class="dmeta">
-          <span class="sect">LNG Bontang</span>
-          <h3>BrainBee gas and smoke analysers</h3>
-          <p>BrainBee gas and smoke analysers supplied, commissioned and handed over at the LNG plant in Bontang.</p>
-        </div>
       </div>
       <div class="reveal">
         <button class="deck" type="button"
                 data-base="raasm-intraco" data-count="2"
                 data-title="RAASM service module &mdash; Intraco, Balikpapan"
-                aria-label="View both photos of the Intraco service module project">
-          <div class="card b1" aria-hidden="true"><img src="../photos/automotive/projects/raasm-intraco-2.jpg" alt="" loading="lazy" /></div>
-          <div class="card front"><img src="../photos/automotive/projects/raasm-intraco-1.jpg" alt="A RAASM lubrication service module built onto a pickup, with compressor, hose reels and dispensing" loading="lazy" /></div>
-          <span class="more"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>2 photos</span>
+                aria-label="Intraco — RAASM service module. View both photos.">
+          <img src="../photos/automotive/projects/raasm-intraco-1.jpg" alt="A RAASM lubrication service module built onto a pickup, with compressor, hose reels and dispensing" loading="lazy" />
+          <span class="wash"></span>
+          <span class="more"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>2 photos</span>
+          <span class="lbl"><span class="cust">Intraco</span><span class="ttl">RAASM service module</span></span>
         </button>
-        <div class="dmeta">
-          <span class="sect">Intraco</span>
-          <h3>RAASM service module</h3>
-          <p>A RAASM lubrication service module built onto a pickup for Intraco in Balikpapan.</p>
-        </div>
       </div>
-      <!-- One photo, so no pile behind it and the badge reads singular. -->
       <div class="reveal">
         <button class="deck" type="button"
                 data-base="airtec-total" data-count="1"
                 data-title="AIRTEC 89 BEP tyre inflator &mdash; Total service station"
-                aria-label="View the photo of the Total service station project">
-          <div class="card front"><img src="../photos/automotive/projects/airtec-total-1.jpg" alt="An AIRTEC 89 BEP digital tyre inflator installed on the forecourt of a Total service station" loading="lazy" /></div>
-          <span class="more"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>1 photo</span>
+                aria-label="Total — AIRTEC 89 BEP tyre inflator. View the photo.">
+          <img src="../photos/automotive/projects/airtec-total-1.jpg" alt="An AIRTEC 89 BEP digital tyre inflator installed on the forecourt of a Total service station" loading="lazy" />
+          <span class="wash"></span>
+          <span class="more"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>1 photo</span>
+          <span class="lbl"><span class="cust">Total</span><span class="ttl">AIRTEC 89 BEP tyre inflator</span></span>
         </button>
-        <div class="dmeta">
-          <span class="sect">Total</span>
-          <h3>AIRTEC 89 BEP tyre inflator</h3>
-          <p>An AIRTEC 89 BEP digital tyre inflator installed on the forecourt of a Total service station.</p>
-        </div>
       </div>
     </div>
   </div>
@@ -462,6 +410,6 @@ function hsearch(f){var q=(f.q.value||'').trim();if(!q)return false;window.open(
   });
 })();
 </script>
-<script src="translate.js?v=202607312320"></script>
+<script src="translate.js?v=202608010030"></script>
 </body>
 </html>
