@@ -75,13 +75,17 @@
 
     /* ---- customer wall bands ---- */
     "Customer base": "Basis pelanggan",
-    "Retail": "Ritel",
-    "Automotive manufacture": "Manufaktur otomotif",
-    "Production & plant": "Produksi & pabrik",
-    "Mining": "Pertambangan",
-    "Engineering & contracting": "Rekayasa & kontraktor",
-    "Forestry & agribusiness": "Kehutanan & agribisnis",
-    "Transport & ports": "Transportasi & pelabuhan",
+    /* EPC stays EPC in the Indonesian — it is what the trade says, and
+       spelling it out would leave a label nobody searches for. Same
+       reasoning as Automatic Tank Gauging above. */
+    "Oil & Gas (Downstream / Retail)": "Minyak & Gas (Hilir / Ritel)",
+    "Oil & Gas (Upstream / Exploration & Production)": "Minyak & Gas (Hulu / Eksplorasi & Produksi)",
+    "Automotive & Mobility": "Otomotif & Mobilitas",
+    "Energy & Utilities": "Energi & Utilitas",
+    "Engineering, Procurement & Construction (EPC)": "Rekayasa, Pengadaan & Konstruksi (EPC)",
+    "Mining & Mineral Extraction": "Pertambangan & Ekstraksi Mineral",
+    "Agroindustry & Plantations": "Agroindustri & Perkebunan",
+    "Logistics, Ports & Transportation": "Logistik, Pelabuhan & Transportasi",
 
     /* ---- home: fire fighting cross-link and contact ---- */
     "Also part of PT. Hanindo Citra": "Juga bagian dari PT. Hanindo Citra",
