@@ -223,28 +223,31 @@
     "ATOM two-post lifts": "Lift dua tiang ATOM",
     "ATOM midrise scissor lifts": "Lift gunting midrise ATOM",
     "HPA-Faip tyre changer and balancer": "Alat ganti ban dan balancer HPA-Faip",
-    /* "Tyre bay" is the whole three-machine set — aligner, balancer, changer —
-       which is what the trade means by it and what fits the card. Spelling all
-       three out ran past the two-line clamp. */
-    "WELDANN tyre bay and ATOM two-post lifts": "Area ban WELDANN dan lift dua tiang ATOM",
-    "WELDANN alignment and balancing, RAASM suction": "Spooring dan balancing WELDANN, suction RAASM",
+    /* "Tyre service" is the umbrella for a job with more than one of aligner,
+       balancer and changer. It is the site's own category name — the Products
+       & Services card of that name reads "Tyre changers, wheel balancers and
+       3D wheel alignment" — so it is a term the site already defines rather
+       than one invented for these cards. Spelling all three machines out ran
+       past the two-line clamp on the deck. */
+    "WELDANN tyre service and ATOM lifts": "Servis ban WELDANN dan lift ATOM",
+    "WELDANN tyre service and RAASM suction": "Servis ban WELDANN dan suction RAASM",
     "RAASM lubrication systems": "Sistem pelumasan RAASM",
-    "HPA-Faip alignment and lifts": "Spooring dan lift HPA-Faip",
+    "HPA-Faip wheel aligner and scissor lifts": "Spooring roda dan scissor lift HPA-Faip",
     /* "Spooring dan balancing" rather than a literal translation: that is the
        phrase Indonesian workshops put on their own signage, so it is what a
        reader is looking for. The deck was "HPA-Faip wheel alignment" until a
        fourth photo showed the B 45 balancer on the same job. */
-    "HPA-Faip alignment and balancing": "Spooring dan balancing HPA-Faip",
+    "HPA-Faip wheel aligner and balancer": "Spooring roda dan balancer HPA-Faip",
     "RAASM lube truck": "Truk pelumas RAASM",
-    "HPA-Faip alignment and tyre bay": "Spooring dan area ban HPA-Faip",
+    "HPA-Faip tyre service": "Servis ban HPA-Faip",
     /* Model number stays as it is printed on the machine — M 928 Royal is a
        name, not words, the same rule the principals get at the top of this
        file. Only "tyre changer" is translated. */
-    "HPA-Faip M 928 tyre changer": "Alat ganti ban HPA-Faip M 928",
+    "HPA-Faip tyre changer": "Alat ganti ban HPA-Faip",
     "RAASM oil drainers": "Penampung oli bekas RAASM",
     "BrainBee gas and smoke analysers": "Penganalisis gas dan asap BrainBee",
     "RAASM service module": "Modul servis RAASM",
-    "AIRTEC 89 BEP tyre inflator": "Pengisi angin ban AIRTEC 89 BEP",
+    "AIRTEC tyre inflator": "Pengisi angin ban AIRTEC",
     /* Scope lines. NOT on the page at the moment: the deck sets the customer
        and the title over the photograph and has no room for a sentence under
        it. Kept because they are written and translated, and an unmatched
