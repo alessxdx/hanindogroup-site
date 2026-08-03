@@ -296,11 +296,11 @@
           <div class="w a3 reveal"><img src="../photos/customers/united-tractors.png" alt="PT United Tractors Tbk" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT United Tractors Tbk</span></div>
           <div class="w a3 reveal"><img src="../photos/customers/intraco-penta.png" alt="PT Intraco Penta Tbk (INTA)" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Intraco Penta Tbk (INTA)</span></div>
           <div class="w a7 reveal"><img src="../photos/customers/petrosea.png" alt="PT Petrosea Tbk" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Petrosea Tbk</span></div>
-          <!-- Logo file not supplied yet, so this cell falls back to the name.
-               Drop primacon.png into /photos/customers/ and it appears; the
-               aN class then has to be set from its real aspect ratio, which
-               is why it carries the middle bucket for now. -->
-          <div class="w a5 reveal"><img src="../photos/customers/primacon.png" alt="Primacon" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Primacon</span></div>
+          <!-- The supplied file is a JPEG on a white ground, not a cut-out. It
+               passes because this wall is .paper, and site.css multiplies logo
+               images on paper walls, so white drops out. Do not move this cell
+               to a white section without cutting the file out first. -->
+          <div class="w a5 reveal"><img src="../photos/customers/primacon.jpg" alt="Primacon" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Primacon</span></div>
         </div>
       </div>
       <!-- Neither of these is automotive, which is why they get their own
@@ -311,8 +311,10 @@
         <span class="bandlab">Energy &amp; industry</span>
         <div class="tier">
           <div class="w a1 reveal"><img src="../photos/customers/total.png" alt="Total" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Total</span></div>
-          <!-- Logo file not supplied yet — see the note on Primacon above. -->
-          <div class="w a5 reveal"><img src="../photos/customers/lng-bontang.png" alt="LNG Bontang" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">LNG Bontang</span></div>
+          <!-- a1, not the a5 this cell held as a placeholder: the supplied mark
+               is the droplet stacked over the wordmark and comes out square at
+               1.02, which is the top bucket. -->
+          <div class="w a1 reveal"><img src="../photos/customers/lng-bontang.webp" alt="LNG Bontang" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">LNG Bontang</span></div>
         </div>
       </div>
     </div>
