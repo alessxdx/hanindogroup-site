@@ -232,7 +232,7 @@
     "WELDANN tyre service and ATOM lifts": "Servis ban WELDANN dan lift ATOM",
     "WELDANN tyre service and RAASM suction": "Servis ban WELDANN dan suction RAASM",
     "RAASM lubrication systems": "Sistem pelumasan RAASM",
-    "HPA-Faip wheel aligner and scissor lifts": "Spooring roda dan scissor lift HPA-Faip",
+    "HPA-Faip wheel aligner and ATOM lifts": "Spooring roda HPA-Faip dan lift ATOM",
     /* "Spooring dan balancing" rather than a literal translation: that is the
        phrase Indonesian workshops put on their own signage, so it is what a
        reader is looking for. The deck was "HPA-Faip wheel alignment" until a
