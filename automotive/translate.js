@@ -221,7 +221,11 @@
     "ATOM two-post lifts": "Lift dua tiang ATOM",
     "RAASM lubrication systems": "Sistem pelumasan RAASM",
     "HPA-Faip alignment and lifts": "Spooring dan lift HPA-Faip",
-    "HPA-Faip wheel alignment": "Spooring roda HPA-Faip",
+    /* "Spooring dan balancing" rather than a literal translation: that is the
+       phrase Indonesian workshops put on their own signage, so it is what a
+       reader is looking for. The deck was "HPA-Faip wheel alignment" until a
+       fourth photo showed the B 45 balancer on the same job. */
+    "HPA-Faip alignment and balancing": "Spooring dan balancing HPA-Faip",
     "RAASM lube truck": "Truk pelumas RAASM",
     "HPA-Faip alignment and tyre bay": "Spooring dan area ban HPA-Faip",
     /* Model number stays as it is printed on the machine — M 928 Royal is a
@@ -240,7 +244,7 @@
     "A full line of ATOM two-post lifts supplied and installed across the service bays of a Toyota dealer workshop.": "Satu lini penuh lift dua tiang ATOM yang dipasok dan dipasang di seluruh service bay bengkel dealer Toyota.",
     "RAASM reels, meters and dispensing points built into a bulk lubrication bay for Sefas.": "Reel, meteran, dan titik dispensing RAASM yang dibangun dalam area pelumasan curah untuk Sefas.",
     "An HPA-Faip C880 wheel alignment system and scissor lifts for a Nissan dealer workshop.": "Sistem spooring roda HPA-Faip C880 dan scissor lift untuk bengkel dealer Nissan.",
-    "HPA-Faip C880 wheel alignment and lifting equipment for a Daihatsu dealer workshop.": "Spooring roda HPA-Faip C880 dan peralatan pengangkat untuk bengkel dealer Daihatsu.",
+    "HPA-Faip C880 wheel alignment, a B 45 wheel balancer and lifting equipment for a Daihatsu dealer workshop.": "Spooring roda HPA-Faip C880, balancer roda B 45, dan peralatan pengangkat untuk bengkel dealer Daihatsu.",
     "A lube truck built and fitted out with RAASM tanks, reels and dispensing for Primacon.": "Truk pelumas yang dibangun dan dilengkapi tangki, reel, serta dispensing RAASM untuk Primacon.",
     "An HPA-Faip C800 alignment system and tyre-changing equipment for a Dunlop tyre shop.": "Sistem spooring HPA-Faip C800 dan peralatan ganti ban untuk toko ban Dunlop.",
     "An HPA-Faip M 928 Royal tyre changer supplied and installed at the Pro Motor Mercedes-Benz dealer workshop in Jakarta.": "Alat ganti ban HPA-Faip M 928 Royal yang dipasok dan dipasang di bengkel dealer Mercedes-Benz Pro Motor di Jakarta.",
