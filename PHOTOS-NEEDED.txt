@@ -423,8 +423,8 @@ The Automotive wall is complete: 34 cells, 34 marks, none falling back to
 text. The last two arrived 2026-08-03 and are the only files on this wall
 that are not cut-out PNGs.
 
-  primacon.jpg            Primacon — Fleet, distribution &      [COMPLETE]
-                          heavy equipment band. 3.66:1, so a5.
+  primacon.jpg            Primacon — Energy & industry band.    [COMPLETE]
+                          3.66:1, so a5.
   lng-bontang.webp        LNG Bontang — Energy & industry       [COMPLETE]
                           band. Droplet over wordmark, square
                           at 1.02, so a1 — NOT the a5 both
