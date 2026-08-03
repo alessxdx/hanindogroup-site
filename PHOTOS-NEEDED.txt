@@ -481,18 +481,37 @@ instead, using the real product shots already in /photos/automotive/products/,
 so no placeholder slots remain on that page.
 
 CATALOGUE CARD THUMBNAILS  (/automotive/products-services.html)
-The "What we offer" grid runs six cards. Four use a single product shot
-already in /photos/automotive/products/. The two new ones want the
-supplied lineup images — several units composited on white, the way
-citra-atg-lineup.png works on the Citra card. Both go in
-/photos/automotive/products/, ~800px wide, transparent or white,
-drawn 132px tall.
+The "What we offer" grid runs six cards. Three use a single product shot
+already in /photos/automotive/products/. The three others use lineup
+images — several units composited on white, the way citra-atg-lineup.png
+works on the Citra card. All go in /photos/automotive/products/, ~900px
+wide, on white (NOT transparent — .pcard.cutout .pbox is #ffffff and the
+product shots are white-backed too, so white reads seamless).
 
 airtec-lineup.png             The five Airtec inflators together
 raasm-lineup.png              RAASM drainers, reels and pumps together
+hpa-lineup.png                HPA-Faip M 54 tyre changer, C880 aligner
+                              and B 225 Evo balancer together
 
 airtec-lineup.png             [COMPLETE]
 raasm-lineup.png              [COMPLETE]
+hpa-lineup.png                [COMPLETE]
+
+hpa-lineup.png was built here on 2026-08-03 from the three product shots
+already on the Tyre Service page, not photographed: each was cropped to
+its content bounding box to drop the internal white margin, scaled so the
+drawn heights follow the real machines (aligner tallest, then changer,
+then balancer), stood on a common baseline and downscaled to 900px.
+
+Sizing note for any future lineup. The card's picture box gives 329x162
+at desktop, a ratio of 2.03. A single portrait shot is height-limited and
+leaves most of the width empty — which is why the Tyre Service card, on
+one C880, looked so sparse. Three machines side by side come out around
+2.3:1, so the image is width-limited instead and the machines draw about
+138px against the 162px a single product gets. That is the trade for
+showing three, and it is the right trade on a card whose own caption
+promises three. Do not pad the canvas to force 2.03; padding does not
+make the machines any bigger.
 
 AIRTEC PAGE  (/automotive/airtec/)
 Airtec had no products anywhere on the site before this page — unlike
