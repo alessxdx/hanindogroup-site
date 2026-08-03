@@ -224,6 +224,10 @@
     "HPA-Faip wheel alignment": "Spooring roda HPA-Faip",
     "RAASM lube truck": "Truk pelumas RAASM",
     "HPA-Faip alignment and tyre bay": "Spooring dan area ban HPA-Faip",
+    /* Model number stays as it is printed on the machine — M 928 Royal is a
+       name, not words, the same rule the principals get at the top of this
+       file. Only "tyre changer" is translated. */
+    "HPA-Faip M 928 tyre changer": "Alat ganti ban HPA-Faip M 928",
     "RAASM oil drainers": "Penampung oli bekas RAASM",
     "BrainBee gas and smoke analysers": "Penganalisis gas dan asap BrainBee",
     "RAASM service module": "Modul servis RAASM",
@@ -239,6 +243,7 @@
     "HPA-Faip C880 wheel alignment and lifting equipment for a Daihatsu dealer workshop.": "Spooring roda HPA-Faip C880 dan peralatan pengangkat untuk bengkel dealer Daihatsu.",
     "A lube truck built and fitted out with RAASM tanks, reels and dispensing for Primacon.": "Truk pelumas yang dibangun dan dilengkapi tangki, reel, serta dispensing RAASM untuk Primacon.",
     "An HPA-Faip C800 alignment system and tyre-changing equipment for a Dunlop tyre shop.": "Sistem spooring HPA-Faip C800 dan peralatan ganti ban untuk toko ban Dunlop.",
+    "An HPA-Faip M 928 Royal tyre changer supplied and installed at the Pro Motor Mercedes-Benz dealer workshop in Jakarta.": "Alat ganti ban HPA-Faip M 928 Royal yang dipasok dan dipasang di bengkel dealer Mercedes-Benz Pro Motor di Jakarta.",
     "RAASM mobile oil drainers and dispensing units for a Toyota service outlet.": "Penampung oli bekas mobile dan unit dispensing RAASM untuk outlet servis Toyota.",
     "BrainBee gas and smoke analysers supplied, commissioned and handed over at the LNG plant in Bontang.": "Penganalisis gas dan asap BrainBee yang dipasok, dioperasikan, dan diserahterimakan di kilang LNG Bontang.",
     "A RAASM lubrication service module built onto a pickup for Intraco in Balikpapan.": "Modul servis pelumasan RAASM yang dibangun di atas pikap untuk Intraco di Balikpapan.",
