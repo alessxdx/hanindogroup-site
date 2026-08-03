@@ -307,7 +307,7 @@ standard Red Jacket photo, since the two series share a body and the
 picture would look right while captioning a product it is not.
 
 CUSTOMER LOGOS
-The "Customer base" wall on /citra/index.html has 33 logo slots.
+The "Customer base" wall on /citra/index.html has 35 logo slots.
 They live in /photos/customers/ — NOT in /photos/ itself. Drop a PNG
 with the EXACT filename below and it appears; until then the cell shows
 the customer name on its own, which looks deliberate rather than
@@ -364,24 +364,14 @@ pertamina-retail.png          PT Pertamina Retail             [COMPLETE]
 rapp.png is the APRIL Group parent mark (the group RAPP operates under);
 swap for a dedicated RAPP leaf logo if one is obtained.
 
-STILL WANTED — two customers are OFF the wall for want of a logo
-(2026-08-03). Unlike the slots above, these have no cell in the HTML at
-all: the business named them as customers, but a name-only cell in a
-band where every neighbour is a logo reads as a mark that failed to
-load, so they wait for artwork instead. /citra/index.html carries a
-comment at each position saying where the cell goes.
+Supplied 2026-08-03 and now on the wall:
 
-vivo.png                      VIVO Energy Indonesia
-                              Downstream / Retail band, between BP-AKR
-                              and Shell.
-fluor-daniel.png              Fluor Daniel
-                              EPC band, between JGC and Leighton.
+vivo.png                      Vivo Energy Indonesia           [COMPLETE]
+fluor.png                     Fluor Daniel                    [COMPLETE]
 
-Same treatment as the rest: official logo, cut out to transparent,
-~400px wide. After dropping either in, add its <div class="w"> at the
-marked position — copy a neighbour's markup and change the src, alt and
-fallback name. Give it .sq if the mark is roughly square and .mid if it
-is a long wordmark; leave both off for an ordinary logo.
+vivo.png is the stacked lockup — bird above the wordmark, so it is
+square and carries .sq like Petronas. fluor.png is a plain wordmark at
+4.5:1 and carries no size class, like Shell and ExxonMobil.
 
 All 31 slots are filled. Agro Indomas and Mineral Alam Abadi logos were
 supplied by the business; Pertamina Retail was added later — the clean
