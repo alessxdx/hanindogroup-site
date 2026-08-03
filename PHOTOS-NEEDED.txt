@@ -327,7 +327,7 @@ adaro.png                     PT Adaro Indonesia              [COMPLETE]
 pertamina-patra-niaga.png     PT Pertamina Patra Niaga        [COMPLETE]
 interport.png                 PT Interport Mandiri Utama      [COMPLETE]
 indomobil-prima-energi.png    PT Indomobil Prima Energi       [COMPLETE]
-injourney-airports.png        Soekarno-Hatta (InJourney)      [COMPLETE]
+angkasa.jpeg                  Soekarno-Hatta (Angkasa Pura II)[COMPLETE]
 mrt-jakarta.png               PT MRT Jakarta                  [COMPLETE]
 jict.png                      Jakarta Intl Container Terminal [COMPLETE]
 chiyoda.png                   Chiyoda Corp — Freeport Smelter [COMPLETE]
@@ -372,6 +372,15 @@ fluor.png                     Fluor Daniel                    [COMPLETE]
 vivo.png is the stacked lockup — bird above the wordmark, so it is
 square and carries .sq like Petronas. fluor.png is a plain wordmark at
 4.5:1 and carries no size class, like Shell and ExxonMobil.
+
+angkasa.jpeg replaced injourney-airports.png in the same cell on the
+same day, at the business's request: the account is known by the
+airport operator's own mark rather than the InJourney parent brand.
+It is the one JPEG on the wall and has no alpha, so its white ground
+only disappears because the customer section is pure white — see the
+comment on the cell in /citra/index.html. A cut-out PNG would be better
+if one can be got. injourney-airports.png is now unused by any page but
+has been left in the folder.
 
 All 31 slots are filled. Agro Indomas and Mineral Alam Abadi logos were
 supplied by the business; Pertamina Retail was added later — the clean
@@ -755,8 +764,6 @@ airasia.png                   AirAsia                         [COMPLETE]
 burger-king.png               Burger King                     [COMPLETE]
 collins.png                   Collins Aerospace               [COMPLETE]
 daifuku.png                   Daifuku                         [COMPLETE]
-                              (injourney-airports.png is reused from the
-                              Citra wall — one file, both walls)
 pt-murni.png                  PT Murni                        [COMPLETE]
 strides.png                   Strides                         [COMPLETE]
 idemia.png                    IDEMIA                          [COMPLETE]
