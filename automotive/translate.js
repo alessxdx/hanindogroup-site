@@ -213,6 +213,7 @@
     "3 photos": "3 foto",
     "4 photos": "4 foto",
     "5 photos": "5 foto",
+    "6 photos": "6 foto",
     /* No sector entries here any more. The blue line on each deck is the
        CUSTOMER now, not the sector — Toyota, Sefas, Nissan and so on — and
        company names are deliberately left untranslated, as at the top of
@@ -221,6 +222,11 @@
     /* titles */
     "ATOM two-post lifts": "Lift dua tiang ATOM",
     "HPA-Faip tyre changer and balancer": "Alat ganti ban dan balancer HPA-Faip",
+    /* "Tyre bay" is the whole three-machine set — aligner, balancer, changer —
+       which is what the trade means by it and what fits the card. Spelling all
+       three out ran past the two-line clamp. */
+    "WELDANN tyre bay and ATOM two-post lifts": "Area ban WELDANN dan lift dua tiang ATOM",
+    "WELDANN alignment and balancing, RAASM suction": "Spooring dan balancing WELDANN, suction RAASM",
     "RAASM lubrication systems": "Sistem pelumasan RAASM",
     "HPA-Faip alignment and lifts": "Spooring dan lift HPA-Faip",
     /* "Spooring dan balancing" rather than a literal translation: that is the
@@ -245,6 +251,8 @@
        page. Put the <p> back in the deck and these light up again. */
     "A full line of ATOM two-post lifts supplied and installed across the service bays of a Toyota dealer workshop.": "Satu lini penuh lift dua tiang ATOM yang dipasok dan dipasang di seluruh service bay bengkel dealer Toyota.",
     "An HPA-Faip M 54 Bravo Line tyre changer and a B 225 Evo wheel balancer installed in a B-Quik outlet.": "Alat ganti ban HPA-Faip M 54 Bravo Line dan balancer roda B 225 Evo yang dipasang di gerai B-Quik.",
+    "A WELDANN 3D aligner, wheel balancer and tyre changer, with ATOM two-post lifts across the maintenance and EV bays of a new Chery dealer workshop.": "Spooring 3D, balancer roda, dan alat ganti ban WELDANN, dengan lift dua tiang ATOM di seluruh bay perawatan dan EV bengkel dealer Chery yang baru.",
+    "A WELDANN 3D wheel aligner and S 2228 balancer with a RAASM suction pantograph, supplied and commissioned at a Mobeng outlet.": "Spooring roda 3D dan balancer S 2228 WELDANN dengan pantograph suction RAASM, dipasok dan dioperasikan di gerai Mobeng.",
     "RAASM reels, meters and dispensing points built into a bulk lubrication bay for Sefas.": "Reel, meteran, dan titik dispensing RAASM yang dibangun dalam area pelumasan curah untuk Sefas.",
     "An HPA-Faip C880 wheel alignment system and scissor lifts for a Nissan dealer workshop.": "Sistem spooring roda HPA-Faip C880 dan scissor lift untuk bengkel dealer Nissan.",
     "HPA-Faip C880 wheel alignment, a B 45 wheel balancer and lifting equipment for a Daihatsu dealer workshop.": "Spooring roda HPA-Faip C880, balancer roda B 45, dan peralatan pengangkat untuk bengkel dealer Daihatsu.",
