@@ -75,7 +75,7 @@
     "China": "Tiongkok",
     ". For": ". Untuk",
     ", see": ", lihat",
-    ". For Singapore, Malaysia, Vietnam, the Philippines or Thailand, see": ". Untuk Singapura, Malaysia, Vietnam, Filipina, atau Thailand, lihat",
+    ". For the rest of South East Asia, see": ". Untuk kawasan Asia Tenggara lainnya, lihat",
 
     /* ---- footer ---- */
     "Our Companies": "Perusahaan Kami",
@@ -174,7 +174,7 @@
     "— Monday to Friday, 08.00 – 17.00 WIB": "— Senin – Jumat, 08.00 – 17.00 WIB",
     "Person in charge": "Penanggung jawab",
     "For": "Untuk",
-    "Singapore, Malaysia, Vietnam, the Philippines or Thailand": "Singapura, Malaysia, Vietnam, Filipina, atau Thailand",
+    "the rest of South East Asia": "kawasan Asia Tenggara lainnya",
     ", the same Custom range is supplied by": ", rangkaian Custom yang sama dipasok oleh",
 
     /* ---- projects page ----

@@ -75,7 +75,7 @@
     "Indonesia": "印度尼西亚",
     ". For": "。如需",
     ", see": "，请联系",
-    ". For Singapore, Malaysia, Vietnam, the Philippines or Thailand, see": "。如需新加坡、马来西亚、越南、菲律宾或泰国地区，请联系",
+    ". For South East Asia, see": "。如需东南亚地区，请联系",
 
     /* ---- footer ---- */
     "Our Companies": "集团公司",
@@ -185,7 +185,7 @@
     "The company also keeps a representative office in southern China:": "公司在华南地区还设有一个代表处：",
     "Representative office": "代表处",
     "For": "如需",
-    "Singapore, Malaysia, Vietnam, the Philippines or Thailand": "新加坡、马来西亚、越南、菲律宾或泰国",
+    "South East Asia": "东南亚",
     ", the same Custom range is supplied by": "，同样的 Custom 产品系列由",
 
     /* ---- misc ---- */
