@@ -185,7 +185,7 @@
     "Office hours": "Jam operasional",
     "— Monday to Friday, 08.00 – 17.00 SGT": "— Senin sampai Jumat, 08.00 – 17.00 SGT",
     "Enquiries are handled by market — write to the address for your country, or call the person named:": "Pertanyaan ditangani per pasar — kirim email ke alamat untuk negara Anda, atau hubungi orang yang tercantum:",
-    "Singapore, Malaysia & Vietnam": "Singapura, Malaysia & Vietnam",
+    "South East Asia (excluding Philippines, Thailand, Indonesia)": "Asia Tenggara (kecuali Filipina, Thailand, Indonesia)",
     "Philippines": "Filipina",
     "Thailand": "Thailand",
     "For": "Untuk",
