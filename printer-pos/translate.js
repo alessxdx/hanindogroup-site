@@ -82,7 +82,7 @@
     "Phone": "Telepon",
     "Email": "Email",
     "This contact handles": "Kontak ini menangani",
-    "Singapore, Malaysia and Vietnam": "Singapura, Malaysia, dan Vietnam",
+    "South East Asia (excluding Philippines, Thailand, Indonesia)": "Asia Tenggara (kecuali Filipina, Thailand, Indonesia)",
     ". For the Philippines or Thailand, see the": ". Untuk Filipina atau Thailand, lihat",
     "contact page": "halaman kontak",
     ". Indonesia is served by": ". Indonesia dilayani oleh",
@@ -185,7 +185,7 @@
     "Office hours": "Jam operasional",
     "— Monday to Friday, 08.00 – 17.00 SGT": "— Senin sampai Jumat, 08.00 – 17.00 SGT",
     "Enquiries are handled by market — write to the address for your country, or call the person named:": "Pertanyaan ditangani per pasar — kirim email ke alamat untuk negara Anda, atau hubungi orang yang tercantum:",
-    "South East Asia (excluding Philippines, Thailand, Indonesia)": "Asia Tenggara (kecuali Filipina, Thailand, Indonesia)",
+    /* The first market card reuses the region name from the mktnote block above. */
     "Philippines": "Filipina",
     "Thailand": "Thailand",
     "For": "Untuk",
