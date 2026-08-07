@@ -71,7 +71,6 @@
     "Supplies and installs signboards and lighting for fuel stations, with after-sales service for all equipment installed.": "Memasok dan memasang papan nama serta penerangan SPBU, dengan layanan purnajual untuk semua peralatan yang dipasang.",
     "What we supply": "Yang kami sediakan",
     "Partners & Principals": "Mitra & Prinsipal",
-    "Three of these we hold exclusively for Indonesia: Gilbarco Veeder-Root, Total Control Systems and ITL.": "Tiga di antaranya kami pegang secara eksklusif untuk Indonesia: Gilbarco Veeder-Root, Total Control Systems, dan ITL.",
 
     /* ---- customer wall bands ---- */
     "Customer base": "Basis pelanggan",
