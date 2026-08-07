@@ -123,7 +123,7 @@
     "Vision & Mission": "Visi & Misi",
     "01 / Vision": "01 / Visi",
     "Vision": "Visi",
-    "To remain the petroleum equipment partner Indonesian fuel retailers turn to first — for the equipment itself, and for the service that keeps it running long after commissioning.": "Tetap menjadi mitra peralatan perminyakan yang pertama dituju peritel bahan bakar Indonesia — baik untuk peralatannya sendiri maupun untuk layanan yang menjaganya tetap berjalan lama setelah commissioning.",
+    "To be Indonesia's trusted partner for petroleum equipment, delivering reliable solutions and dependable service throughout every stage of a fuel station's lifecycle.": "Menjadi mitra terpercaya Indonesia untuk peralatan perminyakan, menghadirkan solusi yang andal dan layanan yang dapat diandalkan di setiap tahap siklus hidup sebuah SPBU.",
     "02 / Mission": "02 / Misi",
     "Mission": "Misi",
     "Deliver efficient, optimal and targeted services while upholding professional standards and work commitment.": "Memberikan layanan yang efisien, optimal, dan tepat sasaran dengan menjunjung standar profesional serta komitmen kerja.",
