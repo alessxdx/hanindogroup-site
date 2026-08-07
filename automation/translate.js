@@ -98,7 +98,7 @@
     ", introducing the CUSTOM product line to Indonesia in 2012 as CUSTOM Hanindo Indonesia.": ", memperkenalkan lini produk CUSTOM ke Indonesia pada tahun 2012 sebagai CUSTOM Hanindo Indonesia.",
     "Today, Hanindo Automation Solutions focuses on CUSTOM printing, scanning and point-of-sale solutions, supported by local system integration and technical expertise. The oil and gas automation business was transferred to": "Saat ini, Hanindo Automation Solutions berfokus pada solusi pencetakan, pemindaian, dan point-of-sale CUSTOM, didukung integrasi sistem dan keahlian teknis lokal. Bisnis otomasi minyak dan gas dialihkan ke",
     ", where it continues alongside its petroleum equipment operations.": ", tempatnya berlanjut bersama operasi peralatan perminyakan perusahaan tersebut.",
-    "Indonesia’s Office": "Kantor Indonesia",
+    "Our Indonesia Office": "Kantor Kami di Indonesia",
 
     "Our journey": "Perjalanan kami",
     "CUSTOM HANINDO Growth": "Pertumbuhan CUSTOM HANINDO",
