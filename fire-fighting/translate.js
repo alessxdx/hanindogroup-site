@@ -82,6 +82,9 @@
     "Contact": "Hubungi",
     "Let's talk about": "Mari bicarakan",
     "your project.": "proyek Anda.",
+    "Planning, upgrading, or maintaining a fire system? Our team is ready to help.": "Merencanakan, meningkatkan, atau merawat sistem proteksi kebakaran? Tim kami siap membantu.",
+    /* The long original stays for hanindo-citra-website.html, which still
+       carries it and shares this dictionary. Delete with that page. */
     "Planning a new installation, upgrading an existing system, or need maintenance and testing? Our engineers are ready to help you protect what matters — reach us using the details below.": "Merencanakan instalasi baru, meningkatkan sistem yang ada, atau membutuhkan pemeliharaan dan pengujian? Para insinyur kami siap membantu Anda melindungi hal yang penting — hubungi kami melalui detail di bawah ini.",
 
     /* ---- contact page: other companies band ---- */
