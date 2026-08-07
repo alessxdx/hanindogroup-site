@@ -78,6 +78,218 @@
   }
 
   /* ------------------------------------------------------------------
+     Aliases
+
+     Expansion happens at query time, never at index time, so adding a
+     synonym here needs no rebuild of search-index.json.
+
+     This is the part fuzzy matching cannot do. "fcc" and "forecourt" are
+     nowhere near each other by edit distance; only a written-down mapping
+     connects them. Each entry was checked against the real index — every
+     one of them lands on the page it names.
+
+     A term matches its literal form OR its expansion, never the
+     expansion alone: "pos" is genuinely printed on the Gralessando pages,
+     so replacing it would lose real hits rather than add them.
+     ------------------------------------------------------------------ */
+  var ALIASES = {
+    /* trade abbreviations */
+    'fcc': 'forecourt controller',
+    'fc': 'forecourt controller',
+    'atg': 'automatic tank gauging',
+    'stp': 'submersible turbine pump',
+    'gvr': 'gilbarco veeder root',
+    'vr': 'veeder root',
+    'pos': 'point of sale',
+    'epos': 'point of sale',
+    'ffs': 'fire fighting system',
+
+    /* spelling and dialect. The site is written in British English
+       throughout — "tire" appears on none of the 49 pages, so without
+       this a visitor searching "tire service" gets nothing at all. */
+    'tire': 'tyre',
+    'tires': 'tyre',
+    'tyres': 'tyre',
+    'lube': 'lubrication',
+    'gauge': 'gauging',
+    'gauges': 'gauging',
+    'petrol': 'fuel',
+    'gasoline': 'fuel',
+
+    /* Indonesian. Mapping the term back to English and searching the
+       English index keeps page-level precision. Indexing the translate.js
+       dictionaries instead would not: they are per-section, so every
+       Citra page would match every Indonesian query. */
+    'pompa': 'pump',
+    'bensin': 'fuel',
+    'kebakaran': 'fire fighting',
+    'pemadam': 'fire fighting',
+    'hidran': 'hydrant',
+    'bengkel': 'workshop',
+    'otomotif': 'automotive',
+    'ban': 'tyre',
+    'las': 'welding',
+    'selang': 'hose',
+    'pencetak': 'printer',
+    'proyek': 'projects',
+    'tentang': 'about',
+    'kontak': 'contact'
+  };
+
+  /* Aliases whose literal form must NOT also be searched, because the
+     Indonesian word is a prefix of unrelated English words in this
+     content: "ban" hits bank, banking and Banten across 11 pages, "las"
+     hits "lasting". For these the alias replaces the term. */
+  var ALIAS_REPLACES = { 'ban': 1, 'las': 1 };
+
+  /* Literals matched as a whole word rather than as a substring. Scoring
+     is substring-based everywhere else, which is what makes "dispens"
+     find dispensers — but for a three-letter abbreviation it is a
+     liability: "pos" occurs inside position, positive, post, postal,
+     posting and purpose, which put Lifts & Handling above Gralessando.
+     Dropping the literal is not an option either, since POS is written
+     as a word on 20 pages and 11 of them never spell out "point of
+     sale". Any future two- or three-letter alias probably belongs here. */
+  var LITERAL_WHOLE_WORD = { 'pos': 1 };
+
+  /* ------------------------------------------------------------------
+     Typo tolerance
+
+     Aliases handle "fcc"; they cannot handle "forcourt". Those are
+     different problems — no mapping can be written for every possible
+     misspelling, and no edit distance can connect an abbreviation to the
+     words behind it. This is the second half.
+
+     The correction is made against a vocabulary built from the index, so
+     a typo is only ever rewritten to a word that genuinely appears on
+     the site. The rewritten word then goes through the same alternatives
+     machinery as an alias, which means scoring, snippets and
+     highlighting all work without knowing fuzzy exists.
+     ------------------------------------------------------------------ */
+
+  /* Distance budget by length. Short words are left alone deliberately:
+     at three letters almost everything is within one edit of everything
+     else, so "atg" would start matching "atm" and the abbreviations
+     above would become unreliable. */
+  function maxDist(term) {
+    if (term.length < 4) return 0;
+    if (term.length < 7) return 1;
+    return 2;
+  }
+
+  /* Levenshtein, abandoned as soon as every path exceeds the budget.
+     Without the early exit this is 5,000 full matrices per query. */
+  function editWithin(a, b, max) {
+    var la = a.length, lb = b.length, i, j;
+    if (Math.abs(la - lb) > max) return -1;
+
+    var prev = [], cur = [];
+    for (j = 0; j <= lb; j++) prev[j] = j;
+
+    for (i = 1; i <= la; i++) {
+      cur[0] = i;
+      var best = cur[0];
+      for (j = 1; j <= lb; j++) {
+        var cost = a.charCodeAt(i - 1) === b.charCodeAt(j - 1) ? 0 : 1;
+        var v = prev[j] + 1;
+        if (cur[j - 1] + 1 < v) v = cur[j - 1] + 1;
+        if (prev[j - 1] + cost < v) v = prev[j - 1] + cost;
+        cur[j] = v;
+        if (v < best) best = v;
+      }
+      if (best > max) return -1;
+      for (j = 0; j <= lb; j++) prev[j] = cur[j];
+    }
+    return prev[lb] <= max ? prev[lb] : -1;
+  }
+
+  var WORD_RE = /[a-z0-9À-ɏ]+/g;
+
+  /* Every distinct word on the site, built once per search. */
+  function buildVocab(index) {
+    var seen = {}, out = [], i, m;
+    for (i = 0; i < index.length; i++) {
+      var hay = (index[i].t + ' ' + (index[i].d || '') + ' ' + index[i].x).toLowerCase();
+      WORD_RE.lastIndex = 0;
+      while ((m = WORD_RE.exec(hay))) {
+        var w = m[0];
+        if (w.length > 2 && !seen[w]) { seen[w] = 1; out.push(w); }
+      }
+    }
+    return out;
+  }
+
+  /* A term that already appears somewhere is never second-guessed —
+     correcting a word that works is how fuzzy search earns its bad name. */
+  function inVocab(term, vocab) {
+    for (var i = 0; i < vocab.length; i++) {
+      if (vocab[i].indexOf(term) > -1) return true;
+    }
+    return false;
+  }
+
+  var MAX_FUZZY = 4;
+
+  function fuzzyFor(term, vocab) {
+    var max = maxDist(term);
+    if (!max) return [];
+
+    var found = [];
+    for (var i = 0; i < vocab.length; i++) {
+      var w = vocab[i];
+      var d = editWithin(term, w, max);
+      if (d < 0) continue;
+      /* A typo rarely changes the first letter, and requiring it removes
+         most of the nonsense a two-edit budget otherwise lets in. Single
+         edits are trusted without it, so "dispensor" and "orecourt" both
+         still correct. */
+      if (d > 1 && w.charAt(0) !== term.charAt(0)) continue;
+      found.push({ w: w, d: d });
+    }
+
+    found.sort(function (a, b) {
+      return a.d - b.d || Math.abs(a.w.length - term.length) - Math.abs(b.w.length - term.length);
+    });
+    return found.slice(0, MAX_FUZZY).map(function (f) { return f.w; });
+  }
+
+  /* Each query term becomes a list of alternatives, each alternative a
+     list of words that must all be present. Passing the vocabulary in
+     turns on typo correction for terms that match nothing as typed. */
+  function expand(ts, vocab) {
+    var groups = [], corrected = [], i;
+    for (i = 0; i < ts.length; i++) {
+      var t = ts[i], alts = [];
+      if (!ALIAS_REPLACES[t]) alts.push([t]);
+      if (ALIASES[t]) alts.push(ALIASES[t].split(' '));
+      if (!alts.length) alts.push([t]);
+
+      if (vocab && !ALIASES[t] && !inVocab(t, vocab)) {
+        var fuzzy = fuzzyFor(t, vocab);
+        for (var j = 0; j < fuzzy.length; j++) alts.push([fuzzy[j]]);
+        if (fuzzy.length) corrected.push({ from: t, to: fuzzy[0] });
+      }
+
+      groups.push(alts);
+    }
+    groups.corrected = corrected;
+    return groups;
+  }
+
+  /* Every word that could have caused a match, for highlighting. Someone
+     who searched "kebakaran" should see why "fire fighting" came back. */
+  function hlTerms(groups) {
+    var seen = {}, out = [], i, j, k;
+    for (i = 0; i < groups.length; i++)
+      for (j = 0; j < groups[i].length; j++)
+        for (k = 0; k < groups[i][j].length; k++) {
+          var w = groups[i][j][k];
+          if (!seen[w]) { seen[w] = 1; out.push(w); }
+        }
+    return out;
+  }
+
+  /* ------------------------------------------------------------------
      Scoring
 
      A page must contain every term to be a hit, which is what people
@@ -110,19 +322,51 @@
       .test(hay);
   }
 
-  function score(rec, ts, phrase) {
+  /* One word against one page. -1 means absent, which is different from
+     0 and has to stay distinguishable. */
+  function countWord(hay, needle) {
+    var re = new RegExp('(^|[^a-z0-9])' + needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+                        + '([^a-z0-9]|$)', 'g');
+    var n = 0;
+    while (re.exec(hay)) n++;
+    return n;
+  }
+
+  function wordScore(t, d, x, term) {
+    var c = LITERAL_WHOLE_WORD[term] ? countWord : count;
+    var inT = c(t, term), inD = c(d, term), inX = c(x, term);
+    if (!inT && !inD && !inX) return -1;
+    var s = inT * W_TITLE + inD * W_DESC + Math.min(inX, BODY_CAP) * W_BODY;
+    if (inT && wholeWord(t, term)) s += W_TITLE_WORD;
+    return s;
+  }
+
+  function score(rec, groups, phrase) {
     var t = rec.t.toLowerCase(), d = (rec.d || '').toLowerCase(), x = rec.x.toLowerCase();
     var total = 0, matchedAll = true;
 
-    for (var i = 0; i < ts.length; i++) {
-      var term = ts[i];
-      var inT = count(t, term), inD = count(d, term), inX = count(x, term);
-      if (!inT && !inD && !inX) { matchedAll = false; continue; }
-      total += inT * W_TITLE + inD * W_DESC + Math.min(inX, BODY_CAP) * W_BODY;
-      if (inT && wholeWord(t, term)) total += W_TITLE_WORD;
+    for (var i = 0; i < groups.length; i++) {
+      var alts = groups[i], best = -1;
+
+      for (var j = 0; j < alts.length; j++) {
+        var words = alts[j], sum = 0, ok = true;
+        for (var k = 0; k < words.length; k++) {
+          var ws = wordScore(t, d, x, words[k]);
+          /* A multi-word alias counts only if all of its words are
+             present, so "gvr" needs gilbarco AND veeder AND root. */
+          if (ws < 0) { ok = false; break; }
+          sum += ws;
+        }
+        /* Averaged, not summed: otherwise a three-word expansion would
+           automatically outweigh a one-word literal match. */
+        if (ok) best = Math.max(best, sum / words.length);
+      }
+
+      if (best < 0) { matchedAll = false; continue; }
+      total += best;
     }
 
-    if (ts.length > 1 && phrase) {
+    if (groups.length > 1 && phrase) {
       if (t.indexOf(phrase) > -1) total += W_PHRASE_TITLE;
       else if (d.indexOf(phrase) > -1) total += W_PHRASE_DESC;
       else if (x.indexOf(phrase) > -1) total += W_PHRASE_BODY;
@@ -134,11 +378,12 @@
   function run(index, q) {
     var ts = terms(q);
     if (!ts.length) return [];
+    var groups = expand(ts);
     var phrase = q.toLowerCase().trim();
 
     var strict = [], loose = [];
     for (var i = 0; i < index.length; i++) {
-      var s = score(index[i], ts, phrase);
+      var s = score(index[i], groups, phrase);
       if (!s.score) continue;
       (s.all ? strict : loose).push({ rec: index[i], score: s.score });
     }
@@ -235,7 +480,9 @@
     if (field) field.value = q;
     if (q) document.title = q + ' — ' + document.title;
 
-    var hits = [], ts = terms(q), ready = false;
+    /* Expanded, so the snippet window lands on the word that actually
+       matched and the highlight explains an alias hit. */
+    var hits = [], ts = hlTerms(terms(q)), ready = false;
 
     /* Everything on this page that depends on the language and is not
        plain text sitting in the markup, so translate.js cannot reach it:
