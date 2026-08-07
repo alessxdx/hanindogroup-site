@@ -109,7 +109,7 @@
 
     /* ---- about: timeline ---- */
     "Our journey": "Perjalanan kami",
-    "CUSTOM HANINDO Growth": "Pertumbuhan CUSTOM HANINDO",
+    "CUSTOM Hanindo Growth": "Pertumbuhan CUSTOM Hanindo",
     "CUSTOM partnership": "Kemitraan CUSTOM",
     "Partnered to expand CUSTOM products to the China market.": "Kemitraan untuk memperluas produk CUSTOM ke pasar Tiongkok.",
     "Shanghai office": "Kantor Shanghai",

@@ -97,7 +97,7 @@
     "The Shanghai office": "上海办公室",
 
     "Our journey": "我们的历程",
-    "CUSTOM HANINDO Growth": "CUSTOM 与 HANINDO 的发展",
+    "CUSTOM Hanindo Growth": "CUSTOM 与 Hanindo 的发展",
     "CUSTOM partnership": "CUSTOM 合作",
     "Partnered to expand CUSTOM products to the China market.": "达成合作，将 CUSTOM 产品拓展至中国市场。",
     "Shanghai office": "上海办公室",
