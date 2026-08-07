@@ -698,12 +698,45 @@ a.pcard:hover .more svg{transform:translateX(3px)}
 .vgrid .vopt:last-child{border-bottom:0}
 .vgrid .vopt:hover{color:var(--brand)}
 .vgrid .vopt svg{width:15px;height:15px;flex:none;fill:none;stroke:currentColor;stroke-width:2.2;color:var(--brand)}
-/* Marks are ranged left on a common edge rather than centred in a box.
-   The Fire Fighting Department has no logo file; its .lw is empty and just
-   holds the column, which is why the nested row indents rather than
-   relying on a mark for alignment. */
-.vgrid .vopt .lw{flex:none;width:104px;height:30px;display:flex;align-items:center;justify-content:flex-start}
-.vgrid .vopt .lw img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;mix-blend-mode:multiply}
+/* EQUAL-AREA LOGO COLUMN.
+   object-fit:contain in a fixed box draws each mark at whatever size its
+   own aspect allows, so a 4.2:1 wordmark filled the width at 25px tall
+   while a 2.4:1 one stopped at 72px wide and 30px tall — 72-104px wide,
+   25-30px tall, and a 1.4x spread in inked area. Six marks that are all
+   the same kind of asset then read as six different sizes.
+
+   Same correction as the Hanindo Automotive customer wall: equal optical
+   AREA, so height scales with 1/sqrt(aspect) and a mark twice as wide is
+   drawn shorter in proportion. CSS has no sqrt(), so each height is
+   worked out once and set here — sqrt(2600 / aspect), which holds every
+   mark within 5% of 2600 sq px.
+
+     file          aspect   height   drawn width
+     citra          2.40      33px      79px
+     gralessando    2.61      32px      84px
+     shanghai       2.51      32px      80px
+     flowtech       3.27      28px      92px
+     automotive     3.57      27px      96px
+     automation     4.21      25px     105px
+
+   Matched on the filename so the markup carries no per-logo classes and
+   both pages using this block stay in step. To add a company: measure
+   width/height of the file and give it sqrt(2600 / aspect), rounded.
+   The column is 110px because the widest drawn mark is 105px.
+
+   Marks are centred, not ranged left: the drawn widths still differ by
+   26px, so a common left edge left a visibly ragged gap between each mark
+   and the name beside it. A shared centre line reads as one column.
+   The Fire Fighting Department has no logo file; its .lw is empty and
+   just holds the column, which is why that row indents instead. */
+.vgrid .vopt .lw{flex:none;width:110px;height:34px;display:flex;align-items:center;justify-content:center}
+.vgrid .vopt .lw img{width:auto;max-width:110px;object-fit:contain;mix-blend-mode:multiply}
+.vgrid .vopt .lw img[src$="logo-citra.png"]{height:33px}
+.vgrid .vopt .lw img[src$="logo-gralessando.png"]{height:32px}
+.vgrid .vopt .lw img[src$="logo-shanghai.png"]{height:32px}
+.vgrid .vopt .lw img[src$="logo-flowtech.png"]{height:28px}
+.vgrid .vopt .lw img[src$="logo-automotive.png"]{height:27px}
+.vgrid .vopt .lw img[src$="logo-automation.png"]{height:25px}
 .vgrid .vopt .nm{flex:1;min-width:0}
 /* Market sits inline after the name. Stacking it was part of what drove
    the Automation row to four lines. */

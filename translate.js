@@ -76,9 +76,9 @@
 
     /* ---- home: slide 2, one stop solution ---- */
     "Hanindo Group — Your Solution Provider": "Hanindo Group — Mitra Solusi Anda",
-    "Your technology": "Solusi teknologi",
-    "one stop solution.": "satu atap Anda.",
-    "One group behind the fuel station, the factory floor and the service bay — and Custom printing wherever a ticket, receipt or boarding pass is issued.": "Satu grup di balik SPBU, lantai pabrik, dan bengkel servis — serta pencetakan Custom di mana pun tiket, struk, atau boarding pass diterbitkan.",
+    "Technology Solutions": "Solusi Teknologi",
+    "Across Industries": "Lintas Industri",
+    "One group delivering trusted technology and engineering solutions — from fuel stations and industrial facilities to automotive workshops, with CUSTOM printing wherever tickets, receipts and boarding passes are issued.": "Satu grup yang menghadirkan solusi teknologi dan rekayasa tepercaya — dari SPBU dan fasilitas industri hingga bengkel otomotif, dengan pencetakan CUSTOM di mana pun tiket, struk, dan boarding pass diterbitkan.",
     "Your technology one stop solution for": "Solusi teknologi satu atap Anda untuk",
     "Oil & Gas industry": "Industri minyak & gas",
     "F&B and entertainment": "Makanan & minuman dan hiburan",
