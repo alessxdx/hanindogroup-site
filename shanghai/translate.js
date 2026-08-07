@@ -28,7 +28,7 @@
     /* ---- home hero + intro ---- */
     "Hanindo Shanghai supplies the printing, scanning and point-of-sale hardware and software behind retail and hospitality automation.": "汉琳德上海为零售与酒店自动化提供打印、扫描及销售点软硬件。",
     "Printing, scanning, and point of sale.": "打印、扫描与销售点。",
-    "Incorporated and open in Shanghai since 2007, Hanindo (Shanghai) International Co., Ltd is the Hanindo Group's company in China, where it goes to market as Hanindo CUSTOM China. It represents Custom, for its automation with printing, scanning and reading solutions — the same business the group runs across South East Asia through Gralessando Pte Ltd.": "汉琳德（上海）系统集成有限公司成立于 2007 年，并于同年在上海开展业务，是 Hanindo Group 在中国的公司，以 Hanindo CUSTOM China 的名义开拓市场。公司代理 Custom 品牌，提供打印、扫描与读取的自动化解决方案 — 与集团通过 Gralessando Pte Ltd 在东南亚经营的业务相同。",
+    "Established in Shanghai in 2007, Hanindo (Shanghai) International Co., Ltd. is the Hanindo Group’s presence in China, operating as Hanindo CUSTOM China. The company represents CUSTOM’s printing, scanning and automation solutions, supporting the same business that the Group delivers across Southeast Asia.": "汉琳德（上海）系统集成有限公司于 2007 年在上海成立，是 Hanindo Group 在中国的业务主体，以 Hanindo CUSTOM China 的名义经营。公司代理 CUSTOM 的打印、扫描与自动化解决方案，与集团在东南亚开展的业务一脉相承。",
     "Within China the company works from two locations: Shanghai & Shenzhen.": "公司在中国设有两处办公地点：上海与深圳。",
     "Professional printing": "专业打印",
     "POS, receipt, fiscal, ticket, label and mobile printers.": "POS、小票、税控、票据、标签及移动打印机。",
@@ -92,8 +92,8 @@
     "Company overview": "公司概况",
     "Where the CUSTOM": "CUSTOM 合作",
     "partnership started": "的起点",
-    "Hanindo (Shanghai) International Co., Ltd is the first of the group’s three Custom companies, and the one the other two grew out of. The group partnered with CUSTOM in 2005 to bring the range into China. It was a big market, already held by local brands, and one the group was confident it could compete in. The Shanghai office opened in 2007, the group’s first outside Indonesia, and Shenzhen followed in 2009 as the business grew.": "汉琳德（上海）系统集成有限公司是集团三家 Custom 公司中成立最早的一家，另外两家都由它发展而来。2005 年，集团与 CUSTOM 达成合作，将该系列产品引入中国。这是一个很大的市场，当时已由本地品牌占据，而集团有信心在其中竞争。上海办公室于 2007 年成立，是集团在印度尼西亚以外的首个办公室；随着业务增长，深圳办公室于 2009 年设立。",
-    "Establishing a registered company in China, rather than selling in through an agent, was a deliberate decision. It is what keeps the after-sales service, the spare parts and the technical support inside the company instead of a border away, for as long as the systems are running. It comes down to one rule the whole group works to — look after the customer first.": "在中国注册成立一家实体公司，而不是通过代理商销售，是一项审慎的决定。正因如此，只要系统还在运行，售后服务、备件与技术支持就始终留在公司内部，而不是隔着一道国境。归根结底，这就是整个集团遵循的一条准则 — 客户至上。",
+    "Hanindo (Shanghai) International Co., Ltd. is the first of the Group’s three CUSTOM companies and the foundation for its regional CUSTOM business. Following the Group’s partnership with CUSTOM in 2005, the Shanghai office was established in 2007 as Hanindo’s first operation outside Indonesia, with Shenzhen following in 2009 to support the company’s growth in China.": "汉琳德（上海）系统集成有限公司是集团三家 CUSTOM 公司中成立最早的一家，也是集团区域 CUSTOM 业务的基石。继集团于 2005 年与 CUSTOM 建立合作之后，上海办公室于 2007 年成立，成为汉琳德在印度尼西亚以外的首个经营机构；深圳办公室于 2009 年设立，以支持公司在中国的发展。",
+    "Establishing a registered company in China, rather than operating through an agent, was a deliberate choice to maintain direct control over customer support, spare parts and technical service. This approach remains central to Hanindo’s commitment to providing reliable long-term support for every system delivered.": "在中国注册成立实体公司，而非通过代理商开展业务，是为了对客户支持、备件与技术服务保持直接掌控而作出的审慎选择。这一做法始终是汉琳德的核心，让每一套交付的系统都能获得可靠的长期支持。",
     "The Shanghai office": "上海办公室",
 
     "Our journey": "我们的历程",
@@ -115,6 +115,7 @@
 
     /* ---- about: where we are ---- */
     "Where we are": "我们的所在",
+    "Our Offices": "我们的办公室",
     "Shanghai": "上海",
     "Shenzhen": "深圳",
     "The registered office and the company’s base since 2007.": "注册办公地址，自 2007 年起为公司总部。",
@@ -182,7 +183,6 @@
     "Telephone": "电话",
     "Office hours": "办公时间",
     "— Monday to Friday, 09.00 – 18.00 CST": "— 周一至周五，09:00 – 18:00（中国标准时间）",
-    "The company also keeps a representative office in southern China:": "公司在华南地区还设有一个代表处：",
     "Representative office": "代表处",
     "For": "如需",
     "South East Asia": "东南亚",
