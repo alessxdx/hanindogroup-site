@@ -70,7 +70,7 @@
     /* ---- home: slide 1, welcome ---- */
     "Welcome": "Selamat datang",
     "Welcome to the": "Selamat datang di",
-    "Six specialist companies working under one roof at Jl. Fatmawati No. 55, Jakarta — covering equipment, automation, construction and service across the industries we serve.": "Enam perusahaan spesialis yang bekerja dalam satu atap di Jl. Fatmawati No. 55, Jakarta — mencakup peralatan, otomasi, konstruksi, dan layanan di berbagai industri yang kami layani.",
+    "Oil & gas, fire protection, automotive, printer & POS — specialist companies based in Jakarta, Singapore and Shanghai, working across Southeast Asia.": "Minyak & gas, proteksi kebakaran, otomotif, printer & POS — perusahaan spesialis yang berbasis di Jakarta, Singapura, dan Shanghai, dengan cakupan kerja di seluruh Asia Tenggara.",
     "About the group": "Tentang grup",
     "Our companies": "Perusahaan kami",
 
@@ -78,7 +78,7 @@
     "Hanindo Group — Your Solution Provider": "Hanindo Group — Mitra Solusi Anda",
     "Your technology": "Solusi teknologi",
     "one stop solution.": "satu atap Anda.",
-    "Petroleum equipment, retail and industrial automation, automotive workshop equipment, printing & POS and fire protection — delivered by one group, from Jakarta since 1987.": "Peralatan perminyakan, otomasi ritel dan industri, peralatan bengkel otomotif, pencetakan & POS, serta proteksi kebakaran — dihadirkan oleh satu grup, dari Jakarta sejak 1987.",
+    "One group behind the fuel station, the factory floor and the service bay — and Custom printing wherever a ticket, receipt or boarding pass is issued.": "Satu grup di balik SPBU, lantai pabrik, dan bengkel servis — serta pencetakan Custom di mana pun tiket, struk, atau boarding pass diterbitkan.",
     "Your technology one stop solution for": "Solusi teknologi satu atap Anda untuk",
     "Oil & Gas industry": "Industri minyak & gas",
     "F&B and entertainment": "Makanan & minuman dan hiburan",
@@ -88,13 +88,17 @@
     "Telecommunication": "Telekomunikasi",
     "Hospitality": "Perhotelan",
     "Energy": "Energi",
+    /* the two Custom sectors the hero names. The full eleven Custom serves
+       are listed on printer-pos/products-services.html — the panel has room
+       for ten rows before it runs past the bottom of the hero. */
+    "Aviation & ticketing": "Penerbangan & tiket",
+    "Self-service kiosks": "Kios layanan mandiri",
 
     /* ---- home: slide 3, professional advice ---- */
     "Looking for professional advice?": "Mencari saran profesional?",
     "Our team is ready": "Tim kami siap",
     "for your project.": "untuk proyek Anda.",
-    "The best partners for your business are those who know the paths to follow, to achieve the highest levels of success.": "Mitra terbaik bagi bisnis Anda adalah mereka yang mengetahui jalan yang harus ditempuh untuk mencapai tingkat keberhasilan tertinggi.",
-    "Our expert team will find the right solution for the development of your project and business, being the ideal partner for the biggest challenges.": "Tim ahli kami akan menemukan solusi yang tepat bagi pengembangan proyek dan bisnis Anda, menjadi mitra ideal untuk tantangan terbesar sekalipun.",
+    "Tell us what you're building, supplying or maintaining — our engineers will scope it, quote it, and support it after it's installed.": "Ceritakan apa yang sedang Anda bangun, pasok, atau rawat — tim teknik kami akan menyusun lingkupnya, memberi penawaran, dan mendampingi setelah terpasang.",
     "Talk to our team": "Hubungi tim kami",
     "Email us": "Email kami",
 
