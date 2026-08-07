@@ -90,15 +90,18 @@
     "Company overview": "Profil perusahaan",
     "Founded for oil & gas,": "Didirikan untuk minyak & gas,",
     "rebuilt around CUSTOM": "dibangun ulang di sekitar CUSTOM",
-    "PT. Hanindo Automation Solutions is one of the four companies the Hanindo Group was founded with in 2002, alongside Citra, Automotive and Flowtech, all formed within months of each other. Its brief was the name: automation for the oil and gas industry, whatever the industry needed automated, while Citra supplied the forecourt equipment and Flowtech built the stations.": "PT. Hanindo Automation Solutions adalah satu dari empat perusahaan pendiri Hanindo Group pada tahun 2002, bersama Citra, Automotive, dan Flowtech, yang seluruhnya dibentuk dalam rentang beberapa bulan. Mandatnya sesuai namanya: otomasi untuk industri minyak dan gas, apa pun yang perlu diotomasi di industri itu, sementara Citra memasok peralatan forecourt dan Flowtech membangun SPBU-nya.",
-    "The business it is known for today came later, and it came from China. The partnership the group formed with CUSTOM in 2005 had made its case there by the end of the decade, and in 2012 Automation Solutions brought the line home as CUSTOM Hanindo Indonesia — the second market in the world to take it on.": "Bisnis yang dikenal hari ini datang belakangan, dan datang dari Tiongkok. Kemitraan yang dijalin grup dengan CUSTOM pada tahun 2005 telah membuktikan dirinya di sana menjelang akhir dekade itu, dan pada tahun 2012 Automation Solutions membawa lini itu pulang sebagai CUSTOM Hanindo Indonesia — pasar kedua di dunia yang menjalankannya.",
-    /* The third paragraph carries an inline link to Hanindo Citra, so it
-       reaches the walker as two text nodes either side of the anchor and
-       needs an entry for each. Same split as the Fire Fighting Department
-       sentence on the Hanindo Citra About page. The link text is a company
-       name and stays in English, so it needs no entry at all. */
-    "That same year the company changed shape around it. The oil and gas automation work passed to": "Pada tahun yang sama perusahaan ini berubah bentuk mengikutinya. Pekerjaan otomasi minyak dan gas beralih ke",
-    ", where it sits with the petroleum equipment it always served, and CUSTOM has been the whole of this company’s business ever since: printing, scanning and point-of-sale hardware, supplied, integrated and supported here in Indonesia. The name is from the first decade; the work is from the second.": ", tempatnya menyatu dengan peralatan perminyakan yang selama ini dilayaninya, dan sejak itu CUSTOM menjadi keseluruhan bisnis perusahaan ini: perangkat keras pencetakan, pemindaian, dan point-of-sale, dipasok, diintegrasikan, dan didukung di Indonesia. Namanya berasal dari dekade pertama; pekerjaannya dari dekade kedua.",
+    "PT. Hanindo Automation Solutions was one of the four companies established when the Hanindo Group was founded in 2002, alongside Citra, Automotive and Flowtech. Its original mandate was reflected in its name: providing automation solutions for the oil and gas industry, while Citra supplied forecourt equipment and Flowtech developed station infrastructure.": "PT. Hanindo Automation Solutions adalah salah satu dari empat perusahaan yang didirikan saat Hanindo Group berdiri pada tahun 2002, bersama Citra, Automotive, dan Flowtech. Mandat awalnya tercermin dalam namanya: menyediakan solusi otomasi untuk industri minyak dan gas, sementara Citra memasok peralatan forecourt dan Flowtech membangun infrastruktur SPBU.",
+    /* Two paragraphs here carry an inline link, so each reaches the walker
+       as two text nodes either side of the anchor and needs an entry per
+       side. The Hanindo Citra link text is a company name and stays in
+       English; "CUSTOM from China" is a brand plus a country, so the
+       country half is translated and the brand is not. */
+    "However, through a successful partnership with": "Namun, melalui kemitraan yang sukses dengan",
+    "CUSTOM from China": "CUSTOM dari Tiongkok",
+    ", Hanindo introduced the CUSTOM product line to Indonesia in 2012 as CUSTOM Hanindo Indonesia.": ", Hanindo memperkenalkan lini produk CUSTOM ke Indonesia pada tahun 2012 sebagai CUSTOM Hanindo Indonesia.",
+    "Since then, Hanindo Automation Solutions has focused on CUSTOM Hanindo Indonesia: providing printing, scanning and point-of-sale hardware, together with system integration and technical support across Indonesia.": "Sejak saat itu, Hanindo Automation Solutions berfokus pada CUSTOM Hanindo Indonesia: menyediakan perangkat keras pencetakan, pemindaian, dan point-of-sale, bersama integrasi sistem dan dukungan teknis di seluruh Indonesia.",
+    "The oil and gas automation business was then transferred to": "Bisnis otomasi minyak dan gas kemudian dialihkan ke",
+    ", where it aligned with the petroleum equipment business it had historically supported.": ", tempatnya menyatu dengan bisnis peralatan perminyakan yang selama ini didukungnya.",
     "Point-of-sale in the field": "Point-of-sale di lapangan",
 
     "Our journey": "Perjalanan kami",
@@ -123,23 +126,23 @@
     "Vision & Mission": "Visi & Misi",
     "01 / Vision": "01 / Visi",
     "Vision": "Visi",
-    "To be the automation partner Indonesia’s retail, transport and service operators rely on.": "Menjadi mitra otomasi yang diandalkan oleh operator ritel, transportasi, dan jasa di Indonesia.",
+    "To be Indonesia’s trusted technology partner for retail, transport and service industries.": "Menjadi mitra teknologi tepercaya Indonesia untuk industri ritel, transportasi, dan jasa.",
     "02 / Mission": "02 / Misi",
     "Mission": "Misi",
-    "Supply Custom’s printing, scanning and point-of-sale hardware with the software that runs it.": "Menyediakan perangkat keras pencetakan, pemindaian, dan point-of-sale Custom beserta perangkat lunaknya.",
-    "Integrate, install and support every system locally.": "Mengintegrasikan, memasang, dan mendukung setiap sistem secara lokal.",
-    "Keep pace with Custom’s range so customers run current technology.": "Mengikuti perkembangan rangkaian produk Custom agar pelanggan menggunakan teknologi terkini.",
+    "Deliver CUSTOM printing, scanning and point-of-sale solutions tailored to customer needs.": "Menghadirkan solusi pencetakan, pemindaian, dan point-of-sale CUSTOM yang disesuaikan dengan kebutuhan pelanggan.",
+    "Integrate, install and support systems through our local technical team.": "Mengintegrasikan, memasang, dan mendukung sistem melalui tim teknis lokal kami.",
+    "Help businesses adopt reliable technology solutions that improve daily operations.": "Membantu bisnis mengadopsi solusi teknologi andal yang meningkatkan operasional sehari-hari.",
 
     /* ---- about: why choose us ---- */
     "Why choose us": "Mengapa memilih kami",
     "Why clients trust us": "Mengapa klien mempercayai kami",
     "Three things you can count on, from first specification through to long-term support.": "Tiga hal yang dapat Anda andalkan, dari spesifikasi awal hingga dukungan jangka panjang.",
-    "Trusted": "Terpercaya",
-    "One of the companies of the Hanindo Group, serving operators across Indonesia.": "Salah satu perusahaan Hanindo Group, melayani operator di seluruh Indonesia.",
-    "Best Quality": "Kualitas Terbaik",
-    "Custom hardware and software, built for unattended, high-volume use.": "Perangkat keras dan lunak Custom, dirancang untuk penggunaan mandiri bervolume tinggi.",
-    "Excellent Service": "Pelayanan Prima",
-    "Supply, integration and after-sales support.": "Pengadaan, integrasi, dan dukungan purnajual.",
+    "Industry Experience": "Pengalaman Industri",
+    "Part of the Hanindo Group, supporting retail, transport and service operators across Indonesia.": "Bagian dari Hanindo Group, mendukung operator ritel, transportasi, dan jasa di seluruh Indonesia.",
+    "Technology Expertise": "Keahlian Teknologi",
+    "Official CUSTOM solutions with the capability to integrate hardware into business operations.": "Solusi CUSTOM resmi dengan kemampuan mengintegrasikan perangkat keras ke dalam operasional bisnis.",
+    "Local Support": "Dukungan Lokal",
+    "Installation, technical assistance and after-sales service from our own team.": "Pemasangan, bantuan teknis, dan layanan purnajual dari tim kami sendiri.",
 
     /* ---- products & services ---- */
     "Products &": "Produk &",
