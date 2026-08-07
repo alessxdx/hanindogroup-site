@@ -29,6 +29,7 @@
       counted:  function (n, q) { return n + (n === 1 ? ' result for ' : ' results for ') + '“' + q + '”'; },
       none:     function (q) { return 'No results for “' + q + '”'; },
       hint:     'Try fewer words, or a product or company name.',
+      fixed:    function (from, to) { return 'Showing results for “' + to + '” instead of “' + from + '”'; },
       empty:    'Type something above to search the site.',
       loading:  'Searching…',
       failed:   'The search index could not be loaded. Please reload the page.',
@@ -38,6 +39,7 @@
       counted:  function (n, q) { return n + ' hasil untuk ' + '“' + q + '”'; },
       none:     function (q) { return 'Tidak ada hasil untuk “' + q + '”'; },
       hint:     'Coba kata yang lebih sedikit, atau nama produk atau perusahaan.',
+      fixed:    function (from, to) { return 'Menampilkan hasil untuk “' + to + '”, bukan “' + from + '”'; },
       empty:    'Ketik sesuatu di atas untuk mencari di situs ini.',
       loading:  'Mencari…',
       failed:   'Indeks pencarian gagal dimuat. Silakan muat ulang halaman.',
@@ -377,8 +379,12 @@
 
   function run(index, q) {
     var ts = terms(q);
-    if (!ts.length) return [];
-    var groups = expand(ts);
+    if (!ts.length) return { hits: [], words: [], corrected: [] };
+
+    /* Aliases first, without the vocabulary: an alias is a deliberate
+       mapping and must never be overridden by a chance edit-distance
+       neighbour. Only what the map does not know gets typo-corrected. */
+    var groups = expand(ts, buildVocab(index));
     var phrase = q.toLowerCase().trim();
 
     var strict = [], loose = [];
@@ -392,7 +398,7 @@
     hits.sort(function (a, b) {
       return b.score - a.score || a.rec.t.localeCompare(b.rec.t);
     });
-    return hits;
+    return { hits: hits, words: hlTerms(groups), corrected: groups.corrected || [] };
   }
 
   /* ------------------------------------------------------------------
@@ -436,7 +442,7 @@
      string, which would be an empty href, so it becomes "../". */
   function href(u) { return '../' + u; }
 
-  function render(box, hits, q, ts) {
+  function render(box, hits, q, ts, corrected) {
     var s = STR[lang()];
 
     if (!q) { box.innerHTML = '<p class="smsg">' + esc(s.empty) + '</p>'; return; }
@@ -447,7 +453,17 @@
       return;
     }
 
-    var html = '<p class="scount">' + esc(s.counted(hits.length, q)) + '</p><ol class="sresults">';
+    /* Say so when a word was corrected. A silent rewrite leaves someone
+       who really did mean the odd spelling with no way to tell why the
+       results look wrong. */
+    var html = '';
+    if (corrected && corrected.length) {
+      for (var c = 0; c < corrected.length; c++) {
+        html += '<p class="sfixed">' + esc(s.fixed(corrected[c].from, corrected[c].to)) + '</p>';
+      }
+    }
+
+    html += '<p class="scount">' + esc(s.counted(hits.length, q)) + '</p><ol class="sresults">';
     for (var i = 0; i < hits.length; i++) {
       var r = hits[i].rec;
       html += '<li class="sresult">'
@@ -480,9 +496,10 @@
     if (field) field.value = q;
     if (q) document.title = q + ' — ' + document.title;
 
-    /* Expanded, so the snippet window lands on the word that actually
-       matched and the highlight explains an alias hit. */
-    var hits = [], ts = hlTerms(terms(q)), ready = false;
+    /* ts is replaced once the index is in, with the words that actually
+       matched — alias expansions and typo corrections included — so the
+       snippet window lands on them and the highlight explains the hit. */
+    var hits = [], ts = terms(q), corrected = [], ready = false;
 
     /* Everything on this page that depends on the language and is not
        plain text sitting in the markup, so translate.js cannot reach it:
@@ -491,7 +508,7 @@
        translate.js has walked the page. */
     function applyLang() {
       if (field) field.setAttribute('placeholder', STR[lang()].ph);
-      if (ready) render(box, hits, q, ts);
+      if (ready) render(box, hits, q, ts, corrected);
     }
 
     /* translate.js is loaded before this file, so its click handler is
@@ -503,7 +520,7 @@
     }
     applyLang();
 
-    if (!q) { ready = true; render(box, [], '', []); return; }
+    if (!q) { ready = true; render(box, [], '', [], []); return; }
     box.innerHTML = '<p class="smsg">' + esc(STR[lang()].loading) + '</p>';
 
     var req = new XMLHttpRequest();
@@ -522,9 +539,12 @@
         return;
       }
 
-      hits = run(index, q);
+      var res = run(index, q);
+      hits = res.hits;
+      ts = res.words;
+      corrected = res.corrected;
       ready = true;
-      render(box, hits, q, ts);
+      render(box, hits, q, ts, corrected);
     };
     req.send();
   }
