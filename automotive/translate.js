@@ -127,12 +127,12 @@
     "Why choose us": "Mengapa memilih kami",
     "Why clients trust us": "Mengapa klien mempercayai kami",
     "Three things you can count on, from specifying the first bay through to long-term service.": "Tiga hal yang dapat Anda andalkan, dari penentuan bay pertama hingga layanan jangka panjang.",
-    "Trusted": "Terpercaya",
-    "One of the Hanindo Group companies, and sole distributor in Indonesia for Airtec, HPA-Faip and RAASM.": "Salah satu perusahaan Hanindo Group, sekaligus distributor tunggal di Indonesia untuk Airtec, HPA-Faip, dan RAASM.",
-    "Best Quality": "Kualitas Terbaik",
-    "Products built on the latest technology — from the makers we represent and our own WELDANN and ATOM brands.": "Produk yang dibangun di atas teknologi terkini — dari produsen yang kami wakili serta merek WELDANN dan ATOM milik kami sendiri.",
-    "Excellent Service": "Pelayanan Prima",
-    "Installation, training, spare parts and committed after-sales support from our own team.": "Pemasangan, pelatihan, suku cadang, dan dukungan purnajual yang berkomitmen dari tim kami sendiri.",
+    "Trusted Partner": "Mitra Tepercaya",
+    "One of the Hanindo Group companies and the sole distributor in Indonesia for Airtec, HPA-Faip and RAASM.": "Salah satu perusahaan Hanindo Group sekaligus distributor tunggal di Indonesia untuk Airtec, HPA-Faip, dan RAASM.",
+    "Quality You Can Rely On": "Kualitas yang Dapat Diandalkan",
+    "Access to internationally recognised equipment brands alongside our own WELDANN and ATOM product lines.": "Akses ke merek peralatan yang diakui secara internasional bersama lini produk WELDANN dan ATOM milik kami sendiri.",
+    "Complete Support": "Dukungan Menyeluruh",
+    "From equipment selection and installation to operator training, spare parts and after-sales service — supported by our own team.": "Dari pemilihan dan pemasangan peralatan hingga pelatihan operator, suku cadang, dan layanan purnajual — didukung oleh tim kami sendiri.",
 
     /* ---- products & services ---- */
     "Products &": "Produk &",
