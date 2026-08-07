@@ -30,7 +30,8 @@ Put a new photo in the folder for the site that uses it:
   photos/citra/hero/    + /products/
   photos/printer-pos/hero/    + /products/
   photos/automation/hero/     + /products/
-  photos/flowtech/hero/       + /sectors/
+  photos/flowtech/hero/       + /sectors/   empty on purpose — the
+                              Flowtech pages are text only, see below
 
   photos/not-used/            on disk but referenced by no page
 
@@ -109,6 +110,19 @@ logo-citra.png            Hanindo Citra                   [COMPLETE]
 logo-automotive.png       Hanindo Automotive              [COMPLETE]
 logo-automation.png       Hanindo Automation Solutions    [NEEDED]
 logo-shanghai.png         Hanindo Shanghai                [COMPLETE]
+logo-flowtech.png         Flowtech Engineering            [COMPLETE]
+                          Lifted out of the Pictures stream of "Company
+                          Profile FE Revisi 1.ppt", which carried it as
+                          a 580x179 JPEG on white. The white was flood-
+                          filled away from the border inwards rather
+                          than keyed globally — the emblem has white
+                          inside it (the inner outline and the HANINDO
+                          wordmark on the dark bar), and a global key
+                          punches holes through both. Trimmed to
+                          560x171 RGBA. If a vector or a higher-
+                          resolution original turns up, prefer it: this
+                          one is a re-encode of a lossy source, though
+                          at the 48px it is drawn that is not visible.
 
 
 --------------------------------------------------
@@ -854,11 +868,25 @@ SVG (opw.svg), so nothing special is needed to serve them.
 --------------------------------------------------
 FLOWTECH ENGINEERING  (/flowtech-engineering/)
 --------------------------------------------------
-hero-flowtech.jpg              Page hero — station under construction
-flow-construction.jpg          Intro section — site work in progress
-flow-fuel-stations.jpg         Sector card — completed fuel station
-flow-oil-gas.jpg               Sector card — oil & gas facility
-flow-automotive-garages.jpg    Sector card — completed garage build
+NO PHOTOGRAPHY WANTED — this site is deliberately text only.
+
+Flowtech is no longer taking on new work, and no photograph of its own
+was ever supplied: photos/flowtech/hero/ and /sectors/ have been empty
+since the section was built. Rather than leave five "Photo needed" boxes
+on a company that cannot fill them, the five pages were rewritten to
+stand as type — the heroes drop their .bg and .pagehero paints blue-900
+on its own, and the sector and project cards are text cells.
+
+The five photos this section used to ask for — hero-flowtech.jpg,
+flow-construction.jpg, flow-fuel-stations.jpg, flow-oil-gas.jpg and
+flow-automotive-garages.jpg — are no longer referenced by any page. Do
+not shoot them without first putting the .bg divs and image boxes back.
+
+The one image this section does use is the company wordmark in the
+co-brand slot of the header, and that is in:
+
+logo-flowtech.png         [COMPLETE] — in photos/brand/, see the COMPANY
+                          LOGOS section above for where it came from.
 
 
 --------------------------------------------------

@@ -50,6 +50,8 @@
     "(Singapore)": "(Singapura)",
     "(China)": "(Tiongkok)",
     "Products & Services": "Produk & Layanan",
+    "Products & services": "Produk & layanan",
+    "Projects": "Proyek",
     "Oil & Gas": "Minyak & Gas",
     "Automotive": "Otomotif",
     "Fire Fighting": "Pemadam Kebakaran",
@@ -58,14 +60,17 @@
     "Partners": "Mitra",
     "Career": "Karier",
     "Contact Us": "Hubungi Kami",
+    "Contact us": "Hubungi kami",
 
     /* ---- company page: hero and about ---- */
     "Fuel stations,": "SPBU,",
     "built end to end.": "dibangun menyeluruh.",
     "PT. Flowtech Engineering has handled every aspect required in the construction of a fuel station since 2002 — permits, materials, labour, mechanical and electrical installation and operator training — and builds for the oil & gas industry as well.": "PT. Flowtech Engineering telah menangani setiap aspek yang dibutuhkan dalam pembangunan SPBU sejak 2002 — perizinan, material, tenaga kerja, pemasangan mekanikal dan elektrikal, serta pelatihan operator — dan juga membangun untuk industri minyak & gas.",
     "About us": "Tentang kami",
+    "About the company": "Tentang perusahaan",
     "From running stations": "Dari mengelola SPBU",
     "to building them.": "hingga membangunnya.",
+    "Experience gained in managing the fuel station business gave us the knowledge and resources to start our own fuel station construction business. Every aspect required in the construction of a fuel station is handled by us — so clients deal with one team from permit to handover.": "Pengalaman dalam mengelola bisnis SPBU memberi kami pengetahuan dan sumber daya untuk memulai bisnis konstruksi SPBU sendiri. Setiap aspek yang dibutuhkan dalam pembangunan SPBU kami tangani sendiri — sehingga klien berurusan dengan satu tim, dari perizinan hingga serah terima.",
     "Experience gained in managing the fuel station business gave us the knowledge and resources to start our own fuel station construction business. PT. Flowtech Engineering provides a complete solution for anyone deciding to open a fuel station of their own.": "Pengalaman dalam mengelola bisnis SPBU memberi kami pengetahuan dan sumber daya untuk memulai bisnis konstruksi SPBU sendiri. PT. Flowtech Engineering menghadirkan solusi lengkap bagi siapa pun yang memutuskan untuk membuka SPBU sendiri.",
     "Every aspect required in the construction of a fuel station is handled by us — from permit request procedures, raw materials and labour force, through mechanical and electrical installation, to the training of station employees on operational and safety procedures.": "Setiap aspek yang dibutuhkan dalam pembangunan SPBU kami tangani sendiri — mulai dari prosedur permohonan izin, material dan tenaga kerja, pemasangan mekanikal dan elektrikal, hingga pelatihan karyawan SPBU mengenai prosedur operasional dan keselamatan.",
     "As part of Hanindo Group, Flowtech Engineering went on to take construction work for the oil and gas industry as well. It is the strength of the companies within the group that lets Flowtech deliver a complete solution on the construction side.": "Sebagai bagian dari Hanindo Group, Flowtech Engineering kemudian juga menangani pekerjaan konstruksi untuk industri minyak dan gas. Kekuatan perusahaan-perusahaan di dalam grup inilah yang memungkinkan Flowtech menghadirkan solusi menyeluruh di sisi konstruksi.",
@@ -74,7 +79,15 @@
     "Mechanical and electrical installation": "Pemasangan mekanikal dan elektrikal",
     "Training of employees on operational and safety protocols": "Pelatihan karyawan mengenai prosedur operasional dan protokol keselamatan",
 
-    /* ---- company page: company detail ----
+    /* ---- about page ---- */
+    "About": "Tentang",
+    "A fuel station construction company that grew out of running the stations, established in Jakarta in 2002 and part of Hanindo Group.": "Perusahaan konstruksi SPBU yang tumbuh dari pengalaman mengelola SPBU, didirikan di Jakarta pada 2002 dan menjadi bagian dari Hanindo Group.",
+    "Company overview": "Profil perusahaan",
+    "What we handle": "Yang kami tangani",
+    "One team,": "Satu tim,",
+    "from permit to handover.": "dari perizinan hingga serah terima.",
+
+    /* ---- company detail ----
        Labels sit inside <b>, values in the text node after the <br/>,
        so each row that needs translating takes two entries. The
        address, the numbers and the website are left as they are. */
@@ -124,20 +137,29 @@
     "Indonesian state oil and gas company": "Perusahaan minyak dan gas milik negara Indonesia",
     "Pertamina's retail station network": "Jaringan SPBU ritel Pertamina",
 
-    /* ---- company page: project references ---- */
+    /* ---- projects page ----
+       The project names ("SPBU Total Oil Indonesia"), the street
+       addresses and the years are left as they are: SPBU is already the
+       Indonesian word, and the rest are proper nouns and figures. */
     "Project references": "Referensi proyek",
-    "Stations we delivered.": "SPBU yang kami selesaikan.",
-    "Nine fuel station projects between 2008 and 2013, across Jakarta, Bekasi, Bandung and Duri. Among them:": "Sembilan proyek SPBU antara 2008 dan 2013, di Jakarta, Bekasi, Bandung, dan Duri. Di antaranya:",
+    "Stations built,": "SPBU yang dibangun,",
+    "across Java and Sumatra.": "di Jawa dan Sumatra.",
+    "Fuel station projects delivered for Pertamina, Total Oil Indonesia, Shell, Petronas and Chevron, from permit through to a station in operation.": "Proyek SPBU yang diselesaikan untuk Pertamina, Total Oil Indonesia, Shell, Petronas, dan Chevron, dari perizinan hingga SPBU beroperasi.",
+    "Nine stations,": "Sembilan SPBU,",
+    "2008 to 2013.": "2008 hingga 2013.",
+    "Each project delivered to SPBU specification, with the year and the contracting client as recorded in the company profile.": "Setiap proyek diselesaikan sesuai spesifikasi SPBU, dengan tahun dan klien pemberi kontrak sebagaimana tercatat dalam profil perusahaan.",
+    "Further references": "Referensi lainnya",
+    "Also delivered.": "Juga diselesaikan.",
+    "Stations named in the company profile beyond the reference table above.": "SPBU yang disebutkan dalam profil perusahaan di luar tabel referensi di atas.",
     "Shell petrol station, S. Parman": "SPBU Shell, S. Parman",
     "Petronas service station, Fatmawati": "SPBU Petronas, Fatmawati",
     "Chevron service station, Duri Camp": "SPBU Chevron, Duri Camp",
     "Pertamina petrol station, Pondok Indah": "SPBU Pertamina, Pondok Indah",
     "Total gas station, Kemang Raya": "SPBU Total, Kemang Raya",
 
-    /* ---- scope of work page: hero ---- */
-    "Scope of Work": "Lingkup Pekerjaan",
-    "Scope of": "Lingkup",
-    "work.": "pekerjaan.",
+    /* ---- products & services page: hero ---- */
+    "Products &": "Produk &",
+    "Services": "Layanan",
     "Fuel station construction handled end to end — design, permits, materials and labour, installation and operator training, under one contract.": "Konstruksi SPBU ditangani menyeluruh — desain, perizinan, material dan tenaga kerja, pemasangan, dan pelatihan operator, dalam satu kontrak.",
     "Every aspect required in the construction of a fuel station is handled by us, so clients deal with one team from permit to handover.": "Setiap aspek yang dibutuhkan dalam pembangunan SPBU kami tangani sendiri, sehingga klien berurusan dengan satu tim dari perizinan hingga serah terima.",
 
@@ -181,6 +203,21 @@
     "Flowtech builds the stations that PT. Hanindo Citra equips. Hanindo Citra supplies the dispensers, tank gauging, flow meters and fuel management systems, and provides after-sales service once the site is running.": "Flowtech membangun SPBU yang dilengkapi oleh PT. Hanindo Citra. Hanindo Citra memasok dispenser, tank gauging, flow meter, dan sistem manajemen bahan bakar, serta memberikan layanan purnajual setelah lokasi beroperasi.",
     "Visit Oil & Gas": "Kunjungi Minyak & Gas",
     "Their products": "Produk mereka",
+
+    /* ---- contact page ----
+       The "— value" halves of the checklist stay in English: each is an
+       address, a number or a mailbox. Only the bold labels translate,
+       and "Office hours" carries its value because the days are words. */
+    "Let's talk about": "Mari bicarakan",
+    "your project.": "proyek Anda.",
+    "Tell us about the site and we will put the right person on it.": "Ceritakan lokasi Anda dan kami akan menugaskan orang yang tepat.",
+    "How to reach us.": "Cara menghubungi kami.",
+    "For fuel station construction, oil and gas construction work, or a question about a project we have delivered, our Jakarta office is the first point of contact.": "Untuk konstruksi SPBU, pekerjaan konstruksi minyak dan gas, atau pertanyaan mengenai proyek yang telah kami selesaikan, kantor Jakarta kami adalah titik kontak pertama.",
+    "Head office": "Kantor pusat",
+    "Office hours": "Jam kerja",
+    "— Monday to Friday, 08.00 – 17.00 WIB": "— Senin sampai Jumat, 08.00 – 17.00 WIB",
+    "Flowtech Engineering shares the head office at Jl. Fatmawati No. 55 with the rest of Hanindo Group. For petroleum equipment, automation, automotive workshop equipment or fire protection, the group contact page will point you to the right company.": "Flowtech Engineering berbagi kantor pusat di Jl. Fatmawati No. 55 dengan perusahaan lain dalam Hanindo Group. Untuk peralatan perminyakan, otomasi, peralatan bengkel otomotif, atau proteksi kebakaran, halaman kontak grup akan mengarahkan Anda ke perusahaan yang tepat.",
+    "Group contact": "Kontak grup",
 
     /* ---- contact block ---- */
     "Talk to Flowtech Engineering": "Hubungi Flowtech Engineering",

@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="robots" content="noindex" />
-<title>Scope of Work — Flowtech Engineering | Hanindo Group</title>
+<title>Products &amp; Services — Flowtech Engineering | Hanindo Group</title>
 <meta name="description" content="PT. Flowtech Engineering scope of work — basic and detail design, work preparation, buried tank and double-wall tank installation, fuel piping, building and canopy construction." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,17 +13,19 @@
 </head>
 <body>
 
-<!-- ============ SITE HEADER ============ -->
-<!-- Flowtech carries the group nav rather than a company nav of its own,
-     so this page uses the same header as flowtech-engineering/index.html.
-     If Flowtech ever grows an About/Projects/Contact set, swap both pages
-     onto a company nav together. -->
+<!-- ============ SITE HEADER (company-local) ============ -->
 <div class="topbar">
   <div class="wrap">
-    <a class="brand" href="../">
-      <img src="../photos/brand/logo-lockup.png" alt="Hanindo Group — Your Solution Provider" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
-      <span class="btxt" style="display:none"><strong>HANINDOGROUP</strong><span>Your Solution Provider</span></span>
-    </a>
+    <div class="brands">
+      <a class="brand" href="../" aria-label="Hanindo Group — main page">
+        <img src="../photos/brand/logo-lockup.png" alt="Hanindo Group — Your Solution Provider" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
+        <span class="btxt" style="display:none"><strong>HANINDOGROUP</strong><span>Your Solution Provider</span></span>
+      </a>
+      <a class="cobrand" href="index.html" aria-label="Flowtech Engineering — home">
+        <img class="cologo" src="../photos/brand/logo-flowtech.png" alt="Flowtech Engineering — Member of the Hanindo Group of Companies" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
+        <span class="colabel" style="display:none">FLOWTECH ENGINEERING</span>
+      </a>
+    </div>
     <div class="top-right">
       <a class="grouplink" href="../" aria-label="Back to Hanindo Group"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg><span>Hanindo Group</span></a>
       <div class="langtoggle" role="group" aria-label="Language"><svg class="globe" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.7 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.7-3.9-9S9.4 5.6 12 3z"/></svg><button type="button" data-lang="en" class="active" aria-pressed="true">EN</button><button type="button" data-lang="id" aria-pressed="false">ID</button></div>
@@ -38,29 +40,11 @@
 <header class="navbar">
   <div class="wrap">
     <ul class="tabs" id="tabs">
-      <li><a href="../">Home</a></li>
-      <li><a href="../about/">About Us</a></li>
-      <li class="has-drop">
-        <a href="../#companies">Our Companies <svg class="caret" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
-        <ul class="drop drop-co">
-          <li class="dgrp">By industry</li>
-          <li><a href="../citra/">Hanindo Citra</a>
-            <ul class="subdrop">
-              <li><a href="../fire-fighting/">Fire Fighting Department</a></li>
-            </ul>
-          </li>
-          <li><a href="../flowtech-engineering/">Flowtech Engineering</a></li>
-          <li><a href="../automotive/">Hanindo Automotive</a></li>
-          <li class="dgrp">Printer &amp; POS, by market</li>
-          <li><a href="../automation/">Hanindo Automation Solutions <span class="cwhere">(Indonesia)</span></a></li>
-          <li><a href="../printer-pos/">Gralessando Pte Ltd <span class="cwhere">(Singapore)</span></a></li>
-          <li><a href="../shanghai/">Hanindo Shanghai <span class="cwhere">(China)</span></a></li>
-        </ul>
-      </li>
-      <li><a href="../products-services/">Products &amp; Services</a></li>
-      <li><a href="../partners/">Partners</a></li>
-      <li><a href="../career/">Career</a></li>
-      <li><a href="../contact/">Contact Us</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="active"><a href="products-services.html">Products &amp; Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
       <li class="tablang"><span class="tablang-lab"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.7 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.7-3.9-9S9.4 5.6 12 3z"/></svg>Bahasa</span><div class="langtoggle" role="group" aria-label="Language"><button type="button" data-lang="en" class="active" aria-pressed="true">EN</button><button type="button" data-lang="id" aria-pressed="false">ID</button></div></li>
     </ul>
   </div>
@@ -68,20 +52,19 @@
 <!-- END SITE HEADER -->
 
 <!-- ============ PAGE HERO ============ -->
-<!-- Text-only, like the company page: see the note there. -->
 <section class="pagehero">
   <div class="ov"></div><div class="glow"></div>
   <div class="wrap">
-    <div class="crumb"><a href="../">Hanindo Group</a><span class="sep">/</span><a href="index.html">Flowtech Engineering</a><span class="sep">/</span>Scope of Work</div>
-    <h1>Scope of <span class="fx">work.</span></h1>
+    <div class="crumb"><a href="../">Hanindo Group</a><span class="sep">/</span><a href="index.html">Flowtech Engineering</a><span class="sep">/</span>Products &amp; Services</div>
+    <h1>Products &amp; <span class="fx">Services</span></h1>
     <p class="intro">Fuel station construction handled end to end — design, permits, materials and labour, installation and operator training, under one contract.</p>
   </div>
 </section>
 
 <!-- ============ WHAT WE DO ============ -->
-<!-- The same four services the company page lists. Flowtech sells work
-     rather than product lines, so what would be a catalogue elsewhere is
-     the contractor scope of work below. -->
+<!-- Flowtech sells work rather than product lines, so what would be a
+     catalogue on the other company sites is the contractor scope of work
+     below: the four stages a project runs through, then what each covers. -->
 <section class="section white compact">
   <div class="wrap">
     <div class="reveal">
@@ -167,9 +150,6 @@
 </section>
 
 <!-- ============ SECTORS ============ -->
-<!-- Two sectors, not three: the company profile claims fuel stations and
-     oil & gas construction only. Automotive garage construction sits
-     with Hanindo Automotive. -->
 <section class="section white compact">
   <div class="wrap">
     <div class="reveal">
@@ -180,7 +160,7 @@
         <div class="seccell"><div class="secname">Oil &amp; gas industry</div><div class="secwhat">Construction work for the wider oil and gas industry, backed by the group's petroleum equipment experience.</div></div>
       </div>
       <div style="margin-top:2rem">
-        <a class="btn btn-dark" href="index.html">Clients &amp; project references <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-dark" href="projects.html">Project references <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
   </div>
@@ -209,8 +189,8 @@
       <h2>Have a construction<br/>project in mind?</h2>
       <p class="sub">Tell us about the site and our team will scope the permits, materials, labour and installation work needed to bring it into operation.</p>
       <div class="actions">
-        <a class="btn btn-fire" href="mailto:info@hanindogroup.com">Email our team <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></a>
-        <a class="btn btn-ghost" href="../contact/">Contact page <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-fire" href="contact.html">Contact us <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="mailto:info@hanindogroup.com">Email our team <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></a>
       </div>
     </div>
     <div class="info">
@@ -227,17 +207,16 @@
     <div class="foot-grid three">
       <div class="fbrand">
         <strong>HANINDO GROUP</strong><span>Your Solution Provider</span>
-        <p>Your technology one stop solution &mdash; serving the oil &amp; gas, automation, automotive and fire protection industries in Indonesia since 1987.</p>
+        <p>Your technology one stop solution — serving the oil &amp; gas, automation, automotive and fire protection industries in Indonesia since 1987.</p>
       </div>
       <div>
-        <h4>Our Companies</h4>
+        <h4>Flowtech Engineering</h4>
         <ul>
-          <li><a href="../citra/">Hanindo Citra</a></li>
-          <li><a href="../flowtech-engineering/">Flowtech Engineering</a></li>
-          <li><a href="../automotive/">Hanindo Automotive</a></li>
-          <li><a href="../automation/">Hanindo Automation Solutions</a></li>
-          <li><a href="../printer-pos/">Gralessando Pte Ltd</a></li>
-          <li><a href="../shanghai/">Hanindo Shanghai</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products-services.html">Products &amp; Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </div>
       <div>
@@ -245,13 +224,19 @@
         <span class="cl"><b>Jl. Fatmawati No. 55</b></span><span class="cl">Jakarta 12410, Indonesia</span><span class="cl">Tel: <b>+62 21 75900909</b></span><span class="cl">info@hanindogroup.com</span>
       </div>
     </div>
-    <div class="foot-bottom"><span>&copy; 2026 Hanindo Group. All Rights Reserved.</span><span>PT. Flowtech Engineering</span></div>
+    <div class="foot-bottom"><span>© 2026 Hanindo Group. All Rights Reserved.</span><span>PT. Flowtech Engineering</span></div>
   </div>
 </footer>
 
 <script>
 /* header search -> the site's own search page (search/) */
 function hsearch(f){var q=(f.q.value||'').trim();if(!q)return false;var l=document.querySelector('link[href*="assets/site.css"]'),r=l?l.getAttribute('href').replace(/assets\/site\.css.*$/,''):'';window.location.href=r+'search/?q='+encodeURIComponent(q);return false;}
+/* A search starts fresh. Browsers restore form values on history
+   navigation, so pressing Back from a results page left the last query
+   sitting in the header box. pageshow fires on the bfcache restore that
+   a load handler misses. The big field on search/ is .bigsearch, not
+   .searchbox, so the query it is meant to show survives this. */
+window.addEventListener('pageshow',function(){var i=document.querySelector('.searchbox input[name="q"]');if(i)i.value='';});
 /* mobile menu */
 (function(){var b=document.getElementById('burger'),t=document.getElementById('tabs');if(b&&t){b.addEventListener('click',function(){var o=t.classList.toggle('open');b.setAttribute('aria-expanded',o);});}})();
 /* reveal */
