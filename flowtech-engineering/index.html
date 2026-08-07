@@ -16,8 +16,8 @@
 <!-- ============ SITE HEADER (company-local) ============ -->
 <!-- Same two-part header the other company sites carry: the group lockup
      and the company co-brand on the left, a company-local nav underneath.
-     photos/brand/logo-flowtech.png does not exist yet — until it does the
-     onerror fallback prints the name, which is why .colabel is here. -->
+     .colabel is the onerror fallback: it prints the company name if the
+     logo file ever goes missing. -->
 <div class="topbar">
   <div class="wrap">
     <div class="brands">
@@ -76,7 +76,7 @@
     <div class="reveal">
       <span class="kicker">PT. Flowtech Engineering</span>
       <h2 class="h2">From running stations<br/>to building them.</h2>
-      <p class="lede">Experience gained in managing the fuel station business gave us the knowledge and resources to start our own fuel station construction business. Every aspect required in the construction of a fuel station is handled by us — so clients deal with one team from permit to handover.</p>
+      <p class="lede" style="max-width:none">Experience gained in managing the fuel station business gave us the knowledge and resources to start our own fuel station construction business. Every aspect required in the construction of a fuel station is handled by us — so clients deal with one team from permit to handover.</p>
       <ul class="checks">
         <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Permit procedures managed on the client's behalf</span></li>
         <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Materials and labour supplied and coordinated on site</span></li>
@@ -143,25 +143,27 @@
 </section>
 
 <!-- ============ CLIENTS ============ -->
-<!-- Names only here; the descriptions and the project list are on
-     projects.html so the home page stays a summary. -->
+<!-- Logos only here; the contracting entity names and the project list
+     are on projects.html so the home page stays a summary. Same files
+     and tier classes as the fuel band of the Hanindo Citra customer
+     wall — the same companies, drawn the same way. -->
 <section class="section paper">
   <div class="wrap">
     <div class="reveal">
       <span class="kicker">Our client list</span>
       <h2 class="h2">Who we built for.</h2>
-      <p class="lede">Between 2006 and 2015 Flowtech built and renovated fuel stations for the national oil company and for the international brands operating in Indonesia.</p>
-      <div class="secgrid tight">
-        <div class="seccell"><div class="secname">PT. Pertamina (Persero)</div></div>
-        <div class="seccell"><div class="secname">PT. Petronas Niaga Indonesia</div></div>
-        <div class="seccell"><div class="secname">PT. Kridapetra Graha</div></div>
-        <div class="seccell"><div class="secname">PT. Total Oil Indonesia</div></div>
-        <div class="seccell"><div class="secname">PT. Chevron Indonesia</div></div>
-        <div class="seccell"><div class="secname">PT. Pertamina Retail</div></div>
-      </div>
-      <div style="margin-top:2rem">
-        <a class="btn btn-dark" href="projects.html">Project references <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
+      <p class="lede" style="max-width:none">Between 2006 and 2015 Flowtech built and renovated fuel stations for the national oil company and for the international brands operating in Indonesia.</p>
+    </div>
+    <div class="wall reveal d1" style="margin-top:2.4rem">
+      <div class="w t1"><img src="../photos/customers/pertamina-patra-niaga.png" alt="PT Pertamina Patra Niaga" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">PT. Pertamina (Persero)</span></div>
+      <div class="w t1"><img src="../photos/customers/pertamina-retail.png" alt="PT Pertamina Retail" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">PT. Pertamina Retail</span></div>
+      <div class="w t1 sq"><img src="../photos/customers/petronas.png" alt="Petronas" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">PT. Petronas Niaga Indonesia</span></div>
+      <div class="w t1"><img src="../photos/customers/shell.png" alt="Shell" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">PT. Kridapetra Graha</span></div>
+      <div class="w t1 sq"><img src="../photos/customers/total.png" alt="Total" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">PT. Total Oil Indonesia</span></div>
+      <div class="w t1 sq"><img src="../photos/customers/chevron.svg" alt="Chevron" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">PT. Chevron Indonesia</span></div>
+    </div>
+    <div class="reveal d2" style="margin-top:2rem">
+      <a class="btn btn-dark" href="projects.html">Project references <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
   </div>
 </section>
@@ -242,6 +244,6 @@ window.addEventListener('pageshow',function(){var i=document.querySelector('.sea
 /* reveal */
 (function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
 </script>
-<script src="translate.js?v=202607312230"></script>
+<script src="translate.js?v=202608071600"></script>
 </body>
 </html>

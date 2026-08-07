@@ -6,7 +6,8 @@
    English <-> Bahasa Indonesia. The choice is remembered
    (localStorage) across the pages of this site only.
 
-   Two pages: the company page and Scope of Work.
+   Five pages: Home, About Us, Products & Services, Projects and
+   Contact Us.
 
    To EDIT a translation: find the English on the left, change the
    Indonesian on the right. To ADD one: copy a line and fill in both
@@ -40,25 +41,11 @@
     "Your Solution Provider": "Mitra Solusi Anda",
     "Home": "Beranda",
     "About Us": "Tentang Kami",
-    "Our Companies": "Perusahaan Kami",
     /* the two headings inside the Our Companies menu — same wording as
        the group dictionary, which groups by trade and by market. */
-    "By industry": "Menurut industri",
-    "Printer & POS, by market": "Printer & POS, menurut pasar",
-    "Hanindo Automation Solutions": "Hanindo Automation Solutions",
-    "(Indonesia)": "(Indonesia)",
-    "(Singapore)": "(Singapura)",
-    "(China)": "(Tiongkok)",
     "Products & Services": "Produk & Layanan",
     "Products & services": "Produk & layanan",
     "Projects": "Proyek",
-    "Oil & Gas": "Minyak & Gas",
-    "Automotive": "Otomotif",
-    "Fire Fighting": "Pemadam Kebakaran",
-    "Fire Fighting Department": "Departemen Pemadam Kebakaran",
-    "Printer & POS": "Printer & POS",
-    "Partners": "Mitra",
-    "Career": "Karier",
     "Contact Us": "Hubungi Kami",
     "Contact us": "Hubungi kami",
 
@@ -66,7 +53,6 @@
     "Fuel stations,": "SPBU,",
     "built end to end.": "dibangun menyeluruh.",
     "PT. Flowtech Engineering has handled every aspect required in the construction of a fuel station since 2002 — permits, materials, labour, mechanical and electrical installation and operator training — and builds for the oil & gas industry as well.": "PT. Flowtech Engineering telah menangani setiap aspek yang dibutuhkan dalam pembangunan SPBU sejak 2002 — perizinan, material, tenaga kerja, pemasangan mekanikal dan elektrikal, serta pelatihan operator — dan juga membangun untuk industri minyak & gas.",
-    "About us": "Tentang kami",
     "About the company": "Tentang perusahaan",
     "From running stations": "Dari mengelola SPBU",
     "to building them.": "hingga membangunnya.",
@@ -87,19 +73,7 @@
     "One team,": "Satu tim,",
     "from permit to handover.": "dari perizinan hingga serah terima.",
 
-    /* ---- company detail ----
-       Labels sit inside <b>, values in the text node after the <br/>,
-       so each row that needs translating takes two entries. The
-       address, the numbers and the website are left as they are. */
-    "Detail of the company": "Detail perusahaan",
-    "Company detail.": "Detail perusahaan.",
-    "Registered name": "Nama terdaftar",
-    "Date of establishment": "Tanggal pendirian",
-    "27 August 2002": "27 Agustus 2002",
-    "Type of company": "Bentuk perusahaan",
-    "Private limited": "Perseroan terbatas",
-    "Director": "Direktur",
-    "Company address": "Alamat perusahaan",
+    /* ---- contact page: the bold labels in the checklist ---- */
     "Telephone": "Telepon",
     "Facsimile": "Faksimile",
     "Website": "Situs web",
@@ -126,7 +100,6 @@
     "Turnkey construction and renovation — the founding business, built on years of running stations ourselves.": "Konstruksi dan renovasi turnkey — bisnis awal perusahaan, dibangun dari pengalaman bertahun-tahun mengelola SPBU sendiri.",
     "Oil & gas industry": "Industri minyak & gas",
     "Construction work for the wider oil and gas industry, backed by the group's petroleum equipment experience.": "Pekerjaan konstruksi untuk industri minyak dan gas yang lebih luas, didukung pengalaman grup di bidang peralatan perminyakan.",
-    "Clients & project references": "Klien & referensi proyek",
 
     /* ---- company page: clients ----
        Only the descriptions translate. The registered names above them
@@ -134,8 +107,6 @@
     "Our client list": "Daftar klien kami",
     "Who we built for.": "Untuk siapa kami membangun.",
     "Between 2006 and 2015 Flowtech built and renovated fuel stations for the national oil company and for the international brands operating in Indonesia.": "Antara 2006 dan 2015 Flowtech membangun dan merenovasi SPBU untuk perusahaan minyak nasional serta merek-merek internasional yang beroperasi di Indonesia.",
-    "Indonesian state oil and gas company": "Perusahaan minyak dan gas milik negara Indonesia",
-    "Pertamina's retail station network": "Jaringan SPBU ritel Pertamina",
 
     /* ---- projects page ----
        The project names ("SPBU Total Oil Indonesia"), the street
@@ -151,10 +122,10 @@
     "Further references": "Referensi lainnya",
     "Also delivered.": "Juga diselesaikan.",
     "Stations named in the company profile beyond the reference table above.": "SPBU yang disebutkan dalam profil perusahaan di luar tabel referensi di atas.",
+    "Contracting entities, as named in the company profile: PT. Pertamina (Persero) and PT. Pertamina Retail, PT. Petronas Niaga Indonesia, PT. Kridapetra Graha for Shell, PT. Total Oil Indonesia, and PT. Chevron Indonesia.": "Badan hukum pemberi kontrak, sebagaimana disebutkan dalam profil perusahaan: PT. Pertamina (Persero) dan PT. Pertamina Retail, PT. Petronas Niaga Indonesia, PT. Kridapetra Graha untuk Shell, PT. Total Oil Indonesia, dan PT. Chevron Indonesia.",
     "Shell petrol station, S. Parman": "SPBU Shell, S. Parman",
     "Petronas service station, Fatmawati": "SPBU Petronas, Fatmawati",
     "Chevron service station, Duri Camp": "SPBU Chevron, Duri Camp",
-    "Pertamina petrol station, Pondok Indah": "SPBU Pertamina, Pondok Indah",
     "Total gas station, Kemang Raya": "SPBU Total, Kemang Raya",
 
     /* ---- products & services page: hero ---- */
@@ -225,7 +196,6 @@
     "project in mind?": "konstruksi?",
     "Tell us about the site and our team will scope the permits, materials, labour and installation work needed to bring it into operation.": "Ceritakan lokasi Anda dan tim kami akan menentukan lingkup perizinan, material, tenaga kerja, dan pekerjaan pemasangan yang dibutuhkan untuk mengoperasikannya.",
     "Email our team": "Email tim kami",
-    "Contact page": "Halaman kontak",
     "Head Office": "Kantor Pusat",
     "Phone": "Telepon",
     "Email": "Email",
