@@ -6,10 +6,16 @@
    English <-> Bahasa Indonesia. The choice is remembered
    (localStorage) across the group pages.
 
-   This file serves the six group pages — the home page and about/,
-   products-services/, partners/, career/ and contact/. The company
-   mini-sites each carry their own dictionary; nothing here is shared
-   with them, so a phrase used on both has to be listed in both.
+   This file serves the seven group pages — the home page and about/,
+   products-services/, partners/, career/, contact/ and search/. The
+   company mini-sites each carry their own dictionary; nothing here is
+   shared with them, so a phrase used on both has to be listed in both.
+
+   The search page has a second half to its wording: the result count,
+   the no-results line and the big field's placeholder are drawn by
+   assets/search.js after this file has already walked the page, so
+   their Indonesian lives in search.js, not here. Changing the search
+   page's wording usually means editing both files.
 
    To EDIT a translation: find the English on the left, change the
    Indonesian on the right. To ADD one: copy a line and fill in both
@@ -47,6 +53,11 @@
     "Career": "Karier",
     "Contact Us": "Hubungi Kami",
     "Your Solution Provider": "Mitra Solusi Anda",
+    /* search page. "Search" is both the breadcrumb and the label on the
+       big button; the small header field's placeholder is handled in
+       setLang() below, and the rest of the page in assets/search.js. */
+    "Search": "Cari",
+    "Search the site.": "Cari di situs ini.",
     "Fire Fighting Department": "Departemen Pemadam Kebakaran",
     /* the Products & Services drop-down, by industry */
     "Oil & Gas": "Minyak & Gas",
