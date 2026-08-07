@@ -670,6 +670,51 @@ a.pcard:hover .more svg{transform:translateX(3px)}
    visible on both grounds. */
 .section.paper .xlink{border-top-color:#c9d5e3}
 
+/* ---------- COMPANY INDEX ----------
+   The group's companies grouped by sector: sector and its description in
+   the left column, the companies listed in the right, a hairline between
+   groups. Used by the About page and the Contact Us router, which ask the
+   same question and should answer it the same way.
+
+   It replaced three cards. The groups hold 3, 1 and 3 companies, so the
+   cards ragged by 241px — 455, 312 and 553 measured — and at a third of
+   the page width "PT. Hanindo Automation Solutions" wrapped onto four
+   lines with its market stacked underneath. Running full width fixes both:
+   rows in a list cannot rag, and every name sets on one line.
+
+   It lives here rather than in the two pages' own <style> blocks because
+   it was duplicated in both, which is how the two drifted apart in the
+   first place. Everything is scoped under .vgrid: the Products & Services
+   page borrows .vopt on its own and must keep the button treatment. */
+.vgrid{display:flex;flex-direction:column;margin-top:1.7rem}
+.vgrid .vgrp{display:grid;grid-template-columns:minmax(190px,.26fr) 1fr;gap:2rem;border-top:1px solid #c9d5e3;padding:1.5rem 0}
+@media(max-width:760px){.vgrid .vgrp{grid-template-columns:1fr;gap:.9rem}}
+/* The sector description is a child of the label, not a sibling, so the
+   two travel together when the grid collapses on a phone. */
+.vgrid .vsec{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--blue-800);line-height:1.7;padding-top:.15rem}
+.vgrid .vsec span{display:block;text-transform:none;letter-spacing:0;font-weight:400;font-size:.85rem;color:var(--muted);margin-top:.4rem;line-height:1.5}
+.vgrid .vrows{display:flex;flex-direction:column}
+.vgrid .vopt{display:flex;align-items:center;gap:1rem;padding:.62rem 0;font-weight:700;font-size:.98rem;color:var(--blue-800);border-bottom:1px solid var(--line);transition:color .18s}
+.vgrid .vopt:last-child{border-bottom:0}
+.vgrid .vopt:hover{color:var(--brand)}
+.vgrid .vopt svg{width:15px;height:15px;flex:none;fill:none;stroke:currentColor;stroke-width:2.2;color:var(--brand)}
+/* Marks are ranged left on a common edge rather than centred in a box.
+   The Fire Fighting Department has no logo file; its .lw is empty and just
+   holds the column, which is why the nested row indents rather than
+   relying on a mark for alignment. */
+.vgrid .vopt .lw{flex:none;width:104px;height:30px;display:flex;align-items:center;justify-content:flex-start}
+.vgrid .vopt .lw img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;mix-blend-mode:multiply}
+.vgrid .vopt .nm{flex:1;min-width:0}
+/* Market sits inline after the name. Stacking it was part of what drove
+   the Automation row to four lines. */
+.vgrid .vopt .nm em{font-style:normal;font-weight:400;font-size:.82rem;color:var(--muted);margin-left:.5rem}
+/* The Fire Fighting Department is a department of Hanindo Citra, not a
+   company beside it: indented under its parent behind a short branch rule,
+   replacing a 9px dash that floated clear of the row and read as a stray
+   mark. */
+.vgrid .vopt.nest{padding-left:1.4rem;font-weight:600;font-size:.92rem}
+.vgrid .vopt.nest .nm::before{content:"";display:inline-block;width:12px;height:1px;background:#c9d5e3;vertical-align:middle;margin-right:.6rem}
+
 /* ---------- CONTACT ---------- */
 .contact{position:relative;overflow:hidden;background:var(--blue-950);color:#fff}
 .contact .glow{display:none}

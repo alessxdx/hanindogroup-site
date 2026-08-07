@@ -9,49 +9,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/site.css?v=202608071200" />
+<link rel="stylesheet" href="../assets/site.css?v=202608080700" />
 <style>
-/* The companies as a rule-and-columns index rather than three cards.
-   The cards had to hold 3, 1 and 3 companies, so they ragged by 241px
-   — measured at 455 / 312 / 553 — and at a third of the page width
-   "PT. Hanindo Automation Solutions" wrapped onto four lines. Running
-   full width fixes both at once: every name sets on one line, and rows
-   in a list cannot rag against each other. Same treatment as the
-   .xlink cross-link in site.css, so the two read as one language.
-   Rules are #c9d5e3, not --line: this section sits on the paper
-   ground, where --line all but vanishes — the same reason .bandlab
-   draws its own. */
-.vgrid{display:flex;flex-direction:column;margin-top:1.7rem}
-.vgrp{display:grid;grid-template-columns:minmax(190px,.26fr) 1fr;gap:2rem;border-top:1px solid #c9d5e3;padding:1.5rem 0}
-@media(max-width:760px){.vgrp{grid-template-columns:1fr;gap:.9rem}}
-/* Sector name and its one-line description share the left column: the
-   description is a child of the label rather than a sibling, so the two
-   travel together when the grid collapses on a phone. */
-.vsec{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--blue-800);line-height:1.7;padding-top:.15rem}
-.vsec span{display:block;text-transform:none;letter-spacing:0;font-weight:400;font-size:.85rem;color:var(--muted);margin-top:.4rem;line-height:1.5}
-.vrows{display:flex;flex-direction:column}
-.vopt{display:flex;align-items:center;gap:1rem;padding:.62rem 0;font-weight:700;font-size:.98rem;color:var(--blue-800);border-bottom:1px solid var(--line);transition:color .18s}
-.vopt:last-child{border-bottom:0}
-.vopt:hover{color:var(--brand)}
-.vopt svg{width:15px;height:15px;flex:none;fill:none;stroke:currentColor;stroke-width:2.2;color:var(--brand)}
-/* The logo column is ranged left and wider than the old 92px, so the
-   marks sit on a common left edge instead of being centred in a box.
-   The Fire Fighting Department has no logo file; its .lw is empty and
-   simply holds the column, which is why the nested row indents rather
-   than relying on the mark for alignment. */
-.vopt .lw{flex:none;width:104px;height:30px;display:flex;align-items:center;justify-content:flex-start}
-.vopt .lw img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;mix-blend-mode:multiply}
-.vopt .nm{flex:1;min-width:0}
-/* The market sits inline after the name rather than on a line of its
-   own: there is room for it now, and stacking it was part of what drove
-   the Automation row to four lines. */
-.vopt .nm em{font-style:normal;font-weight:400;font-size:.82rem;color:var(--muted);margin-left:.5rem}
-/* The Fire Fighting Department is a department of Hanindo Citra, not a
-   company standing beside it. Indented under its parent and marked with
-   a short rule that reads as a branch, replacing the 9px dash that
-   floated clear of the row and looked like a stray mark. */
-.vopt.nest{padding-left:1.4rem;font-weight:600;font-size:.92rem}
-.vopt.nest .nm::before{content:"";display:inline-block;width:12px;height:1px;background:#c9d5e3;vertical-align:middle;margin-right:.6rem}
+/* The company index (.vgrid / .vgrp / .vsec / .vopt) moved to site.css —
+   the Contact Us router runs the same block, and keeping two copies is
+   how the two pages drifted apart. */
 /* Vision & Mission uses the shared .vm / .vm-card block from site.css,
    the same as the company About pages. */
 /* Tighter section rhythm on this group page. */
