@@ -47,6 +47,27 @@
 .mktsw{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin-top:1.5rem}
 .mktsw .lab{width:100%;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--sky)}
 .mktsw .btn{padding:.6rem 1.1rem;font-size:.83rem}
+
+/* The office signboard photo is 4:3, and only its middle band is the sign —
+   the tiled wall runs across the top quarter and the floor across the
+   bottom tenth. .shot crops with object-fit:cover, so how much of that dead
+   space shows depends entirely on the box's own aspect: at 705x240 the box
+   is 2.94:1 and shows the middle 45%, all sign, but once the column stacks
+   on a phone the box falls to about 1.4:1 — near the photo's own 1.33 — and
+   shows 2% to 98%, which puts the wall and the floor back in frame as dark
+   bands top and bottom.
+   Holding the box at 2.2:1 fixes the visible slice at 2560/2.2 = 1164 of
+   the 1920 rows, or 60.6%, whatever the screen width — which leaves 758
+   rows of travel. object-position 66% spends 500 of those, putting the
+   window at 26%-87%: clear of the wall at 25% and the floor at 90% with a
+   little margin at each end. Scoped to this page: the photo is only used
+   here, and .shot elsewhere frames pictures that want their whole height.
+   Written as .section.compact .split .shot, not .split .shot: site.css pins
+   a 240px min-height at that specificity, and left in place it wins, so
+   aspect-ratio derives the WIDTH from that height instead — 240 x 2.2 =
+   528px, which overflows a phone. Height has to follow width here. */
+.section.compact .split .shot{aspect-ratio:2.2;min-height:0}
+.section.compact .split .shot img{object-position:center 66%}
 </style>
 </head>
 <body>
@@ -130,7 +151,7 @@
       <div class="reveal">
         <span class="kicker">Gralessando Pte Ltd</span>
         <h2 class="h2">Printing, scanning, and point of sale.</h2>
-        <p class="lede">Gralessando Pte Ltd is incorporated in Singapore and is represented as Custom (South East Asia). The Indonesian market is served by PT. Hanindo Automation Solutions, the group's Jakarta company.</p>
+        <p class="lede">Gralessando Pte Ltd is incorporated in Singapore and is represented as CUSTOM (South East Asia). The Indonesian market is served by PT. Hanindo Automation Solutions, while the China market is served by Hanindo Shanghai.</p>
         <!-- The three areas Custom organises its own catalogue around,
              taken from custom.biz. "Reading solutions" was folded into
              data capture, which is where the scanners and payment
@@ -360,6 +381,6 @@ b.addEventListener('click',function(){
 });
 window.addEventListener('resize',sync);window.addEventListener('load',sync);sync();})();
 </script>
-<script src="translate.js?v=202608072330"></script>
+<script src="translate.js?v=202608080330"></script>
 </body>
 </html>

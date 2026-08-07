@@ -95,11 +95,17 @@
     "Company overview": "Profil perusahaan",
     "The group’s hub": "Pusat grup ini",
     "for South East Asia": "untuk Asia Tenggara",
-    "Gralessando (S) Pte Ltd opened in Singapore in 2014, the third step in one expansion. CUSTOM Hanindo proved itself in China from 2007, reached Indonesia in 2012, and two years after that was given a company of its own in Singapore — set up as the hub for CUSTOM Hanindo across the whole of South East Asia.": "Gralessando (S) Pte Ltd dibuka di Singapura pada tahun 2014, langkah ketiga dari satu rangkaian ekspansi. CUSTOM Hanindo membuktikan diri di Tiongkok sejak 2007, masuk ke Indonesia pada 2012, dan dua tahun setelahnya memperoleh perusahaan sendiri di Singapura — dibentuk sebagai pusat CUSTOM Hanindo untuk seluruh Asia Tenggara.",
-    "Being the hub is what sets this company apart from the group’s other two Custom companies, which each serve one country. Gralessando serves a region. The region was opened through partners appointed from 2016 onwards. Today Thailand is served through its partner and the Philippines from a CUSTOM Hanindo office of our own, opened in Manila in 2023; the rest of the region — Singapore, Malaysia, Vietnam, Brunei, Cambodia, Laos and Myanmar — is served by the Singapore office directly.": "Peran sebagai pusat inilah yang membedakan perusahaan ini dari dua perusahaan Custom lain di grup, yang masing-masing melayani satu negara. Gralessando melayani satu kawasan. Kawasan ini dibuka melalui para mitra yang ditunjuk sejak 2016. Kini Thailand dilayani melalui mitranya dan Filipina dari kantor CUSTOM Hanindo milik kami sendiri yang dibuka di Manila pada 2023; sisa kawasan — Singapura, Malaysia, Vietnam, Brunei, Kamboja, Laos, dan Myanmar — dilayani langsung oleh kantor Singapura.",
+    /* The first paragraph carries two inline links, so it reaches the walker
+       as three text nodes. The link text itself is China and Indonesia, both
+       of which already have entries further down for the contact page — so
+       the anchors translate without anything new here. */
+    "Gralessando (S) Pte Ltd was established in Singapore in 2014 as the third stage of CUSTOM Hanindo’s regional expansion. After establishing its presence in": "Gralessando (S) Pte Ltd didirikan di Singapura pada tahun 2014 sebagai tahap ketiga ekspansi regional CUSTOM Hanindo. Setelah membangun kehadirannya di",
+    "in 2007 and expanding into": "pada tahun 2007 dan berkembang ke",
+    "in 2012, Singapore was selected as the hub for CUSTOM Hanindo’s operations across Southeast Asia.": "pada tahun 2012, Singapura dipilih sebagai pusat operasi CUSTOM Hanindo di seluruh Asia Tenggara.",
+    "Since 2016, Gralessando has expanded through appointed partners across the region. Today, Singapore, Malaysia, Vietnam, Brunei, Cambodia, Laos and Myanmar are supported directly by the Singapore office, Thailand is supported through its local partner, and the Philippines is served through a CUSTOM Hanindo office established in Manila in 2023.": "Sejak 2016, Gralessando berkembang melalui mitra-mitra yang ditunjuk di seluruh kawasan. Kini Singapura, Malaysia, Vietnam, Brunei, Kamboja, Laos, dan Myanmar didukung langsung oleh kantor Singapura, Thailand didukung melalui mitra lokalnya, dan Filipina dilayani melalui kantor CUSTOM Hanindo yang didirikan di Manila pada tahun 2023.",
     "The Singapore office": "Kantor Singapura",
     "One of the companies of the Hanindo Group, serving operators across South East Asia.": "Salah satu perusahaan Hanindo Group, melayani operator di seluruh Asia Tenggara.",
-    "Gralessando Pte Ltd is incorporated in Singapore and is represented as Custom (South East Asia). The Indonesian market is served by PT. Hanindo Automation Solutions, the group's Jakarta company.": "Gralessando Pte Ltd berbadan hukum di Singapura dan diwakili sebagai Custom (Asia Tenggara). Pasar Indonesia dilayani oleh PT. Hanindo Automation Solutions, perusahaan grup yang berbasis di Jakarta.",
+    "Gralessando Pte Ltd is incorporated in Singapore and is represented as CUSTOM (South East Asia). The Indonesian market is served by PT. Hanindo Automation Solutions, while the China market is served by Hanindo Shanghai.": "Gralessando Pte Ltd berbadan hukum di Singapura dan diwakili sebagai CUSTOM (Asia Tenggara). Pasar Indonesia dilayani oleh PT. Hanindo Automation Solutions, sedangkan pasar Tiongkok dilayani oleh Hanindo Shanghai.",
 
     /* ---- about: timeline ---- */
     "Our journey": "Perjalanan kami",
@@ -183,8 +189,7 @@
     "For printer and POS supply, integration, consumables or service, reach the Singapore office of Gralessando Pte Ltd.": "Untuk pengadaan, integrasi, bahan habis pakai, atau servis printer dan POS, hubungi kantor Singapura Gralessando Pte Ltd.",
     "Telephone": "Telepon",
     "Office hours": "Jam operasional",
-    "— Monday to Friday, 08.00 – 17.00 SGT": "— Senin sampai Jumat, 08.00 – 17.00 SGT",
-    "Gralessando covers South East Asia — the Philippines from our own Manila office, Thailand through our partner, and the rest of the region direct from the Singapore office. Write to the address for your market, or call the person named:": "Gralessando mencakup Asia Tenggara — Filipina dari kantor kami sendiri di Manila, Thailand melalui mitra kami, dan sisa kawasan langsung dari kantor Singapura. Kirim email ke alamat untuk pasar Anda, atau hubungi orang yang tercantum:",
+    "— Monday to Friday, 09.00 – 17.30 SGT": "— Senin sampai Jumat, 09.00 – 17.30 SGT",
     /* The first market card reuses the region name from the mktnote block above. */
     "Philippines": "Filipina",
     "Thailand": "Thailand",
