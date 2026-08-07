@@ -220,12 +220,12 @@
 
     /* ---- projects page ----
        Indonesian puts the adjective after the noun, so the two halves of
-       the heading swap sense: "Selected" carries Proyek and the coloured
-       half carries Terpilih. The coloured half is tagged
+       the heading swap sense: "Featured" carries Proyek and the coloured
+       half carries Unggulan. The coloured half is tagged
        data-t="Projects (hero)" because a bare "Projects" is also the nav
        and breadcrumb label, which has to stay Proyek on its own. */
-    "Selected": "Proyek",
-    "Projects (hero)": "Terpilih",
+    "Featured": "Proyek",
+    "Projects (hero)": "Unggulan",
     "Complex fire-safety installations delivered across oil & gas, government, banking and industrial sectors.": "Instalasi keselamatan kebakaran yang kompleks di sektor migas, pemerintah, perbankan, dan industri.",
     "Projects completed": "Proyek selesai",
     "Service divisions": "Divisi layanan",
@@ -236,7 +236,7 @@
     "Re-design, supply & installation of the hydrant system at the Operational Building (OP-1 Package).": "Perancangan ulang, pengadaan & pemasangan sistem hidran di Gedung Operasional (Paket OP-1).",
     "More projects": "Proyek lainnya",
     "Track record": "Rekam jejak",
-    "Selected projects": "Proyek terpilih",
+    "Featured projects": "Proyek unggulan",
     "West Sumatera — OP-1 Package": "Sumatera Barat — Paket OP-1",
     "Re-design, supply & installation of hydrant system at the Operational Building.": "Perancangan ulang, pengadaan & pemasangan sistem hidran di Gedung Operasional.",
     "Industrial": "Industri",

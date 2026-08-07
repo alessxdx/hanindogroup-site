@@ -350,8 +350,12 @@ img{max-width:100%;display:block}
    a rounded badge stuck on the photo; the house radius is 3px and the rest
    of the site's uppercase labels sit at 700. Padding gains a little width
    and loses a little height so the shape reads as a rectangle rather than a
-   lozenge. */
-.proj .pimg .sector{position:absolute;left:.8rem;top:.8rem;z-index:2;background:var(--fire);color:#fff;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;padding:.28rem .65rem;border-radius:var(--r)}
+   lozenge.
+   Navy rather than --fire: the label is only saying which sector the job
+   was in, and in the accent blue it read as a call to action competing with
+   the photograph. --navy-800 is what the other flat labels on dark already
+   use, and it keeps the accent for things that are actually clickable. */
+.proj .pimg .sector{position:absolute;left:.8rem;top:.8rem;z-index:2;background:var(--navy-800);color:#fff;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;padding:.28rem .65rem;border-radius:var(--r)}
 .proj .pimg .ic{position:absolute;right:1rem;bottom:1rem;width:40px;height:40px;opacity:.4}
 .proj .pimg .ic svg{width:100%;height:100%;fill:none;stroke:#fff;stroke-width:1.6}
 .proj .body{padding:1rem 1.05rem 1.15rem;display:flex;flex-direction:column;flex:1}
