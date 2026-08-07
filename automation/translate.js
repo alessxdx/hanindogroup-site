@@ -90,19 +90,15 @@
     "Company overview": "Profil perusahaan",
     "Founded for oil & gas,": "Didirikan untuk minyak & gas,",
     "rebuilt around CUSTOM": "dibangun ulang di sekitar CUSTOM",
-    "PT. Hanindo Automation Solutions was one of the four companies established when the Hanindo Group was founded in 2002, alongside Citra, Automotive and Flowtech. Its original mandate was reflected in its name: providing automation solutions for the oil and gas industry, while Citra supplied forecourt equipment and Flowtech developed station infrastructure.": "PT. Hanindo Automation Solutions adalah salah satu dari empat perusahaan yang didirikan saat Hanindo Group berdiri pada tahun 2002, bersama Citra, Automotive, dan Flowtech. Mandat awalnya tercermin dalam namanya: menyediakan solusi otomasi untuk industri minyak dan gas, sementara Citra memasok peralatan forecourt dan Flowtech membangun infrastruktur SPBU.",
-    /* Two paragraphs here carry an inline link, so each reaches the walker
-       as two text nodes either side of the anchor and needs an entry per
-       side. The Hanindo Citra link text is a company name and stays in
-       English; "CUSTOM from China" is a brand plus a country, so the
-       country half is translated and the brand is not. */
-    "However, through a successful partnership with": "Namun, melalui kemitraan yang sukses dengan",
-    "CUSTOM from China": "CUSTOM dari Tiongkok",
-    ", Hanindo introduced the CUSTOM product line to Indonesia in 2012 as CUSTOM Hanindo Indonesia.": ", Hanindo memperkenalkan lini produk CUSTOM ke Indonesia pada tahun 2012 sebagai CUSTOM Hanindo Indonesia.",
-    "Since then, Hanindo Automation Solutions has focused on CUSTOM Hanindo Indonesia: providing printing, scanning and point-of-sale hardware, together with system integration and technical support across Indonesia.": "Sejak saat itu, Hanindo Automation Solutions berfokus pada CUSTOM Hanindo Indonesia: menyediakan perangkat keras pencetakan, pemindaian, dan point-of-sale, bersama integrasi sistem dan dukungan teknis di seluruh Indonesia.",
-    "The oil and gas automation business was then transferred to": "Bisnis otomasi minyak dan gas kemudian dialihkan ke",
-    ", where it aligned with the petroleum equipment business it had historically supported.": ", tempatnya menyatu dengan bisnis peralatan perminyakan yang selama ini didukungnya.",
-    "Point-of-sale in the field": "Point-of-sale di lapangan",
+    /* Both paragraphs carry an inline link, so each reaches the walker as
+       two text nodes either side of the anchor and needs an entry per side.
+       Neither link text is translated: "Hanindo Citra" and "CUSTOM S.p.A."
+       are company names. */
+    "PT. Hanindo Automation Solutions was one of the four companies established when the Hanindo Group was founded in 2002. Originally focused on automation solutions for the oil and gas industry, the company later evolved through its partnership with": "PT. Hanindo Automation Solutions adalah salah satu dari empat perusahaan yang didirikan saat Hanindo Group berdiri pada tahun 2002. Awalnya berfokus pada solusi otomasi untuk industri minyak dan gas, perusahaan ini kemudian berkembang melalui kemitraannya dengan",
+    ", introducing the CUSTOM product line to Indonesia in 2012 as CUSTOM Hanindo Indonesia.": ", memperkenalkan lini produk CUSTOM ke Indonesia pada tahun 2012 sebagai CUSTOM Hanindo Indonesia.",
+    "Today, Hanindo Automation Solutions focuses on CUSTOM printing, scanning and point-of-sale solutions, supported by local system integration and technical expertise. The oil and gas automation business was transferred to": "Saat ini, Hanindo Automation Solutions berfokus pada solusi pencetakan, pemindaian, dan point-of-sale CUSTOM, didukung integrasi sistem dan keahlian teknis lokal. Bisnis otomasi minyak dan gas dialihkan ke",
+    ", where it continues alongside its petroleum equipment operations.": ", tempatnya berlanjut bersama operasi peralatan perminyakan perusahaan tersebut.",
+    "Indonesia’s Office": "Kantor Indonesia",
 
     "Our journey": "Perjalanan kami",
     "CUSTOM HANINDO Growth": "Pertumbuhan CUSTOM HANINDO",
