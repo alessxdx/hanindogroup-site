@@ -37,10 +37,10 @@
     /* ---- home hero + intro split (new layout) ---- */
     "PT. Hanindo Citra designs, supplies, installs and maintains complete fire-fighting systems — reliable on day one, and every day after.": "PT. Hanindo Citra merancang, memasok, memasang, dan memelihara sistem pemadam kebakaran yang lengkap — andal sejak hari pertama, dan setiap hari sesudahnya.",
     "Fire safety, under one roof.": "Keselamatan kebakaran, dalam satu atap.",
-    "The fire fighting department of the Hanindo Group, delivering advanced, end-to-end fire-protection systems that safeguard lives and property across Indonesia. Meticulous engineering turned into systems that perform reliably long after handover.": "Departemen pemadam kebakaran Hanindo Group, menghadirkan sistem proteksi kebakaran mutakhir dan menyeluruh yang melindungi jiwa dan properti di seluruh Indonesia. Rekayasa yang cermat diwujudkan menjadi sistem yang bekerja andal jauh setelah serah terima.",
-    "Design, supply, installation, testing and long-term maintenance from a single partner": "Perancangan, pemasokan, pemasangan, pengujian, dan pemeliharaan jangka panjang dari satu mitra",
-    "Six fire-system technologies covering hydrant, sprinkler, gas, foam, deluge and alarm": "Enam teknologi sistem kebakaran meliputi hidran, sprinkler, gas, busa, deluge, dan alarm",
-    "Trusted across oil & gas, government and industry throughout Indonesia": "Dipercaya di sektor migas, pemerintah, dan industri di seluruh Indonesia",
+    "Hanindo Group's fire protection division provides engineered fire protection solutions designed to safeguard lives, assets and critical infrastructure across Indonesia.": "Divisi proteksi kebakaran Hanindo Group menghadirkan solusi proteksi kebakaran terekayasa yang dirancang untuk melindungi jiwa, aset, dan infrastruktur penting di seluruh Indonesia.",
+    "Complete project lifecycle support — from design and supply to installation, testing, commissioning and long-term maintenance": "Dukungan penuh sepanjang siklus proyek — dari perancangan dan pemasokan hingga pemasangan, pengujian, commissioning, dan pemeliharaan jangka panjang",
+    "Six core fire protection systems covering hydrant, sprinkler, gas suppression, foam, deluge and fire alarm solutions": "Enam sistem proteksi kebakaran utama meliputi hidran, sprinkler, pemadam gas, busa, deluge, dan solusi alarm kebakaran",
+    "Trusted across oil & gas, government facilities and industrial sectors throughout Indonesia": "Dipercaya di sektor migas, fasilitas pemerintah, dan sektor industri di seluruh Indonesia",
 
     /* ---- home statement + stats ---- */
     "Hanindo Citra is the fire protection division of Hanindo Group—transforming": "Hanindo Citra adalah divisi proteksi kebakaran Hanindo Group—mengubah",
