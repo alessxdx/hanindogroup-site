@@ -98,8 +98,8 @@
     "Supplying, installing and servicing autoshop equipment, and building our own brands.": "Memasok, memasang, dan merawat peralatan bengkel, serta membangun merek kami sendiri.",
     "Company overview": "Profil perusahaan",
     /* The overview h2 is split by a <br/>, so it matches as two nodes. */
-    "The Group’s": "Lini grup",
-    "Workshop & Industrial Equipment Arm": "untuk peralatan bengkel & industri",
+    "The Group’s Workshop": "Lini grup untuk peralatan bengkel",
+    "& Industrial Equipment Arm": "& industri",
     "Singapore": "Singapura",
     "Italy": "Italia",
     "PT. Hanindo Automotive was established within the Hanindo Group in 2002, providing workshop and industrial equipment solutions designed to improve efficiency, productivity and ease of use.": "PT. Hanindo Automotive didirikan di dalam Hanindo Group pada tahun 2002, menyediakan solusi peralatan bengkel dan industri yang dirancang untuk meningkatkan efisiensi, produktivitas, dan kemudahan penggunaan.",
