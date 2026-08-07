@@ -649,10 +649,26 @@ a.pcard:hover .more svg{transform:translateX(3px)}
 .checks-desc span{font-size:.88rem;color:var(--muted);line-height:1.5}
 
 /* ---------- CROSS-LINK BAND ---------- */
-.xlink{background:var(--blue-900);color:#fff;border-radius:var(--r);padding:clamp(1.8rem,3vw,2.4rem);display:grid;grid-template-columns:1fr auto;gap:1.6rem;align-items:center;border-left:3px solid var(--brand)}
-@media(max-width:760px){.xlink{grid-template-columns:1fr}}
-.xlink h3{font-weight:700;font-size:clamp(1.2rem,2.1vw,1.5rem);color:#fff;margin-bottom:.5rem}
-.xlink p{color:#b9c6d8;max-width:60ch;font-size:.94rem}
+/* A see-also pointing at another company in the group. Deliberately not a
+   card: a hairline across the measure, the relationship named in the left
+   column, the destination set in the right — the way a printed index
+   handles a cross-reference. It was a filled navy panel with an accent rail
+   down its edge, which floated off the page and spent the accent twice, on
+   the rail and again on a button. Here the accent is spent once, on the
+   link, so the block stops competing with the real calls to action above it. */
+.xlink{display:grid;grid-template-columns:minmax(150px,.26fr) 1fr;gap:2rem;border-top:1px solid var(--line);padding-top:1.8rem}
+@media(max-width:760px){.xlink{grid-template-columns:1fr;gap:.9rem}}
+.xlink .xl-rel{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--muted);line-height:1.7;padding-top:.25rem}
+.xlink h3{font-weight:700;font-size:clamp(1.3rem,2.4vw,1.7rem);letter-spacing:-.015em;color:var(--blue-800);margin-bottom:.6rem}
+.xlink p{color:var(--muted);max-width:62ch;font-size:.96rem}
+.xlink .xl-go{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.3rem;font-weight:700;font-size:.9rem;color:var(--brand);border-bottom:1px solid transparent;transition:color .18s,border-color .18s}
+.xlink .xl-go svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2}
+.xlink .xl-go:hover{color:var(--brand-600);border-bottom-color:var(--brand-600)}
+/* Same reason .bandlab draws its own rule: --line is tuned for white and all
+   but disappears on the paper sections, where Flowtech's cross-links sit.
+   Now that a hairline is the only thing separating this block, it has to be
+   visible on both grounds. */
+.section.paper .xlink{border-top-color:#c9d5e3}
 
 /* ---------- CONTACT ---------- */
 .contact{position:relative;overflow:hidden;background:var(--blue-950);color:#fff}
