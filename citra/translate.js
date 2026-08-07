@@ -191,7 +191,6 @@
     "Call center": "Call center",
     "Office hours": "Jam operasional",
     "— Monday to Friday, 08.00 – 17.00 WIB": "— Senin – Jumat, 08.00 – 17.00 WIB",
-    "Email Hanindo Citra": "Email Hanindo Citra",
 
     /* ---- shared spec-table labels (catalogue pages) ---- */
     "Capacity": "Kapasitas",

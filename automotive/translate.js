@@ -282,7 +282,6 @@
     "Call center": "Call center",
     "Office hours": "Jam operasional",
     "— Monday to Friday, 08.00 – 17.00 WIB": "— Senin – Jumat, 08.00 – 17.00 WIB",
-    "Email Hanindo Automotive": "Email Hanindo Automotive",
 
     /* ---- catalogue pages: shared furniture ---- */
     "The range": "Rangkaian produk",
