@@ -116,12 +116,12 @@
     "Vision & Mission": "Visi & Misi",
     "01 / Vision": "01 / Visi",
     "Vision": "Visi",
-    "To be the automation partner South East Asia's retail, transport and service operators rely on.": "Menjadi mitra otomasi yang diandalkan oleh operator ritel, transportasi, dan jasa di Asia Tenggara.",
+    "To be the automation partner Indonesia’s retail, transport and service operators rely on.": "Menjadi mitra otomasi yang diandalkan oleh operator ritel, transportasi, dan jasa di Indonesia.",
     "02 / Mission": "02 / Misi",
     "Mission": "Misi",
-    "Supply Custom's printing, scanning and point-of-sale hardware with the software that runs it.": "Menyediakan perangkat keras pencetakan, pemindaian, dan point-of-sale Custom beserta perangkat lunaknya.",
+    "Supply Custom’s printing, scanning and point-of-sale hardware with the software that runs it.": "Menyediakan perangkat keras pencetakan, pemindaian, dan point-of-sale Custom beserta perangkat lunaknya.",
     "Integrate, install and support every system locally.": "Mengintegrasikan, memasang, dan mendukung setiap sistem secara lokal.",
-    "Keep pace with Custom's range so customers run current technology.": "Mengikuti perkembangan rangkaian produk Custom agar pelanggan menggunakan teknologi terkini.",
+    "Keep pace with Custom’s range so customers run current technology.": "Mengikuti perkembangan rangkaian produk Custom agar pelanggan menggunakan teknologi terkini.",
 
     /* ---- about: why choose us ---- */
     "Why choose us": "Mengapa memilih kami",
