@@ -346,7 +346,12 @@ img{max-width:100%;display:block}
 .proj:hover{transform:translateY(-6px);box-shadow:0 26px 44px -26px rgba(13,36,56,.4)}
 .proj .pimg{position:relative;min-height:150px;background:linear-gradient(150deg,var(--navy-800),var(--navy-700))}
 .proj .pimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.proj .pimg .sector{position:absolute;left:.8rem;top:.8rem;z-index:2;background:var(--fire);color:#fff;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;font-weight:800;padding:.3rem .6rem;border-radius:6px}
+/* Sector label, not a pill. 6px and weight 800 made a small caption read as
+   a rounded badge stuck on the photo; the house radius is 3px and the rest
+   of the site's uppercase labels sit at 700. Padding gains a little width
+   and loses a little height so the shape reads as a rectangle rather than a
+   lozenge. */
+.proj .pimg .sector{position:absolute;left:.8rem;top:.8rem;z-index:2;background:var(--fire);color:#fff;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;padding:.28rem .65rem;border-radius:var(--r)}
 .proj .pimg .ic{position:absolute;right:1rem;bottom:1rem;width:40px;height:40px;opacity:.4}
 .proj .pimg .ic svg{width:100%;height:100%;fill:none;stroke:#fff;stroke-width:1.6}
 .proj .body{padding:1rem 1.05rem 1.15rem;display:flex;flex-direction:column;flex:1}
@@ -604,7 +609,12 @@ body{line-height:1.65}
 .hslide h1{font-weight:700;font-size:clamp(1.85rem,3.7vw,2.8rem);line-height:1.14;letter-spacing:-.02em}
 .kicker{font-size:.72rem;letter-spacing:.16em;font-weight:700;margin-bottom:.85rem}
 .eyebrow{font-size:.72rem;letter-spacing:.16em;font-weight:700}
-.btn{padding:.85rem 1.6rem;border-radius:var(--r);font-weight:600;font-size:.92rem;border:1px solid transparent}
+/* Width and style only, never the colour. This rule sits after .btn-ghost,
+   so the `border` shorthand it used to carry reset border-color to
+   transparent at equal specificity and won — which is why Contact page had
+   no outline here while the identical markup on the Citra pages did. The
+   default transparent still comes from the .btn rule further up. */
+.btn{padding:.85rem 1.6rem;border-radius:var(--r);font-weight:600;font-size:.92rem;border-width:1px;border-style:solid}
 .lede{font-size:1rem;max-width:64ch}
 .tabs>li>a{padding:.95rem 1.2rem;font-size:.9rem;font-weight:600}
 .stat .num{font-weight:700;font-size:clamp(2.2rem,3.8vw,2.9rem);line-height:1}

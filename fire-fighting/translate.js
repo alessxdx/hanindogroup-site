@@ -65,6 +65,10 @@
     "Designs compliant with NFPA, SNI & ISO standards": "Desain sesuai standar NFPA, SNI & ISO",
     "Fast, professional response from our team": "Respons cepat dan profesional dari tim kami",
     "Email our team": "Email tim kami",
+    /* Sits beside "Email our team" in the closing band on four pages. It had
+       no entry, so the toggle translated one button and left the other in
+       English. Same wording the Citra dictionary uses. */
+    "Contact page": "Halaman kontak",
     "Head Office": "Kantor Pusat",
     "Fire Fighting Dept Office": "Kantor Departemen Pemadam Kebakaran",
     "Phone": "Telepon",
