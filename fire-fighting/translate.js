@@ -146,12 +146,19 @@
     "See our projects": "Lihat proyek kami",
     "Our products": "Produk kami",
     "Talk to us": "Hubungi kami",
+    "Proven Experience": "Pengalaman Teruji",
+    "Supporting critical projects across government, oil & gas and industrial sectors, including Pertamina and the Ministry of Transportation.": "Mendukung proyek-proyek penting di sektor pemerintah, migas, dan industri, termasuk Pertamina dan Kementerian Perhubungan.",
+    "Global Standards": "Standar Global",
+    "Internationally recognised products designed to comply with NFPA, SNI and ISO standards.": "Produk yang diakui secara internasional dan dirancang untuk memenuhi standar NFPA, SNI, dan ISO.",
+    "Lifecycle Support": "Dukungan Sepanjang Siklus",
+    "From consultation and site surveys to after-sales maintenance, we provide continuous support throughout the system lifecycle.": "Dari konsultasi dan survei lokasi hingga perawatan purnajual, kami memberikan dukungan berkelanjutan sepanjang siklus hidup sistem.",
+    /* Trusted / Best Quality / Excellent Service are no longer on About —
+       these three headings survive only on hanindo-citra-website.html, which
+       shares this dictionary. Delete them when that page goes. Its three
+       paragraphs are worded differently and carry their own entries. */
     "Trusted": "Terpercaya",
-    "Trusted across government, oil & gas and industry — from Pertamina to the Ministry of Transportation.": "Dipercaya di sektor pemerintah, migas, dan industri — dari Pertamina hingga Kementerian Perhubungan.",
     "Best Quality": "Kualitas Terbaik",
-    "Internationally branded products engineered to NFPA, SNI and ISO standards.": "Produk bermerek internasional yang direkayasa sesuai standar NFPA, SNI, dan ISO.",
     "Excellent Service": "Pelayanan Prima",
-    "Fast response, free consultation, on-site surveys and committed after-sales support.": "Respons cepat, konsultasi gratis, survei lokasi, dan dukungan purnajual yang berkomitmen.",
 
     /* ---- products & services page ---- */
     "Products &": "Produk &",

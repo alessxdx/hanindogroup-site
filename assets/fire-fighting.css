@@ -720,6 +720,20 @@ body{line-height:1.65}
 .section.compact .isometa .std{font-size:.92rem}
 .section.compact .isometa .lbl{font-size:.78rem;margin-top:.15rem}
 .section.compact .isonote{font-size:.82rem}
+/* The membership and competency cards sit directly under those certificates
+   and were left at full size, so the band stepped up in scale halfway down —
+   two small cards, then two large ones saying less. Same proportional trim as
+   the block above: the icon, the type and the padding all come down together,
+   so the two rows read as one set of credentials rather than two designs. */
+.section.compact .ccard{padding:1.15rem 1.15rem 1.1rem}
+.section.compact .ccic{width:38px;height:38px;margin-bottom:.7rem}
+.section.compact .ccic svg{width:19px;height:19px}
+.section.compact .ccey{font-size:.64rem;margin-bottom:.3rem}
+.section.compact .ccard h3{font-size:.95rem;margin-bottom:.45rem}
+.section.compact .ccard>p{font-size:.84rem}
+.section.compact .ccpills{margin-top:.7rem;gap:.4rem}
+.section.compact .ccpill{font-size:.7rem;padding:.3rem .6rem}
+.section.compact .cclink{padding-top:.8rem;font-size:.72rem}
 
 /* ---------- ACCENT TEXT ON DARK BANDS ----------
    The group sites tint accent text on dark backgrounds with --sky, not
