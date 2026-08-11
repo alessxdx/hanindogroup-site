@@ -152,19 +152,15 @@ div-automotive.jpg        Division card — workshop with a car on a lift
 div-fire-fighting.jpg     Division card — OPTIONAL. If absent, falls
                           back automatically to the existing
                           fire-fighting/photos/mot-hydrant-pump.jpg
-div-printer-pos.png       Division card — POS / ticket printer hardware
-                          [DONE] shown whole via .dimg-contain (white
-                          panel, no crop). A navy-cut version of the
-                          same arrangement was tried and reverted.
-                          NOTE: the file is now a photograph of a card
-                          payment at a shop counter, not the four-
-                          printer product shot on white this entry
-                          used to describe. It is also the Company
-                          overview photo on the Automation About page,
-                          where it crops to fill. Automation has no
-                          office or install photograph of its own —
-                          one would suit that slot better and free
-                          this file to be a product shot again.
+div-printer-pos-card.jpg  Division card — POS / ticket printer hardware
+                          [DONE] a photograph of a card payment at a
+                          shop counter, cropped to fill. Group home
+                          page only.
+div-printer-pos.png       Automation About page, Company overview
+                          [DONE] the Indonesia office boardroom. The
+                          two used to share one file; they were split
+                          so the division card could change without
+                          moving the Automation office photo.
 
 PARTNER LOGOS                                     [COMPLETE]
 All principal logos live in /photos/partners/ — NOT in /photos/
