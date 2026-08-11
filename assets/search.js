@@ -64,11 +64,17 @@
     'partners':             'Hanindo Group',
     'career':               'Hanindo Group',
     'contact':              'Hanindo Group',
-    'citra':                'Hanindo Citra',
-    'fire-fighting':        'Hanindo Citra — Fire Fighting',
-    'flowtech-engineering': 'Flowtech Engineering',
-    'automotive':           'Hanindo Automotive',
-    'automation':           'Hanindo Automation Solutions',
+    'citra':                'PT. Hanindo Citra',
+    'fire-fighting':        'PT. Hanindo Citra — Fire Fighting',
+    'flowtech-engineering': 'PT. Flowtech Engineering',
+    'automotive':           'PT. Hanindo Automotive',
+    'automation':           'PT. Hanindo Automation Solutions',
+    /* No PT. on the last two: neither is an Indonesian company. PT is the
+       Indonesian form for a limited company, and these carry their own --
+       Gralessando is Singaporean and says Pte Ltd, and Hanindo Shanghai is
+       registered in China as Hanindo (Shanghai) International Co., Ltd.
+       'Hanindo Group' above is the group rather than a registered entity,
+       so it takes no prefix either. */
     'printer-pos':          'Gralessando Pte Ltd',
     'shanghai':             'Hanindo Shanghai'
   };

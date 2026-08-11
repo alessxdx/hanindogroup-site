@@ -245,7 +245,7 @@
     "Each of our companies runs its own enquiries. Pick the one that fits and you will land on the team that can help.": "Setiap perusahaan kami menangani pertanyaannya sendiri. Pilih yang sesuai dan Anda akan langsung terhubung dengan tim yang dapat membantu.",
     "Not sure who to ask?": "Belum yakin harus bertanya ke siapa?",
     "Reach the head office.": "Hubungi kantor pusat.",
-    "For general enquiries — or anything about PT. Flowtech Engineering or Hanindo Automation Solutions — contact the group head office in Jakarta and we will point you to the right team.": "Untuk pertanyaan umum — atau apa pun mengenai PT. Flowtech Engineering atau Hanindo Automation Solutions — hubungi kantor pusat grup di Jakarta dan kami akan mengarahkan Anda ke tim yang tepat.",
+    "For general enquiries — or anything about PT. Flowtech Engineering or PT. Hanindo Automation Solutions — contact the group head office in Jakarta and we will point you to the right team.": "Untuk pertanyaan umum — atau apa pun mengenai PT. Flowtech Engineering atau PT. Hanindo Automation Solutions — hubungi kantor pusat grup di Jakarta dan kami akan mengarahkan Anda ke tim yang tepat.",
 
     /* ---- 404 ---- */
     "Page Not Found": "Halaman Tidak Ditemukan",
