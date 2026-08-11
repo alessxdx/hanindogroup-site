@@ -158,16 +158,19 @@
        The project names ("SPBU Total Oil Indonesia"), the street
        addresses and the years are left as they are: SPBU is already the
        Indonesian word, and the rest are proper nouns and figures. */
-    "Project references": "Referensi proyek",
+    /* The section head follows the Fire Fighting projects page, which
+       also repeats its hero here -- "Track record" over "Featured
+       projects". Sentence case, so it is a separate entry from the hero's
+       "Featured Projects" above; the walker matches the whole node, case
+       included. */
+    "Track record": "Rekam jejak",
+    "Featured projects": "Proyek unggulan",
     /* One node, not the .fx split the hero used to run. Indonesian puts
        the adjective after the noun -- "Proyek Unggulan" -- so a split
        heading would have translated to the two halves in the English
        order. */
     "Featured Projects": "Proyek Unggulan",
     "Fuel station projects delivered for Pertamina, Total Oil Indonesia, Shell, Petronas and Chevron, from permit through to a station in operation.": "Proyek SPBU yang diselesaikan untuk Pertamina, Total Oil Indonesia, Shell, Petronas, dan Chevron, dari perizinan hingga SPBU beroperasi.",
-    "Nine stations,": "Sembilan SPBU,",
-    "2008 to 2013.": "2008 hingga 2013.",
-    "Each project delivered to SPBU specification, with the year and the contracting client as recorded in the company profile.": "Setiap proyek diselesaikan sesuai spesifikasi SPBU, dengan tahun dan klien pemberi kontrak sebagaimana tercatat dalam profil perusahaan.",
     "Further references": "Referensi lainnya",
     "Also delivered.": "Juga diselesaikan.",
     "Stations named in the company profile beyond the reference table above.": "SPBU yang disebutkan dalam profil perusahaan di luar tabel referensi di atas.",
