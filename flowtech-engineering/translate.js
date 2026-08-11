@@ -151,8 +151,6 @@
        names in either language, and they only show at all if a logo file
        goes missing. */
     "Customer base": "Basis pelanggan",
-    "Built on Industry Experience": "Dibangun dari pengalaman industri",
-    "Since 2006, Flowtech has delivered fuel station projects for major energy companies including Pertamina, Petronas, Shell, Total and Chevron.": "Sejak 2006, Flowtech telah menyelesaikan proyek SPBU untuk perusahaan energi besar termasuk Pertamina, Petronas, Shell, Total, dan Chevron.",
     /* the heading and lede below are the Projects page's wall, which still
        runs the older wording. The home page wall took the two lines above
        it in August 2026. */

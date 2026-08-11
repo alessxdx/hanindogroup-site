@@ -28,16 +28,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202608111500" />
-<style>
-/* Every other wall on the site runs a centred kicker and nothing else.
-   This one keeps the heading and the sentence the business wrote for it,
-   so both are centred into the same column rather than left-aligned
-   under a centred label. Everything else the marquee needs -- .marquee,
-   .mtrack, .brandcard -- is already in site.css, shared with the Fire
-   Fighting home. */
-.customers .chead .h2{margin-top:.7rem}
-.customers .chead .lede{margin-left:auto;margin-right:auto;max-width:68ch}
-</style>
 </head>
 <body>
 
@@ -191,11 +181,7 @@
      projects.html, so this remains a summary. The "Project references"
      button under it is gone at the business's request. -->
 <section class="customers" aria-label="Customer base">
-  <div class="chead reveal">
-    <span class="kick">Customer base</span>
-    <h2 class="h2">Built on Industry Experience</h2>
-    <p class="lede">Since 2006, Flowtech has delivered fuel station projects for major energy companies including Pertamina, Petronas, Shell, Total and Chevron.</p>
-  </div>
+  <div class="chead reveal"><span class="kick">Customer base</span></div>
   <div class="marquee">
     <div class="mtrack" id="mtrack">
       <div class="brandcard"><img src="../photos/customers/pertamina-patra-niaga.png" alt="PT Pertamina Patra Niaga" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="btext" style="display:none">PT. Pertamina (Persero)</span></div>
@@ -316,6 +302,6 @@ function build(){
 }
 if(document.readyState==='complete')build();else window.addEventListener('load',build);})();
 </script>
-<script src="translate.js?v=202608111830"></script>
+<script src="translate.js?v=202608111900"></script>
 </body>
 </html>
