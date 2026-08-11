@@ -72,6 +72,7 @@
        English. Same wording the Citra dictionary uses. */
     "Contact page": "Halaman kontak",
     "Head Office": "Kantor Pusat",
+    "Telephone (Head Office)": "Telepon (Kantor Pusat)",
     "Fire Fighting Dept Office": "Kantor Departemen Pemadam Kebakaran",
     "Phone": "Telepon",
     "Business Hours": "Jam Operasional",
