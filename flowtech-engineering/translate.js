@@ -177,8 +177,10 @@
     "Chevron service station, Duri Camp": "SPBU Chevron, Duri Camp",
     "Total gas station, Kemang Raya": "SPBU Total, Kemang Raya",
 
-    /* ---- products & services page: hero ---- */
-    "Products &": "Produk &",
+    /* ---- products & services page: hero ----
+       The heading is the one word now, so the "Products &" half it used
+       to carry has gone. The nav tab and the breadcrumb still read
+       "Products & Services", which is their own entry above. */
     "Services": "Layanan",
     "Fuel station construction handled end to end — design, permits, materials and labour, installation and operator training, under one contract.": "Konstruksi SPBU ditangani menyeluruh — desain, perizinan, material dan tenaga kerja, pemasangan, dan pelatihan operator, dalam satu kontrak.",
     "Every aspect required in the construction of a fuel station is handled by us, so clients deal with one team from permit to handover.": "Setiap aspek yang dibutuhkan dalam pembangunan SPBU kami tangani sendiri, sehingga klien berurusan dengan satu tim dari perizinan hingga serah terima.",
