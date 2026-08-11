@@ -87,9 +87,12 @@
     "Mechanical and electrical installation": "Pemasangan mekanikal dan elektrikal",
     "Training of employees on operational and safety protocols": "Pelatihan karyawan mengenai prosedur operasional dan protokol keselamatan",
 
-    /* ---- about page ---- */
+    /* ---- about page ----
+       The hero is "About Us" over two text nodes, the .fx span splitting
+       it, so each half needs its own entry. The sentence that used to run
+       under it was taken out at the business's request. */
     "About": "Tentang",
-    "A fuel station construction company that grew out of running the stations, established in Jakarta in 2002 and part of Hanindo Group.": "Perusahaan konstruksi SPBU yang tumbuh dari pengalaman mengelola SPBU, didirikan di Jakarta pada 2002 dan menjadi bagian dari Hanindo Group.",
+    "Us": "Kami",
     "Company overview": "Profil perusahaan",
     "Built on Fuel Station Experience": "Dibangun dari pengalaman SPBU",
     "PT. Flowtech Engineering was established in 2002 as part of the Hanindo Group. Drawing on the Group's experience in the fuel station business, Flowtech was established to provide construction and engineering solutions for the industry.": "PT. Flowtech Engineering didirikan pada 2002 sebagai bagian dari Hanindo Group. Berbekal pengalaman Grup dalam bisnis SPBU, Flowtech didirikan untuk menghadirkan solusi konstruksi dan rekayasa bagi industri tersebut.",
@@ -133,6 +136,9 @@
        are names in either language. */
     "Our client list": "Daftar klien kami",
     "Built on Industry Experience": "Dibangun dari pengalaman industri",
+    /* the two band labels on the wall below it */
+    "National oil company": "Perusahaan minyak nasional",
+    "International brands": "Merek internasional",
     "Since 2006, Flowtech has delivered fuel station projects for major energy companies including Pertamina, Petronas, Shell, Total and Chevron.": "Sejak 2006, Flowtech telah menyelesaikan proyek SPBU untuk perusahaan energi besar termasuk Pertamina, Petronas, Shell, Total, dan Chevron.",
     /* the heading and lede below are the Projects page's wall, which still
        runs the older wording. The home page wall took the two lines above
