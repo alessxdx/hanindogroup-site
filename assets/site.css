@@ -1269,3 +1269,21 @@ a.pcard:hover .more svg{transform:translateX(3px)}
    --------------------------------------------------------------------- */
 a[href^="tel:"]{color:inherit;text-decoration:none}
 a[href^="tel:"]:hover,a[href^="tel:"]:focus-visible{text-decoration:underline}
+
+/* ---------------------------------------------------------------------
+   "Get directions" beside each office address.
+
+   A plain link to Google Maps rather than an embedded map: an iframe
+   would need an API key, would load Google's script on every contact
+   page, and would put third-party tracking on pages that currently have
+   none. The link costs nothing until it is clicked, and on a phone it
+   opens the Maps app directly.
+
+   Colour is inherited because these addresses appear both in the dark
+   .contact panel and in the light contact lists on the company pages --
+   a fixed colour would be wrong on one of them. The underline carries
+   the affordance instead.
+   --------------------------------------------------------------------- */
+.dirlink{display:inline-block;margin-left:.55rem;font-size:.8rem;font-weight:600;
+  color:inherit;opacity:.8;text-decoration:underline;text-underline-offset:2px;white-space:nowrap}
+.dirlink:hover,.dirlink:focus-visible{opacity:1}

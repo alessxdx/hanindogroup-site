@@ -38,6 +38,8 @@
    ===================================================================== */
 (function () {
   var DICT = {
+    /* ---- directions ---- */
+    "Get directions": "Petunjuk arah",
     /* ---- navigation / header ---- */
     "Your Solution Provider": "Mitra Solusi Anda",
     "Home": "Beranda",

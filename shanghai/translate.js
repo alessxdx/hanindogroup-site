@@ -17,6 +17,8 @@
    ===================================================================== */
 (function () {
   var DICT = {
+    /* ---- directions ---- */
+    "Get directions": "Petunjuk arah",
     /* ---- navigation / header ---- */
     "Home": "首页",
     "About Us": "关于我们",

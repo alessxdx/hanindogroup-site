@@ -21,6 +21,8 @@
    ===================================================================== */
 (function () {
   var DICT = {
+    /* ---- directions ---- */
+    "Get directions": "Petunjuk arah",
     /* ---- navigation / header ---- */
     "Home": "Beranda",
     "About Us": "Tentang Kami",
