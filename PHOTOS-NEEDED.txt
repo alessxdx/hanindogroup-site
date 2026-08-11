@@ -30,8 +30,10 @@ Put a new photo in the folder for the site that uses it:
   photos/citra/hero/    + /products/
   photos/printer-pos/hero/    + /products/
   photos/automation/hero/     + /products/
-  photos/flowtech/hero/       + /sectors/   empty on purpose — the
-                              Flowtech pages are text only, see below
+  photos/flowtech/hero/       + /deliver/   the hero and intro shots,
+                              and the four "What we deliver" tiles
+  photos/flowtech/sectors/    empty, and staying that way — the sector
+                              cards it was made for are gone
 
   photos/not-used/            on disk but referenced by no page
 
@@ -907,13 +909,24 @@ flow-construction.png     [COMPLETE] Beside "Fuel Station & Oil & Gas
                           1.52), so cover crops the sides.
 
 WHAT WE DELIVER TILES  ->  photos/flowtech/deliver/
-Four square tiles on the home page, each drawn today as a line icon
-over a pale gradient. Each takes an optional photograph:
+Four square tiles on the home page. All four are filled; a tile with no
+file falls back to the line icon it used to carry.
 
-flow-engineering-design.jpg        Engineering & Design
-flow-construction-work.jpg         Construction
-flow-mechanical-electrical.jpg     Mechanical & Electrical
-flow-commissioning-training.jpg    Commissioning & Training
+flow-engineering-design.jpg        Engineering & Design      [COMPLETE] 450x300
+flow-construction-work.jpg         Construction              [COMPLETE] 970x646
+flow-mechanical-electrical.jpg     Mechanical & Electrical   [COMPLETE] 205x300
+flow-commissioning-training.jpg    Commissioning & Training  [COMPLETE] 450x300
+
+All four came in under the 800px this slot asks for, so they are sharp
+at 1x in a 258px tile and will soften on a high-density screen. The
+mechanical and electrical shot is the one to replace first if better
+originals turn up: at 205x300 it is portrait against a square tile, so
+cover crops the top and bottom of it rather than the sides.
+
+They arrived named flow-engineering-design.jpg.jpg — Windows appends
+the extension again when it is already typed and the folder is set to
+hide known extensions. Renamed on the way in. Worth knowing for the
+next batch: the file must end in exactly one .jpg or .png.
 
 Square, at least 800px. The photograph COVERS the tile, so anything at
 the very edges is cropped — and the bottom of each tile carries a dark
