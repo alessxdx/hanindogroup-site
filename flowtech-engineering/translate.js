@@ -55,13 +55,19 @@
        it used to carry, "Fuel stations," and "built end to end.", have
        gone with it. */
     "PT. Flowtech Engineering has handled every aspect required in the construction of a fuel station since 2002 — permits, materials, labour, mechanical and electrical installation and operator training.": "PT. Flowtech Engineering telah menangani setiap aspek yang dibutuhkan dalam pembangunan SPBU sejak 2002 — perizinan, material, tenaga kerja, pemasangan mekanikal dan elektrikal, serta pelatihan operator.",
-    "About the company": "Tentang perusahaan",
-    "From running stations": "Dari mengelola SPBU",
-    "to building them.": "hingga membangunnya.",
-    "Experience gained in managing the fuel station business gave us the knowledge and resources to start our own fuel station construction business. Every aspect required in the construction of a fuel station is handled by us — so clients deal with one team from permit to handover.": "Pengalaman dalam mengelola bisnis SPBU memberi kami pengetahuan dan sumber daya untuk memulai bisnis konstruksi SPBU sendiri. Setiap aspek yang dibutuhkan dalam pembangunan SPBU kami tangani sendiri — sehingga klien berurusan dengan satu tim, dari perizinan hingga serah terima.",
-    "Experience gained in managing the fuel station business gave us the knowledge and resources to start our own fuel station construction business. PT. Flowtech Engineering provides a complete solution for anyone deciding to open a fuel station of their own.": "Pengalaman dalam mengelola bisnis SPBU memberi kami pengetahuan dan sumber daya untuk memulai bisnis konstruksi SPBU sendiri. PT. Flowtech Engineering menghadirkan solusi lengkap bagi siapa pun yang memutuskan untuk membuka SPBU sendiri.",
-    "Every aspect required in the construction of a fuel station is handled by us — from permit request procedures, raw materials and labour force, through mechanical and electrical installation, to the training of station employees on operational and safety procedures.": "Setiap aspek yang dibutuhkan dalam pembangunan SPBU kami tangani sendiri — mulai dari prosedur permohonan izin, material dan tenaga kerja, pemasangan mekanikal dan elektrikal, hingga pelatihan karyawan SPBU mengenai prosedur operasional dan keselamatan.",
-    "As part of Hanindo Group, Flowtech Engineering went on to take construction work for the oil and gas industry as well. It is the strength of the companies within the group that lets Flowtech deliver a complete solution on the construction side.": "Sebagai bagian dari Hanindo Group, Flowtech Engineering kemudian juga menangani pekerjaan konstruksi untuk industri minyak dan gas. Kekuatan perusahaan-perusahaan di dalam grup inilah yang memungkinkan Flowtech menghadirkan solusi menyeluruh di sisi konstruksi.",
+    "Fuel Station & Oil & Gas Construction": "Konstruksi SPBU & Fasilitas Minyak & Gas",
+    "PT. Flowtech Engineering provides end-to-end construction solutions for fuel stations and oil & gas facilities — from engineering and permitting to construction, installation and operational preparation.": "PT. Flowtech Engineering menghadirkan solusi konstruksi menyeluruh untuk SPBU dan fasilitas minyak & gas — mulai dari rekayasa dan perizinan hingga konstruksi, pemasangan, dan persiapan operasional.",
+    "Our capabilities": "Kemampuan kami",
+    "Fuel station construction and renovation": "Konstruksi dan renovasi SPBU",
+    "Engineering, civil, mechanical and electrical works": "Pekerjaan rekayasa, sipil, mekanikal, dan elektrikal",
+    "Equipment installation and commissioning": "Pemasangan dan commissioning peralatan",
+    "Permitting, site preparation and safety": "Perizinan, persiapan lokasi, dan keselamatan",
+    "Operator training": "Pelatihan operator",
+
+    /* the four checks below are the About Us "What we handle" list. The
+       home page used to carry them too, above a set of scope cards that
+       said the same thing again; both went when the home page took the
+       capability list above. */
     "Permit procedures managed on the client's behalf": "Prosedur perizinan diurus atas nama klien",
     "Materials and labour supplied and coordinated on site": "Material dan tenaga kerja disediakan serta dikoordinasikan di lokasi",
     "Mechanical and electrical installation": "Pemasangan mekanikal dan elektrikal",
@@ -71,6 +77,10 @@
     "About": "Tentang",
     "A fuel station construction company that grew out of running the stations, established in Jakarta in 2002 and part of Hanindo Group.": "Perusahaan konstruksi SPBU yang tumbuh dari pengalaman mengelola SPBU, didirikan di Jakarta pada 2002 dan menjadi bagian dari Hanindo Group.",
     "Company overview": "Profil perusahaan",
+    "Built on Fuel Station Experience": "Dibangun dari pengalaman SPBU",
+    "PT. Flowtech Engineering was established in 2002 as part of the Hanindo Group. Drawing on the Group's experience in the fuel station business, Flowtech was established to provide construction and engineering solutions for the industry.": "PT. Flowtech Engineering didirikan pada 2002 sebagai bagian dari Hanindo Group. Berbekal pengalaman Grup dalam bisnis SPBU, Flowtech didirikan untuk menghadirkan solusi konstruksi dan rekayasa bagi industri tersebut.",
+    "Since 2006, we have delivered new construction and renovation projects for major energy companies in Indonesia, including Pertamina, Petronas, Shell, Total and Chevron.": "Sejak 2006, kami telah menyelesaikan proyek pembangunan baru dan renovasi untuk perusahaan energi besar di Indonesia, termasuk Pertamina, Petronas, Shell, Total, dan Chevron.",
+    "Today, Flowtech provides construction solutions for fuel stations and the wider oil & gas industry, covering engineering, construction, mechanical and electrical installation, commissioning and operational preparation.": "Kini, Flowtech menghadirkan solusi konstruksi untuk SPBU dan industri minyak & gas yang lebih luas, mencakup rekayasa, konstruksi, pemasangan mekanikal dan elektrikal, commissioning, serta persiapan operasional.",
     "What we handle": "Yang kami tangani",
     "One team,": "Satu tim,",
     "from permit to handover.": "dari perizinan hingga serah terima.",
@@ -80,9 +90,10 @@
     "Facsimile": "Faksimile",
     "Website": "Situs web",
 
-    /* ---- both pages: scope of work ---- */
+    /* ---- products & services page: scope of work ----
+       These were shared with the home page until its scope cards were
+       dropped, so they are now the Products & Services page's alone. */
     "What we do": "Yang kami lakukan",
-    "Scope of work": "Lingkup pekerjaan",
     "Everything a station needs,": "Semua yang dibutuhkan SPBU,",
     "under one contract.": "dalam satu kontrak.",
     "Permits & Approvals": "Perizinan & Persetujuan",
@@ -107,6 +118,11 @@
        Only the descriptions translate. The registered names above them
        are names in either language. */
     "Our client list": "Daftar klien kami",
+    "Built on Industry Experience": "Dibangun dari pengalaman industri",
+    "Since 2006, Flowtech has delivered fuel station projects for major energy companies including Pertamina, Petronas, Shell, Total and Chevron.": "Sejak 2006, Flowtech telah menyelesaikan proyek SPBU untuk perusahaan energi besar termasuk Pertamina, Petronas, Shell, Total, dan Chevron.",
+    /* the heading and lede below are the Projects page's wall, which still
+       runs the older wording. The home page wall took the two lines above
+       it in August 2026. */
     "Who we built for.": "Untuk siapa kami membangun.",
     "Between 2006 and 2015 Flowtech built and renovated fuel stations for the national oil company and for the international brands operating in Indonesia.": "Antara 2006 dan 2015 Flowtech membangun dan merenovasi SPBU untuk perusahaan minyak nasional serta merek-merek internasional yang beroperasi di Indonesia.",
 
