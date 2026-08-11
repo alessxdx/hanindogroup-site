@@ -122,9 +122,9 @@
     "A practical, safety-focused approach backed by the wider expertise of the Hanindo Group.": "Pendekatan praktis yang mengutamakan keselamatan, didukung keahlian Hanindo Group yang lebih luas.",
 
     /* ---- contact page: the bold labels in the checklist ---- */
+    /* Facsimile and Website came off the checklist with their entries.
+       The fax number is on no page now; the website is the site itself. */
     "Telephone": "Telepon",
-    "Facsimile": "Faksimile",
-    "Website": "Situs web",
 
     /* ---- products & services page: scope of work ----
        These were shared with the home page until its scope cards were
@@ -232,11 +232,11 @@
     "Head office": "Kantor pusat",
     "Office hours": "Jam kerja",
     "— Monday to Friday, 08.00 – 17.00 WIB": "— Senin sampai Jumat, 08.00 – 17.00 WIB",
-    "Flowtech Engineering shares the head office at Jl. Fatmawati No. 55 with the rest of Hanindo Group. For petroleum equipment, automation, automotive workshop equipment or fire protection, the group contact page will point you to the right company.": "Flowtech Engineering berbagi kantor pusat di Jl. Fatmawati No. 55 dengan perusahaan lain dalam Hanindo Group. Untuk peralatan perminyakan, otomasi, peralatan bengkel otomotif, atau proteksi kebakaran, halaman kontak grup akan mengarahkan Anda ke perusahaan yang tepat.",
+    "PT. Flowtech Engineering shares the head office at Jl. Fatmawati No. 55 with the rest of Hanindo Group. For petroleum equipment, automation, automotive workshop equipment or fire protection, the group contact page will point you to the right company.": "PT. Flowtech Engineering berbagi kantor pusat di Jl. Fatmawati No. 55 dengan perusahaan lain dalam Hanindo Group. Untuk peralatan perminyakan, otomasi, peralatan bengkel otomotif, atau proteksi kebakaran, halaman kontak grup akan mengarahkan Anda ke perusahaan yang tepat.",
     "Group contact": "Kontak grup",
 
     /* ---- contact block ---- */
-    "Talk to Flowtech Engineering": "Hubungi Flowtech Engineering",
+    "Talk to PT. Flowtech Engineering": "Hubungi PT. Flowtech Engineering",
     "Have a construction": "Punya rencana proyek",
     "project in mind?": "konstruksi?",
     "Tell us about the site and our team will scope the permits, materials, labour and installation work needed to bring it into operation.": "Ceritakan lokasi Anda dan tim kami akan menentukan lingkup perizinan, material, tenaga kerja, dan pekerjaan pemasangan yang dibutuhkan untuk mengoperasikannya.",
