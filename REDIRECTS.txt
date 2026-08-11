@@ -106,3 +106,25 @@ GO-LIVE CHECKLIST (separate from redirects)
 [ ] Confirm the header search still behaves. It currently opens a
     Google site: search for hanindogroup.com in a new tab, because the
     old Joomla search endpoint disappears with Joomla.
+[ ] Wire up the custom 404 page. Add this line to the same .htaccess
+    that carries the redirects above:
+
+        ErrorDocument 404 /404.html
+
+    Without it Apache serves its own bare "Not Found" page and
+    /404.html is never used. The page deliberately uses absolute
+    paths (/assets/..., /photos/...) because ErrorDocument serves it
+    at whatever URL the visitor asked for — do not change them to
+    relative paths.
+[ ] Check robots.txt reaches https://hanindogroup.com/robots.txt and
+    sitemap.xml reaches https://hanindogroup.com/sitemap.xml, then
+    submit the sitemap in Google Search Console.
+[ ] Regenerate sitemap.xml whenever pages are added or removed. It
+    lists 52 URLs and is a plain static file — /search/ and
+    fire-fighting/hanindo-citra-website.html are deliberately left
+    out. A sitemap listing pages that no longer exist is worse than
+    no sitemap at all.
+[ ] The canonical host is the BARE domain, https://hanindogroup.com
+    (www 301s to it today). Every rel=canonical, og:url, sitemap URL
+    and JSON-LD @id assumes that. If the hosting ever flips to www,
+    all of them have to change together.

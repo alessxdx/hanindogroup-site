@@ -245,6 +245,19 @@
     "Reach the head office.": "Hubungi kantor pusat.",
     "For general enquiries — or anything about Flowtech Engineering or Hanindo Automation Solutions — contact the group head office in Jakarta and we will point you to the right team.": "Untuk pertanyaan umum — atau apa pun mengenai Flowtech Engineering atau Hanindo Automation Solutions — hubungi kantor pusat grup di Jakarta dan kami akan mengarahkan Anda ke tim yang tepat.",
 
+    /* ---- 404 ---- */
+    "Page Not Found": "Halaman Tidak Ditemukan",
+    "We could not find": "Kami tidak dapat menemukan",
+    "that page.": "halaman tersebut.",
+    "The link may be out of date, or the page may have moved when we rebuilt this site. Here is the quickest way to what you were looking for.": "Tautannya mungkin sudah tidak berlaku, atau halamannya berpindah saat kami membangun ulang situs ini. Berikut cara tercepat menuju yang Anda cari.",
+    "Where would you like to go?": "Ke mana Anda ingin menuju?",
+    "Our companies.": "Perusahaan kami.",
+    "Each of our companies has its own pages. Pick the one your enquiry is about, or use the search box at the top of the page.": "Setiap perusahaan kami memiliki halamannya sendiri. Pilih yang sesuai dengan pertanyaan Anda, atau gunakan kotak pencarian di bagian atas halaman.",
+    "Still cannot find it?": "Masih belum menemukannya?",
+    "Ask the head office.": "Tanyakan ke kantor pusat.",
+    "Tell us what you were looking for and we will point you to the right page — or the right team.": "Beri tahu kami apa yang Anda cari dan kami akan mengarahkan Anda ke halaman yang tepat — atau ke tim yang tepat.",
+    "All contacts": "Semua kontak",
+
     /* ---- misc ---- */
     "Photo needed": "Perlu foto"
   };

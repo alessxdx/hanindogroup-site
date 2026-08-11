@@ -37,6 +37,9 @@ my $OUT = 'assets/search-index.json';
 # Pages deliberately kept OUT of the index.
 #
 #   search/index.html                     the results page itself
+#   404.html                              the error page. Its text is
+#       navigation, not content, and a search for "Hanindo" should
+#       never return "we could not find that page".
 #   fire-fighting/hanindo-citra-website.html
 #       the optional whole-department-in-one-page variant (see
 #       fire-fighting/README-FOR-COLLEAGUE.txt). Its text duplicates the
@@ -46,6 +49,7 @@ my $OUT = 'assets/search-index.json';
 # ---------------------------------------------------------------------
 my %SKIP = (
   'search/index.html'                       => 1,
+  '404.html'                                => 1,
   'fire-fighting/hanindo-citra-website.html' => 1,
 );
 

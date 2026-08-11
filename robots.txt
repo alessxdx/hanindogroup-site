@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# The site's own search results — useful to visitors, but nothing search
+# engines should index or spend crawl budget on.
+Disallow: /search/
+
+Sitemap: https://hanindogroup.com/sitemap.xml
