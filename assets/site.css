@@ -1237,3 +1237,21 @@ a.pcard:hover .more svg{transform:translateX(3px)}
    these same product shots. */
 .cat-tiles .cat{background:transparent;border-color:transparent}
 .cat-tiles .cat .shot img{mix-blend-mode:multiply}
+
+/* ---------------------------------------------------------------------
+   Tappable phone numbers.
+
+   Every number on the site was plain text, which on a phone means
+   reading it off the screen and typing it into the dialler. These links
+   deliberately carry no colour of their own: they sit inside the dark
+   contact panel and the footer, where the usual link blue would read as
+   a mistake. The affordance is the tap target and the hover underline.
+
+   Targeted on the href rather than a wrapper class because the numbers
+   appear in three different blocks -- the .info rows, the footer .cl
+   lines and the company contact lists -- and this covers all three
+   without naming any of them. Fax numbers are left as plain text on
+   purpose: a fax is not something to dial.
+   --------------------------------------------------------------------- */
+a[href^="tel:"]{color:inherit;text-decoration:none}
+a[href^="tel:"]:hover,a[href^="tel:"]:focus-visible{text-decoration:underline}
