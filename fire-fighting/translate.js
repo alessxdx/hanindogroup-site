@@ -75,6 +75,16 @@
     "Telephone (Head Office)": "Telepon (Kantor Pusat)",
     "Fire Fighting Dept Office": "Kantor Departemen Pemadam Kebakaran",
     "Phone": "Telepon",
+    /* The contact checklist labels its hours "Office hours" and prints the
+       days after an em dash, in its own text node. Both entries are the
+       Citra dictionary's word for word: this department is part of that
+       company, and the two pages should read the same in Indonesian.
+       "Business Hours" and its 08:00 line, just below, are the labels the
+       page carried before that checklist was rewritten. No page uses them
+       now; they are left in place in case the one-page variant, which
+       still runs its own contact block, goes back to them. */
+    "Office hours": "Jam operasional",
+    "— Monday to Friday, 08.00 – 17.00 WIB": "— Senin – Jumat, 08.00 – 17.00 WIB",
     "Business Hours": "Jam Operasional",
     "Monday – Friday, 08:00 – 17:00 WIB": "Senin – Jumat, 08.00 – 17.00 WIB",
 
