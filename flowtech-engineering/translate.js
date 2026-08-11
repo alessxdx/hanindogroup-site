@@ -93,7 +93,7 @@
     "Company overview": "Profil perusahaan",
     "Built on Fuel Station Experience": "Dibangun dari pengalaman SPBU",
     "PT. Flowtech Engineering was established in 2002 as part of the Hanindo Group. Drawing on the Group's experience in the fuel station business, Flowtech was established to provide construction and engineering solutions for the industry.": "PT. Flowtech Engineering didirikan pada 2002 sebagai bagian dari Hanindo Group. Berbekal pengalaman Grup dalam bisnis SPBU, Flowtech didirikan untuk menghadirkan solusi konstruksi dan rekayasa bagi industri tersebut.",
-    "Since 2006, we have delivered new construction and renovation projects for major energy companies in Indonesia, including Pertamina, Petronas, Shell, Total and Chevron.": "Sejak 2006, kami telah menyelesaikan proyek pembangunan baru dan renovasi untuk perusahaan energi besar di Indonesia, termasuk Pertamina, Petronas, Shell, Total, dan Chevron.",
+    "We have delivered new construction and renovation projects for major energy companies in Indonesia, including Pertamina, Petronas, Shell, Total and Chevron.": "Kami telah menyelesaikan proyek pembangunan baru dan renovasi untuk perusahaan energi besar di Indonesia, termasuk Pertamina, Petronas, Shell, Total, dan Chevron.",
     "Today, Flowtech provides construction solutions for fuel stations and the wider oil & gas industry, covering engineering, construction, mechanical and electrical installation, commissioning and operational preparation.": "Kini, Flowtech menghadirkan solusi konstruksi untuk SPBU dan industri minyak & gas yang lebih luas, mencakup rekayasa, konstruksi, pemasangan mekanikal dan elektrikal, commissioning, serta persiapan operasional.",
 
     /* ---- about page: vision & mission ----
@@ -159,8 +159,11 @@
        addresses and the years are left as they are: SPBU is already the
        Indonesian word, and the rest are proper nouns and figures. */
     "Project references": "Referensi proyek",
-    "Stations built,": "SPBU yang dibangun,",
-    "across Java and Sumatra.": "di Jawa dan Sumatra.",
+    /* One node, not the .fx split the hero used to run. Indonesian puts
+       the adjective after the noun -- "Proyek Unggulan" -- so a split
+       heading would have translated to the two halves in the English
+       order. */
+    "Featured Projects": "Proyek Unggulan",
     "Fuel station projects delivered for Pertamina, Total Oil Indonesia, Shell, Petronas and Chevron, from permit through to a station in operation.": "Proyek SPBU yang diselesaikan untuk Pertamina, Total Oil Indonesia, Shell, Petronas, dan Chevron, dari perizinan hingga SPBU beroperasi.",
     "Nine stations,": "Sembilan SPBU,",
     "2008 to 2013.": "2008 hingga 2013.",
