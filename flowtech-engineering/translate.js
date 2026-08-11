@@ -50,9 +50,11 @@
     "Contact us": "Hubungi kami",
 
     /* ---- company page: hero and about ---- */
-    "Fuel stations,": "SPBU,",
-    "built end to end.": "dibangun menyeluruh.",
-    "PT. Flowtech Engineering has handled every aspect required in the construction of a fuel station since 2002 — permits, materials, labour, mechanical and electrical installation and operator training — and builds for the oil & gas industry as well.": "PT. Flowtech Engineering telah menangani setiap aspek yang dibutuhkan dalam pembangunan SPBU sejak 2002 — perizinan, material, tenaga kerja, pemasangan mekanikal dan elektrikal, serta pelatihan operator — dan juga membangun untuk industri minyak & gas.",
+    /* the home hero is the company name now, so it needs no entry — a
+       registered name reads the same in either language. The two halves
+       it used to carry, "Fuel stations," and "built end to end.", have
+       gone with it. */
+    "PT. Flowtech Engineering has handled every aspect required in the construction of a fuel station since 2002 — permits, materials, labour, mechanical and electrical installation and operator training.": "PT. Flowtech Engineering telah menangani setiap aspek yang dibutuhkan dalam pembangunan SPBU sejak 2002 — perizinan, material, tenaga kerja, pemasangan mekanikal dan elektrikal, serta pelatihan operator.",
     "About the company": "Tentang perusahaan",
     "From running stations": "Dari mengelola SPBU",
     "to building them.": "hingga membangunnya.",
