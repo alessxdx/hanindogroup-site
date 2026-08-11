@@ -239,6 +239,10 @@
     "Tell us about the site and our team will scope the permits, materials, labour and installation work needed to bring it into operation.": "Ceritakan lokasi Anda dan tim kami akan menentukan lingkup perizinan, material, tenaga kerja, dan pekerjaan pemasangan yang dibutuhkan untuk mengoperasikannya.",
     "Email our team": "Email tim kami",
     "Head Office": "Kantor Pusat",
+    /* the footer's fourth column. The company names under it are names in
+       either language, so only the heading has an entry. Same wording as
+       the Citra dictionary, which runs the same column. */
+    "Our Companies": "Perusahaan Kami",
     "Phone": "Telepon",
     "Email": "Email",
 
