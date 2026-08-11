@@ -868,8 +868,16 @@ SVG (opw.svg), so nothing special is needed to serve them.
 --------------------------------------------------
 PT. FLOWTECH ENGINEERING  (/flowtech-engineering/)
 --------------------------------------------------
-TWO SLOTS, BOTH WIRED AND BOTH EMPTY. Drop either file in and it
-appears; until then each page looks exactly as it does today.
+SIX SLOTS ON THE HOME PAGE. The first two are filled; the four tile
+slots are wired and waiting. Drop a file in and it appears; until then
+the page looks exactly as it did before the slot existed.
+
+EITHER EXTENSION WORKS. Each slot names one, and if that file is not
+there it tries the other once before giving up, so .jpg and .png are
+interchangeable without touching the markup. Prefer JPEG for
+photographs: hero-flowtech.png arrived at 1.9MB, where the same picture
+as a JPEG would be a fifth of that. PNG earns its size on flat artwork
+and logos, not on a photograph.
 
 This section was text only for years — no photograph of its own was
 ever supplied, so rather than leave "Photo needed" boxes on a company
@@ -877,24 +885,26 @@ that could not fill them, the pages were written to stand as type. Two
 slots were put back on 2026-08-12 at the business's request, on the
 home page only:
 
-hero-flowtech.jpg         Home page hero background. Goes in
-                          photos/flowtech/hero/. Landscape, at least
-                          1600px wide. The heading sits on the LEFT over
-                          a blue overlay that is heaviest there, so keep
-                          the important detail to the RIGHT of the frame
-                          — a forecourt under construction, a canopy
-                          going up, a finished station. If the file is
-                          absent the hero paints its blue gradient as it
-                          does now.
+hero-flowtech.png         [COMPLETE] Home page hero background, in
+                          photos/flowtech/hero/. Supplied at 1516x798,
+                          just under the 1600px this slot is specced
+                          for, which is close enough to look right.
+                          1.9MB as a PNG though — worth re-exporting as
+                          a JPEG, and the slot will take it with no code
+                          change. The heading sits on the LEFT over a
+                          blue overlay heaviest there, so a replacement
+                          wants its detail to the RIGHT of the frame.
 
-flow-construction.jpg     Beside "Fuel Station & Oil & Gas
-                          Construction" on the home page. Same folder,
-                          photos/flowtech/hero/, next to the hero shot
-                          the way auto-workshop.jpg sits beside
-                          hero-automotive.jpg. Landscape, ~1200px wide
-                          or more; it crops to fill a panel about 4:3.
-                          Site work suits it better than a finished
-                          forecourt, since the hero can carry that.
+flow-construction.png     [COMPLETE] Beside "Fuel Station & Oil & Gas
+                          Construction" on the home page, same folder —
+                          next to the hero shot, the way
+                          auto-workshop.jpg sits beside
+                          hero-automotive.jpg. Supplied at 808x418 and
+                          drawn at 483x318, so it is sharp at 1x and
+                          will soften on a high-density screen; a larger
+                          original would be better if there is one. It
+                          is also wider than the panel (1.93 against
+                          1.52), so cover crops the sides.
 
 WHAT WE DELIVER TILES  ->  photos/flowtech/deliver/
 Four square tiles on the home page, each drawn today as a line icon

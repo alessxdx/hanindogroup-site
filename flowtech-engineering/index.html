@@ -102,7 +102,11 @@
      worse than clean type. .pagehero already paints blue-900 underneath,
      so dropping .bg leaves the gradient panel intact. -->
 <section class="pagehero hero-tall">
-  <div class="bg"><img src="../photos/flowtech/hero/hero-flowtech.jpg" alt="" onerror="this.style.display='none'" /></div>
+  <!-- .png because that is what was supplied. The onerror tries the other
+       extension once before giving up, so replacing this with a .jpg
+       needs no edit here; if neither exists the hero paints its gradient
+       as it did before the slot was wired. -->
+  <div class="bg"><img src="../photos/flowtech/hero/hero-flowtech.png" alt="" onerror="if(this.src.slice(-4)=='.png'){this.src=this.src.slice(0,-4)+'.jpg';return}this.style.display='none'" /></div>
   <div class="ov"></div><div class="glow"></div>
   <div class="wrap">
     <div class="crumb"><a href="../">Hanindo Group</a><span class="sep">/</span>PT. Flowtech Engineering</div>
@@ -154,7 +158,7 @@
              never scrolled to never tries to load, so the panel would sit
              there empty on a short visit. It is the first section under
              the hero, so it is close to the fold anyway. -->
-        <img src="../photos/flowtech/hero/flow-construction.jpg" alt="PT. Flowtech Engineering construction work on a fuel station site" onerror="var s=this.parentElement;s.style.display='none';if(s.parentElement)s.parentElement.classList.add('nophoto')" />
+        <img src="../photos/flowtech/hero/flow-construction.png" alt="PT. Flowtech Engineering construction work on a fuel station site" onerror="if(this.src.slice(-4)=='.png'){this.src=this.src.slice(0,-4)+'.jpg';return}var s=this.parentElement;s.style.display='none';if(s.parentElement)s.parentElement.classList.add('nophoto')" />
       </div>
     </div>
   </div>
@@ -183,22 +187,22 @@
     <div class="tilestrip reveal d1">
       <div class="strip strip-4" id="tilestrip">
         <div class="tile plain">
-          <img src="../photos/flowtech/deliver/flow-engineering-design.jpg" alt="" onload="this.parentElement.classList.add('haspic')" onerror="this.remove()" />
+          <img src="../photos/flowtech/deliver/flow-engineering-design.jpg" alt="" onload="this.parentElement.classList.add('haspic')" onerror="if(this.src.slice(-4)=='.jpg'){this.src=this.src.slice(0,-4)+'.png';return}this.remove()" />
           <div class="ic"><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 00-2 2v14a2 2 0 002 2h12a2 2 0 002-2V9z"/><path d="M14 3v6h6"/><path d="M9 15l2 2 4-4"/></svg></div>
           <span class="lab"><b>Engineering &amp; Design</b><i>Design review, detailed engineering, site surveys and shop drawings.</i></span>
         </div>
         <div class="tile plain">
-          <img src="../photos/flowtech/deliver/flow-construction-work.jpg" alt="" onload="this.parentElement.classList.add('haspic')" onerror="this.remove()" />
+          <img src="../photos/flowtech/deliver/flow-construction-work.jpg" alt="" onload="this.parentElement.classList.add('haspic')" onerror="if(this.src.slice(-4)=='.jpg'){this.src=this.src.slice(0,-4)+'.png';return}this.remove()" />
           <div class="ic"><svg viewBox="0 0 24 24"><path d="M21 16V8l-9-5-9 5v8l9 5 9-5z"/><path d="M3.3 7.5L12 12.5l8.7-5"/><path d="M12 12.5V21"/></svg></div>
           <span class="lab"><b>Construction</b><i>Fuel station construction, renovation and site preparation.</i></span>
         </div>
         <div class="tile plain">
-          <img src="../photos/flowtech/deliver/flow-mechanical-electrical.jpg" alt="" onload="this.parentElement.classList.add('haspic')" onerror="this.remove()" />
+          <img src="../photos/flowtech/deliver/flow-mechanical-electrical.jpg" alt="" onload="this.parentElement.classList.add('haspic')" onerror="if(this.src.slice(-4)=='.jpg'){this.src=this.src.slice(0,-4)+'.png';return}this.remove()" />
           <div class="ic"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/><path d="M2 20h4"/></svg></div>
           <span class="lab"><b>Mechanical &amp; Electrical</b><i>Mechanical, electrical and equipment installation.</i></span>
         </div>
         <div class="tile plain">
-          <img src="../photos/flowtech/deliver/flow-commissioning-training.jpg" alt="" onload="this.parentElement.classList.add('haspic')" onerror="this.remove()" />
+          <img src="../photos/flowtech/deliver/flow-commissioning-training.jpg" alt="" onload="this.parentElement.classList.add('haspic')" onerror="if(this.src.slice(-4)=='.jpg'){this.src=this.src.slice(0,-4)+'.png';return}this.remove()" />
           <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 7.9-8 9-4.6-1.1-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
           <span class="lab"><b>Commissioning &amp; Training</b><i>Testing, commissioning, handover and operational safety training.</i></span>
         </div>

@@ -1,3 +1,4 @@
-Awaiting photos - see /PHOTOS-NEEDED.txt for the filenames this folder expects.
-Expected here: hero-flowtech.jpg (hero background) and flow-construction.jpg
-(beside the intro section). Both slots are wired; drop the file in and it shows.
+Two photos are in: hero-flowtech.png (hero background) and
+flow-construction.png (beside the intro section). Either extension
+works - the slot tries .jpg and .png before giving up.
+The four "What we deliver" tile photos live in ../deliver/.
