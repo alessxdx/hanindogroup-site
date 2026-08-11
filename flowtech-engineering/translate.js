@@ -218,7 +218,6 @@
     "Oil & Gas — PT. Hanindo Citra": "Minyak & Gas — PT. Hanindo Citra",
     "Flowtech builds the stations that PT. Hanindo Citra equips. Hanindo Citra supplies the dispensers, tank gauging, flow meters and fuel management systems, and provides after-sales service once the site is running.": "Flowtech membangun SPBU yang dilengkapi oleh PT. Hanindo Citra. Hanindo Citra memasok dispenser, tank gauging, flow meter, dan sistem manajemen bahan bakar, serta memberikan layanan purnajual setelah lokasi beroperasi.",
     "Visit Oil & Gas": "Kunjungi Minyak & Gas",
-    "Their products": "Produk mereka",
 
     /* ---- contact page ----
        The "— value" halves of the checklist stay in English: each is an
