@@ -141,26 +141,18 @@
     "Operator & Safety Training": "Pelatihan Operator & Keselamatan",
     "Short training for station employees on fuel station operational and safety procedures before the site opens.": "Pelatihan singkat bagi karyawan SPBU mengenai prosedur operasional dan keselamatan SPBU sebelum lokasi mulai beroperasi.",
 
-    /* ---- products & services page: sectors ----
-       The home page and About Us both carried this grid once; it is that
-       page's alone now. */
-    "Sectors": "Sektor",
-    "Sectors we build for.": "Sektor yang kami bangun.",
-    "Fuel stations": "SPBU",
-    "Turnkey construction and renovation — the founding business, built on years of running stations ourselves.": "Konstruksi dan renovasi turnkey — bisnis awal perusahaan, dibangun dari pengalaman bertahun-tahun mengelola SPBU sendiri.",
-    "Oil & gas industry": "Industri minyak & gas",
-    "Construction work for the wider oil and gas industry, backed by the group's petroleum equipment experience.": "Pekerjaan konstruksi untuk industri minyak dan gas yang lebih luas, didukung pengalaman grup di bidang peralatan perminyakan.",
+    /* The Sectors grid stood on three pages -- the home, About Us and
+       Products & Services -- and was taken off all three. Its six entries
+       went with the last one. The two industries it named are the pills
+       under the timeline now, which have their own entries above. */
 
     /* ---- company page: customer marquee ----
        Only the head translates. The registered names under the logos are
        names in either language, and they only show at all if a logo file
-       goes missing. */
+       goes missing. The Projects page carried the same six logos under a
+       heading of its own until that wall came off; its four entries went
+       with it. */
     "Customer base": "Basis pelanggan",
-    /* the heading and lede below are the Projects page's wall, which still
-       runs the older wording. The home page wall took the two lines above
-       it in August 2026. */
-    "Who we built for.": "Untuk siapa kami membangun.",
-    "Between 2006 and 2015 Flowtech built and renovated fuel stations for the national oil company and for the international brands operating in Indonesia.": "Antara 2006 dan 2015 Flowtech membangun dan merenovasi SPBU untuk perusahaan minyak nasional serta merek-merek internasional yang beroperasi di Indonesia.",
 
     /* ---- projects page ----
        The project names ("SPBU Total Oil Indonesia"), the street
@@ -176,7 +168,6 @@
     "Further references": "Referensi lainnya",
     "Also delivered.": "Juga diselesaikan.",
     "Stations named in the company profile beyond the reference table above.": "SPBU yang disebutkan dalam profil perusahaan di luar tabel referensi di atas.",
-    "Contracting entities, as named in the company profile: PT. Pertamina (Persero) and PT. Pertamina Retail, PT. Petronas Niaga Indonesia, PT. Kridapetra Graha for Shell, PT. Total Oil Indonesia, and PT. Chevron Indonesia.": "Badan hukum pemberi kontrak, sebagaimana disebutkan dalam profil perusahaan: PT. Pertamina (Persero) dan PT. Pertamina Retail, PT. Petronas Niaga Indonesia, PT. Kridapetra Graha untuk Shell, PT. Total Oil Indonesia, dan PT. Chevron Indonesia.",
     "Shell petrol station, S. Parman": "SPBU Shell, S. Parman",
     "Petronas service station, Fatmawati": "SPBU Petronas, Fatmawati",
     "Chevron service station, Duri Camp": "SPBU Chevron, Duri Camp",
@@ -202,32 +193,19 @@
     "Detail Design": "Desain Detail",
     "The whole design re-made and, once approved, the reference for the work.": "Keseluruhan desain disusun ulang dan, setelah disetujui, menjadi acuan pekerjaan.",
     "Work Preparation": "Persiapan Pekerjaan",
-    "Soil investigation, safety work permit, survey and shop drawings.": "Penyelidikan tanah, izin kerja keselamatan, survei, dan shop drawing.",
+    "Soil investigation, work permit to safety, survey and measurement, and shop drawings.": "Penyelidikan tanah, izin kerja untuk keselamatan, survei dan pengukuran, serta shop drawing.",
     "Construction Work": "Pekerjaan Konstruksi",
-    "Tanks, fuel piping, buildings and canopy, built out and handed over.": "Tangki, perpipaan bahan bakar, bangunan, dan kanopi, dibangun hingga diserahterimakan.",
+    "Buried and double-wall tanks, fuel piping, the station building and the canopy.": "Tangki pendam dan tangki dinding ganda, perpipaan bahan bakar, bangunan SPBU, dan kanopi.",
     "Industries served": "Industri yang dilayani",
     "Fuel Stations": "SPBU",
     "Oil & Gas": "Minyak & Gas",
 
-    /* ---- scope of work page: stage 3 ---- */
-    "Stage 3": "Tahap 3",
-    "Soil investigation": "Penyelidikan tanah",
-    "Work permit to safety": "Izin kerja untuk keselamatan",
-    "Survey & measurement": "Survei & pengukuran",
-    "Shop drawings": "Shop drawing",
-
-    /* ---- scope of work page: stage 4 ---- */
-    "Stage 4": "Tahap 4",
-    "Buried tank construction": "Konstruksi tangki pendam",
-    "Excavation, tank chamber and the setting of the underground storage tanks.": "Penggalian, ruang tangki, dan penempatan tangki penyimpanan bawah tanah.",
-    "Double-wall tank installation": "Pemasangan tangki dinding ganda",
-    "Installation of double-wall tanks where the specification calls for secondary containment.": "Pemasangan tangki dinding ganda apabila spesifikasi mensyaratkan penahan sekunder.",
-    "Fuel piping": "Perpipaan bahan bakar",
-    "Product and vapour lines run from the tanks to the dispensers.": "Jalur produk dan uap yang membentang dari tangki ke dispenser.",
-    "Construction of building": "Pembangunan gedung",
-    "The station building — sales area, office and back-of-house.": "Bangunan SPBU — area penjualan, kantor, dan area belakang.",
-    "Canopy": "Kanopi",
-    "Steelwork, roofing and lighting over the forecourt islands.": "Pekerjaan baja, atap, dan penerangan di atas pulau pengisian.",
+    /* Stage 3 and Stage 4 each had a band of their own with a grid of
+       cells under it. Both came off to keep the page short, and what the
+       cells named is in the two timeline lines above -- so the sixteen
+       entries those bands needed are gone. The one thing not carried
+       over is the sentence under each construction cell; if any of them
+       goes back on the page, its entry has to come back with it. */
 
     /* ---- sister company ---- */
     "Part of the same group": "Bagian dari grup yang sama",

@@ -182,8 +182,8 @@
     <div class="tl">
       <div class="tlstep reveal"><div class="tltxt"><h4>Review of Basic Design</h4><p>The owner's plans re-designed and checked against conditions in the field.</p></div><div class="tlnode">1</div></div>
       <div class="tlstep reveal d1"><div class="tltxt"><h4>Detail Design</h4><p>The whole design re-made and, once approved, the reference for the work.</p></div><div class="tlnode">2</div></div>
-      <div class="tlstep reveal d2"><div class="tltxt"><h4>Work Preparation</h4><p>Soil investigation, safety work permit, survey and shop drawings.</p></div><div class="tlnode">3</div></div>
-      <div class="tlstep reveal d3"><div class="tltxt"><h4>Construction Work</h4><p>Tanks, fuel piping, buildings and canopy, built out and handed over.</p></div><div class="tlnode">4</div></div>
+      <div class="tlstep reveal d2"><div class="tltxt"><h4>Work Preparation</h4><p>Soil investigation, work permit to safety, survey and measurement, and shop drawings.</p></div><div class="tlnode">3</div></div>
+      <div class="tlstep reveal d3"><div class="tltxt"><h4>Construction Work</h4><p>Buried and double-wall tanks, fuel piping, the station building and the canopy.</p></div><div class="tlnode">4</div></div>
     </div>
     <div class="reveal">
       <span class="kicker" style="margin-top:2rem;display:block">Industries served</span>
@@ -194,58 +194,21 @@
   </div>
 </section>
 
-<!-- ============ WORK PREPARATION ============ -->
-<section class="section white compact">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="kicker">Stage 3</span>
-      <h2 class="h2">Work preparation.</h2>
-      <div class="secgrid tight">
-        <div class="seccell"><div class="secname">Soil investigation</div></div>
-        <div class="seccell"><div class="secname">Work permit to safety</div></div>
-        <div class="seccell"><div class="secname">Survey &amp; measurement</div></div>
-        <div class="seccell"><div class="secname">Shop drawings</div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CONSTRUCTION WORK ============ -->
-<section class="section paper compact">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="kicker">Stage 4</span>
-      <h2 class="h2">Construction work.</h2>
-      <div class="secgrid">
-        <div class="seccell"><div class="secname">Buried tank construction</div><div class="secwhat">Excavation, tank chamber and the setting of the underground storage tanks.</div></div>
-        <div class="seccell"><div class="secname">Double-wall tank installation</div><div class="secwhat">Installation of double-wall tanks where the specification calls for secondary containment.</div></div>
-        <div class="seccell"><div class="secname">Fuel piping</div><div class="secwhat">Product and vapour lines run from the tanks to the dispensers.</div></div>
-        <div class="seccell"><div class="secname">Construction of building</div><div class="secwhat">The station building — sales area, office and back-of-house.</div></div>
-        <div class="seccell"><div class="secname">Canopy</div><div class="secwhat">Steelwork, roofing and lighting over the forecourt islands.</div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SECTORS ============ -->
-<section class="section white compact">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="kicker">Sectors</span>
-      <h2 class="h2">Sectors we build for.</h2>
-      <div class="secgrid">
-        <div class="seccell"><div class="secname">Fuel stations</div><div class="secwhat">Turnkey construction and renovation — the founding business, built on years of running stations ourselves.</div></div>
-        <div class="seccell"><div class="secname">Oil &amp; gas industry</div><div class="secwhat">Construction work for the wider oil and gas industry, backed by the group's petroleum equipment experience.</div></div>
-      </div>
-      <div style="margin-top:2rem">
-        <a class="btn btn-dark" href="projects.html">Project references <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- Three sections came off here at the business's request, to stop the
+     page running long. Stage 3 and Stage 4 each had their own band and a
+     grid of cells; those cells are now the copy under nodes 3 and 4 of
+     the timeline above, which is where a reader looking for the order of
+     the work would go first. What the cells named is all still on the
+     page -- soil investigation through to the canopy -- but the sentence
+     each construction cell carried is not.
+     The Sectors grid went with them: the Industries served pills under
+     the timeline say the same two things in a line. Its "Project
+     references" button went too, so Projects is reached from the nav.
+     About Us dropped its copy of this grid earlier, which leaves the
+     sector entries in the dictionary unused by any page. -->
 
 <!-- ============ CROSS-LINK: OIL & GAS ============ -->
-<section class="section paper compact">
+<section class="section white compact">
   <div class="wrap">
     <div class="xlink reveal">
       <p class="xl-rel">Part of the same group</p>
@@ -320,6 +283,6 @@ window.addEventListener('pageshow',function(){var i=document.querySelector('.sea
 /* reveal */
 (function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
 </script>
-<script src="translate.js?v=202608112031"></script>
+<script src="translate.js?v=202608112100"></script>
 </body>
 </html>
