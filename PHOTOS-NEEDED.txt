@@ -176,8 +176,13 @@ cert-iso-45001.jpg   Occupational Health & Safety        [COMPLETE]
                      All three issued by URS, valid to November 2027.
                      Shown on both About pages.
 cert-skk.jpg         SKK construction licence            [COMPLETE]
-                     Linked from the Fire Fighting About page only,
-                     as a text link rather than a card.
+                     Fire Fighting ONLY, and deliberately so — it
+                     belongs to that side of the business. Linked from
+                     the Fire Fighting About page as a text link rather
+                     than a card. Do not add it to the Citra About
+                     grid; sitting in a shared folder next to the ISO
+                     scans makes it look like an omission, and it is
+                     not.
 cert-pei-2026.pdf    PEI membership, 2026                [COMPLETE]
 cert-pei-2026.svg    ...and the card thumbnail for it. PEI sends a PDF
                      rather than a scan, and the card wants an image, so
