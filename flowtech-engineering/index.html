@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/site.css?v=202608111057" />
+<link rel="stylesheet" href="../assets/site.css?v=202608111500" />
 </head>
 <body>
 
@@ -118,40 +118,42 @@
 </section>
 
 <!-- ============ WHAT WE DELIVER ============ -->
-<!-- The four cards are icon and type, not photography. On Hanindo Citra
-     the equivalent strip is product tiles, and a photograph of a
-     dispenser or an ATG console does the explaining on its own. These
-     four are activities rather than objects -- there is no product shot
-     of commissioning -- and photos/flowtech/ has been empty since the
-     section was built, so a photo slot here would be a "Photo needed"
-     box with no prospect of being filled. .svc is the same card the
-     Products & Services page uses. -->
+<!-- The same .tilestrip the Hanindo Citra, Gralessando and Hanindo
+     Shanghai home pages carry, with .strip-4 so four tiles share the row
+     rather than leaving a gap, and the advance button that shows itself
+     only once the row stops fitting.
+     What is different is .tile.plain: those strips are carried by a
+     product photograph, and this company has none. Its four are
+     activities rather than objects -- there is no product shot of
+     commissioning -- and photos/flowtech/ has been empty since the
+     section was built, so an <img> here would be an empty panel for
+     good. .plain puts the line icon where the picture goes and gives the
+     label a second line. See site.css, just under .strip-4. -->
 <section class="section paper">
   <div class="wrap">
     <div class="reveal">
       <span class="kicker">What we deliver</span>
     </div>
-    <div class="svc-grid">
-      <div class="svc reveal">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 00-2 2v14a2 2 0 002 2h12a2 2 0 002-2V9z"/><path d="M14 3v6h6"/><path d="M9 15l2 2 4-4"/></svg></div>
-        <h3>Engineering &amp; Design</h3>
-        <p>Design review, detailed engineering, site surveys and shop drawings.</p>
+    <div class="tilestrip reveal d1">
+      <div class="strip strip-4" id="tilestrip">
+        <div class="tile plain">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 00-2 2v14a2 2 0 002 2h12a2 2 0 002-2V9z"/><path d="M14 3v6h6"/><path d="M9 15l2 2 4-4"/></svg></div>
+          <span class="lab"><b>Engineering &amp; Design</b><i>Design review, detailed engineering, site surveys and shop drawings.</i></span>
+        </div>
+        <div class="tile plain">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M21 16V8l-9-5-9 5v8l9 5 9-5z"/><path d="M3.3 7.5L12 12.5l8.7-5"/><path d="M12 12.5V21"/></svg></div>
+          <span class="lab"><b>Construction</b><i>Fuel station construction, renovation and site preparation.</i></span>
+        </div>
+        <div class="tile plain">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/><path d="M2 20h4"/></svg></div>
+          <span class="lab"><b>Mechanical &amp; Electrical</b><i>Mechanical, electrical and equipment installation.</i></span>
+        </div>
+        <div class="tile plain">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 7.9-8 9-4.6-1.1-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <span class="lab"><b>Commissioning &amp; Training</b><i>Testing, commissioning, handover and operational safety training.</i></span>
+        </div>
       </div>
-      <div class="svc reveal d1">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M21 16V8l-9-5-9 5v8l9 5 9-5z"/><path d="M3.3 7.5L12 12.5l8.7-5"/><path d="M12 12.5V21"/></svg></div>
-        <h3>Construction</h3>
-        <p>Fuel station construction, renovation and site preparation.</p>
-      </div>
-      <div class="svc reveal d2">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/><path d="M2 20h4"/></svg></div>
-        <h3>Mechanical &amp; Electrical</h3>
-        <p>Mechanical, electrical and equipment installation.</p>
-      </div>
-      <div class="svc reveal d3">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 7.9-8 9-4.6-1.1-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
-        <h3>Commissioning &amp; Training</h3>
-        <p>Testing, commissioning, handover and operational safety training.</p>
-      </div>
+      <button class="stripmore" type="button" aria-label="Show more"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
     </div>
     <div style="margin-top:2rem" class="reveal d2">
       <a class="btn btn-dark" href="products-services.html">Full scope of work <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -159,29 +161,18 @@
   </div>
 </section>
 
-<!-- ============ SECTORS ============ -->
-<!-- Two sectors, not three: the company profile claims fuel stations and
-     oil & gas construction only. Automotive garage construction sits with
-     Hanindo Automotive, and having both companies claim it helped nobody. -->
-<section class="section white">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="kicker">Sectors</span>
-      <h2 class="h2">Sectors we build for.</h2>
-      <div class="secgrid">
-        <div class="seccell"><div class="secname">Fuel stations</div><div class="secwhat">Turnkey construction and renovation — the founding business, built on years of running stations ourselves.</div></div>
-        <div class="seccell"><div class="secname">Oil &amp; gas industry</div><div class="secwhat">Construction work for the wider oil and gas industry, backed by the group's petroleum equipment experience.</div></div>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- The Sectors grid -- fuel stations and the oil & gas industry, two
+     cells -- was taken off this page at the business's request. Both
+     sectors are named in the hero and again in the section above, so the
+     grid was a third telling. About Us and Products & Services still
+     carry it, and its dictionary entries stay for them. -->
 
 <!-- ============ CLIENTS ============ -->
 <!-- Logos only here; the contracting entity names and the project list
      are on projects.html so the home page stays a summary. Same files
      and tier classes as the fuel band of the Hanindo Citra customer
      wall — the same companies, drawn the same way. -->
-<section class="section paper">
+<section class="section white">
   <div class="wrap">
     <div class="reveal">
       <span class="kicker">Our client list</span>
@@ -203,7 +194,7 @@
 </section>
 
 <!-- ============ CROSS-LINK: OIL & GAS ============ -->
-<section class="section white">
+<section class="section paper">
   <div class="wrap">
     <div class="xlink reveal">
       <p class="xl-rel">Part of the same group</p>
@@ -277,6 +268,18 @@ window.addEventListener('pageshow',function(){var i=document.querySelector('.sea
 (function(){var b=document.getElementById('burger'),t=document.getElementById('tabs');if(b&&t){b.addEventListener('click',function(){var o=t.classList.toggle('open');b.setAttribute('aria-expanded',o);});}})();
 /* reveal */
 (function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
+/* What we deliver strip: advance a screenful, wrap back to the start at
+   the end. Four tiles share the row at desktop width, so the button
+   hides itself there and appears only once the row stops fitting. Same
+   script the Hanindo Citra and Gralessando strips run. */
+(function(){var s=document.getElementById('tilestrip'),b=document.querySelector('.stripmore');if(!s||!b)return;
+function sync(){b.style.display=(s.scrollWidth-s.clientWidth>4)?'':'none';}
+b.addEventListener('click',function(){
+  var max=s.scrollWidth-s.clientWidth;
+  if(s.scrollLeft>=max-8){s.scrollTo({left:0,behavior:'smooth'});}
+  else{s.scrollBy({left:Math.round(s.clientWidth*.85),behavior:'smooth'});}
+});
+window.addEventListener('resize',sync);window.addEventListener('load',sync);sync();})();
 </script>
 <script src="translate.js?v=202608111400"></script>
 </body>

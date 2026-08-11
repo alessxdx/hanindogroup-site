@@ -178,6 +178,20 @@ img{max-width:100%;display:block}
    back to scrolling. Used by the Gralessando and Hanindo Shanghai pages. */
 .strip-4 .tile{flex:1 1 0;min-width:190px}
 .tilestrip .tile span{font-size:.88rem;left:.7rem;bottom:.6rem;right:.7rem}
+/* Tile with no photograph, for the Flowtech "What we deliver" strip. That
+   company has no photography of any kind and never will — its four are
+   activities rather than products, and there is no product shot of
+   commissioning — so .plain puts the section's own line icon where the
+   picture would go and carries a second line under the title. Without it
+   the four tiles would draw as empty panels and read as missing images.
+   The overlay starts higher than the picture tiles' 55% because two lines
+   of type need more dark behind them than one. */
+.tile.plain::after{background:linear-gradient(180deg,transparent 38%,rgba(4,32,58,.9))}
+.tile.plain .ic{position:absolute;left:50%;top:38%;transform:translate(-50%,-50%);z-index:2}
+.tile.plain .ic svg{width:52px;height:52px;fill:none;stroke:var(--brand);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.tile.plain .lab{position:absolute;left:.8rem;right:.8rem;bottom:.7rem;z-index:2}
+.tile.plain .lab b{display:block;color:#fff;font-weight:700;font-size:.88rem;line-height:1.25}
+.tile.plain .lab i{display:block;font-style:normal;margin-top:.3rem;color:#c6d8ec;font-size:.75rem;line-height:1.4}
 .stripmore{position:absolute;right:-6px;top:50%;transform:translateY(-50%);z-index:3;width:42px;height:42px;border-radius:50%;border:0;background:var(--brand);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px -10px rgba(0,0,0,.55);transition:background .15s}
 .stripmore:hover{background:var(--brand-600)}
 .stripmore svg{width:18px;height:18px;fill:none;stroke:#fff;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
