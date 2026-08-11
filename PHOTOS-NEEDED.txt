@@ -222,6 +222,11 @@ HANINDO CITRA  (/citra/)
 hero-citra.webp           DONE — page hero, forecourt at dusk (1536x1024)
 citra-forecourt.jpg         NO LONGER NEEDED — the intro runs as one column
                             of copy now, with no photo beside it
+gilbarco-lineup.webp        Product card AND home tile — Gilbarco dispenser
+                            range (1037x598).                         [DONE]
+                            Note the folder: this one sits in
+                            /photos/citra/products/dispensers/, not in
+                            /products/ beside the four cards below it.
 citra-enabler.webp          Product card — ITL Enabler controller range [DONE]
 citra-flowmeter.png         Product card — TCS flow meters            [DONE]
 citra-atg.webp              Product card — Veeder-Root ATG range      [DONE]
