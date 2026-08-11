@@ -28,6 +28,15 @@ chdir $ROOT or die "cannot enter site root $ROOT: $!";
 
 my $PORT = $ENV{PORT} || 5173;
 
+# Bind to loopback by default, so the preview is not reachable from the
+# rest of the network unless that is asked for. LAN=1 opens it to other
+# devices -- the point being to open the site on a real phone, which is
+# the only way to check the things a desktop browser cannot show you:
+# tap targets, the burger menu, and how the hero reflows on a small
+# screen. Leave it off otherwise; this server has no access control and
+# happily serves the whole repo.
+my $HOST = $ENV{LAN} ? '0.0.0.0' : '127.0.0.1';
+
 my %TYPE = (
   html => 'text/html; charset=utf-8',
   css  => 'text/css; charset=utf-8',
@@ -43,12 +52,28 @@ my %TYPE = (
 );
 
 my $d = HTTP::Daemon->new(
-  LocalAddr => '127.0.0.1',
+  LocalAddr => $HOST,
   LocalPort => $PORT,
   ReuseAddr => 1,
-) or die "cannot listen on port $PORT: $!\n";
+) or die "cannot listen on $HOST port $PORT: $!\n";
 
 print "serving $ROOT at http://127.0.0.1:$PORT/\n";
+
+# When it is open to the network, print the addresses a phone can
+# actually use -- "0.0.0.0" is not something you can type into Safari.
+if ($ENV{LAN}) {
+  my @ips;
+  for my $line (`ipconfig 2>&1`, `ifconfig 2>&1`) {
+    push @ips, $line =~ /(\d+\.\d+\.\d+\.\d+)/g;
+  }
+  my %seen;
+  for my $ip (@ips) {
+    next if $ip =~ /^(127\.|169\.254\.|255|0\.)/ || $ip =~ /\.255$/;
+    next if $seen{$ip}++;
+    print "  on this network:  http://$ip:$PORT/\n";
+  }
+  print "  (same Wi-Fi as the phone; a VPN or the firewall can block this)\n";
+}
 STDOUT->autoflush(1);
 
 while (my $c = $d->accept) {
