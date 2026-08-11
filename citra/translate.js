@@ -55,7 +55,6 @@
     "Projects": "Proyek",
     "Pumps & Dispensers": "Pompa & Dispenser",
     "Forecourt Controllers": "Forecourt Controller",
-    "Fuel Management Systems": "Sistem Manajemen Bahan Bakar",
     "Flow Meters": "Flow Meter",
     "Submersible Turbine Pumps": "Pompa Turbin Submersible",
     /* Held in English deliberately, and listed rather than omitted so the
@@ -163,8 +162,6 @@
     "View models & nozzle variants": "Lihat model & varian nozzle",
     "ITL Enabler controllers, linking the dispensers and tank gauges to the point of sale through one open API.": "Controller ITL Enabler, menghubungkan dispenser dan tank gauge ke point of sale melalui satu API terbuka.",
     "View controllers & modules": "Lihat controller & modul",
-    "The AdvanZ family — point of sale, back office, head office, accounts and loyalty.": "Keluarga AdvanZ — point of sale, back office, kantor pusat, akuntansi, dan loyalty.",
-    "Ask us about AdvanZ": "Tanyakan AdvanZ kepada kami",
     "Piston and rotary positive displacement metering for accurate custody transfer.": "Pengukuran positive displacement tipe piston dan rotary untuk custody transfer yang akurat.",
     "View meters & registers": "Lihat meter & register",
     "Veeder-Root consoles and magnetostrictive probes, for continuous wet-stock monitoring and environmental compliance.": "Konsol Veeder-Root dan probe magnetostrictive, untuk pemantauan wet stock berkelanjutan dan kepatuhan lingkungan.",
