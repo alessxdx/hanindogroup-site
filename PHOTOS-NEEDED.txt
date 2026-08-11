@@ -220,16 +220,16 @@ HANINDO CITRA  (/citra/)
 hero-citra.webp           DONE — page hero, forecourt at dusk (1536x1024)
 citra-forecourt.jpg         NO LONGER NEEDED — the intro runs as one column
                             of copy now, with no photo beside it
-citra-advanz.jpg            Product card AND home "What we supply" tile — AdvanZ
-                            POS/BOS screen or terminal. Until it lands the home
-                            tile shows as a plain gradient square with its label.
 citra-enabler.webp          Product card — ITL Enabler controller range [DONE]
 citra-flowmeter.png         Product card — TCS flow meters            [DONE]
 citra-atg.webp              Product card — Veeder-Root ATG range      [DONE]
 citra-stp.webp              Product card — submersible turbine pumps  [DONE]
 citra-piping.jpg            Product card AND home "What we supply" tile — piping /
-                            fueling components. Same as above: the home tile is a
-                            plain gradient square until this exists.
+                            fueling components. The home tile is a plain gradient
+                            square until this exists.
+                            NOTE: neither that card nor that tile is on the site
+                            today — check whether this is still wanted before
+                            anyone goes looking for the shot.
 
 The dispenser, Enabler, ATG and STP cards carry manufacturer shots cut out onto
 pure white (#fff), and their tiles are white to match — see .pcard.cutout
