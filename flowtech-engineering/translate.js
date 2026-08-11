@@ -78,14 +78,6 @@
     "Commissioning & Training": "Commissioning & Pelatihan",
     "Testing, commissioning, handover and operational safety training.": "Pengujian, commissioning, serah terima, dan pelatihan keselamatan operasional.",
 
-    /* the four checks below are the About Us "What we handle" list. The
-       home page used to carry them too, above a set of scope cards that
-       said the same thing again; both went when the home page took the
-       capability list above. */
-    "Permit procedures managed on the client's behalf": "Prosedur perizinan diurus atas nama klien",
-    "Materials and labour supplied and coordinated on site": "Material dan tenaga kerja disediakan serta dikoordinasikan di lokasi",
-    "Mechanical and electrical installation": "Pemasangan mekanikal dan elektrikal",
-    "Training of employees on operational and safety protocols": "Pelatihan karyawan mengenai prosedur operasional dan protokol keselamatan",
 
     /* ---- about page ----
        The hero is "About Us" over two text nodes, the .fx span splitting
@@ -98,9 +90,31 @@
     "PT. Flowtech Engineering was established in 2002 as part of the Hanindo Group. Drawing on the Group's experience in the fuel station business, Flowtech was established to provide construction and engineering solutions for the industry.": "PT. Flowtech Engineering didirikan pada 2002 sebagai bagian dari Hanindo Group. Berbekal pengalaman Grup dalam bisnis SPBU, Flowtech didirikan untuk menghadirkan solusi konstruksi dan rekayasa bagi industri tersebut.",
     "Since 2006, we have delivered new construction and renovation projects for major energy companies in Indonesia, including Pertamina, Petronas, Shell, Total and Chevron.": "Sejak 2006, kami telah menyelesaikan proyek pembangunan baru dan renovasi untuk perusahaan energi besar di Indonesia, termasuk Pertamina, Petronas, Shell, Total, dan Chevron.",
     "Today, Flowtech provides construction solutions for fuel stations and the wider oil & gas industry, covering engineering, construction, mechanical and electrical installation, commissioning and operational preparation.": "Kini, Flowtech menghadirkan solusi konstruksi untuk SPBU dan industri minyak & gas yang lebih luas, mencakup rekayasa, konstruksi, pemasangan mekanikal dan elektrikal, commissioning, serta persiapan operasional.",
-    "What we handle": "Yang kami tangani",
-    "One team,": "Satu tim,",
-    "from permit to handover.": "dari perizinan hingga serah terima.",
+
+    /* ---- about page: vision & mission ----
+       The numbered mission items are a <span class="n"> and a <p>, so the
+       digit is its own text node and needs no entry -- only the sentence
+       beside it does. */
+    "Our direction": "Arah kami",
+    "Vision & Mission": "Visi & Misi",
+    "01 / Vision": "01 / Visi",
+    "Vision": "Visi",
+    "To be a trusted construction partner for fuel station and oil & gas projects in Indonesia.": "Menjadi mitra konstruksi tepercaya untuk proyek SPBU serta minyak & gas di Indonesia.",
+    "02 / Mission": "02 / Misi",
+    "Mission": "Misi",
+    "Deliver reliable construction solutions from engineering and preparation through to completion.": "Menghadirkan solusi konstruksi yang andal, mulai dari rekayasa dan persiapan hingga penyelesaian.",
+    "Execute projects with strong technical, safety and quality standards.": "Melaksanakan proyek dengan standar teknis, keselamatan, dan mutu yang kuat.",
+    "Support customers with practical expertise throughout the project lifecycle.": "Mendampingi pelanggan dengan keahlian praktis di sepanjang siklus proyek.",
+
+    /* ---- about page: why clients trust us ---- */
+    "Why choose us": "Mengapa memilih kami",
+    "Why clients trust us": "Mengapa klien memercayai kami",
+    "Industry Experience": "Pengalaman industri",
+    "Years of experience delivering fuel station and oil & gas construction projects across Indonesia.": "Pengalaman bertahun-tahun menyelesaikan proyek konstruksi SPBU serta minyak & gas di seluruh Indonesia.",
+    "Complete Capability": "Kemampuan menyeluruh",
+    "From engineering and permitting to construction, installation, commissioning and training.": "Mulai dari rekayasa dan perizinan hingga konstruksi, pemasangan, commissioning, dan pelatihan.",
+    "Reliable Execution": "Pelaksanaan yang andal",
+    "A practical, safety-focused approach backed by the wider expertise of the Hanindo Group.": "Pendekatan praktis yang mengutamakan keselamatan, didukung keahlian Hanindo Group yang lebih luas.",
 
     /* ---- contact page: the bold labels in the checklist ---- */
     "Telephone": "Telepon",
@@ -121,9 +135,10 @@
     "Mechanical and electrical installation across the site, carried out by our own installation teams.": "Pemasangan mekanikal dan elektrikal di seluruh lokasi, dikerjakan oleh tim pemasangan kami sendiri.",
     "Operator & Safety Training": "Pelatihan Operator & Keselamatan",
     "Short training for station employees on fuel station operational and safety procedures before the site opens.": "Pelatihan singkat bagi karyawan SPBU mengenai prosedur operasional dan keselamatan SPBU sebelum lokasi mulai beroperasi.",
-    "Full scope of work": "Lingkup pekerjaan lengkap",
 
-    /* ---- both pages: sectors ---- */
+    /* ---- products & services page: sectors ----
+       The home page and About Us both carried this grid once; it is that
+       page's alone now. */
     "Sectors": "Sektor",
     "Sectors we build for.": "Sektor yang kami bangun.",
     "Fuel stations": "SPBU",
@@ -131,14 +146,12 @@
     "Oil & gas industry": "Industri minyak & gas",
     "Construction work for the wider oil and gas industry, backed by the group's petroleum equipment experience.": "Pekerjaan konstruksi untuk industri minyak dan gas yang lebih luas, didukung pengalaman grup di bidang peralatan perminyakan.",
 
-    /* ---- company page: clients ----
-       Only the descriptions translate. The registered names above them
-       are names in either language. */
-    "Our client list": "Daftar klien kami",
+    /* ---- company page: customer marquee ----
+       Only the head translates. The registered names under the logos are
+       names in either language, and they only show at all if a logo file
+       goes missing. */
+    "Customer base": "Basis pelanggan",
     "Built on Industry Experience": "Dibangun dari pengalaman industri",
-    /* the two band labels on the wall below it */
-    "National oil company": "Perusahaan minyak nasional",
-    "International brands": "Merek internasional",
     "Since 2006, Flowtech has delivered fuel station projects for major energy companies including Pertamina, Petronas, Shell, Total and Chevron.": "Sejak 2006, Flowtech telah menyelesaikan proyek SPBU untuk perusahaan energi besar termasuk Pertamina, Petronas, Shell, Total, dan Chevron.",
     /* the heading and lede below are the Projects page's wall, which still
        runs the older wording. The home page wall took the two lines above

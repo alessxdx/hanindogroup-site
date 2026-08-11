@@ -100,34 +100,68 @@
      hero, until that sentence came out too), and the address, telephone,
      fax and website are all on contact.html. -->
 
-<!-- ============ WHAT WE HANDLE ============ -->
-<section class="section paper">
+<!-- The "What we handle" checklist and the Sectors grid that used to sit
+     here both came off at the business's request. The checklist was the
+     home page's capability list a second time, and Products & Services
+     carries the scope in full; the sectors grid is still on that page
+     too, so its dictionary entries stay live. -->
+
+<!-- ============ OUR DIRECTION ============ -->
+<!-- The .vm pair every other company About page runs: vision in the first
+     card, mission as a numbered .mlist in the second. Same block as
+     Hanindo Automotive, Hanindo Citra and the group About page, so the
+     five companies state their direction in one shape. -->
+<section class="section paper compact">
   <div class="wrap">
     <div class="reveal">
-      <span class="kicker">What we handle</span>
-      <h2 class="h2">One team,<br/>from permit to handover.</h2>
-      <ul class="checks">
-        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Permit procedures managed on the client's behalf</span></li>
-        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Materials and labour supplied and coordinated on site</span></li>
-        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Mechanical and electrical installation</span></li>
-        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Training of employees on operational and safety protocols</span></li>
-      </ul>
-      <div style="margin-top:2rem">
-        <a class="btn btn-dark" href="products-services.html">Full scope of work <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <span class="kicker">Our direction</span>
+      <h2 class="h2">Vision &amp; Mission</h2>
+    </div>
+    <div class="vm">
+      <div class="vm-card reveal">
+        <span class="tag">01 / Vision</span>
+        <h3>Vision</h3>
+        <p>To be a trusted construction partner for fuel station and oil &amp; gas projects in Indonesia.</p>
+      </div>
+      <div class="vm-card reveal d1">
+        <span class="tag">02 / Mission</span>
+        <h3>Mission</h3>
+        <ul class="mlist">
+          <li><span class="n">1</span><p>Deliver reliable construction solutions from engineering and preparation through to completion.</p></li>
+          <li><span class="n">2</span><p>Execute projects with strong technical, safety and quality standards.</p></li>
+          <li><span class="n">3</span><p>Support customers with practical expertise throughout the project lifecycle.</p></li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ SECTORS ============ -->
+<!-- ============ WHY CHOOSE US ============ -->
+<!-- Three .adv cards, the same block Hanindo Automotive closes its About
+     page with. No sentence under the heading here: the other pages carry
+     one, and this page has none to carry that the three cards do not
+     already say. -->
 <section class="section white compact">
   <div class="wrap">
-    <div class="reveal">
-      <span class="kicker">Sectors</span>
-      <h2 class="h2">Sectors we build for.</h2>
-      <div class="secgrid">
-        <div class="seccell"><div class="secname">Fuel stations</div><div class="secwhat">Turnkey construction and renovation — the founding business, built on years of running stations ourselves.</div></div>
-        <div class="seccell"><div class="secname">Oil &amp; gas industry</div><div class="secwhat">Construction work for the wider oil and gas industry, backed by the group's petroleum equipment experience.</div></div>
+    <div class="cert-head">
+      <span class="kicker reveal">Why choose us</span>
+      <h2 class="h2 reveal">Why clients trust us</h2>
+    </div>
+    <div class="adv-grid">
+      <div class="adv adv-1 reveal">
+        <div class="advic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 8.7l5.4-.8z"/></svg></div>
+        <h3>Industry Experience</h3>
+        <p>Years of experience delivering fuel station and oil &amp; gas construction projects across Indonesia.</p>
+      </div>
+      <div class="adv adv-2 reveal d1">
+        <div class="advic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16V8l-9-5-9 5v8l9 5 9-5z"/><path d="M3.3 7.5L12 12.5l8.7-5"/><path d="M12 12.5V21"/></svg></div>
+        <h3>Complete Capability</h3>
+        <p>From engineering and permitting to construction, installation, commissioning and training.</p>
+      </div>
+      <div class="adv adv-3 reveal d2">
+        <div class="advic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3.3v5.2c0 4.5-3.1 8.4-7.5 9.9-4.4-1.5-7.5-5.4-7.5-9.9V6.1z"/><path d="M9 12l2.2 2.2L15.4 10"/></svg></div>
+        <h3>Reliable Execution</h3>
+        <p>A practical, safety-focused approach backed by the wider expertise of the Hanindo Group.</p>
       </div>
     </div>
   </div>
@@ -209,6 +243,6 @@ window.addEventListener('pageshow',function(){var i=document.querySelector('.sea
 /* reveal */
 (function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
 </script>
-<script src="translate.js?v=202608111730"></script>
+<script src="translate.js?v=202608111830"></script>
 </body>
 </html>
