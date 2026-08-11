@@ -866,24 +866,51 @@ SVG (opw.svg), so nothing special is needed to serve them.
 
 
 --------------------------------------------------
-FLOWTECH ENGINEERING  (/flowtech-engineering/)
+PT. FLOWTECH ENGINEERING  (/flowtech-engineering/)
 --------------------------------------------------
-NO PHOTOGRAPHY WANTED — this site is deliberately text only.
+TWO SLOTS, BOTH WIRED AND BOTH EMPTY. Drop either file in and it
+appears; until then each page looks exactly as it does today.
 
-Flowtech is no longer taking on new work, and no photograph of its own
-was ever supplied: photos/flowtech/hero/ and /sectors/ have been empty
-since the section was built. Rather than leave five "Photo needed" boxes
-on a company that cannot fill them, the five pages were rewritten to
-stand as type — the heroes drop their .bg and .pagehero paints blue-900
-on its own, and the sector and project cards are text cells.
+This section was text only for years — no photograph of its own was
+ever supplied, so rather than leave "Photo needed" boxes on a company
+that could not fill them, the pages were written to stand as type. Two
+slots were put back on 2026-08-12 at the business's request, on the
+home page only:
 
-The five photos this section used to ask for — hero-flowtech.jpg,
-flow-construction.jpg, flow-fuel-stations.jpg, flow-oil-gas.jpg and
-flow-automotive-garages.jpg — are no longer referenced by any page. Do
-not shoot them without first putting the .bg divs and image boxes back.
+hero-flowtech.jpg         Home page hero background. Goes in
+                          photos/flowtech/hero/. Landscape, at least
+                          1600px wide. The heading sits on the LEFT over
+                          a blue overlay that is heaviest there, so keep
+                          the important detail to the RIGHT of the frame
+                          — a forecourt under construction, a canopy
+                          going up, a finished station. If the file is
+                          absent the hero paints its blue gradient as it
+                          does now.
 
-The one image this section does use is the company wordmark in the
-co-brand slot of the header, and that is in:
+flow-construction.jpg     Beside "Fuel Station & Oil & Gas
+                          Construction" on the home page. Same folder,
+                          photos/flowtech/hero/, next to the hero shot
+                          the way auto-workshop.jpg sits beside
+                          hero-automotive.jpg. Landscape, ~1200px wide
+                          or more; it crops to fill a panel about 4:3.
+                          Site work suits it better than a finished
+                          forecourt, since the hero can carry that.
+
+NOTE the fallback here is not the usual one. Every other company page
+shows a "Photo needed" box in an empty slot; this one removes the panel
+and runs the section as a single column instead, because an empty box
+on the home page of a company with no photography advertises exactly
+that. See the .split.nophoto rule at the top of the page.
+
+The other three photos this section used to ask for —
+flow-fuel-stations.jpg, flow-oil-gas.jpg and
+flow-automotive-garages.jpg — are still referenced by no page, and the
+sector cards they belonged to have since been removed altogether. Do
+not shoot them without putting image boxes back first.
+photos/flowtech/sectors/ is theirs and stays empty.
+
+The other image this section uses is the company wordmark in the
+co-brand slot of the header:
 
 logo-flowtech.png         [COMPLETE] — in photos/brand/, see the COMPANY
                           LOGOS section above for where it came from.

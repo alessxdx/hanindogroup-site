@@ -28,6 +28,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202608112031" />
+<style>
+/* The intro section is a .split with a photograph on the right, but this
+   company has no photography of its own and may never supply any. When
+   the file is absent the shot removes itself and this rule takes the
+   grid back to one column, so the section reads as it did before the
+   slot existed -- no gap, no placeholder. Drop the file in and the two
+   columns appear on their own. */
+.split.nophoto{grid-template-columns:1fr}
+</style>
 </head>
 <body>
 
@@ -80,6 +89,7 @@
      worse than clean type. .pagehero already paints blue-900 underneath,
      so dropping .bg leaves the gradient panel intact. -->
 <section class="pagehero hero-tall">
+  <div class="bg"><img src="../photos/flowtech/hero/hero-flowtech.jpg" alt="" onerror="this.style.display='none'" /></div>
   <div class="ov"></div><div class="glow"></div>
   <div class="wrap">
     <div class="crumb"><a href="../">Hanindo Group</a><span class="sep">/</span>PT. Flowtech Engineering</div>
@@ -102,10 +112,12 @@
      to the contact block without asking for a click on the way. -->
 <section class="section white">
   <div class="wrap">
+    <div class="split">
+      <div>
     <div class="reveal">
       <span class="kicker">PT. Flowtech Engineering</span>
       <h2 class="h2">Fuel Station &amp; Oil &amp; Gas Construction</h2>
-      <p class="lede" style="max-width:none">PT. Flowtech Engineering provides end-to-end construction solutions for fuel stations and oil &amp; gas facilities — from engineering and permitting to construction, installation and operational preparation.</p>
+      <p class="lede">PT. Flowtech Engineering provides end-to-end construction solutions for fuel stations and oil &amp; gas facilities — from engineering and permitting to construction, installation and operational preparation.</p>
     </div>
     <div class="reveal d1" style="margin-top:2.6rem">
       <span class="kicker">Our capabilities</span>
@@ -116,6 +128,21 @@
         <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Permitting, site preparation and safety</span></li>
         <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Operator training</span></li>
       </ul>
+    </div>
+      </div>
+      <!-- No "Photo needed" placeholder here, unlike the other company
+           pages: this one has never had photography, and an empty box on
+           the home page would say so out loud. If the file is missing the
+           shot removes itself and the section runs as one column, exactly
+           as it did before this slot existed. -->
+      <div class="shot reveal d2">
+        <!-- No loading="lazy" on this one, deliberately. The collapse
+             above depends on the error firing, and a lazy image that is
+             never scrolled to never tries to load, so the panel would sit
+             there empty on a short visit. It is the first section under
+             the hero, so it is close to the fold anyway. -->
+        <img src="../photos/flowtech/hero/flow-construction.jpg" alt="PT. Flowtech Engineering construction work on a fuel station site" onerror="var s=this.parentElement;s.style.display='none';if(s.parentElement)s.parentElement.classList.add('nophoto')" />
+      </div>
     </div>
   </div>
 </section>
