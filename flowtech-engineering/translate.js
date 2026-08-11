@@ -64,6 +64,20 @@
     "Permitting, site preparation and safety": "Perizinan, persiapan lokasi, dan keselamatan",
     "Operator training": "Pelatihan operator",
 
+    /* ---- company page: what we deliver ----
+       The four cards under the capability list. "Commissioning" stays as
+       it is: it is the word used on site in either language, like shop
+       drawing and turnkey above. */
+    "What we deliver": "Yang kami kerjakan",
+    "Engineering & Design": "Rekayasa & Desain",
+    "Design review, detailed engineering, site surveys and shop drawings.": "Peninjauan desain, rekayasa detail, survei lokasi, dan shop drawing.",
+    "Construction": "Konstruksi",
+    "Fuel station construction, renovation and site preparation.": "Konstruksi SPBU, renovasi, dan persiapan lokasi.",
+    "Mechanical & Electrical": "Mekanikal & Elektrikal",
+    "Mechanical, electrical and equipment installation.": "Pemasangan mekanikal, elektrikal, dan peralatan.",
+    "Commissioning & Training": "Commissioning & Pelatihan",
+    "Testing, commissioning, handover and operational safety training.": "Pengujian, commissioning, serah terima, dan pelatihan keselamatan operasional.",
+
     /* the four checks below are the About Us "What we handle" list. The
        home page used to carry them too, above a set of scope cards that
        said the same thing again; both went when the home page took the
