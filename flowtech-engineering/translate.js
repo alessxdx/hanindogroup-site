@@ -52,7 +52,10 @@
     "Services": "Layanan",
     "Projects": "Proyek",
     "Contact Us": "Hubungi Kami",
-    "Contact us": "Hubungi kami",
+    /* "Contact page", not "Contact us": the contact band's second button
+       carries the same label here as on every other company site, and the
+       lowercase "Contact us" it used to say is on no page now. */
+    "Contact page": "Halaman kontak",
 
     /* ---- company page: hero and about ---- */
     /* the home hero is the company name now, so it needs no entry — a

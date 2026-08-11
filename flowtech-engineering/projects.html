@@ -28,6 +28,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202608112031" />
+<style>
+/* The "Also delivered" cells are station names, not headings. site.css
+   draws .secname bold because everywhere else it labels a cell that has
+   a sentence under it; these four carry nothing but the name, so the
+   bold had nothing to lead and just shouted. Scoped to this page --
+   Hanindo Automation Solutions, Gralessando and Hanindo Shanghai run
+   the same grid and are untouched. */
+.secgrid.tight .secname{font-weight:400}
+</style>
 </head>
 <body>
 
@@ -208,8 +217,8 @@
       <h2>Have a construction<br/>project in mind?</h2>
       <p class="sub">Tell us about the site and our team will scope the permits, materials, labour and installation work needed to bring it into operation.</p>
       <div class="actions">
-        <a class="btn btn-fire" href="contact.html">Contact us <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn-ghost" href="mailto:info@hanindogroup.com">Email our team <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></a>
+        <a class="btn btn-fire" href="mailto:info@hanindogroup.com">Email our team <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></a>
+        <a class="btn btn-ghost" href="contact.html">Contact page <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
     <div class="info">
@@ -272,6 +281,6 @@ window.addEventListener('pageshow',function(){var i=document.querySelector('.sea
 /* reveal */
 (function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
 </script>
-<script src="translate.js?v=202608120400"></script>
+<script src="translate.js?v=202608120500"></script>
 </body>
 </html>
