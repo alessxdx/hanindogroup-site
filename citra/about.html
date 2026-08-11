@@ -46,6 +46,13 @@
 .section.compact .isometa{padding:.75rem .9rem;text-align:center}
 .section.compact .isometa .std{font-size:.92rem;color:var(--brand)}
 .section.compact .isometa .lbl{font-size:.78rem;margin-top:.15rem}
+/* Four certificates, not three. site.css fixes .isogrid at three columns,
+   which would strand the fourth alone on a second row; let the row size
+   itself instead. Bounded by min-width so the 860px single-column rule in
+   site.css, which comes earlier in the cascade, still wins on phones. */
+@media(min-width:861px){
+  .section.compact .isogrid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+}
 
 /* Sole-distributor brand grid — logo tile + what the brand covers. Same
    block the PT. Hanindo Automotive About page runs, restated here rather than
@@ -237,9 +244,15 @@
 </section>
 
 <!-- ============ 6. CERTIFICATIONS & LICENSES ============ -->
-<!-- The scans live in fire-fighting/photos/ because that page shipped
-     first. They certify PT. Hanindo Citra as a whole, so this page
-     references them in place rather than holding a second copy. -->
+<!-- The scans live in photos/shared/certificates/ and are shared with the
+     Fire Fighting About page, which shipped first. They certify PT. Hanindo
+     Citra as a whole, so both pages reference them in place rather than
+     holding a second copy.
+
+     PEI is the odd one out: it arrived as a PDF, not a scan, so the card
+     thumbnail is cert-pei-2026.svg — the PDF's own artwork lifted out and
+     re-laid at its original positions — while the click still opens the
+     PDF itself. Regenerating it is tools/pei-cert.pl. -->
 <section class="section white compact">
   <div class="wrap">
     <div class="cert-head">
@@ -260,8 +273,12 @@
         <div class="isoimg"><img src="../photos/shared/certificates/cert-iso-45001.jpg" alt="ISO 45001:2018 Certificate of Registration — PT. Hanindo Citra" loading="lazy" /><span class="view">View &#8599;</span></div>
         <div class="isometa"><span class="std">ISO 45001:2018</span><span class="lbl">Occupational Health &amp; Safety</span></div>
       </a>
+      <a class="isocard reveal d3" href="../photos/shared/certificates/cert-pei-2026.pdf" target="_blank" rel="noopener">
+        <div class="isoimg"><img src="../photos/shared/certificates/cert-pei-2026.svg" alt="Petroleum Equipment Institute membership certificate 2026 — PT. Hanindo Citra" loading="lazy" /><span class="view">View &#8599;</span></div>
+        <div class="isometa"><span class="std">PEI Member 2026</span><span class="lbl">Petroleum Equipment Institute</span></div>
+      </a>
     </div>
-    <p class="isonote reveal">Issued by URS · Accredited by UKAS &amp; IAF · Valid to November 2027 — click any certificate to view the full document.</p>
+    <p class="isonote reveal">ISO certificates issued by URS · Accredited by UKAS &amp; IAF · Valid to November 2027 — click any certificate to view the full document.</p>
   </div>
 </section>
 
@@ -337,6 +354,6 @@ window.addEventListener('pageshow',function(){var i=document.querySelector('.sea
 /* reveal */
 (function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
 </script>
-<script src="translate.js?v=202608120301"></script>
+<script src="translate.js?v=202608121630"></script>
 </body>
 </html>

@@ -151,7 +151,10 @@
     "Quality Management": "Manajemen Mutu",
     "Environmental Management": "Manajemen Lingkungan",
     "Occupational Health & Safety": "Keselamatan & Kesehatan Kerja",
-    "Issued by URS · Accredited by UKAS & IAF · Valid to November 2027 — click any certificate to view the full document.": "Diterbitkan oleh URS · Terakreditasi UKAS & IAF · Berlaku hingga November 2027 — klik sertifikat untuk melihat dokumen lengkap.",
+    /* "Petroleum Equipment Institute" is left alone on purpose — it is the
+       body's own name, like the principals elsewhere in this file. */
+    "PEI Member 2026": "Anggota PEI 2026",
+    "ISO certificates issued by URS · Accredited by UKAS & IAF · Valid to November 2027 — click any certificate to view the full document.": "Sertifikat ISO diterbitkan oleh URS · Terakreditasi UKAS & IAF · Berlaku hingga November 2027 — klik sertifikat untuk melihat dokumen lengkap.",
     "View ↗": "Lihat ↗",
 
     /* ---- products & services ---- */

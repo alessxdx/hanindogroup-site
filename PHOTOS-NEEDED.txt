@@ -16,7 +16,7 @@ Put a new photo in the folder for the site that uses it:
 
   photos/brand/               company logos and the group lockup
   photos/shared/hero/         heroes used by more than one site
-  photos/shared/certificates/ ISO and SKK certificates
+  photos/shared/certificates/ ISO, SKK and PEI certificates
   photos/partners/            principal / supplier logos (27)
   photos/customers/           customer logos, shared by both walls (39)
 
@@ -161,6 +161,37 @@ div-printer-pos.png       Automation About page, Company overview
                           two used to share one file; they were split
                           so the division card could change without
                           moving the Automation office photo.
+
+--------------------------------------------------
+CERTIFICATES  (photos/shared/certificates/)
+--------------------------------------------------
+Shared by the Citra About page and the Fire Fighting About page. They
+certify PT. Hanindo Citra as a whole. Each card is hand-written HTML in
+the .isogrid — dropping a file in this folder does NOT make a card
+appear, unlike the photo slots elsewhere in this list.
+
+cert-iso-9001.jpg    Quality Management                  [COMPLETE]
+cert-iso-14001.jpg   Environmental Management            [COMPLETE]
+cert-iso-45001.jpg   Occupational Health & Safety        [COMPLETE]
+                     All three issued by URS, valid to November 2027.
+                     Shown on both About pages.
+cert-skk.jpg         SKK construction licence            [COMPLETE]
+                     Linked from the Fire Fighting About page only,
+                     as a text link rather than a card.
+cert-pei-2026.pdf    PEI membership, 2026                [COMPLETE]
+cert-pei-2026.svg    ...and the card thumbnail for it. PEI sends a PDF
+                     rather than a scan, and the card wants an image, so
+                     the SVG is the PDF's own artwork lifted out and re-
+                     laid at the coordinates the PDF places it. The card
+                     shows the SVG and links to the PDF.
+
+                     PEI renews yearly. When the 2027 file arrives:
+                       perl tools/pei-cert.pl in.pdf \
+                         photos/shared/certificates/cert-pei-2027.svg
+                     then point the card in citra/about.html at both new
+                     filenames and update the "PEI Member 2026" label —
+                     which also needs its line in citra/translate.js.
+
 
 PARTNER LOGOS                                     [COMPLETE]
 All principal logos live in /photos/partners/ — NOT in /photos/
