@@ -704,6 +704,15 @@
     var nm = p.nodeName;
     if (nm === 'SCRIPT' || nm === 'STYLE' || nm === 'NOSCRIPT') return false;
     if (p.closest && (p.closest('svg') || p.closest('.langtoggle'))) return false;
+    /* data-notr marks text that must never be swapped even when the
+       dictionary happens to hold its wording. The home page heading is
+       "PT. Hanindo <span class="fx">Automotive</span>", so the second half
+       of the registered name is a text node reading exactly "Automotive"
+       -- and this dictionary translates that word to "Otomotif" for the
+       sector cells on the Airtec and RAASM pages, where it is the name of
+       an industry rather than of the company. Without this the heading
+       read "PT. Hanindo Otomotif" in Indonesian. */
+    if (p.closest && p.closest('[data-notr]')) return false;
     return true;
   }
 
