@@ -231,8 +231,6 @@
     "Head office": "Kantor pusat",
     "Office hours": "Jam kerja",
     "— Monday to Friday, 08.00 – 17.00 WIB": "— Senin sampai Jumat, 08.00 – 17.00 WIB",
-    "PT. Flowtech Engineering shares the head office at Jl. Fatmawati No. 55 with the rest of Hanindo Group. For petroleum equipment, automation, automotive workshop equipment or fire protection, the group contact page will point you to the right company.": "PT. Flowtech Engineering berbagi kantor pusat di Jl. Fatmawati No. 55 dengan perusahaan lain dalam Hanindo Group. Untuk peralatan perminyakan, otomasi, peralatan bengkel otomotif, atau proteksi kebakaran, halaman kontak grup akan mengarahkan Anda ke perusahaan yang tepat.",
-    "Group contact": "Kontak grup",
 
     /* ---- contact block ---- */
     "Talk to PT. Flowtech Engineering": "Hubungi PT. Flowtech Engineering",
