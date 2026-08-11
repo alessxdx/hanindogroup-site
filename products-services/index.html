@@ -37,7 +37,7 @@
 /* Two across, not four. One card per Products & Services menu entry, and
    four of them at this container width leaves each about 250px — too
    narrow for the .vopt rows, whose labels run to the length of "PT.
-   Hanindo Automation Solutions". Two-by-two keeps them on one line. */
+   PT. Hanindo Automation Solutions". Two-by-two keeps them on one line. */
 .pgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.3rem;margin-top:1.7rem;align-items:start}
 @media(max-width:900px){.pgrid{grid-template-columns:1fr}}
 .pcard{display:flex;flex-direction:column;background:var(--white);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
@@ -139,7 +139,7 @@
 <!-- ============ WHAT WE SUPPLY ============ -->
 <!-- One card per entry in the Products & Services menu, in the same order:
      Oil & Gas, Automotive, Fire Fighting, Printer & POS. The cards used to
-     be named after companies — Hanindo Citra, Hanindo Automotive, Custom
+     be named after companies — PT. Hanindo Citra, PT. Hanindo Automotive, Custom
      (S.E.A) — which did not answer the menu a visitor had just clicked
      through. The card is now the category and the .vopt rows inside it are
      the companies that serve it, so a category served by three companies
@@ -288,6 +288,6 @@ window.addEventListener('pageshow',function(){var i=document.querySelector('.sea
 /* reveal */
 (function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
 </script>
-<script src="../translate.js?v=202608120000"></script>
+<script src="../translate.js?v=202608120100"></script>
 </body>
 </html>

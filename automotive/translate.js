@@ -1,5 +1,5 @@
 /* =====================================================================
-   Hanindo Automotive — EN / Bahasa Indonesia toggle
+   PT. Hanindo Automotive — EN / Bahasa Indonesia toggle
    ---------------------------------------------------------------------
    Same mechanism as the other company sites: on load it walks the
    visible text and, where a phrase matches an entry below, swaps
@@ -53,7 +53,7 @@
     "Automotive": "Otomotif",
     "PT. Hanindo Automotive equips the modern service bay — diagnostics, lifting and handling, tyre service and lubrication.": "PT. Hanindo Automotive melengkapi service bay modern — diagnostik, pengangkatan dan penanganan, layanan ban, dan pelumasan.",
     "The workshop, fully equipped.": "Bengkel, lengkap sepenuhnya.",
-    "Hanindo Automotive equips and supports professional workshops with complete service bay solutions — from tyre changers, wheel balancers and 3D wheel alignment systems to vehicle lifts, diagnostics, fluid handling, lubrication systems and welding equipment. Every solution is backed by our engineering expertise, installation support and after-sales service.": "Hanindo Automotive melengkapi dan mendukung bengkel profesional dengan solusi service bay yang lengkap — mulai dari tyre changer, wheel balancer, dan sistem spooring 3D hingga lift kendaraan, alat diagnostik, penanganan fluida, sistem pelumasan, dan peralatan las. Setiap solusi didukung keahlian teknis, dukungan pemasangan, dan layanan purnajual kami.",
+    "PT. Hanindo Automotive equips and supports professional workshops with complete service bay solutions — from tyre changers, wheel balancers and 3D wheel alignment systems to vehicle lifts, diagnostics, fluid handling, lubrication systems and welding equipment. Every solution is backed by our engineering expertise, installation support and after-sales service.": "PT. Hanindo Automotive melengkapi dan mendukung bengkel profesional dengan solusi service bay yang lengkap — mulai dari tyre changer, wheel balancer, dan sistem spooring 3D hingga lift kendaraan, alat diagnostik, penanganan fluida, sistem pelumasan, dan peralatan las. Setiap solusi didukung keahlian teknis, dukungan pemasangan, dan layanan purnajual kami.",
     "Sole distributor in Indonesia for Airtec, HPA-Faip and RAASM": "Distributor tunggal di Indonesia untuk Airtec, HPA-Faip, dan RAASM",
     "Own brands WELDANN and ATOM, supported by dedicated spare parts and warranty service": "Merek sendiri WELDANN dan ATOM, didukung suku cadang khusus dan layanan garansi",
     "Installation, commissioning and operator training by our own technicians": "Pemasangan, komisioning, dan pelatihan operator oleh teknisi kami sendiri",
@@ -75,7 +75,7 @@
     "Tyre, lubricant & service": "Ban, pelumas & servis",
     "Fleet, distribution & heavy equipment": "Armada, distribusi & alat berat",
     "Energy & industry": "Energi & industri",
-    "Talk to Hanindo Automotive": "Hubungi Hanindo Automotive",
+    "Talk to PT. Hanindo Automotive": "Hubungi PT. Hanindo Automotive",
     "Fitting out a workshop,": "Melengkapi bengkel,",
     "or replacing a bay?": "atau mengganti isi satu bay?",
     "Tell us the bays you run and our team will specify the lifts, diagnostics and tyre equipment to match.": "Beri tahu kami bay yang Anda operasikan dan tim kami akan menentukan lift, alat diagnostik, dan peralatan ban yang sesuai.",
@@ -113,7 +113,7 @@
     "Oil & lubrication equipment — workshop and industrial": "Peralatan oli & pelumasan — bengkel dan industri",
     "Our own brands": "Merek kami sendiri",
     "WELDANN and ATOM.": "WELDANN dan ATOM.",
-    "Alongside the international manufacturers we represent, Hanindo Automotive develops and supplies equipment under our own brands — WELDANN and ATOM. We manage the specifications, spare parts, warranty and after-sales support to ensure reliable long-term performance.": "Selain produsen internasional yang kami wakili, Hanindo Automotive mengembangkan dan memasok peralatan di bawah merek kami sendiri — WELDANN dan ATOM. Kami mengelola spesifikasi, suku cadang, garansi, dan dukungan purnajualnya untuk memastikan kinerja yang andal dalam jangka panjang.",
+    "Alongside the international manufacturers we represent, PT. Hanindo Automotive develops and supplies equipment under our own brands — WELDANN and ATOM. We manage the specifications, spare parts, warranty and after-sales support to ensure reliable long-term performance.": "Selain produsen internasional yang kami wakili, PT. Hanindo Automotive mengembangkan dan memasok peralatan di bawah merek kami sendiri — WELDANN dan ATOM. Kami mengelola spesifikasi, suku cadang, garansi, dan dukungan purnajualnya untuk memastikan kinerja yang andal dalam jangka panjang.",
     "Professional workshop equipment designed for demanding service environments, covering tyre service, lifts, fluid exchange, brake and diagnostic solutions. Supported by warranty, training and after-sales service across Southeast Asia.": "Peralatan bengkel profesional yang dirancang untuk lingkungan kerja berat, mencakup layanan ban, lift, penggantian fluida, serta solusi rem dan diagnostik. Didukung garansi, pelatihan, dan layanan purnajual di seluruh Asia Tenggara.",
     "A range of vehicle lifts including mid-rise, in-ground, on-ground scissor and two-post lifts from 3.5 to 4 tonnes. Built with quality components and safety features for reliable workshop operations.": "Rangkaian lift kendaraan meliputi scissor lift mid-rise, tanam, dan permukaan, serta lift dua tiang dari 3,5 hingga 4 ton. Dibuat dengan komponen berkualitas dan fitur keselamatan untuk operasional bengkel yang andal.",
     "Our direction": "Arah kami",
@@ -190,7 +190,7 @@
     "24 hours · 12 theory, 12 practical · 15–20 per class": "24 jam · 12 teori, 12 praktik · 15–20 peserta per kelas",
     "Suspension and steering, the wheel angles that govern the direction a car travels — toe, camber, caster — and wheel balance. Practice covers setting the angles, reading alignment data and optimising balance.": "Suspensi dan kemudi, sudut-sudut roda yang menentukan arah jalannya mobil — toe, camber, caster — serta keseimbangan roda. Praktik mencakup penyetelan sudut, pembacaan data spooring, dan optimalisasi balancing.",
     "The same fundamentals, angled at the customer conversation: why a vehicle needs alignment and balancing, how to diagnose the complaint behind the booking, and how to talk a customer through the alignment printout.": "Dasar yang sama, difokuskan pada percakapan dengan pelanggan: mengapa kendaraan memerlukan spooring dan balancing, cara mengenali keluhan di balik permintaan servis, dan cara menjelaskan hasil cetak spooring kepada pelanggan.",
-    "Courses run on site — a meeting room for the theory, a service bay for the practice — with materials supplied. Taught by a trainer with 33 years in spooring and balancing instruction, an automotive engineering graduate and BNSP Master Assessor. Every participant receives a Hanindo Automotive certificate of training; national competency certification through LSP Global Otomotif is available on request.": "Pelatihan diselenggarakan di lokasi — ruang rapat untuk teori, service bay untuk praktik — dengan materi disediakan. Diajar oleh instruktur dengan 33 tahun pengalaman mengajar spooring dan balancing, lulusan teknik otomotif dan Master Assessor BNSP. Setiap peserta menerima sertifikat pelatihan Hanindo Automotive; sertifikasi kompetensi nasional melalui LSP Global Otomotif tersedia atas permintaan.",
+    "Courses run on site — a meeting room for the theory, a service bay for the practice — with materials supplied. Taught by a trainer with 33 years in spooring and balancing instruction, an automotive engineering graduate and BNSP Master Assessor. Every participant receives a PT. Hanindo Automotive certificate of training; national competency certification through LSP Global Otomotif is available on request.": "Pelatihan diselenggarakan di lokasi — ruang rapat untuk teori, service bay untuk praktik — dengan materi disediakan. Diajar oleh instruktur dengan 33 tahun pengalaman mengajar spooring dan balancing, lulusan teknik otomotif dan Master Assessor BNSP. Setiap peserta menerima sertifikat pelatihan PT. Hanindo Automotive; sertifikasi kompetensi nasional melalui LSP Global Otomotif tersedia atas permintaan.",
     "Ask for a quote": "Minta penawaran",
     "Request a quotation": "Minta penawaran",
 
@@ -271,8 +271,8 @@
     "A RAASM lubrication service module built onto a pickup for Intraco in Balikpapan.": "Modul servis pelumasan RAASM yang dibangun di atas pikap untuk Intraco di Balikpapan.",
     "An AIRTEC 89 BEP digital tyre inflator installed on the forecourt of a Total service station.": "Pengisi angin ban digital AIRTEC 89 BEP yang dipasang di area SPBU Total.",
     "Content needed": "Perlu konten",
-    "Add Hanindo Automotive project references here": "Tambahkan referensi proyek Hanindo Automotive di sini",
-    "This page is built and linked, but no project references have been supplied for Hanindo Automotive yet. Add each project as a card — client, location, scope and a photo — following the pattern used on the Fire Fighting projects page.": "Halaman ini sudah dibuat dan ditautkan, tetapi belum ada referensi proyek yang disediakan untuk Hanindo Automotive. Tambahkan setiap proyek sebagai kartu — klien, lokasi, lingkup pekerjaan, dan foto — mengikuti pola yang digunakan pada halaman proyek Fire Fighting.",
+    "Add PT. Hanindo Automotive project references here": "Tambahkan referensi proyek PT. Hanindo Automotive di sini",
+    "This page is built and linked, but no project references have been supplied for PT. Hanindo Automotive yet. Add each project as a card — client, location, scope and a photo — following the pattern used on the Fire Fighting projects page.": "Halaman ini sudah dibuat dan ditautkan, tetapi belum ada referensi proyek yang disediakan untuk PT. Hanindo Automotive. Tambahkan setiap proyek sebagai kartu — klien, lokasi, lingkup pekerjaan, dan foto — mengikuti pola yang digunakan pada halaman proyek Fire Fighting.",
     "See the pattern": "Lihat polanya",
 
     /* ---- contact ---- */
@@ -309,7 +309,7 @@
     "Freestanding Inflator, Round": "Pengisi Angin Berdiri, Bulat",
     "Freestanding Inflator, Square": "Pengisi Angin Berdiri, Persegi",
     "Anywhere a tyre holds air.": "Di mana pun ban menahan angin.",
-    "The workshop range is one part of what Airtec build. The same inflation technology runs on forecourts, in hangars and across mine sites, and Hanindo Automotive can supply beyond the service bay.": "Rangkaian untuk bengkel hanyalah sebagian dari yang dibuat Airtec. Teknologi pengisian angin yang sama dipakai di SPBU, hanggar, dan area tambang, dan Hanindo Automotive dapat memasok di luar service bay.",
+    "The workshop range is one part of what Airtec build. The same inflation technology runs on forecourts, in hangars and across mine sites, and PT. Hanindo Automotive can supply beyond the service bay.": "Rangkaian untuk bengkel hanyalah sebagian dari yang dibuat Airtec. Teknologi pengisian angin yang sama dipakai di SPBU, hanggar, dan area tambang, dan PT. Hanindo Automotive dapat memasok di luar service bay.",
     "Workshops, tyre shops and service centres": "Bengkel, toko ban, dan pusat layanan",
     "Petroleum Retail": "Ritel Perminyakan",
     "Forecourt inflators for customer use": "Pengisi angin SPBU untuk digunakan pelanggan",
@@ -601,7 +601,7 @@
     "Gravity drainers, suction units and combined drainer-suction trolleys for taking used oil out cleanly and storing it safely.": "Alat pembuangan gravitasi, unit pengisap, dan troli gabungan pembuangan-pengisapan untuk mengeluarkan oli bekas secara bersih dan menyimpannya dengan aman.",
     "Single-line, dual-line and progressive systems that lubricate a machine or a whole line on schedule, without stopping it.": "Sistem jalur tunggal, jalur ganda, dan progresif yang melumasi satu mesin atau seluruh lini sesuai jadwal, tanpa menghentikannya.",
     "FLS level monitoring and FCS fluid control — knowing what is in every drum and tank, and who drew what from it.": "Pemantauan level FLS dan kontrol fluida FCS — mengetahui isi setiap drum dan tangki, serta siapa yang mengambil apa dari sana.",
-    "RAASM equipment is specified across eleven sectors. The workshop is the one most people know, but the pumps and reels on a service bay are the same ones feeding a production line or a mine fleet — and Hanindo Automotive supplies both.": "Peralatan RAASM digunakan di sebelas sektor. Bengkel adalah yang paling dikenal banyak orang, tetapi pompa dan reel di sebuah service bay sama dengan yang memasok lini produksi atau armada tambang — dan Hanindo Automotive memasok keduanya.",
+    "RAASM equipment is specified across eleven sectors. The workshop is the one most people know, but the pumps and reels on a service bay are the same ones feeding a production line or a mine fleet — and PT. Hanindo Automotive supplies both.": "Peralatan RAASM digunakan di sebelas sektor. Bengkel adalah yang paling dikenal banyak orang, tetapi pompa dan reel di sebuah service bay sama dengan yang memasok lini produksi atau armada tambang — dan PT. Hanindo Automotive memasok keduanya.",
     "Service bays, fast-fit chains and dealer workshops": "Service bay, jaringan fast-fit, dan bengkel dealer",
     "Production lines and machine lubrication": "Lini produksi dan pelumasan mesin",
     "Fleet workshops and heavy equipment servicing": "Bengkel armada dan servis alat berat",
@@ -624,8 +624,8 @@
     "Supplied brand — not a Hanindo house brand.": "Merek yang dipasok — bukan merek milik Hanindo.",
 
     /* ---- catalogue prose: tyre service ---- */
-    "Eighteen models from HPA-Faip, WELDANN and Hakiro. Specifications are taken from the Hanindo Automotive catalogue — contact us for pricing, lead time and installation.": "Delapan belas model dari HPA-Faip, WELDANN, dan Hakiro. Spesifikasi diambil dari katalog Hanindo Automotive — hubungi kami untuk harga, waktu pengiriman, dan pemasangan.",
-    "8 models. Specifications are taken from the Hanindo Automotive catalogue — contact us for pricing, lead time and installation.": "8 model. Spesifikasi diambil dari katalog Hanindo Automotive — hubungi kami untuk harga, waktu pengiriman, dan pemasangan.",
+    "Eighteen models from HPA-Faip, WELDANN and Hakiro. Specifications are taken from the PT. Hanindo Automotive catalogue — contact us for pricing, lead time and installation.": "Delapan belas model dari HPA-Faip, WELDANN, dan Hakiro. Spesifikasi diambil dari katalog PT. Hanindo Automotive — hubungi kami untuk harga, waktu pengiriman, dan pemasangan.",
+    "8 models. Specifications are taken from the PT. Hanindo Automotive catalogue — contact us for pricing, lead time and installation.": "8 model. Spesifikasi diambil dari katalog PT. Hanindo Automotive — hubungi kami untuk harga, waktu pengiriman, dan pemasangan.",
     "Six models, digital and TV-monitor, car through truck.": "Enam model, digital dan monitor TV, dari mobil hingga truk.",
     "Mechanically identical to the B60 — the B55 reads out on a high-brightness digital LED display panel.": "Secara mekanis identik dengan B60 — B55 menampilkan hasil pada panel LED digital dengan kecerahan tinggi.",
     "Mechanically identical to the B55 — the B60 uses a high-resolution LCD monitor, giving the software a richer, more detailed graphical layout.": "Secara mekanis identik dengan B55 — B60 menggunakan monitor LCD resolusi tinggi, memberi perangkat lunaknya tampilan grafis yang lebih kaya dan rinci.",

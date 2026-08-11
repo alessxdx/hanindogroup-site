@@ -1,5 +1,5 @@
 /* =====================================================================
-   Hanindo Citra — EN / ID language toggle  (plain JS, no dependencies)
+   PT. Hanindo Citra — EN / ID language toggle  (plain JS, no dependencies)
    ---------------------------------------------------------------------
    How it works: on load it scans the visible text and, when a phrase
    matches an entry in DICT below, swaps English <-> Bahasa Indonesia.
@@ -23,12 +23,12 @@
     /* ---- home hero ----
        Both home heroes are the company name now — index.html and the
        three carousel slides on hanindo-citra-website.html — so no
-       heading key is needed here. Hanindo Citra is a company name and
+       heading key is needed here. PT. Hanindo Citra is a company name and
        stays as it is; the eyebrows, body copy and buttons below are the
        parts that still translate. */
     "We design, supply, install and maintain complete fire-fighting systems — reliable on day one, and every day after.": "Kami merancang, memasok, memasang, dan memelihara sistem pemadam kebakaran yang lengkap — andal sejak hari pertama, dan setiap hari sesudahnya.",
     "Our products & services": "Produk & layanan kami",
-    "About Hanindo Citra": "Tentang Hanindo Citra",
+    "About PT. Hanindo Citra": "Tentang PT. Hanindo Citra",
     "The fire fighting department of the Hanindo Group — delivering advanced, end-to-end fire-protection systems that safeguard lives and property across Indonesia.": "Departemen pemadam kebakaran Hanindo Group — menghadirkan sistem proteksi kebakaran mutakhir dan menyeluruh yang melindungi jiwa dan properti di seluruh Indonesia.",
     "About us": "Tentang kami",
     "Proven track record": "Rekam jejak terbukti",
@@ -45,7 +45,7 @@
     "Trusted across oil & gas, government facilities and industrial sectors throughout Indonesia": "Dipercaya di sektor migas, fasilitas pemerintah, dan sektor industri di seluruh Indonesia",
 
     /* ---- home statement + stats ---- */
-    "Hanindo Citra is the fire protection division of Hanindo Group—transforming": "Hanindo Citra adalah divisi proteksi kebakaran Hanindo Group—mengubah",
+    "PT. Hanindo Citra is the fire protection division of Hanindo Group—transforming": "PT. Hanindo Citra adalah divisi proteksi kebakaran Hanindo Group—mengubah",
     "meticulous engineering": "rekayasa yang cermat",
     "into fire protection systems that safeguard people, protect assets, and perform reliably long after handover.": "menjadi sistem proteksi kebakaran yang melindungi jiwa, menjaga aset, dan bekerja andal jauh setelah serah terima.",
     "Fire-system technologies installed": "Teknologi sistem kebakaran terpasang",
@@ -58,7 +58,7 @@
     "Team experience includes work with": "Pengalaman tim mencakup pekerjaan dengan",
 
     /* ---- contact (short + full) ---- */
-    "Partner with Hanindo Citra": "Bermitra dengan Hanindo Citra",
+    "Partner with PT. Hanindo Citra": "Bermitra dengan PT. Hanindo Citra",
     "Safety is not a service —": "Keselamatan bukan sekadar layanan —",
     "it is our standard.": "itu adalah standar kami.",
     "Tell us about your project and our team will design the right fire-protection solution — from design and supply through installation and long-term maintenance.": "Ceritakan proyek Anda dan tim kami akan merancang solusi proteksi kebakaran yang tepat — dari desain dan pengadaan hingga pemasangan dan pemeliharaan jangka panjang.",
@@ -96,11 +96,11 @@
     /* The closing call-to-action, repeated on four pages. The heading splits
        across a <br/>, so each line is its own text node and needs its own
        entry — same as the "About"/"Us" pair below. */
-    "Talk to Hanindo Citra": "Hubungi Hanindo Citra",
+    "Talk to PT. Hanindo Citra": "Hubungi PT. Hanindo Citra",
     "Protecting a new site,": "Melindungi lokasi baru,",
     "or upgrading an existing one?": "atau meningkatkan yang sudah ada?",
     "What we supply": "Yang kami sediakan",
-    "Why clients trust Hanindo Citra": "Mengapa klien mempercayai Hanindo Citra",
+    "Why clients trust PT. Hanindo Citra": "Mengapa klien mempercayai PT. Hanindo Citra",
     "All four companies share the Fatmawati head office. If your enquiry sits with one of the others, go straight to them.": "Keempat perusahaan berbagi kantor pusat Fatmawati. Jika pertanyaan Anda terkait salah satu perusahaan lainnya, silakan hubungi langsung.",
 
     /* ---- footer ---- */
@@ -122,7 +122,7 @@
     "Company overview": "Sekilas Perusahaan",
     "Excellence and safety,": "Keunggulan dan keselamatan,",
     "by design": "sejak dari desain",
-    "Hanindo Citra delivers engineered fire protection systems that safeguard people, protect assets, and keep businesses operating with confidence.": "Hanindo Citra menghadirkan sistem proteksi kebakaran hasil rekayasa yang melindungi jiwa, menjaga aset, dan menjaga kelangsungan operasional bisnis dengan penuh percaya diri.",
+    "PT. Hanindo Citra delivers engineered fire protection systems that safeguard people, protect assets, and keep businesses operating with confidence.": "PT. Hanindo Citra menghadirkan sistem proteksi kebakaran hasil rekayasa yang melindungi jiwa, menjaga aset, dan menjaga kelangsungan operasional bisnis dengan penuh percaya diri.",
     "From design and engineering to installation, testing, commissioning, and maintenance, we provide end-to-end solutions tailored to commercial, industrial, and critical infrastructure projects.": "Dari desain dan rekayasa hingga pemasangan, pengujian, commissioning, dan pemeliharaan, kami menyediakan solusi menyeluruh yang disesuaikan untuk proyek komersial, industri, dan infrastruktur vital.",
     "Built on technical expertise and a commitment to quality, every system is designed to meet rigorous standards and perform reliably long after handover.": "Dibangun atas keahlian teknis dan komitmen terhadap kualitas, setiap sistem dirancang untuk memenuhi standar yang ketat dan bekerja andal jauh setelah serah terima.",
     "Fire pump & piping installation": "Instalasi pompa & perpipaan kebakaran",
@@ -255,7 +255,7 @@
     "West Sumatera": "Sumatera Barat",
     "Complete site fire-protection delivery for the Directorate General of Railways.": "Pengerjaan proteksi kebakaran lokasi secara lengkap untuk Direktorat Jenderal Perkeretaapian.",
     "Power": "Kelistrikan",
-    "Hanindo Citra designed and built a complete hydrant system for PLN UID Lampung. The project covered the supply, installation, testing, and commissioning of the fire protection system, ensuring compliance with project specifications and applicable fire-safety standards.": "Hanindo Citra merancang dan membangun sistem hidran lengkap untuk PLN UID Lampung. Proyek ini mencakup pengadaan, pemasangan, pengujian, dan komisioning sistem proteksi kebakaran, dengan memastikan kesesuaian terhadap spesifikasi proyek dan standar keselamatan kebakaran yang berlaku.",
+    "PT. Hanindo Citra designed and built a complete hydrant system for PLN UID Lampung. The project covered the supply, installation, testing, and commissioning of the fire protection system, ensuring compliance with project specifications and applicable fire-safety standards.": "PT. Hanindo Citra merancang dan membangun sistem hidran lengkap untuk PLN UID Lampung. Proyek ini mencakup pengadaan, pemasangan, pengujian, dan komisioning sistem proteksi kebakaran, dengan memastikan kesesuaian terhadap spesifikasi proyek dan standar keselamatan kebakaran yang berlaku.",
 
     /* ---- project detail modals ---- */
     "Project Overview": "Ikhtisar Proyek",

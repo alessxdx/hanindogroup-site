@@ -119,7 +119,7 @@
     "Shenzhen office": "Kantor Shenzhen",
     "A second China office as the market grows.": "Kantor kedua di Tiongkok seiring pertumbuhan pasar.",
     "South East Asia expansion": "Ekspansi Asia Tenggara",
-    "Hanindo Automation Solutions adds CUSTOM Hanindo Indonesia.": "Hanindo Automation Solutions menghadirkan CUSTOM Hanindo Indonesia.",
+    "PT. Hanindo Automation Solutions adds CUSTOM Hanindo Indonesia.": "PT. Hanindo Automation Solutions menghadirkan CUSTOM Hanindo Indonesia.",
     "Singapore office": "Kantor Singapura",
     "Gralessando Pte Ltd opens, covering CUSTOM Hanindo South East Asia.": "Gralessando Pte Ltd dibuka, mencakup CUSTOM Hanindo Asia Tenggara.",
     "Regional partnerships": "Kemitraan regional",
@@ -204,7 +204,7 @@
 
     /* ---- footer ---- */
     "Your technology one stop solution — serving the oil & gas, automation, automotive and fire protection industries in Indonesia since 1987.": "Solusi teknologi satu atap Anda — melayani industri minyak & gas, otomasi, otomotif, dan proteksi kebakaran di Indonesia sejak 1987.",
-    "Hanindo Automation Solutions": "Hanindo Automation Solutions",
+    "PT. Hanindo Automation Solutions": "PT. Hanindo Automation Solutions",
     "Tel:": "Tel:",
     "© 2026 Hanindo Group. All Rights Reserved.": "© 2026 Hanindo Group. Hak Cipta Dilindungi."
   };

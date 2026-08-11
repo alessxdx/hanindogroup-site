@@ -67,7 +67,7 @@
     /* ---- home ---- */
     "PT. Hanindo Citra provides sales and after-sales service of petroleum equipment and product supply, from the forecourt to the bulk terminal — and builds the fuel stations that run it.": "PT. Hanindo Citra menyediakan penjualan dan layanan purnajual peralatan perminyakan serta pasokan produk, dari forecourt hingga terminal curah — dan membangun SPBU yang menjalankannya.",
     "Everything fuel moves through.": "Semua yang dilalui bahan bakar.",
-    "Hanindo Citra supplies, installs, and services the equipment fuel is dispensed, measured and monitored with — dispensers, submersible turbine pumps, automatic tank gauging systems, flow meters, forecourt controllers, and fuel management systems. The same systems run retail forecourts, fuel depots, marine terminals, aviation fuelling and industrial sites. The company also builds fuel stations from consultation and design through construction to the day the site opens.": "Hanindo Citra memasok, memasang, dan merawat peralatan yang digunakan untuk menyalurkan, mengukur, dan memantau bahan bakar — dispenser, pompa turbin submersible, sistem automatic tank gauging, flow meter, forecourt controller, dan sistem manajemen bahan bakar. Sistem yang sama menjalankan forecourt ritel, depot bahan bakar, terminal laut, pengisian bahan bakar penerbangan, dan lokasi industri. Perusahaan ini juga membangun SPBU, dari konsultasi dan perancangan hingga pembangunan, sampai hari lokasi mulai beroperasi.",
+    "PT. Hanindo Citra supplies, installs, and services the equipment fuel is dispensed, measured and monitored with — dispensers, submersible turbine pumps, automatic tank gauging systems, flow meters, forecourt controllers, and fuel management systems. The same systems run retail forecourts, fuel depots, marine terminals, aviation fuelling and industrial sites. The company also builds fuel stations from consultation and design through construction to the day the site opens.": "PT. Hanindo Citra memasok, memasang, dan merawat peralatan yang digunakan untuk menyalurkan, mengukur, dan memantau bahan bakar — dispenser, pompa turbin submersible, sistem automatic tank gauging, flow meter, forecourt controller, dan sistem manajemen bahan bakar. Sistem yang sama menjalankan forecourt ritel, depot bahan bakar, terminal laut, pengisian bahan bakar penerbangan, dan lokasi industri. Perusahaan ini juga membangun SPBU, dari konsultasi dan perancangan hingga pembangunan, sampai hari lokasi mulai beroperasi.",
     "Sole distributor in Indonesia for Gilbarco Veeder-Root (since 1987), Total Control Systems, and ITL.": "Distributor tunggal di Indonesia untuk Gilbarco Veeder-Root (sejak 1987), Total Control Systems, dan ITL.",
     "Provides end-to-end construction for the retail petroleum industry, from consultation and design through construction until the fuel station is operational.": "Menyediakan konstruksi menyeluruh untuk industri ritel perminyakan, dari konsultasi dan perancangan hingga pembangunan sampai SPBU beroperasi.",
     "Supplies and installs signboards and lighting for fuel stations, with after-sales service for all equipment installed.": "Memasok dan memasang papan nama serta penerangan SPBU, dengan layanan purnajual untuk semua peralatan yang dipasang.",
@@ -90,9 +90,9 @@
 
     /* ---- home: fire fighting cross-link and contact ---- */
     "Also part of PT. Hanindo Citra": "Juga bagian dari PT. Hanindo Citra",
-    "Hanindo Citra also designs, supplies, installs and maintains complete fire-fighting systems across Indonesia — hydrant, sprinkler, gas and foam suppression, detection and alarm.": "Hanindo Citra juga merancang, memasok, memasang, dan merawat sistem pemadam kebakaran lengkap di seluruh Indonesia — hydrant, sprinkler, pemadam gas dan foam, serta deteksi dan alarm.",
+    "PT. Hanindo Citra also designs, supplies, installs and maintains complete fire-fighting systems across Indonesia — hydrant, sprinkler, gas and foam suppression, detection and alarm.": "PT. Hanindo Citra juga merancang, memasok, memasang, dan merawat sistem pemadam kebakaran lengkap di seluruh Indonesia — hydrant, sprinkler, pemadam gas dan foam, serta deteksi dan alarm.",
     "Visit Fire Fighting": "Kunjungi Pemadam Kebakaran",
-    "Talk to Hanindo Citra": "Hubungi Hanindo Citra",
+    "Talk to PT. Hanindo Citra": "Hubungi PT. Hanindo Citra",
     "Planning a station,": "Merencanakan SPBU,",
     "or upgrading a forecourt?": "atau meningkatkan forecourt?",
     "Tell us what you are building and our team will scope the right equipment, automation and construction package.": "Beri tahu kami apa yang sedang Anda bangun dan tim kami akan menyusun paket peralatan, otomasi, dan konstruksi yang tepat.",
@@ -111,14 +111,14 @@
     "Company overview": "Profil perusahaan",
     "Four decades in": "Empat dekade di",
     "petroleum equipment": "peralatan perminyakan",
-    "Hanindo Citra continues the work started by PT Sugiron Citra, whose petroleum equipment division began operating in 1987 and became the foundation of the Hanindo Group. It has represented Gilbarco Veeder-Root since that first year—four decades of partnership, serving the same industry with the same principal.": "Hanindo Citra melanjutkan pekerjaan yang dimulai PT Sugiron Citra, yang divisi peralatan perminyakannya mulai beroperasi pada tahun 1987 dan menjadi fondasi Hanindo Group. Perusahaan ini telah mewakili Gilbarco Veeder-Root sejak tahun pertama itu—empat dekade kemitraan, melayani industri yang sama dengan prinsipal yang sama.",
+    "PT. Hanindo Citra continues the work started by PT Sugiron Citra, whose petroleum equipment division began operating in 1987 and became the foundation of the Hanindo Group. It has represented Gilbarco Veeder-Root since that first year—four decades of partnership, serving the same industry with the same principal.": "PT. Hanindo Citra melanjutkan pekerjaan yang dimulai PT Sugiron Citra, yang divisi peralatan perminyakannya mulai beroperasi pada tahun 1987 dan menjadi fondasi Hanindo Group. Perusahaan ini telah mewakili Gilbarco Veeder-Root sejak tahun pertama itu—empat dekade kemitraan, melayani industri yang sama dengan prinsipal yang sama.",
     /* Both "and also this" lines in the overview carry an inline link, so
        each reaches the walker as text nodes either side of the anchor and
        needs an entry per fragment. The link text is a company name and a
        department name — neither is translated. */
     "Since 2012 it has also carried the group's oil and gas automation work, which transferred here from": "Sejak 2012 perusahaan ini juga menangani pekerjaan otomasi minyak dan gas grup, yang dialihkan ke sini dari",
     "— the automation and the equipment it runs are now specified by the same company.": "— otomasi dan peralatan yang dijalankannya kini ditangani oleh perusahaan yang sama.",
-    "Hanindo Citra also delivers the group's fire protection work through its": "Hanindo Citra juga menjalankan pekerjaan proteksi kebakaran grup melalui",
+    "PT. Hanindo Citra also delivers the group's fire protection work through its": "PT. Hanindo Citra juga menjalankan pekerjaan proteksi kebakaran grup melalui",
     "Retail forecourt equipment": "Peralatan forecourt ritel",
     "The principals we distribute": "Prinsipal yang kami distribusikan",
     "Sole distributor for Indonesia.": "Distributor tunggal untuk Indonesia.",
@@ -180,8 +180,8 @@
     "Projects we have delivered.": "Proyek yang telah kami kerjakan.",
     "Retail petroleum construction and bulk fuel installations, from greenfield stations to depot and terminal systems.": "Konstruksi ritel perminyakan dan instalasi bahan bakar curah, dari SPBU greenfield hingga sistem depot dan terminal.",
     "Content needed": "Perlu konten",
-    "Add Hanindo Citra project references here": "Tambahkan referensi proyek Hanindo Citra di sini",
-    "This page is built and linked, but no project references have been supplied for Hanindo Citra yet. Add each project as a card — client, location, scope and a photo — following the pattern used on the Fire Fighting projects page.": "Halaman ini sudah dibuat dan tertaut, tetapi belum ada referensi proyek yang disediakan untuk Hanindo Citra. Tambahkan setiap proyek sebagai kartu — klien, lokasi, lingkup pekerjaan, dan foto — mengikuti pola yang dipakai pada halaman proyek Pemadam Kebakaran.",
+    "Add PT. Hanindo Citra project references here": "Tambahkan referensi proyek PT. Hanindo Citra di sini",
+    "This page is built and linked, but no project references have been supplied for PT. Hanindo Citra yet. Add each project as a card — client, location, scope and a photo — following the pattern used on the Fire Fighting projects page.": "Halaman ini sudah dibuat dan tertaut, tetapi belum ada referensi proyek yang disediakan untuk PT. Hanindo Citra. Tambahkan setiap proyek sebagai kartu — klien, lokasi, lingkup pekerjaan, dan foto — mengikuti pola yang dipakai pada halaman proyek Pemadam Kebakaran.",
     "See the pattern": "Lihat polanya",
 
     /* ---- contact ---- */
@@ -507,7 +507,7 @@
     /* ---- footer ---- */
     "Your technology one stop solution — serving the oil & gas, automation, automotive and fire protection industries in Indonesia since 1987.": "Solusi teknologi satu atap Anda — melayani industri minyak & gas, otomasi, otomotif, dan proteksi kebakaran di Indonesia sejak 1987.",
     "Our Companies": "Perusahaan Kami",
-    "Hanindo Automation Solutions": "Hanindo Automation Solutions",
+    "PT. Hanindo Automation Solutions": "PT. Hanindo Automation Solutions",
     "Tel:": "Tel:",
     "© 2026 Hanindo Group. All Rights Reserved.": "© 2026 Hanindo Group. Hak Cipta Dilindungi."
   };

@@ -23,7 +23,7 @@
    punctuation — the match is on the whole trimmed text node, not a
    substring.
 
-   Deliberately NOT translated: company and brand names (Hanindo Citra,
+   Deliberately NOT translated: company and brand names (PT. Hanindo Citra,
    Flowtech Engineering, Gralessando Pte Ltd, Custom, Gilbarco
    Veeder-Root and the rest of the principals), the street address,
    which is needed in its postal form, and the phone and email.
@@ -46,7 +46,7 @@
     "By industry": "Menurut industri",
     "Printer & POS, by market": "Printer & POS, menurut pasar",
     "Fire Fighting Department": "Departemen Pemadam Kebakaran",
-    "Hanindo Automation Solutions": "Hanindo Automation Solutions",
+    "PT. Hanindo Automation Solutions": "PT. Hanindo Automation Solutions",
     "(Indonesia)": "(Indonesia)",
     "(Singapore)": "(Singapura)",
     "(China)": "(Tiongkok)",
@@ -153,7 +153,7 @@
     "China expansion": "Ekspansi Tiongkok",
     "Hanindo Shanghai office opens, Shenzhen follows in 2009.": "Kantor Hanindo Shanghai dibuka, Shenzhen menyusul pada 2009.",
     "South East Asia expansion": "Ekspansi Asia Tenggara",
-    "Hanindo Automation Solutions adds CUSTOM Hanindo Indonesia.": "Hanindo Automation Solutions menghadirkan CUSTOM Hanindo Indonesia.",
+    "PT. Hanindo Automation Solutions adds CUSTOM Hanindo Indonesia.": "PT. Hanindo Automation Solutions menghadirkan CUSTOM Hanindo Indonesia.",
     "Singapore office": "Kantor Singapura",
     "Gralessando Pte Ltd opens, covering CUSTOM Hanindo South East Asia.": "Gralessando Pte Ltd dibuka, mencakup CUSTOM Hanindo Asia Tenggara.",
     "Regional partnerships": "Kemitraan regional",
@@ -161,7 +161,7 @@
     "Manila office": "Kantor Manila",
     "A CUSTOM Hanindo office follows the Philippines partnership.": "Kantor CUSTOM Hanindo menyusul setelah kemitraan Filipina.",
     "Fire Fighting Department": "Divisi Pemadam Kebakaran",
-    "Hanindo Citra adds fire protection.": "Hanindo Citra menambah proteksi kebakaran.",
+    "PT. Hanindo Citra adds fire protection.": "PT. Hanindo Citra menambah proteksi kebakaran.",
 
     /* ---- about + contact: the company cards ---- */
     "The group": "Grup",

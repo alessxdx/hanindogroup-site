@@ -94,11 +94,11 @@
     "rebuilt around CUSTOM": "dibangun ulang di sekitar CUSTOM",
     /* Both paragraphs carry an inline link, so each reaches the walker as
        two text nodes either side of the anchor and needs an entry per side.
-       Neither link text is translated: "Hanindo Citra" and "CUSTOM S.p.A."
+       Neither link text is translated: "PT. Hanindo Citra" and "CUSTOM S.p.A."
        are company names. */
     "PT. Hanindo Automation Solutions was one of the four companies established when the Hanindo Group was founded in 2002. Originally focused on automation solutions for the oil and gas industry, the company later evolved through its partnership with": "PT. Hanindo Automation Solutions adalah salah satu dari empat perusahaan yang didirikan saat Hanindo Group berdiri pada tahun 2002. Awalnya berfokus pada solusi otomasi untuk industri minyak dan gas, perusahaan ini kemudian berkembang melalui kemitraannya dengan",
     ", introducing the CUSTOM product line to Indonesia in 2012 as CUSTOM Hanindo Indonesia.": ", memperkenalkan lini produk CUSTOM ke Indonesia pada tahun 2012 sebagai CUSTOM Hanindo Indonesia.",
-    "Today, Hanindo Automation Solutions focuses on CUSTOM printing, scanning and point-of-sale solutions, supported by local system integration and technical expertise. The oil and gas automation business was transferred to": "Saat ini, Hanindo Automation Solutions berfokus pada solusi pencetakan, pemindaian, dan point-of-sale CUSTOM, didukung integrasi sistem dan keahlian teknis lokal. Bisnis otomasi minyak dan gas dialihkan ke",
+    "Today, PT. Hanindo Automation Solutions focuses on CUSTOM printing, scanning and point-of-sale solutions, supported by local system integration and technical expertise. The oil and gas automation business was transferred to": "Saat ini, PT. Hanindo Automation Solutions berfokus pada solusi pencetakan, pemindaian, dan point-of-sale CUSTOM, didukung integrasi sistem dan keahlian teknis lokal. Bisnis otomasi minyak dan gas dialihkan ke",
     ", where it continues alongside its petroleum equipment operations.": ", tempatnya berlanjut bersama operasi peralatan perminyakan perusahaan tersebut.",
     "Our Indonesia Office": "Kantor Kami di Indonesia",
 
@@ -111,7 +111,7 @@
     "Shenzhen office": "Kantor Shenzhen",
     "A second China office as the market grows.": "Kantor kedua di Tiongkok seiring pertumbuhan pasar.",
     "South East Asia expansion": "Ekspansi Asia Tenggara",
-    "Hanindo Automation Solutions adds CUSTOM Hanindo Indonesia.": "Hanindo Automation Solutions menghadirkan CUSTOM Hanindo Indonesia.",
+    "PT. Hanindo Automation Solutions adds CUSTOM Hanindo Indonesia.": "PT. Hanindo Automation Solutions menghadirkan CUSTOM Hanindo Indonesia.",
     "Singapore office": "Kantor Singapura",
     "Gralessando Pte Ltd opens, covering CUSTOM Hanindo South East Asia.": "Gralessando Pte Ltd dibuka, mencakup CUSTOM Hanindo Asia Tenggara.",
     "Regional partnerships": "Kemitraan regional",

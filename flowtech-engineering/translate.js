@@ -19,7 +19,7 @@
    and the sentence that follows it.
 
    Shared wording — the navigation, the footer, the contact block — is
-   carried over verbatim from the group and Hanindo Automotive
+   carried over verbatim from the group and PT. Hanindo Automotive
    dictionaries rather than translated afresh, so the same English
    reads the same way in Indonesian on every site.
 
@@ -216,7 +216,7 @@
     /* ---- sister company ---- */
     "Part of the same group": "Bagian dari grup yang sama",
     "Oil & Gas — PT. Hanindo Citra": "Minyak & Gas — PT. Hanindo Citra",
-    "Flowtech builds the stations that PT. Hanindo Citra equips. Hanindo Citra supplies the dispensers, tank gauging, flow meters and fuel management systems, and provides after-sales service once the site is running.": "Flowtech membangun SPBU yang dilengkapi oleh PT. Hanindo Citra. Hanindo Citra memasok dispenser, tank gauging, flow meter, dan sistem manajemen bahan bakar, serta memberikan layanan purnajual setelah lokasi beroperasi.",
+    "Flowtech builds the stations that PT. Hanindo Citra equips. PT. Hanindo Citra supplies the dispensers, tank gauging, flow meters and fuel management systems, and provides after-sales service once the site is running.": "Flowtech membangun SPBU yang dilengkapi oleh PT. Hanindo Citra. PT. Hanindo Citra memasok dispenser, tank gauging, flow meter, dan sistem manajemen bahan bakar, serta memberikan layanan purnajual setelah lokasi beroperasi.",
     "Visit Oil & Gas": "Kunjungi Minyak & Gas",
 
     /* ---- contact page ----
