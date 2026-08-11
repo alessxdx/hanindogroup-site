@@ -43,8 +43,11 @@
     "About Us": "Tentang Kami",
     /* the two headings inside the Our Companies menu — same wording as
        the group dictionary, which groups by trade and by market. */
-    "Products & Services": "Produk & Layanan",
-    "Products & services": "Produk & layanan",
+    /* the tab, the footer link, the breadcrumb and the page's own heading
+       all read "Services" now, so one entry covers the lot. The
+       "Products & Services" and "Products & services" entries that used
+       to sit here went with the old label. */
+    "Services": "Layanan",
     "Projects": "Proyek",
     "Contact Us": "Hubungi Kami",
     "Contact us": "Hubungi kami",
@@ -178,26 +181,31 @@
     "Total gas station, Kemang Raya": "SPBU Total, Kemang Raya",
 
     /* ---- products & services page: hero ----
-       The heading is the one word now, so the "Products &" half it used
-       to carry has gone. The nav tab and the breadcrumb still read
-       "Products & Services", which is their own entry above. */
-    "Services": "Layanan",
+       The heading is the one word "Services", covered by the navigation
+       entry at the top of this dictionary -- the tab, the footer link,
+       the breadcrumb and the heading are all the same word now. */
     "Fuel station construction handled end to end — design, permits, materials and labour, installation and operator training, under one contract.": "Konstruksi SPBU ditangani menyeluruh — desain, perizinan, material dan tenaga kerja, pemasangan, dan pelatihan operator, dalam satu kontrak.",
     "Every aspect required in the construction of a fuel station is handled by us, so clients deal with one team from permit to handover.": "Setiap aspek yang dibutuhkan dalam pembangunan SPBU kami tangani sendiri, sehingga klien berurusan dengan satu tim dari perizinan hingga serah terima.",
 
     /* ---- scope of work page: the four contractor stages ----
-       Bold lead-in first, then the sentence that follows it. */
+       These are the timeline now, a heading and one line each, so the
+       bold lead-in and the long sentence each stage used to carry are
+       gone. Every stage title is its own <h4> and its sentence its own
+       <p>, which is one text node each. */
     "As contractor": "Sebagai kontraktor",
     "How a project runs.": "Bagaimana proyek berjalan.",
     "In general, the scope of work and responsibility taken on as contractor runs in four stages.": "Secara umum, lingkup pekerjaan dan tanggung jawab yang diemban sebagai kontraktor berjalan dalam empat tahap.",
-    "Review of basic design.": "Peninjauan desain dasar.",
-    "Studying the re-design of all plans submitted to the owner and comparing them against the conditions in the field.": "Mempelajari kembali rancangan seluruh gambar rencana yang diserahkan kepada pemilik dan membandingkannya dengan kondisi di lapangan.",
-    "Detail design.": "Desain detail.",
-    "Planning and re-making the whole of the design so that activities and actual work can be planned for execution. The detailed design, once approved by the owner, becomes the basic reference for planning the work in the field.": "Merencanakan dan menyusun ulang keseluruhan desain agar kegiatan dan pekerjaan yang sebenarnya dapat direncanakan untuk dilaksanakan. Desain detail yang telah disetujui pemilik menjadi acuan dasar perencanaan pekerjaan di lapangan.",
-    "Work preparation.": "Persiapan pekerjaan.",
-    "Soil investigation, preparation of the work permit for safety, survey and measurement, and preparation of shop drawings.": "Penyelidikan tanah, penyiapan izin kerja untuk keselamatan, survei dan pengukuran, serta penyiapan shop drawing.",
-    "Construction work.": "Pekerjaan konstruksi.",
-    "Tanks, fuel piping, buildings and canopy — the site built out and handed over.": "Tangki, perpipaan bahan bakar, bangunan, dan kanopi — lokasi dibangun hingga diserahterimakan.",
+    "Review of Basic Design": "Peninjauan Desain Dasar",
+    "The owner's plans re-designed and checked against conditions in the field.": "Gambar rencana pemilik dirancang ulang dan diperiksa terhadap kondisi di lapangan.",
+    "Detail Design": "Desain Detail",
+    "The whole design re-made and, once approved, the reference for the work.": "Keseluruhan desain disusun ulang dan, setelah disetujui, menjadi acuan pekerjaan.",
+    "Work Preparation": "Persiapan Pekerjaan",
+    "Soil investigation, safety work permit, survey and shop drawings.": "Penyelidikan tanah, izin kerja keselamatan, survei, dan shop drawing.",
+    "Construction Work": "Pekerjaan Konstruksi",
+    "Tanks, fuel piping, buildings and canopy, built out and handed over.": "Tangki, perpipaan bahan bakar, bangunan, dan kanopi, dibangun hingga diserahterimakan.",
+    "Industries served": "Industri yang dilayani",
+    "Fuel Stations": "SPBU",
+    "Oil & Gas": "Minyak & Gas",
 
     /* ---- scope of work page: stage 3 ---- */
     "Stage 3": "Tahap 3",
