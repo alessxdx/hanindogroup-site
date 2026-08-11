@@ -896,11 +896,32 @@ flow-construction.jpg     Beside "Fuel Station & Oil & Gas
                           Site work suits it better than a finished
                           forecourt, since the hero can carry that.
 
-NOTE the fallback here is not the usual one. Every other company page
-shows a "Photo needed" box in an empty slot; this one removes the panel
-and runs the section as a single column instead, because an empty box
-on the home page of a company with no photography advertises exactly
-that. See the .split.nophoto rule at the top of the page.
+WHAT WE DELIVER TILES  ->  photos/flowtech/deliver/
+Four square tiles on the home page, each drawn today as a line icon
+over a pale gradient. Each takes an optional photograph:
+
+flow-engineering-design.jpg        Engineering & Design
+flow-construction-work.jpg         Construction
+flow-mechanical-electrical.jpg     Mechanical & Electrical
+flow-commissioning-training.jpg    Commissioning & Training
+
+Square, at least 800px. The photograph COVERS the tile, so anything at
+the very edges is cropped — and the bottom of each tile carries a dark
+gradient with a title and a line of caption over it, so keep the
+subject in the upper two thirds. These are photographs of work, not
+cut-out products: do not supply them on a white ground the way the
+Hanindo Citra product tiles are.
+
+They are independent. One photograph and three icons is a fine state to
+sit in, though four of one or four of the other will read more evenly
+than three and one.
+
+NOTE the fallback in this section is not the usual one. Every other
+company page shows a "Photo needed" box in an empty slot; here the
+intro panel removes itself and runs the section as a single column, and
+an empty tile keeps its icon. An empty box on the home page of a
+company with no photography advertises exactly that. See the
+.split.nophoto and .tile.plain rules at the top of the page.
 
 The other three photos this section used to ask for —
 flow-fuel-stations.jpg, flow-oil-gas.jpg and

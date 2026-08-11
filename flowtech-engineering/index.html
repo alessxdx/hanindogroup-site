@@ -36,6 +36,19 @@
    slot existed -- no gap, no placeholder. Drop the file in and the two
    columns appear on their own. */
 .split.nophoto{grid-template-columns:1fr}
+
+/* What we deliver: a photograph per tile, each one optional.
+   site.css draws .tile img for cut-out product shots -- contained,
+   padded, and multiplied so a white ground drops into the panel. These
+   four are photographs of work rather than products, so they cover the
+   tile instead: no padding, no blend, and the tile's own bottom gradient
+   keeps the label readable over them.
+   The icon is the fallback, not a placeholder. With no file the img
+   removes itself and the tile draws exactly as it does now; when a file
+   loads it adds .haspic and the icon steps aside. Neither state shows a
+   "Photo needed" box, for the same reason the intro section does not. */
+.tile.plain img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;padding:0;mix-blend-mode:normal;z-index:0}
+.tile.plain.haspic .ic{display:none}
 </style>
 </head>
 <body>
@@ -153,12 +166,15 @@
      rather than leaving a gap, and the advance button that shows itself
      only once the row stops fitting.
      What is different is .tile.plain: those strips are carried by a
-     product photograph, and this company has none. Its four are
-     activities rather than objects -- there is no product shot of
-     commissioning -- and photos/flowtech/ has been empty since the
-     section was built, so an <img> here would be an empty panel for
-     good. .plain puts the line icon where the picture goes and gives the
-     label a second line. See site.css, just under .strip-4. -->
+     product photograph, and these four are activities rather than
+     objects. .plain puts the line icon where the picture goes and gives
+     the label a second line. See site.css, just under .strip-4.
+     Each tile now also carries a photo slot, empty for now. The icon is
+     the fallback rather than a placeholder: with no file the tile draws
+     exactly as it does today, and when a file lands the photograph
+     covers the tile and the icon steps aside. Filenames and sizes are in
+     PHOTOS-NEEDED.txt; the rules that swap them are at the top of this
+     page. -->
 <section class="section paper">
   <div class="wrap">
     <div class="reveal">
@@ -167,18 +183,22 @@
     <div class="tilestrip reveal d1">
       <div class="strip strip-4" id="tilestrip">
         <div class="tile plain">
+          <img src="../photos/flowtech/deliver/flow-engineering-design.jpg" alt="" onload="this.parentElement.classList.add('haspic')" onerror="this.remove()" />
           <div class="ic"><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 00-2 2v14a2 2 0 002 2h12a2 2 0 002-2V9z"/><path d="M14 3v6h6"/><path d="M9 15l2 2 4-4"/></svg></div>
           <span class="lab"><b>Engineering &amp; Design</b><i>Design review, detailed engineering, site surveys and shop drawings.</i></span>
         </div>
         <div class="tile plain">
+          <img src="../photos/flowtech/deliver/flow-construction-work.jpg" alt="" onload="this.parentElement.classList.add('haspic')" onerror="this.remove()" />
           <div class="ic"><svg viewBox="0 0 24 24"><path d="M21 16V8l-9-5-9 5v8l9 5 9-5z"/><path d="M3.3 7.5L12 12.5l8.7-5"/><path d="M12 12.5V21"/></svg></div>
           <span class="lab"><b>Construction</b><i>Fuel station construction, renovation and site preparation.</i></span>
         </div>
         <div class="tile plain">
+          <img src="../photos/flowtech/deliver/flow-mechanical-electrical.jpg" alt="" onload="this.parentElement.classList.add('haspic')" onerror="this.remove()" />
           <div class="ic"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/><path d="M2 20h4"/></svg></div>
           <span class="lab"><b>Mechanical &amp; Electrical</b><i>Mechanical, electrical and equipment installation.</i></span>
         </div>
         <div class="tile plain">
+          <img src="../photos/flowtech/deliver/flow-commissioning-training.jpg" alt="" onload="this.parentElement.classList.add('haspic')" onerror="this.remove()" />
           <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 7.9-8 9-4.6-1.1-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
           <span class="lab"><b>Commissioning &amp; Training</b><i>Testing, commissioning, handover and operational safety training.</i></span>
         </div>
