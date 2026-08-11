@@ -76,11 +76,31 @@ if ($ENV{LAN}) {
 }
 STDOUT->autoflush(1);
 
+# One request per connection, then close.
+#
+# This server is single-threaded, so it can only ever be inside one
+# connection at a time. Browsers open several in parallel and hold them
+# open for reuse, which deadlocks a keep-alive loop here: the server sits
+# waiting for a second request that will never come on connection one,
+# while the browser waits for responses on connections two through six
+# and the page hangs forever. Closing each connection after its response
+# costs a handshake per file and is the correct trade for a preview
+# server that only ever has one visitor.
 while (my $c = $d->accept) {
-  while (my $req = $c->get_request) {
+  # Browsers open sockets speculatively and may never send a request on
+  # them. Without a timeout, accept hands us one of those and get_request
+  # blocks forever, wedging the single-threaded loop against every later
+  # request. Give up on a silent connection and go back to accepting.
+  $c->timeout(3);
+
+  # A bare block is a loop that runs once, so the error paths below can
+  # "last REQ" out to the close at the bottom instead of skipping it.
+  REQ: {
+    my $req = $c->get_request or last REQ;
+
     if ($req->method ne 'GET' && $req->method ne 'HEAD') {
       $c->send_error(RC_METHOD_NOT_ALLOWED);
-      next;
+      last REQ;
     }
 
     my $path = $req->uri->path;
@@ -92,7 +112,7 @@ while (my $c = $d->accept) {
     if ($path =~ /(^|\/)\.\.(\/|$)/) {
       $c->send_error(RC_FORBIDDEN);
       print "403 /$path\n";
-      next;
+      last REQ;
     }
 
     # A bare directory with no trailing slash, e.g. /search
@@ -101,7 +121,7 @@ while (my $c = $d->accept) {
     if (!-f $path) {
       $c->send_error(RC_NOT_FOUND);
       print "404 /$path\n";
-      next;
+      last REQ;
     }
 
     my ($ext) = $path =~ /\.([a-zA-Z0-9]+)$/;
@@ -109,7 +129,7 @@ while (my $c = $d->accept) {
 
     open my $fh, '<:raw', $path or do {
       $c->send_error(RC_INTERNAL_SERVER_ERROR);
-      next;
+      last REQ;
     };
     local $/;
     my $body = <$fh>;
@@ -120,6 +140,7 @@ while (my $c = $d->accept) {
     # No caching, so a rebuilt search index shows up on reload rather
     # than after a puzzled ten minutes.
     $res->header('Cache-Control' => 'no-store');
+    $res->header('Connection' => 'close');
     $res->content($req->method eq 'HEAD' ? '' : $body);
     $c->send_response($res);
     print "200 /$path\n";
