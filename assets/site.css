@@ -991,8 +991,13 @@ a.pcard:hover .more svg{transform:translateX(3px)}
 .hslide.s-mid .ov{background:linear-gradient(90deg,rgba(4,32,58,.93) 0%,rgba(6,40,70,.8) 38%,rgba(7,46,82,.62) 68%,rgba(9,52,90,.54) 100%)}
 .hslide.s-sky .heropanel,.hslide.s-mid .heropanel{background:rgba(4,32,58,.74);border-color:rgba(255,255,255,.24)}
 .hslide .wrap{position:relative;z-index:2;padding-top:clamp(3rem,5vw,4.2rem);padding-bottom:clamp(3.4rem,5vw,4.6rem);display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,4vw,3.6rem);align-items:center;width:100%}
-.hslide.solo .wrap{grid-template-columns:1fr}
-.hslide.solo .content{max-width:62ch}
+/* .hslide.solo — a full-width slide carrying no side panel — was dropped
+   with the "professional advice" slide that was its only user. Reinstate
+   both rules if a panel-less slide is ever added back; without them such a
+   slide keeps the two-column .wrap and its copy runs to an unreadable
+   measure across the full width:
+     .hslide.solo .wrap{grid-template-columns:1fr}
+     .hslide.solo .content{max-width:62ch} */
 @media(max-width:900px){.hslide .wrap{grid-template-columns:1fr;gap:2rem}}
 .hslide h1{font-weight:700;font-size:clamp(1.85rem,3.7vw,2.8rem);line-height:1.14;letter-spacing:-.02em;color:#fff}
 .hslide h1 .ln2{color:var(--sky)}
@@ -1011,20 +1016,36 @@ a.pcard:hover .more svg{transform:translateX(3px)}
 .heropanel ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.7rem 1.4rem}
 .heropanel.one ul{grid-template-columns:1fr;gap:0}
 @media(max-width:520px){.heropanel ul{grid-template-columns:1fr}}
-/* Slide 1's company list is hidden on phones, and ONLY slide 1's.
-   The hero stacks below 900px, which put the panel underneath the copy
-   instead of beside it: 347px of list on an 812px screen, pushing the
-   hero to 905px so the sixth company was sliced by the fold and the
-   divisions band below was unreachable. Every link in it appears twice
-   more — the burger menu's "Our Companies" drop-down and the #companies
-   band immediately below — so a phone loses no route by dropping it.
-   700px, not 900px: a tablet has the height to show the panel happily,
-   and this is a vertical-room problem, not a layout-width one.
-   Slide 2's panel is deliberately NOT covered by this. Its ten
-   industries (Telemetry, Hospitality, Self-service kiosks ...) appear
-   nowhere else on the site, so hiding it would leave phone visitors
-   with less information than desktop ones. Match on .one only. */
-@media(max-width:700px){.heropanel.one{display:none}}
+/* PHONE HERO — no panels, and every slide one height.
+   The hero stacks below 900px, which moves a panel from beside the copy
+   to underneath it. That cost slide 1 a hero of 905px on an 812px screen
+   (the sixth company sliced by the fold) and slide 2 one of 938px. Worse,
+   the slides then stood at 499px and 938px, so tapping a dot resized the
+   hero under the reader's thumb and shifted the page beneath it.
+   Both panels go on phones. Slide 1's six links are still in the burger
+   menu's "Our Companies" drop-down and the #companies band below it.
+   Slide 2's ten industries are NOT repeated anywhere — dropping them here
+   means a phone does not see that list at all, which is a content
+   decision as much as a layout one, not an oversight.
+   Equal heights come from stacking the slides in a single grid cell
+   rather than from a min-height. A fixed pixel floor only holds for one
+   language: the Indonesian copy reflows deeper and the tallest slide
+   would push past it again. In one cell the container simply takes its
+   tallest child, whatever that is, so the slides stay level in any
+   language and at any width.
+   That means visibility rather than display for the inactive slides —
+   they have to keep occupying the cell to contribute their height, and
+   display:none would drop them out of layout entirely. visibility:hidden
+   keeps them out of the accessibility tree just as display:none did.
+   700px, not 900px: a tablet has the height to show the panels happily,
+   and this is a vertical-room problem, not a layout-width one. Placed
+   after the 900px block so it overrides it at equal specificity. */
+@media(max-width:700px){
+  .heropanel{display:none}
+  .hslides{display:grid}
+  .hslide{position:relative;grid-area:1/1;display:flex;visibility:hidden}
+  .hslide.active{visibility:visible}
+}
 .heropanel li{display:flex;gap:.55rem;align-items:flex-start;font-size:.9rem;color:#dde5f0;line-height:1.4}
 .heropanel li svg{flex:none;width:15px;height:15px;margin-top:.2rem;fill:none;stroke:var(--brand);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
 /* company name plates (slide 1) */
