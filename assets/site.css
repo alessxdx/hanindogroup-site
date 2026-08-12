@@ -146,6 +146,20 @@ img{max-width:100%;display:block}
   fill:none;stroke:var(--brand);stroke-width:2.6;transition:transform .18s,background .18s}
 .grouplink:hover{color:var(--brand-600)}
 .grouplink:hover svg{background:#d7ebf9;transform:translateX(-2px)}
+/* TWO LINES: a small "Back to" over the name it goes back to. The name
+   alone, even beside a chevron, reads as a label for where you are —
+   which is exactly how it was being read. The kicker is the smaller of
+   the pair on purpose: it is the grammar, not the destination.
+   Built by nav.js against this element on load, so the markup on all
+   forty-seven pages stays as it is, and the drawer — which clones this
+   very node — cannot drift out of step with it.
+   The pair fits the existing 34px pill: 11px of kicker over 16px of
+   name, so nothing in the topbar has to move. */
+.grouplink .glstack{display:block;line-height:1.2;text-align:left}
+.grouplink .glback{display:block;font-size:.62rem;letter-spacing:.14em;
+  text-transform:uppercase;font-weight:700;color:var(--muted);line-height:1.1;
+  transition:color .18s}
+.grouplink:hover .glback{color:var(--brand)}
 .searchbox{display:flex;height:38px}
 .searchbox input{border:1px solid var(--line);border-right:0;border-radius:var(--r) 0 0 var(--r);padding:0 .9rem;font-family:var(--font);font-size:.86rem;width:170px;outline:none;background:var(--white)}
 .searchbox input:focus{border-color:var(--brand)}

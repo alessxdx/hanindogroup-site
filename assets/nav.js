@@ -79,10 +79,12 @@
        costs no row of its own: the label it replaces did nothing.
        Cloned rather than written out, so it appears only where there is
        one to clone. The group's own pages ARE the group and carry no
-       such link; they keep the plain label. */
+       such link; they keep the plain label.
+       The two lines are already on it — see twoLine() below, which runs
+       against the topbar copy on load — so this only has to clone. */
     var back = document.querySelector('.top-right .grouplink');
     head.insertBefore(
-      back ? backlink(back) : label('Menu'),
+      back ? back.cloneNode(true) : label('Menu'),
       head.firstChild);
     tabs.insertBefore(head, tabs.firstChild);
 
@@ -181,6 +183,17 @@
     burger.setAttribute('aria-expanded', on ? 'true' : 'false');
   }
 
+  /* The way back to the group reads as two lines at every width now, not
+     just in the drawer. Done to the topbar copy on load rather than in
+     the markup because the same anchor is written into forty-seven pages
+     and none of them should have to change for a wording decision — and
+     because the drawer clones this element, so doing it here means the
+     phone and the desktop cannot drift apart.
+     Runs regardless of width: the desktop link is the one it edits, and
+     the drawer takes its copy from the result. */
+  var topback = document.querySelector('.top-right .grouplink');
+  if(topback) twoLine(topback);
+
   burger.addEventListener('click', function(){ open(!tabs.classList.contains('open')); });
 
   /* Any destination shuts the drawer behind it. Same-page anchors would
@@ -219,10 +232,9 @@
      whole trimmed text nodes — "Back to" is a key each company's
      dictionary can carry, and the company name is left alone, which is
      the rule those dictionaries already follow for names. */
-  function backlink(src){
-    var a = src.cloneNode(true);
+  function twoLine(a){
     var name = a.querySelector('span');
-    if(!name) return a;
+    if(!name || a.querySelector('.glback')) return a;
     var stack = document.createElement('span');
     stack.className = 'glstack';
     var kicker = document.createElement('span');
