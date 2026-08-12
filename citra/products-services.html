@@ -41,6 +41,28 @@
    points at the card itself. The navbar is sticky, and without this the
    card a visitor jumped to lands underneath it. */
 .pcard[id]{scroll-margin-top:76px}
+
+/* Two products to a row on a phone. site.css takes .pgrid down to a single
+   column below 520px, which ran these five cards to 1,903px — a 180px
+   photo and four lines of copy each, scrolled past one at a time. Paired,
+   the block is 1,017px and the page 4.5 screens down to 3.4.
+   The type and the photo box come down with the column, or the pairing
+   makes it taller rather than shorter: the photo goes 180px to 110px and
+   the copy 15.2px to 11.8px.
+   Five cards, so the fifth would sit alone at half width beside a gap;
+   :last-child:nth-child(odd) spans it. Written to fire only on an odd
+   count, so it stays correct if a sixth is added.
+   Page-local, not site.css: .pgrid is on ten pages across the group with
+   between four and ten cards each, and only Citra was asked for. Lift it
+   into the shared sheet if the other product pages follow. */
+@media(max-width:640px){
+  .pgrid{grid-template-columns:1fr 1fr;gap:.6rem}
+  .pgrid .pcard:last-child:nth-child(odd){grid-column:1/-1}
+  .pcard .pbox{height:110px}
+  .pbody{padding:.8rem .7rem .9rem}
+  .pbody h4{font-size:.86rem;line-height:1.25}
+  .pbody p,.section.compact .pbody p{font-size:.74rem;line-height:1.4}
+}
 </style>
 </head>
 <body>
