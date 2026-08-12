@@ -40,6 +40,11 @@ STATUS MARKERS — use one, and the checker will believe you:
 An entry with no marker at all reads as [NEEDED], which is why several
 finished photographs sat here for weeks looking outstanding.
 
+Start the description with a capital or a model number. A line that
+carries on in lowercase is read as prose about a file rather than an
+entry for one — that is how sentences like "orpak.jpg and invenco.jpg
+were shipped with..." are kept off the outstanding list.
+
 
 FOLDER LAYOUT
 --------------------------------------------------
@@ -138,6 +143,26 @@ of the accessories was tried on the MIG/MMA-500F and taken back out —
 the accessory shots would have had to be cropped from the marketing
 sheet at around 270px, too soft for the tile. Revisit if Weldann
 supply a media kit.
+
+
+--------------------------------------------------
+BROWSER ICONS  (every page)
+--------------------------------------------------
+The tab icon, and the icon iOS uses when someone saves the site to a
+home screen. All three are GENERATED from the square emblem on the left
+of photos/brand/logo-lockup.png — they are not separate artwork, and
+nobody needs to source them.
+
+favicon.ico            16/32/48 in one file          [DONE]
+favicon-32x32.png      PNG, for browsers preferring  [DONE]
+                       one over the .ico
+apple-touch-icon.png   180x180, white ground because [DONE]
+                       iOS ignores transparency and
+                       composites on black
+
+Regenerate all three from the lockup if the logo is ever replaced. The
+wordmark is deliberately cropped away: at 16px it is an illegible smear,
+so the emblem alone is what the icon can carry.
 
 
 --------------------------------------------------
