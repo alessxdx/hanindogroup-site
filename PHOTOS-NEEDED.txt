@@ -271,6 +271,27 @@ the --paper tiles the cutout would show as a white rectangle, and a shot
 with its own grey studio backdrop shows as a grey one. Keep them wide if
 possible; a near-square shot renders small in a 180px-tall tile.
 
+DISPENSER PAGE  (/citra/dispensers.html)
+Product shots live in /photos/citra/products/dispensers/. Missing ones
+fall back to a "Photo to follow" placeholder, so the page is safe to
+ship without them. Cut out on white; the slot shows them up to 260px
+tall, so ~520px tall covers a high-density screen.
+gilbarco-latitude.jpg       Latitude — LS-100 / LS-200 / LS-300, the
+                            three models side by side              [DONE]
+gilbarco-frontier.jpg       Frontier Series II                     [DONE]
+gilbarco-encore.png         Encore S (NP-3 / Ultra-Hi Flow)        [DONE]
+
+All three are in. None of them reaches the 520px that the 260px slot
+wants for a 2x screen — Encore is 503 tall, Frontier 408, Latitude 409 —
+so they hold up at 1x and go slightly soft on a retina display. Fine to
+ship; ask Gilbarco for press-resolution originals if this page is ever
+printed or the shot slot grows. Frontier is the weakest of the three at
+198x408 and is the one to replace first if only one can be re-sourced.
+
+gilbarco-lineup.webp sits in this folder too but belongs to the Hanindo
+Citra section above: it is the Pumps & Dispensers product card and home
+tile, not a model shot on this page.
+
 FORECOURT CONTROLLER PAGE  (/citra/forecourt-controllers.html)
 Product shots live in /photos/citra/products/enabler/. Missing ones fall
 back to the "photo needed" placeholder, so the page is safe to ship
