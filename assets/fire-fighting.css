@@ -455,7 +455,18 @@ img{max-width:100%;display:block}
 .brandcard img{max-height:130px;max-width:320px;width:auto;object-fit:contain}
 .brandcard img[src*="cust-mot"]{max-height:148px}
 .brandcard .btext{font-weight:800;font-size:1.02rem;color:var(--navy-800);letter-spacing:.01em;text-align:center;line-height:1.25}
-@media(max-width:520px){.brandcard{height:108px;margin-right:2rem}.brandcard img{max-height:92px;max-width:210px}.brandcard .btext{font-size:.92rem}}
+/* The Ministry of Transportation mark has to be re-capped here as well, not
+   just above. `.brandcard img[src*="cust-mot"]` carries an attribute selector,
+   so it outranks the plain `.brandcard img` on the next line: left out of this
+   block the mark kept its desktop 148px cap inside a card the phone shrinks to
+   108px, and the marquee clipped 40px off it — the globe lost its top and the
+   "Ministry of Transportation" line under it went entirely.
+   105px keeps the exception proportional. The mark is drawn taller than the
+   others because it is a globe with two lines of type beneath, so at a shared
+   cap it reads far smaller than the wordmarks beside it; 148/130 on the
+   desktop is the same 1.14 as 105/92 here, and 105 still clears the 108px
+   card. Re-derive both if the card heights change. */
+@media(max-width:520px){.brandcard{height:108px;margin-right:2rem}.brandcard img{max-height:92px;max-width:210px}.brandcard img[src*="cust-mot"]{max-height:105px}.brandcard .btext{font-size:.92rem}}
 @media(prefers-reduced-motion:reduce){.mtrack{animation:none;flex-wrap:wrap;justify-content:center}.brandcard{margin:0 .65rem 1rem}}
 
 /* ---------- certifications & licenses ---------- */
