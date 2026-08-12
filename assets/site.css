@@ -539,6 +539,25 @@ img{max-width:100%;display:block}
     background:var(--blue-900);border-bottom:1px solid rgba(255,255,255,.12);
     padding:.55rem .6rem .55rem var(--pad)}
   .navttl{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--sky)}
+  /* The same link, borrowed from the desktop bar by nav.js and given the
+     heading's own treatment so it reads as the panel's title rather than
+     as a stray control docked above the menu. It keeps its chevron —
+     that is what says "back" before the words are read — but the disc
+     behind it has to inverse: on white it is a pale blue tint, and on
+     the drawer's navy that tint is invisible.
+     The border-right and the fixed 34px height are for standing beside
+     the search box and language toggle in the topbar. Neither applies
+     here, and the height in particular would leave a tap target well
+     under the 44px this row can easily give it — hence align-self, which
+     hands the link the full height of the header rather than a padding
+     figure guessed to match it. */
+  .navhead .grouplink{height:auto;align-self:stretch;padding:0 .4rem 0 0;border-right:0;
+    font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;
+    color:var(--sky);white-space:nowrap}
+  .navhead .grouplink svg{width:11px;height:11px;padding:5px;
+    background:rgba(255,255,255,.12);stroke:var(--sky)}
+  .navhead .grouplink:hover{color:#fff}
+  .navhead .grouplink:hover svg{background:rgba(255,255,255,.2);stroke:#fff}
   .navclose{width:46px;height:46px;flex:none;display:flex;align-items:center;justify-content:center;
     background:none;border:0;cursor:pointer;color:#dfe7f2}
   .navclose svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round}

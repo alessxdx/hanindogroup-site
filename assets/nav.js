@@ -65,10 +65,25 @@
     var head = document.createElement('li');
     head.className = 'navhead';
     head.innerHTML =
-      '<span class="navttl">Menu</span>' +
       '<button type="button" class="navclose" aria-label="Close menu">' +
       '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>';
     head.querySelector('.navclose').addEventListener('click', function(){ open(false); });
+
+    /* On a company mini-site the heading is the way back to the group,
+       not the word "Menu".
+       The desktop bar carries that link in .top-right, which is hidden
+       from 860px down, so on a phone the only route back was the grey
+       breadcrumb in the hero — which reads as where you are rather than
+       as somewhere you can go. Borrowing the link puts it at the top of
+       the panel, where someone who has lost their way looks first, and
+       costs no row of its own: the label it replaces did nothing.
+       Cloned rather than written out, so it appears only where there is
+       one to clone. The group's own pages ARE the group and carry no
+       such link; they keep the plain label. */
+    var back = document.querySelector('.top-right .grouplink');
+    head.insertBefore(
+      back ? back.cloneNode(true) : label('Menu'),
+      head.firstChild);
     tabs.insertBefore(head, tabs.firstChild);
 
     /* The search box, borrowed from the desktop bar. .top-right is hidden
@@ -196,6 +211,12 @@
 
   /* ---------- small helpers ---------- */
   function each(list, fn){ Array.prototype.forEach.call(list, fn); }
+  function label(text){
+    var s = document.createElement('span');
+    s.className = 'navttl';
+    s.textContent = text;
+    return s;
+  }
   function child(el, cls, tag){
     for(var n = el.firstElementChild; n; n = n.nextElementSibling){
       if(cls && n.classList.contains(cls)) return n;
