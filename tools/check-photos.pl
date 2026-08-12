@@ -97,7 +97,11 @@ for my $page (sort @pages) {
   # one of them, which hid a whole company's photography from the checks
   # below and had the list reporting a hero that has been in place for
   # weeks as still outstanding.
-  while ($doc =~ m{src="([^"]+\.(?:jpe?g|png|webp|svg|gif)(?:\?[^"]*)?)"}gi) {
+  # href as well as src. Not every photograph is shown in an <img>: the
+  # SKK licence is deliberately a text link on the Fire Fighting About
+  # page rather than a card, and reading only src reported a certificate
+  # that has been linked all along as wired up to nothing.
+  while ($doc =~ m{(?:src|href)="([^"]+\.(?:jpe?g|png|webp|svg|gif)(?:\?[^"]*)?)"}gi) {
     my $src = $1;
     next if $src =~ m{^(https?:)?//};
     $src =~ s/\?.*$//;
