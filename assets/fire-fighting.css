@@ -123,7 +123,32 @@ img{max-width:100%;display:block}
      than this block does, so at equal weight it would win and the drawer
      rows would go back to a 1.2rem inset and .9rem type. The extra class
      settles it wherever the rule happens to sit. */
-  .navbar{z-index:auto}
+  /* POSITION, not just z-index — this is what broke the drawer on these
+     eight pages and nowhere else, for two weeks, while every desktop
+     browser showed it working.
+
+     site.css takes the navbar off sticky at this width
+     (.navbar{position:relative;z-index:auto;background:transparent}) so
+     the drawer, which is position:fixed, answers to the viewport. The
+     rule at the top of THIS file then says position:sticky again. It is
+     unconditional, it is the same specificity, and it loads after
+     site.css — so on a phone it won. The line below used to read
+     `.navbar{z-index:auto}`, which fixed the stacking context and left
+     the sticky behind.
+
+     A sticky ancestor is a containing block for fixed descendants in
+     Safari, though not in Chrome, which is why this reproduced on an
+     iPhone and on nothing else. The mobile navbar is a zero-height box,
+     so Safari clipped the whole drawer down to a band a few pixels tall:
+     the heading bar showed and every row below it was cut off. It read
+     exactly like the rows were invisible, which sent me looking at the
+     row styling three times.
+
+     Restated in full rather than patched property by property. The
+     background and shadow belong here too — they dress a navy tab strip
+     that does not exist at this width, and were painting a stray band
+     under the header. */
+  .navbar{position:relative;z-index:auto;background:transparent;box-shadow:none}
   .navbar .wrap{position:relative;justify-content:flex-end}
   .navbar .tabs>li>a{padding:.95rem var(--pad);font-size:1rem;border-top:0;border-left:3px solid transparent}
   .navbar .tabs>li.active>a{background:rgba(255,255,255,.07);color:#fff;border-top:0;border-left-color:var(--crimson)}
