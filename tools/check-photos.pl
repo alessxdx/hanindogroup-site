@@ -118,9 +118,40 @@ my %listed;                    # basename -> status
 # beneath: the home page hero lists its three slides as
 # "SLIDE 2 — ... [NEEDED]" with the filename on the line below.
 my @lines = split /\r?\n/, $wanted;
+my %section_of;                # basename -> the section it is filed under
+my $current_section = '(preamble)';
 for my $i (0 .. $#lines) {
-  next unless $lines[$i] =~ /^([A-Za-z0-9][A-Za-z0-9._-]*\.(?:jpe?g|png|webp|svg))\b/;
-  my $file = $1;
+  # A section heading is a left-margin line in caps, optionally with the
+  # page it covers in brackets, and is followed or preceded by a rule.
+  # Bind the capture on its own line, before anything else runs a regex.
+  # Testing "is this also a filename?" in the same condition resets $1,
+  # which silently filed every entry under "(unfiled)".
+  if (my ($cand) = $lines[$i] =~ /^([A-Z][A-Z0-9][A-Za-z0-9 &,'\/\.\(\)\-]{3,})\s*$/) {
+    my $is_file = $cand =~ /^[A-Za-z0-9][A-Za-z0-9._-]*\.(?:jpe?g|png|webp|svg)\b/;
+    my $ruled   = ($i > 0        && $lines[$i-1] =~ /^-{10,}/)
+               || ($i < $#lines  && $lines[$i+1] =~ /^-{10,}/);
+    my $known   = $cand =~ /^(CUSTOMER LOGOS|NOTES ON SOURCES|COMPANY LOGOS|FOLDER LAYOUT|SLIDE )/;
+    $cand =~ s/\s+$//;
+    $current_section = $cand if !$is_file && ($ruled || $known);
+  }
+  # A line can START with a filename and still be prose about it:
+  #
+  #   orpak.jpg and invenco.jpg were shipped with wide blank margins
+  #   gilbarco-lineup.webp sits in this folder too but belongs to ...
+  #
+  # Counting those as entries put two deleted source files on the
+  # outstanding list. Column position cannot separate them — the longest
+  # filenames eat their own column — but the wording can: a description
+  # starts with a capital or a model number, prose carries on in
+  # lowercase or with a dash.
+  next unless my ($file, $after) =
+    $lines[$i] =~ /^([A-Za-z0-9][A-Za-z0-9._-]*\.(?:jpe?g|png|webp|svg))\b(.*)/;
+  # Also prose: a filename mid-sentence in a wrapped line, where the
+  # next character is punctuation rather than the gap before a
+  # description — "piusi.svg, transtank.webp, tt.webp) have been deleted".
+  next unless $after =~ /^(?:\s|$)/;
+  next if $after =~ /^\s+[a-z]/ || $after =~ /^\s*[—–-]\s/;
+  $section_of{$file} = $current_section unless exists $section_of{$file};
   # NOT first-mention-wins: several files are named once in a prose
   # paragraph with no marker and again in their real entry with one.
   # Taking the first reading marked airtec-lineup.png as outstanding
@@ -214,5 +245,45 @@ printf "\n%s\n", $problems
   : "PHOTOS-NEEDED.txt agrees with the pages and the disk.";
 printf "checked %d pages, %d referenced images, %d entries in the list\n",
   scalar(@pages), scalar(keys %ref), scalar(keys %listed);
+
+# ---------------------------------------------------------------------
+# --summary: what is still outstanding, section by section.
+#
+# Deliberately built on the same %listed the checks above use. An
+# earlier throwaway version of this report had its own cut-down parser
+# and misfiled entries into the wrong sections while counting prose
+# cross-references as outstanding requests — the exact class of mistake
+# this tool exists to catch.
+# ---------------------------------------------------------------------
+if (grep { $_ eq '--summary' } @ARGV) {
+  my (%tally, @order, %seen, %open_items);
+  for my $file (sort keys %listed) {
+    my $sec = $section_of{$file} || '(unfiled)';
+    push @order, $sec unless $seen{$sec}++;
+    my $s = $listed{$file};
+    $tally{$sec}{$s}++;
+    push @{ $open_items{$sec} }, $file if $s eq 'WANTED';
+  }
+  printf "\n%-46s %5s %6s %5s %5s\n", 'SECTION', 'have', 'stand', 'want', 'drop';
+  print '-' x 71, "\n";
+  my %tot;
+  for my $sec (@order) {
+    my $t = $tally{$sec};
+    $tot{$_} += ($t->{$_} || 0) for qw(HAVE PLACEHOLDER WANTED DROPPED);
+    printf "%-46s %5d %6d %5d %5d\n", substr($sec,0,46),
+      $t->{HAVE}||0, $t->{PLACEHOLDER}||0, $t->{WANTED}||0, $t->{DROPPED}||0;
+  }
+  print '-' x 71, "\n";
+  printf "%-46s %5d %6d %5d %5d\n", 'TOTAL',
+    $tot{HAVE}||0, $tot{PLACEHOLDER}||0, $tot{WANTED}||0, $tot{DROPPED}||0;
+
+  print "\nSTILL WANTED, by section:\n";
+  for my $sec (@order) {
+    next unless $open_items{$sec} && @{ $open_items{$sec} };
+    print "\n  $sec\n";
+    print "     $_\n" for @{ $open_items{$sec} };
+  }
+  print "\n";
+}
 
 exit($problems ? 1 : 0);
