@@ -9,6 +9,38 @@ Format: JPG for photos, PNG for logos. At least ~1000px wide for
 heroes and ~800px for cards. Landscape suits heroes and cards.
 
 
+KEEPING THIS LIST HONEST
+--------------------------------------------------
+After adding or removing a photo slot, run:
+
+    perl tools/check-photos.pl
+
+It reads every page, every file on disk and this list, and reports where
+the three disagree. It is silent when they match. Four things it catches,
+each of which had already gone wrong at least once:
+
+  EXTENSION MISMATCH  this list says foo.jpg, the page loads foo.png.
+                      The nastiest one: the photo gets supplied, filed
+                      correctly, and still never appears.
+  UNTRACKED           a page loads a photo this list never mentions, so
+                      nobody knows the slot exists.
+  MISSING             marked as in, but no such file on disk.
+  CHECK STATUS        still marked as wanted, but a file is already
+                      there.
+
+STATUS MARKERS — use one, and the checker will believe you:
+
+  [DONE] / [COMPLETE]   the real photograph is in
+  [PLACEHOLDER]         a stand-in is in; the page ships, but the
+                        photograph described is still wanted
+  [NEEDED]              nothing there yet
+  NO LONGER NEEDED      the slot is gone from the page; kept here so
+                        nobody re-requests it
+
+An entry with no marker at all reads as [NEEDED], which is why several
+finished photographs sat here for weeks looking outstanding.
+
+
 FOLDER LAYOUT
 --------------------------------------------------
 /photos/ is grouped by company site, then by what the photo is for.
@@ -77,6 +109,14 @@ hpa-c880-inext.png C880 i-Next 3D Wheel Alignment     [COMPLETE]
 Other brands on the same page:
 hakiro-ja-c01.png  Hakiro JA-C01 Tyre Changer          [COMPLETE]
 
+WELDANN also has five models on this page. They sit in the same folder
+and follow the same rules; only the brand differs.
+weldann-si003.png  SI003 Semi-Automatic Tyre Changer   [COMPLETE]
+weldann-si118.png  SI118 Automatic Tilt-Back Changer   [COMPLETE]
+weldann-s2023.png  S2023 Semi-Automatic Wheel Balancer [COMPLETE]
+weldann-s2228.png  S2228 Automatic Balancer, LCD       [COMPLETE]
+weldann-s3015.png  S3015 3D Wheel Alignment System     [COMPLETE]
+
 
 --------------------------------------------------
 WELDANN WELDING  (/automotive/welding/)
@@ -110,7 +150,10 @@ text lockup automatically. Wide lockup format, ~640px wide (shown at
 
 logo-citra.png            Hanindo Citra                   [COMPLETE]
 logo-automotive.png       Hanindo Automotive              [COMPLETE]
-logo-automation.png       Hanindo Automation Solutions    [NEEDED]
+logo-automation.png       Hanindo Automation Solutions    [COMPLETE]
+logo-gralessando.png      Gralessando (S) Pte Ltd         [COMPLETE]
+                          706x270. Carried by the eight Gralessando
+                          pages.
 logo-shanghai.png         Hanindo Shanghai                [COMPLETE]
 logo-flowtech.png         Flowtech Engineering            [COMPLETE]
                           Lifted out of the Pictures stream of "Company
@@ -126,6 +169,14 @@ logo-flowtech.png         Flowtech Engineering            [COMPLETE]
                           one is a re-encode of a lossy source, though
                           at the 48px it is drawn that is not visible.
 
+logo-lockup.png           The GROUP lockup, not a company one   [COMPLETE]
+                          840x150. This is the one in the top-left of
+                          every page on the site — all 55 of them, plus
+                          404.html — so replacing it changes the header
+                          everywhere at once. Every page falls back to a
+                          text lockup if it fails to load, so a bad file
+                          shows as plain type rather than a broken image.
+
 
 --------------------------------------------------
 HOME  (/index.html)
@@ -139,18 +190,26 @@ SLIDE 1 — "Welcome to the Hanindo Group"          [COMPLETE]
 hero-sky.jpg              Background. Sky above the clouds. In place.
 
 SLIDE 2 — "Your technology one stop solution"     [NEEDED]
-hero-group.jpg            Background. A forecourt, flagship
-                          installation, or office exterior.
+hero-group.jpg            [PLACEHOLDER] A file is in place, so the slide
+                          ships and nothing looks broken. Still wanted:
+                          a forecourt, flagship installation, or office
+                          exterior.
 
 SLIDE 3 — "Our team is ready for your project"    [NEEDED]
-hero-advice.jpg           Background. The team at work, a meeting, or
+hero-advice.jpg           [PLACEHOLDER] As above — a file is in place.
+                          Still wanted: the team at work, a meeting, or
                           the world-map network graphic the old site
                           used.
 
-div-oil-and-gas.jpg       Division card — fuel dispenser / forecourt
-div-automotive.jpg        Division card — workshop with a car on a lift
-div-fire-fighting.jpg     Division card — OPTIONAL. If absent, falls
-                          back automatically to the existing
+div-oil-and-gas.jpg       Division card — fuel dispenser / forecourt [DONE]
+div-automotive.png        Division card — workshop with a car on a lift
+                          [DONE] 1537x1023. NOTE the extension: this list
+                          said .jpg for a long time while the page has
+                          always loaded .png, so a .jpg supplied against
+                          the old line would never have appeared.
+div-fire-fighting.jpg     Division card — OPTIONAL.            [DONE]
+                          A file is in place. If it is ever removed the
+                          card falls back automatically to the existing
                           fire-fighting/photos/mot-hydrant-pump.jpg
 div-printer-pos-card.jpg  Division card — POS / ticket printer hardware
                           [DONE] a photograph of a card payment at a
@@ -483,8 +542,8 @@ company's own mark but reads less clearly at cell size than the others.
 --------------------------------------------------
 AUTOMOTIVE  (/automotive/)
 --------------------------------------------------
-hero-automotive.jpg       Page hero — busy workshop
-auto-workshop.jpg         Intro section — garage fitted with our kit
+hero-automotive.jpg       Page hero — busy workshop  [DONE]
+auto-workshop.jpg         Intro section — garage fitted with our kit  [DONE]
 
 CUSTOMER LOGOS  ->  photos/customers/
 The Automotive wall is complete: 34 cells, 34 marks, none falling back to
@@ -660,6 +719,59 @@ argument of the page is that RAASM is not workshop-only, and six
 photographs of service bays would quietly contradict it. That matters
 more now the page sits inside the automotive company than it did when
 it sat under Partners.
+
+CAR LIFT PAGE  (/automotive/lifts/)
+Product shots live in /photos/automotive/products/, the same folder the
+tyre-service and welding pages use. Cut-out shot on white, ~800px wide;
+the card contains rather than crops it. All eight are in.
+
+Note the mixed prefixes: the page presents these as one range, but three
+of the eight carry the weldann- prefix rather than atom-. That is how the
+files were supplied and matches the badge on each card, so do not rename
+them to line up.
+
+atom-dl-35yd.png   DL-3.5YD Mid-Rise Scissor Lift        [COMPLETE]
+atom-dl-35dc.png   DL-3.5DC In-Ground Mini Scissor       [COMPLETE]
+atom-dl-35cb.png   DL-3.5CB On-Ground Mini Scissor       [COMPLETE]
+atom-dl-40lm.png   DL-4.0LM 2-Post Car Lift              [COMPLETE]
+atom-gc-40pro.png  GC-4.0PRO 2-Post Car Lift             [COMPLETE]
+weldann-dl-40cbd.png  DL-4.0CBD Ultra-Thin Main/Sub Scissor  [COMPLETE]
+weldann-dl-40ssz.png  DL-4.0SSZ 4-Post Car Lift              [COMPLETE]
+weldann-dl-40yyj.png  DL-4.0 YYJ Shaking Machine             [COMPLETE]
+
+atom-dl-40lm.png is also the Car Lift tile on /automotive/ and the lift
+card on /automotive/products-services.html, so a replacement changes
+three places at once.
+
+
+SERVICE EQUIPMENT PAGE  (/automotive/service/)
+Same folder and same rules as the car lift page above. All ten are in.
+
+weldann-lcs-9800.png  LCS-9800 Oil Flushing Machine        [COMPLETE]
+weldann-wcs-9800.png  WCS-9800 Radiator Cooling Machine    [COMPLETE]
+weldann-atf-9800.png  ATF-9800 Transmission Oil Exchanger  [COMPLETE]
+weldann-am-552.png    AM-552 Brake Lathe Bench Machine     [COMPLETE]
+weldann-hho-300.png   HHO-300 Carbon Cleaning, motorcycle  [COMPLETE]
+weldann-hho-700.png   HHO-700 Carbon Cleaning, automotive  [COMPLETE]
+weldann-ac-900.png    AC-900 A/C Recycling Station         [COMPLETE]
+weldann-wdn-70.png    WDN-70 Nitrogen Generator            [COMPLETE]
+weldann-gx-900.png    GX-900 Catalytic Converter Cleaner   [COMPLETE]
+thinktool-t77.png     T77 Diagnostic Scan Tool             [COMPLETE]
+
+thinktool-t77.png is the only ThinkTool file on the site; everything else
+on this page is Weldann. weldann-ac-900.png doubles as the Service
+Equipment tile on /automotive/ and the card on
+/automotive/products-services.html.
+
+
+BRAND SHOTS  (/automotive/about.html)
+Two in-use photographs behind the ATOM and WELDANN brand blocks. These
+are scene shots, not cut-outs, and are cropped by the block rather than
+contained — keep the subject away from the edges.
+
+brand-atom.jpg     ATOM two-post vehicle lift   1187x1063  [COMPLETE]
+brand-weldann.jpg  WELDANN disc lathe machine   1195x1556  [COMPLETE]
+
 
 CUSTOMER LOGOS
 The "Customer base" wall on /automotive/index.html has 32 slots and
