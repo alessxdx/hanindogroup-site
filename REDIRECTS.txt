@@ -99,23 +99,24 @@ Redirect 301 /about                                            /about/
 --------------------------------------------------
 GO-LIVE CHECKLIST (separate from redirects)
 --------------------------------------------------
-[ ] Remove <meta name="robots" content="noindex" /> from EVERY page.
-    It is on all new pages so staging never competes with the live
-    site in Google. The site will not be indexed until it is removed.
-    Find them with:  grep -rn "noindex" --include=*.html .
+[x] DONE — noindex has been removed from every page. The site is
+    indexable the moment it is uploaded and reachable. This was taken
+    off early, on request, so it could not be forgotten later; the
+    redirects below now ship as a real .htaccess for the same reason,
+    because removing noindex without them is the one ordering that
+    actually costs traffic.
 [ ] Confirm the header search still behaves. It currently opens a
     Google site: search for hanindogroup.com in a new tab, because the
     old Joomla search endpoint disappears with Joomla.
-[ ] Wire up the custom 404 page. Add this line to the same .htaccess
-    that carries the redirects above:
+[x] DONE — the repo now carries a real .htaccess at its root, holding
+    both the ErrorDocument line and the redirects. Upload it to
+    public_html/ with the rest of the site and both are live; there is
+    nothing left to paste by hand.
 
-        ErrorDocument 404 /404.html
-
-    Without it Apache serves its own bare "Not Found" page and
-    /404.html is never used. The page deliberately uses absolute
-    paths (/assets/..., /photos/...) because ErrorDocument serves it
-    at whatever URL the visitor asked for — do not change them to
-    relative paths.
+    Regenerate it if the mappings below change. 404.html deliberately
+    uses absolute paths (/assets/..., /photos/...) because Apache
+    serves it at whatever URL the visitor asked for — do not change
+    them to relative paths.
 [ ] Check robots.txt reaches https://hanindogroup.com/robots.txt and
     sitemap.xml reaches https://hanindogroup.com/sitemap.xml, then
     submit the sitemap in Google Search Console.

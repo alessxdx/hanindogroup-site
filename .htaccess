@@ -1,0 +1,53 @@
+# =====================================================================
+# Hanindo Group — Apache configuration
+# ---------------------------------------------------------------------
+# Upload this to public_html/ alongside the site. It does two jobs, both
+# of which used to be manual steps on a checklist that was easy to miss:
+#
+#   1. Points Apache at the custom 404 page.
+#   2. Redirects the old Joomla URLs to their new homes, so existing
+#      Google results and anyone's bookmarks keep working.
+#
+# Generated from REDIRECTS.txt, which carries the reasoning behind each
+# mapping. Edit that file and regenerate rather than editing this one by
+# hand, so the two cannot drift apart.
+# =====================================================================
+
+# Without this Apache serves its own bare "Not Found" page and the
+# site's 404.html is never used. 404.html deliberately uses absolute
+# paths, because Apache serves it at whatever URL the visitor asked for.
+ErrorDocument 404 /404.html
+
+# ---------------------------------------------------------------------
+# Old Joomla URLs -> new paths.
+#
+# ORDER MATTERS. The longer /about-hanindo-group/* rules must stay above
+# the bare /about-hanindo-group rule: Apache matches on prefix, so the
+# short one would otherwise swallow all of them.
+# ---------------------------------------------------------------------
+Redirect 301 /about-hanindo-group/hanindo-citra                     /citra/
+Redirect 301 /about-hanindo-group/flowtech-engineering              /flowtech-engineering/
+Redirect 301 /about-hanindo-group/hanindo-automotive                /automotive/
+Redirect 301 /about-hanindo-group/hanindo-automation-solutions      /automation/
+Redirect 301 /about-hanindo-group/hanindo-overseas                  /shanghai/
+Redirect 301 /about-hanindo-group                                   /about/
+Redirect 301 /pt-hanindo-citra                                      /citra/
+Redirect 301 /pt-flowtech-engineering                               /flowtech-engineering/
+Redirect 301 /pt-hanindo-automotive                                 /automotive/
+Redirect 301 /hanindo-automation-solutions                          /automation/
+Redirect 301 /pt-hanindo-overseas                                   /shanghai/
+Redirect 301 /hanindo-product                                       /
+Redirect 301 /oil-and-gas                                           /citra/
+Redirect 301 /home-automotive                                       /automotive/
+Redirect 301 /partners-a-principals                                 /partners/
+
+# NOT ENABLED: /training/ does not exist on the new site, so this would
+# 301 straight into a 404. Left off deliberately — the old URL falls
+# through to 404.html instead, which offers the company index.
+# Uncomment if a training page is ever built.
+# Redirect 301 /training-gilbarco-veeder-root-thermal-printer-indonesia /training/
+
+Redirect 301 /news-info/career-hanindo-group-gilbarco-veeder-root-indonesia-thermal-printer /career/
+Redirect 301 /contact-us                                            /contact/
+Redirect 301 /overseas                                              /shanghai/
+Redirect 301 /about                                                 /about/
