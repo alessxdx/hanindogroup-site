@@ -917,3 +917,48 @@ body{line-height:1.65}
   .ccic{width:36px;height:36px;margin-bottom:.6rem}
   .ccic svg{width:18px;height:18px}
 }
+
+/* ---------------------------------------------------------------------
+   PHONE: the Products & Services page, two cards to a row.
+
+   That page ran 6.7 screens, and two grids accounted for 2,306px of it:
+   six service cards at 789px and six product cards at 1,517px, each one
+   per row. The services go three to a row and the products two, which
+   takes the page to 5.0 screens.
+
+   The type has to come down with the column in both, for the reason this
+   sheet keeps running into: halving the width alone makes a block taller,
+   not shorter. The product photo box comes 132px to 96px with it — at the
+   full height on a 160px card the photo dominates and the caption under
+   it gets squeezed.
+
+   The services carry a sentence each, which is normally the content that
+   does badly in a narrow column, and at three across the measure is 16
+   characters. It works here only because the sentences are short — five
+   or six words, three lines at this width — so a card reads as a label
+   rather than as something you settle into. The sizes are not pushed as
+   far as they would go: .66rem body was measured at 270px against 278px
+   for the .72rem set here, so eight pixels bought nothing and the larger
+   type was kept.
+
+   Products stay at two. Three was measured and saves another 210px, but
+   it puts the longer captions — "Integrated high-hazard & Process area
+   protection" — onto a fifth line, and two was asked for.
+
+   Last in the sheet, like the block above it: .svc p, .pcap and .ptitle
+   are all restated in the 640px block earlier, and a media query adds no
+   specificity, so anything written above that block is silently dropped.
+   --------------------------------------------------------------------- */
+@media(max-width:640px){
+  .svc-grid{grid-template-columns:repeat(3,1fr);gap:.4rem}
+  .svc{padding:.75rem .4rem}
+  .svc h3{font-size:.8rem;line-height:1.2}
+  .svc p{font-size:.72rem;line-height:1.35}
+  .svc .ic{width:22px;height:22px;margin-bottom:.4rem}
+
+  .pgrid{grid-template-columns:1fr 1fr;gap:.6rem}
+  .pcard{padding:.8rem .6rem .85rem}
+  .pbox{height:96px}
+  .ptitle{font-size:.82rem;margin-bottom:.5rem}
+  .pcap{font-size:.72rem;line-height:1.4;margin-top:.45rem}
+}
