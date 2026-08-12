@@ -27,26 +27,30 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/site.css?v=202608112031" />
+<link rel="stylesheet" href="../assets/site.css?v=202608121000" />
 <style>
 /* The company index (.vgrid / .vgrp / .vsec / .vopt) moved to site.css —
    the Contact Us router runs the same block, and keeping two copies is
    how the two pages drifted apart. */
 /* Vision & Mission uses the shared .vm / .vm-card block from site.css,
    the same as the company About pages. */
-/* Group growth timeline — the same flat rail the Custom timeline uses on the
-   Gralessando, Automation and Shanghai About pages, tuned to carry the group's
-   longer run of milestones inside the wrap: narrower columns, tighter gap and
-   one notch down on type. Scrolls sideways rather than wrapping on narrow
-   screens, same as the company version. */
-.gtl{list-style:none;margin:1.9rem 0 0;padding:0 0 .6rem;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(88px,1fr);gap:.6rem;overflow-x:auto}
-.gtl .gitem{position:relative;padding-top:1.4rem;text-align:center}
-.gtl .gitem::after{content:"";position:absolute;top:6px;left:50%;width:calc(100% + .6rem);height:2px;background:var(--line);z-index:0}
-.gtl .gitem:last-child::after{display:none}
-.gtl .gitem::before{content:"";position:absolute;left:50%;top:0;transform:translateX(-50%);width:12px;height:12px;border-radius:50%;background:var(--brand);box-shadow:0 0 0 4px var(--white);box-sizing:border-box;z-index:1}
-.gtl .yr{font-weight:800;font-size:.8rem;color:var(--brand);line-height:1}
-.gtl h3{font-weight:700;font-size:.72rem;color:var(--blue-800);margin:.26rem 0 .1rem;line-height:1.2;min-height:2.4em}
-.gtl p{font-size:.65rem;line-height:1.4;color:var(--muted);margin:0}
+/* Group growth timeline. The rail itself is .gtl in site.css, shared with the
+   three Custom About pages. This page carries nine milestones where they carry
+   five or six, so the row is tightened to fit them inside the wrap: narrower
+   columns, half the gap, and one notch down on type.
+   Bounded at 641px on purpose. Below that the shared sheet turns the whole
+   timeline down the page and puts the type back up to a readable size — and a
+   page-local rule loads last, so left unbounded these numbers would out-rank
+   that and hold the phone at .65rem in an 88px column. */
+@media(min-width:641px){
+  .gtl{margin-top:1.9rem;padding-bottom:.6rem;grid-auto-columns:minmax(88px,1fr);gap:.6rem}
+  .gtl .gitem{padding-top:1.4rem}
+  .gtl .gitem::after{width:calc(100% + .6rem)}
+  .gtl .gitem::before{width:12px;height:12px}
+  .gtl .yr{font-size:.8rem}
+  .gtl h3{font-size:.72rem;margin:.26rem 0 .1rem}
+  .gtl p{font-size:.65rem}
+}
 </style>
 </head>
 <body>
@@ -281,11 +285,10 @@ function hsearch(f){var q=(f.q.value||'').trim();if(!q)return false;var l=docume
    a load handler misses. The big field on search/ is .bigsearch, not
    .searchbox, so the query it is meant to show survives this. */
 window.addEventListener('pageshow',function(){var i=document.querySelector('.searchbox input[name="q"]');if(i)i.value='';});
-/* mobile menu */
-(function(){var b=document.getElementById('burger'),t=document.getElementById('tabs');if(b&&t){b.addEventListener('click',function(){var o=t.classList.toggle('open');b.setAttribute('aria-expanded',o);});}})();
 /* reveal */
 (function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
 </script>
 <script src="../translate.js?v=202608120100"></script>
+<script src="../assets/nav.js?v=202608121000" defer></script>
 </body>
 </html>

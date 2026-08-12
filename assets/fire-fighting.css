@@ -91,7 +91,7 @@ img{max-width:100%;display:block}
 .tabs>li>a:hover{background:rgba(255,255,255,.08)}
 .tabs>li.active>a{background:var(--white);color:var(--navy-800);border-top:3px solid var(--crimson)}
 .burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:12px;align-self:center}
-.burger span{width:24px;height:2px;background:#fff;border-radius:2px}
+.burger span{width:24px;height:2px;background:#fff;border-radius:2px;transition:transform .28s,opacity .18s}
 @media(max-width:860px){
   /* The topbar fits the two logos and the burger, and nothing else — so
      the search box and the toggle go, and the toggle comes back as a
@@ -102,10 +102,31 @@ img{max-width:100%;display:block}
      missing. site.css recolours its own burger the same way at this
      width; this sheet loads after it and has to repeat it. */
   .burger span{background:var(--navy-800)}
-  .tabs{position:absolute;left:0;right:0;top:100%;flex-direction:column;background:var(--navy-800);transform:translateY(-12px);opacity:0;visibility:hidden;transition:.2s;box-shadow:0 24px 40px -24px rgba(0,0,0,.5)}
+  /* PHONE DRAWER. The panel itself — the slide from the right edge, the
+     folded sub-menus, the chevrons, the entrance — is all in site.css and
+     driven by assets/nav.js, and these eight pages get it for free: the
+     navy and crimson names in this sheet now hold the Hanindo blues, so
+     the drawer already arrives in the right colours and nothing about its
+     surfaces needs restating here.
+     What does have to be restated is everything this sheet says about the
+     tabs on its own account. It loads after site.css, so its old phone
+     rules — an absolutely positioned tray dropping out of the header —
+     would have out-ranked the drawer and pinned the panel back under the
+     topbar. Those are gone. What is left is its desktop tab styling,
+     which is still there at this width and still wrong for a drawer: the
+     3px rule that underlines the current tab in the bar ran as a bar
+     across the top of a menu row, and the row set a size smaller than the
+     one site.css gives the panel.
+     Those two are qualified by .navbar, which the plain .tabs>li>a they
+     answer is not. A media query buys no specificity, and the one in the
+     type-scale section at the foot of this file comes later in the source
+     than this block does, so at equal weight it would win and the drawer
+     rows would go back to a 1.2rem inset and .9rem type. The extra class
+     settles it wherever the rule happens to sit. */
+  .navbar{z-index:auto}
   .navbar .wrap{position:relative;justify-content:flex-end}
-  .tabs.open{transform:translateY(0);opacity:1;visibility:visible}
-  .tabs>li>a{padding:.95rem var(--pad);border-top:0}
+  .navbar .tabs>li>a{padding:.95rem var(--pad);font-size:1rem;border-top:0;border-left:3px solid transparent}
+  .navbar .tabs>li.active>a{background:rgba(255,255,255,.07);color:#fff;border-top:0;border-left-color:var(--crimson)}
 }
 
 /* ---------- HERO CAROUSEL (cinematic) ---------- */
@@ -774,3 +795,49 @@ body{line-height:1.65}
 .indgrid{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
 .indgrid .pill{flex:1 1 auto;white-space:nowrap;display:flex;align-items:center;justify-content:center;
   text-align:center;border-radius:var(--r);padding:.6rem .7rem;font-size:.8rem;line-height:1.25}
+
+/* =====================================================================
+   PHONE READING
+
+   The companion to the block of the same name at the foot of site.css,
+   for the components this sheet owns. Same reasoning, and worth reading
+   there first: the small end of the type scale is lifted on a phone and
+   the large end left alone, because a step down that reads as a quieter
+   voice in a desktop column reads only as small text in the hand.
+
+   It has to be here as well as there, and it has to be LAST in the file.
+   This sheet loads after site.css and restates a good deal of the scale
+   on its own account — .svc p at .79rem where the shared sheet has
+   .9rem, its own .pcap, its own footer — so every one of those would
+   have out-ranked the shared phone block and held these eight pages at
+   12px while the rest of the site moved. Anything added to the type
+   scale section further up needs a line here too.
+   ===================================================================== */
+@media(max-width:640px){
+  /* supporting copy */
+  .svc p,.pcap,.pbody p,.syscard p,.pstep p,.proj .scope,.cbox .sub,
+  .tltxt p,.isometa .lbl,.isonote,.footer .fbrand p,
+  .section.compact .ccard>p{font-size:.95rem;line-height:1.6}
+  .section.compact .isometa .lbl,.section.compact .isonote{font-size:.92rem}
+  /* headings inside cards, which this sheet sets a step under the shared one */
+  .svc h3,.tltxt h4{font-size:1rem}
+  /* uppercase labels — and the tracking in a notch with them. This sheet
+     runs .2em where site.css runs .16em, which at 12px pulls a word apart
+     faster still. */
+  .eyebrow,.kicker,.customers .chead .kick,.vm-card .tag,
+  .statcard .l{font-size:.78rem;letter-spacing:.13em}
+  .footer h4,.contact .info .k,.certcard .chd .ey{font-size:.78rem;letter-spacing:.1em}
+  .ccey,.section.compact .ccey{font-size:.74rem;letter-spacing:.12em}
+  .footer .fbrand span{font-size:.7rem;letter-spacing:.12em}
+  .proj .pimg .sector{font-size:.7rem}
+  .pmodal-tag,.pmodal-body h4{font-size:.78rem;letter-spacing:.12em}
+  /* chips and the link at the foot of a card */
+  .cpill,.ccpill,.section.compact .ccpill,.pill-done{font-size:.8rem}
+  .indgrid .pill{font-size:.85rem}
+  .proj-more,.cclink,.section.compact .cclink{font-size:.9rem;letter-spacing:.08em}
+  .proj .loc,.pagehero .crumb{font-size:.85rem}
+  /* the footer, as dense here as on the group pages */
+  .footer{font-size:.94rem}
+  .footer ul{gap:.85rem}
+  .foot-bottom{font-size:.84rem}
+}

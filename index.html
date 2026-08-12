@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/site.css?v=202608112031" />
+<link rel="stylesheet" href="assets/site.css?v=202608121000" />
 <style>
 /* Partner wall, industry-banded.
 
@@ -44,16 +44,6 @@
    than becoming a flex item inside it. */
 .wall.flat .band{width:100%}
 .wall.flat .w{--logo-h:46px;--logo-max:280px;max-width:var(--logo-max)}
-/* Navy with a hairline running out to both edges. The rule does the
-   separating, so the type does not have to carry it alone — the grey .68rem
-   caption this replaces was competing with logos several times its size, and
-   lost badly on a phone, where each band is only two rows tall and the labels
-   come thick and fast.
-   Rule is #c9d5e3 rather than var(--line): --line is tuned for borders on
-   white and all but vanishes on the paper sections these walls sit on. */
-.bandlab{display:flex;align-items:center;gap:1rem;font-size:.72rem;font-weight:800;
-  letter-spacing:.14em;text-transform:uppercase;color:var(--blue-800);margin-bottom:1.15rem}
-.bandlab::before,.bandlab::after{content:"";flex:1;height:1px;background:#c9d5e3}
 @media(max-width:640px){.wall.flat .w{--logo-h:34px;--logo-max:185px}}
 </style>
 </head>
@@ -360,8 +350,6 @@ function hsearch(f){var q=(f.q.value||'').trim();if(!q)return false;var l=docume
    a load handler misses. The big field on search/ is .bigsearch, not
    .searchbox, so the query it is meant to show survives this. */
 window.addEventListener('pageshow',function(){var i=document.querySelector('.searchbox input[name="q"]');if(i)i.value='';});
-/* mobile menu */
-(function(){var b=document.getElementById('burger'),t=document.getElementById('tabs');if(b&&t){b.addEventListener('click',function(){var o=t.classList.toggle('open');b.setAttribute('aria-expanded',o);});}})();
 /* hero slideshow
    NOTE: D must stay equal to the dotFill animation duration in site.css
    (currently 9s). They drive the same progress bar. */
@@ -380,5 +368,6 @@ show(0);st();})();
 (function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
 </script>
 <script src="translate.js?v=202608120100"></script>
+<script src="assets/nav.js?v=202608121000" defer></script>
 </body>
 </html>

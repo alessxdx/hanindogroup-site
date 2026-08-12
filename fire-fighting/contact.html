@@ -27,8 +27,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/site.css?v=202608112031" />
-<link rel="stylesheet" href="../assets/fire-fighting.css?v=202608071900" />
+<link rel="stylesheet" href="../assets/site.css?v=202608121000" />
+<link rel="stylesheet" href="../assets/fire-fighting.css?v=202608121000" />
 </head>
 <body>
 <!-- ============ SITE HEADER (Hanindo two-row — kept) ============ -->
@@ -160,8 +160,6 @@ function hsearch(f){var q=(f.q.value||'').trim();if(!q)return false;var l=docume
    .searchbox, so the query it is meant to show survives this. */
 window.addEventListener('pageshow',function(){var i=document.querySelector('.searchbox input[name="q"]');if(i)i.value='';});
 
-/* mobile menu */
-(function(){var b=document.getElementById('burger'),t=document.getElementById('tabs');if(b&&t){b.addEventListener('click',function(){var o=t.classList.toggle('open');b.setAttribute('aria-expanded',o);});}})();
 /* carousel */
 (function(){var c=document.querySelector('.hero');if(!c)return;var s=[].slice.call(c.querySelectorAll('.hslide')),d=[].slice.call(c.querySelectorAll('.dot'));if(s.length<2)return;var i=0,t=null,D=6500;var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 function show(n){i=(n+s.length)%s.length;s.forEach(function(x,k){x.classList.toggle('active',k===i);});d.forEach(function(x,k){x.classList.toggle('active',k===i);});}
@@ -181,5 +179,6 @@ window.addEventListener('scroll',function(){if(!tick){requestAnimationFrame(upd)
 
 </script>
 <script src="translate.js?v=202608120230"></script>
+<script src="../assets/nav.js?v=202608121000" defer></script>
 </body>
 </html>

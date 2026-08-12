@@ -101,8 +101,12 @@ img{max-width:100%;display:block}
    right edge. */
 .tabs>li.tablang{display:none}
 @media(max-width:860px){
+  /* margin-top:auto sits it on the floor of the drawer when the menu is
+     shorter than the screen — a setting, kept clear of the destinations.
+     On a long menu the auto margin collapses and it simply follows the
+     last row, which is where it belongs there too. */
   .tabs>li.tablang{display:flex;align-items:center;justify-content:space-between;gap:1rem;
-    padding:.85rem var(--pad);border-top:1px solid rgba(255,255,255,.14)}
+    margin-top:auto;padding:1rem var(--pad) .9rem;border-top:1px solid rgba(255,255,255,.14)}
   .tablang-lab{display:inline-flex;align-items:center;gap:.5rem;font-size:.95rem;font-weight:600;color:#eef1f7}
   .tablang-lab svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.9}
   .tablang .langtoggle{height:40px;background:transparent;border-color:rgba(255,255,255,.35)}
@@ -278,6 +282,35 @@ img{max-width:100%;display:block}
 .section.compact .vm-card>p,.section.compact .mlist p{font-size:.9rem;line-height:1.55}
 .section.compact .mlist{gap:.6rem}
 
+/* ---------- GROWTH TIMELINE ----------
+   The run of milestones on an About page: a flat rail with a dot per
+   year, the year over a title over a line of detail. Four pages carry
+   one — the group's own About and the three Custom companies' — and
+   each had its own copy in its <style> block. Three of the four were
+   byte-identical; the group's differed only in being tighter, because
+   its list is nine milestones rather than five or six. Kept here so
+   there is one of them, with the group page holding only the numbers
+   that make it tighter.
+   The rail is drawn on the item, not on the list: ::before is the dot
+   and ::after the segment reaching the next one, so a timeline of any
+   length needs no rules about how many. The last item drops its segment
+   rather than pointing at nothing.
+   Sideways-scrolling is the desktop shape. On a phone the whole thing
+   turns down the page — see PHONE READING at the foot of this file. */
+.gtl{list-style:none;margin:1.8rem 0 0;padding:0 0 .4rem;display:grid;
+  grid-auto-flow:column;grid-auto-columns:minmax(116px,1fr);gap:1rem;overflow-x:auto}
+.gtl .gitem{position:relative;padding-top:1.5rem;text-align:center}
+.gtl .gitem::after{content:"";position:absolute;top:6px;left:50%;width:calc(100% + 1rem);
+  height:2px;background:var(--line);z-index:0}
+.gtl .gitem:last-child::after{display:none}
+.gtl .gitem::before{content:"";position:absolute;left:50%;top:0;transform:translateX(-50%);
+  width:13px;height:13px;border-radius:50%;background:var(--brand);
+  box-shadow:0 0 0 4px var(--white);box-sizing:border-box;z-index:1}
+.gtl .yr{font-weight:800;font-size:.85rem;color:var(--brand);line-height:1}
+.gtl h3{font-weight:700;font-size:.78rem;color:var(--blue-800);margin:.28rem 0 .12rem;
+  line-height:1.2;min-height:2.4em}
+.gtl p{font-size:.7rem;line-height:1.4;color:var(--muted);margin:0}
+
 /* ---------- OFFICE CARDS ----------
    A photograph over the address, for pages that list where a company
    works. Flat like the rest of the system: hairline border, no shadow,
@@ -422,7 +455,29 @@ img{max-width:100%;display:block}
 .subdrop a::before{content:"";position:absolute;left:1.45rem;top:50%;width:9px;height:1px;background:rgba(255,255,255,.32)}
 .subdrop a:hover{color:#fff}
 .burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:12px;align-self:center}
-.burger span{width:24px;height:2px;background:#fff}
+.burger span{width:24px;height:2px;background:#fff;transition:transform .28s,opacity .18s}
+
+/* ---------- PHONE DRAWER ----------
+   Below 860px the tab bar becomes a panel that comes in from the right
+   edge over a dimmed page, and its sub-menus fold shut until asked for.
+   assets/nav.js builds the parts that are not in the markup — the
+   heading bar, the chevrons, the dimming layer, the borrowed search box
+   — and drives the classes used here; everything else is CSS.
+
+   It used to be a full-width tray that dropped out of the header with
+   every sub-menu already unrolled. On the group pages that is thirty-odd
+   rows arriving at once, so the reader met the entire site map before
+   they could reach Contact Us at the foot of it. A drawer with the lists
+   folded opens at seven rows.
+
+   Coming from the SIDE rather than out of the header is the other half
+   of it. A panel that slides in over the page reads as something you
+   have opened and can push back — it leaves the page visibly behind it,
+   dimmed and in place. A tray unrolling from the header reads as the
+   page itself having changed shape, which is why the old one needed the
+   whole screen to feel deliberate. */
+.tabs>li.navhead,.tabs>li.navsearch,.dtog{display:none}
+.navscrim{display:none}
 @media(max-width:860px){
   .top-right{display:none}
   /* One white header row on a phone: the logo on the left, the menu button
@@ -434,31 +489,111 @@ img{max-width:100%;display:block}
   .topbar .wrap{min-height:64px;gap:.6rem}
   /* The bar stays with the page rather than sticking to the top: stuck, it
      rode over the content as you scrolled, on the screen with the least
-     height to spare. position:relative, NOT static — the drop-down is
-     absolutely positioned and needs this stacking context, or it opens
-     behind the hero and the button looks dead. */
-  .navbar{position:relative;background:transparent;border-bottom:0;box-shadow:none}
+     height to spare.
+     z-index:auto undoes the 100 the desktop rule sets. That made the
+     navbar a stacking context, which capped everything inside it at 100
+     against the rest of the page — and the drawer's dimming layer sits on
+     the body, outside it, so at any z-index of its own the scrim would
+     have painted over the drawer it is meant to sit behind. The drawer is
+     position:fixed and answers to the viewport, so it needs no positioned
+     ancestor to escape; only the z-index had to go. */
+  .navbar{position:relative;z-index:auto;background:transparent;border-bottom:0;box-shadow:none}
   .navbar .wrap{position:relative;justify-content:flex-end;min-height:0;padding-top:0;padding-bottom:0}
-  /* pointer-events, not just opacity and visibility. The closed menu is
-     absolutely positioned over the hero, and .drop below re-declares
-     visibility:visible so the sub-lists show once the menu opens — which
-     also re-enables hit-testing on them while it is shut. The invisible
-     dropdown links then sat on top of the hero and swallowed the taps
-     meant for it: tapping Hanindo Automotive in the companies panel
-     opened the Citra site, because an unseen "Oil & Gas" link was over
-     it. Killing pointer events on the closed menu settles it whatever
-     the descendants do with visibility. */
-  .tabs{position:absolute;left:0;right:0;top:100%;flex-direction:column;background:var(--blue-800);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .18s,visibility .18s;max-height:calc(100vh - 120px);overflow-y:auto;border-top:1px solid rgba(255,255,255,.08)}
-  .tabs.open{opacity:1;visibility:visible;pointer-events:auto}
-  .tabs>li{display:block}
-  .tabs>li>a{padding:.9rem var(--pad);border-bottom:0;border-left:2px solid transparent}
-  .tabs>li.active>a{border-left-color:var(--brand)}
+  /* The panel. Fixed to the right edge and the full height of the screen,
+     so it does not care how far down the page the reader had scrolled.
+     visibility, not just the transform: shut, an off-screen panel is
+     still hit-testable, and its links sat over the hero and swallowed
+     taps meant for it — tapping Hanindo Automotive opened the Citra site
+     because an unseen "Oil & Gas" link was on top of it. overscroll
+     containment keeps a flick inside a scrolled menu from carrying on
+     into the page underneath. */
+  .tabs{position:fixed;top:0;right:0;bottom:0;left:auto;z-index:200;
+    width:min(84vw,360px);flex-direction:column;flex-wrap:nowrap;
+    background:var(--blue-800);box-shadow:-20px 0 44px -22px rgba(4,32,58,.75);
+    transform:translateX(101%);visibility:hidden;
+    transition:transform .34s cubic-bezier(.32,.72,0,1),visibility .34s;
+    overflow-y:auto;overscroll-behavior:contain;
+    padding-bottom:calc(1.5rem + env(safe-area-inset-bottom))}
+  .tabs.open{transform:none;visibility:visible}
+  /* 101%, not 100%: the panel casts a shadow to its left, and at exactly
+     100% the first pixel column of that shadow stayed on screen as a grey
+     seam down the right-hand edge of every page. */
+  .navscrim{display:block;position:fixed;inset:0;z-index:190;
+    background:rgba(4,32,58,.55);opacity:0;visibility:hidden;
+    transition:opacity .3s,visibility .3s}
+  .navscrim.on{opacity:1;visibility:visible}
+  /* The page beneath must not scroll while the drawer is over it. The lock
+     goes on <html>: body carries overflow-x:clip for the reason set out at
+     the top of this file, and overflow:hidden here would undo it. */
+  .nav-open{overflow:hidden}
+  /* the burger becomes the cross it will not be seen as — the panel covers
+     it at this width, but at a wider tablet the strip beside the drawer
+     still shows the button, and it should not stay three bars */
+  .nav-open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav-open .burger span:nth-child(2){opacity:0}
+  .nav-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+  /* Heading bar. Sticky, so the way out of a long menu stays on screen. */
+  .tabs>li.navhead{display:flex;position:sticky;top:0;z-index:2;flex:none;
+    align-items:center;justify-content:space-between;
+    background:var(--blue-900);border-bottom:1px solid rgba(255,255,255,.12);
+    padding:.55rem .6rem .55rem var(--pad)}
+  .navttl{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--sky)}
+  .navclose{width:46px;height:46px;flex:none;display:flex;align-items:center;justify-content:center;
+    background:none;border:0;cursor:pointer;color:#dfe7f2}
+  .navclose svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round}
+  /* Search, cloned from the desktop bar by nav.js. .top-right is hidden at
+     this width, so without this the site simply has no search on a phone. */
+  .tabs>li.navsearch{display:block;flex:none;padding:.9rem var(--pad) 1rem;
+    border-bottom:1px solid rgba(255,255,255,.1)}
+  .navsearch .searchbox{height:44px;width:100%}
+  .navsearch .searchbox input{flex:1;width:auto;min-width:0;font-size:1rem;
+    background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.22);color:#fff}
+  .navsearch .searchbox input::placeholder{color:#9db0c9}
+  .navsearch .searchbox input:focus{border-color:var(--sky);background:rgba(255,255,255,.1)}
+  .navsearch .searchbox button{background:var(--brand);padding:0 1.1rem}
+
+  /* Rows. Set a notch larger than the desktop tab: this is now body-sized
+     type read at arm's length, not a label in a bar. */
+  .tabs>li{display:block;flex:none}
+  .tabs>li>a{padding:.95rem var(--pad);font-size:1rem;border-bottom:0;border-left:3px solid transparent}
+  .tabs>li.active>a{background:rgba(255,255,255,.06);color:#fff;border-left-color:var(--brand)}
   .tabs>li>a .caret{display:none}
-  .drop{position:static;opacity:1;visibility:visible;min-width:0;background:rgba(0,0,0,.2);border-top:0}
-  .drop a{padding:.68rem var(--pad) .68rem calc(var(--pad) + 1rem);font-size:.84rem;color:#b9c6d8}
-  .drop .glabel{padding:.68rem var(--pad) .68rem calc(var(--pad) + 1rem);font-size:.84rem;white-space:normal}
-  .subdrop a{padding-left:calc(var(--pad) + 2.2rem);font-size:.82rem}
+  /* An entry with a sub-menu keeps its link and takes a chevron beside it:
+     the name still goes to the section page, the chevron opens the list.
+     Two columns and the sub-menu spanning both, rather than a wrapper
+     element around the row — that way the markup stays as it is served
+     and nav.js only has to insert the button. */
+  .tabs>li.has-drop{display:grid;grid-template-columns:1fr auto;align-items:center}
+  .tabs>li.has-drop>.drop{grid-column:1 / -1}
+  .dtog{display:flex;align-items:center;justify-content:center;
+    width:56px;align-self:stretch;background:none;border:0;cursor:pointer;
+    color:#9db0c9;border-left:1px solid rgba(255,255,255,.09)}
+  .dtog svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2.6;
+    stroke-linecap:round;stroke-linejoin:round;transition:transform .28s}
+  .tabs>li.dopen>.dtog{color:#fff}
+  .tabs>li.dopen>.dtog svg{transform:rotate(180deg)}
+
+  /* Sub-menus, shut until asked for. The height is written by nav.js —
+     CSS cannot animate to or from auto. */
+  .drop{position:static;opacity:1;visibility:visible;min-width:0;
+    background:rgba(0,0,0,.2);border-top:0;
+    max-height:0;overflow:hidden;transition:max-height .3s cubic-bezier(.32,.72,0,1)}
+  .drop a{padding:.72rem var(--pad) .72rem calc(var(--pad) + 1rem);font-size:.94rem;color:#c6d3e4}
+  .drop .glabel{padding:.72rem var(--pad) .72rem calc(var(--pad) + 1rem);font-size:.94rem;white-space:normal}
+  .drop-co .dgrp{font-size:.7rem}
+  .subdrop a{padding-left:calc(var(--pad) + 2.2rem);font-size:.9rem}
   .subdrop a::before{left:calc(var(--pad) + 1.35rem)}
+
+  /* The rows arrive after the panel, top to bottom — the order they are
+     read in. Delay comes from --i, which nav.js counts onto each row, so
+     this is one rule rather than one per row and it keeps working on a
+     page with a different number of tabs. The heading bar is exempt: it
+     is the panel's own frame and should be there the moment it opens. */
+  @keyframes navRow{from{opacity:0;transform:translateX(20px)}to{opacity:1;transform:none}}
+  .tabs.open>li{animation:navRow .34s both cubic-bezier(.2,.7,.3,1);
+    animation-delay:calc(var(--i,0) * 32ms + 110ms)}
+  .tabs.open>li.navhead{animation:none}
 }
 
 /* ---------- PAGE HERO ---------- */
@@ -1007,6 +1142,19 @@ a.pcard:hover .more svg{transform:translateX(3px)}
 .wall.banded{flex-direction:column;flex-wrap:nowrap;row-gap:clamp(2rem,3.2vw,3.1rem)}
 .wall.banded .tier{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
   width:100%;column-gap:clamp(1.7rem,2.9vw,2.9rem);row-gap:clamp(1.4rem,2.2vw,2rem)}
+/* The label naming a band, with a hairline running out to both edges. The
+   rule does the separating, so the type does not have to carry it alone —
+   the grey .68rem caption this replaced was competing with logos several
+   times its size, and lost badly on a phone, where each band is only two
+   rows tall and the labels come thick and fast.
+   Rule is #c9d5e3 rather than var(--line): --line is tuned for borders on
+   white and all but vanishes on the paper sections these walls sit on.
+   Seven pages carry a banded wall and all seven had their own identical
+   copy of this — including the phone sizing at the foot of this file,
+   which every one of them was quietly out-ranking. */
+.bandlab{display:flex;align-items:center;gap:1rem;font-size:.72rem;font-weight:800;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--blue-800);margin-bottom:1.15rem}
+.bandlab::before,.bandlab::after{content:"";flex:1;height:1px;background:#c9d5e3}
 .wall .w{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.55rem;text-align:center}
 .wall .w img{display:block;width:auto;object-fit:contain}
 /* The supplied logo files used to carry a baked-in white background, and
@@ -1287,3 +1435,114 @@ a[href^="tel:"]:hover,a[href^="tel:"]:focus-visible{text-decoration:underline}
 .dirlink{display:inline-block;margin-left:.55rem;font-size:.8rem;font-weight:600;
   color:inherit;opacity:.8;text-decoration:underline;text-underline-offset:2px;white-space:nowrap}
 .dirlink:hover,.dirlink:focus-visible{opacity:1}
+
+/* =====================================================================
+   PHONE READING
+
+   The type scale on this site is built for a desktop column. Supporting
+   copy sits at .86-.92rem and labels at .68-.72rem, which on a 1200px
+   page is a deliberate step down from the body — a card description
+   reading quieter than the heading above it. Carry the same numbers onto
+   a 375px screen and the step stops being a hierarchy: 13.8px is not a
+   quieter voice than 16px, it is small text, and there were pages
+   running two hundred words of it.
+
+   So this block does one thing. It lifts the SMALL end of the scale on a
+   phone and leaves the large end alone. Headings, ledes and h2s are
+   already set in clamp() and size themselves down sensibly; nothing here
+   touches them. What changes is the floor: supporting copy goes to
+   .95rem, the uppercase labels to .74-.78rem, and the tracking on those
+   labels comes in a notch, because .16em is spacing tuned for 15px type
+   and at 11px it pulls the letters apart faster than the eye can group
+   them back into a word.
+
+   The hierarchy survives because everything moves together and the gaps
+   between the steps close rather than invert. A card description at 15px
+   under a 17px heading still reads as the second voice.
+
+   640px, not the 860px the menu uses: at 700-860px the layouts are still
+   two columns wide and the desktop scale is right for them. This is the
+   width where the page has become a single column read in the hand.
+
+   One limit, worth knowing before adding to it: a page's own <style>
+   block loads after this file, so anything set page-local out-ranks what
+   is here at equal specificity. Rules for those belong in the page.
+   ===================================================================== */
+@media(max-width:640px){
+  /* --- supporting copy: the body of every card and panel --- */
+  .svc p,.pbody p,.cat p,.adv p,.wccard p,.bcard .bbody p,.vm-card>p,.mlist p,
+  .offbody p,.certcard .desc,.checks-desc span,.xlink p,.isometa .lbl,
+  .secwhat,.isonote,.footer .fbrand p,.aphoto .cap{font-size:.95rem;line-height:1.6}
+  .mktnote,.contact .info .mktnote{font-size:.92rem;line-height:1.6}
+
+  /* --- lead paragraphs: the one or two lines under a heading --- */
+  .lede,.about-copy p,.cert-head p,.contact p.sub,.pagehero p.intro,
+  .plist-lead{font-size:1.05rem;line-height:1.6}
+
+  /* --- lists read one item at a time, so they take the body size --- */
+  .checks li{font-size:1rem}
+  .plist li{font-size:.98rem}
+  .heropanel li{font-size:.96rem;line-height:1.5}
+  .stat .lbl{font-size:.95rem}
+
+  /* --- uppercase labels: up a notch, and the tracking in a notch ---
+     These are the eyebrows, kickers and field names. Every one of them
+     is a short phrase in capitals, which is the setting that suffers
+     most from being shrunk: there are no ascenders and descenders left
+     to give the word a shape, so the reader is spelling it out. */
+  .eyebrow,.kicker,.customers .chead .kick,.bandlab,.xlink .xl-rel,
+  .vgrid .vsec,.heropanel .ptitle,.vm-card .tag{font-size:.76rem;letter-spacing:.13em}
+  .footer h4,.contact .info .k{font-size:.78rem;letter-spacing:.1em}
+  .cat .lbl,.certcard .ey{font-size:.74rem;letter-spacing:.12em}
+  .footer .fbrand span{font-size:.7rem;letter-spacing:.12em}
+  .vbtn{font-size:.78rem}
+
+  /* --- the link at the foot of a card --- */
+  .pcard .more,.cat .go,.advlink,.certlink,.xlink .xl-go,.dirlink{font-size:.9rem}
+
+  /* --- chips --- */
+  .tag,.cpill{font-size:.78rem;padding:.3rem .6rem}
+  .pill{font-size:.9rem}
+
+  /* --- tiles and division cards --- */
+  .tilestrip .tile span,.tile.plain .lab b{font-size:.95rem}
+  .tile.plain .lab i{font-size:.82rem}
+  .dcard .dhead .co{font-size:.8rem}
+  .indcard h4{font-size:1rem}
+
+  /* --- the company index, which is a list of destinations: the rows
+     take the body size and enough height to be tapped cleanly --- */
+  .vgrid .vopt{font-size:1rem;padding:.8rem 0}
+  .vgrid .vopt.nest{font-size:.96rem}
+  .vgrid .vopt .nm em{font-size:.88rem}
+  .vgrid .vsec span{font-size:.95rem}
+
+  /* --- the footer carries the smallest type on the page and the most
+     links per square inch. Both are fixed here: the whole block up a
+     step, and the rows given the room to be hit one at a time --- */
+  .footer{font-size:.94rem}
+  .footer ul{gap:.85rem}
+  .foot-bottom{font-size:.84rem}
+  .contact .info .v{font-size:1rem}
+
+  /* --- The growth timelines run sideways on a phone: nine milestones at
+     88px each, so the reader scrolls a rail inside a page they are
+     already scrolling, and the copy was set at .65rem to make the
+     columns fit. Turned down the page instead — one milestone per row,
+     the rail running down the left, the type back at a readable size.
+     The rules are here rather than in the four About pages that carry
+     this list because all four had their own near-identical copy of it;
+     see the .gtl block above, which is now the one of them. --- */
+  .gtl{grid-auto-flow:row;grid-auto-columns:auto;gap:0;overflow-x:visible;
+    padding-left:1.6rem;margin-top:1.4rem}
+  .gtl .gitem{padding:0 0 1.2rem 0;text-align:left}
+  .gtl .gitem:last-child{padding-bottom:0}
+  /* the connector becomes the rail: a vertical hairline running from the
+     dot down past the copy to the next one */
+  .gtl .gitem::after{top:1.1rem;left:-1.6rem;transform:translateX(5px);
+    width:2px;height:calc(100% - .5rem)}
+  .gtl .gitem::before{left:-1.6rem;top:.15rem;transform:none}
+  .gtl .yr{font-size:.9rem}
+  .gtl h3{font-size:1rem;min-height:0;margin:.15rem 0 .2rem}
+  .gtl p{font-size:.92rem;line-height:1.55}
+}
