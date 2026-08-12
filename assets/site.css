@@ -1548,6 +1548,15 @@ a[href^="tel:"]:hover,a[href^="tel:"]:focus-visible{text-decoration:underline}
    is here at equal specificity. Rules for those belong in the page.
    ===================================================================== */
 @media(max-width:640px){
+  /* --- Drop an element on phones only. Opt-in per element, never blanket:
+     41 pages carry a .pagehero .intro and most of them earn their place,
+     so this is applied by hand to the ones where the heading already says
+     it and the paragraph is only pushing the page's first real content
+     further down a screen that has none to spare. Currently the Partners,
+     Career and Contact Us heroes. Desktop is untouched by definition —
+     the rule does not exist above 640px. --- */
+  .hide-sm{display:none}
+
   /* --- supporting copy: the body of every card and panel --- */
   .svc p,.pbody p,.cat p,.adv p,.wccard p,.bcard .bbody p,.vm-card>p,.mlist p,
   .offbody p,.certcard .desc,.checks-desc span,.xlink p,.isometa .lbl,
