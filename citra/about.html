@@ -64,7 +64,6 @@
    file is missing falls back to a text wordmark automatically, so replacing
    a PNG later needs no code change. */
 .dgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:1.1rem}
-@media(max-width:680px){.dgrid{grid-template-columns:1fr}}
 .dcell{background:var(--white);display:flex;flex-direction:column;align-items:center;text-align:center;gap:.85rem;padding:1.9rem 1.4rem;transition:background .18s}
 .dcell:hover{background:var(--paper)}
 .dlogo{height:58px;display:flex;align-items:center;justify-content:center}
@@ -83,6 +82,29 @@
    and down across the grid. Same rule the Automotive grid uses. */
 .dcell>div:last-child{flex:1;display:flex;flex-direction:column}
 .dfrom{margin-top:auto;padding-top:.6rem;font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--brand)}
+/* The three stay on one row all the way down. Stacked one per row this grid
+   ran 678px on a 375px screen — three logos and six lines of prose scrolled
+   past one at a time, when the whole point of the block is seeing the three
+   principals together.
+   Held at three columns the type has to come down with them, or the cells
+   just get narrower: at full size the names broke to three lines and the
+   descriptions to six, and the row overflowed 375px. Scaled, it is 222px
+   with every word kept. Small was asked for explicitly; this is that trade.
+   Sizes are fixed rather than clamped because the logo box is a set 150x58
+   that has to shrink alongside the text — a fluid step would leave the art
+   and the type disagreeing halfway through the range.
+   MUST STAY LAST in this block. A media query adds no specificity, so these
+   only beat the .dname/.dwhat/.dlogo rules above by coming after them; moved
+   up next to .dgrid, every line here is silently overridden and the grid
+   renders at full size in a 126px column. */
+@media(max-width:680px){
+  .dcell{padding:1.1rem .5rem;gap:.55rem}
+  .dlogo{height:38px}
+  .dlogo img{width:90px;height:38px}
+  .dname{font-size:.8rem;line-height:1.25}
+  .dwhat{font-size:.72rem;line-height:1.35}
+  .dfrom{font-size:.62rem;padding-top:.4rem;letter-spacing:.04em}
+}
 </style>
 </head>
 <body>
