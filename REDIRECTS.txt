@@ -124,7 +124,7 @@ GO-LIVE CHECKLIST (separate from redirects)
 
         perl tools/build-sitemap.pl
 
-    It lists 52 URLs today. /search/, 404.html and the whole-department
+    It lists 48 URLs today. /search/, 404.html and the whole-department
     fire-fighting variant are deliberately left out, the same
     exclusions build-search-index.pl makes. A sitemap listing pages
     that no longer exist is worse than no sitemap at all, so run this
