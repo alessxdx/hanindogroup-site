@@ -97,12 +97,9 @@
     "Self-service kiosks": "Kios layanan mandiri",
 
     /* ---- home: slide 3, professional advice ---- */
-    "Looking for professional advice?": "Mencari saran profesional?",
     "Our team is ready": "Tim kami siap",
     "for your project.": "untuk proyek Anda.",
-    "Tell us what you're building, supplying or maintaining — our engineers will scope it, quote it, and support it after it's installed.": "Ceritakan apa yang sedang Anda bangun, pasok, atau rawat — tim teknik kami akan menyusun lingkupnya, memberi penawaran, dan mendampingi setelah terpasang.",
     "Talk to our team": "Hubungi tim kami",
-    "Email us": "Email kami",
 
     /* ---- home: verticals ---- */
     "Our Verticals": "Lini Usaha Kami",
@@ -124,9 +121,6 @@
     "Contact us": "Hubungi kami",
 
     /* ---- home: closing contact band ---- */
-    "Work with Hanindo Group": "Bekerja sama dengan Hanindo Group",
-    "Start business with us.": "Mulai bisnis bersama kami.",
-    "Tell us what you are building or operating, and we will point you to the division — and the people — who can deliver it.": "Beri tahu kami apa yang sedang Anda bangun atau operasikan, dan kami akan mengarahkan Anda ke divisi — dan orang — yang dapat mewujudkannya.",
     "Email our team": "Email tim kami",
     "Contact page": "Halaman kontak",
     "Head Office": "Kantor Pusat",
@@ -141,7 +135,6 @@
     /* ---- about: hero + growth timeline ---- */
     "About": "Tentang",
     "Us": "Kami",
-    "Serving many industries in Indonesia from Jakarta since 1987.": "Melayani berbagai industri di Indonesia dari Jakarta sejak 1987.",
     "Our journey": "Perjalanan kami",
     "Hanindo Group Growth": "Pertumbuhan Hanindo Group",
     "Where it began": "Awal mula",
@@ -186,9 +179,6 @@
     "Deliver reliable technology and engineering solutions through leading global partnerships and our own product brands.": "Menghadirkan solusi teknologi dan rekayasa yang andal melalui kemitraan global terkemuka dan merek produk kami sendiri.",
     "Support customers throughout the full lifecycle of every system — from specification and installation to training, spare parts and after-sales service.": "Mendampingi pelanggan sepanjang siklus hidup setiap sistem — dari penentuan spesifikasi dan pemasangan hingga pelatihan, suku cadang, dan layanan purnajual.",
     "Continuously improve our capabilities while operating responsibly toward our customers, employees and the environment.": "Terus meningkatkan kapabilitas kami sembari beroperasi secara bertanggung jawab terhadap pelanggan, karyawan, dan lingkungan.",
-    "Start business": "Mulai bisnis",
-    "with us.": "bersama kami.",
-    "Tell us what you are building or operating, and we will point you to the company — and the people — who can deliver it.": "Beri tahu kami apa yang sedang Anda bangun atau operasikan, dan kami akan mengarahkan Anda ke perusahaan — dan orang — yang dapat mewujudkannya.",
 
     /* ---- products & services ---- */
     "Products &": "Produk &",
@@ -197,20 +187,12 @@
     "What we supply": "Yang kami sediakan",
     "Everything the group supplies.": "Semua yang disediakan grup.",
     "A sample of the range below. Click through to any of the companies to see its full catalogue.": "Berikut sebagian dari rangkaian produk kami. Klik salah satu perusahaan untuk melihat katalog lengkapnya.",
-    "Dispensing pumps, automatic tank gauging, flow meters, fire protection systems, and station construction.": "Pompa dispenser, pengukuran tangki otomatis, flow meter, sistem proteksi kebakaran, dan konstruksi SPBU.",
     "Lifts and handling, tyre service, diagnostics, welding and lubrication for the service bay.": "Lift dan penanganan, layanan ban, diagnostik, pengelasan, dan pelumasan untuk service bay.",
     "Printers, point-of-sale terminals, scanners and self-service kiosks, with the software that runs them.": "Printer, terminal point-of-sale, pemindai, dan kios layanan mandiri, beserta perangkat lunak yang menjalankannya.",
-    "Not sure what you need?": "Belum yakin apa yang Anda butuhkan?",
-    "Tell us about the job.": "Ceritakan pekerjaan Anda.",
-    "Describe the site, the equipment or the volumes you are working with and we will point you to the company that handles it.": "Jelaskan lokasi, peralatan, atau volume yang Anda tangani, dan kami akan mengarahkan Anda ke perusahaan yang menanganinya.",
     "Email the group": "Email grup",
 
-    /* ---- career ----
-       "with Hanindo Group." stays although the career h1 no longer ends
-       that way: the home page hero and the About page both still close a
-       heading with it. */
+    /* ---- career ---- */
     "Hirings": "Lowongan",
-    "with Hanindo Group.": "bersama Hanindo Group.",
     "Join us to work with recognised international principals, learn the technical side of a real industry, and grow with a group that promotes from within.": "Bergabunglah dengan kami untuk bekerja dengan prinsipal internasional ternama, mendalami sisi teknis industri yang nyata, serta berkembang bersama grup yang mengutamakan promosi dari dalam.",
     "Open positions": "Lowongan terbuka",
     "Current openings.": "Lowongan saat ini.",
@@ -244,9 +226,6 @@
     "Who can we connect you with?": "Dengan siapa kami dapat menghubungkan Anda?",
     "Contact by business.": "Kontak menurut bidang usaha.",
     "Each of our companies runs its own enquiries. Pick the one that fits and you will land on the team that can help.": "Setiap perusahaan kami menangani pertanyaannya sendiri. Pilih yang sesuai dan Anda akan langsung terhubung dengan tim yang dapat membantu.",
-    "Not sure who to ask?": "Belum yakin harus bertanya ke siapa?",
-    "Reach the head office.": "Hubungi kantor pusat.",
-    "For general enquiries — or anything about PT. Flowtech Engineering or PT. Hanindo Automation Solutions — contact the group head office in Jakarta and we will point you to the right team.": "Untuk pertanyaan umum — atau apa pun mengenai PT. Flowtech Engineering atau PT. Hanindo Automation Solutions — hubungi kantor pusat grup di Jakarta dan kami akan mengarahkan Anda ke tim yang tepat.",
 
     /* ---- 404 ---- */
     "Page Not Found": "Halaman Tidak Ditemukan",
