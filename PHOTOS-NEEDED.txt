@@ -227,7 +227,7 @@ hero-advice.jpg           [PLACEHOLDER] As above — a file is in place.
                           used.
 
 div-oil-and-gas.jpg       Division card — fuel dispenser / forecourt [DONE]
-div-automotive.png        Division card — workshop with a car on a lift
+div-automotive.jpg        Division card — workshop with a car on a lift
                           [DONE] 1537x1023. NOTE the extension: this list
                           said .jpg for a long time while the page has
                           always loaded .png, so a .jpg supplied against
