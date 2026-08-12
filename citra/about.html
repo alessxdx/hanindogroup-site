@@ -29,7 +29,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/site.css?v=202608122201" />
+<link rel="stylesheet" href="../assets/site.css?v=202608122202" />
 <style>
 /* .about-copy a moved to site.css — the Automotive About page carries
    body-copy links now too. */
@@ -54,6 +54,14 @@
    site.css, which comes earlier in the cascade, still wins on phones. */
 @media(min-width:861px){
   .section.compact .isogrid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+}
+/* The two-per-row phone layout comes from site.css, but the scan window has
+   to be shortened here: .section.compact .isoimg above pins it at 150px and
+   out-ranks the plain .isoimg site.css lowers, so without this the four cards
+   go two across while still carrying a 150px window on a 163px card — the
+   certificate crops to a sliver and stops reading as a document. */
+@media(max-width:640px){
+  .section.compact .isoimg{height:104px}
 }
 
 /* Sole-distributor brand grid — logo tile + what the brand covers. Same

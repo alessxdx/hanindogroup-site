@@ -877,3 +877,43 @@ body{line-height:1.65}
   .footer ul{gap:.85rem}
   .foot-bottom{font-size:.84rem}
 }
+
+/* ---------------------------------------------------------------------
+   PHONE: the two certification walls go two-up.
+
+   Both blocks are restated earlier in this file and again inside the
+   640px block above, and a media query adds no specificity — so these
+   have to sit at the very end of the sheet to take effect at all. Moving
+   them up silently reverts every line.
+
+   .isogrid — certificate scans. Three cards here against Citra's four,
+   so :last-child:nth-child(odd) lets the third fill the row instead of
+   being stranded at half width; the same rule in site.css leaves Citra's
+   even count alone. 723px down to 394px. The scan window comes down with
+   the column: a 150px window on a 163px card crops the certificate to a
+   sliver. The 420px cap that centred the single column is dropped, or
+   the pair would be squeezed into half of it.
+
+   .certgrid — the NFPA and SKK cards. These are prose, not scans, so
+   they need the type scaled or two across makes them TALLER: at full
+   size the pair runs 789px against the 701px of the single column, the
+   second heading breaks to four lines and the measure falls to 16
+   characters. Scaled it is 503px at 22 characters a line, which is what
+   the advantage cards on this page already read at. The body lands at
+   11.84px, the smallest text on the site — deliberate, and the reason
+   this treatment suits scans better than it suits paragraphs.
+   --------------------------------------------------------------------- */
+@media(max-width:640px){
+  .isogrid{grid-template-columns:1fr 1fr;gap:.6rem;max-width:none}
+  .section.compact .isoimg{height:104px}
+  .isogrid .isocard:last-child:nth-child(odd){grid-column:1/-1}
+
+  .certgrid{grid-template-columns:1fr 1fr;gap:.6rem}
+  .section.compact .ccard{padding:1rem .75rem}
+  .section.compact .ccard h3{font-size:.86rem;line-height:1.25;margin-bottom:.4rem}
+  .section.compact .ccard>p{font-size:.74rem;line-height:1.45}
+  .ccey,.section.compact .ccey{font-size:.58rem;letter-spacing:.08em}
+  .cpill,.ccpill,.section.compact .ccpill{font-size:.6rem;padding:.18rem .38rem}
+  .ccic{width:36px;height:36px;margin-bottom:.6rem}
+  .ccic svg{width:18px;height:18px}
+}

@@ -1709,4 +1709,21 @@ a[href^="tel:"]:hover,a[href^="tel:"]:focus-visible{text-decoration:underline}
   .advic svg{width:19px;height:19px}
   .adv-grid .adv:last-child{grid-column:1/-1}
   .adv-grid .adv:last-child p{max-width:38ch}
+
+  /* --- certificates, two per row. A certificate card is a scan and two
+     short labels, so it takes a narrow column far better than anything
+     with prose in it: the Citra wall goes 958px to 403px.
+     :last-child:nth-child(odd) is what makes one rule serve both walls.
+     Citra shows four certificates and Fire Fighting three; the span only
+     fires on an odd count, so Fire Fighting's third card fills the row
+     while Citra's four stay a clean 2x2. It stays right if a fifth is
+     ever added, with nothing page-specific to remember.
+     The scan window is shortened here too — a 150px window on a 163px
+     card crops the certificate to a sliver and the card stops reading as
+     a document. Note that Citra's About page re-states .isoimg locally at
+     a higher specificity, so it carries its own copy of the height; this
+     one covers the shared case. --- */
+  .isogrid{grid-template-columns:1fr 1fr;gap:.6rem}
+  .isoimg{height:104px}
+  .isogrid .isocard:last-child:nth-child(odd){grid-column:1/-1}
 }
