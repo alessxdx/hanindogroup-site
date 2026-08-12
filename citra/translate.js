@@ -45,6 +45,7 @@
     "Get directions": "Petunjuk arah",
     /* ---- navigation / header ---- */
     "Your Solution Provider": "Mitra Solusi Anda",
+    "Back to": "Kembali ke",
     "Home": "Beranda",
     "About Us": "Tentang Kami",
     "Products & Services": "Produk & Layanan",

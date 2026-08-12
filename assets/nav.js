@@ -82,7 +82,7 @@
        such link; they keep the plain label. */
     var back = document.querySelector('.top-right .grouplink');
     head.insertBefore(
-      back ? back.cloneNode(true) : label('Menu'),
+      back ? backlink(back) : label('Menu'),
       head.firstChild);
     tabs.insertBefore(head, tabs.firstChild);
 
@@ -210,6 +210,29 @@
 
   /* ---------- small helpers ---------- */
   function each(list, fn){ Array.prototype.forEach.call(list, fn); }
+  /* The desktop link reads "Hanindo Group" beside a chevron, which in the
+     tab bar is enough — it sits in a row of controls that plainly act on
+     the page. Lifted into the drawer it became the panel's heading, and
+     a heading is not something anyone taps. So the copy says what it
+     does: a small "Back to" over the name it goes back to.
+     Two text nodes rather than one string, because translate.js matches
+     whole trimmed text nodes — "Back to" is a key each company's
+     dictionary can carry, and the company name is left alone, which is
+     the rule those dictionaries already follow for names. */
+  function backlink(src){
+    var a = src.cloneNode(true);
+    var name = a.querySelector('span');
+    if(!name) return a;
+    var stack = document.createElement('span');
+    stack.className = 'glstack';
+    var kicker = document.createElement('span');
+    kicker.className = 'glback';
+    kicker.textContent = 'Back to';
+    a.replaceChild(stack, name);
+    stack.appendChild(kicker);
+    stack.appendChild(name);
+    return a;
+  }
   function label(text){
     var s = document.createElement('span');
     s.className = 'navttl';

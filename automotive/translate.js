@@ -37,6 +37,7 @@
     /* ---- directions ---- */
     "Get directions": "Petunjuk arah",
     /* ---- navigation / header ---- */
+    "Back to": "Kembali ke",
     "Home": "Beranda",
     "About Us": "Tentang Kami",
     "Products & Services": "Produk & Layanan",

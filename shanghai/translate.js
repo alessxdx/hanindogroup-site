@@ -20,6 +20,7 @@
     /* ---- directions ---- */
     "Get directions": "Petunjuk arah",
     /* ---- navigation / header ---- */
+    "Back to": "返回",
     "Home": "首页",
     "About Us": "关于我们",
     "Products & Services": "产品与服务",

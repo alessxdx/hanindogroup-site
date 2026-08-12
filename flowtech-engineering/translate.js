@@ -41,6 +41,7 @@
     "Get directions": "Petunjuk arah",
     /* ---- navigation / header ---- */
     "Your Solution Provider": "Mitra Solusi Anda",
+    "Back to": "Kembali ke",
     "Home": "Beranda",
     "About Us": "Tentang Kami",
     /* the two headings inside the Our Companies menu — same wording as

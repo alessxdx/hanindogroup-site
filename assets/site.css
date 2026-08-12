@@ -540,23 +540,46 @@ img{max-width:100%;display:block}
     padding:.55rem .6rem .55rem var(--pad)}
   .navttl{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--sky)}
   /* The same link, borrowed from the desktop bar by nav.js and given the
-     heading's own treatment so it reads as the panel's title rather than
-     as a stray control docked above the menu. It keeps its chevron —
-     that is what says "back" before the words are read — but the disc
-     behind it has to inverse: on white it is a pale blue tint, and on
-     the drawer's navy that tint is invisible.
-     The border-right and the fixed 34px height are for standing beside
-     the search box and language toggle in the topbar. Neither applies
-     here, and the height in particular would leave a tap target well
-     under the 44px this row can easily give it — hence align-self, which
-     hands the link the full height of the header rather than a padding
-     figure guessed to match it. */
-  .navhead .grouplink{height:auto;align-self:stretch;padding:0 .4rem 0 0;border-right:0;
-    font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;
-    color:var(--sky);white-space:nowrap}
+     heading's slot. It keeps its chevron — that is what says "back"
+     before the words are read — but the disc behind it has to inverse:
+     on white it is a pale blue tint, and on the drawer's navy that tint
+     is invisible.
+
+     It is NOT set as the heading, though it stands where one would. That
+     was the first attempt: uppercase, .16em tracking, sky blue, exactly
+     like .navttl. It looked right and it read wrong — those are all
+     label signals, and a label is not something anyone taps. Nobody
+     could tell it went anywhere.
+     So the name is set as a name: sentence case, white, at reading size,
+     with a small "Back to" over it saying what the tap does. The kicker
+     is deliberately much smaller than the line under it. It is the
+     grammar of the thing, not the destination, and at equal size the two
+     lines compete for the same job.
+
+     The border and the fixed 34px height are for standing beside the
+     search box and language toggle in the topbar. Neither applies here,
+     and the height in particular leaves a tap target well under 44px,
+     so min-height sets the floor explicitly.
+
+     Selector qualified up to .tabs .navhead, which looks like more than
+     it needs. It is not. The header link is an <a> directly inside a
+     .tabs list item, so every rule that dresses a MENU ROW — .tabs>li>a
+     here, and .navbar .tabs>li>a in fire-fighting.css — matches it too.
+     The fire-fighting one carries two classes and two elements and beat
+     a plain .navhead .grouplink, which is why that section alone drew
+     the link at 16px in a 15px inset and stood its header 16px taller
+     than every other site. Three classes settles it against both. The
+     row borders are reset for the same reason. */
+  .tabs .navhead .grouplink{height:auto;min-height:46px;gap:.65rem;
+    padding:.4rem .4rem .4rem 0;border:0;
+    font-size:.95rem;font-weight:600;letter-spacing:0;color:#fff;white-space:nowrap}
+  .navhead .glstack{display:block;line-height:1.2}
+  .navhead .glback{display:block;font-size:.64rem;letter-spacing:.14em;
+    text-transform:uppercase;font-weight:700;color:#8fa8c4;line-height:1.1;margin-bottom:.1rem}
   .navhead .grouplink svg{width:11px;height:11px;padding:5px;
     background:rgba(255,255,255,.12);stroke:var(--sky)}
-  .navhead .grouplink:hover{color:#fff}
+  .tabs .navhead .grouplink:hover{color:#fff;background:none}
+  .navhead .grouplink:hover .glback{color:var(--sky)}
   .navhead .grouplink:hover svg{background:rgba(255,255,255,.2);stroke:#fff}
   .navclose{width:46px;height:46px;flex:none;display:flex;align-items:center;justify-content:center;
     background:none;border:0;cursor:pointer;color:#dfe7f2}
