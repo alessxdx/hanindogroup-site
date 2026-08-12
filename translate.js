@@ -236,7 +236,6 @@
     "Send us your CV anyway.": "Tetap kirimkan CV Anda.",
     "We are always glad to hear from strong candidates. Tell us where you would fit and attach your CV — we will keep it on file for openings across the group.": "Kami selalu senang menerima kandidat yang kuat. Beri tahu kami posisi yang Anda rasa sesuai dan lampirkan CV Anda — akan kami simpan untuk lowongan di seluruh grup.",
     "Send an open application": "Kirim lamaran terbuka",
-    "Applications": "Lamaran",
 
     /* ---- contact ---- */
     "Let's get you to": "Mari hubungkan Anda",
