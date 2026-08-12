@@ -68,13 +68,13 @@
    These are the one card type that loses nothing at half width, because
    the photograph does the work and the two labels are short. No type
    scaling needed, unlike the text-only project cards on Flowtech.
-   Fifteen is odd, so the last card would sit alone beside a gap;
-   :last-child:nth-child(odd) spans it, and only fires on an odd count so
-   it stays right if a sixteenth is added. The wrapper is a plain <div>
-   per card, hence the child selector rather than a class. */
+   Fifteen is odd, so the fifteenth sits on its own in the last row at the
+   same width as the other fourteen, with empty space beside it. It is
+   deliberately NOT spanned: stretched across both columns it reads as a
+   flagship project rather than as the last of fifteen, and on a contact
+   sheet every photograph should carry the same weight. */
 @media(max-width:640px){
   .decks{grid-template-columns:1fr 1fr;gap:.6rem}
-  .decks>div:last-child:nth-child(odd){grid-column:1/-1}
 }
 /* font:inherit is doing real work here, not tidying. A <button> does not
    inherit the page font — the browser gives form controls their own default,

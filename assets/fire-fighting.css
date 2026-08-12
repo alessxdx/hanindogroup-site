@@ -972,8 +972,13 @@ body{line-height:1.65}
    to come down — unlike the text-only project cards on Flowtech, which
    need scaling to gain anything.
 
-   Five is odd, so the last card would sit alone beside a gap;
-   :last-child:nth-child(odd) spans it and only fires on an odd count.
+   Five is odd, so the fifth card sits on its own in the last row at the
+   same width as the rest, with empty space beside it. It is deliberately
+   NOT spanned across both columns: a stretched card reads as a different,
+   more important project rather than as the last of five. The certificate
+   and advantage grids elsewhere do span their odd card, because there the
+   run is a set to be taken in at once; a project wall is a list, and the
+   cards should stay the same size as each other.
 
    At the end of the sheet with the rest: .proj is restated in the 640px
    block above and a media query adds no specificity, so anything written
@@ -981,5 +986,4 @@ body{line-height:1.65}
    --------------------------------------------------------------------- */
 @media(max-width:640px){
   .proj-grid{grid-template-columns:1fr 1fr;gap:.6rem}
-  .proj-grid .proj:last-child:nth-child(odd){grid-column:1/-1}
 }
