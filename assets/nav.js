@@ -135,11 +135,10 @@
       }
     });
 
-    /* Reading order for the entrance stagger. Set as a custom property so
-       the delay is one line of CSS rather than a rule per row, and so it
-       keeps working if a page ever carries a different number of tabs. */
-    var i = 0;
-    each(tabs.children, function(li){ li.style.setProperty('--i', i++); });
+    /* The --i counter that used to live here is gone with the entrance
+       stagger it fed. See the note in site.css: the effect broke the menu
+       on a phone twice and has been removed rather than fixed a third
+       time. Nothing reads --i now, so nothing writes it. */
   }
 
   /* ---------- open and shut ----------

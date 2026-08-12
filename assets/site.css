@@ -604,35 +604,32 @@ img{max-width:100%;display:block}
   .subdrop a{padding-left:calc(var(--pad) + 2.2rem);font-size:.9rem}
   .subdrop a::before{left:calc(var(--pad) + 1.35rem)}
 
-  /* The rows arrive after the panel, top to bottom — the order they are
-     read in. Delay comes from --i, which nav.js counts onto each row, so
-     this is one rule rather than one per row and it keeps working on a
-     page with a different number of tabs.
+  /* THE ROWS HAVE NO ENTRANCE. There was one — they were staggered in
+     top to bottom, in reading order, on a delay counted onto each row by
+     nav.js. It is gone, and it is not coming back, because it broke the
+     menu on a real phone twice and neither break could be reproduced on
+     a desktop browser.
 
-     NOTHING HERE TOUCHES OPACITY, and that is the whole point. This was
-     written as `animation:navRow .34s both` against a keyframe starting
-     at opacity:0 — so a row was invisible until an animation arrived to
-     reveal it, and `both` pinned that start state for as long as one did
-     not. It reached a phone that way. The menu opened to its heading bar
-     and eight invisible rows, on every page of the site, and the only
-     thing still legible was the one element exempt from the effect.
+     The first version was `animation:navRow .34s both` over a keyframe
+     starting at opacity:0. That hands an animation the job of REVEALING
+     the rows, and `both` pins the start state for as long as one does
+     not arrive. On the device in question one never did: the menu opened
+     to its heading bar and eight invisible rows, sitewide.
 
-     Rewriting it as a transition was not enough either: a transition
-     that has begun and not progressed sits at its start value just the
-     same. The fix is to make the entrance carry nothing a reader needs.
-     Only the offset moves. If the transition runs, the rows slide in; if
-     it is suppressed, throttled, or frozen, they are simply already in
-     place. There is no state of this rule in which a row cannot be read.
+     The second version dropped opacity and moved only a 14px offset, so
+     that a row could be misplaced but never hidden. It still came back
+     wrong on the same phone.
 
-     Delays are dropped on the way out so the menu shuts at once rather
-     than unstaggering itself. The heading bar takes none at all: it is
-     the panel's own frame, not one of its rows. */
-  .tabs>li{transform:translateX(14px);
-    transition:transform .3s cubic-bezier(.2,.7,.3,1);
-    transition-delay:calc(var(--i,0) * 32ms + 110ms)}
-  .tabs.open>li{transform:none}
-  .tabs:not(.open)>li{transition-delay:0s}
-  .tabs>li.navhead{transform:none;transition:none}
+     At that point the effect had cost two broken releases and bought
+     nothing a reader wants, so the honest fix is to stop paying for it.
+     A menu that is simply there when it opens is not a worse menu. What
+     is left is one declaration that cannot fail: the rows are visible,
+     in place, from the moment the panel is.
+
+     The panel's own slide stays. That one is load-bearing — without it
+     there is no drawer — and it demonstrably works on the phone this was
+     found on, because the panel arrived; only its contents did not. */
+  .tabs>li.navhead{transform:none}
 }
 
 /* ---------- PAGE HERO ---------- */
