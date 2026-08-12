@@ -205,13 +205,15 @@
     "Describe the site, the equipment or the volumes you are working with and we will point you to the company that handles it.": "Jelaskan lokasi, peralatan, atau volume yang Anda tangani, dan kami akan mengarahkan Anda ke perusahaan yang menanganinya.",
     "Email the group": "Email grup",
 
-    /* ---- career ---- */
-    "Build your career": "Bangun karier Anda",
+    /* ---- career ----
+       "with Hanindo Group." stays although the career h1 no longer ends
+       that way: the home page hero and the About page both still close a
+       heading with it. */
+    "Hirings": "Lowongan",
     "with Hanindo Group.": "bersama Hanindo Group.",
-    "Since 1987 we have supplied and serviced the equipment that keeps fuel stations, workshops and retailers working across Indonesia. Join us and you work with recognised international principals, learn the technical side of a real industry, and grow with a group that promotes from within.": "Sejak 1987 kami memasok dan merawat peralatan yang menjaga SPBU, bengkel, dan peritel tetap beroperasi di seluruh Indonesia. Bergabunglah dan Anda akan bekerja dengan prinsipal internasional ternama, mendalami sisi teknis industri yang nyata, serta berkembang bersama grup yang mengutamakan promosi dari dalam.",
+    "Join us to work with recognised international principals, learn the technical side of a real industry, and grow with a group that promotes from within.": "Bergabunglah dengan kami untuk bekerja dengan prinsipal internasional ternama, mendalami sisi teknis industri yang nyata, serta berkembang bersama grup yang mengutamakan promosi dari dalam.",
     "Open positions": "Lowongan terbuka",
     "Current openings.": "Lowongan saat ini.",
-    "Here is what we are hiring for right now. Read the role, then apply by email using the button on the posting.": "Berikut posisi yang sedang kami cari. Baca deskripsinya, lalu lamar melalui email menggunakan tombol pada lowongan tersebut.",
     "Sales — Automotive Equipment": "Sales — Peralatan Otomotif",
     "Jakarta · Full-time": "Jakarta · Penuh waktu",
     "Sell automotive equipment to workshops and dealers, open new accounts through active canvassing, and hit the sales targets that keep the territory growing.": "Menjual peralatan otomotif ke bengkel dan dealer, membuka pelanggan baru melalui canvassing aktif, serta mencapai target penjualan yang menjaga pertumbuhan wilayah.",
