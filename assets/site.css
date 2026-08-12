@@ -1617,14 +1617,27 @@ a[href^="tel:"]:hover,a[href^="tel:"]:focus-visible{text-decoration:underline}
      see the .gtl block above, which is now the one of them. --- */
   .gtl{grid-auto-flow:row;grid-auto-columns:auto;gap:0;overflow-x:visible;
     padding-left:1.6rem;margin-top:1.4rem}
-  .gtl .gitem{padding:0 0 1.2rem 0;text-align:left}
+  .gtl .gitem{padding:0 0 .8rem 0;text-align:left}
   .gtl .gitem:last-child{padding-bottom:0}
   /* the connector becomes the rail: a vertical hairline running from the
      dot down past the copy to the next one */
   .gtl .gitem::after{top:1.1rem;left:-1.6rem;transform:translateX(5px);
     width:2px;height:calc(100% - .5rem)}
   .gtl .gitem::before{left:-1.6rem;top:.15rem;transform:none}
-  .gtl .yr{font-size:.9rem}
-  .gtl h3{font-size:1rem;min-height:0;margin:.15rem 0 .2rem}
-  .gtl p{font-size:.92rem;line-height:1.55}
+  /* The year leads the row. At .9rem it was the smallest type in a
+     milestone, under a 1rem title, which is backwards for a list whose
+     whole shape is chronological: the year is what a reader scans down
+     the rail for, and the title is what they read once a year has
+     stopped them. The two swap weight — year up to 1.05rem, title down
+     to .95rem — which is a wider gap than raising the year alone could
+     give without the year growing out of proportion to the rail. .95rem
+     is 15.2px, still above the size the rest of this block treats as the
+     phone's comfortable floor.
+     Spacing tightens to pay for it. Both the row padding and the lead's
+     line-height were set when this column held .65rem type and needed
+     the air; at 14.7px they read as gaps in the rail rather than as
+     separation between milestones. */
+  .gtl .yr{font-size:1.05rem}
+  .gtl h3{font-size:.95rem;min-height:0;margin:.1rem 0 .14rem}
+  .gtl p{font-size:.92rem;line-height:1.45}
 }

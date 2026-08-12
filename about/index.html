@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/site.css?v=202608121600" />
+<link rel="stylesheet" href="../assets/site.css?v=202608121701" />
 <style>
 /* The company index (.vgrid / .vgrp / .vsec / .vopt) moved to site.css —
    the Contact Us router runs the same block, and keeping two copies is
@@ -122,6 +122,41 @@
   </div>
 </section>
 
+<!-- ============ VISION & MISSION ============ -->
+<!-- Opens the page: what the group is aiming at, before the history of how
+     it got there and the list of who does what.
+     .paper, where the other three .vm blocks on the company About pages are
+     .white. .vm-card draws a white card, so on white it had only its
+     hairline to sit on; here the band does that work. It also keeps the
+     page alternating — paper, white, paper — now that this section leads
+     and the timeline follows it. The timeline has to be the white one:
+     its dots are ringed with box-shadow 0 0 0 4px var(--white), which
+     would read as a halo on paper. -->
+<section class="section paper compact">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">Our direction</span>
+      <h2 class="h2">Vision &amp; Mission</h2>
+    </div>
+    <div class="vm">
+      <div class="vm-card reveal">
+        <span class="tag">01 / Vision</span>
+        <h3>Vision</h3>
+        <p>To be the trusted technology and engineering partner that industries across Indonesia and Southeast Asia rely on for long-term growth.</p>
+      </div>
+      <div class="vm-card reveal d1">
+        <span class="tag">02 / Mission</span>
+        <h3>Mission</h3>
+        <ul class="mlist">
+          <li><span class="n">1</span><p>Deliver reliable technology and engineering solutions through leading global partnerships and our own product brands.</p></li>
+          <li><span class="n">2</span><p>Support customers throughout the full lifecycle of every system &mdash; from specification and installation to training, spare parts and after-sales service.</p></li>
+          <li><span class="n">3</span><p>Continuously improve our capabilities while operating responsibly toward our customers, employees and the environment.</p></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ HISTORY / GROWTH TIMELINE ============ -->
 <!-- Replaces the old two-column "Our history" block. The story the prose used
      to tell — one division at PT. Sugiron Citra in 1987 growing into six
@@ -197,32 +232,6 @@
         </div>
       </div>
 
-    </div>
-  </div>
-</section>
-
-<!-- ============ VISION & MISSION ============ -->
-<section class="section white compact">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="kicker">Our direction</span>
-      <h2 class="h2">Vision &amp; Mission</h2>
-    </div>
-    <div class="vm">
-      <div class="vm-card reveal">
-        <span class="tag">01 / Vision</span>
-        <h3>Vision</h3>
-        <p>To be the trusted technology and engineering partner that industries across Indonesia and Southeast Asia rely on for long-term growth.</p>
-      </div>
-      <div class="vm-card reveal d1">
-        <span class="tag">02 / Mission</span>
-        <h3>Mission</h3>
-        <ul class="mlist">
-          <li><span class="n">1</span><p>Deliver reliable technology and engineering solutions through leading global partnerships and our own product brands.</p></li>
-          <li><span class="n">2</span><p>Support customers throughout the full lifecycle of every system &mdash; from specification and installation to training, spare parts and after-sales service.</p></li>
-          <li><span class="n">3</span><p>Continuously improve our capabilities while operating responsibly toward our customers, employees and the environment.</p></li>
-        </ul>
-      </div>
     </div>
   </div>
 </section>
