@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/site.css?v=202608121000" />
+<link rel="stylesheet" href="assets/site.css?v=202608121304" />
 <style>
 /* Partner wall, industry-banded.
 
@@ -354,11 +354,19 @@ window.addEventListener('pageshow',function(){var i=document.querySelector('.sea
    NOTE: D must stay equal to the dotFill animation duration in site.css
    (currently 9s). They drive the same progress bar. */
 (function(){var c=document.querySelector('.hero');if(!c)return;var s=[].slice.call(c.querySelectorAll('.hslide')),d=[].slice.call(c.querySelectorAll('.dot'));if(s.length<2)return;var i=0,t=null,D=9000;var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+/* No autoplay where there is no pointer to hover. The only two brakes on
+   this slideshow are mouseenter and focusin; a touch screen fires neither,
+   so on a phone the hero swapped itself out every 9s while it was being
+   read and nothing the visitor could do would stop it. The arrows and dots
+   still work, so the other two slides stay reachable — by choice now
+   rather than on a timer. Tested with (hover:none) rather than a width:
+   the fault is the missing hover, and that is what this asks about. */
+var nh=window.matchMedia&&window.matchMedia('(hover:none)').matches;
 function show(n){i=(n+s.length)%s.length;s.forEach(function(x,k){x.classList.toggle('active',k===i);});d.forEach(function(x,k){x.classList.toggle('active',k===i);x.setAttribute('aria-current',k===i?'true':'false');});}
 /* restart the progress bar so it always tracks the real timer — the CSS
    animation resumes where it paused, but the interval below starts fresh */
 function rb(){var a=d[i];if(!a)return;a.classList.remove('active');void a.offsetWidth;a.classList.add('active');}
-function nx(){show(i+1);}function pv(){show(i-1);}function st(){if(rm)return;sp();rb();t=setInterval(nx,D);}function sp(){if(t){clearInterval(t);t=null;}}
+function nx(){show(i+1);}function pv(){show(i-1);}function st(){if(rm||nh)return;sp();rb();t=setInterval(nx,D);}function sp(){if(t){clearInterval(t);t=null;}}
 var n=c.querySelector('.arrow.next'),p=c.querySelector('.arrow.prev');if(n)n.onclick=function(){nx();st();};if(p)p.onclick=function(){pv();st();};
 d.forEach(function(x,k){x.onclick=function(){show(k);st();};});
 c.addEventListener('mouseenter',sp);c.addEventListener('mouseleave',st);

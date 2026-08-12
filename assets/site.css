@@ -992,9 +992,23 @@ a.pcard:hover .more svg{transform:translateX(3px)}
 .heropanel ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.7rem 1.4rem}
 .heropanel.one ul{grid-template-columns:1fr;gap:0}
 @media(max-width:520px){.heropanel ul{grid-template-columns:1fr}}
+/* Slide 1's company list is hidden on phones, and ONLY slide 1's.
+   The hero stacks below 900px, which put the panel underneath the copy
+   instead of beside it: 347px of list on an 812px screen, pushing the
+   hero to 905px so the sixth company was sliced by the fold and the
+   divisions band below was unreachable. Every link in it appears twice
+   more — the burger menu's "Our Companies" drop-down and the #companies
+   band immediately below — so a phone loses no route by dropping it.
+   700px, not 900px: a tablet has the height to show the panel happily,
+   and this is a vertical-room problem, not a layout-width one.
+   Slide 2's panel is deliberately NOT covered by this. Its ten
+   industries (Telemetry, Hospitality, Self-service kiosks ...) appear
+   nowhere else on the site, so hiding it would leave phone visitors
+   with less information than desktop ones. Match on .one only. */
+@media(max-width:700px){.heropanel.one{display:none}}
 .heropanel li{display:flex;gap:.55rem;align-items:flex-start;font-size:.9rem;color:#dde5f0;line-height:1.4}
 .heropanel li svg{flex:none;width:15px;height:15px;margin-top:.2rem;fill:none;stroke:var(--brand);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
-/* division name plates (slide 2) */
+/* company name plates (slide 1) */
 .heropanel.one li{padding:0}
 .heropanel.one li+li{border-top:1px solid rgba(255,255,255,.12)}
 .heropanel.one li a{display:flex;align-items:center;justify-content:space-between;gap:1rem;width:100%;padding:.72rem .2rem;font-size:.92rem;font-weight:600;color:#dde5f0;transition:color .15s,padding .15s}
@@ -1014,6 +1028,14 @@ a.pcard:hover .more svg{transform:translateX(3px)}
 .hero .dot::after{content:"";position:absolute;inset:0;background:var(--brand);transform:scaleX(0);transform-origin:left}
 .hero .dot.active::after{animation:dotFill 9s linear both}
 .hero:hover .dot.active::after,.hero:focus-within .dot.active::after{animation-play-state:paused}
+/* Both pause rules above need a pointer that can hover, so on touch the bar
+   ran to the end with nothing able to stop it. The slideshow no longer
+   auto-advances there either (see the hero script), which would have left
+   the bar counting down to an advance that never came. Sit it at full
+   instead: the dot still marks which slide is showing, minus the promise
+   that it is about to move on. Same treatment the reduced-motion block
+   above already gives it, reached by a different route. */
+@media(hover:none){.hero .dot.active::after{animation:none;transform:scaleX(1)}}
 @media(max-width:640px){.hero .arrow{width:34px;height:48px}.hero .dots{bottom:12px}}
 
 /* ---------- HERO MOTION ----------
