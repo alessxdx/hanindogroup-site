@@ -115,7 +115,7 @@
 
     /* ---- partners strip + partners page ---- */
     "Partners & Principals": "Mitra & Prinsipal",
-    "Hanindo has partnered with leading global manufacturers for many industries. These long-standing partnerships enable us to provide genuine parts, factory-trained service, warranty support, and reliable after-sales care.": "Hanindo bermitra dengan produsen global terkemuka untuk berbagai industri. Kemitraan jangka panjang ini memungkinkan kami menyediakan suku cadang asli, layanan oleh teknisi terlatih pabrik, dukungan garansi, serta layanan purnajual yang andal.",
+    "Hanindo has long-standing partnerships that enable us to provide genuine parts, factory-trained service, warranty support, and reliable after-sales care.": "Hanindo memiliki kemitraan jangka panjang yang memungkinkan kami menyediakan suku cadang asli, layanan oleh teknisi terlatih pabrik, dukungan garansi, serta layanan purnajual yang andal.",
     "Our partners and principals": "Mitra dan prinsipal kami",
     "Brands we supply and service.": "Merek yang kami pasok dan layani.",
     "Enquiries": "Pertanyaan",
