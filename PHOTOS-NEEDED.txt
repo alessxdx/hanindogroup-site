@@ -930,9 +930,7 @@ come back. If they do, wire the slots first, then ask for the photos.
 Delete this block if the layout is settled as it stands.
 
 auto-sol-control.jpg          Intro section — station management screen
-autm-advanz-pos.jpg           Product card — AdvanZ POS/BOS/HOS
 autm-fleet-card.jpg           Product card — fleet / fuel / loyalty cards
-autm-ift-terminal.jpg         Product card — AdvanZ IFT forecourt terminal
 autm-fuel-okey.jpg            Product card — FUEL O'KEY
 autm-garage-automation.jpg    Product card — garage automation
 autm-access-control.jpg       Product card — access control & ID
