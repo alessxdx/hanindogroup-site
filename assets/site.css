@@ -1683,4 +1683,30 @@ a[href^="tel:"]:hover,a[href^="tel:"]:focus-visible{text-decoration:underline}
   .gtl .yr{font-size:1.05rem}
   .gtl h3{font-size:.95rem;min-height:0;margin:.1rem 0 .14rem}
   .gtl p{font-size:.92rem;line-height:1.45}
+
+  /* --- "Why clients trust us": two rows rather than three.
+     The three advantage cards ran one per row on a phone, 737px of
+     full-width blocks for three short claims. Two across gets them into
+     two rows, but ONLY with the type scaled to match: at the sizes above,
+     a 50px icon and 15px copy inside a 163px card push the longest card
+     to eleven lines and the block to 866px — taller than the single
+     column it replaced. The saving comes from the scaling, not the extra
+     column. With both, it is 415px.
+     The third card spans the row instead of being stranded at half width
+     beside a gap, which also hands the longest of the three descriptions
+     43 characters a line against the 22 the paired cards get — the card
+     with the most to say gets the most room. All seven About pages that
+     run this block carry exactly three cards, so :last-child is always
+     the odd one; revisit if a fourth is ever added.
+     Placed at the end of this block on purpose: .adv p is restated near
+     the top of it, and a media query adds no specificity, so an override
+     written above that line would be silently dropped. --- */
+  .adv-grid{grid-template-columns:1fr 1fr;gap:.6rem}
+  .adv{padding:1rem .7rem}
+  .adv h3{font-size:.88rem;margin-bottom:.35rem}
+  .adv p{font-size:.78rem;line-height:1.45;max-width:none}
+  .advic{width:38px;height:38px;margin-bottom:.6rem}
+  .advic svg{width:19px;height:19px}
+  .adv-grid .adv:last-child{grid-column:1/-1}
+  .adv-grid .adv:last-child p{max-width:38ch}
 }
