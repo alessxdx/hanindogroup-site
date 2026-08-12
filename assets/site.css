@@ -607,12 +607,32 @@ img{max-width:100%;display:block}
   /* The rows arrive after the panel, top to bottom — the order they are
      read in. Delay comes from --i, which nav.js counts onto each row, so
      this is one rule rather than one per row and it keeps working on a
-     page with a different number of tabs. The heading bar is exempt: it
-     is the panel's own frame and should be there the moment it opens. */
-  @keyframes navRow{from{opacity:0;transform:translateX(20px)}to{opacity:1;transform:none}}
-  .tabs.open>li{animation:navRow .34s both cubic-bezier(.2,.7,.3,1);
-    animation-delay:calc(var(--i,0) * 32ms + 110ms)}
-  .tabs.open>li.navhead{animation:none}
+     page with a different number of tabs.
+
+     NOTHING HERE TOUCHES OPACITY, and that is the whole point. This was
+     written as `animation:navRow .34s both` against a keyframe starting
+     at opacity:0 — so a row was invisible until an animation arrived to
+     reveal it, and `both` pinned that start state for as long as one did
+     not. It reached a phone that way. The menu opened to its heading bar
+     and eight invisible rows, on every page of the site, and the only
+     thing still legible was the one element exempt from the effect.
+
+     Rewriting it as a transition was not enough either: a transition
+     that has begun and not progressed sits at its start value just the
+     same. The fix is to make the entrance carry nothing a reader needs.
+     Only the offset moves. If the transition runs, the rows slide in; if
+     it is suppressed, throttled, or frozen, they are simply already in
+     place. There is no state of this rule in which a row cannot be read.
+
+     Delays are dropped on the way out so the menu shuts at once rather
+     than unstaggering itself. The heading bar takes none at all: it is
+     the panel's own frame, not one of its rows. */
+  .tabs>li{transform:translateX(14px);
+    transition:transform .3s cubic-bezier(.2,.7,.3,1);
+    transition-delay:calc(var(--i,0) * 32ms + 110ms)}
+  .tabs.open>li{transform:none}
+  .tabs:not(.open)>li{transition-delay:0s}
+  .tabs>li.navhead{transform:none;transition:none}
 }
 
 /* ---------- PAGE HERO ---------- */
