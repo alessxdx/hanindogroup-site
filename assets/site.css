@@ -101,6 +101,18 @@ img{max-width:100%;display:block}
    right edge. */
 .tabs>li.tablang{display:none}
 @media(max-width:860px){
+  /* Footer tap targets. gap alone spaces the rows but leaves each link
+     20px tall, so a thumb aimed between two lands on neither — the
+     target has to grow, not the air around it. Padding takes each row
+     to about 44px, the size a fingertip actually covers, and the gap
+     comes down because the padding separates them now. Block display
+     is what makes the padding count: an inline anchor ignores vertical
+     padding for layout and the row would stay 20px regardless.
+     Set at 860 rather than 640 because that is where the tab bar gives
+     way to the burger — the point the whole site becomes a thumb
+     layout, tablets included. */
+  .footer ul{gap:.15rem}
+  .footer ul a{display:block;padding:.7rem 0}
   /* margin-top:auto sits it on the floor of the drawer when the menu is
      shorter than the screen — a setting, kept clear of the destinations.
      On a long menu the auto margin collapses and it simply follows the
@@ -1646,7 +1658,6 @@ a[href^="tel:"]:hover,a[href^="tel:"]:focus-visible{text-decoration:underline}
      links per square inch. Both are fixed here: the whole block up a
      step, and the rows given the room to be hit one at a time --- */
   .footer{font-size:.94rem}
-  .footer ul{gap:.85rem}
   .foot-bottom{font-size:.84rem}
   .contact .info .v{font-size:1rem}
 
