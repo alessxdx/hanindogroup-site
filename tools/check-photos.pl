@@ -21,11 +21,20 @@
 #               this, and the whole dispenser page had no section.
 #   MISSING     the list says COMPLETE/DONE but no such file exists —
 #               usually a typo or a rename that only went one way.
-#   STALE       the list says NEEDED but the file is sitting there.
+#   CHECK STATUS the list says NEEDED but the file is sitting there.
 #               logo-automation.png read as outstanding for weeks.
 #   EXTENSION   the list names foo.jpg, the page loads foo.png. The
 #               worst kind: someone supplies the .jpg, it is filed
 #               correctly, and it still never appears.
+#   UNWIRED     an entry no page references. The list opens by promising
+#               every slot is wired and that a correctly named file
+#               appears automatically; seven automation slots and the
+#               Partners hero quietly broke that promise. Head the block
+#               "NOT WIRED" to acknowledge it and the check stays quiet.
+#
+# --summary adds a section-by-section count and lists what is actually
+# outstanding, using the same parse as the checks above rather than a
+# second reader of its own.
 #
 # Perl for the same reason as the other tools here — Git for Windows
 # ships it, and this repo is edited on a machine that may have nothing
@@ -82,7 +91,13 @@ for my $page (sort @pages) {
   open(my $fh, '<:raw:encoding(UTF-8)', $page) or next;
   local $/; my $doc = <$fh>; close $fh;
   my $dir = $page; $dir =~ s{[^/]+$}{};
-  while ($doc =~ m{src="([^"]+\.(?:jpe?g|png|webp|svg|gif))"}gi) {
+  # The (?:\?[^"]*)? matters: 77 of this site's 640 image references carry
+  # a cache-buster — hero-automation.jpg?v=1 and friends. Requiring the
+  # extension to sit immediately before the closing quote skipped every
+  # one of them, which hid a whole company's photography from the checks
+  # below and had the list reporting a hero that has been in place for
+  # weeks as still outstanding.
+  while ($doc =~ m{src="([^"]+\.(?:jpe?g|png|webp|svg|gif)(?:\?[^"]*)?)"}gi) {
     my $src = $1;
     next if $src =~ m{^(https?:)?//};
     $src =~ s/\?.*$//;
@@ -119,7 +134,9 @@ my %listed;                    # basename -> status
 # "SLIDE 2 — ... [NEEDED]" with the filename on the line below.
 my @lines = split /\r?\n/, $wanted;
 my %section_of;                # basename -> the section it is filed under
+my %unwired_ack;               # basename -> deliberately not wired to a page
 my $current_section = '(preamble)';
+my $in_unwired_block = 0;
 for my $i (0 .. $#lines) {
   # A section heading is a left-margin line in caps, optionally with the
   # page it covers in brackets, and is followed or preceded by a rule.
@@ -133,7 +150,13 @@ for my $i (0 .. $#lines) {
     my $known   = $cand =~ /^(CUSTOMER LOGOS|NOTES ON SOURCES|COMPANY LOGOS|FOLDER LAYOUT|SLIDE )/;
     $cand =~ s/\s+$//;
     $current_section = $cand if !$is_file && ($ruled || $known);
+    $in_unwired_block = 0 if !$is_file && ($ruled || $known);
   }
+  # "NOT WIRED" above a block marks those slots as a known, deliberate
+  # state rather than a fault: they describe a layout the page does not
+  # currently run. Without a way to say so the report can never go quiet,
+  # and a report that always complains is one nobody reads.
+  $in_unwired_block = 1 if $lines[$i] =~ /^NOT WIRED\b/i;
   # A line can START with a filename and still be prose about it:
   #
   #   orpak.jpg and invenco.jpg were shipped with wide blank margins
@@ -150,8 +173,14 @@ for my $i (0 .. $#lines) {
   # next character is punctuation rather than the gap before a
   # description — "piusi.svg, transtank.webp, tt.webp) have been deleted".
   next unless $after =~ /^(?:\s|$)/;
-  next if $after =~ /^\s+[a-z]/ || $after =~ /^\s*[—–-]\s/;
+  # \x{2014}/\x{2013} rather than literal dashes: this file is read through
+  # :encoding(UTF-8) so $after holds characters, while a literal em-dash
+  # typed into this source is raw bytes without `use utf8`. They never
+  # compare equal, so the prose line this was meant to skip was reported
+  # as a missing photograph.
+  next if $after =~ /^\s+[a-z]/ || $after =~ /^\s*[\x{2014}\x{2013}-]\s/;
   $section_of{$file} = $current_section unless exists $section_of{$file};
+  $unwired_ack{$file} = 1 if $in_unwired_block;
   # NOT first-mention-wins: several files are named once in a prose
   # paragraph with no marker and again in their real entry with one.
   # Taking the first reading marked airtec-lineup.png as outstanding
@@ -183,13 +212,17 @@ for my $i (0 .. $#lines) {
                           || $block =~ /\bplaceholder\b/i
                           || $block =~ /\bstand-in\b/i;
   $status = 'DROPPED' if $block =~ /NO LONGER NEEDED/ || $block =~ /NOT NEEDED/;
+  # An acknowledged unwired slot is not something anyone can act on —
+  # nobody can supply a photograph into a slot no page reads — so it
+  # should not sit in the outstanding column padding the count.
+  $status = 'UNWIRED' if $unwired_ack{$file} && $status eq 'WANTED';
   $listed{$file} = $status;
 }
 
 # ---------------------------------------------------------------------
 # The four checks.
 # ---------------------------------------------------------------------
-my (@untracked, @missing, @stale, @extension);
+my (@untracked, @missing, @stale, @extension, @unwired);
 
 for my $path (sort keys %ref) {
   my $base = basename($path);
@@ -214,6 +247,18 @@ for my $file (sort keys %listed) {
     my @hits;
     find({ no_chdir => 1, wanted => sub { push @hits, $File::Find::name if basename($_) eq $file } }, '.');
     if ($listed{$file} eq 'HAVE' && !@hits) { push @missing, $file }
+    # No page asks for this file. The list opens by promising every slot
+    # is wired and that a correctly named file appears automatically, so
+    # an entry nothing references is a broken promise: the photograph
+    # gets sourced, filed perfectly, and nothing happens.
+    # photos/not-used/ is documented as exactly this, and the logo
+    # inventories are counted rather than wired, so neither is a finding.
+    my $parked    = grep { m{photos/not-used/} } @hits;
+    my $inventory = grep { m{photos/(?:partners|customers)/} } @hits;
+    push @unwired, sprintf('%-30s %s', $file,
+      @hits ? 'on disk, but no page loads it' : 'no page loads it')
+      unless ($listed{$file} eq 'HAVE' && !@hits)
+          || $parked || $inventory || $unwired_ack{$file};
     next;
   }
   my ($disk) = grep { basename($_) eq $file && -e $_ } keys %ref;
@@ -236,6 +281,8 @@ sub section {
 section('EXTENSION MISMATCH', 'the list names one extension, the page loads another', @extension);
 section('UNTRACKED',  'a page loads these, the list never mentions them', @untracked);
 section('MISSING',    'the list says the file is in, but it is not on disk', @missing);
+section('UNWIRED',    'listed as a slot, but no page loads it — supplying the file would'
+                    . "\n  change nothing, so wire it up, drop it, or head the block \"NOT WIRED\"", @unwired);
 section('CHECK STATUS', 'listed as still wanted, but a file is already there — either the'
                       . "\n  photo has arrived and the marker was never updated, or what is on\n"
                       . '  disk is a stand-in, in which case mark it [PLACEHOLDER]', @stale);
@@ -264,18 +311,30 @@ if (grep { $_ eq '--summary' } @ARGV) {
     $tally{$sec}{$s}++;
     push @{ $open_items{$sec} }, $file if $s eq 'WANTED';
   }
-  printf "\n%-46s %5s %6s %5s %5s\n", 'SECTION', 'have', 'stand', 'want', 'drop';
-  print '-' x 71, "\n";
+  printf "\n%-42s %5s %6s %5s %7s %5s\n",
+    'SECTION', 'have', 'stand', 'want', 'unwired', 'drop';
+  print '-' x 75, "\n";
   my %tot;
   for my $sec (@order) {
     my $t = $tally{$sec};
-    $tot{$_} += ($t->{$_} || 0) for qw(HAVE PLACEHOLDER WANTED DROPPED);
-    printf "%-46s %5d %6d %5d %5d\n", substr($sec,0,46),
-      $t->{HAVE}||0, $t->{PLACEHOLDER}||0, $t->{WANTED}||0, $t->{DROPPED}||0;
+    $tot{$_} += ($t->{$_} || 0) for qw(HAVE PLACEHOLDER WANTED UNWIRED DROPPED);
+    printf "%-42s %5d %6d %5d %7d %5d\n", substr($sec,0,42),
+      $t->{HAVE}||0, $t->{PLACEHOLDER}||0, $t->{WANTED}||0, $t->{UNWIRED}||0, $t->{DROPPED}||0;
   }
-  print '-' x 71, "\n";
-  printf "%-46s %5d %6d %5d %5d\n", 'TOTAL',
-    $tot{HAVE}||0, $tot{PLACEHOLDER}||0, $tot{WANTED}||0, $tot{DROPPED}||0;
+  print '-' x 75, "\n";
+  printf "%-42s %5d %6d %5d %7d %5d\n", 'TOTAL',
+    $tot{HAVE}||0, $tot{PLACEHOLDER}||0, $tot{WANTED}||0, $tot{UNWIRED}||0, $tot{DROPPED}||0;
+
+  unless ($tot{WANTED}) {
+    print "\nNothing outstanding: every wired slot has a file.\n";
+    print "The ", ($tot{UNWIRED}||0), " unwired entries describe layouts no page runs — see\n",
+          "the NOT WIRED blocks in the list. Wire the slot before asking for the photo.\n"
+      if $tot{UNWIRED};
+    print "The ", ($tot{PLACEHOLDER}||0), " stand-ins ship fine but are not the real photograph.\n"
+      if $tot{PLACEHOLDER};
+    print "\n";
+    exit($problems ? 1 : 0);
+  }
 
   print "\nSTILL WANTED, by section:\n";
   for my $sec (@order) {

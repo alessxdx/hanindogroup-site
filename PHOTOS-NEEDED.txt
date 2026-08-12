@@ -908,7 +908,27 @@ file being freely licensed says nothing about trademark use.
 --------------------------------------------------
 AUTOMATION  (/automation/)
 --------------------------------------------------
-hero-automation.jpg           Page hero — control room or POS counter
+hero-automation.jpg           Page hero, all five pages   [PLACEHOLDER]
+                              A file is in place, so the pages ship. It
+                              is 600x450 against the ~1600px a hero
+                              wants, so it is soft at full width — worth
+                              replacing with a control room or POS
+                              counter shot when one can be taken.
+
+NOT WIRED — these seven are not loaded by any page.
+--------------------------------------------------
+Supplying a file under any of these names changes nothing, because no
+page references them. They describe a product-card layout the automation
+pages no longer use: the "What we supply" strip now shares the Custom
+range shots with Gralessando and Shanghai
+(photos/printer-pos/products/ — professional-printing, dc-pos, scanning,
+self-service), which is right, since all three companies carry the same
+Custom range in their own market.
+
+Kept rather than deleted because the range is real and the cards may
+come back. If they do, wire the slots first, then ask for the photos.
+Delete this block if the layout is settled as it stands.
+
 auto-sol-control.jpg          Intro section — station management screen
 autm-advanz-pos.jpg           Product card — AdvanZ POS/BOS/HOS
 autm-fleet-card.jpg           Product card — fleet / fuel / loyalty cards
@@ -1149,9 +1169,15 @@ needs no new file, only a cell.
 --------------------------------------------------
 PARTNERS & PRINCIPALS  (/partners/)
 --------------------------------------------------
-hero-partners.jpg         Page hero. Optional — without it the banner
-                          shows flat deep blue. Equipment, a branded
-                          product wall, or a wide site shot suits.
+NOT WIRED — the page does not load this.
+hero-partners.jpg         Page hero. Superseded: the banner now runs the
+                          shared photos/group/hero/hero-sky.jpg, like the
+                          other group pages, so nothing is missing and
+                          supplying this file would change nothing.
+                          Kept in case Partners is ever given a hero of
+                          its own — equipment, a branded product wall or
+                          a wide site shot would suit. Wire the slot
+                          first, then ask for the photograph.
 
 The RAASM page moved out of here — see AUTOMOTIVE below. The mark itself
 stays in /photos/partners/ with the other principal logos, and the
