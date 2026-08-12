@@ -38,6 +38,29 @@
    Hanindo Automation Solutions, Gralessando and Hanindo Shanghai run
    the same grid and are untouched. */
 .secgrid.tight .secname{font-weight:400}
+
+/* Two projects to a row on a phone. site.css takes .pgrid to a single
+   column below 520px, which ran these nine cards to 1,529px.
+   These cards carry no photograph — a site name, an address and two tag
+   pills — so pairing them alone is almost worthless: at full type the
+   titles break to three lines and the block only comes down to 1,341px,
+   a 12% saving for a much tighter column. With the type scaled with the
+   column it is 746px, and the page 5.4 screens to 4.4. The scaling is
+   what buys the space here, not the second column.
+   Nine is odd, so :last-child:nth-child(odd) spans the last card rather
+   than leaving it beside a gap.
+   Page-local: .pgrid is on ten pages across the group and this is the
+   only one whose cards are text-only, so the scaling would be wrong
+   anywhere there is a photograph to carry the card. */
+@media(max-width:640px){
+  .pgrid{grid-template-columns:1fr 1fr;gap:.6rem}
+  .pgrid .pcard:last-child:nth-child(odd){grid-column:1/-1}
+  .pcard .pbody{padding:.75rem .7rem .8rem}
+  .pbody h4,.section.compact .pbody h4{font-size:.82rem;line-height:1.25}
+  .pbody p,.section.compact .pbody p{font-size:.72rem;line-height:1.35}
+  .taglist{gap:.25rem;margin-top:.4rem}
+  .tag,.taglist .tag{font-size:.6rem;padding:.16rem .36rem}
+}
 </style>
 </head>
 <body>

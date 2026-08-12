@@ -61,7 +61,21 @@
    three across and the cards grew again. */
 .decks{display:grid;gap:clamp(1.4rem,2.6vw,2rem);justify-content:start;
   grid-template-columns:repeat(auto-fit,minmax(210px,242px));margin-top:2.2rem}
-@media(max-width:640px){.decks{grid-template-columns:1fr}}
+/* Two decks to a row on a phone rather than one. Fifteen full-width cards
+   ran the wall to 4,082px and the page to 8.1 screens — the longest thing
+   on the site — for what is a contact sheet: a photograph, a customer and
+   a title. Paired it is 1,173px and the page 4.5 screens.
+   These are the one card type that loses nothing at half width, because
+   the photograph does the work and the two labels are short. No type
+   scaling needed, unlike the text-only project cards on Flowtech.
+   Fifteen is odd, so the last card would sit alone beside a gap;
+   :last-child:nth-child(odd) spans it, and only fires on an odd count so
+   it stays right if a sixteenth is added. The wrapper is a plain <div>
+   per card, hence the child selector rather than a class. */
+@media(max-width:640px){
+  .decks{grid-template-columns:1fr 1fr;gap:.6rem}
+  .decks>div:last-child:nth-child(odd){grid-column:1/-1}
+}
 /* font:inherit is doing real work here, not tidying. A <button> does not
    inherit the page font — the browser gives form controls their own default,
    which on Windows is Arial — so every project title on this page was setting

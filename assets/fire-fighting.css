@@ -962,3 +962,24 @@ body{line-height:1.65}
   .ptitle{font-size:.82rem;margin-bottom:.5rem}
   .pcap{font-size:.72rem;line-height:1.4;margin-top:.45rem}
 }
+
+/* ---------------------------------------------------------------------
+   PHONE: the projects wall, two to a row.
+
+   Five full-width cards ran it to 1,542px and the page to 4.1 screens.
+   Paired it is 1,117px and 3.6 screens. These carry a photograph above a
+   short body, so they take the narrower column without the type having
+   to come down — unlike the text-only project cards on Flowtech, which
+   need scaling to gain anything.
+
+   Five is odd, so the last card would sit alone beside a gap;
+   :last-child:nth-child(odd) spans it and only fires on an odd count.
+
+   At the end of the sheet with the rest: .proj is restated in the 640px
+   block above and a media query adds no specificity, so anything written
+   higher up is dropped without a word.
+   --------------------------------------------------------------------- */
+@media(max-width:640px){
+  .proj-grid{grid-template-columns:1fr 1fr;gap:.6rem}
+  .proj-grid .proj:last-child:nth-child(odd){grid-column:1/-1}
+}
