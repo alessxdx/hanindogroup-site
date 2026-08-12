@@ -1084,9 +1084,17 @@ the page looks exactly as it did before the slot existed.
 EITHER EXTENSION WORKS. Each slot names one, and if that file is not
 there it tries the other once before giving up, so .jpg and .png are
 interchangeable without touching the markup. Prefer JPEG for
-photographs: hero-flowtech.png arrived at 1.9MB, where the same picture
-as a JPEG would be a fifth of that. PNG earns its size on flat artwork
-and logos, not on a photograph.
+photographs: hero-flowtech arrived as a 1.9MB PNG with a fully opaque
+alpha channel, and was converted to JPEG at 223KB — the same picture,
+an eighth of the weight, on a hero that loads before anything else can.
+PNG earns its size on flat artwork and logos, not on a photograph.
+
+One file breaks that rule on purpose: fire-fighting/photos/
+prod-sprinkler.jpg is a PNG despite the .jpg name, and must stay one —
+its transparency is real and used, so saving it as JPEG would put a
+solid background behind the sprinkler heads. Browsers sniff the content
+rather than trusting the extension, so it works; do not "fix" the name
+or the format.
 
 This section was text only for years — no photograph of its own was
 ever supplied, so rather than leave "Photo needed" boxes on a company
@@ -1094,7 +1102,7 @@ that could not fill them, the pages were written to stand as type. Two
 slots were put back on 2026-08-12 at the business's request, on the
 home page only:
 
-hero-flowtech.png         [COMPLETE] Home page hero background, in
+hero-flowtech.jpg         [COMPLETE] Home page hero background, in
                           photos/flowtech/hero/. Supplied at 1516x798,
                           just under the 1600px this slot is specced
                           for, which is close enough to look right.
