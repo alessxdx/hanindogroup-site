@@ -220,10 +220,11 @@
     "Back to Products & Services": "Kembali ke Produk & Layanan",
 
     /* ---- catalogue: category navigation ---- */
-    "Dispensers": "Dispenser",
+    /* The short phone labels are gone from the bar -- it carries the full
+       product names at every width now -- so their entries went with them.
+       "Controllers" stays: the Forecourt Controllers page still uses it on
+       its own. The full names are keyed further up, with the nav. */
     "Controllers": "Controller",
-    "Tank Gauging": "Tank Gauging",
-    "Submersible Pumps": "Pompa Submersible",
 
     /* ---- catalogue: dispensers ---- */
     "Gilbarco Veeder-Root dispensers, from island pumps to truck lanes.": "Dispenser Gilbarco Veeder-Root, dari pompa island hingga jalur truk.",
