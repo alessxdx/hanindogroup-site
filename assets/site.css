@@ -1468,8 +1468,17 @@ a.pcard:hover .more svg{transform:translateX(3px)}
    These rules lived in five separate page <style> blocks and the copies
    drifted apart, so they are kept here only. */
 .catnav{display:flex;flex-wrap:wrap;gap:1.7rem;margin-bottom:2rem}
+/* width:max-content so the box ends where the tabs end. A block-level flex
+   container fills its wrap, which put a stretch of empty --paper to the
+   right of the last tab and made the box read as a bar that had failed to
+   fill rather than as a control around the tabs.
+   max-width caps it: where the labels are wider than the wrap — six long
+   ones around 900px — the box takes the full width and the cells wrap
+   inside it, which is the phone behaviour arriving early rather than an
+   overflow. */
 .catnav:not(.sectorfilter){gap:0;padding:3px;border:1px solid var(--line);
-  border-radius:var(--r);background:var(--paper)}
+  border-radius:var(--r);background:var(--paper);
+  width:max-content;max-width:100%}
 
 /* --- tabs (navigate) --- */
 /* A link may carry both a full and a short label. The Hanindo Citra product
@@ -1492,8 +1501,15 @@ a.pcard:hover .more svg{transform:translateX(3px)}
    so the cell takes the token straight. calc(var(--r) - 2px) was 1px here,
    which is a square with the corners shaved and reads as a rendering
    error rather than as a cell. */
-.catnav:not(.sectorfilter) a{padding:.55rem .9rem;
-  border-radius:var(--r);transition:background .18s,color .18s}
+/* flex:1 1 auto at every width, not just on a phone. A cell is as wide as
+   its own label and then grows to share out whatever is left of its row,
+   so a row that wraps still ends flush with the box. Where the bar fits on
+   one line there is nothing left to share and the cells sit at their
+   natural widths, so this changes nothing on a wide desktop and fixes the
+   ragged second row between about 700 and 950px. */
+.catnav:not(.sectorfilter) a{flex:1 1 auto;padding:.55rem .9rem;
+  border-radius:var(--r);transition:background .18s,color .18s;
+  display:flex;align-items:center;justify-content:center}
 .catnav:not(.sectorfilter) a:hover{background:rgba(255,255,255,.62)}
 .catnav:not(.sectorfilter) a.on{background:var(--white);
   box-shadow:0 1px 2px rgba(13,36,56,.10)}
@@ -1519,9 +1535,7 @@ a.pcard:hover .more svg{transform:translateX(3px)}
    the box has no dead space in it. The Automotive bars never showed this:
    their labels are short enough to fit the column. */
 @media(max-width:640px){
-  .catnav:not(.sectorfilter){display:flex;flex-wrap:wrap;gap:2px}
-  .catnav:not(.sectorfilter) a{flex:1 1 auto;text-align:center;
-    display:flex;align-items:center;justify-content:center}
+  .catnav:not(.sectorfilter){gap:2px}
 }
 
 /* --- pills (filter in place) --- */
