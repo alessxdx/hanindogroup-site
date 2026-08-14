@@ -18,10 +18,11 @@
    in the company-detail list each need two entries: the bold lead-in
    and the sentence that follows it.
 
-   Shared wording — the navigation, the footer, the contact block — is
-   carried over verbatim from the group and PT. Hanindo Automotive
-   dictionaries rather than translated afresh, so the same English
-   reads the same way in Indonesian on every site.
+   Shared wording — the navigation and the footer — is carried over
+   verbatim from the group and PT. Hanindo Automotive dictionaries
+   rather than translated afresh, so the same English reads the same way
+   in Indonesian on every site. The contact band was shared the same way
+   until it came off the four inner pages.
 
    DELIBERATELY LEFT IN ENGLISH
    1. Names — the company, its director, every other company in the
@@ -52,11 +53,10 @@
        to sit here went with the old label. */
     "Services": "Layanan",
     "Projects": "Proyek",
+    /* "Contact Us" is the tab, the footer link and the breadcrumb. The
+       "Contact page" entry that sat under it was the contact band's
+       second button and went with the band. */
     "Contact Us": "Hubungi Kami",
-    /* "Contact page", not "Contact us": the contact band's second button
-       carries the same label here as on every other company site, and the
-       lowercase "Contact us" it used to say is on no page now. */
-    "Contact page": "Halaman kontak",
 
     /* ---- company page: hero and about ---- */
     /* the home hero is the company name now, so it needs no entry — a
@@ -236,18 +236,21 @@
     "Office hours": "Jam kerja",
     "— Monday to Friday, 08.00 – 17.00 WIB": "— Senin sampai Jumat, 08.00 – 17.00 WIB",
 
-    /* ---- contact block ---- */
-    "Talk to PT. Flowtech Engineering": "Hubungi PT. Flowtech Engineering",
-    "Have a construction": "Punya rencana proyek",
-    "project in mind?": "konstruksi?",
-    "Tell us about the site and our team will scope the permits, materials, labour and installation work needed to bring it into operation.": "Ceritakan lokasi Anda dan tim kami akan menentukan lingkup perizinan, material, tenaga kerja, dan pekerjaan pemasangan yang dibutuhkan untuk mengoperasikannya.",
+    /* ---- footer contact column, and the contact page's buttons ----
+       The contact band these mostly belonged to came off the four inner
+       pages, and six of its entries went with it: the eyebrow, both
+       halves of the heading, the sub line, "Contact page" and "Phone",
+       none of which is on any page now.
+       The four below only looked orphaned. "Email our team" is still the
+       contact page's button, "Head Office" and "Email" are the footer's
+       address column on all five pages, and "Get directions" is up under
+       directions and is on the contact page. */
     "Email our team": "Email tim kami",
     "Head Office": "Kantor Pusat",
     /* the footer's fourth column. The company names under it are names in
        either language, so only the heading has an entry. Same wording as
        the Citra dictionary, which runs the same column. */
     "Our Companies": "Perusahaan Kami",
-    "Phone": "Telepon",
     "Email": "Email",
 
     /* ---- footer ---- */
