@@ -196,16 +196,26 @@
     "Request a quotation": "Minta penawaran",
 
     /* ---- projects ----
-       The hero and the section head were about workshops only. The page now
-       also carries a service station, an LNG plant, a lube truck and a mine
-       supply base, so both were widened rather than left describing a third
-       of the page. */
-    "Work we have": "Pekerjaan yang telah",
-    "delivered.": "kami kerjakan.",
+       Hero and section head now follow the Fire Fighting and Flowtech
+       projects pages: "Featured projects" over the hero, "Track record"
+       over the same words again below. The lede under the section head is
+       gone from the page, so its entry went with it.
+
+       The hero is split for the two-tone heading, and Indonesian puts the
+       adjective after the noun, so the halves swap sense: "Featured"
+       carries Proyek and the coloured half carries unggulan. The coloured
+       half is lowercase with the full stop the automotive h1s all end on,
+       which is also what keeps it a separate key from the bare "Projects"
+       of the nav and breadcrumb — this dictionary has no data-t, so the
+       key IS the visible text. Do not retitle it to "Projects." without
+       checking that collision.
+       The section head is one node, not a split, for the same word-order
+       reason: two halves would translate in the English order. */
+    "Featured": "Proyek",
+    "projects.": "unggulan.",
     "Supplied, installed and commissioned across Indonesia.": "Dipasok, dipasang, dan dioperasikan di seluruh Indonesia.",
-    "Selected work": "Pekerjaan terpilih",
-    "Equipment we have installed.": "Peralatan yang telah kami pasang.",
-    "Dealer workshops, tyre shops, service stations, plants and mine sites.": "Bengkel dealer, toko ban, SPBU, pabrik, dan area tambang.",
+    "Track record": "Rekam jejak",
+    "Featured projects": "Proyek unggulan",
     /* The project decks. Each project adds a sector, a title and a scope
        line, so a new project needs three new entries here — the deck is
        plain text on the page and stays English otherwise. The count badge
