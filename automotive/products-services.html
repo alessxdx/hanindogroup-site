@@ -109,6 +109,21 @@
 .course h3{font-weight:700;font-size:1.02rem;color:var(--blue-800);margin:.3rem 0 .35rem}
 .cmeta{font-size:.8rem;font-weight:600;color:var(--blue-700);margin-bottom:.55rem}
 .course p{font-size:.87rem;color:var(--muted);line-height:1.55}
+/* The training list sits directly under the course cards, so it is read
+   against them. site.css raises .checks li to 1rem on a phone — right
+   where a tick list stands alone, as it does on the contact pages, but
+   here it put 16px type under the cards' 13.9px and the summary ended up
+   looking more important than the courses it summarises. Matched to
+   .course p instead, tick and row gap scaled with it.
+   Scoped to #training rather than to .checks, so the contact page's
+   address list, which has nothing above it to match, keeps the shared
+   size. Phone only — on a desktop the gap is 15.2px against 13.9px and
+   reads as a list next to body copy rather than as a mismatch. */
+@media(max-width:640px){
+  #training .checks{gap:.62rem}
+  #training .checks li{font-size:.87rem}
+  #training .checks li svg{width:15px;height:15px;margin-top:.22rem}
+}
 </style>
 </head>
 <body>
