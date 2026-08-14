@@ -74,22 +74,22 @@
     "Transport, retail & public services": "Transportasi, ritel & layanan publik",
     "Industry & technology": "Industri & teknologi",
 
-    /* ---- home contact block ---- */
-    "Rolling out POS,": "Menggelar POS,",
-    "or replacing a printer fleet?": "atau mengganti armada printer?",
-    "Tell us the sites and volumes you handle and our team will match the right printing, scanning and POS package.": "Beri tahu kami lokasi dan volume yang Anda tangani, dan tim kami akan menyiapkan paket pencetakan, pemindaian, dan POS yang tepat.",
-    "Talk to Gralessando Pte Ltd": "Hubungi Gralessando Pte Ltd",
+    /* ---- footer contact column, and the contact page's button ----
+       The contact band these belonged to came off the home, About and
+       Products & Services pages, and eleven of its entries went with it:
+       both halves of the heading, the eyebrow, the sub line, "Contact
+       page", "Phone", and the five pieces its market note was split into
+       by the <b> and the two <a>s inside it.
+       The four below only looked orphaned. "Email our team" is still the
+       contact page's button, "Office" and "Email" are the footer's
+       address column on all four pages, and the South East Asia line is
+       the first of the three regional headings on the contact page --
+       which is where the note that came off pointed, and which names each
+       region's own contact rather than summarising them. */
     "Email our team": "Email tim kami",
-    "Contact page": "Halaman kontak",
     "Office": "Kantor",
-    "Phone": "Telepon",
     "Email": "Email",
-    "This contact handles": "Kontak ini menangani",
     "South East Asia (excluding the Philippines, Thailand and Indonesia)": "Asia Tenggara (kecuali Filipina, Thailand, dan Indonesia)",
-    ". For the Philippines or Thailand, see the": ". Untuk Filipina atau Thailand, lihat",
-    "contact page": "halaman kontak",
-    ". Indonesia is served by": ". Indonesia dilayani oleh",
-    ", and China by": ", dan Tiongkok oleh",
     "Singapore Office": "Kantor Singapura",
 
     /* ---- about ---- */
