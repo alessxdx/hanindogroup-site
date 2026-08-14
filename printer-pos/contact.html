@@ -108,9 +108,6 @@
           <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Email</b> &mdash; csea-sg@hanindogroup.com</span></li>
           <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Office hours</b> &mdash; Monday to Friday, 09.00 &ndash; 17.30 SGT</span></li>
         </ul>
-        <div style="margin-top:2rem">
-          <a class="btn btn-dark" href="mailto:csea-sg@hanindogroup.com">Email our team <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></a>
-        </div>
       </div>
       <div class="shot reveal d2">
         <!-- The Singapore office. The other companies' contact pages
@@ -136,6 +133,22 @@
       </div>
     </div>
     <div class="mktnote reveal">For <b>Indonesia</b>, the same Custom range is supplied by <a href="../automation/contact.html">PT. Hanindo Automation Solutions</a>. For <b>China</b>, see <a href="../shanghai/contact.html">Hanindo (Shanghai) International Co., Ltd.</a></div>
+
+    <!-- Last on the page, on purpose, and moved out of the .split column
+         it used to sit in. A reader should have seen the three regional
+         contacts and the note about Indonesia and China before being
+         offered one mailbox to write to -- the button goes to the
+         Singapore office, which is the wrong address for two of those
+         five markets. Order alone does that work, so it holds at every
+         width rather than needing a rule per breakpoint.
+         No .reveal on it, as before the move. Everything around it fades
+         in on scroll, but this is the page's one call to action and
+         .reveal starts at opacity:0 -- if the observer never runs, a
+         decorative panel arriving invisible is a shrug and this button
+         arriving invisible is a dead end. -->
+    <div style="margin-top:2rem">
+      <a class="btn btn-dark" href="mailto:csea-sg@hanindogroup.com">Email our team <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></a>
+    </div>
   </div>
 </section>
 
