@@ -150,7 +150,11 @@
     "Tyre service and inflation, lifting and handling, service equipment, lubrication and welding — six ranges across the catalogue.": "Layanan ban dan pengisian angin, pengangkatan dan penanganan, peralatan servis, pelumasan, dan pengelasan — enam rangkaian dalam katalog.",
     "What we offer": "Yang kami tawarkan",
     "Professional equipment, from the service bay to the plant floor": "Peralatan profesional, dari service bay hingga lantai pabrik",
-    "Equipment from leading international manufacturers, chosen to improve productivity, safety and service quality. Most of it fits out a workshop. The inflation and lubrication ranges reach further — the same equipment runs on forecourts, in depots and plants, and across mine sites.": "Peralatan dari produsen internasional terkemuka, dipilih untuk meningkatkan produktivitas, keselamatan, dan mutu layanan. Sebagian besar untuk melengkapi bengkel. Rangkaian pengisian angin dan pelumasan menjangkau lebih jauh — peralatan yang sama dipakai di SPBU, depo, pabrik, dan area tambang.",
+    /* Re-keyed with the lede: the third sentence, about inflation and
+       lubrication reaching past the workshop, is gone from the page. The
+       key is the whole trimmed node, so the old one stopped matching the
+       moment the English was cut. Its Indonesian went with it. */
+    "Equipment from leading international manufacturers, chosen to improve productivity, safety and service quality. Most of it fits out a workshop.": "Peralatan dari produsen internasional terkemuka, dipilih untuk meningkatkan produktivitas, keselamatan, dan mutu layanan. Sebagian besar untuk melengkapi bengkel.",
     "Tyre changers, wheel balancers and 3D wheel alignment.": "Tyre changer, wheel balancer, dan spooring roda 3D.",
     "View products": "Lihat produk",
     /* Products & Services page: the catalogue was restyled and its heading,
