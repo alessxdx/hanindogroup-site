@@ -191,13 +191,24 @@
     "24 hours · 12 theory, 12 practical · 15–20 per class": "24 jam · 12 teori, 12 praktik · 15–20 peserta per kelas",
     "Suspension and steering, the wheel angles that govern the direction a car travels — toe, camber, caster — and wheel balance. Practice covers setting the angles, reading alignment data and optimising balance.": "Suspensi dan kemudi, sudut-sudut roda yang menentukan arah jalannya mobil — toe, camber, caster — serta keseimbangan roda. Praktik mencakup penyetelan sudut, pembacaan data spooring, dan optimalisasi balancing.",
     "The same fundamentals, angled at the customer conversation: why a vehicle needs alignment and balancing, how to diagnose the complaint behind the booking, and how to talk a customer through the alignment printout.": "Dasar yang sama, difokuskan pada percakapan dengan pelanggan: mengapa kendaraan memerlukan spooring dan balancing, cara mengenali keluhan di balik permintaan servis, dan cara menjelaskan hasil cetak spooring kepada pelanggan.",
-    /* Re-keyed with the rewrite of this note. The dictionary matches a whole
-       trimmed text node, so the old key stopped matching the moment the
-       English changed and the paragraph would have stayed English on every
-       switch to ID -- the same way the Citra lead broke when it was split.
-       The Indonesian is the wording that was already here, restructured to
-       follow the new sentence order, not a retranslation. */
-    "On-site courses combine classroom theory and hands-on service-bay training, with materials provided. Training is led by an automotive engineering graduate and BNSP Master Assessor with 33 years of spooring and balancing experience. Participants receive a PT. Hanindo Automotive training certificate, with national competency certification through LSP Global Otomotif available on request.": "Pelatihan di lokasi memadukan teori di kelas dan praktik langsung di service bay, dengan materi disediakan. Pelatihan dipimpin oleh lulusan teknik otomotif dan Master Assessor BNSP dengan 33 tahun pengalaman spooring dan balancing. Peserta menerima sertifikat pelatihan PT. Hanindo Automotive, dengan sertifikasi kompetensi nasional melalui LSP Global Otomotif tersedia atas permintaan.",
+    /* The training note, now a .checks list rather than a paragraph. Ten
+       entries, not five: each item is a bold label and a detail line, which
+       are two text nodes, and this dictionary keys on a whole trimmed node.
+       The detail keys therefore begin with the em dash -- same shape as the
+       tyre-changer model lines further down, and as "— Monday to Friday" on
+       the contact page. Keep the dash in the key or the node stops matching.
+       The Indonesian is the wording from the paragraph this replaced, cut at
+       the same five facts rather than retranslated. */
+    "On-site training": "Pelatihan di lokasi",
+    "— Theory in a meeting room and hands-on practice in a service bay": "— Teori di ruang rapat dan praktik langsung di service bay",
+    "Materials provided": "Materi disediakan",
+    "— All training materials included": "— Seluruh materi pelatihan sudah termasuk",
+    "Experienced trainer": "Instruktur berpengalaman",
+    "— Automotive engineering graduate and BNSP Master Assessor with 33 years of spooring and balancing instruction": "— Lulusan teknik otomotif dan Master Assessor BNSP dengan 33 tahun pengalaman mengajar spooring dan balancing",
+    "Training certificate": "Sertifikat pelatihan",
+    "— PT. Hanindo Automotive certificate issued to every participant": "— Sertifikat PT. Hanindo Automotive diberikan kepada setiap peserta",
+    "National certification": "Sertifikasi nasional",
+    "— LSP Global Otomotif competency certification available on request": "— Sertifikasi kompetensi LSP Global Otomotif tersedia atas permintaan",
     "Ask for a quote": "Minta penawaran",
     "Request a quotation": "Minta penawaran",
 
