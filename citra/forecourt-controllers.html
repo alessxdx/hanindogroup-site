@@ -106,6 +106,40 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
   .prod .brandtag{font-size:.74rem}
   .prod .dspec .tag{font-size:.85rem}
 }
+
+/* ---------- THE VERSION 4 FEATURE GRID ----------
+   Eight .svc cards on the shared sheet's roomy numbers — 34px icon,
+   1.8rem padding, 1.05rem heading — ran 621px on a desktop for what is a
+   feature list, not a section of its own. Taken down to the numbers the
+   Fire Fighting sheet uses for the same class, which is the compact
+   version of this card the group already ships: 26px icon, 1.1rem
+   padding, .87rem heading, .79rem copy. 621px to 395px.
+   Not lifted into site.css and not written as a modifier class, because
+   this is the only Citra page with a .svc-grid on it, and the shared
+   numbers are still right for the Automotive and Flowtech grids that
+   carry two lines a card rather than six. If a second page wants this,
+   that is the point to make it a class.
+   The card keeps its white ground. The Fire Fighting cards sit on
+   --paper, which is what makes that strip read as one band, but this
+   grid sits in a white section and would have needed the section to
+   change with it. */
+.svc{padding:1.1rem .95rem 1.2rem}
+.svc .ic{width:26px;height:26px;margin-bottom:.6rem}
+.svc h3{font-size:.87rem;line-height:1.3;margin-bottom:.3rem}
+.svc p{font-size:.79rem;line-height:1.45}
+/* Two to a row on a phone rather than one, the same pairing the Citra
+   and Automotive product grids now use. Eight full-width cards stood
+   2,146px — three phone screens for the feature list alone. Paired and
+   scaled it is 916px.
+   These cards carry more words than the product cards do, so the type
+   goes down with the column and not only the column. */
+@media(max-width:640px){
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .svc{padding:.85rem .75rem .95rem}
+  .svc .ic{width:22px;height:22px;margin-bottom:.45rem}
+  .svc h3{font-size:.85rem;line-height:1.25;margin-bottom:.25rem}
+  .svc p{font-size:.76rem;line-height:1.4}
+}
 </style>
 </head>
 <body>
