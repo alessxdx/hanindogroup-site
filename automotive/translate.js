@@ -203,16 +203,15 @@
 
        The hero is split for the two-tone heading, and Indonesian puts the
        adjective after the noun, so the halves swap sense: "Featured"
-       carries Proyek and the coloured half carries unggulan. The coloured
-       half is lowercase with the full stop the automotive h1s all end on,
-       which is also what keeps it a separate key from the bare "Projects"
-       of the nav and breadcrumb — this dictionary has no data-t, so the
-       key IS the visible text. Do not retitle it to "Projects." without
-       checking that collision.
+       carries Proyek and the coloured half carries Unggulan. The coloured
+       half is tagged data-t="Projects (hero)" because a bare "Projects" is
+       also the nav and breadcrumb label, which has to stay Proyek on its
+       own — the same collision, and the same fix, as the Fire Fighting
+       hero. Untag it and the heading reads "Proyek Proyek".
        The section head is one node, not a split, for the same word-order
        reason: two halves would translate in the English order. */
     "Featured": "Proyek",
-    "projects.": "unggulan.",
+    "Projects (hero)": "Unggulan",
     "Supplied, installed and commissioned across Indonesia.": "Dipasok, dipasang, dan dioperasikan di seluruh Indonesia.",
     "Track record": "Rekam jejak",
     "Featured projects": "Proyek unggulan",
@@ -735,8 +734,18 @@
     while ((n = w.nextNode())) {
       if (!translatable(n)) continue;
       var raw = n.nodeValue, key = raw.trim();
+      /* data-t lets an element name its own dictionary entry. Needed when
+         the same English word wants two different Indonesian ones on the
+         same page -- see "Projects (hero)". Everything else matches on the
+         visible text, which is still the normal way to add a phrase.
+         Ported from the Fire Fighting dictionary, which needed it first. */
+      var p = n.parentNode, forced = p && p.getAttribute && p.getAttribute('data-t');
+      if (forced) key = forced;
       if (key && Object.prototype.hasOwnProperty.call(DICT, key)) {
-        store.push({ node: n, en: raw, alt: raw.replace(key, DICT[key]) });
+        /* replace the trimmed TEXT, not the key: with data-t the two are
+           different strings, and replacing the key would find nothing in
+           the node and leave it in English. */
+        store.push({ node: n, en: raw, alt: raw.replace(raw.trim(), DICT[key]) });
       }
     }
   }
