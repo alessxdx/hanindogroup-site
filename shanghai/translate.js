@@ -110,7 +110,7 @@
     "South East Asia expansion": "东南亚拓展",
     "PT. Hanindo Automation Solutions adds CUSTOM Hanindo Indonesia.": "PT. Hanindo Automation Solutions 引入 CUSTOM Hanindo 印尼业务。",
     "Singapore office": "新加坡办公室",
-    "Gralessando Pte Ltd opens, covering CUSTOM Hanindo South East Asia.": "Gralessando Pte Ltd 成立，覆盖 CUSTOM Hanindo 东南亚市场。",
+    "Gralessando (S) Pte. Ltd. opens, covering CUSTOM Hanindo South East Asia.": "Gralessando (S) Pte. Ltd. 成立，覆盖 CUSTOM Hanindo 东南亚市场。",
     "Regional partnerships": "区域合作",
     "CUSTOM Hanindo partnerships established in Vietnam, Thailand and the Philippines.": "在越南、泰国与菲律宾建立 CUSTOM Hanindo 合作关系。",
     "Manila office": "马尼拉办公室",

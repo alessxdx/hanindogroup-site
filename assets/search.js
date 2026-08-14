@@ -75,7 +75,7 @@
        registered in China as Hanindo (Shanghai) International Co., Ltd.
        'Hanindo Group' above is the group rather than a registered entity,
        so it takes no prefix either. */
-    'printer-pos':          'Gralessando Pte Ltd',
+    'printer-pos':          'Gralessando (S) Pte. Ltd.',
     'shanghai':             'Hanindo Shanghai'
   };
 

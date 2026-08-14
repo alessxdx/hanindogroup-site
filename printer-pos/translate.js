@@ -1,5 +1,5 @@
 /* =====================================================================
-   Gralessando Pte Ltd — EN / Bahasa Indonesia toggle
+   Gralessando (S) Pte. Ltd. — EN / Bahasa Indonesia toggle
    ---------------------------------------------------------------------
    Same mechanism as the other company sites: on load it walks the
    visible text and, where a phrase matches an entry below, swaps
@@ -57,7 +57,7 @@
     "Other markets": "Pasar lainnya",
 
     /* ---- home ---- */
-    "Gralessando Pte Ltd supplies the printing, scanning and point-of-sale hardware and software behind retail and hospitality automation.": "Gralessando Pte Ltd memasok perangkat keras dan perangkat lunak pencetakan, pemindaian, dan point-of-sale yang menjadi tulang punggung otomasi ritel dan perhotelan.",
+    "Gralessando (S) Pte. Ltd. supplies the printing, scanning and point-of-sale hardware and software behind retail and hospitality automation.": "Gralessando (S) Pte. Ltd. memasok perangkat keras dan perangkat lunak pencetakan, pemindaian, dan point-of-sale yang menjadi tulang punggung otomasi ritel dan perhotelan.",
     "Printing, scanning, and point of sale.": "Pencetakan, pemindaian, dan point of sale.",
     "Professional printing": "Pencetakan profesional",
     "POS, receipt, fiscal, ticket, label and mobile printers.": "Printer POS, struk, fiskal, tiket, label, dan mobile.",
@@ -102,13 +102,13 @@
        as three text nodes. The link text itself is China and Indonesia, both
        of which already have entries further down for the contact page — so
        the anchors translate without anything new here. */
-    "Gralessando (S) Pte Ltd was established in Singapore in 2014 as the third stage of CUSTOM Hanindo’s regional expansion. After establishing its presence in": "Gralessando (S) Pte Ltd didirikan di Singapura pada tahun 2014 sebagai tahap ketiga ekspansi regional CUSTOM Hanindo. Setelah membangun kehadirannya di",
+    "Gralessando (S) Pte. Ltd. was established in Singapore in 2014 as the third stage of CUSTOM Hanindo’s regional expansion. After establishing its presence in": "Gralessando (S) Pte. Ltd. didirikan di Singapura pada tahun 2014 sebagai tahap ketiga ekspansi regional CUSTOM Hanindo. Setelah membangun kehadirannya di",
     "in 2007 and expanding into": "pada tahun 2007 dan berkembang ke",
     "in 2012, Singapore was selected as the hub for CUSTOM Hanindo’s operations across Southeast Asia.": "pada tahun 2012, Singapura dipilih sebagai pusat operasi CUSTOM Hanindo di seluruh Asia Tenggara.",
     "Since 2016, Gralessando has expanded through appointed partners across the region. Today, Singapore, Malaysia, Vietnam, Brunei, Cambodia, Laos and Myanmar are supported directly by the Singapore office, Thailand is supported through its local partner, and the Philippines is served through a CUSTOM Hanindo office established in Manila in 2023.": "Sejak 2016, Gralessando berkembang melalui mitra-mitra yang ditunjuk di seluruh kawasan. Kini Singapura, Malaysia, Vietnam, Brunei, Kamboja, Laos, dan Myanmar didukung langsung oleh kantor Singapura, Thailand didukung melalui mitra lokalnya, dan Filipina dilayani melalui kantor CUSTOM Hanindo yang didirikan di Manila pada tahun 2023.",
     "The Singapore office": "Kantor Singapura",
     "Part of the Hanindo Group, supporting retail, transport and service operators across Southeast Asia.": "Bagian dari Hanindo Group, mendukung operator ritel, transportasi, dan jasa di seluruh Asia Tenggara.",
-    "Gralessando Pte Ltd is incorporated in Singapore and is represented as CUSTOM (South East Asia). The Indonesian market is served by PT. Hanindo Automation Solutions, while the China market is served by Hanindo Shanghai.": "Gralessando Pte Ltd berbadan hukum di Singapura dan diwakili sebagai CUSTOM (Asia Tenggara). Pasar Indonesia dilayani oleh PT. Hanindo Automation Solutions, sedangkan pasar Tiongkok dilayani oleh Hanindo Shanghai.",
+    "Gralessando (S) Pte. Ltd. is incorporated in Singapore and is represented as CUSTOM (South East Asia). The Indonesian market is served by PT. Hanindo Automation Solutions, while the China market is served by Hanindo Shanghai.": "Gralessando (S) Pte. Ltd. berbadan hukum di Singapura dan diwakili sebagai CUSTOM (Asia Tenggara). Pasar Indonesia dilayani oleh PT. Hanindo Automation Solutions, sedangkan pasar Tiongkok dilayani oleh Hanindo Shanghai.",
 
     /* ---- about: timeline ---- */
     "Our journey": "Perjalanan kami",
@@ -122,7 +122,7 @@
     "South East Asia expansion": "Ekspansi Asia Tenggara",
     "PT. Hanindo Automation Solutions adds CUSTOM Hanindo Indonesia.": "PT. Hanindo Automation Solutions menghadirkan CUSTOM Hanindo Indonesia.",
     "Singapore office": "Kantor Singapura",
-    "Gralessando Pte Ltd opens, covering CUSTOM Hanindo South East Asia.": "Gralessando Pte Ltd dibuka, mencakup CUSTOM Hanindo Asia Tenggara.",
+    "Gralessando (S) Pte. Ltd. opens, covering CUSTOM Hanindo South East Asia.": "Gralessando (S) Pte. Ltd. dibuka, mencakup CUSTOM Hanindo Asia Tenggara.",
     "Regional partnerships": "Kemitraan regional",
     "CUSTOM Hanindo partnerships established in Vietnam, Thailand and the Philippines.": "Kemitraan CUSTOM Hanindo dijalin di Vietnam, Thailand, dan Filipina.",
     "Manila office": "Kantor Manila",
@@ -180,8 +180,8 @@
     "Deployments we have delivered.": "Penerapan yang telah kami kerjakan.",
     "Retail chains, hospitality groups and entertainment venues.": "Jaringan ritel, grup perhotelan, dan tempat hiburan.",
     "Content needed": "Perlu konten",
-    "Add Gralessando Pte Ltd project references here": "Tambahkan referensi proyek Gralessando Pte Ltd di sini",
-    "This page is built and linked, but no project references have been supplied for Gralessando Pte Ltd yet. Add each project as a card — client, location, scope and a photo — following the pattern used on the Fire Fighting projects page.": "Halaman ini sudah dibuat dan tertaut, tetapi belum ada referensi proyek yang disediakan untuk Gralessando Pte Ltd. Tambahkan setiap proyek sebagai kartu — klien, lokasi, lingkup pekerjaan, dan foto — mengikuti pola yang dipakai pada halaman proyek Pemadam Kebakaran.",
+    "Add Gralessando (S) Pte. Ltd. project references here": "Tambahkan referensi proyek Gralessando (S) Pte. Ltd. di sini",
+    "This page is built and linked, but no project references have been supplied for Gralessando (S) Pte. Ltd. yet. Add each project as a card — client, location, scope and a photo — following the pattern used on the Fire Fighting projects page.": "Halaman ini sudah dibuat dan tertaut, tetapi belum ada referensi proyek yang disediakan untuk Gralessando (S) Pte. Ltd. Tambahkan setiap proyek sebagai kartu — klien, lokasi, lingkup pekerjaan, dan foto — mengikuti pola yang dipakai pada halaman proyek Pemadam Kebakaran.",
     "See the pattern": "Lihat polanya",
 
     /* ---- contact ---- */
@@ -189,7 +189,7 @@
     "your project.": "proyek Anda.",
     "Tell us what you are running or building, and we will put the right person on it.": "Beri tahu kami apa yang sedang Anda jalankan atau bangun, dan kami akan menugaskan orang yang tepat.",
     "How to reach us.": "Cara menghubungi kami.",
-    "For printer and POS supply, integration, consumables or service, reach the Singapore office of Gralessando Pte Ltd.": "Untuk pengadaan, integrasi, bahan habis pakai, atau servis printer dan POS, hubungi kantor Singapura Gralessando Pte Ltd.",
+    "For printer and POS supply, integration, consumables or service, reach the Singapore office of Gralessando (S) Pte. Ltd.": "Untuk pengadaan, integrasi, bahan habis pakai, atau servis printer dan POS, hubungi kantor Singapura Gralessando (S) Pte. Ltd.",
     "Telephone": "Telepon",
     "Office hours": "Jam operasional",
     "— Monday to Friday, 09.00 – 17.30 SGT": "— Senin sampai Jumat, 09.00 – 17.30 SGT",

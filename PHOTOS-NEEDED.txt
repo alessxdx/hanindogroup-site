@@ -176,7 +176,7 @@ text lockup automatically. Wide lockup format, ~640px wide (shown at
 logo-citra.png            Hanindo Citra                   [COMPLETE]
 logo-automotive.png       Hanindo Automotive              [COMPLETE]
 logo-automation.png       Hanindo Automation Solutions    [COMPLETE]
-logo-gralessando.png      Gralessando (S) Pte Ltd         [COMPLETE]
+logo-gralessando.png      Gralessando (S) Pte. Ltd.         [COMPLETE]
                           706x270. Carried by the eight Gralessando
                           pages.
 logo-shanghai.png         Hanindo Shanghai                [COMPLETE]

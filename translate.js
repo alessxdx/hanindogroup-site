@@ -24,7 +24,7 @@
    substring.
 
    Deliberately NOT translated: company and brand names (PT. Hanindo Citra,
-   Flowtech Engineering, Gralessando Pte Ltd, Custom, Gilbarco
+   Flowtech Engineering, Gralessando (S) Pte. Ltd., Custom, Gilbarco
    Veeder-Root and the rest of the principals), the street address,
    which is needed in its postal form, and the phone and email.
 
@@ -148,7 +148,7 @@
     "South East Asia expansion": "Ekspansi Asia Tenggara",
     "PT. Hanindo Automation Solutions adds CUSTOM Hanindo Indonesia.": "PT. Hanindo Automation Solutions menghadirkan CUSTOM Hanindo Indonesia.",
     "Singapore office": "Kantor Singapura",
-    "Gralessando Pte Ltd opens, covering CUSTOM Hanindo South East Asia.": "Gralessando Pte Ltd dibuka, mencakup CUSTOM Hanindo Asia Tenggara.",
+    "Gralessando (S) Pte. Ltd. opens, covering CUSTOM Hanindo South East Asia.": "Gralessando (S) Pte. Ltd. dibuka, mencakup CUSTOM Hanindo Asia Tenggara.",
     "Regional partnerships": "Kemitraan regional",
     "CUSTOM Hanindo partnerships established in Vietnam, Thailand and the Philippines.": "Kemitraan CUSTOM Hanindo dijalin di Vietnam, Thailand, dan Filipina.",
     "Manila office": "Kantor Manila",
