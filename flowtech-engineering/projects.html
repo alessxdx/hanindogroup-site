@@ -61,6 +61,17 @@
   .pbody p,.section.compact .pbody p{font-size:.72rem;line-height:1.35}
   .taglist{gap:.25rem;margin-top:.4rem}
   .tag,.taglist .tag{font-size:.6rem;padding:.16rem .36rem}
+
+  /* "Also delivered" came out of that scaling the wrong way round: the
+     project titles above it drop to .82rem on a phone while these station
+     names keep site.css's .95rem, so the footnote read larger than the
+     nine projects it is a footnote to, and two of the four names still
+     broke to three lines in a 163px cell. Sized just under the titles
+     above, with the cell padding brought in to match. Same page-local
+     scope as the .secname weight above -- three other sites run this
+     grid at full size. */
+  .secgrid.tight .secname{font-size:.78rem;line-height:1.3}
+  .secgrid.tight .seccell{padding:.6rem .7rem}
 }
 </style>
 </head>
