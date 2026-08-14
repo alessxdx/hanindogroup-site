@@ -76,12 +76,11 @@
     "Tyre, lubricant & service": "Ban, pelumas & servis",
     "Fleet, distribution & heavy equipment": "Armada, distribusi & alat berat",
     "Energy & industry": "Energi & industri",
-    "Talk to PT. Hanindo Automotive": "Hubungi PT. Hanindo Automotive",
-    "Fitting out a workshop,": "Melengkapi bengkel,",
-    "or replacing a bay?": "atau mengganti isi satu bay?",
-    "Tell us the bays you run and our team will specify the lifts, diagnostics and tyre equipment to match.": "Beri tahu kami bay yang Anda operasikan dan tim kami akan menentukan lift, alat diagnostik, dan peralatan ban yang sesuai.",
+    /* The dark contact band is gone from every Automotive page that had it,
+       so its copy is gone from here too — the eyebrow, the two heading
+       halves and the sub line. "Email our team" stays: the contact page
+       still uses it. */
     "Email our team": "Email tim kami",
-    "Contact page": "Halaman kontak",
     "Head Office": "Kantor Pusat",
     "Head office": "Kantor pusat",
     "Phone": "Telepon",
@@ -352,9 +351,6 @@
     "Depot inflation and axle load indicators": "Pengisian angin depo dan indikator beban gandar",
     "OEM & Vending": "OEM & Vending",
     "Inflation kits, vending units and nitrogen analysers": "Kit pengisian angin, unit vending, dan penganalisis nitrogen",
-    "How many bays,": "Berapa bay,",
-    "and how big are the tyres?": "dan sebesar apa bannya?",
-    "Tell us where the inflator has to sit and what it has to fill — a changer in one bay, a row of them, a forecourt or a mine workshop — and we will specify the model, supply it and install it.": "Beri tahu kami di mana pengisi angin akan dipasang dan apa yang harus diisi — satu tyre changer di satu bay, sederet bay, SPBU, atau bengkel tambang — dan kami akan menentukan modelnya, memasoknya, dan memasangnya.",
 
     /* ---- lifts, service, welding, raasm, tyre-service: headings ---- */
     "Scissor, two-post and four-post lifts from 3.5 to 4 tonnes.": "Scissor lift, lift dua tiang, dan lift empat tiang dari 3,5 hingga 4 ton.",
@@ -405,7 +401,6 @@
     "Fluid Level & Control": "Level & Kontrol Fluida",
     "Centralised Lubrication": "Pelumasan Terpusat",
     "Lube Trucks & Transport": "Truk Pelumas & Transportasi",
-    "Moving a fluid,": "Memindahkan fluida,",
     "What RAASM builds.": "Yang dibuat RAASM.",
     "Eleven industries, one catalogue.": "Sebelas industri, satu katalog.",
     "Manufacturing": "Manufaktur",
@@ -644,8 +639,6 @@
     "Machinery servicing and on-farm fuel handling": "Servis mesin dan penanganan bahan bakar di lahan pertanian",
     "Plant maintenance on and off site": "Pemeliharaan pabrik di dalam maupun luar lokasi",
     "Pressure washing and detergent distribution": "Pencucian bertekanan dan distribusi deterjen",
-    "wherever you are moving it.": "ke mana pun Anda memindahkannya.",
-    "Tell us the fluid, the distance and the duty — a single reel over a service bay, or a lubrication system across a plant — and our engineers will specify the RAASM equipment for it, supply it and commission it.": "Beri tahu kami jenis fluidanya, jaraknya, dan bebannya — satu reel di atas service bay, atau sistem pelumasan untuk seluruh pabrik — dan insinyur kami akan menentukan peralatan RAASM yang sesuai, memasoknya, dan mengoperasikannya.",
 
     /* ---- catalogue prose: service equipment ---- */
     "Fluid exchange, brake, air-conditioning, carbon cleaning and diagnostics.": "Penggantian fluida, rem, penyejuk udara, pembersihan karbon, dan diagnostik.",
