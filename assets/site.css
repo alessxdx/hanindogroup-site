@@ -1601,9 +1601,13 @@ a[href^="tel:"]:hover,a[href^="tel:"]:focus-visible{text-decoration:underline}
      41 pages carry a .pagehero .intro and most of them earn their place,
      so this is applied by hand to the ones where the heading already says
      it and the paragraph is only pushing the page's first real content
-     further down a screen that has none to spare. Currently the Partners,
-     Career and Contact Us heroes. Desktop is untouched by definition —
-     the rule does not exist above 640px. --- */
+     further down a screen that has none to spare. Grep the class to see
+     where it landed — the list used to be named here and went stale twice.
+     The company sites take it on their four top-level pages and leave the
+     product sub-pages alone, since "Scissor, two-post and four-post lifts
+     from 3.5 to 4 tonnes" under a heading reading Lifts is the spec, not a
+     restatement. Desktop is untouched by definition — the rule does not
+     exist above 640px. --- */
   .hide-sm{display:none}
 
   /* --- supporting copy: the body of every card and panel --- */
