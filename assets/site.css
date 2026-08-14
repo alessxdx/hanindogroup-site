@@ -1548,6 +1548,16 @@ a.pcard:hover .more svg{transform:translateX(3px)}
 @media(max-width:640px){
   .catnav:not(.sectorfilter){gap:2px;justify-content:center}
   .catnav:not(.sectorfilter) a{flex:0 1 auto;font-size:.82rem;padding:.45rem .7rem}
+  /* One weight for every cell, current or not. Bold is wider — the same
+     label measures 206px as the current tab and 201px as a sibling — and
+     with cells sized to their own text that difference moves every tab on
+     the row, so the bar visibly shifted under the reader's thumb each time
+     they changed category. Nothing marks the current tab by width now; the
+     white cell and the darker ink do it, which is what they were for.
+     Phones only: on a desktop the bar is one row that hugs its content, so
+     the same few pixels change the width of the box and move nothing. */
+  .catnav:not(.sectorfilter) a,
+  .catnav:not(.sectorfilter) a.on{font-weight:600}
 }
 
 /* --- pills (filter in place) --- */
