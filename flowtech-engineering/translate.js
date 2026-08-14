@@ -18,6 +18,12 @@
    in the company-detail list each need two entries: the bold lead-in
    and the sentence that follows it.
 
+   Where a split like that does NOT translate in the English order, the
+   dictionary cannot do the job — Indonesian reverses "Featured
+   Projects" into "Proyek Unggulan". Those halves carry their own
+   Indonesian in a data-bahasa attribute instead of appearing below; see
+   collectScoped() at the foot of this file.
+
    Shared wording — the navigation and the footer — is carried over
    verbatim from the group and PT. Hanindo Automotive dictionaries
    rather than translated afresh, so the same English reads the same way
@@ -164,16 +170,15 @@
        Indonesian word, and the rest are proper nouns and figures. */
     /* The section head follows the Fire Fighting projects page, which
        also repeats its hero here -- "Track record" over "Featured
-       projects". Sentence case, so it is a separate entry from the hero's
-       "Featured Projects" above; the walker matches the whole node, case
-       included. */
+       projects". Sentence case, and one text node, so it stays an
+       ordinary entry; the walker matches the whole node, case included. */
     "Track record": "Rekam jejak",
     "Featured projects": "Proyek unggulan",
-    /* One node, not the .fx split the hero used to run. Indonesian puts
-       the adjective after the noun -- "Proyek Unggulan" -- so a split
-       heading would have translated to the two halves in the English
-       order. */
-    "Featured Projects": "Proyek Unggulan",
+    /* The hero's title-case "Featured Projects" is NOT here. It went back
+       to the .fx split when the second word was asked for in sky blue,
+       and its two halves carry their own Indonesian on the h1 and the
+       span -- see collectScoped() below. Adding it back here would do
+       nothing: the walker never sees that heading as one node. */
     "Fuel station projects delivered for Pertamina, Total Oil Indonesia, Shell, Petronas and Chevron, from permit through to a station in operation.": "Proyek SPBU yang diselesaikan untuk Pertamina, Total Oil Indonesia, Shell, Petronas, dan Chevron, dari perizinan hingga SPBU beroperasi.",
     "Further references": "Referensi lainnya",
     "Also delivered.": "Juga diselesaikan.",
@@ -273,13 +278,43 @@
     return true;
   }
 
+  /* Element-scoped translations, read off a data-bahasa attribute rather
+     than the dictionary above.
+     One heading needs this. The Projects hero is "Featured Projects" with
+     the second word in sky blue, which means an .fx span, which means two
+     text nodes -- and Indonesian puts the noun first, "Proyek Unggulan",
+     so the second English word has to become the FIRST Indonesian one.
+     DICT is keyed on the text alone, and "Projects" is also the nav tab,
+     the breadcrumb and a footer link on that same page, all of which must
+     stay "Proyek". One key cannot be both. So each half of the heading
+     carries its own Indonesian on itself.
+     Nodes claimed here are skipped by the walker below, so a word inside
+     a data-bahasa element never picks up a DICT entry by accident. Only
+     the element's own leading text is taken, not its descendants' -- that
+     is what lets the h1 and the span inside it each hold one word.
+     Do not name this attribute anything ending in "alt":
+     tools/build-search-index.pl scrapes image alt text with /\balt="..."/
+     and would index the Indonesian as English page copy. */
+  function collectScoped(scoped) {
+    each(document.querySelectorAll('[data-bahasa]'), function (el) {
+      var n = el.firstChild;
+      if (!n || n.nodeType !== 3 || !translatable(n)) return;
+      var raw = n.nodeValue, key = raw.trim();
+      if (!key) return;
+      scoped.push(n);
+      store.push({ node: n, en: raw, alt: raw.replace(key, el.getAttribute('data-bahasa')) });
+    });
+  }
+
   function collect() {
     store = [];
     if (!document.body || !document.createTreeWalker) return;
+    var scoped = [];
+    collectScoped(scoped);
     var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null);
     var n;
     while ((n = w.nextNode())) {
-      if (!translatable(n)) continue;
+      if (!translatable(n) || scoped.indexOf(n) !== -1) continue;
       var raw = n.nodeValue, key = raw.trim();
       if (key && Object.prototype.hasOwnProperty.call(DICT, key)) {
         store.push({ node: n, en: raw, alt: raw.replace(key, DICT[key]) });
