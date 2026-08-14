@@ -1,5 +1,6 @@
 /* =====================================================================
-   Hanindo (Shanghai) International Co., Ltd. — EN / 简体中文 language toggle  (plain JS, no deps)
+   Hanindo (Shanghai) International Co., Ltd.
+   EN / 简体中文 language toggle  (plain JS, no deps)
    ---------------------------------------------------------------------
    Same mechanism as fire-fighting/translate.js: on load it walks the
    visible text and, where a phrase matches an entry below, swaps
