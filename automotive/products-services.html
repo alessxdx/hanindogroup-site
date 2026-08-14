@@ -56,6 +56,49 @@
 .svc-3 .svc h3{font-size:.98rem;margin-bottom:.3rem}
 .svc-3 .svc p{font-size:.86rem;line-height:1.5}
 
+/* Two to a row on a phone, both grids, the same treatment the PT. Hanindo
+   Citra products page carries and for the same reason. site.css takes
+   .pgrid to a single column below 520px and .svc-grid below 560px, which
+   ran six product cards to 2,195px and three service cards to 475px —
+   a 180px photo and four lines of copy at a time.
+
+   The type and the photo box come down with the column, or pairing makes
+   the block TALLER rather than shorter: the photo goes 180px to 110px and
+   the copy 15.2px to 11.8px. Same numbers as Citra's, so the two product
+   pages read alike on a phone.
+
+   Both grids span a lone last card across the full width — six products
+   divide evenly today but three services do not, and written as
+   :last-child:nth-child(odd) the rule fires only on an odd count, so it
+   stays correct when a card is added to either.
+
+   Page-local, not site.css: .pgrid is on ten pages across the group with
+   between four and ten cards each, and only Citra and Automotive have
+   been asked for. The Citra copy of this block says the same — lift both
+   into the shared sheet when a third product page follows. */
+@media(max-width:640px){
+  .pgrid{grid-template-columns:1fr 1fr;gap:.6rem}
+  .pgrid .pcard:last-child:nth-child(odd){grid-column:1/-1}
+  .pcard .pbox{height:110px}
+  .pbody{padding:.8rem .7rem .9rem}
+  .pbody h4{font-size:.86rem;line-height:1.25}
+  .pbody p,.section.compact .pbody p{font-size:.74rem;line-height:1.4}
+  /* The link row needs to come down further than the copy does. site.css
+     leaves it at .9rem on phones, which is fine full width but wraps
+     "View tyre service equipment" onto THREE lines in a 163px card — a
+     link label taller than the paragraph above it. At .7rem it is one
+     line, two at the longest. (The Citra grid has the same wrap, unfixed;
+     see the note there.) */
+  .pcard .more{padding-top:.55rem;font-size:.7rem;gap:.3rem}
+  .pcard .more svg{width:13px;height:13px}
+  .svc-3{grid-template-columns:1fr 1fr;margin-top:1.2rem}
+  .svc-3 .svc:last-child:nth-child(odd){grid-column:1/-1}
+  .svc-3 .svc{padding:.95rem .9rem}
+  .svc-3 .svc .ic{width:22px;height:22px;margin-bottom:.5rem}
+  .svc-3 .svc h3{font-size:.85rem;margin-bottom:.25rem;line-height:1.25}
+  .svc-3 .svc p{font-size:.76rem;line-height:1.45}
+}
+
 /* The two training courses. Same flat card as the rest of the page —
    hairline border, no fill — so they read as detail hanging off the
    Technical Training card above rather than a third card tier. */
