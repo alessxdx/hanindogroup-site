@@ -44,6 +44,36 @@
 @media(min-width:861px){.pgrid-4{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:1101px){.pgrid-4{grid-template-columns:repeat(4,1fr)}}
 .inds{margin-top:1.8rem}
+
+/* Two products to a row on a phone, and the Industries served labels
+   sized to the page around them. Both are phone-only; the desktop
+   catalogue above is untouched.
+   site.css takes .pgrid to a single column below 520px, which ran these
+   four cards to 1,440px -- a 180px photo and a line of copy each, scrolled
+   past one at a time. The photo box and the type come down with the
+   column, or pairing makes the block taller rather than shorter. Same
+   values as the Citra products page, whose own comment invited the other
+   product pages to follow; still page-local rather than lifted into
+   site.css, because .pgrid is on ten pages carrying between four and ten
+   cards and only these two were asked for.
+   Four cards divide evenly, so nothing is stranded today.
+   :last-child:nth-child(odd) is carried over from Citra all the same, so
+   a fifth category does not leave a half-width card beside a gap.
+   Industries served is the same .secgrid.tight the Flowtech projects page
+   carries, at the same .78rem: eleven labels two-up at site.css's .95rem
+   were the largest type in the section, and the longest -- "Self-Payment
+   & Info Kiosk", "Lotteries & Betting" -- ran to three lines in a 163px
+   cell. */
+@media(max-width:640px){
+  .pgrid{grid-template-columns:1fr 1fr;gap:.6rem}
+  .pgrid .pcard:last-child:nth-child(odd){grid-column:1/-1}
+  .pcard .pbox{height:110px}
+  .pbody{padding:.8rem .7rem .9rem}
+  .pbody h4{font-size:.86rem;line-height:1.25}
+  .pbody p,.section.compact .pbody p{font-size:.74rem;line-height:1.4}
+  .secgrid.tight .secname{font-size:.78rem;line-height:1.3}
+  .secgrid.tight .seccell{padding:.6rem .7rem}
+}
 </style>
 </head>
 <body>
