@@ -1448,17 +1448,28 @@ a.pcard:hover .more svg{transform:translateX(3px)}
 /* ---------- CATEGORY NAV ---------- */
 /* The row under a catalogue or brand banner: jump to a sibling category,
    the current one marked. Two forms, and they are not interchangeable —
-   the anchors navigate, so they read as tabs; the Airtec range filter is
-   a button that changes what is already on screen, so it keeps the pill.
-   A filter that looks like a link promises a page it does not deliver.
+   the anchors navigate; the Airtec range filter is a button that changes
+   what is already on screen. A filter that looks like a link promises a
+   page it does not deliver, so the two must not converge. Everything
+   below that draws the tab box is written :not(.sectorfilter) to hold
+   that line — the filter keeps its own separate pills.
 
-   The tab underline grows from the centre out rather than fading in,
-   which is the treatment on raasm.com's own menu: a 2px bar going from
-   no width at the midpoint to full width, over .3s.
+   The tabs used to be bare text with a 2px bar under the current one,
+   growing from the centre out, and nothing at all under the others until
+   the pointer arrived. That works on a desktop and fails on a phone:
+   there is no hover on touch, so five of the six tabs were plain text
+   with no sign they were anything else. The row is a control, so it is
+   drawn as one — a hairline box with the current tab knocked out in
+   white, which reads as a control at rest, without a pointer, and is
+   still visibly a different object from the filter's separate pills.
+   The centre-out underline goes with it; the white cell is the marker
+   now.
 
    These rules lived in five separate page <style> blocks and the copies
    drifted apart, so they are kept here only. */
 .catnav{display:flex;flex-wrap:wrap;gap:1.7rem;margin-bottom:2rem}
+.catnav:not(.sectorfilter){gap:0;padding:3px;border:1px solid var(--line);
+  border-radius:var(--r);background:var(--paper)}
 
 /* --- tabs (navigate) --- */
 /* A link may carry both a full and a short label. The Hanindo Citra product
@@ -1470,17 +1481,38 @@ a.pcard:hover .more svg{transform:translateX(3px)}
 @media(max-width:640px){.catnav .lg{display:none}.catnav .sm{display:inline}}
 .catnav a{position:relative;font-family:inherit;font-size:.9rem;font-weight:600;
   padding:.25rem 0;color:var(--muted);background:transparent;transition:color .3s ease-in-out}
-.catnav a::after{content:'';display:block;position:absolute;bottom:-4px;left:50%;
-  width:0;height:2px;background:var(--brand);transition:.3s all ease-in-out}
 .catnav a:hover{color:var(--blue-900)}
-.catnav a:hover::after{width:100%;left:0}
 .catnav a.on{color:var(--blue-900);font-weight:700}
-.catnav a.on::after{width:100%;left:0}
 .catnav a:focus-visible{outline:2px solid var(--brand);outline-offset:3px}
-/* The bar is the only thing marking the current tab, so it must not be
-   the only thing that moves for someone who has asked motion to stop. */
+/* Each tab is a cell in the box. The current one is the white cell — the
+   only lit surface in a grey strip, which is what marks it now that the
+   underline is gone. Hover lifts a cell part of the way there rather than
+   all of it, so hovering never looks like selecting. */
+/* var(--r) is 3px on this site, not the 8-ish a "rounded cell" assumes —
+   so the cell takes the token straight. calc(var(--r) - 2px) was 1px here,
+   which is a square with the corners shaved and reads as a rendering
+   error rather than as a cell. */
+.catnav:not(.sectorfilter) a{padding:.55rem .9rem;
+  border-radius:var(--r);transition:background .18s,color .18s}
+.catnav:not(.sectorfilter) a:hover{background:rgba(255,255,255,.62)}
+.catnav:not(.sectorfilter) a.on{background:var(--white);
+  box-shadow:0 1px 2px rgba(13,36,56,.10)}
+.catnav:not(.sectorfilter) a:focus-visible{outline-offset:0}
+/* The white cell is the only thing marking the current tab, so it must not
+   be the only thing that moves for someone who has asked motion to stop. */
 @media(prefers-reduced-motion:reduce){
-  .catnav a,.catnav a::after{transition:none}
+  .catnav a,.catnav:not(.sectorfilter) a{transition:none}
+}
+/* A box that wraps to four ragged rows stops reading as one control. On a
+   phone the cells go to a two-column grid instead, so the wrapping is the
+   grid's and looks deliberate; an odd last tab takes the full width rather
+   than sitting beside a gap. Everything stays visible — a tab row is
+   navigation, and a horizontal scroller here would hide three of the five
+   destinations behind a swipe. */
+@media(max-width:640px){
+  .catnav:not(.sectorfilter){display:grid;grid-template-columns:1fr 1fr;gap:2px}
+  .catnav:not(.sectorfilter) a{text-align:center}
+  .catnav:not(.sectorfilter) a:last-child:nth-child(odd){grid-column:1/-1}
 }
 
 /* --- pills (filter in place) --- */
