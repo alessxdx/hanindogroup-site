@@ -1503,16 +1503,25 @@ a.pcard:hover .more svg{transform:translateX(3px)}
 @media(prefers-reduced-motion:reduce){
   .catnav a,.catnav:not(.sectorfilter) a{transition:none}
 }
-/* A box that wraps to four ragged rows stops reading as one control. On a
-   phone the cells go to a two-column grid instead, so the wrapping is the
-   grid's and looks deliberate; an odd last tab takes the full width rather
-   than sitting beside a gap. Everything stays visible — a tab row is
-   navigation, and a horizontal scroller here would hide three of the five
-   destinations behind a swipe. */
+/* A box that wraps to ragged rows stops reading as one control, so on a
+   phone the cells lay themselves out in rows that fill the width. Each
+   cell takes the width of its own label and grows to share out what is
+   left of the row, so a row is always full and never ends in a gap.
+   Everything stays visible — a tab row is navigation, and a horizontal
+   scroller here would hide three of the five destinations behind a swipe.
+
+   flex, not a two-column grid, and the difference is the whole point. A
+   fixed 161px column is narrower than "Automatic Tank Gauging" sets at
+   .9rem, so that label wrapped to two lines, and a grid row is as tall as
+   its tallest cell — which left "Flow Meters" beside it in a 65px cell
+   with 24px of empty space under a single line of text. Sized to their
+   own content instead, every cell on the row is one line and 41px, and
+   the box has no dead space in it. The Automotive bars never showed this:
+   their labels are short enough to fit the column. */
 @media(max-width:640px){
-  .catnav:not(.sectorfilter){display:grid;grid-template-columns:1fr 1fr;gap:2px}
-  .catnav:not(.sectorfilter) a{text-align:center}
-  .catnav:not(.sectorfilter) a:last-child:nth-child(odd){grid-column:1/-1}
+  .catnav:not(.sectorfilter){display:flex;flex-wrap:wrap;gap:2px}
+  .catnav:not(.sectorfilter) a{flex:1 1 auto;text-align:center;
+    display:flex;align-items:center;justify-content:center}
 }
 
 /* --- pills (filter in place) --- */
