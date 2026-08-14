@@ -59,7 +59,7 @@ Put a new photo in the folder for the site that uses it:
 
   photos/group/hero/          homepage and group-page heroes
   photos/group/divisions/     the division cards on the homepage
-  photos/group/shanghai/      Hanindo Shanghai page
+  photos/group/shanghai/      Hanindo (Shanghai) International Co., Ltd. page
 
   photos/automotive/hero/     Hanindo Automotive banners
   photos/automotive/brands/   ATOM and WELDANN brand shots
@@ -179,7 +179,7 @@ logo-automation.png       Hanindo Automation Solutions    [COMPLETE]
 logo-gralessando.png      Gralessando (S) Pte. Ltd.         [COMPLETE]
                           706x270. Carried by the eight Gralessando
                           pages.
-logo-shanghai.png         Hanindo Shanghai                [COMPLETE]
+logo-shanghai.png         Hanindo (Shanghai) International Co., Ltd.                [COMPLETE]
 logo-flowtech.png         Flowtech Engineering            [COMPLETE]
                           Lifted out of the Pictures stream of "Company
                           Profile FE Revisi 1.ppt", which carried it as

@@ -71,12 +71,12 @@
     'automation':           'PT. Hanindo Automation Solutions',
     /* No PT. on the last two: neither is an Indonesian company. PT is the
        Indonesian form for a limited company, and these carry their own --
-       Gralessando is Singaporean and says Pte Ltd, and Hanindo Shanghai is
+       Gralessando is Singaporean and says Pte Ltd, and Hanindo (Shanghai) International Co., Ltd. is
        registered in China as Hanindo (Shanghai) International Co., Ltd.
        'Hanindo Group' above is the group rather than a registered entity,
        so it takes no prefix either. */
     'printer-pos':          'Gralessando (S) Pte. Ltd.',
-    'shanghai':             'Hanindo Shanghai'
+    'shanghai':             'Hanindo (Shanghai) International Co., Ltd.'
   };
 
   function sectionOf(url) {

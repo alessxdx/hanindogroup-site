@@ -144,7 +144,7 @@
     "CUSTOM partnership": "Kemitraan CUSTOM",
     "Partnered to expand CUSTOM products to the China market.": "Kemitraan untuk memperluas produk CUSTOM ke pasar Tiongkok.",
     "China expansion": "Ekspansi Tiongkok",
-    "Hanindo Shanghai office opens, Shenzhen follows in 2009.": "Kantor Hanindo Shanghai dibuka, Shenzhen menyusul pada 2009.",
+    "Hanindo (Shanghai) International Co., Ltd. office opens, Shenzhen follows in 2009.": "Kantor Hanindo (Shanghai) International Co., Ltd. dibuka, Shenzhen menyusul pada 2009.",
     "South East Asia expansion": "Ekspansi Asia Tenggara",
     "PT. Hanindo Automation Solutions adds CUSTOM Hanindo Indonesia.": "PT. Hanindo Automation Solutions menghadirkan CUSTOM Hanindo Indonesia.",
     "Singapore office": "Kantor Singapura",

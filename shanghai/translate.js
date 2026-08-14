@@ -1,5 +1,5 @@
 /* =====================================================================
-   Hanindo Shanghai — EN / 简体中文 language toggle  (plain JS, no deps)
+   Hanindo (Shanghai) International Co., Ltd. — EN / 简体中文 language toggle  (plain JS, no deps)
    ---------------------------------------------------------------------
    Same mechanism as fire-fighting/translate.js: on load it walks the
    visible text and, where a phrase matches an entry below, swaps
@@ -29,7 +29,7 @@
     "Other markets": "其他市场",
 
     /* ---- home hero + intro ---- */
-    "Hanindo Shanghai supplies the printing, scanning and point-of-sale hardware and software behind retail and hospitality automation.": "汉琳德上海为零售与酒店自动化提供打印、扫描及销售点软硬件。",
+    "Hanindo (Shanghai) International Co., Ltd. supplies the printing, scanning and point-of-sale hardware and software behind retail and hospitality automation.": "汉琳德上海为零售与酒店自动化提供打印、扫描及销售点软硬件。",
     "Printing, scanning, and point of sale.": "打印、扫描与销售点。",
     "Established in Shanghai in 2007, Hanindo (Shanghai) International Co., Ltd. is the Hanindo Group’s presence in China, operating as Hanindo CUSTOM China. The company represents CUSTOM’s printing, scanning and automation solutions, supporting the same business that the Group delivers across Southeast Asia.": "汉琳德（上海）系统集成有限公司于 2007 年在上海成立，是 Hanindo Group 在中国的业务主体，以 Hanindo CUSTOM China 的名义经营。公司代理 CUSTOM 的打印、扫描与自动化解决方案，与集团在东南亚开展的业务一脉相承。",
     "Within China the company works from two locations: Shanghai & Shenzhen.": "公司在中国设有两处办公地点：上海与深圳。",
@@ -57,7 +57,7 @@
     "Industry & technology": "工业与科技",
 
     /* ---- contact block ---- */
-    "Talk to Hanindo Shanghai": "联系汉琳德上海",
+    "Talk to Hanindo (Shanghai) International Co., Ltd.": "联系汉琳德上海",
     "Sourcing printing or POS,": "正在采购打印或 POS 设备，",
     "for the Chinese market?": "面向中国市场？",
     "Tell us the sites and volumes you handle and our team will match the right printing, scanning and POS package.": "请告知您负责的站点与业务量，我们的团队将为您匹配合适的打印、扫描与 POS 方案。",
@@ -88,7 +88,7 @@
     /* ---- about: hero + overview + journey ---- */
     "About": "关于",
     "Us": "我们",
-    "Where the CUSTOM partnership started. Hanindo Shanghai has supplied CUSTOM’s printing, scanning and self-service systems in China since 2007, from Shanghai and Shenzhen.": "CUSTOM 合作的起点。自 2007 年起，汉琳德上海立足上海与深圳，在中国供应 CUSTOM 的打印、扫描与自助服务系统。",
+    "Where the CUSTOM partnership started. Hanindo (Shanghai) International Co., Ltd. has supplied CUSTOM’s printing, scanning and self-service systems in China since 2007, from Shanghai and Shenzhen.": "CUSTOM 合作的起点。自 2007 年起，汉琳德上海立足上海与深圳，在中国供应 CUSTOM 的打印、扫描与自助服务系统。",
 
     /* The closing sentence of the second paragraph is split by two inline
        links, so it is stored here as the three fragments between them. */
