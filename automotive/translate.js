@@ -407,7 +407,10 @@
     "Centralised Lubrication": "Pelumasan Terpusat",
     "Lube Trucks & Transport": "Truk Pelumas & Transportasi",
     "What RAASM builds.": "Yang dibuat RAASM.",
-    "Eleven industries, one catalogue.": "Sebelas industri, satu katalog.",
+    /* The RAASM Sectors section was titled the same way as Airtec's and
+       lost its heading and lede with it, so "Sebelas industri, satu
+       katalog." and the paragraph under it are gone too. Both sections
+       are headed Sectors now, which the entry further up covers. */
     "Manufacturing": "Manufaktur",
     "Chemical Industry": "Industri Kimia",
     "Building & Road Construction": "Konstruksi Bangunan & Jalan",
@@ -632,7 +635,6 @@
     "Gravity drainers, suction units and combined drainer-suction trolleys for taking used oil out cleanly and storing it safely.": "Alat pembuangan gravitasi, unit pengisap, dan troli gabungan pembuangan-pengisapan untuk mengeluarkan oli bekas secara bersih dan menyimpannya dengan aman.",
     "Single-line, dual-line and progressive systems that lubricate a machine or a whole line on schedule, without stopping it.": "Sistem jalur tunggal, jalur ganda, dan progresif yang melumasi satu mesin atau seluruh lini sesuai jadwal, tanpa menghentikannya.",
     "FLS level monitoring and FCS fluid control — knowing what is in every drum and tank, and who drew what from it.": "Pemantauan level FLS dan kontrol fluida FCS — mengetahui isi setiap drum dan tangki, serta siapa yang mengambil apa dari sana.",
-    "RAASM equipment is specified across eleven sectors. The workshop is the one most people know, but the pumps and reels on a service bay are the same ones feeding a production line or a mine fleet — and PT. Hanindo Automotive supplies both.": "Peralatan RAASM digunakan di sebelas sektor. Bengkel adalah yang paling dikenal banyak orang, tetapi pompa dan reel di sebuah service bay sama dengan yang memasok lini produksi atau armada tambang — dan PT. Hanindo Automotive memasok keduanya.",
     "Service bays, fast-fit chains and dealer workshops": "Service bay, jaringan fast-fit, dan bengkel dealer",
     "Production lines and machine lubrication": "Lini produksi dan pelumasan mesin",
     "Fleet workshops and heavy equipment servicing": "Bengkel armada dan servis alat berat",
