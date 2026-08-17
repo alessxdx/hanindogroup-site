@@ -93,7 +93,7 @@
     "Photo to follow": "Foto menyusul",
 
     /* ---- footer ---- */
-    "Your technology one stop solution — serving the oil & gas, automation, automotive and fire protection industries in Indonesia since 1987.": "Solusi teknologi satu atap Anda — melayani industri minyak & gas, otomasi, otomotif, dan proteksi kebakaran di Indonesia sejak 1987.",
+    "Your technology one stop solution, serving the oil & gas, automation, automotive and fire protection industries in Indonesia since 1987.": "Solusi teknologi satu atap Anda, melayani industri minyak & gas, otomasi, otomotif, dan proteksi kebakaran di Indonesia sejak 1987.",
     "Our Companies": "Perusahaan Kami",
     "© 2026 Hanindo Group. All Rights Reserved.": "© 2026 Hanindo Group. Hak Cipta Dilindungi.",
 
@@ -200,21 +200,23 @@
     /* The training note, now a .checks list rather than a paragraph. Ten
        entries, not five: each item is a bold label and a detail line, which
        are two text nodes, and this dictionary keys on a whole trimmed node.
-       The detail keys therefore begin with the em dash -- same shape as the
-       tyre-changer model lines further down, and as "— Monday to Friday" on
-       the contact page. Keep the dash in the key or the node stops matching.
+       The detail keys therefore begin with the colon that introduces the
+       value, as does ": Monday to Friday" on the contact page. Keep the
+       colon in the key or the node stops matching. The tyre-changer model
+       lines further down still lead with an em dash: those sit in a
+       <span class="mdl">, not after a bold label, and were left alone.
        The Indonesian is the wording from the paragraph this replaced, cut at
        the same five facts rather than retranslated. */
     "On-site training": "Pelatihan di lokasi",
-    "— Theory in a meeting room and hands-on practice in a service bay": "— Teori di ruang rapat dan praktik langsung di service bay",
+    ": Theory in a meeting room and hands-on practice in a service bay": ": Teori di ruang rapat dan praktik langsung di service bay",
     "Materials provided": "Materi disediakan",
-    "— All training materials included": "— Seluruh materi pelatihan sudah termasuk",
+    ": All training materials included": ": Seluruh materi pelatihan sudah termasuk",
     "Experienced trainer": "Instruktur berpengalaman",
-    "— Automotive engineering graduate and BNSP Master Assessor with 33 years of spooring and balancing instruction": "— Lulusan teknik otomotif dan Master Assessor BNSP dengan 33 tahun pengalaman mengajar spooring dan balancing",
+    ": Automotive engineering graduate and BNSP Master Assessor with 33 years of spooring and balancing instruction": ": Lulusan teknik otomotif dan Master Assessor BNSP dengan 33 tahun pengalaman mengajar spooring dan balancing",
     "Training certificate": "Sertifikat pelatihan",
-    "— PT. Hanindo Automotive certificate issued to every participant": "— Sertifikat PT. Hanindo Automotive diberikan kepada setiap peserta",
+    ": PT. Hanindo Automotive certificate issued to every participant": ": Sertifikat PT. Hanindo Automotive diberikan kepada setiap peserta",
     "National certification": "Sertifikasi nasional",
-    "— LSP Global Otomotif competency certification available on request": "— Sertifikasi kompetensi LSP Global Otomotif tersedia atas permintaan",
+    ": LSP Global Otomotif competency certification available on request": ": Sertifikasi kompetensi LSP Global Otomotif tersedia atas permintaan",
     "Ask for a quote": "Minta penawaran",
     "Request a quotation": "Minta penawaran",
 
@@ -316,7 +318,7 @@
     "For workshop equipment, installation, calibration or spare parts, our Jakarta team is the first point of contact.": "Untuk peralatan bengkel, pemasangan, kalibrasi, atau suku cadang, tim Jakarta kami adalah kontak pertama Anda.",
     "Telephone": "Telepon",
     "Office hours": "Jam operasional",
-    "— Monday to Friday, 08.00 – 17.00 WIB": "— Senin – Jumat, 08.00 – 17.00 WIB",
+    ": Monday to Friday, 08.00 – 17.00 WIB": ": Senin – Jumat, 08.00 – 17.00 WIB",
 
     /* ---- catalogue pages: shared furniture ---- */
     "The range": "Rangkaian produk",

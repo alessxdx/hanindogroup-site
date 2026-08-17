@@ -206,7 +206,7 @@
     "For equipment enquiries, spare parts, service calls or a new station project, our Jakarta team is the first point of contact.": "Untuk pertanyaan peralatan, suku cadang, panggilan servis, atau proyek SPBU baru, tim Jakarta kami adalah titik kontak pertama.",
     "Telephone": "Telepon",
     "Office hours": "Jam operasional",
-    "— Monday to Friday, 08.00 – 17.00 WIB": "— Senin – Jumat, 08.00 – 17.00 WIB",
+    ": Monday to Friday, 08.00 – 17.00 WIB": ": Senin – Jumat, 08.00 – 17.00 WIB",
 
     /* ---- shared spec-table labels (catalogue pages) ---- */
     "Capacity": "Kapasitas",
@@ -520,7 +520,7 @@
     "Tell us the dispenser brands, the pump count and the POS you are integrating with, and our team will scope the controller, the distribution modules and the integration work to match.": "Beri tahu kami merek dispenser, jumlah pompa, dan POS yang akan diintegrasikan, dan tim kami akan menentukan controller, modul distribusi, serta pekerjaan integrasi yang sesuai.",
 
     /* ---- footer ---- */
-    "Your technology one stop solution — serving the oil & gas, automation, automotive and fire protection industries in Indonesia since 1987.": "Solusi teknologi satu atap Anda — melayani industri minyak & gas, otomasi, otomotif, dan proteksi kebakaran di Indonesia sejak 1987.",
+    "Your technology one stop solution, serving the oil & gas, automation, automotive and fire protection industries in Indonesia since 1987.": "Solusi teknologi satu atap Anda, melayani industri minyak & gas, otomasi, otomotif, dan proteksi kebakaran di Indonesia sejak 1987.",
     "Our Companies": "Perusahaan Kami",
     "PT. Hanindo Automation Solutions": "PT. Hanindo Automation Solutions",
     "Tel:": "Tel:",

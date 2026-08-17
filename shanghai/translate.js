@@ -105,7 +105,7 @@
 
     /* ---- footer ---- */
     "Our Companies": "集团公司",
-    "Your technology one stop solution — serving the oil & gas, automation, automotive and fire protection industries in Indonesia since 1987.": "您的一站式技术解决方案 — 自 1987 年起服务于印尼的石油天然气、自动化、汽车与消防行业。",
+    "Your technology one stop solution, serving the oil & gas, automation, automotive and fire protection industries in Indonesia since 1987.": "您的一站式技术解决方案，自 1987 年起服务于印尼的石油天然气、自动化、汽车与消防行业。",
     "© 2026 Hanindo Group. All Rights Reserved.": "© 2026 Hanindo Group. 版权所有。",
 
     /* ---- about: hero + overview + journey ---- */
@@ -208,7 +208,7 @@
     "Office": "办公地址",
     "Telephone": "电话",
     "Office hours": "办公时间",
-    "— Monday to Friday, 09.00 – 18.00 CST": "— 周一至周五，09:00 – 18:00（中国标准时间）",
+    ": Monday to Friday, 09.00 – 18.00 CST": "：周一至周五，09:00 – 18:00（中国标准时间）",
     "Representative office": "代表处",
     "For": "如需",
     "South East Asia": "东南亚",

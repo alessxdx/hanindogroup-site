@@ -192,7 +192,7 @@
     "For printer and POS supply, integration, consumables or service, reach the Singapore office of Gralessando (S) Pte. Ltd.": "Untuk pengadaan, integrasi, bahan habis pakai, atau servis printer dan POS, hubungi kantor Singapura Gralessando (S) Pte. Ltd.",
     "Telephone": "Telepon",
     "Office hours": "Jam operasional",
-    "— Monday to Friday, 09.00 – 17.30 SGT": "— Senin sampai Jumat, 09.00 – 17.30 SGT",
+    ": Monday to Friday, 09.00 – 17.30 SGT": ": Senin sampai Jumat, 09.00 – 17.30 SGT",
     /* The first market card reuses the region name from the mktnote block above. */
     "Philippines": "Filipina",
     "Thailand": "Thailand",
@@ -204,7 +204,7 @@
     ", see": ", lihat",
 
     /* ---- footer ---- */
-    "Your technology one stop solution — serving the oil & gas, automation, automotive and fire protection industries in Indonesia since 1987.": "Solusi teknologi satu atap Anda — melayani industri minyak & gas, otomasi, otomotif, dan proteksi kebakaran di Indonesia sejak 1987.",
+    "Your technology one stop solution, serving the oil & gas, automation, automotive and fire protection industries in Indonesia since 1987.": "Solusi teknologi satu atap Anda, melayani industri minyak & gas, otomasi, otomotif, dan proteksi kebakaran di Indonesia sejak 1987.",
     "PT. Hanindo Automation Solutions": "PT. Hanindo Automation Solutions",
     "Tel:": "Tel:",
     "© 2026 Hanindo Group. All Rights Reserved.": "© 2026 Hanindo Group. Hak Cipta Dilindungi."

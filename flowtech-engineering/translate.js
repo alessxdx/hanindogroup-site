@@ -229,7 +229,7 @@
     "Visit Oil & Gas": "Kunjungi Minyak & Gas",
 
     /* ---- contact page ----
-       The "— value" halves of the checklist stay in English: each is an
+       The ": value" halves of the checklist stay in English: each is an
        address, a number or a mailbox. Only the bold labels translate,
        and "Office hours" carries its value because the days are words. */
     "Let's talk about": "Mari bicarakan",
@@ -239,7 +239,7 @@
     "For fuel station construction, oil and gas construction work, or a question about a project we have delivered, our Jakarta office is the first point of contact.": "Untuk konstruksi SPBU, pekerjaan konstruksi minyak dan gas, atau pertanyaan mengenai proyek yang telah kami selesaikan, kantor Jakarta kami adalah titik kontak pertama.",
     "Head office": "Kantor pusat",
     "Office hours": "Jam kerja",
-    "— Monday to Friday, 08.00 – 17.00 WIB": "— Senin sampai Jumat, 08.00 – 17.00 WIB",
+    ": Monday to Friday, 08.00 – 17.00 WIB": ": Senin sampai Jumat, 08.00 – 17.00 WIB",
 
     /* ---- footer contact column, and the contact page's buttons ----
        The contact band these mostly belonged to came off the four inner
@@ -259,7 +259,7 @@
     "Email": "Email",
 
     /* ---- footer ---- */
-    "Your technology one stop solution — serving the oil & gas, automation, automotive and fire protection industries in Indonesia since 1987.": "Solusi teknologi satu atap Anda — melayani industri minyak & gas, otomasi, otomotif, dan proteksi kebakaran di Indonesia sejak 1987.",
+    "Your technology one stop solution, serving the oil & gas, automation, automotive and fire protection industries in Indonesia since 1987.": "Solusi teknologi satu atap Anda, melayani industri minyak & gas, otomasi, otomotif, dan proteksi kebakaran di Indonesia sejak 1987.",
     "Tel:": "Tel:",
     "© 2026 Hanindo Group. All Rights Reserved.": "© 2026 Hanindo Group. Hak Cipta Dilindungi."
   };

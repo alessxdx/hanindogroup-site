@@ -81,7 +81,7 @@
 
     /* ---- footer ---- */
     "Our Companies": "Perusahaan Kami",
-    "Your technology one stop solution — serving the oil & gas, automation, automotive and fire protection industries in Indonesia since 1987.": "Solusi teknologi satu atap Anda — melayani industri minyak & gas, otomasi, otomotif, dan proteksi kebakaran di Indonesia sejak 1987.",
+    "Your technology one stop solution, serving the oil & gas, automation, automotive and fire protection industries in Indonesia since 1987.": "Solusi teknologi satu atap Anda, melayani industri minyak & gas, otomasi, otomotif, dan proteksi kebakaran di Indonesia sejak 1987.",
     "© 2026 Hanindo Group. All Rights Reserved.": "© 2026 Hanindo Group. Hak Cipta Dilindungi.",
 
     /* ---- about: hero + overview + journey ---- */
@@ -177,9 +177,9 @@
     "For printer and POS supply, integration, consumables or service, reach the Jakarta office of PT. Hanindo Automation Solutions.": "Untuk pengadaan printer dan POS, integrasi, consumable, atau layanan, hubungi kantor Jakarta PT. Hanindo Automation Solutions.",
     "Telephone": "Telepon",
     "Office hours": "Jam operasional",
-    /* The details list puts the value in the same text node as the dash
-       that introduces it, so the dash has to be part of the key. */
-    "— Monday to Friday, 08.00 – 17.00 WIB": "— Senin – Jumat, 08.00 – 17.00 WIB",
+    /* The details list puts the value in the same text node as the colon
+       that introduces it, so the colon has to be part of the key. */
+    ": Monday to Friday, 08.00 – 17.00 WIB": ": Senin – Jumat, 08.00 – 17.00 WIB",
     "Person in charge": "Penanggung jawab",
     "For": "Untuk",
     "the rest of South East Asia": "kawasan Asia Tenggara lainnya",
