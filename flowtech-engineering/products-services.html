@@ -31,39 +31,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/site.css?v=202608171511" />
 <style>
-/* The denser service cards from the Fire Fighting pages. Those come from
-   assets/fire-fighting.css, which only that section loads -- it also
-   recolours the site to crimson and fire orange, so it cannot simply be
-   linked here. These are its geometry rules and nothing else: tinted
-   cells, a smaller icon, smaller type, and the tighter grid margin. The
-   accent stays var(--brand), so the cards read as Flowtech's rather than
-   the fire department's.
-   The column count is left alone above 560px. Fire Fighting sets six
-   because it runs six cards; this page runs four, which is what site.css
-   already gives. */
-.svc{background:var(--paper);padding:1.1rem .95rem 1.2rem}
-.svc:hover{background:var(--white)}
-.svc .ic{width:26px;height:26px;margin-bottom:.6rem}
-.svc h3{font-size:.87rem;line-height:1.3;margin-bottom:.3rem}
-.svc p{font-size:.79rem;line-height:1.45}
-.section.compact .svc-grid{margin-top:1.2rem}
+/* The four .svc cards this page ran became .svclist numbered rows on
+   2026-08-17, matching the Fire Fighting services block. Everything that
+   used to sit here has gone with them: the borrowed fire-fighting card
+   geometry, and a page-local @media(max-width:560px) block that forced two
+   columns because site.css dropped .svc-grid to one. .svclist is two up at
+   every width, so that override has nothing left to correct.
 
-/* On a phone site.css drops .svc-grid to one column, which ran these four
-   cards down most of a screen each. Two up instead, so the whole scope of
-   work is one glance -- the same pairing the Citra and Automotive card
-   grids got. This is page-local rather than a change to site.css because
-   six other pages share .svc-grid and none of them were asked for.
-   Halving the width costs the cards their room, so the padding, icon and
-   type come down with it, and the two long headings -- "Mechanical &
-   Electrical Installation", "Operator & Safety Training" -- are allowed
-   to break mid-word rather than push out of the cell. */
-@media(max-width:560px){
-  .svc-grid{grid-template-columns:repeat(2,1fr)}
-  .svc{padding:.9rem .75rem 1rem}
-  .svc .ic{width:22px;height:22px;margin-bottom:.5rem}
-  .svc h3{font-size:.8rem;overflow-wrap:break-word}
-  .svc p{font-size:.74rem;line-height:1.4}
-}
+   What the old comment was protecting still holds and is worth keeping in
+   view: the long headings. "MECHANICAL & ELECTRICAL INSTALLATION" is the
+   longest label in either services block, and uppercase in a 120px column it
+   needs to break mid-word rather than push out of the cell. */
+.svcbody h3{overflow-wrap:break-word}
 
 /* Delivery lifecycle, the same horizontal timeline. Four equal columns
    here rather than five -- the contractor scope has four stages -- with
@@ -165,27 +144,11 @@
       <h2 class="h2">Everything a station needs,<br/>under one contract.</h2>
       <p class="lede" style="max-width:none">Every aspect required in the construction of a fuel station is handled by us, so clients deal with one team from permit to handover.</p>
     </div>
-    <div class="svc-grid">
-      <div class="svc reveal">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 00-2 2v14a2 2 0 002 2h12a2 2 0 002-2V9z"/><path d="M14 3v6h6"/><path d="M9 15l2 2 4-4"/></svg></div>
-        <h3>Permits &amp; Approvals</h3>
-        <p>We take on the permit request procedures required before construction can begin, keeping the project schedule intact.</p>
-      </div>
-      <div class="svc reveal d1">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M21 16V8l-9-5-9 5v8l9 5 9-5z"/><path d="M3.3 7.5L12 12.5l8.7-5"/><path d="M12 12.5V21"/></svg></div>
-        <h3>Materials &amp; Labour</h3>
-        <p>Supply of raw materials and the site labour force to put them in place, managed as a single package.</p>
-      </div>
-      <div class="svc reveal d2">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/><path d="M2 20h4"/></svg></div>
-        <h3>Mechanical &amp; Electrical Installation</h3>
-        <p>Mechanical and electrical installation across the site, carried out by our own installation teams.</p>
-      </div>
-      <div class="svc reveal d3">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 7.9-8 9-4.6-1.1-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
-        <h3>Operator &amp; Safety Training</h3>
-        <p>Short training for station employees on fuel station operational and safety procedures before the site opens.</p>
-      </div>
+    <div class="svclist">
+      <div class="svcitem reveal"><div class="svcnum">01</div><div class="svcbody"><h3>Permits &amp; Approvals</h3><p class="hide-sm">We take on the permit request procedures required before construction can begin, keeping the project schedule intact.</p></div></div>
+      <div class="svcitem reveal d1"><div class="svcnum">02</div><div class="svcbody"><h3>Materials &amp; Labour</h3><p class="hide-sm">Supply of raw materials and the site labour force to put them in place, managed as a single package.</p></div></div>
+      <div class="svcitem reveal d2"><div class="svcnum">03</div><div class="svcbody"><h3>Mechanical &amp; Electrical Installation</h3><p class="hide-sm">Mechanical and electrical installation across the site, carried out by our own installation teams.</p></div></div>
+      <div class="svcitem reveal d3"><div class="svcnum">04</div><div class="svcbody"><h3>Operator &amp; Safety Training</h3><p class="hide-sm">Short training for station employees on fuel station operational and safety procedures before the site opens.</p></div></div>
     </div>
   </div>
 </section>
