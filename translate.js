@@ -103,7 +103,7 @@
 
     /* ---- home: verticals ---- */
     "Our Verticals": "Lini Usaha Kami",
-    "Each vertical runs its own site — with its own products, projects and contact team. Choose the one you need.": "Setiap lini usaha memiliki situsnya sendiri — dengan produk, proyek, dan tim kontaknya sendiri. Pilih yang Anda butuhkan.",
+    "Each vertical runs its own site, with its own products, projects and contact team. Choose the one you need.": "Setiap lini usaha memiliki situsnya sendiri, dengan produk, proyek, dan tim kontaknya sendiri. Pilih yang Anda butuhkan.",
     "Petroleum equipment & station construction": "Peralatan perminyakan & konstruksi SPBU",
     "Autoshop equipment — diagnostics, lifts, tyre & lube": "Peralatan bengkel — diagnostik, lift, ban & pelumasan",
     "End-to-end fire-protection systems, pumps & hydrants": "Sistem proteksi kebakaran menyeluruh, pompa & hidran",

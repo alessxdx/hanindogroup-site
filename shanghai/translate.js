@@ -208,6 +208,24 @@
     "Office": "办公地址",
     "Telephone": "电话",
     "Office hours": "办公时间",
+    /* Chinese wants the fullwidth colon, and on this page the colon leads the
+       value node rather than sitting inside the <b>, so it is translated as
+       part of the value.
+
+       Spacing follows what comes after the colon: a space before Latin text,
+       none before Chinese. So the address and phone keep a space and the hours
+       line does not. setLang swaps by raw.replace(key, value), which preserves
+       whitespace already in the node, so the phone's space arrives on its own
+       from the markup and must not be repeated here.
+
+       The address and the phone stay in English -- both are needed in the form
+       a caller or courier would use -- so those two entries change nothing but
+       the punctuation. The bare ":" is the phone line, where the number sits in
+       a tel: link and leaves the colon alone in its own text node. It is the
+       only lone-colon node on this site, so the key cannot collide; check that
+       again before reusing this trick on another page. */
+    ":": "：",
+    ": Room 3211-3212, Tower B, City Center, No. 100 Zunyi Rd, Changning District, Shanghai, China": "： Room 3211-3212, Tower B, City Center, No. 100 Zunyi Rd, Changning District, Shanghai, China",
     ": Monday to Friday, 09.00 – 18.00 CST": "：周一至周五，09:00 – 18:00（中国标准时间）",
     "Representative office": "代表处",
     "For": "如需",
