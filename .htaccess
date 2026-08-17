@@ -41,6 +41,13 @@ Redirect 301 /oil-and-gas                                           /citra/
 Redirect 301 /home-automotive                                       /automotive/
 Redirect 301 /partners-a-principals                                 /partners/
 
+# /gralessando was linked from the old site's "Our Websites" menu. Held
+# back until 2026-08-17 because REDIRECTS.txt could only guess where it
+# belonged; confirmed on that date. Gralessando (S) Pte. Ltd. is the
+# printing and POS company, represented as Custom (S.E.A), so the URL is
+# that section's.
+Redirect 301 /gralessando                                           /printer-pos/
+
 # ENABLED 2026-08-17, repointed. This was off because it aimed at
 # /training/, which does not exist and never did, so it would have 301'd
 # straight into a 404 — leaving it off was the right call at the time.

@@ -73,14 +73,16 @@ which does not exist. Send them to the section instead:
 /  (menu item "Printer & POS System")                 /printer-pos/
 /  (menu item "Custom (S.E.A) Gralessando")           /printer-pos/
 
+CONFIRMED 2026-08-17 by Graziella, and now live in .htaccess:
+/gralessando                                          /printer-pos/
+                      Linked from the old site's "Our Websites" menu. The
+                      printing and POS company is Gralessando (S) Pte. Ltd.,
+                      represented as Custom (S.E.A), so the URL belongs to
+                      that section. This sat in UNRESOLVED with "do not apply
+                      until she says so" until it was asked directly.
+
+
 UNRESOLVED — decide before go-live:
-/gralessando          Linked from the old site's "Our Websites" menu.
-                      LIKELY -> /printer-pos/  — the printing and POS
-                      company is Gralessando (S) Pte. Ltd., represented as
-                      Custom (S.E.A), so
-                      this old URL probably belongs to it. NOT YET
-                      CONFIRMED by Graziella, so do not apply this
-                      redirect until she says so. Otherwise let it 404.
 /?Itemid=152          Old Joomla sitemap. Suggest -> /
 /component/users/...  Joomla login/password-reset endpoints. These have
                       no equivalent on a static site. Let them 404, or
@@ -108,6 +110,7 @@ Redirect 301 /hanindo-product                                  /
 Redirect 301 /oil-and-gas                                      /citra/
 Redirect 301 /home-automotive                                  /automotive/
 Redirect 301 /partners-a-principals                            /partners/
+Redirect 301 /gralessando                                      /printer-pos/
 Redirect 301 /training-gilbarco-veeder-root-thermal-printer-indonesia  /products-services/
 Redirect 301 /news-info/career-hanindo-group-gilbarco-veeder-root-indonesia-thermal-printer  /career/
 Redirect 301 /contact-us                                       /contact/
