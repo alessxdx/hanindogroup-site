@@ -12,6 +12,43 @@
      * Hover changes colour, never position. Nothing bounces.
      * Restraint: one accent colour, used deliberately.
    ==================================================================== */
+
+/* ---------- OPEN SANS, SELF-HOSTED ----------
+   Served from this domain since 2026-08-17. It used to come from Google
+   Fonts, which meant every page load sent the visitor's IP and user agent
+   to Google for a font we could host ourselves. Three <link> tags came off
+   all 51 pages with it, and the site now makes no third-party requests at
+   all. It also stops the type depending on Google being reachable, which
+   is not a given for the Shanghai site.
+
+   One file. Open Sans ships as a variable font, so the single woff2 covers
+   the whole 300-800 range rather than needing a file per weight -- Google
+   was serving this same file five times over, once per declared weight.
+
+   The URL is relative to THIS STYLESHEET, not to the page, so it resolves
+   from every depth without the four path variants the pages would need.
+
+   Latin subset only, and the unicode-range is Google's verbatim so the
+   browser still skips the file for text it cannot render. latin-ext was
+   downloaded and then dropped: the only characters in that range anywhere
+   on the site are inside a regex in search.js, never displayed, so it was
+   34KB for nothing. A handful of technical symbols in spec tables fall
+   back to a system font -- CO2's subscript, an arrow, mu, less-than-equal.
+   All are symbols rather than text, where a fallback is not noticeable.
+
+   font-weight 900 is used in a few places and there is no 900 to serve:
+   Open Sans stops at 800 and Google silently dropped the 900 from the
+   request too, so this matches what was already rendering. */
+@font-face{
+  font-family:'Open Sans';
+  font-style:normal;
+  font-weight:300 800;
+  font-stretch:100%;
+  font-display:swap;
+  src:url(fonts/open-sans-latin.woff2) format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
 :root{
   --blue-950:#04203a; --blue-900:#072e52; --blue-800:#0b3f6e; --blue-700:#12558c;
   --brand:#1b93d8; --brand-600:#1478b3; --sky:#4fc9f5; --sky-2:#7fd9ff;
