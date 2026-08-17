@@ -18,8 +18,12 @@
    ===================================================================== */
 (function () {
   var DICT = {
-    /* ---- directions ---- */
-    "Get directions": "Petunjuk arah",
+    /* ---- directions ----
+       This read "Petunjuk arah" until 2026-08-17 -- Indonesian, carried
+       over with the entry when this dictionary was seeded from one of the
+       Indonesian sites. It was live on the contact page: switching to
+       中文 turned the link under the office address into Indonesian. */
+    "Get directions": "查看路线",
     /* ---- navigation / header ---- */
     "Back to": "返回",
     "Home": "首页",
@@ -48,6 +52,16 @@
     "Scanning Solutions": "扫描解决方案",
     "Self-Service Solutions": "自助服务解决方案",
 
+    /* ---- products & services page ----
+       The eyebrow and the heading over the catalogue. Both had no entry
+       until 2026-08-17, so they stayed English while the rest of the page
+       turned over -- the heading was the largest type on it.
+       "Products & services" is sentence case and a separate key from the
+       navigation's title-case "Products & Services" above; the walker
+       matches the whole node, case included. Both take the same Chinese. */
+    "Products & services": "产品与服务",
+    "Our product range": "我们的产品系列",
+
     /* ---- customers ---- */
     "Customer base": "客户群",
     /* The sector labels on the customer wall. These are headings, not
@@ -75,6 +89,17 @@
     "Shanghai, China": "中国上海",
     "Shenzhen, China": "中国深圳",
     "Tel:": "电话：",
+    /* The fax lines beside "Tel:" in the footer's two office columns. The
+       number is part of the node, so the whole line is the key -- these
+       are the only two fax numbers the company has, and if either changes
+       the entry has to change with it.
+       The contact page's own two fax lines are deliberately NOT here:
+       there the number and the fax sit in one node with the telephone,
+       separated by non-breaking spaces, so the key would carry invisible
+       characters and would stop matching the moment anyone re-typed the
+       line. Left in English rather than made fragile. */
+    "Fax: +86 21 6237 0598": "传真：+86 21 6237 0598",
+    "Fax: +86 755 8659 9823": "传真：+86 755 8659 9823",
     "Indonesia": "印度尼西亚",
     ", see": "，请联系",
 
