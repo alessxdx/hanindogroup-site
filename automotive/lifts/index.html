@@ -84,6 +84,39 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
   .prod .brandtag{font-size:.74rem}
   .prod .dspec .tag{font-size:.85rem}
 }
+
+/* PHONE: the spec table folds behind a tap, and the photo panel comes in.
+   The same treatment the Citra forecourt controllers and Automotive tyre
+   service pages carry -- see either for the reasoning in full. In short:
+   the spec tables and the photographs were most of these pages' height on
+   a phone, and neither can be deleted, so the table folds and the photo
+   is sized down.
+   The class is .specfold, not .specs: some of these pages already use
+   <details class="specs"> for the Supplied with accessory lists, and the
+   two must not share a name or a style.
+   <details> does the folding with no library. The markup carries the open
+   attribute, so with JavaScript off every table is expanded and the page
+   is what it was before -- the failure direction is the long page, never
+   specifications a reader cannot reach. A line at the foot of the page
+   closes them below 640px, and only there.
+   The summary is hidden on a desktop, so that view is unchanged. Hidden
+   only while open, so resizing a window down and back leaves it tappable
+   rather than sealing the table away. */
+.prod .specfold>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;
+  gap:.6rem;margin-top:.9rem;padding:.78rem .8rem;background:var(--paper);border:1px solid var(--line);
+  border-radius:var(--r);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;
+  color:var(--blue-800);transition:border-color .18s}
+.prod .specfold>summary::-webkit-details-marker{display:none}
+.prod .specfold>summary::after{content:"";width:7px;height:7px;margin-right:.2rem;border-right:2px solid currentColor;
+  border-bottom:2px solid currentColor;transform:rotate(45deg);transition:transform .18s}
+.prod .specfold[open]>summary::after{transform:rotate(-135deg)}
+.prod .specfold>summary:hover{border-color:var(--blue-800)}
+.prod .specfold table.spectable{margin-top:.55rem}
+@media(min-width:641px){.prod .specfold[open]>summary{display:none}}
+@media(max-width:640px){
+  .prod .shot{padding:.9rem}
+  .prod .shot img{max-height:120px}
+}
 </style>
 </head>
 <body>
@@ -166,14 +199,18 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag atom">ATOM</span>
       <h3>Mid-Rise Scissor Car Lift <span class="mdl">— DL-3.5YD</span></h3>
-      <table class="spectable">
-        <tr><td>Lifting capacity</td><td>3.5 T</td></tr>
-        <tr><td>Lifting height</td><td>110–1000 mm</td></tr>
-        <tr><td>Table length</td><td>1400–1940 mm</td></tr>
-        <tr><td>Table width</td><td>520 mm</td></tr>
-        <tr><td>Total width</td><td>1885 mm</td></tr>
-        <tr><td>Power supply</td><td>380 V</td></tr>
-      </table>
+      <details class="specfold" open>
+        <summary>Specifications</summary>
+        <table class="spectable">
+          <tr><td>Lifting capacity</td><td>3.5 T</td></tr>
+          <tr><td>Lifting height</td><td>110–1000 mm</td></tr>
+          <tr><td>Table length</td><td>1400–1940 mm</td></tr>
+          <tr><td>Table width</td><td>520 mm</td></tr>
+          <tr><td>Total width</td><td>1885 mm</td></tr>
+          <tr><td>Power supply</td><td>380 V</td></tr>
+      
+        </table>
+      </details>
     </div>
   </div>
 </article>
@@ -183,13 +220,17 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag atom">ATOM</span>
       <h3>In-Ground Mini Scissor Lift <span class="mdl">— DL-3.5DC</span></h3>
-      <table class="spectable">
-        <tr><td>Lifting capacity</td><td>3.5 T</td></tr>
-        <tr><td>Lifting height</td><td>330–2100 mm</td></tr>
-        <tr><td>Table length</td><td>1540–1740 mm</td></tr>
-        <tr><td>Table width</td><td>550 mm</td></tr>
-        <tr><td>Power supply</td><td>380 V</td></tr>
-      </table>
+      <details class="specfold" open>
+        <summary>Specifications</summary>
+        <table class="spectable">
+          <tr><td>Lifting capacity</td><td>3.5 T</td></tr>
+          <tr><td>Lifting height</td><td>330–2100 mm</td></tr>
+          <tr><td>Table length</td><td>1540–1740 mm</td></tr>
+          <tr><td>Table width</td><td>550 mm</td></tr>
+          <tr><td>Power supply</td><td>380 V</td></tr>
+      
+        </table>
+      </details>
     </div>
   </div>
 </article>
@@ -199,14 +240,18 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag atom">ATOM</span>
       <h3>On-Ground Mini Scissor Lift <span class="mdl">— DL-3.5CB</span></h3>
-      <table class="spectable">
-        <tr><td>Lifting capacity</td><td>4 T</td></tr>
-        <tr><td>Lifting height</td><td>110–1900 mm</td></tr>
-        <tr><td>Table length</td><td>1485–2040 mm</td></tr>
-        <tr><td>Table width</td><td>660 mm</td></tr>
-        <tr><td>Total width</td><td>2290 mm</td></tr>
-        <tr><td>Power supply</td><td>380 V</td></tr>
-      </table>
+      <details class="specfold" open>
+        <summary>Specifications</summary>
+        <table class="spectable">
+          <tr><td>Lifting capacity</td><td>4 T</td></tr>
+          <tr><td>Lifting height</td><td>110–1900 mm</td></tr>
+          <tr><td>Table length</td><td>1485–2040 mm</td></tr>
+          <tr><td>Table width</td><td>660 mm</td></tr>
+          <tr><td>Total width</td><td>2290 mm</td></tr>
+          <tr><td>Power supply</td><td>380 V</td></tr>
+      
+        </table>
+      </details>
     </div>
   </div>
 </article>
@@ -216,18 +261,22 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>Ultra-Thin Main/Sub Scissor Car Lift <span class="mdl">— DL-4.0CBD</span></h3>
-      <table class="spectable">
-        <tr><td>Main scissor capacity</td><td>4 T</td></tr>
-        <tr><td>Main lifting height</td><td>200–1700 mm</td></tr>
-        <tr><td>Main table length</td><td>4500 mm</td></tr>
-        <tr><td>Main table width</td><td>660 mm</td></tr>
-        <tr><td>Sub scissor capacity</td><td>3 T</td></tr>
-        <tr><td>Sub lifting height</td><td>450 mm</td></tr>
-        <tr><td>Sub table length</td><td>1515–1680 mm</td></tr>
-        <tr><td>Sub table width</td><td>600 mm</td></tr>
-        <tr><td>Air pressure</td><td>4–6 bar</td></tr>
-        <tr><td>Power supply</td><td>380 V</td></tr>
-      </table>
+      <details class="specfold" open>
+        <summary>Specifications</summary>
+        <table class="spectable">
+          <tr><td>Main scissor capacity</td><td>4 T</td></tr>
+          <tr><td>Main lifting height</td><td>200–1700 mm</td></tr>
+          <tr><td>Main table length</td><td>4500 mm</td></tr>
+          <tr><td>Main table width</td><td>660 mm</td></tr>
+          <tr><td>Sub scissor capacity</td><td>3 T</td></tr>
+          <tr><td>Sub lifting height</td><td>450 mm</td></tr>
+          <tr><td>Sub table length</td><td>1515–1680 mm</td></tr>
+          <tr><td>Sub table width</td><td>600 mm</td></tr>
+          <tr><td>Air pressure</td><td>4–6 bar</td></tr>
+          <tr><td>Power supply</td><td>380 V</td></tr>
+      
+        </table>
+      </details>
     </div>
   </div>
 </article>
@@ -237,18 +286,22 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag atom">ATOM</span>
       <h3>2-Post Car Lift <span class="mdl">— DL-4.0LM</span></h3>
-      <table class="spectable">
-        <tr><td>Lifting capacity</td><td>4 T</td></tr>
-        <tr><td>Max lifting height</td><td>1850 mm</td></tr>
-        <tr><td>Min lifting height</td><td>110 mm</td></tr>
-        <tr><td>Pass width</td><td>2744 mm</td></tr>
-        <tr><td>Total height</td><td>3830 mm</td></tr>
-        <tr><td>Total width</td><td>3395 mm</td></tr>
-        <tr><td>Lifting time</td><td>50 s</td></tr>
-        <tr><td>Decline time</td><td>30 s</td></tr>
-        <tr><td>Weight</td><td>650 kg</td></tr>
-        <tr><td>Power supply</td><td>2.2 kW, 380 V</td></tr>
-      </table>
+      <details class="specfold" open>
+        <summary>Specifications</summary>
+        <table class="spectable">
+          <tr><td>Lifting capacity</td><td>4 T</td></tr>
+          <tr><td>Max lifting height</td><td>1850 mm</td></tr>
+          <tr><td>Min lifting height</td><td>110 mm</td></tr>
+          <tr><td>Pass width</td><td>2744 mm</td></tr>
+          <tr><td>Total height</td><td>3830 mm</td></tr>
+          <tr><td>Total width</td><td>3395 mm</td></tr>
+          <tr><td>Lifting time</td><td>50 s</td></tr>
+          <tr><td>Decline time</td><td>30 s</td></tr>
+          <tr><td>Weight</td><td>650 kg</td></tr>
+          <tr><td>Power supply</td><td>2.2 kW, 380 V</td></tr>
+      
+        </table>
+      </details>
     </div>
   </div>
 </article>
@@ -258,19 +311,23 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag atom">ATOM</span>
       <h3>2-Post Car Lift <span class="mdl">— GC-4.0PRO</span></h3>
-      <table class="spectable">
-        <tr><td>Lifting capacity</td><td>4 T</td></tr>
-        <tr><td>Lifting height</td><td>1830 mm</td></tr>
-        <tr><td>Original height</td><td>100 mm</td></tr>
-        <tr><td>Pass width</td><td>2438 mm</td></tr>
-        <tr><td>Overall width</td><td>3420 mm</td></tr>
-        <tr><td>Lifting time</td><td>80 s</td></tr>
-        <tr><td>Decline time</td><td>100 s</td></tr>
-        <tr><td>Noise level</td><td>&lt; 76 dB</td></tr>
-        <tr><td>Working temperature</td><td>5–40 °C</td></tr>
-        <tr><td>Working humidity</td><td>30–95 %</td></tr>
-        <tr><td>Power supply</td><td>2.2 kW, 380 V</td></tr>
-      </table>
+      <details class="specfold" open>
+        <summary>Specifications</summary>
+        <table class="spectable">
+          <tr><td>Lifting capacity</td><td>4 T</td></tr>
+          <tr><td>Lifting height</td><td>1830 mm</td></tr>
+          <tr><td>Original height</td><td>100 mm</td></tr>
+          <tr><td>Pass width</td><td>2438 mm</td></tr>
+          <tr><td>Overall width</td><td>3420 mm</td></tr>
+          <tr><td>Lifting time</td><td>80 s</td></tr>
+          <tr><td>Decline time</td><td>100 s</td></tr>
+          <tr><td>Noise level</td><td>&lt; 76 dB</td></tr>
+          <tr><td>Working temperature</td><td>5–40 °C</td></tr>
+          <tr><td>Working humidity</td><td>30–95 %</td></tr>
+          <tr><td>Power supply</td><td>2.2 kW, 380 V</td></tr>
+      
+        </table>
+      </details>
     </div>
   </div>
 </article>
@@ -280,20 +337,24 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>4-Post Car Lift <span class="mdl">— DL-4.0SSZ</span></h3>
-      <table class="spectable">
-        <tr><td>Lifting capacity</td><td>4 T</td></tr>
-        <tr><td>Lifting height</td><td>1700 mm</td></tr>
-        <tr><td>Min height</td><td>220 mm</td></tr>
-        <tr><td>Secondary lifting height</td><td>320–480 mm</td></tr>
-        <tr><td>Table length</td><td>4860 mm</td></tr>
-        <tr><td>Single lane width</td><td>550 mm</td></tr>
-        <tr><td>Lane spacing</td><td>950 mm</td></tr>
-        <tr><td>Width between columns</td><td>2990 mm</td></tr>
-        <tr><td>Total width</td><td>3340 mm</td></tr>
-        <tr><td>Column height</td><td>2000 mm</td></tr>
-        <tr><td>Motor power</td><td>2.2 kW</td></tr>
-        <tr><td>Voltage</td><td>380 V / 220 V</td></tr>
-      </table>
+      <details class="specfold" open>
+        <summary>Specifications</summary>
+        <table class="spectable">
+          <tr><td>Lifting capacity</td><td>4 T</td></tr>
+          <tr><td>Lifting height</td><td>1700 mm</td></tr>
+          <tr><td>Min height</td><td>220 mm</td></tr>
+          <tr><td>Secondary lifting height</td><td>320–480 mm</td></tr>
+          <tr><td>Table length</td><td>4860 mm</td></tr>
+          <tr><td>Single lane width</td><td>550 mm</td></tr>
+          <tr><td>Lane spacing</td><td>950 mm</td></tr>
+          <tr><td>Width between columns</td><td>2990 mm</td></tr>
+          <tr><td>Total width</td><td>3340 mm</td></tr>
+          <tr><td>Column height</td><td>2000 mm</td></tr>
+          <tr><td>Motor power</td><td>2.2 kW</td></tr>
+          <tr><td>Voltage</td><td>380 V / 220 V</td></tr>
+      
+        </table>
+      </details>
     </div>
   </div>
 </article>
@@ -303,14 +364,18 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>Shaking Machine <span class="mdl">— DL-4.0 YYJ</span></h3>
-      <table class="spectable">
-        <tr><td>Capacity</td><td>4000 kg (4 T)</td></tr>
-        <tr><td>Lifting height</td><td>1100 mm</td></tr>
-        <tr><td>Dimensions</td><td>850 × 900 × 1060 mm</td></tr>
-        <tr><td>Weight</td><td>680 kg</td></tr>
-        <tr><td>Working temperature</td><td>−30 °C to 50 °C</td></tr>
-        <tr><td>Power</td><td>380 ACV, 2.2 kW</td></tr>
-      </table>
+      <details class="specfold" open>
+        <summary>Specifications</summary>
+        <table class="spectable">
+          <tr><td>Capacity</td><td>4000 kg (4 T)</td></tr>
+          <tr><td>Lifting height</td><td>1100 mm</td></tr>
+          <tr><td>Dimensions</td><td>850 × 900 × 1060 mm</td></tr>
+          <tr><td>Weight</td><td>680 kg</td></tr>
+          <tr><td>Working temperature</td><td>−30 °C to 50 °C</td></tr>
+          <tr><td>Power</td><td>380 ACV, 2.2 kW</td></tr>
+      
+        </table>
+      </details>
     </div>
   </div>
 </article>
@@ -367,6 +432,13 @@ function hsearch(f){var q=(f.q.value||'').trim();if(!q)return false;var l=docume
    .searchbox, so the query it is meant to show survives this. */
 window.addEventListener('pageshow',function(){var i=document.querySelector('.searchbox input[name="q"]');if(i)i.value='';});
 (function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
+/* Fold the spec tables away on a phone. They are <details open> in the
+   markup, so if this never runs every table is simply expanded, which is
+   the page as it was before. .specfold, not .specs -- the Supplied with
+   lists on some of these pages are .specs and must stay as they are. */
+(function(){try{if(window.matchMedia&&matchMedia('(max-width:640px)').matches){
+  var d=document.querySelectorAll('details.specfold');
+  for(var i=0;i<d.length;i++)d[i].open=false;}}catch(e){}})();
 </script>
 <script src="../translate.js?v=202608171100"></script>
 <script src="../../assets/nav.js?v=202608122200" defer></script>

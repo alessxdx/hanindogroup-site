@@ -156,17 +156,17 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
    The summary is hidden on a desktop, so nothing about that view changes.
    Hidden only while open, though: resize a window from phone to desktop
    after the fold has run and the summary is still there to tap. */
-.prod .specs>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;
+.prod .specfold>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;
   gap:.6rem;margin-top:.9rem;padding:.78rem .8rem;background:var(--paper);border:1px solid var(--line);
   border-radius:var(--r);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;
   color:var(--blue-800);transition:border-color .18s}
-.prod .specs>summary::-webkit-details-marker{display:none}
-.prod .specs>summary::after{content:"";width:7px;height:7px;margin-right:.2rem;border-right:2px solid currentColor;
+.prod .specfold>summary::-webkit-details-marker{display:none}
+.prod .specfold>summary::after{content:"";width:7px;height:7px;margin-right:.2rem;border-right:2px solid currentColor;
   border-bottom:2px solid currentColor;transform:rotate(45deg);transition:transform .18s}
-.prod .specs[open]>summary::after{transform:rotate(-135deg)}
-.prod .specs>summary:hover{border-color:var(--blue-800)}
-.prod .specs table.spectable{margin-top:.55rem}
-@media(min-width:641px){.prod .specs[open]>summary{display:none}}
+.prod .specfold[open]>summary::after{transform:rotate(-135deg)}
+.prod .specfold>summary:hover{border-color:var(--blue-800)}
+.prod .specfold table.spectable{margin-top:.55rem}
+@media(min-width:641px){.prod .specfold[open]>summary{display:none}}
 @media(max-width:640px){
   .prod .shot{padding:.9rem}
   .prod .shot img{max-height:120px}
@@ -283,7 +283,7 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
           <div class="k">Versions</div>
           <div class="taglist"><span class="tag">Enabler Express</span><span class="tag">Enabler Express LON &mdash; adds LON for IFSF</span></div>
         </div>
-        <details class="specs" open>
+        <details class="specfold" open>
           <summary>Specifications</summary>
           <table class="spectable">
             <tr><td>Bus</td><td>PCI Express x1, x4, x8, x16</td></tr>
@@ -316,7 +316,7 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
           <li>Web-based configuration and support</li>
           <li>Version 4 software as standard</li>
         </ul>
-        <details class="specs" open>
+        <details class="specfold" open>
           <summary>Specifications</summary>
           <table class="spectable">
             <tr><td>Capacity</td><td>Up to 12 dispensers</td></tr>
@@ -347,7 +347,7 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
           <li>Solid state &mdash; no moving parts</li>
           <li>Version 4 software as standard</li>
         </ul>
-        <details class="specs" open>
+        <details class="specfold" open>
           <summary>Specifications</summary>
           <table class="spectable">
             <tr><td>Standard &mdash; modules</td><td>3 PDMs / 12 dispensers</td></tr>
@@ -593,7 +593,7 @@ window.addEventListener('pageshow',function(){var i=document.querySelector('.sea
    the page as it was before -- the failure direction is the long page, not
    a page whose specs cannot be opened. 640px matches the CSS above. */
 (function(){try{if(window.matchMedia&&matchMedia('(max-width:640px)').matches){
-  var d=document.querySelectorAll('details.specs');
+  var d=document.querySelectorAll('details.specfold');
   for(var i=0;i<d.length;i++)d[i].open=false;}}catch(e){}})();
 </script>
 <script src="translate.js?v=202608171100"></script>

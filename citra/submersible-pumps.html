@@ -96,6 +96,39 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
   .prod .brandtag{font-size:.74rem}
   .prod .dspec .tag{font-size:.85rem}
 }
+
+/* PHONE: the spec table folds behind a tap, and the photo panel comes in.
+   The same treatment the Citra forecourt controllers and Automotive tyre
+   service pages carry -- see either for the reasoning in full. In short:
+   the spec tables and the photographs were most of these pages' height on
+   a phone, and neither can be deleted, so the table folds and the photo
+   is sized down.
+   The class is .specfold, not .specs: some of these pages already use
+   <details class="specs"> for the Supplied with accessory lists, and the
+   two must not share a name or a style.
+   <details> does the folding with no library. The markup carries the open
+   attribute, so with JavaScript off every table is expanded and the page
+   is what it was before -- the failure direction is the long page, never
+   specifications a reader cannot reach. A line at the foot of the page
+   closes them below 640px, and only there.
+   The summary is hidden on a desktop, so that view is unchanged. Hidden
+   only while open, so resizing a window down and back leaves it tappable
+   rather than sealing the table away. */
+.prod .specfold>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;
+  gap:.6rem;margin-top:.9rem;padding:.78rem .8rem;background:var(--paper);border:1px solid var(--line);
+  border-radius:var(--r);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;
+  color:var(--blue-800);transition:border-color .18s}
+.prod .specfold>summary::-webkit-details-marker{display:none}
+.prod .specfold>summary::after{content:"";width:7px;height:7px;margin-right:.2rem;border-right:2px solid currentColor;
+  border-bottom:2px solid currentColor;transform:rotate(45deg);transition:transform .18s}
+.prod .specfold[open]>summary::after{transform:rotate(-135deg)}
+.prod .specfold>summary:hover{border-color:var(--blue-800)}
+.prod .specfold table.spectable{margin-top:.55rem}
+@media(min-width:641px){.prod .specfold[open]>summary{display:none}}
+@media(max-width:640px){
+  .prod .shot{padding:.9rem}
+  .prod .shot img{max-height:120px}
+}
 </style>
 </head>
 <body>
@@ -203,18 +236,22 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
           <li>Automatic disconnect and fuel drain</li>
           <li>Floating suction adapter available</li>
         </ul>
-        <table class="spectable">
-          <tr><td>Motor range</td><td>&frac34; to 2 HP</td></tr>
-          <tr><td>Installation depth</td><td>3&frac12; to 19 ft</td></tr>
-          <tr><td>Supply</td><td>60 Hz, 1-phase</td></tr>
-          <tr><td>Hazardous rating</td><td>Class 1, Group D</td></tr>
-          <tr><td>Flow gain</td><td>Up to +5%</td></tr>
-          <tr><td>Power saving</td><td>8%</td></tr>
-          <tr><td>Running temperature</td><td>~125&deg;F cooler</td></tr>
-          <tr><td>Diesel and petrol</td><td>100%</td></tr>
-          <tr><td>Ethanol / methanol</td><td>To 20%</td></tr>
-          <tr><td>MTBE, ETBE, TAME</td><td>To 20%</td></tr>
-        </table>
+        <details class="specfold" open>
+          <summary>Specifications</summary>
+          <table class="spectable">
+            <tr><td>Motor range</td><td>&frac34; to 2 HP</td></tr>
+            <tr><td>Installation depth</td><td>3&frac12; to 19 ft</td></tr>
+            <tr><td>Supply</td><td>60 Hz, 1-phase</td></tr>
+            <tr><td>Hazardous rating</td><td>Class 1, Group D</td></tr>
+            <tr><td>Flow gain</td><td>Up to +5%</td></tr>
+            <tr><td>Power saving</td><td>8%</td></tr>
+            <tr><td>Running temperature</td><td>~125&deg;F cooler</td></tr>
+            <tr><td>Diesel and petrol</td><td>100%</td></tr>
+            <tr><td>Ethanol / methanol</td><td>To 20%</td></tr>
+            <tr><td>MTBE, ETBE, TAME</td><td>To 20%</td></tr>
+        
+          </table>
+        </details>
         <div class="dspec">
           <div class="k">Motor sizes</div>
           <div class="taglist"><span class="tag">&frac34; HP</span><span class="tag">1&frac12; HP</span><span class="tag">X3 1&frac12; HP high pressure</span><span class="tag">2 HP</span></div>
@@ -309,6 +346,13 @@ function hsearch(f){var q=(f.q.value||'').trim();if(!q)return false;var l=docume
 window.addEventListener('pageshow',function(){var i=document.querySelector('.searchbox input[name="q"]');if(i)i.value='';});
 /* reveal */
 (function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
+/* Fold the spec tables away on a phone. They are <details open> in the
+   markup, so if this never runs every table is simply expanded, which is
+   the page as it was before. .specfold, not .specs -- the Supplied with
+   lists on some of these pages are .specs and must stay as they are. */
+(function(){try{if(window.matchMedia&&matchMedia('(max-width:640px)').matches){
+  var d=document.querySelectorAll('details.specfold');
+  for(var i=0;i<d.length;i++)d[i].open=false;}}catch(e){}})();
 </script>
 <script src="translate.js?v=202608171100"></script>
 <script src="../assets/nav.js?v=202608122200" defer></script>

@@ -122,17 +122,17 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
    The summary is hidden on a desktop, so nothing about that view changes.
    Hidden only while open, though: resize a window from phone to desktop
    after the fold has run and the summary is still there to tap. */
-.prod .specs>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;
+.prod .specfold>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;
   gap:.6rem;margin-top:.9rem;padding:.78rem .8rem;background:var(--paper);border:1px solid var(--line);
   border-radius:var(--r);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;
   color:var(--blue-800);transition:border-color .18s}
-.prod .specs>summary::-webkit-details-marker{display:none}
-.prod .specs>summary::after{content:"";width:7px;height:7px;margin-right:.2rem;border-right:2px solid currentColor;
+.prod .specfold>summary::-webkit-details-marker{display:none}
+.prod .specfold>summary::after{content:"";width:7px;height:7px;margin-right:.2rem;border-right:2px solid currentColor;
   border-bottom:2px solid currentColor;transform:rotate(45deg);transition:transform .18s}
-.prod .specs[open]>summary::after{transform:rotate(-135deg)}
-.prod .specs>summary:hover{border-color:var(--blue-800)}
-.prod .specs table.spectable{margin-top:.55rem}
-@media(min-width:641px){.prod .specs[open]>summary{display:none}}
+.prod .specfold[open]>summary::after{transform:rotate(-135deg)}
+.prod .specfold>summary:hover{border-color:var(--blue-800)}
+.prod .specfold table.spectable{margin-top:.55rem}
+@media(min-width:641px){.prod .specfold[open]>summary{display:none}}
 @media(max-width:640px){
   .prod .shot{padding:.9rem}
   .prod .shot img{max-height:120px}
@@ -227,7 +227,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag hpa">HPA-Faip</span>
       <h3>Digital Wheel Balancer <span class="mdl">&mdash; B35</span></h3>
-      <details class="specs" open>
+      <details class="specfold" open>
         <summary>Specifications</summary>
         <table class="spectable">
           <tr><td>Rim diameter (measurable)</td><td>10&Prime;&ndash;24&Prime;</td></tr>
@@ -254,7 +254,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag hpa">HPA-Faip</span>
       <h3>Digital Wheel Balancer <span class="mdl">&mdash; B55</span></h3>
-      <details class="specs" open>
+      <details class="specfold" open>
         <summary>Specifications</summary>
         <table class="spectable">
           <tr><td>Display</td><td>High-brightness LED panel</td></tr>
@@ -279,7 +279,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag hpa">HPA-Faip</span>
       <h3>TV Monitor Wheel Balancer <span class="mdl">&mdash; B60</span></h3>
-      <details class="specs" open>
+      <details class="specfold" open>
         <summary>Specifications</summary>
         <table class="spectable">
           <tr><td>Display</td><td>High-resolution LCD monitor</td></tr>
@@ -304,7 +304,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag hpa">HPA-Faip</span>
       <h3>Digital Wheel Balancer (Truck) <span class="mdl">&mdash; B75</span></h3>
-      <details class="specs" open>
+      <details class="specfold" open>
         <summary>Specifications</summary>
         <table class="spectable">
           <tr><td>Rim diameter (measurable)</td><td>9&Prime;&ndash;28&Prime; (auto)</td></tr>
@@ -331,7 +331,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag hpa">HPA-Faip</span>
       <h3>Digital Wheel Balancer <span class="mdl">&mdash; B225</span></h3>
-      <details class="specs" open>
+      <details class="specfold" open>
         <summary>Specifications</summary>
         <table class="spectable">
           <tr><td>Display</td><td>Double digital LED panel</td></tr>
@@ -363,7 +363,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag hpa">HPA-Faip</span>
       <h3>TV Monitor Wheel Balancer <span class="mdl">&mdash; B325</span></h3>
-      <details class="specs" open>
+      <details class="specfold" open>
         <summary>Specifications</summary>
         <table class="spectable">
           <tr><td>Display</td><td>19&Prime; widescreen LCD colour</td></tr>
@@ -397,7 +397,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag hpa">HPA-Faip</span>
       <h3>Semi-Automatic Tyre Changer <span class="mdl">&mdash; M31 &middot; swing-arm &middot; 21&Prime; &middot; 1ph</span></h3>
-      <details class="specs" open>
+      <details class="specfold" open>
         <summary>Specifications</summary>
         <table class="spectable">
           <tr><td>Outside clamp</td><td>10&Prime;&ndash;21&Prime;</td></tr>
@@ -424,7 +424,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag hpa">HPA-Faip</span>
       <h3>Automatic Tyre Changer <span class="mdl">&mdash; M54 &middot; tilting-post, heavy-duty &middot; 24&Prime; &middot; 1 or 3ph</span></h3>
-      <details class="specs" open>
+      <details class="specfold" open>
         <summary>Specifications</summary>
         <table class="spectable">
           <tr><td>Outside clamp</td><td>11&Prime;&ndash;24&Prime;</td></tr>
@@ -452,7 +452,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
       <span class="brandtag hpa">HPA-Faip</span>
       <h3>Automatic Tyre Changer <span class="mdl">&mdash; M422 &middot; tilting-post &middot; 22&Prime; &middot; 3ph</span></h3>
       <p class="note">The general workshop model. The post tilts back on a pedal and returns the tool head to the same setting, so a matched set of wheels runs without readjusting. Needs clear space behind for the tilt.</p>
-      <details class="specs" open>
+      <details class="specfold" open>
         <summary>Specifications</summary>
         <table class="spectable">
           <tr><td>Outside clamp</td><td>11&Prime;&ndash;22&Prime;</td></tr>
@@ -479,7 +479,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
       <span class="brandtag hpa">HPA-Faip</span>
       <h3>Automatic Tyre Changer <span class="mdl">&mdash; M424 &middot; tilting-post &middot; 24&Prime; &middot; 3ph</span></h3>
       <p class="note">The M422 with 24&Prime; rim capacity &mdash; the same tilting post and pedal-set tool head, sized for larger alloy wheels and light SUVs.</p>
-      <details class="specs" open>
+      <details class="specfold" open>
         <summary>Specifications</summary>
         <table class="spectable">
           <tr><td>Outside clamp</td><td>10&Prime;&ndash;24&Prime;</td></tr>
@@ -507,7 +507,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag hpa">HPA-Faip</span>
       <h3>3D Wheel Alignment System <span class="mdl">&mdash; C880 STD &middot; 2 camera</span></h3>
-      <details class="specs" open>
+      <details class="specfold" open>
         <summary>Specifications</summary>
         <table class="spectable">
           <tr><td>Total toe</td><td>&plusmn; 20&deg;</td></tr>
@@ -528,7 +528,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag hpa">HPA-Faip</span>
       <h3>3D Wheel Alignment System <span class="mdl">&mdash; C880 i-Next &middot; 2 camera</span></h3>
-      <details class="specs" open>
+      <details class="specfold" open>
         <summary>Specifications</summary>
         <table class="spectable">
           <tr><td>Total toe</td><td>&plusmn; 20&deg;</td></tr>
@@ -558,7 +558,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>Semi-Automatic Car Tyre Changer <span class="mdl">— SI003</span></h3>
-      <details class="specs" open>
+      <details class="specfold" open>
         <summary>Specifications</summary>
         <table class="spectable">
           <tr><td>Inner clamping size</td><td>13&quot;–25&quot;</td></tr>
@@ -581,7 +581,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>Automatic Tilt-Back Car Tyre Changer <span class="mdl">— SI118</span></h3>
-      <details class="specs" open>
+      <details class="specfold" open>
         <summary>Specifications</summary>
         <table class="spectable">
           <tr><td>Inner clamping size</td><td>10&quot;–28&quot;</td></tr>
@@ -604,7 +604,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>Semi-Automatic Car Wheel Balancer <span class="mdl">— S2023</span></h3>
-      <details class="specs" open>
+      <details class="specfold" open>
         <summary>Specifications</summary>
         <table class="spectable">
           <tr><td>Rim diameter</td><td>10&quot;–28&quot; or 10&quot;–24&quot;</td></tr>
@@ -628,7 +628,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>Automatic Car Wheel Balancer with LCD Display <span class="mdl">— S2228</span></h3>
-      <details class="specs" open>
+      <details class="specfold" open>
         <summary>Specifications</summary>
         <table class="spectable">
           <tr><td>Rim diameter</td><td>10&quot;–24&quot;</td></tr>
@@ -652,7 +652,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>3D Wheel Alignment System <span class="mdl">— S3015</span></h3>
-      <details class="specs" open>
+      <details class="specfold" open>
         <summary>Specifications</summary>
         <table class="spectable">
           <tr><td>Display precision</td><td>0.1 mm / 0.01°</td></tr>
@@ -679,7 +679,7 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
       <span class="brandtag hakiro">Hakiro</span>
       <h3>Semi-Automatic Tyre Changer <span class="mdl">&mdash; JA-C01 &middot; swing-arm &middot; 20&Prime;</span></h3>
       <p class="note">The arm swings aside by hand rather than tilting back, so the machine can stand against a wall &mdash; the same layout as the HPA-Faip M31.</p>
-      <details class="specs" open>
+      <details class="specfold" open>
         <summary>Specifications</summary>
         <table class="spectable">
           <tr><td>Configuration</td><td>Swing-arm</td></tr>
@@ -757,7 +757,7 @@ window.addEventListener('pageshow',function(){var i=document.querySelector('.sea
    the page as it was before -- the failure direction is the long page, not
    a page whose specs cannot be opened. 640px matches the CSS above. */
 (function(){try{if(window.matchMedia&&matchMedia('(max-width:640px)').matches){
-  var d=document.querySelectorAll('details.specs');
+  var d=document.querySelectorAll('details.specfold');
   for(var i=0;i<d.length;i++)d[i].open=false;}}catch(e){}})();
 </script>
 <script>

@@ -101,6 +101,39 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
   .prod .brandtag{font-size:.74rem}
   .prod .dspec .tag{font-size:.85rem}
 }
+
+/* PHONE: the spec table folds behind a tap, and the photo panel comes in.
+   The same treatment the Citra forecourt controllers and Automotive tyre
+   service pages carry -- see either for the reasoning in full. In short:
+   the spec tables and the photographs were most of these pages' height on
+   a phone, and neither can be deleted, so the table folds and the photo
+   is sized down.
+   The class is .specfold, not .specs: some of these pages already use
+   <details class="specs"> for the Supplied with accessory lists, and the
+   two must not share a name or a style.
+   <details> does the folding with no library. The markup carries the open
+   attribute, so with JavaScript off every table is expanded and the page
+   is what it was before -- the failure direction is the long page, never
+   specifications a reader cannot reach. A line at the foot of the page
+   closes them below 640px, and only there.
+   The summary is hidden on a desktop, so that view is unchanged. Hidden
+   only while open, so resizing a window down and back leaves it tappable
+   rather than sealing the table away. */
+.prod .specfold>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;
+  gap:.6rem;margin-top:.9rem;padding:.78rem .8rem;background:var(--paper);border:1px solid var(--line);
+  border-radius:var(--r);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;
+  color:var(--blue-800);transition:border-color .18s}
+.prod .specfold>summary::-webkit-details-marker{display:none}
+.prod .specfold>summary::after{content:"";width:7px;height:7px;margin-right:.2rem;border-right:2px solid currentColor;
+  border-bottom:2px solid currentColor;transform:rotate(45deg);transition:transform .18s}
+.prod .specfold[open]>summary::after{transform:rotate(-135deg)}
+.prod .specfold>summary:hover{border-color:var(--blue-800)}
+.prod .specfold table.spectable{margin-top:.55rem}
+@media(min-width:641px){.prod .specfold[open]>summary{display:none}}
+@media(max-width:640px){
+  .prod .shot{padding:.9rem}
+  .prod .shot img{max-height:120px}
+}
 </style>
 </head>
 <body>
@@ -203,17 +236,21 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
           <span class="brandtag">TCS</span>
           <h3>Reciprocating Piston Flow Meter <span class="mdl">&mdash; 682</span></h3>
           <p class="pdesc">Three pistons reciprocate in their own measuring chambers, much as they would in a car engine, driving a sliding valve through one smooth mechanical motion. That motion does not care what the liquid is doing &mdash; which is why the 682 holds its accuracy through changing viscosities and temperatures and through product carrying suspensions and solids.</p>
-          <table class="spectable">
-            <tr><td>Flow range</td><td>0.2&ndash;50 GPM (0.76&ndash;189 LPM)</td></tr>
-            <tr><td>Turndown ratio</td><td>250:1</td></tr>
-            <tr><td>Linear accuracy</td><td>To &plusmn;0.1%</td></tr>
-            <tr><td>Repeatability</td><td>To 0.01%</td></tr>
-            <tr><td>Operating pressure</td><td>150 PSI (10.5 bar)</td></tr>
-            <tr><td>Temperature range</td><td>&minus;40 to 160&deg;F (&minus;40 to 71&deg;C)</td></tr>
-            <tr><td>Viscosity range</td><td>To 50,000 SSU (11,000 cPs)</td></tr>
-            <tr><td>Connections</td><td>1&frac12;&quot; NPT companion flanges</td></tr>
-            <tr><td>Warranty</td><td>10 years (5 on LPG)</td></tr>
-          </table>
+          <details class="specfold" open>
+            <summary>Specifications</summary>
+            <table class="spectable">
+              <tr><td>Flow range</td><td>0.2&ndash;50 GPM (0.76&ndash;189 LPM)</td></tr>
+              <tr><td>Turndown ratio</td><td>250:1</td></tr>
+              <tr><td>Linear accuracy</td><td>To &plusmn;0.1%</td></tr>
+              <tr><td>Repeatability</td><td>To 0.01%</td></tr>
+              <tr><td>Operating pressure</td><td>150 PSI (10.5 bar)</td></tr>
+              <tr><td>Temperature range</td><td>&minus;40 to 160&deg;F (&minus;40 to 71&deg;C)</td></tr>
+              <tr><td>Viscosity range</td><td>To 50,000 SSU (11,000 cPs)</td></tr>
+              <tr><td>Connections</td><td>1&frac12;&quot; NPT companion flanges</td></tr>
+              <tr><td>Warranty</td><td>10 years (5 on LPG)</td></tr>
+          
+            </table>
+          </details>
           <div class="dspec">
             <div class="k">Body material</div>
             <div class="taglist"><span class="tag">Aluminium</span><span class="tag">Ductile iron</span><span class="tag">Stainless steel</span></div>
@@ -240,14 +277,18 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
           <span class="brandtag">TCS</span>
           <h3>Rotary Flow Meter <span class="mdl">&mdash; 700</span></h3>
           <p class="pdesc">Three rotors turn in unison inside the measuring chamber, kept in step by a timing gear on each shaft. No two metal surfaces touch, so there is nothing to wear and the meter does not drift out of calibration the way a contacting design eventually does. Compact, light, cheap in pressure to put in a line &mdash; and bi-directional, so one meter can serve a loading arm that both delivers and receives.</p>
-          <table class="spectable">
-            <tr><td>Flow</td><td>To 1,000 GPM (3,785 LPM)</td></tr>
-            <tr><td>Direction</td><td>Bi-directional</td></tr>
-            <tr><td>Linear accuracy</td><td>To &plusmn;0.15%</td></tr>
-            <tr><td>Repeatability</td><td>To 0.02%</td></tr>
-            <tr><td>Temperature range</td><td>&minus;40 to 160&deg;F (&minus;40 to 71&deg;C)</td></tr>
-            <tr><td>Viscosity range</td><td>To 1,500,000 SSU (325,000 cPs)</td></tr>
-          </table>
+          <details class="specfold" open>
+            <summary>Specifications</summary>
+            <table class="spectable">
+              <tr><td>Flow</td><td>To 1,000 GPM (3,785 LPM)</td></tr>
+              <tr><td>Direction</td><td>Bi-directional</td></tr>
+              <tr><td>Linear accuracy</td><td>To &plusmn;0.15%</td></tr>
+              <tr><td>Repeatability</td><td>To 0.02%</td></tr>
+              <tr><td>Temperature range</td><td>&minus;40 to 160&deg;F (&minus;40 to 71&deg;C)</td></tr>
+              <tr><td>Viscosity range</td><td>To 1,500,000 SSU (325,000 cPs)</td></tr>
+          
+            </table>
+          </details>
           <p class="note">Repeatability figure is for a 700SP with mechanical registration on a 1 cPs test fluid under constant operating conditions. Meets a wide range of weights and measures approvals &mdash; contact us for a specific market.</p>
         </div>
       </div>
@@ -279,17 +320,21 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
             <li>Density and water measurement</li>
             <li>Calibration, shift and inventory reports</li>
           </ul>
-          <table class="spectable">
-            <tr><td>Memory</td><td>16 GB non-volatile</td></tr>
-            <tr><td>Serial ports</td><td>RS-232 and RS-485</td></tr>
-            <tr><td>Printing</td><td>Slip, roll and wireless</td></tr>
-            <tr><td>Supply voltage</td><td>10&ndash;30 Vdc</td></tr>
-            <tr><td>Maximum frequency</td><td>5,000 Hz</td></tr>
-            <tr><td>Temperature rating</td><td>&minus;40 to 158&deg;F (&minus;40 to 70&deg;C)</td></tr>
-            <tr><td>Enclosure ports</td><td>Ten &frac12;&quot; NPT or M20</td></tr>
-            <tr><td>Calibration seal</td><td>Hall effect switch</td></tr>
-            <tr><td>Hazardous rating</td><td>Class 1, Div. 2, Groups C &amp; D</td></tr>
-          </table>
+          <details class="specfold" open>
+            <summary>Specifications</summary>
+            <table class="spectable">
+              <tr><td>Memory</td><td>16 GB non-volatile</td></tr>
+              <tr><td>Serial ports</td><td>RS-232 and RS-485</td></tr>
+              <tr><td>Printing</td><td>Slip, roll and wireless</td></tr>
+              <tr><td>Supply voltage</td><td>10&ndash;30 Vdc</td></tr>
+              <tr><td>Maximum frequency</td><td>5,000 Hz</td></tr>
+              <tr><td>Temperature rating</td><td>&minus;40 to 158&deg;F (&minus;40 to 70&deg;C)</td></tr>
+              <tr><td>Enclosure ports</td><td>Ten &frac12;&quot; NPT or M20</td></tr>
+              <tr><td>Calibration seal</td><td>Hall effect switch</td></tr>
+              <tr><td>Hazardous rating</td><td>Class 1, Div. 2, Groups C &amp; D</td></tr>
+          
+            </table>
+          </details>
           <div class="dspec">
             <div class="k">Optional</div>
             <div class="taglist"><span class="tag">Internal Wi-Fi or cellular</span><span class="tag">Bluetooth</span><span class="tag">Radio</span><span class="tag">Additive injection</span><span class="tag">Corrected differential pressure</span><span class="tag">JIG-compliant water integration</span><span class="tag">GPS tracking</span></div>
@@ -355,6 +400,13 @@ function hsearch(f){var q=(f.q.value||'').trim();if(!q)return false;var l=docume
 window.addEventListener('pageshow',function(){var i=document.querySelector('.searchbox input[name="q"]');if(i)i.value='';});
 /* reveal */
 (function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
+/* Fold the spec tables away on a phone. They are <details open> in the
+   markup, so if this never runs every table is simply expanded, which is
+   the page as it was before. .specfold, not .specs -- the Supplied with
+   lists on some of these pages are .specs and must stay as they are. */
+(function(){try{if(window.matchMedia&&matchMedia('(max-width:640px)').matches){
+  var d=document.querySelectorAll('details.specfold');
+  for(var i=0;i<d.length;i++)d[i].open=false;}}catch(e){}})();
 </script>
 <script src="translate.js?v=202608171100"></script>
 <script src="../assets/nav.js?v=202608122200" defer></script>

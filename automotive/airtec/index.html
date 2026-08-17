@@ -85,6 +85,39 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
   .prod .brandtag{font-size:.74rem}
   .prod .dspec .tag{font-size:.85rem}
 }
+
+/* PHONE: the spec table folds behind a tap, and the photo panel comes in.
+   The same treatment the Citra forecourt controllers and Automotive tyre
+   service pages carry -- see either for the reasoning in full. In short:
+   the spec tables and the photographs were most of these pages' height on
+   a phone, and neither can be deleted, so the table folds and the photo
+   is sized down.
+   The class is .specfold, not .specs: some of these pages already use
+   <details class="specs"> for the Supplied with accessory lists, and the
+   two must not share a name or a style.
+   <details> does the folding with no library. The markup carries the open
+   attribute, so with JavaScript off every table is expanded and the page
+   is what it was before -- the failure direction is the long page, never
+   specifications a reader cannot reach. A line at the foot of the page
+   closes them below 640px, and only there.
+   The summary is hidden on a desktop, so that view is unchanged. Hidden
+   only while open, so resizing a window down and back leaves it tappable
+   rather than sealing the table away. */
+.prod .specfold>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;
+  gap:.6rem;margin-top:.9rem;padding:.78rem .8rem;background:var(--paper);border:1px solid var(--line);
+  border-radius:var(--r);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;
+  color:var(--blue-800);transition:border-color .18s}
+.prod .specfold>summary::-webkit-details-marker{display:none}
+.prod .specfold>summary::after{content:"";width:7px;height:7px;margin-right:.2rem;border-right:2px solid currentColor;
+  border-bottom:2px solid currentColor;transform:rotate(45deg);transition:transform .18s}
+.prod .specfold[open]>summary::after{transform:rotate(-135deg)}
+.prod .specfold>summary:hover{border-color:var(--blue-800)}
+.prod .specfold table.spectable{margin-top:.55rem}
+@media(min-width:641px){.prod .specfold[open]>summary{display:none}}
+@media(max-width:640px){
+  .prod .shot{padding:.9rem}
+  .prod .shot img{max-height:120px}
+}
 </style>
 </head>
 <body>
@@ -210,15 +243,19 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
           <span class="sectag">TYRE SHOP</span>
           <h3>Compact Inflator <span class="mdl">&mdash; 89MXA</span></h3>
           <p class="pdesc">Small enough to mount on the tyre changer itself, so the inflator sits where the wheel already is. Passenger cars, vans and light commercials.</p>
-          <table class="spectable">
-            <tr><td>Pressure range</td><td>5&ndash;145 psi / 35&ndash;1000 kPa / 0.3&ndash;10.0 bar</td></tr>
-            <tr><td>Accuracy</td><td>&plusmn;0.5% FS</td></tr>
-            <tr><td>Enclosure</td><td>High impact polycarbonate (IP40)</td></tr>
-            <tr><td>Dimensions</td><td>155 W &times; 155 H &times; 90 D mm</td></tr>
-            <tr><td>Hose kit</td><td>2 m supplied</td></tr>
-            <tr><td>Power supply</td><td>220&ndash;240 VAC (12 VDC or 100&ndash;120 VAC optional)</td></tr>
-            <tr><td>Units</td><td>psi / kPa / bar / kg/cm&sup2;</td></tr>
-          </table>
+          <details class="specfold" open>
+            <summary>Specifications</summary>
+            <table class="spectable">
+              <tr><td>Pressure range</td><td>5&ndash;145 psi / 35&ndash;1000 kPa / 0.3&ndash;10.0 bar</td></tr>
+              <tr><td>Accuracy</td><td>&plusmn;0.5% FS</td></tr>
+              <tr><td>Enclosure</td><td>High impact polycarbonate (IP40)</td></tr>
+              <tr><td>Dimensions</td><td>155 W &times; 155 H &times; 90 D mm</td></tr>
+              <tr><td>Hose kit</td><td>2 m supplied</td></tr>
+              <tr><td>Power supply</td><td>220&ndash;240 VAC (12 VDC or 100&ndash;120 VAC optional)</td></tr>
+              <tr><td>Units</td><td>psi / kPa / bar / kg/cm&sup2;</td></tr>
+          
+            </table>
+          </details>
         </div>
       </div>
     </article>
@@ -230,15 +267,19 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
           <span class="sectag">WORKSHOP</span>
           <h3>General Purpose Inflator <span class="mdl">&mdash; 89MDA</span></h3>
           <p class="pdesc">The workshop default. Wall or surface mounted and sealed against weather, so it works in an open bay, and rated for anything pneumatic from a trolley wheel to a truck tyre.</p>
-          <table class="spectable">
-            <tr><td>Pressure range</td><td>5&ndash;145 psi / 35&ndash;1000 kPa / 0.3&ndash;10.0 bar</td></tr>
-            <tr><td>Accuracy</td><td>&plusmn;0.5% FS</td></tr>
-            <tr><td>Enclosure</td><td>High impact polycarbonate (IP66)</td></tr>
-            <tr><td>Dimensions</td><td>220 W &times; 220 H &times; 100 D mm</td></tr>
-            <tr><td>Hose kit</td><td>10 m supplied</td></tr>
-            <tr><td>Power supply</td><td>220&ndash;240 VAC (12 VDC or 100&ndash;120 VAC optional)</td></tr>
-            <tr><td>Units</td><td>psi / kPa / bar / kg/cm&sup2;</td></tr>
-          </table>
+          <details class="specfold" open>
+            <summary>Specifications</summary>
+            <table class="spectable">
+              <tr><td>Pressure range</td><td>5&ndash;145 psi / 35&ndash;1000 kPa / 0.3&ndash;10.0 bar</td></tr>
+              <tr><td>Accuracy</td><td>&plusmn;0.5% FS</td></tr>
+              <tr><td>Enclosure</td><td>High impact polycarbonate (IP66)</td></tr>
+              <tr><td>Dimensions</td><td>220 W &times; 220 H &times; 100 D mm</td></tr>
+              <tr><td>Hose kit</td><td>10 m supplied</td></tr>
+              <tr><td>Power supply</td><td>220&ndash;240 VAC (12 VDC or 100&ndash;120 VAC optional)</td></tr>
+              <tr><td>Units</td><td>psi / kPa / bar / kg/cm&sup2;</td></tr>
+          
+            </table>
+          </details>
         </div>
       </div>
     </article>
@@ -250,17 +291,21 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
           <span class="sectag">WORKSHOP</span>
           <h3>Heavy Duty Inflator <span class="mdl">&mdash; 89XDA / XDD</span></h3>
           <p class="pdesc">Diecast aluminium for bays that take knocks. The XDD carries two displays, set pressure and actual, so an operator can watch a tyre come up rather than wait for the beep.</p>
-          <table class="spectable">
-            <tr><td>Pressure range</td><td>5&ndash;145 psi / 35&ndash;1000 kPa / 0.3&ndash;10.0 bar</td></tr>
-            <tr><td>Accuracy</td><td>&plusmn;0.5% FS</td></tr>
-            <tr><td>Enclosure</td><td>Diecast aluminium, wall or surface mount (IP66)</td></tr>
-            <tr><td>Dimensions</td><td>269 W &times; 285 H &times; 106 D mm</td></tr>
-            <tr><td>Hose kit</td><td>10 m supplied</td></tr>
-            <tr><td>Switches</td><td>Stainless steel (piezo optional)</td></tr>
-            <tr><td>XDD variant</td><td>Dual display &mdash; set and actual pressure</td></tr>
-            <tr><td>Power supply</td><td>220&ndash;240 VAC (12 VDC or 100&ndash;120 VAC optional)</td></tr>
-            <tr><td>Units</td><td>psi / kPa / bar / kg/cm&sup2;</td></tr>
-          </table>
+          <details class="specfold" open>
+            <summary>Specifications</summary>
+            <table class="spectable">
+              <tr><td>Pressure range</td><td>5&ndash;145 psi / 35&ndash;1000 kPa / 0.3&ndash;10.0 bar</td></tr>
+              <tr><td>Accuracy</td><td>&plusmn;0.5% FS</td></tr>
+              <tr><td>Enclosure</td><td>Diecast aluminium, wall or surface mount (IP66)</td></tr>
+              <tr><td>Dimensions</td><td>269 W &times; 285 H &times; 106 D mm</td></tr>
+              <tr><td>Hose kit</td><td>10 m supplied</td></tr>
+              <tr><td>Switches</td><td>Stainless steel (piezo optional)</td></tr>
+              <tr><td>XDD variant</td><td>Dual display &mdash; set and actual pressure</td></tr>
+              <tr><td>Power supply</td><td>220&ndash;240 VAC (12 VDC or 100&ndash;120 VAC optional)</td></tr>
+              <tr><td>Units</td><td>psi / kPa / bar / kg/cm&sup2;</td></tr>
+          
+            </table>
+          </details>
         </div>
       </div>
     </article>
@@ -272,18 +317,22 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
           <span class="sectag">FLEET &amp; MINING</span>
           <h3>High Flow Inflator <span class="mdl">&mdash; 89XDB / XDE</span></h3>
           <p class="pdesc">Built for volume. A half-inch valve moves over 4,000 litres a minute, and a four-way manifold lets one unit fill several tyres at once &mdash; fleet workshops and mine sites, where the job is a set of six rather than a single wheel.</p>
-          <table class="spectable">
-            <tr><td>Pressure range</td><td>5&ndash;145 psi / 35&ndash;1000 kPa / 0.3&ndash;10.0 bar</td></tr>
-            <tr><td>Accuracy</td><td>&plusmn;0.5% FS</td></tr>
-            <tr><td>Flow rate</td><td>Over 4,000 l/min (141 cfm) at 10 bar</td></tr>
-            <tr><td>Valve</td><td>High flow &frac12;&Prime;</td></tr>
-            <tr><td>Enclosure</td><td>Diecast aluminium wall mount (IP66)</td></tr>
-            <tr><td>Dimensions</td><td>269 W &times; 285 H &times; 106 D mm</td></tr>
-            <tr><td>Multi-tyre</td><td>4-way manifold kit available</td></tr>
-            <tr><td>XDE variant</td><td>Dual display</td></tr>
-            <tr><td>Power supply</td><td>220&ndash;240 VAC (12 VDC or 100&ndash;120 VAC optional)</td></tr>
-            <tr><td>Units</td><td>psi / kPa / bar / kg/cm&sup2;</td></tr>
-          </table>
+          <details class="specfold" open>
+            <summary>Specifications</summary>
+            <table class="spectable">
+              <tr><td>Pressure range</td><td>5&ndash;145 psi / 35&ndash;1000 kPa / 0.3&ndash;10.0 bar</td></tr>
+              <tr><td>Accuracy</td><td>&plusmn;0.5% FS</td></tr>
+              <tr><td>Flow rate</td><td>Over 4,000 l/min (141 cfm) at 10 bar</td></tr>
+              <tr><td>Valve</td><td>High flow &frac12;&Prime;</td></tr>
+              <tr><td>Enclosure</td><td>Diecast aluminium wall mount (IP66)</td></tr>
+              <tr><td>Dimensions</td><td>269 W &times; 285 H &times; 106 D mm</td></tr>
+              <tr><td>Multi-tyre</td><td>4-way manifold kit available</td></tr>
+              <tr><td>XDE variant</td><td>Dual display</td></tr>
+              <tr><td>Power supply</td><td>220&ndash;240 VAC (12 VDC or 100&ndash;120 VAC optional)</td></tr>
+              <tr><td>Units</td><td>psi / kPa / bar / kg/cm&sup2;</td></tr>
+          
+            </table>
+          </details>
         </div>
       </div>
     </article>
@@ -295,17 +344,21 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
           <span class="sectag">TRANSPORT &amp; MINING</span>
           <h3>High Pressure Inflator <span class="mdl">&mdash; 89XHB</span></h3>
           <p class="pdesc">Takes the ceiling to 12.5 bar for truck, heavy vehicle and mining tyres, and moves the same volume as the high flow unit. Works with standard or large-bore valves and core extraction tools.</p>
-          <table class="spectable">
-            <tr><td>Pressure range</td><td>5&ndash;182 psi / 35&ndash;1250 kPa / 0.3&ndash;12.5 bar</td></tr>
-            <tr><td>Accuracy</td><td>&plusmn;0.5% FS</td></tr>
-            <tr><td>Flow rate</td><td>Over 4,000 l/min (141 cfm)</td></tr>
-            <tr><td>Valve</td><td>High flow &frac12;&Prime;, standard or large bore</td></tr>
-            <tr><td>Enclosure</td><td>Diecast aluminium wall mount (IP66)</td></tr>
-            <tr><td>Dimensions</td><td>269 W &times; 285 H &times; 106 D mm</td></tr>
-            <tr><td>Multi-tyre</td><td>4-way manifold kit available</td></tr>
-            <tr><td>Power supply</td><td>220&ndash;240 VAC (12 VDC or 100&ndash;120 VAC optional)</td></tr>
-            <tr><td>Units</td><td>psi / kPa / bar / kg/cm&sup2;</td></tr>
-          </table>
+          <details class="specfold" open>
+            <summary>Specifications</summary>
+            <table class="spectable">
+              <tr><td>Pressure range</td><td>5&ndash;182 psi / 35&ndash;1250 kPa / 0.3&ndash;12.5 bar</td></tr>
+              <tr><td>Accuracy</td><td>&plusmn;0.5% FS</td></tr>
+              <tr><td>Flow rate</td><td>Over 4,000 l/min (141 cfm)</td></tr>
+              <tr><td>Valve</td><td>High flow &frac12;&Prime;, standard or large bore</td></tr>
+              <tr><td>Enclosure</td><td>Diecast aluminium wall mount (IP66)</td></tr>
+              <tr><td>Dimensions</td><td>269 W &times; 285 H &times; 106 D mm</td></tr>
+              <tr><td>Multi-tyre</td><td>4-way manifold kit available</td></tr>
+              <tr><td>Power supply</td><td>220&ndash;240 VAC (12 VDC or 100&ndash;120 VAC optional)</td></tr>
+              <tr><td>Units</td><td>psi / kPa / bar / kg/cm&sup2;</td></tr>
+          
+            </table>
+          </details>
         </div>
       </div>
     </article>
@@ -317,17 +370,21 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
           <span class="sectag">MINING &amp; OTR</span>
           <h3>Temperature Compensating Inflator <span class="mdl">&mdash; 89XTC</span></h3>
           <p class="pdesc">For OTR and mining tyres. It reads the air temperature inside the tyre as well as the pressure, then corrects the fill against a defined ambient using a programmed temperature/pressure table &mdash; so a tyre set hot in the pit is still right once it cools.</p>
-          <table class="spectable">
-            <tr><td>Pressure range</td><td>5&ndash;145 psi / 35&ndash;1000 kPa / 0.3&ndash;10.0 bar</td></tr>
-            <tr><td>Accuracy</td><td>&plusmn;0.5% FS</td></tr>
-            <tr><td>Compensation</td><td>Wet and dry tyre, against defined ambient</td></tr>
-            <tr><td>Enclosure</td><td>Diecast aluminium (IP66)</td></tr>
-            <tr><td>Dimensions</td><td>269 W &times; 285 H &times; 106 D mm</td></tr>
-            <tr><td>Hose kit</td><td>20 m supplied</td></tr>
-            <tr><td>Switches</td><td>Vandal resistant piezo</td></tr>
-            <tr><td>Power supply</td><td>220&ndash;240 VAC (12 VDC or 100&ndash;120 VAC optional)</td></tr>
-            <tr><td>Units</td><td>psi / kPa / bar / kg/cm&sup2;</td></tr>
-          </table>
+          <details class="specfold" open>
+            <summary>Specifications</summary>
+            <table class="spectable">
+              <tr><td>Pressure range</td><td>5&ndash;145 psi / 35&ndash;1000 kPa / 0.3&ndash;10.0 bar</td></tr>
+              <tr><td>Accuracy</td><td>&plusmn;0.5% FS</td></tr>
+              <tr><td>Compensation</td><td>Wet and dry tyre, against defined ambient</td></tr>
+              <tr><td>Enclosure</td><td>Diecast aluminium (IP66)</td></tr>
+              <tr><td>Dimensions</td><td>269 W &times; 285 H &times; 106 D mm</td></tr>
+              <tr><td>Hose kit</td><td>20 m supplied</td></tr>
+              <tr><td>Switches</td><td>Vandal resistant piezo</td></tr>
+              <tr><td>Power supply</td><td>220&ndash;240 VAC (12 VDC or 100&ndash;120 VAC optional)</td></tr>
+              <tr><td>Units</td><td>psi / kPa / bar / kg/cm&sup2;</td></tr>
+          
+            </table>
+          </details>
         </div>
       </div>
     </article>
@@ -339,19 +396,23 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
           <span class="sectag">FORECOURT</span>
           <h3>Freestanding Inflator, Round <span class="mdl">&mdash; 89BEP / BED</span></h3>
           <p class="pdesc">A pedestal for the forecourt, where the customer works the unit rather than a technician. Round column, and a vandal-resistant faceplate because it stands unattended.</p>
-          <table class="spectable">
-            <tr><td>Pressure range</td><td>5&ndash;145 psi / 35&ndash;1000 kPa / 0.3&ndash;10.0 bar</td></tr>
-            <tr><td>Accuracy</td><td>&plusmn;0.5% FS</td></tr>
-            <tr><td>Column</td><td>Round profile</td></tr>
-            <tr><td>Enclosure</td><td>Diecast aluminium (IP46)</td></tr>
-            <tr><td>Dimensions</td><td>320 W &times; 1400 H &times; 320 D mm</td></tr>
-            <tr><td>Hose kit</td><td>10 m supplied</td></tr>
-            <tr><td>Switches</td><td>Vandal resistant piezo</td></tr>
-            <tr><td>BED variant</td><td>Dual display</td></tr>
-            <tr><td>Low range option</td><td>1&ndash;29 psi module available</td></tr>
-            <tr><td>Power supply</td><td>220&ndash;240 VAC (100&ndash;120 VAC optional)</td></tr>
-            <tr><td>Units</td><td>psi / kPa / bar / kg/cm&sup2;</td></tr>
-          </table>
+          <details class="specfold" open>
+            <summary>Specifications</summary>
+            <table class="spectable">
+              <tr><td>Pressure range</td><td>5&ndash;145 psi / 35&ndash;1000 kPa / 0.3&ndash;10.0 bar</td></tr>
+              <tr><td>Accuracy</td><td>&plusmn;0.5% FS</td></tr>
+              <tr><td>Column</td><td>Round profile</td></tr>
+              <tr><td>Enclosure</td><td>Diecast aluminium (IP46)</td></tr>
+              <tr><td>Dimensions</td><td>320 W &times; 1400 H &times; 320 D mm</td></tr>
+              <tr><td>Hose kit</td><td>10 m supplied</td></tr>
+              <tr><td>Switches</td><td>Vandal resistant piezo</td></tr>
+              <tr><td>BED variant</td><td>Dual display</td></tr>
+              <tr><td>Low range option</td><td>1&ndash;29 psi module available</td></tr>
+              <tr><td>Power supply</td><td>220&ndash;240 VAC (100&ndash;120 VAC optional)</td></tr>
+              <tr><td>Units</td><td>psi / kPa / bar / kg/cm&sup2;</td></tr>
+          
+            </table>
+          </details>
         </div>
       </div>
     </article>
@@ -363,18 +424,22 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
           <span class="sectag">FORECOURT</span>
           <h3>Freestanding Inflator, Square <span class="mdl">&mdash; 89FEP / FED</span></h3>
           <p class="pdesc">The same forecourt duty on a square column, which suits a site whose canopy and pump islands are already squared off.</p>
-          <table class="spectable">
-            <tr><td>Pressure range</td><td>5&ndash;145 psi / 35&ndash;1000 kPa / 0.3&ndash;10.0 bar</td></tr>
-            <tr><td>Accuracy</td><td>&plusmn;0.5% FS</td></tr>
-            <tr><td>Column</td><td>Square profile</td></tr>
-            <tr><td>Enclosure</td><td>Diecast aluminium (IP46)</td></tr>
-            <tr><td>Dimensions</td><td>320 W &times; 1400 H &times; 320 D mm</td></tr>
-            <tr><td>Hose kit</td><td>10 m supplied</td></tr>
-            <tr><td>Switches</td><td>Vandal resistant</td></tr>
-            <tr><td>FED variant</td><td>Dual display</td></tr>
-            <tr><td>Power supply</td><td>220&ndash;240 VAC (100&ndash;120 VAC optional)</td></tr>
-            <tr><td>Units</td><td>psi / kPa / bar / kg/cm&sup2;</td></tr>
-          </table>
+          <details class="specfold" open>
+            <summary>Specifications</summary>
+            <table class="spectable">
+              <tr><td>Pressure range</td><td>5&ndash;145 psi / 35&ndash;1000 kPa / 0.3&ndash;10.0 bar</td></tr>
+              <tr><td>Accuracy</td><td>&plusmn;0.5% FS</td></tr>
+              <tr><td>Column</td><td>Square profile</td></tr>
+              <tr><td>Enclosure</td><td>Diecast aluminium (IP46)</td></tr>
+              <tr><td>Dimensions</td><td>320 W &times; 1400 H &times; 320 D mm</td></tr>
+              <tr><td>Hose kit</td><td>10 m supplied</td></tr>
+              <tr><td>Switches</td><td>Vandal resistant</td></tr>
+              <tr><td>FED variant</td><td>Dual display</td></tr>
+              <tr><td>Power supply</td><td>220&ndash;240 VAC (100&ndash;120 VAC optional)</td></tr>
+              <tr><td>Units</td><td>psi / kPa / bar / kg/cm&sup2;</td></tr>
+          
+            </table>
+          </details>
         </div>
       </div>
     </article>
@@ -454,6 +519,13 @@ function hsearch(f){var q=(f.q.value||'').trim();if(!q)return false;var l=docume
 window.addEventListener('pageshow',function(){var i=document.querySelector('.searchbox input[name="q"]');if(i)i.value='';});
 /* reveal */
 (function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
+/* Fold the spec tables away on a phone. They are <details open> in the
+   markup, so if this never runs every table is simply expanded, which is
+   the page as it was before. .specfold, not .specs -- the Supplied with
+   lists on some of these pages are .specs and must stay as they are. */
+(function(){try{if(window.matchMedia&&matchMedia('(max-width:640px)').matches){
+  var d=document.querySelectorAll('details.specfold');
+  for(var i=0;i<d.length;i++)d[i].open=false;}}catch(e){}})();
 /* range filter: show the cards carrying the chosen setting */
 (function(){
   var bar=document.querySelector('.sectorfilter');
