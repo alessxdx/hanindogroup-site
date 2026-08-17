@@ -1128,6 +1128,11 @@ a.pcard:hover .more svg{transform:translateX(3px)}
 .footer .cl{display:block;margin-bottom:.45rem;color:#a5b5cd}
 .footer .cl b{color:#fff;font-weight:600}
 .foot-bottom{border-top:1px solid rgba(255,255,255,.08);margin-top:2.4rem;padding-top:1.4rem;display:flex;flex-wrap:wrap;gap:.6rem;justify-content:space-between;font-size:.78rem;color:#6f7f99}
+/* The privacy link sits INSIDE the copyright span rather than beside it as a
+   third flex item, so .foot-bottom stays a two-item space-between and the
+   copyright is still a whole text node the language toggle can match. */
+.foot-bottom .privlink{color:#8fa0bc;margin-left:.5rem}
+.foot-bottom .privlink:hover{color:#fff;text-decoration:underline}
 /* ================= HOME ================= */
 /* Hero slideshow — 3 slides, crossfade. Flat: no zoom, no glow. */
 .hero{position:relative;overflow:hidden;background:var(--blue-950);color:#fff}

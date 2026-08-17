@@ -107,6 +107,8 @@
     "Our Companies": "集团公司",
     "Your technology one stop solution, serving the oil & gas, automation, automotive and fire protection industries in Indonesia since 1987.": "您的一站式技术解决方案，自 1987 年起服务于印尼的石油天然气、自动化、汽车与消防行业。",
     "© 2026 Hanindo Group. All Rights Reserved.": "© 2026 Hanindo Group. 版权所有。",
+    /* The privacy link beside the copyright, on every page of this site. */
+    "Privacy": "隐私",
 
     /* ---- about: hero + overview + journey ---- */
     "About": "关于",

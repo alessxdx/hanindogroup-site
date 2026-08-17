@@ -131,6 +131,8 @@
     /* ---- footer ---- */
     "Your technology one stop solution, serving the oil & gas, automation, automotive and fire protection industries in Indonesia since 1987.": "Solusi teknologi satu atap Anda, melayani industri minyak & gas, otomasi, otomotif, dan proteksi kebakaran di Indonesia sejak 1987.",
     "© 2026 Hanindo Group. All Rights Reserved.": "© 2026 Hanindo Group. Hak Cipta Dilindungi.",
+    /* The privacy link beside the copyright, on every page of this site. */
+    "Privacy": "Privasi",
 
     /* ---- about: hero + growth timeline ---- */
     "About": "Tentang",
@@ -239,6 +241,42 @@
     "Ask the head office.": "Tanyakan ke kantor pusat.",
     "Tell us what you were looking for and we will point you to the right page — or the right team.": "Beri tahu kami apa yang Anda cari dan kami akan mengarahkan Anda ke halaman yang tepat — atau ke tim yang tepat.",
     "All contacts": "Semua kontak",
+
+    /* ---- privacy page ----
+       Added with the page on 2026-08-17. "Privacy" itself is up with the
+       footer, since the link sits on every page of every site and so is in
+       all eight dictionaries; the prose below is only ever on this page, so
+       it lives only here.
+
+       The last section's paragraph wraps an email address in a link, which
+       splits it into two text nodes -- hence the two half-sentence entries.
+       The address itself is not translated. */
+    "What this website does with information about the people who visit it. It is short because the site does very little.": "Apa yang dilakukan situs ini terhadap informasi mengenai orang-orang yang mengunjunginya. Halaman ini singkat karena situs ini memang melakukan sangat sedikit.",
+    "This site is a catalogue of what the Hanindo Group companies supply. It has no accounts, no enquiry forms and no shopping basket, so there is very little for us to collect, and we have chosen not to collect what we could.": "Situs ini adalah katalog dari apa yang dipasok perusahaan-perusahaan Hanindo Group. Tidak ada akun, tidak ada formulir permintaan, dan tidak ada keranjang belanja, sehingga sangat sedikit yang dapat kami kumpulkan — dan yang sebenarnya bisa kami kumpulkan pun kami pilih untuk tidak kumpulkan.",
+
+    "We do not track you": "Kami tidak melacak Anda",
+    "This site sets no cookies. It runs no analytics, no advertising tags and no social media pixels, so no third party is told which of our pages you looked at.": "Situs ini tidak menyetel cookie. Tidak ada analitik, tidak ada tag iklan, dan tidak ada piksel media sosial, sehingga tidak ada pihak ketiga yang diberi tahu halaman mana yang Anda lihat.",
+    "Everything the site needs comes from our own server, including the typeface. Loading a page contacts no other company.": "Semua yang dibutuhkan situs ini berasal dari server kami sendiri, termasuk hurufnya. Membuka sebuah halaman tidak menghubungi perusahaan lain mana pun.",
+
+    "One preference is kept on your device": "Satu preferensi disimpan di perangkat Anda",
+    "If you switch the language between English, Bahasa Indonesia or 中文, your choice is saved in your browser so the site opens that way next time. It stays on your device, is never sent to us, and holds nothing but the language you picked. Clearing your browser data removes it.": "Jika Anda mengganti bahasa antara English, Bahasa Indonesia, atau 中文, pilihan Anda disimpan di peramban agar situs terbuka dengan bahasa itu di lain waktu. Data tersebut tetap di perangkat Anda, tidak pernah dikirim kepada kami, dan tidak memuat apa pun selain bahasa yang Anda pilih. Menghapus data peramban akan menghapusnya.",
+
+    "Our server keeps ordinary access logs": "Server kami menyimpan catatan akses biasa",
+    "Like any website, ours records the requests it serves: the address of the page, the date and time, your IP address and which browser made the request. These logs exist so the site can be kept running and secure.": "Seperti situs web mana pun, situs kami mencatat permintaan yang dilayaninya: alamat halaman, tanggal dan waktu, alamat IP Anda, serta peramban yang mengajukan permintaan. Catatan ini ada agar situs dapat terus berjalan dan tetap aman.",
+    "We do not use them to build a profile of you, we do not combine them with anything else, and we do not sell or share them. They are not linked to your name unless you have written to us separately.": "Kami tidak menggunakannya untuk menyusun profil Anda, tidak menggabungkannya dengan data lain, serta tidak menjual atau membagikannya. Catatan itu tidak dikaitkan dengan nama Anda kecuali Anda memang telah menghubungi kami secara terpisah.",
+
+    "If you write to us": "Jika Anda menghubungi kami",
+    "Our contact pages list email addresses and telephone numbers rather than a form. If you contact us, we hold what you send — your name, your company, your message and whatever else you choose to tell us — and use it only to answer you and to carry out any work that follows.": "Halaman kontak kami mencantumkan alamat email dan nomor telepon, bukan formulir. Jika Anda menghubungi kami, kami menyimpan apa yang Anda kirim — nama, perusahaan, pesan Anda, dan hal lain yang Anda pilih untuk sampaikan — dan menggunakannya hanya untuk menjawab Anda serta menjalankan pekerjaan yang menyusul.",
+    "We keep enquiries as business correspondence. We do not add you to a mailing list you did not ask for.": "Kami menyimpan permintaan sebagai korespondensi bisnis. Kami tidak memasukkan Anda ke daftar milis yang tidak Anda minta.",
+
+    "Links that lead off this site": "Tautan yang menuju ke luar situs ini",
+    "Some pages link to the websites of the manufacturers we represent, and our contact pages link to Google Maps for directions. Those sites are run by other companies under their own privacy terms, and you only reach them by choosing to click.": "Beberapa halaman menautkan ke situs web produsen yang kami wakili, dan halaman kontak kami menautkan ke Google Maps untuk petunjuk arah. Situs-situs tersebut dikelola perusahaan lain dengan ketentuan privasi mereka sendiri, dan Anda hanya membukanya jika memilih untuk mengekliknya.",
+
+    "Asking us about your information": "Menanyakan informasi Anda kepada kami",
+    "If you have written to us and want to know what we hold, or want it corrected or deleted, email": "Jika Anda pernah menghubungi kami dan ingin mengetahui data apa yang kami simpan, atau ingin data itu diperbaiki atau dihapus, kirim email ke",
+    "or write to the head office address in the footer of this page, and we will deal with it.": "atau kirim surat ke alamat kantor pusat di bagian bawah halaman ini, dan kami akan menanganinya.",
+
+    "Last updated 17 August 2026. If this changes we will update this page and the date above.": "Terakhir diperbarui 17 Agustus 2026. Jika ada perubahan, kami akan memperbarui halaman ini beserta tanggal di atas.",
 
     /* ---- misc ---- */
     "Photo needed": "Perlu foto"

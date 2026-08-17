@@ -531,7 +531,13 @@
     box.innerHTML = '<p class="smsg">' + esc(STR[lang()].loading) + '</p>';
 
     var req = new XMLHttpRequest();
-    req.open('GET', '../assets/search-index.json?v=1', true);
+    /* Bump this stamp whenever build-search-index.pl is re-run. It sat at
+       v=1 from the day it was written, so every rebuild after the first
+       shipped an index that returning visitors never saw -- the pages were
+       in the file and missing from their results. Raised on 2026-08-17 when
+       the privacy page was added and would have been invisible to anyone
+       who had searched the site before. */
+    req.open('GET', '../assets/search-index.json?v=202608171600', true);
     req.onreadystatechange = function () {
       if (req.readyState !== 4) return;
 
