@@ -59,26 +59,25 @@
     "Transport": "Transportasi",
     "Technology & services": "Teknologi & layanan",
 
-    /* ---- contact block ---- */
-    "Talk to PT. Hanindo Automation Solutions": "Hubungi PT. Hanindo Automation Solutions",
-    "Rolling out POS,": "Menggelar POS,",
-    "or replacing a printer fleet?": "atau mengganti armada printer?",
-    "Tell us the sites and volumes you handle and our team will match the right printing, scanning and POS package.": "Beri tahu kami lokasi dan volume yang Anda tangani, dan tim kami akan menyiapkan paket pencetakan, pemindaian, dan POS yang tepat.",
+    /* ---- contact page, and the footer's address column ----
+       The contact band these mostly belonged to came off the home, About
+       and Products & Services pages, and ten of its entries went with it:
+       the eyebrow, both halves of the heading, the sub line, "Contact
+       page", "Phone", and the four pieces the <b> and the two <a>s split
+       its market note into.
+       What is left was checked one at a time and is still in use.
+       "Email our team" is the contact page's button; "Office", "Email",
+       "Jakarta Office" and "Tel:" are the details list and the footer's
+       address column; and "China" and ", see" belong to the contact
+       page's own market note, which is worded differently from the one
+       that came off. */
     "Email our team": "Email tim kami",
-    "Contact page": "Halaman kontak",
     "Office": "Kantor",
-    "Phone": "Telepon",
     "Email": "Email",
     "Jakarta Office": "Kantor Jakarta",
     "Tel:": "Tel:",
-
-    /* ---- market note ---- */
-    "This contact handles": "Kontak ini menangani",
-    "Indonesia": "Indonesia",
     "China": "Tiongkok",
-    ". For": ". Untuk",
     ", see": ", lihat",
-    ". For the rest of South East Asia, see": ". Untuk kawasan Asia Tenggara lainnya, lihat",
 
     /* ---- footer ---- */
     "Our Companies": "Perusahaan Kami",
