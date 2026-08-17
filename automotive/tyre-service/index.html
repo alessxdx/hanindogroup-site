@@ -106,6 +106,37 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
   .prod .brandtag{font-size:.74rem}
   .prod .dspec .tag{font-size:.85rem}
 }
+
+/* PHONE: the spec table folds behind a tap, and the photo panel comes in.
+   These pages ran to 12.6 and 17.6 screens at 375px. The spec tables were
+   42% of the tyre service page on their own -- 206 rows across 12 models --
+   and the photos another 21%. Neither is a candidate for deletion: the
+   numbers are why a buyer is on the page at all, and the photograph is how
+   they recognise the model. So the table is folded away rather than cut,
+   and the photo is sized down rather than dropped.
+   <details> does the folding with no script of its own. The markup carries
+   the open attribute, so with JavaScript disabled every table is expanded
+   exactly as it was before -- the failure lands on the long page we already
+   had, never on a page whose specs cannot be reached. A line at the foot of
+   the page closes them below 640px, and only there.
+   The summary is hidden on a desktop, so nothing about that view changes.
+   Hidden only while open, though: resize a window from phone to desktop
+   after the fold has run and the summary is still there to tap. */
+.prod .specs>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;
+  gap:.6rem;margin-top:.9rem;padding:.78rem .8rem;background:var(--paper);border:1px solid var(--line);
+  border-radius:var(--r);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;
+  color:var(--blue-800);transition:border-color .18s}
+.prod .specs>summary::-webkit-details-marker{display:none}
+.prod .specs>summary::after{content:"";width:7px;height:7px;margin-right:.2rem;border-right:2px solid currentColor;
+  border-bottom:2px solid currentColor;transform:rotate(45deg);transition:transform .18s}
+.prod .specs[open]>summary::after{transform:rotate(-135deg)}
+.prod .specs>summary:hover{border-color:var(--blue-800)}
+.prod .specs table.spectable{margin-top:.55rem}
+@media(min-width:641px){.prod .specs[open]>summary{display:none}}
+@media(max-width:640px){
+  .prod .shot{padding:.9rem}
+  .prod .shot img{max-height:120px}
+}
 </style>
 </head>
 <body>
@@ -196,21 +227,24 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag hpa">HPA-Faip</span>
       <h3>Digital Wheel Balancer <span class="mdl">&mdash; B35</span></h3>
-      <table class="spectable">
-        <tr><td>Rim diameter (measurable)</td><td>10&Prime;&ndash;24&Prime;</td></tr>
-        <tr><td>Rim width range</td><td>1.5&Prime;&ndash;20&Prime;</td></tr>
-        <tr><td>Max wheel diameter</td><td>44&Prime; (with guard)</td></tr>
-        <tr><td>Max wheel weight</td><td>65 kg</td></tr>
-        <tr><td>Spinning speed</td><td>200 rpm</td></tr>
-        <tr><td>Unbalance accuracy</td><td>1 g</td></tr>
-        <tr><td>Shaft diameter</td><td>40 mm</td></tr>
-        <tr><td>Noise level running</td><td>&lt; 70 dB (A)</td></tr>
-        <tr><td>Power absorption</td><td>250 W</td></tr>
-        <tr><td>Machine weight (net)</td><td>107 kg</td></tr>
-        <tr><td>Machine weight (gross)</td><td>137 kg</td></tr>
-        <tr><td>Supply voltage</td><td>230 V &middot; 1 Ph 50 Hz</td></tr>
-        <tr><td>Quantity per 20&prime; container</td><td>34 sets</td></tr>
-      </table>
+      <details class="specs" open>
+        <summary>Specifications</summary>
+        <table class="spectable">
+          <tr><td>Rim diameter (measurable)</td><td>10&Prime;&ndash;24&Prime;</td></tr>
+          <tr><td>Rim width range</td><td>1.5&Prime;&ndash;20&Prime;</td></tr>
+          <tr><td>Max wheel diameter</td><td>44&Prime; (with guard)</td></tr>
+          <tr><td>Max wheel weight</td><td>65 kg</td></tr>
+          <tr><td>Spinning speed</td><td>200 rpm</td></tr>
+          <tr><td>Unbalance accuracy</td><td>1 g</td></tr>
+          <tr><td>Shaft diameter</td><td>40 mm</td></tr>
+          <tr><td>Noise level running</td><td>&lt; 70 dB (A)</td></tr>
+          <tr><td>Power absorption</td><td>250 W</td></tr>
+          <tr><td>Machine weight (net)</td><td>107 kg</td></tr>
+          <tr><td>Machine weight (gross)</td><td>137 kg</td></tr>
+          <tr><td>Supply voltage</td><td>230 V &middot; 1 Ph 50 Hz</td></tr>
+          <tr><td>Quantity per 20&prime; container</td><td>34 sets</td></tr>
+        </table>
+      </details>
     </div>
   </div>
 </article>
@@ -220,18 +254,21 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag hpa">HPA-Faip</span>
       <h3>Digital Wheel Balancer <span class="mdl">&mdash; B55</span></h3>
-      <table class="spectable">
-        <tr><td>Display</td><td>High-brightness LED panel</td></tr>
-        <tr><td>Rim diameter (measurable)</td><td>10&Prime;&ndash;26&Prime; (auto)</td></tr>
-        <tr><td>Rim diameter (setting range)</td><td>1&Prime;&ndash;35&Prime; (manual)</td></tr>
-        <tr><td>Rim width range</td><td>1.5&Prime;&ndash;20&Prime;</td></tr>
-        <tr><td>Max wheel diameter</td><td>1118 mm / 44&Prime;</td></tr>
-        <tr><td>Max wheel weight</td><td>70 kg / 154 lbs</td></tr>
-        <tr><td>Spinning speed</td><td>150 rpm</td></tr>
-        <tr><td>Machine weight (net)</td><td>127 kg / 280 lbs</td></tr>
-        <tr><td>Dimensions</td><td>1270 &times; 1704 &times; 1089 mm</td></tr>
-        <tr><td>Supply voltage</td><td>115 / 230 V &middot; 1 Ph 50/60 Hz</td></tr>
-      </table>
+      <details class="specs" open>
+        <summary>Specifications</summary>
+        <table class="spectable">
+          <tr><td>Display</td><td>High-brightness LED panel</td></tr>
+          <tr><td>Rim diameter (measurable)</td><td>10&Prime;&ndash;26&Prime; (auto)</td></tr>
+          <tr><td>Rim diameter (setting range)</td><td>1&Prime;&ndash;35&Prime; (manual)</td></tr>
+          <tr><td>Rim width range</td><td>1.5&Prime;&ndash;20&Prime;</td></tr>
+          <tr><td>Max wheel diameter</td><td>1118 mm / 44&Prime;</td></tr>
+          <tr><td>Max wheel weight</td><td>70 kg / 154 lbs</td></tr>
+          <tr><td>Spinning speed</td><td>150 rpm</td></tr>
+          <tr><td>Machine weight (net)</td><td>127 kg / 280 lbs</td></tr>
+          <tr><td>Dimensions</td><td>1270 &times; 1704 &times; 1089 mm</td></tr>
+          <tr><td>Supply voltage</td><td>115 / 230 V &middot; 1 Ph 50/60 Hz</td></tr>
+        </table>
+      </details>
       <p class="note">Mechanically identical to the B60 &mdash; the B55 reads out on a high-brightness digital LED display panel.</p>
     </div>
   </div>
@@ -242,18 +279,21 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag hpa">HPA-Faip</span>
       <h3>TV Monitor Wheel Balancer <span class="mdl">&mdash; B60</span></h3>
-      <table class="spectable">
-        <tr><td>Display</td><td>High-resolution LCD monitor</td></tr>
-        <tr><td>Rim diameter (measurable)</td><td>10&Prime;&ndash;26&Prime; (auto)</td></tr>
-        <tr><td>Rim diameter (setting range)</td><td>1&Prime;&ndash;35&Prime; (manual)</td></tr>
-        <tr><td>Rim width range</td><td>1.5&Prime;&ndash;20&Prime;</td></tr>
-        <tr><td>Max wheel diameter</td><td>1118 mm / 44&Prime;</td></tr>
-        <tr><td>Max wheel weight</td><td>70 kg / 154 lbs</td></tr>
-        <tr><td>Spinning speed</td><td>150 rpm</td></tr>
-        <tr><td>Machine weight (net)</td><td>127 kg / 280 lbs</td></tr>
-        <tr><td>Dimensions</td><td>1270 &times; 1704 &times; 1089 mm</td></tr>
-        <tr><td>Supply voltage</td><td>115 / 230 V &middot; 1 Ph 50/60 Hz</td></tr>
-      </table>
+      <details class="specs" open>
+        <summary>Specifications</summary>
+        <table class="spectable">
+          <tr><td>Display</td><td>High-resolution LCD monitor</td></tr>
+          <tr><td>Rim diameter (measurable)</td><td>10&Prime;&ndash;26&Prime; (auto)</td></tr>
+          <tr><td>Rim diameter (setting range)</td><td>1&Prime;&ndash;35&Prime; (manual)</td></tr>
+          <tr><td>Rim width range</td><td>1.5&Prime;&ndash;20&Prime;</td></tr>
+          <tr><td>Max wheel diameter</td><td>1118 mm / 44&Prime;</td></tr>
+          <tr><td>Max wheel weight</td><td>70 kg / 154 lbs</td></tr>
+          <tr><td>Spinning speed</td><td>150 rpm</td></tr>
+          <tr><td>Machine weight (net)</td><td>127 kg / 280 lbs</td></tr>
+          <tr><td>Dimensions</td><td>1270 &times; 1704 &times; 1089 mm</td></tr>
+          <tr><td>Supply voltage</td><td>115 / 230 V &middot; 1 Ph 50/60 Hz</td></tr>
+        </table>
+      </details>
       <p class="note">Mechanically identical to the B55 &mdash; the B60 uses a high-resolution LCD monitor, giving the software a richer, more detailed graphical layout.</p>
     </div>
   </div>
@@ -264,21 +304,24 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag hpa">HPA-Faip</span>
       <h3>Digital Wheel Balancer (Truck) <span class="mdl">&mdash; B75</span></h3>
-      <table class="spectable">
-        <tr><td>Rim diameter (measurable)</td><td>9&Prime;&ndash;28&Prime; (auto)</td></tr>
-        <tr><td>Rim diameter (setting range)</td><td>8&Prime;&ndash;35&Prime;</td></tr>
-        <tr><td>Rim width range</td><td>2&Prime;&ndash;20&Prime;</td></tr>
-        <tr><td>Max wheel diameter</td><td>1200 mm / 47&Prime;</td></tr>
-        <tr><td>Max wheel weight</td><td>200 kg</td></tr>
-        <tr><td>Spinning speed</td><td>120 rpm car &middot; 80 rpm truck</td></tr>
-        <tr><td>Measuring time</td><td>8 s car &middot; 20 s truck</td></tr>
-        <tr><td>Unbalance accuracy</td><td>1 g car &middot; 10 g truck</td></tr>
-        <tr><td>Shaft diameter</td><td>40 mm</td></tr>
-        <tr><td>Power absorption</td><td>370 W (motor)</td></tr>
-        <tr><td>Pneumatic air supply</td><td>8&ndash;12 bar</td></tr>
-        <tr><td>Machine weight (net)</td><td>265 kg</td></tr>
-        <tr><td>Supply voltage</td><td>230 V 1 ph 50 Hz &middot; 115 V 1 ph 60 Hz</td></tr>
-      </table>
+      <details class="specs" open>
+        <summary>Specifications</summary>
+        <table class="spectable">
+          <tr><td>Rim diameter (measurable)</td><td>9&Prime;&ndash;28&Prime; (auto)</td></tr>
+          <tr><td>Rim diameter (setting range)</td><td>8&Prime;&ndash;35&Prime;</td></tr>
+          <tr><td>Rim width range</td><td>2&Prime;&ndash;20&Prime;</td></tr>
+          <tr><td>Max wheel diameter</td><td>1200 mm / 47&Prime;</td></tr>
+          <tr><td>Max wheel weight</td><td>200 kg</td></tr>
+          <tr><td>Spinning speed</td><td>120 rpm car &middot; 80 rpm truck</td></tr>
+          <tr><td>Measuring time</td><td>8 s car &middot; 20 s truck</td></tr>
+          <tr><td>Unbalance accuracy</td><td>1 g car &middot; 10 g truck</td></tr>
+          <tr><td>Shaft diameter</td><td>40 mm</td></tr>
+          <tr><td>Power absorption</td><td>370 W (motor)</td></tr>
+          <tr><td>Pneumatic air supply</td><td>8&ndash;12 bar</td></tr>
+          <tr><td>Machine weight (net)</td><td>265 kg</td></tr>
+          <tr><td>Supply voltage</td><td>230 V 1 ph 50 Hz &middot; 115 V 1 ph 60 Hz</td></tr>
+        </table>
+      </details>
     </div>
   </div>
 </article>
@@ -288,25 +331,28 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag hpa">HPA-Faip</span>
       <h3>Digital Wheel Balancer <span class="mdl">&mdash; B225</span></h3>
-      <table class="spectable">
-        <tr><td>Display</td><td>Double digital LED panel</td></tr>
-        <tr><td>Rim diameter (measurable)</td><td>10&Prime;&ndash;28&Prime;</td></tr>
-        <tr><td>Rim diameter (setting range)</td><td>1&Prime;&ndash;35&Prime;</td></tr>
-        <tr><td>Rim width range</td><td>1.5&Prime;&ndash;20&Prime;</td></tr>
-        <tr><td>Max wheel diameter</td><td>1117 mm (with guard)</td></tr>
-        <tr><td>Max wheel width</td><td>600 mm (with guard)</td></tr>
-        <tr><td>Max wheel weight</td><td>75 kg (bolted down)</td></tr>
-        <tr><td>Flange to machine distance</td><td>275 mm</td></tr>
-        <tr><td>Spinning speed</td><td>90&ndash;130 rpm</td></tr>
-        <tr><td>Measuring time</td><td>7 s</td></tr>
-        <tr><td>Unbalance accuracy</td><td>1 g</td></tr>
-        <tr><td>Max unbalance calculated</td><td>999 g</td></tr>
-        <tr><td>Shaft diameter</td><td>40 mm</td></tr>
-        <tr><td>Noise level running</td><td>&lt; 70 dB (A)</td></tr>
-        <tr><td>Power absorption</td><td>100 W</td></tr>
-        <tr><td>Machine weight (net)</td><td>75 kg</td></tr>
-        <tr><td>Supply voltage</td><td>115 / 230 V &middot; 1 Ph 50/60 Hz</td></tr>
-      </table>
+      <details class="specs" open>
+        <summary>Specifications</summary>
+        <table class="spectable">
+          <tr><td>Display</td><td>Double digital LED panel</td></tr>
+          <tr><td>Rim diameter (measurable)</td><td>10&Prime;&ndash;28&Prime;</td></tr>
+          <tr><td>Rim diameter (setting range)</td><td>1&Prime;&ndash;35&Prime;</td></tr>
+          <tr><td>Rim width range</td><td>1.5&Prime;&ndash;20&Prime;</td></tr>
+          <tr><td>Max wheel diameter</td><td>1117 mm (with guard)</td></tr>
+          <tr><td>Max wheel width</td><td>600 mm (with guard)</td></tr>
+          <tr><td>Max wheel weight</td><td>75 kg (bolted down)</td></tr>
+          <tr><td>Flange to machine distance</td><td>275 mm</td></tr>
+          <tr><td>Spinning speed</td><td>90&ndash;130 rpm</td></tr>
+          <tr><td>Measuring time</td><td>7 s</td></tr>
+          <tr><td>Unbalance accuracy</td><td>1 g</td></tr>
+          <tr><td>Max unbalance calculated</td><td>999 g</td></tr>
+          <tr><td>Shaft diameter</td><td>40 mm</td></tr>
+          <tr><td>Noise level running</td><td>&lt; 70 dB (A)</td></tr>
+          <tr><td>Power absorption</td><td>100 W</td></tr>
+          <tr><td>Machine weight (net)</td><td>75 kg</td></tr>
+          <tr><td>Supply voltage</td><td>115 / 230 V &middot; 1 Ph 50/60 Hz</td></tr>
+        </table>
+      </details>
       <p class="note">Mechanically identical to the B325 &mdash; the B225 reads out on a double digital LED display panel with a manual keyboard.</p>
     </div>
   </div>
@@ -317,25 +363,28 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag hpa">HPA-Faip</span>
       <h3>TV Monitor Wheel Balancer <span class="mdl">&mdash; B325</span></h3>
-      <table class="spectable">
-        <tr><td>Display</td><td>19&Prime; widescreen LCD colour</td></tr>
-        <tr><td>Rim diameter (measurable)</td><td>10&Prime;&ndash;28&Prime;</td></tr>
-        <tr><td>Rim diameter (setting range)</td><td>1&Prime;&ndash;35&Prime;</td></tr>
-        <tr><td>Rim width range</td><td>1.5&Prime;&ndash;20&Prime;</td></tr>
-        <tr><td>Max wheel diameter</td><td>1117 mm (with guard)</td></tr>
-        <tr><td>Max wheel width</td><td>600 mm (with guard)</td></tr>
-        <tr><td>Max wheel weight</td><td>75 kg (bolted down)</td></tr>
-        <tr><td>Flange to machine distance</td><td>275 mm</td></tr>
-        <tr><td>Spinning speed</td><td>90&ndash;130 rpm</td></tr>
-        <tr><td>Measuring time</td><td>7 s</td></tr>
-        <tr><td>Unbalance accuracy</td><td>1 g</td></tr>
-        <tr><td>Max unbalance calculated</td><td>999 g</td></tr>
-        <tr><td>Shaft diameter</td><td>40 mm</td></tr>
-        <tr><td>Noise level running</td><td>&lt; 70 dB (A)</td></tr>
-        <tr><td>Power absorption</td><td>100 W</td></tr>
-        <tr><td>Machine weight (net)</td><td>75 kg</td></tr>
-        <tr><td>Supply voltage</td><td>115 / 230 V &middot; 1 Ph 50/60 Hz</td></tr>
-      </table>
+      <details class="specs" open>
+        <summary>Specifications</summary>
+        <table class="spectable">
+          <tr><td>Display</td><td>19&Prime; widescreen LCD colour</td></tr>
+          <tr><td>Rim diameter (measurable)</td><td>10&Prime;&ndash;28&Prime;</td></tr>
+          <tr><td>Rim diameter (setting range)</td><td>1&Prime;&ndash;35&Prime;</td></tr>
+          <tr><td>Rim width range</td><td>1.5&Prime;&ndash;20&Prime;</td></tr>
+          <tr><td>Max wheel diameter</td><td>1117 mm (with guard)</td></tr>
+          <tr><td>Max wheel width</td><td>600 mm (with guard)</td></tr>
+          <tr><td>Max wheel weight</td><td>75 kg (bolted down)</td></tr>
+          <tr><td>Flange to machine distance</td><td>275 mm</td></tr>
+          <tr><td>Spinning speed</td><td>90&ndash;130 rpm</td></tr>
+          <tr><td>Measuring time</td><td>7 s</td></tr>
+          <tr><td>Unbalance accuracy</td><td>1 g</td></tr>
+          <tr><td>Max unbalance calculated</td><td>999 g</td></tr>
+          <tr><td>Shaft diameter</td><td>40 mm</td></tr>
+          <tr><td>Noise level running</td><td>&lt; 70 dB (A)</td></tr>
+          <tr><td>Power absorption</td><td>100 W</td></tr>
+          <tr><td>Machine weight (net)</td><td>75 kg</td></tr>
+          <tr><td>Supply voltage</td><td>115 / 230 V &middot; 1 Ph 50/60 Hz</td></tr>
+        </table>
+      </details>
       <p class="note">Mechanically identical to the B225 &mdash; the B325 upgrades to a 19&Prime; widescreen LCD colour monitor, showing high-resolution graphic interfaces.</p>
     </div>
   </div>
@@ -348,20 +397,23 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag hpa">HPA-Faip</span>
       <h3>Semi-Automatic Tyre Changer <span class="mdl">&mdash; M31 &middot; swing-arm &middot; 21&Prime; &middot; 1ph</span></h3>
-      <table class="spectable">
-        <tr><td>Outside clamp</td><td>10&Prime;&ndash;21&Prime;</td></tr>
-        <tr><td>Inside clamp</td><td>12&Prime;&ndash;23&Prime;</td></tr>
-        <tr><td>Max wheel diameter</td><td>960 mm</td></tr>
-        <tr><td>Max wheel width</td><td>3&Prime;&ndash;12&Prime;</td></tr>
-        <tr><td>Bead-breaker opening</td><td>320 mm</td></tr>
-        <tr><td>Bead-breaking power</td><td>15 000 N</td></tr>
-        <tr><td>Working air pressure</td><td>8&ndash;10 bar</td></tr>
-        <tr><td>Motor power</td><td>1.1 kW</td></tr>
-        <tr><td>Chuck rotation speed</td><td>6.5 rpm</td></tr>
-        <tr><td>Noise level running</td><td>&lt; 70 dB</td></tr>
-        <tr><td>Machine weight (net)</td><td>179 kg</td></tr>
-        <tr><td>Machine weight (gross)</td><td>207 kg</td></tr>
-      </table>
+      <details class="specs" open>
+        <summary>Specifications</summary>
+        <table class="spectable">
+          <tr><td>Outside clamp</td><td>10&Prime;&ndash;21&Prime;</td></tr>
+          <tr><td>Inside clamp</td><td>12&Prime;&ndash;23&Prime;</td></tr>
+          <tr><td>Max wheel diameter</td><td>960 mm</td></tr>
+          <tr><td>Max wheel width</td><td>3&Prime;&ndash;12&Prime;</td></tr>
+          <tr><td>Bead-breaker opening</td><td>320 mm</td></tr>
+          <tr><td>Bead-breaking power</td><td>15 000 N</td></tr>
+          <tr><td>Working air pressure</td><td>8&ndash;10 bar</td></tr>
+          <tr><td>Motor power</td><td>1.1 kW</td></tr>
+          <tr><td>Chuck rotation speed</td><td>6.5 rpm</td></tr>
+          <tr><td>Noise level running</td><td>&lt; 70 dB</td></tr>
+          <tr><td>Machine weight (net)</td><td>179 kg</td></tr>
+          <tr><td>Machine weight (gross)</td><td>207 kg</td></tr>
+        </table>
+      </details>
       <p class="note">The arm swings aside by hand rather than tilting back, so the machine can stand against a wall &mdash; the smallest footprint in the range. The mounting head is reset by hand for each wheel. Optional <b>HSA21</b> helper arm.</p>
     </div>
   </div>
@@ -372,20 +424,23 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag hpa">HPA-Faip</span>
       <h3>Automatic Tyre Changer <span class="mdl">&mdash; M54 &middot; tilting-post, heavy-duty &middot; 24&Prime; &middot; 1 or 3ph</span></h3>
-      <table class="spectable">
-        <tr><td>Outside clamp</td><td>11&Prime;&ndash;24&Prime;</td></tr>
-        <tr><td>Inside clamp</td><td>13&Prime;&ndash;26&Prime;</td></tr>
-        <tr><td>Max wheel diameter</td><td>1100 mm</td></tr>
-        <tr><td>Max wheel width</td><td>3&Prime;&ndash;14&Prime;</td></tr>
-        <tr><td>Bead-breaker opening</td><td>380 mm</td></tr>
-        <tr><td>Bead-breaking power</td><td>15 000 N</td></tr>
-        <tr><td>Working air pressure</td><td>8&ndash;10 bar</td></tr>
-        <tr><td>Motor power</td><td>400 V &middot; 3 Ph &mdash; 0.75 kW<br />200/230 V &middot; 3 Ph &mdash; 0.75 kW<br />400 V &middot; 3 Ph 2-speed &mdash; 0.85/1.1 kW<br />200/230 V &middot; 1 Ph &mdash; 1.1 kW<br />100/115 V &middot; 1 Ph &mdash; 1.1 kW</td></tr>
-        <tr><td>Chuck rotation speed</td><td>7 rpm &middot; 2-speed 6.5&ndash;13 rpm</td></tr>
-        <tr><td>Noise level running</td><td>&lt; 70 dB</td></tr>
-        <tr><td>Machine weight (net)</td><td>255 kg</td></tr>
-        <tr><td>Machine weight (gross)</td><td>295 kg</td></tr>
-      </table>
+      <details class="specs" open>
+        <summary>Specifications</summary>
+        <table class="spectable">
+          <tr><td>Outside clamp</td><td>11&Prime;&ndash;24&Prime;</td></tr>
+          <tr><td>Inside clamp</td><td>13&Prime;&ndash;26&Prime;</td></tr>
+          <tr><td>Max wheel diameter</td><td>1100 mm</td></tr>
+          <tr><td>Max wheel width</td><td>3&Prime;&ndash;14&Prime;</td></tr>
+          <tr><td>Bead-breaker opening</td><td>380 mm</td></tr>
+          <tr><td>Bead-breaking power</td><td>15 000 N</td></tr>
+          <tr><td>Working air pressure</td><td>8&ndash;10 bar</td></tr>
+          <tr><td>Motor power</td><td>400 V &middot; 3 Ph &mdash; 0.75 kW<br />200/230 V &middot; 3 Ph &mdash; 0.75 kW<br />400 V &middot; 3 Ph 2-speed &mdash; 0.85/1.1 kW<br />200/230 V &middot; 1 Ph &mdash; 1.1 kW<br />100/115 V &middot; 1 Ph &mdash; 1.1 kW</td></tr>
+          <tr><td>Chuck rotation speed</td><td>7 rpm &middot; 2-speed 6.5&ndash;13 rpm</td></tr>
+          <tr><td>Noise level running</td><td>&lt; 70 dB</td></tr>
+          <tr><td>Machine weight (net)</td><td>255 kg</td></tr>
+          <tr><td>Machine weight (gross)</td><td>295 kg</td></tr>
+        </table>
+      </details>
       <p class="note">The heavy-duty model: a reinforced chassis that resists flex on stiff sidewalls, so it suits high-volume tyre centres, low-profile and run-flat work. Shown fitted with the optional <b>HTB24</b> bead-pressing helper arm. Also available as the <b>M54 LL</b>, a lever-less version that lifts the bead over the rim without a tyre iron.</p>
     </div>
   </div>
@@ -397,19 +452,22 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
       <span class="brandtag hpa">HPA-Faip</span>
       <h3>Automatic Tyre Changer <span class="mdl">&mdash; M422 &middot; tilting-post &middot; 22&Prime; &middot; 3ph</span></h3>
       <p class="note">The general workshop model. The post tilts back on a pedal and returns the tool head to the same setting, so a matched set of wheels runs without readjusting. Needs clear space behind for the tilt.</p>
-      <table class="spectable">
-        <tr><td>Outside clamp</td><td>11&Prime;&ndash;22&Prime;</td></tr>
-        <tr><td>Inside clamp</td><td>13&Prime;&ndash;25&Prime;</td></tr>
-        <tr><td>Max wheel diameter</td><td>1000 mm</td></tr>
-        <tr><td>Max wheel width</td><td>3&Prime;&ndash;12.5&Prime;</td></tr>
-        <tr><td>Bead-breaker opening</td><td>320 mm</td></tr>
-        <tr><td>Bead-breaking power (at 10 bar)</td><td>15 500 N</td></tr>
-        <tr><td>Working air pressure</td><td>8&ndash;10 bar</td></tr>
-        <tr><td>Motor power</td><td>2-speed &mdash; 0.9/1.2 kW<br />single speed &mdash; 0.75 kW<br />3 Ph &middot; 400 V &middot; 50 Hz</td></tr>
-        <tr><td>Max self-centring torque</td><td>1200 Nm</td></tr>
-        <tr><td>Noise level running</td><td>&le; 70 dB (A)</td></tr>
-        <tr><td>Machine weight (M422 2V FS)</td><td>224 kg</td></tr>
-      </table>
+      <details class="specs" open>
+        <summary>Specifications</summary>
+        <table class="spectable">
+          <tr><td>Outside clamp</td><td>11&Prime;&ndash;22&Prime;</td></tr>
+          <tr><td>Inside clamp</td><td>13&Prime;&ndash;25&Prime;</td></tr>
+          <tr><td>Max wheel diameter</td><td>1000 mm</td></tr>
+          <tr><td>Max wheel width</td><td>3&Prime;&ndash;12.5&Prime;</td></tr>
+          <tr><td>Bead-breaker opening</td><td>320 mm</td></tr>
+          <tr><td>Bead-breaking power (at 10 bar)</td><td>15 500 N</td></tr>
+          <tr><td>Working air pressure</td><td>8&ndash;10 bar</td></tr>
+          <tr><td>Motor power</td><td>2-speed &mdash; 0.9/1.2 kW<br />single speed &mdash; 0.75 kW<br />3 Ph &middot; 400 V &middot; 50 Hz</td></tr>
+          <tr><td>Max self-centring torque</td><td>1200 Nm</td></tr>
+          <tr><td>Noise level running</td><td>&le; 70 dB (A)</td></tr>
+          <tr><td>Machine weight (M422 2V FS)</td><td>224 kg</td></tr>
+        </table>
+      </details>
       <p class="note">Also supplied as the <b>M422 2V FS</b>, the two-speed version &mdash; the weight above is for that model.</p>
     </div>
   </div>
@@ -421,19 +479,22 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
       <span class="brandtag hpa">HPA-Faip</span>
       <h3>Automatic Tyre Changer <span class="mdl">&mdash; M424 &middot; tilting-post &middot; 24&Prime; &middot; 3ph</span></h3>
       <p class="note">The M422 with 24&Prime; rim capacity &mdash; the same tilting post and pedal-set tool head, sized for larger alloy wheels and light SUVs.</p>
-      <table class="spectable">
-        <tr><td>Outside clamp</td><td>10&Prime;&ndash;24&Prime;</td></tr>
-        <tr><td>Inside clamp</td><td>13&Prime;&ndash;26&Prime;</td></tr>
-        <tr><td>Max wheel diameter</td><td>1100 mm</td></tr>
-        <tr><td>Max wheel width</td><td>3&Prime;&ndash;14&Prime;</td></tr>
-        <tr><td>Bead-breaker opening</td><td>370 mm</td></tr>
-        <tr><td>Bead-breaking power (at 10 bar)</td><td>15 500 N</td></tr>
-        <tr><td>Working air pressure</td><td>10 bar</td></tr>
-        <tr><td>Motor power</td><td>2-speed &mdash; 0.9/1.2 kW<br />single speed &mdash; 0.75 kW<br />3 Ph &middot; 400 V &middot; 50 Hz</td></tr>
-        <tr><td>Max self-centring torque</td><td>1200 Nm</td></tr>
-        <tr><td>Noise level running</td><td>&le; 70 dB (A)</td></tr>
-        <tr><td>Machine weight (M424 2V FS)</td><td>255 kg</td></tr>
-      </table>
+      <details class="specs" open>
+        <summary>Specifications</summary>
+        <table class="spectable">
+          <tr><td>Outside clamp</td><td>10&Prime;&ndash;24&Prime;</td></tr>
+          <tr><td>Inside clamp</td><td>13&Prime;&ndash;26&Prime;</td></tr>
+          <tr><td>Max wheel diameter</td><td>1100 mm</td></tr>
+          <tr><td>Max wheel width</td><td>3&Prime;&ndash;14&Prime;</td></tr>
+          <tr><td>Bead-breaker opening</td><td>370 mm</td></tr>
+          <tr><td>Bead-breaking power (at 10 bar)</td><td>15 500 N</td></tr>
+          <tr><td>Working air pressure</td><td>10 bar</td></tr>
+          <tr><td>Motor power</td><td>2-speed &mdash; 0.9/1.2 kW<br />single speed &mdash; 0.75 kW<br />3 Ph &middot; 400 V &middot; 50 Hz</td></tr>
+          <tr><td>Max self-centring torque</td><td>1200 Nm</td></tr>
+          <tr><td>Noise level running</td><td>&le; 70 dB (A)</td></tr>
+          <tr><td>Machine weight (M424 2V FS)</td><td>255 kg</td></tr>
+        </table>
+      </details>
       <p class="note">Also supplied as the <b>M424 2V FS</b>, the two-speed version &mdash; the weight above is for that model.</p>
     </div>
   </div>
@@ -446,15 +507,18 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag hpa">HPA-Faip</span>
       <h3>3D Wheel Alignment System <span class="mdl">&mdash; C880 STD &middot; 2 camera</span></h3>
-      <table class="spectable">
-        <tr><td>Total toe</td><td>&plusmn; 20&deg;</td></tr>
-        <tr><td>Camber</td><td>&plusmn; 10&deg;</td></tr>
-        <tr><td>Caster</td><td>&plusmn; 30&deg;</td></tr>
-        <tr><td>King pin angle</td><td>&plusmn; 30&deg;</td></tr>
-        <tr><td>Thrust angle</td><td>&plusmn; 10&deg;</td></tr>
-        <tr><td>Steering difference at 20&deg;</td><td>&plusmn; 10&deg;</td></tr>
-        <tr><td>Power supply</td><td>115/230 Vac &middot; 50/60 Hz &middot; 1 Ph</td></tr>
-      </table>
+      <details class="specs" open>
+        <summary>Specifications</summary>
+        <table class="spectable">
+          <tr><td>Total toe</td><td>&plusmn; 20&deg;</td></tr>
+          <tr><td>Camber</td><td>&plusmn; 10&deg;</td></tr>
+          <tr><td>Caster</td><td>&plusmn; 30&deg;</td></tr>
+          <tr><td>King pin angle</td><td>&plusmn; 30&deg;</td></tr>
+          <tr><td>Thrust angle</td><td>&plusmn; 10&deg;</td></tr>
+          <tr><td>Steering difference at 20&deg;</td><td>&plusmn; 10&deg;</td></tr>
+          <tr><td>Power supply</td><td>115/230 Vac &middot; 50/60 Hz &middot; 1 Ph</td></tr>
+        </table>
+      </details>
     </div>
   </div>
 </article>
@@ -464,22 +528,25 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag hpa">HPA-Faip</span>
       <h3>3D Wheel Alignment System <span class="mdl">&mdash; C880 i-Next &middot; 2 camera</span></h3>
-      <table class="spectable">
-        <tr><td>Total toe</td><td>&plusmn; 20&deg;</td></tr>
-        <tr><td>Individual toe</td><td>&plusmn; 10&deg;</td></tr>
-        <tr><td>Camber</td><td>&plusmn; 10&deg;</td></tr>
-        <tr><td>Caster</td><td>&plusmn; 30&deg;</td></tr>
-        <tr><td>King pin angle</td><td>&plusmn; 30&deg;</td></tr>
-        <tr><td>Setback</td><td>&plusmn; 22&deg;</td></tr>
-        <tr><td>Thrust angle</td><td>&plusmn; 10&deg;</td></tr>
-        <tr><td>Steering angle difference</td><td>&plusmn; 20&deg;</td></tr>
-        <tr><td>Camera resolution</td><td>2592 &times; 1944 &middot; 10 MP</td></tr>
-        <tr><td>Power supply</td><td>115/230 Vac &middot; 50/60 Hz &middot; 1 Ph</td></tr>
-        <tr><td>Power consumption</td><td>500 W</td></tr>
-        <tr><td>Weight &mdash; pole</td><td>66 kg</td></tr>
-        <tr><td>Weight &mdash; camera arm</td><td>26 kg</td></tr>
-        <tr><td>Weight &mdash; PC holder</td><td>11 kg</td></tr>
-      </table>
+      <details class="specs" open>
+        <summary>Specifications</summary>
+        <table class="spectable">
+          <tr><td>Total toe</td><td>&plusmn; 20&deg;</td></tr>
+          <tr><td>Individual toe</td><td>&plusmn; 10&deg;</td></tr>
+          <tr><td>Camber</td><td>&plusmn; 10&deg;</td></tr>
+          <tr><td>Caster</td><td>&plusmn; 30&deg;</td></tr>
+          <tr><td>King pin angle</td><td>&plusmn; 30&deg;</td></tr>
+          <tr><td>Setback</td><td>&plusmn; 22&deg;</td></tr>
+          <tr><td>Thrust angle</td><td>&plusmn; 10&deg;</td></tr>
+          <tr><td>Steering angle difference</td><td>&plusmn; 20&deg;</td></tr>
+          <tr><td>Camera resolution</td><td>2592 &times; 1944 &middot; 10 MP</td></tr>
+          <tr><td>Power supply</td><td>115/230 Vac &middot; 50/60 Hz &middot; 1 Ph</td></tr>
+          <tr><td>Power consumption</td><td>500 W</td></tr>
+          <tr><td>Weight &mdash; pole</td><td>66 kg</td></tr>
+          <tr><td>Weight &mdash; camera arm</td><td>26 kg</td></tr>
+          <tr><td>Weight &mdash; PC holder</td><td>11 kg</td></tr>
+        </table>
+      </details>
     </div>
   </div>
 </article>
@@ -491,17 +558,20 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>Semi-Automatic Car Tyre Changer <span class="mdl">— SI003</span></h3>
-      <table class="spectable">
-        <tr><td>Inner clamping size</td><td>13&quot;–25&quot;</td></tr>
-        <tr><td>Outer clamping size</td><td>11&quot;–23&quot;</td></tr>
-        <tr><td>Max wheel diameter</td><td>1030 mm</td></tr>
-        <tr><td>Max wheel width</td><td>340 mm</td></tr>
-        <tr><td>Operating pressure</td><td>8–10 bar</td></tr>
-        <tr><td>Motor power</td><td>220 V / 1.1 kW · 380 V × 0.75 kW</td></tr>
-        <tr><td>Packaging size</td><td>760 × 980 × 860 mm</td></tr>
-        <tr><td>Net weight</td><td>165 kg</td></tr>
-        <tr><td>Gross weight</td><td>184 kg</td></tr>
-      </table>
+      <details class="specs" open>
+        <summary>Specifications</summary>
+        <table class="spectable">
+          <tr><td>Inner clamping size</td><td>13&quot;–25&quot;</td></tr>
+          <tr><td>Outer clamping size</td><td>11&quot;–23&quot;</td></tr>
+          <tr><td>Max wheel diameter</td><td>1030 mm</td></tr>
+          <tr><td>Max wheel width</td><td>340 mm</td></tr>
+          <tr><td>Operating pressure</td><td>8–10 bar</td></tr>
+          <tr><td>Motor power</td><td>220 V / 1.1 kW · 380 V × 0.75 kW</td></tr>
+          <tr><td>Packaging size</td><td>760 × 980 × 860 mm</td></tr>
+          <tr><td>Net weight</td><td>165 kg</td></tr>
+          <tr><td>Gross weight</td><td>184 kg</td></tr>
+        </table>
+      </details>
     </div>
   </div>
 </article>
@@ -511,17 +581,20 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>Automatic Tilt-Back Car Tyre Changer <span class="mdl">— SI118</span></h3>
-      <table class="spectable">
-        <tr><td>Inner clamping size</td><td>10&quot;–28&quot;</td></tr>
-        <tr><td>Outer clamping size</td><td>10&quot;–26&quot;</td></tr>
-        <tr><td>Max wheel diameter</td><td>1140 mm</td></tr>
-        <tr><td>Max wheel width</td><td>400 mm</td></tr>
-        <tr><td>Operating pressure</td><td>8–10 bar</td></tr>
-        <tr><td>Motor power</td><td>220 V / 1.1 kW · 380 V × 0.75 kW</td></tr>
-        <tr><td>Packaging size</td><td>1150 × 980 × 860 mm</td></tr>
-        <tr><td>Net weight</td><td>264 kg</td></tr>
-        <tr><td>Gross weight</td><td>297 kg</td></tr>
-      </table>
+      <details class="specs" open>
+        <summary>Specifications</summary>
+        <table class="spectable">
+          <tr><td>Inner clamping size</td><td>10&quot;–28&quot;</td></tr>
+          <tr><td>Outer clamping size</td><td>10&quot;–26&quot;</td></tr>
+          <tr><td>Max wheel diameter</td><td>1140 mm</td></tr>
+          <tr><td>Max wheel width</td><td>400 mm</td></tr>
+          <tr><td>Operating pressure</td><td>8–10 bar</td></tr>
+          <tr><td>Motor power</td><td>220 V / 1.1 kW · 380 V × 0.75 kW</td></tr>
+          <tr><td>Packaging size</td><td>1150 × 980 × 860 mm</td></tr>
+          <tr><td>Net weight</td><td>264 kg</td></tr>
+          <tr><td>Gross weight</td><td>297 kg</td></tr>
+        </table>
+      </details>
     </div>
   </div>
 </article>
@@ -531,18 +604,21 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>Semi-Automatic Car Wheel Balancer <span class="mdl">— S2023</span></h3>
-      <table class="spectable">
-        <tr><td>Rim diameter</td><td>10&quot;–28&quot; or 10&quot;–24&quot;</td></tr>
-        <tr><td>Max tyre diameter</td><td>1000 mm</td></tr>
-        <tr><td>Max tyre width</td><td>1.5&quot;–20&quot;</td></tr>
-        <tr><td>Max tyre weight</td><td>70 kg</td></tr>
-        <tr><td>Balancing accuracy</td><td>±1 g</td></tr>
-        <tr><td>Spinning speed</td><td>200 rpm</td></tr>
-        <tr><td>Motor power</td><td>250 W</td></tr>
-        <tr><td>Power supply</td><td>220 V</td></tr>
-        <tr><td>Net weight</td><td>86 kg</td></tr>
-        <tr><td>Gross weight</td><td>105 kg</td></tr>
-      </table>
+      <details class="specs" open>
+        <summary>Specifications</summary>
+        <table class="spectable">
+          <tr><td>Rim diameter</td><td>10&quot;–28&quot; or 10&quot;–24&quot;</td></tr>
+          <tr><td>Max tyre diameter</td><td>1000 mm</td></tr>
+          <tr><td>Max tyre width</td><td>1.5&quot;–20&quot;</td></tr>
+          <tr><td>Max tyre weight</td><td>70 kg</td></tr>
+          <tr><td>Balancing accuracy</td><td>±1 g</td></tr>
+          <tr><td>Spinning speed</td><td>200 rpm</td></tr>
+          <tr><td>Motor power</td><td>250 W</td></tr>
+          <tr><td>Power supply</td><td>220 V</td></tr>
+          <tr><td>Net weight</td><td>86 kg</td></tr>
+          <tr><td>Gross weight</td><td>105 kg</td></tr>
+        </table>
+      </details>
     </div>
   </div>
 </article>
@@ -552,18 +628,21 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>Automatic Car Wheel Balancer with LCD Display <span class="mdl">— S2228</span></h3>
-      <table class="spectable">
-        <tr><td>Rim diameter</td><td>10&quot;–24&quot;</td></tr>
-        <tr><td>Max tyre diameter</td><td>1000 mm</td></tr>
-        <tr><td>Max tyre width</td><td>1.5&quot;–20&quot;</td></tr>
-        <tr><td>Max tyre weight</td><td>65 kg</td></tr>
-        <tr><td>Balancing accuracy</td><td>±1 g</td></tr>
-        <tr><td>Spinning speed</td><td>200 rpm</td></tr>
-        <tr><td>Motor power</td><td>240 W</td></tr>
-        <tr><td>Power supply</td><td>220 V</td></tr>
-        <tr><td>Net weight</td><td>115 kg</td></tr>
-        <tr><td>Gross weight</td><td>135 kg</td></tr>
-      </table>
+      <details class="specs" open>
+        <summary>Specifications</summary>
+        <table class="spectable">
+          <tr><td>Rim diameter</td><td>10&quot;–24&quot;</td></tr>
+          <tr><td>Max tyre diameter</td><td>1000 mm</td></tr>
+          <tr><td>Max tyre width</td><td>1.5&quot;–20&quot;</td></tr>
+          <tr><td>Max tyre weight</td><td>65 kg</td></tr>
+          <tr><td>Balancing accuracy</td><td>±1 g</td></tr>
+          <tr><td>Spinning speed</td><td>200 rpm</td></tr>
+          <tr><td>Motor power</td><td>240 W</td></tr>
+          <tr><td>Power supply</td><td>220 V</td></tr>
+          <tr><td>Net weight</td><td>115 kg</td></tr>
+          <tr><td>Gross weight</td><td>135 kg</td></tr>
+        </table>
+      </details>
     </div>
   </div>
 </article>
@@ -573,18 +652,21 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
     <div class="body">
       <span class="brandtag ">Weldann</span>
       <h3>3D Wheel Alignment System <span class="mdl">— S3015</span></h3>
-      <table class="spectable">
-        <tr><td>Display precision</td><td>0.1 mm / 0.01°</td></tr>
-        <tr><td>Total toe</td><td>±0.01°  (range ±40°)</td></tr>
-        <tr><td>Camber</td><td>±0.01°  (range ±45°)</td></tr>
-        <tr><td>Caster</td><td>±0.02°  (range ±45°)</td></tr>
-        <tr><td>S.A.I</td><td>±0.01°  (range ±45°)</td></tr>
-        <tr><td>Thrust</td><td>±0.01°  (range ±40°)</td></tr>
-        <tr><td>Set back</td><td>±0.01°  (range ±40°)</td></tr>
-        <tr><td>Max steering</td><td>±0.02°  (range ±50°)</td></tr>
-        <tr><td>Track width</td><td>±2 mm  (range 1219–2439 mm)</td></tr>
-        <tr><td>Wheelbase</td><td>±2 mm  (range 2006–4572 mm)</td></tr>
-      </table>
+      <details class="specs" open>
+        <summary>Specifications</summary>
+        <table class="spectable">
+          <tr><td>Display precision</td><td>0.1 mm / 0.01°</td></tr>
+          <tr><td>Total toe</td><td>±0.01°  (range ±40°)</td></tr>
+          <tr><td>Camber</td><td>±0.01°  (range ±45°)</td></tr>
+          <tr><td>Caster</td><td>±0.02°  (range ±45°)</td></tr>
+          <tr><td>S.A.I</td><td>±0.01°  (range ±45°)</td></tr>
+          <tr><td>Thrust</td><td>±0.01°  (range ±40°)</td></tr>
+          <tr><td>Set back</td><td>±0.01°  (range ±40°)</td></tr>
+          <tr><td>Max steering</td><td>±0.02°  (range ±50°)</td></tr>
+          <tr><td>Track width</td><td>±2 mm  (range 1219–2439 mm)</td></tr>
+          <tr><td>Wheelbase</td><td>±2 mm  (range 2006–4572 mm)</td></tr>
+        </table>
+      </details>
     </div>
   </div>
 </article>
@@ -597,19 +679,22 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
       <span class="brandtag hakiro">Hakiro</span>
       <h3>Semi-Automatic Tyre Changer <span class="mdl">&mdash; JA-C01 &middot; swing-arm &middot; 20&Prime;</span></h3>
       <p class="note">The arm swings aside by hand rather than tilting back, so the machine can stand against a wall &mdash; the same layout as the HPA-Faip M31.</p>
-      <table class="spectable">
-        <tr><td>Configuration</td><td>Swing-arm</td></tr>
-        <tr><td>Outside clamp</td><td>10&Prime;&ndash;20&Prime;</td></tr>
-        <tr><td>Inside clamp</td><td>12&Prime;&ndash;22&Prime;</td></tr>
-        <tr><td>Max wheel diameter</td><td>1000 mm</td></tr>
-        <tr><td>Max wheel width</td><td>3&Prime;&ndash;14&Prime;</td></tr>
-        <tr><td>Working air pressure</td><td>8&ndash;10 bar</td></tr>
-        <tr><td>Motor power</td><td>0.37 kW</td></tr>
-        <tr><td>Supply voltage</td><td>380 / 220 / 110 V</td></tr>
-        <tr><td>Machine dimensions</td><td>1000 &times; 900 &times; 1840 mm</td></tr>
-        <tr><td>Machine weight (net)</td><td>164 kg</td></tr>
-        <tr><td>Machine weight (gross)</td><td>184 kg</td></tr>
-      </table>
+      <details class="specs" open>
+        <summary>Specifications</summary>
+        <table class="spectable">
+          <tr><td>Configuration</td><td>Swing-arm</td></tr>
+          <tr><td>Outside clamp</td><td>10&Prime;&ndash;20&Prime;</td></tr>
+          <tr><td>Inside clamp</td><td>12&Prime;&ndash;22&Prime;</td></tr>
+          <tr><td>Max wheel diameter</td><td>1000 mm</td></tr>
+          <tr><td>Max wheel width</td><td>3&Prime;&ndash;14&Prime;</td></tr>
+          <tr><td>Working air pressure</td><td>8&ndash;10 bar</td></tr>
+          <tr><td>Motor power</td><td>0.37 kW</td></tr>
+          <tr><td>Supply voltage</td><td>380 / 220 / 110 V</td></tr>
+          <tr><td>Machine dimensions</td><td>1000 &times; 900 &times; 1840 mm</td></tr>
+          <tr><td>Machine weight (net)</td><td>164 kg</td></tr>
+          <tr><td>Machine weight (gross)</td><td>184 kg</td></tr>
+        </table>
+      </details>
     </div>
   </div>
 </article>
@@ -667,6 +752,13 @@ function hsearch(f){var q=(f.q.value||'').trim();if(!q)return false;var l=docume
    .searchbox, so the query it is meant to show survives this. */
 window.addEventListener('pageshow',function(){var i=document.querySelector('.searchbox input[name="q"]');if(i)i.value='';});
 (function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
+/* Fold the spec tables away on a phone. They are <details open> in the
+   markup, so if this never runs every table is simply expanded, which is
+   the page as it was before -- the failure direction is the long page, not
+   a page whose specs cannot be opened. 640px matches the CSS above. */
+(function(){try{if(window.matchMedia&&matchMedia('(max-width:640px)').matches){
+  var d=document.querySelectorAll('details.specs');
+  for(var i=0;i<d.length;i++)d[i].open=false;}}catch(e){}})();
 </script>
 <script>
 /* Brand filter for the model list. Cards carry data-brand, as do the group
@@ -695,7 +787,7 @@ window.addEventListener('pageshow',function(){var i=document.querySelector('.sea
   apply('hpa');
 })();
 </script>
-<script src="../translate.js?v=202608141410"></script>
+<script src="../translate.js?v=202608171100"></script>
 <script src="../../assets/nav.js?v=202608122200" defer></script>
 </body>
 </html>

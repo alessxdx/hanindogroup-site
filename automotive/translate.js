@@ -36,6 +36,9 @@
   var DICT = {
     /* ---- directions ---- */
     "Get directions": "Petunjuk arah",
+    /* The fold that hides each product's spec table on a phone. One entry
+       covers every product page that carries a .spectable. */
+    "Specifications": "Spesifikasi",
     /* ---- navigation / header ---- */
     "Back to": "Kembali ke",
     "Home": "Beranda",
