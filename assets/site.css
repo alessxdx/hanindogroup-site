@@ -1195,8 +1195,12 @@ a.pcard:hover .more svg{transform:translateX(3px)}
 .hslide.active .heropanel{animation:heroRise 1s .5s both cubic-bezier(.2,.7,.3,1)}
 /* panel rows pop in one at a time after the panel itself lands.
    Each row comes in from the left and settles with a 1.5% overshoot —
-   just enough to read as a distinct arrival, not a bounce. The 90ms
-   gap is wide enough that the eye counts them individually. */
+   just enough to read as a distinct arrival, not a bounce. The 140ms
+   gap is wide enough that the eye counts them individually. (This said
+   90ms until 2026-08-17. The delays below have stepped by 140ms since
+   the commit that introduced them, so the number in the prose was never
+   right rather than having drifted -- worth knowing if you extend the
+   run and take the gap from here.) */
 @keyframes heroPop{
   0%{opacity:0;transform:translateX(-12px) scale(.96)}
   62%{opacity:1;transform:translateX(0) scale(1.015)}
@@ -1211,6 +1215,13 @@ a.pcard:hover .more svg{transform:translateX(3px)}
 .hslide.active .heropanel li:nth-child(6){animation-delay:1.42s}
 .hslide.active .heropanel li:nth-child(7){animation-delay:1.56s}
 .hslide.active .heropanel li:nth-child(8){animation-delay:1.7s}
+/* The run has to reach the longest panel, not the shortest. It stopped at 8
+   while slide 2 carried 10 industries, and the two without a delay did not
+   simply fail to stagger -- they inherited 0s from the rule above and so
+   arrived first, before item 1, which read as the list assembling out of
+   order. Extend this whenever a row is added: .72s + .14s per item. */
+.hslide.active .heropanel li:nth-child(9){animation-delay:1.84s}
+.hslide.active .heropanel li:nth-child(10){animation-delay:1.98s}
 
 
 /* division cards — old-site anatomy: image, charcoal title bar, VISIT NOW */
