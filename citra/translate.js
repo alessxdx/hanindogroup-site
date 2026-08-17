@@ -523,9 +523,7 @@
     "Our Companies": "Perusahaan Kami",
     "PT. Hanindo Automation Solutions": "PT. Hanindo Automation Solutions",
     "Tel:": "Tel:",
-    "© 2026 Hanindo Group. All Rights Reserved.": "© 2026 Hanindo Group. Hak Cipta Dilindungi.",
-    /* The privacy link beside the copyright, on every page of this site. */
-    "Privacy": "Privasi"
+    "© 2026 Hanindo Group. All Rights Reserved.": "© 2026 Hanindo Group. Hak Cipta Dilindungi."
   };
 
   var LANG_KEY = 'ha_citra_lang', ALT = 'id', HTML_LANG = 'id';

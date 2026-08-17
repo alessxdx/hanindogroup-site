@@ -128,8 +128,6 @@
        site turned over. Wording copied from those, not retranslated. */
     "Your technology one stop solution, serving the oil & gas, automation, automotive and fire protection industries in Indonesia since 1987.": "Solusi teknologi satu atap Anda, melayani industri minyak & gas, otomasi, otomotif, dan proteksi kebakaran di Indonesia sejak 1987.",
     "© 2026 Hanindo Group. All Rights Reserved.": "© 2026 Hanindo Group. Hak Cipta Dilindungi.",
-    /* The privacy link beside the copyright, on every page of this site. */
-    "Privacy": "Privasi",
 
     /* ---- about page ----
        "About" and "Us" are separate keys because the hero splits them

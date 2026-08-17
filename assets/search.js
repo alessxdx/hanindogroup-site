@@ -532,12 +532,13 @@
 
     var req = new XMLHttpRequest();
     /* Bump this stamp whenever build-search-index.pl is re-run. It sat at
-       v=1 from the day it was written, so every rebuild after the first
-       shipped an index that returning visitors never saw -- the pages were
-       in the file and missing from their results. Raised on 2026-08-17 when
-       the privacy page was added and would have been invisible to anyone
-       who had searched the site before. */
-    req.open('GET', '../assets/search-index.json?v=202608171600', true);
+       v=1 from the day it was written, which meant every rebuild after the
+       first shipped an index that returning visitors never saw: a new page
+       would be in the file and missing from their results, with nothing to
+       show anything was wrong. Noticed on 2026-08-17 while adding a page.
+       Every other versioned asset on the site is stamped with a timestamp;
+       this one was the exception. */
+    req.open('GET', '../assets/search-index.json?v=202608171607', true);
     req.onreadystatechange = function () {
       if (req.readyState !== 4) return;
 
