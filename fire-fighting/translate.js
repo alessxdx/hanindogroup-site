@@ -122,6 +122,11 @@
     "Our Companies": "Perusahaan Kami",
     "Fire Fighting Department": "Departemen Pemadam Kebakaran",
     "A specialist division of the Hanindo Group, delivering end-to-end fire protection — from design and engineering through supply, installation, testing and long-term maintenance.": "Divisi spesialis dari Hanindo Group, menghadirkan proteksi kebakaran menyeluruh — dari desain dan rekayasa hingga pengadaan, pemasangan, pengujian, dan pemeliharaan jangka panjang.",
+    /* The group tagline in the footer, on all six pages of this site. It is
+       listed in the seven other dictionaries and was missing from this one
+       alone, so the footer stayed half English here while every other company
+       site turned over. Wording copied from those, not retranslated. */
+    "Your technology one stop solution, serving the oil & gas, automation, automotive and fire protection industries in Indonesia since 1987.": "Solusi teknologi satu atap Anda, melayani industri minyak & gas, otomasi, otomotif, dan proteksi kebakaran di Indonesia sejak 1987.",
     "© 2026 Hanindo Group. All Rights Reserved.": "© 2026 Hanindo Group. Hak Cipta Dilindungi.",
 
     /* ---- about page ----
@@ -234,16 +239,26 @@
     "Integrated high-hazard & Process area protection": "Proteksi terpadu area berisiko tinggi & proses",
     "How we deliver": "Cara kami bekerja",
     "Our delivery lifecycle": "Siklus pengerjaan kami",
+    /* Two wordings per stage, and both are needed. hanindo-citra-website.html
+       runs the long form; products-services.html was tightened to fit the
+       narrower timeline on that page and only the long keys were listed, so
+       four of its five stages sat in English. Found by audit on 2026-08-17,
+       not by anyone noticing. If a stage is reworded again, check BOTH pages
+       before assuming one entry covers it. */
     "Design & Engineering": "Desain & Rekayasa",
     "Tailored designs based on risk assessment and regulatory requirements.": "Desain yang disesuaikan berdasarkan penilaian risiko dan persyaratan regulasi.",
+    "Tailored designs from risk assessment and regulations.": "Desain yang disesuaikan berdasarkan penilaian risiko dan regulasi.",
     "Procure & Supply": "Pengadaan & Pasokan",
     "Sourcing high-quality components from reputable global manufacturers.": "Pengadaan komponen berkualitas tinggi dari produsen global ternama.",
+    "Quality components from reputable global manufacturers.": "Komponen berkualitas dari produsen global ternama.",
     "Install & Integrate": "Pemasangan & Integrasi",
     "Professional installation of detection, alarm, hydrant and suppression systems.": "Pemasangan profesional sistem deteksi, alarm, hidran, dan pemadam.",
+    "Professional installation of detection, alarm and suppression.": "Pemasangan profesional sistem deteksi, alarm, dan pemadam.",
     "Test & Commission": "Pengujian & Commissioning",
     "Thorough validation to ensure optimal performance and reliability.": "Validasi menyeluruh untuk memastikan kinerja dan keandalan optimal.",
     "Maintain & Support": "Pemeliharaan & Dukungan",
     "Ongoing maintenance programs to guarantee system integrity.": "Program pemeliharaan berkelanjutan untuk menjamin integritas sistem.",
+    "Ongoing maintenance to guarantee system integrity.": "Pemeliharaan berkelanjutan untuk menjamin integritas sistem.",
     "Industries served": "Industri yang dilayani",
     "Oil & Gas": "Minyak & Gas",
     "Petrochemical": "Petrokimia",
@@ -300,7 +315,44 @@
     "Key Equipment": "Peralatan Utama",
     "Component": "Komponen",
     "Brand": "Merek",
-    "View details": "Lihat detail"
+    "View details": "Lihat detail",
+
+    /* ---- found by audit, 2026-08-17 ----
+       Everything below was visible copy with no entry, so it stayed English
+       while the heading above it translated. It was not found by reading the
+       pages -- it was found by walking every text node on all six and
+       checking each against this file. Worth repeating after any batch of
+       copy edits; the gaps are invisible unless you flip the toggle. */
+
+    /* about page: the second half of the SKKNI credential line, which sits in
+       its own node after the certificate name and so needs its own entry. */
+    "— personnel certified as technical assessor in fire protection competency under the Indonesian National Work Competency Standards (SKKNI).": "— personel bersertifikat sebagai asesor teknis kompetensi proteksi kebakaran berdasarkan Standar Kompetensi Kerja Nasional Indonesia (SKKNI).",
+
+    /* products & services, and the one-page variant */
+    "Our service portfolio is built around a single goal — a system that remains operational on day one and every day after.": "Portofolio layanan kami dibangun di sekitar satu tujuan — sistem yang tetap beroperasi sejak hari pertama dan setiap hari sesudahnya.",
+
+    /* contact page: the line under "How to reach us." The other company
+       dictionaries carry the same sentence shaped to their own business. */
+    "For fire-protection design, supply, installation, testing or maintenance, our Jakarta team is the first point of contact.": "Untuk desain, pengadaan, pemasangan, pengujian, atau pemeliharaan proteksi kebakaran, tim Jakarta kami adalah titik kontak pertama.",
+
+    /* projects page: the two case write-ups. Client and facility names stay as
+       they are; Ministry of Transportation follows the About page's
+       "Kementerian Perhubungan". */
+    "PT. Hanindo Citra designed and built a complete hydrant system for PT. GLB Indonesia. The project covered the supply, installation, testing, and commissioning of the fire protection system, ensuring compliance with project specifications and applicable fire-safety standards.": "PT. Hanindo Citra merancang dan membangun sistem hidran lengkap untuk PT. GLB Indonesia. Proyek ini mencakup pengadaan, pemasangan, pengujian, dan commissioning sistem proteksi kebakaran, serta memastikan kesesuaian dengan spesifikasi proyek dan standar keselamatan kebakaran yang berlaku.",
+    "PT. Hanindo Citra delivered a complete hydrant system for the Ministry of Transportation facility in Padang. The project covered the supply, installation, testing, and commissioning of the fire protection system, ensuring compliance with project specifications and applicable fire-safety standards.": "PT. Hanindo Citra menghadirkan sistem hidran lengkap untuk fasilitas Kementerian Perhubungan di Padang. Proyek ini mencakup pengadaan, pemasangan, pengujian, dan commissioning sistem proteksi kebakaran, serta memastikan kesesuaian dengan spesifikasi proyek dan standar keselamatan kebakaran yang berlaku.",
+
+    /* one-page variant: vision, the four mission points, and the three
+       credential panels. Nine paragraphs, the largest single block of
+       untranslated copy that was left on the site. */
+    "To be the fire-protection partner our clients trust without question — delivering reliable systems, professional service, and lasting peace of mind.": "Menjadi mitra proteksi kebakaran yang dipercaya klien tanpa keraguan — menghadirkan sistem yang andal, layanan profesional, dan ketenangan yang bertahan lama.",
+    "Deliver efficient, optimal and targeted services while upholding professional standards and work commitment.": "Memberikan layanan yang efisien, optimal, dan tepat sasaran dengan tetap menjunjung standar profesional dan komitmen kerja.",
+    "Continuously invest in innovation and the development of our people to raise capability.": "Terus berinvestasi dalam inovasi dan pengembangan sumber daya manusia untuk meningkatkan kapabilitas.",
+    "Implement management systems and technologies that improve efficiency, quality, and occupational health & safety.": "Menerapkan sistem manajemen dan teknologi yang meningkatkan efisiensi, kualitas, serta keselamatan dan kesehatan kerja.",
+    "Trusted by leading organisations across government, oil & gas, and industry — including the Ministry of Transportation, PT Pertamina (Persero), AKR Fuel Storage, LPG Petroleum Storage, PT. GLB Indonesia, and the OP-1 Operational Building.": "Dipercaya oleh organisasi terkemuka di sektor pemerintah, minyak & gas, dan industri — termasuk Kementerian Perhubungan, PT Pertamina (Persero), AKR Fuel Storage, LPG Petroleum Storage, PT. GLB Indonesia, dan Gedung Operasional OP-1.",
+    "We deliver internationally branded fire-protection products engineered to the highest NFPA, SNI, and ISO standards — reliable on day one, and every day after.": "Kami menghadirkan produk proteksi kebakaran bermerek internasional yang direkayasa sesuai standar NFPA, SNI, dan ISO tertinggi — andal sejak hari pertama, dan setiap hari sesudahnya.",
+    "Fast response, free consultation, on-site surveys, and committed after-sales support — fully dedicated to our clients' satisfaction.": "Respons cepat, konsultasi gratis, survei lokasi, dan dukungan purnajual yang berkomitmen — sepenuhnya demi kepuasan klien kami.",
+    "Membership of the National Fire Protection Association (NFPA) — the global authority behind the world's leading fire-safety standards.": "Keanggotaan National Fire Protection Association (NFPA) — otoritas global di balik standar keselamatan kebakaran terkemuka di dunia.",
+    "Personnel certified in fire-safety competency (Ahli K3 Penanggulangan Kebakaran) under the Ministry of Manpower of the Republic of Indonesia.": "Personel bersertifikat kompetensi keselamatan kebakaran (Ahli K3 Penanggulangan Kebakaran) di bawah Kementerian Ketenagakerjaan Republik Indonesia."
   };
 
   var store = null;
