@@ -141,7 +141,6 @@
     "Help businesses adopt reliable technology solutions that improve daily operations.": "Membantu bisnis mengadopsi solusi teknologi andal yang meningkatkan operasional sehari-hari.",
     "Why choose us": "Mengapa memilih kami",
     "Why clients trust us": "Mengapa klien mempercayai kami",
-    "Three things you can count on, from first specification through to long-term support.": "Tiga hal yang dapat Anda andalkan, dari spesifikasi awal hingga dukungan jangka panjang.",
     "Industry Experience": "Pengalaman Industri",
     "Technology Expertise": "Keahlian Teknologi",
     "Official CUSTOM solutions with the capability to integrate hardware into business operations.": "Solusi CUSTOM resmi dengan kemampuan mengintegrasikan perangkat keras ke dalam operasional bisnis.",

@@ -163,7 +163,6 @@
     "View certificate": "Lihat sertifikat",
     "Why choose us": "Mengapa Memilih Kami",
     "Why clients trust us": "Mengapa klien mempercayai kami",
-    "Three things you can count on from the first survey through to long-term maintenance.": "Tiga hal yang dapat Anda andalkan sejak survei pertama hingga pemeliharaan jangka panjang.",
     "See our projects": "Lihat proyek kami",
     "Our products": "Produk kami",
     "Talk to us": "Hubungi kami",

@@ -164,7 +164,6 @@
     /* ---- about: why choose us ---- */
     "Why choose us": "为何选择我们",
     "Why clients trust us": "客户为何信赖我们",
-    "Three things you can count on, from first specification through to long-term support.": "从最初的规格设计到长期支持，有三件事您可以放心。",
     "Industry Experience": "行业经验",
     "Part of the Hanindo Group, supporting retail, transport and service operators across China since 2007.": "隶属 Hanindo Group，自 2007 年起为中国各地的零售、交通与服务运营商提供支持。",
     "Technology Expertise": "技术专长",

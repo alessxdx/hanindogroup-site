@@ -368,23 +368,35 @@ img{max-width:100%;display:block}
 .offbody .addr{margin-top:auto;padding-top:.55rem;font-size:.8rem;color:var(--ink);opacity:.75}
 
 /* ---------- WHY CHOOSE US ----------
-   No card box: a tinted icon tile over centred copy, each column ending
-   in its own link. The fire-fighting site has its own crimson-era copy of
-   this in fire-fighting.css; these are the Hanindo blues, shared by the
-   automotive, Gralessando and Hanindo Shanghai About pages. */
-.adv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.5rem}
-@media(max-width:860px){.adv-grid{grid-template-columns:1fr}}
-.adv{padding:1.5rem 1.3rem;text-align:center;display:flex;flex-direction:column}
-.advic{width:50px;height:50px;margin:0 auto .85rem;border-radius:var(--r);display:flex;align-items:center;justify-content:center}
-.advic svg{width:23px;height:23px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.adv-1 .advic{background:#e6f2fb}.adv-1 .advic svg{stroke:var(--brand)}
-.adv-2 .advic{background:#e8eef6}.adv-2 .advic svg{stroke:var(--blue-800)}
-.adv-3 .advic{background:#e3f5fd}.adv-3 .advic svg{stroke:var(--brand-600)}
-.adv h3{font-weight:800;font-size:1.02rem;color:var(--blue-800);margin-bottom:.45rem}
-.adv p{color:var(--muted);font-size:.9rem;max-width:32ch;margin:0 auto}
-.advlink{display:inline-flex;align-items:center;align-self:center;gap:.35rem;margin-top:auto;padding-top:.9rem;font-weight:700;font-size:.84rem;color:var(--brand)}
-.advlink svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2.2}
-.advlink:hover{color:var(--brand-600);text-decoration:underline}
+   A numbered list, not a row of cards. It replaced three centred icon
+   tiles side by side on 2026-08-17: three abreast, each with a tinted
+   icon over a bold line and one grey sentence, is the single most
+   recognisable stock-template shape on the web, and the block announced
+   the count twice over -- once in the layout and once in a lede reading
+   "Three things you can count on". The lede is gone and the heading sits
+   left; the numbers now carry the count, quietly.
+
+   One arrangement at every width. The old block needed a second one
+   (two up, third spanning) which had to be revisited whenever the copy
+   changed length; rows reflow on their own.
+
+   The rule sits on .advbody rather than .advrow on purpose, so it starts
+   at the text and leaves the number out in the margin.
+
+   Every page that runs this carries exactly three rows. Nothing breaks
+   with four -- there is no :last-child special case any more -- but the
+   numbers are written into the markup, so a fourth needs its own 04. */
+.advhead{max-width:78ch;margin:0 auto 1.6rem}
+.advhead .h2{text-transform:uppercase;letter-spacing:.08em;font-size:1.05rem}
+.advlist{max-width:78ch;margin:0 auto;display:grid}
+.advrow{display:grid;grid-template-columns:3.4rem 1fr;gap:0 1.3rem}
+.advnum{font-size:.82rem;font-weight:700;color:var(--brand);letter-spacing:.1em;padding-top:1.55rem;font-variant-numeric:tabular-nums}
+.advrow:first-child .advnum{padding-top:0}
+.advbody{padding:1.5rem 0;border-bottom:1px solid var(--line)}
+.advrow:first-child .advbody{padding-top:0}
+.advrow:last-child .advbody{border-bottom:0;padding-bottom:0}
+.advbody h3{font-weight:800;font-size:.93rem;color:var(--blue-800);text-transform:uppercase;letter-spacing:.09em;margin-bottom:.45rem}
+.advbody p{color:var(--muted);font-size:.93rem;max-width:62ch}
 .wcgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2rem}
 @media(max-width:860px){.wcgrid{grid-template-columns:1fr}}
 .wccard{background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--blue-800);border-radius:var(--r);padding:1.6rem 1.4rem;text-align:center}
@@ -1688,7 +1700,7 @@ a[href^="tel:"]:hover,a[href^="tel:"]:focus-visible{text-decoration:underline}
   .hide-sm{display:none}
 
   /* --- supporting copy: the body of every card and panel --- */
-  .svc p,.pbody p,.cat p,.adv p,.wccard p,.bcard .bbody p,.vm-card>p,.mlist p,
+  .svc p,.pbody p,.cat p,.wccard p,.bcard .bbody p,.vm-card>p,.mlist p,
   .offbody p,.certcard .desc,.checks-desc span,.xlink p,.isometa .lbl,
   .secwhat,.isonote,.footer .fbrand p,.aphoto .cap{font-size:.95rem;line-height:1.6}
   .mktnote,.contact .info .mktnote{font-size:.92rem;line-height:1.6}
@@ -1716,7 +1728,7 @@ a[href^="tel:"]:hover,a[href^="tel:"]:focus-visible{text-decoration:underline}
   .vbtn{font-size:.78rem}
 
   /* --- the link at the foot of a card --- */
-  .pcard .more,.cat .go,.advlink,.certlink,.xlink .xl-go,.dirlink{font-size:.9rem}
+  .pcard .more,.cat .go,.certlink,.xlink .xl-go,.dirlink{font-size:.9rem}
 
   /* --- chips --- */
   .tag,.cpill{font-size:.78rem;padding:.3rem .6rem}
@@ -1776,31 +1788,21 @@ a[href^="tel:"]:hover,a[href^="tel:"]:focus-visible{text-decoration:underline}
   .gtl h3{font-size:.95rem;min-height:0;margin:.1rem 0 .14rem}
   .gtl p{font-size:.92rem;line-height:1.45}
 
-  /* --- "Why clients trust us": two rows rather than three.
-     The three advantage cards ran one per row on a phone, 737px of
-     full-width blocks for three short claims. Two across gets them into
-     two rows, but ONLY with the type scaled to match: at the sizes above,
-     a 50px icon and 15px copy inside a 163px card push the longest card
-     to eleven lines and the block to 866px — taller than the single
-     column it replaced. The saving comes from the scaling, not the extra
-     column. With both, it is 415px.
-     The third card spans the row instead of being stranded at half width
-     beside a gap, which also hands the longest of the three descriptions
-     43 characters a line against the 22 the paired cards get — the card
-     with the most to say gets the most room. All seven About pages that
-     run this block carry exactly three cards, so :last-child is always
-     the odd one; revisit if a fourth is ever added.
-     Placed at the end of this block on purpose: .adv p is restated near
-     the top of it, and a media query adds no specificity, so an override
-     written above that line would be silently dropped. --- */
-  .adv-grid{grid-template-columns:1fr 1fr;gap:.6rem}
-  .adv{padding:1rem .7rem}
-  .adv h3{font-size:.88rem;margin-bottom:.35rem}
-  .adv p{font-size:.78rem;line-height:1.45;max-width:none}
-  .advic{width:38px;height:38px;margin-bottom:.6rem}
-  .advic svg{width:19px;height:19px}
-  .adv-grid .adv:last-child{grid-column:1/-1}
-  .adv-grid .adv:last-child p{max-width:38ch}
+  /* --- "Why clients trust us": the same rows, tightened.
+     The two-across card arrangement this replaced lived here, and it was
+     the fiddly part of the old block: two up with the third spanning, the
+     type scaled down to stop the longest card running to eleven lines,
+     and a :last-child rule that assumed exactly three. None of that is
+     needed now. Rows are already full width, so the phone only wants
+     smaller type, a narrower number column and less air per row.
+     Placed at the end of this block on purpose: .advbody p is restated
+     near the top of it, and a media query adds no specificity, so an
+     override written above that line would be silently dropped. --- */
+  .advrow{grid-template-columns:2.3rem 1fr;gap:0 .9rem}
+  .advnum{font-size:.74rem;padding-top:1.25rem}
+  .advbody{padding:1.2rem 0}
+  .advbody h3{font-size:.84rem;letter-spacing:.07em}
+  .advbody p{font-size:.86rem;line-height:1.55}
 
   /* --- certificates, two per row. A certificate card is a scan and two
      short labels, so it takes a narrow column far better than anything

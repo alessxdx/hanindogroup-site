@@ -152,7 +152,6 @@
     "Implement management systems and technologies that improve efficiency, quality, and occupational health & safety.": "Menerapkan sistem manajemen dan teknologi yang meningkatkan efisiensi, mutu, serta keselamatan dan kesehatan kerja.",
     "Why choose us": "Mengapa memilih kami",
     "Why clients trust us": "Mengapa klien mempercayai kami",
-    "Three things you can count on, from the first site survey through to long-term service.": "Tiga hal yang dapat Anda andalkan, dari survei lokasi pertama hingga layanan jangka panjang.",
     /* "Since 1987" is a date, not a phrase — it reads the same in both
        languages, so it has no entry here and is left alone by the toggle. */
     "The original petroleum equipment business that became today's Hanindo Group, serving Indonesia's fuel retail industry for over four decades.": "Bisnis peralatan perminyakan yang menjadi cikal bakal Hanindo Group hari ini, melayani industri ritel bahan bakar Indonesia selama lebih dari empat dekade.",

@@ -131,7 +131,6 @@
     "Continuously improve our products and services to meet international standards of quality and safety.": "Terus menyempurnakan produk dan layanan kami untuk memenuhi standar mutu dan keselamatan internasional.",
     "Why choose us": "Mengapa memilih kami",
     "Why clients trust us": "Mengapa klien mempercayai kami",
-    "Three things you can count on, from specifying the first bay through to long-term service.": "Tiga hal yang dapat Anda andalkan, dari penentuan bay pertama hingga layanan jangka panjang.",
     "Trusted Partner": "Mitra Tepercaya",
     "One of the Hanindo Group companies and the sole distributor in Indonesia for Airtec, HPA-Faip and RAASM.": "Salah satu perusahaan Hanindo Group sekaligus distributor tunggal di Indonesia untuk Airtec, HPA-Faip, dan RAASM.",
     "Quality You Can Rely On": "Kualitas yang Dapat Diandalkan",

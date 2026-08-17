@@ -134,7 +134,6 @@
     /* ---- about: why choose us ---- */
     "Why choose us": "Mengapa memilih kami",
     "Why clients trust us": "Mengapa klien mempercayai kami",
-    "Three things you can count on, from first specification through to long-term support.": "Tiga hal yang dapat Anda andalkan, dari spesifikasi awal hingga dukungan jangka panjang.",
     "Industry Experience": "Pengalaman Industri",
     "Part of the Hanindo Group, supporting retail, transport and service operators across Indonesia.": "Bagian dari Hanindo Group, mendukung operator ritel, transportasi, dan jasa di seluruh Indonesia.",
     "Technology Expertise": "Keahlian Teknologi",
