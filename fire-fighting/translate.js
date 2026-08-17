@@ -186,6 +186,17 @@
     "Complete fire protection and building services — operational on day one, and every day after.": "Layanan proteksi kebakaran dan bangunan yang lengkap — beroperasi sejak hari pertama, dan setiap hari sesudahnya.",
     "What we do": "Yang kami lakukan",
     "Comprehensive services": "Layanan menyeluruh",
+    /* The lede under that heading, on both pages. It had no entry at all and
+       stayed English through the whole toggle -- the longest untranslated run
+       of copy left on this site, sitting directly under a heading that did
+       translate. Found while taking an em dash out of it: it read "...in fire
+       safety — leveraging the strength and global network..." until
+       2026-08-17, the same trailing-clause dash as a dozen others, and it
+       survived that sweep because the search looked for connectives and this
+       one leads with a gerund.
+       MEP stays MEP, and Plumbing keeps its English spelling: both are the
+       forms used on Indonesian tender documents. */
+    "PT. Hanindo Citra is a complete solutions partner for fire protection and building services. We deliver end-to-end MEP (Mechanical, Electrical & Plumbing) installations alongside our specialist core in fire safety, drawing on the strength and global network of the Hanindo Group to bring international best practices to every project.": "PT. Hanindo Citra adalah mitra solusi lengkap untuk proteksi kebakaran dan layanan bangunan. Kami mengerjakan instalasi MEP (Mekanikal, Elektrikal & Plumbing) secara menyeluruh bersama inti keahlian kami di bidang keselamatan kebakaran, dengan memanfaatkan kekuatan dan jaringan global Hanindo Group untuk menghadirkan praktik terbaik internasional di setiap proyek.",
     "General Contractor": "Kontraktor Umum",
     "Project delivery and site management.": "Pelaksanaan proyek dan manajemen lokasi.",
     "General Supplier": "Pemasok Umum",
