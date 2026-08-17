@@ -4,10 +4,16 @@ For the hosting colleague: at go-live, turn these into 301 redirects
 in .htaccess (public_html/.htaccess) so existing Google results and
 any bookmarked links keep working.
 
-STATUS: incomplete — /about/, /partners/, /training/, /career/ and
-/contact/ are not built yet. Their rows are listed below and marked
-[PENDING]; the mapping is already decided, so the redirects can be
-written now and will start working the moment those pages ship.
+STATUS as of 2026-08-17: every target below exists and every redirect
+can be applied. The [PENDING] markers are gone with the pages they were
+waiting on — /about/, /partners/, /career/, /contact/ and /printer-pos/
+are all built.
+
+One exception, and it is a content decision rather than a mapping one:
+there is no /training/ page and nothing on the site replaces the old
+training page. That row now points at /products-services/ — see the
+note against it. If the business wants the training offer back as a
+page of its own, build it and repoint that one row.
 
 
 --------------------------------------------------
@@ -15,7 +21,7 @@ MAPPING
 --------------------------------------------------
 OLD (Joomla)                                          NEW
 /                                                     /
-/about-hanindo-group                                  /about/                    [PENDING]
+/about-hanindo-group                                  /about/
 /about-hanindo-group/hanindo-citra                    /citra/
 /about-hanindo-group/flowtech-engineering             /flowtech-engineering/
 /about-hanindo-group/hanindo-automotive               /automotive/
@@ -30,11 +36,28 @@ OLD (Joomla)                                          NEW
 /oil-and-gas                                          /citra/
 /home-automotive                                      /automotive/
 /fire-fighting                                        /fire-fighting/            (already live)
-/partners-a-principals                                /partners/                 [PENDING]
-/training-gilbarco-veeder-root-thermal-printer-indonesia          /training/     [PENDING]
-/news-info/career-hanindo-group-gilbarco-veeder-root-indonesia-thermal-printer   /career/   [PENDING]
-/contact-us                                           /contact/                  [PENDING]
-/about                                                /about/                    [PENDING]
+/partners-a-principals                                /partners/
+/training-gilbarco-veeder-root-thermal-printer-indonesia   /products-services/   (see note)
+/news-info/career-hanindo-group-gilbarco-veeder-root-indonesia-thermal-printer   /career/
+/contact-us                                           /contact/
+/about                                                /about/
+
+NOTE on the training row. The old page offered training on Gilbarco
+Veeder-Root equipment and on thermal printers, and nothing on the new
+site replaces it. There is no /training/ page, and the only training
+content anywhere is the automotive spooring and balancing courses on
+/automotive/products-services.html — a different product line, so
+sending a Gilbarco enquiry there would be wrong.
+
+It goes to /products-services/ because the old URL spans two product
+families, petroleum equipment and printers, and that is the one page
+covering both. A visitor arriving from an old search result lands on
+what the group actually supplies, with a route to the right company,
+rather than on a 404 or the bare home page.
+
+This is the honest fix, not the ideal one. The ideal one is a /training/
+page, which needs the business to say what training is still offered —
+inventing course details would be worse than the redirect.
 
 THIS SITE'S OWN URL CHANGES. Two sections were renamed during the
 build to match the company name rather than the industry. Anyone who
@@ -47,8 +70,8 @@ already points at /citra/, so one Redirect covers both.
 
 WAS EXTERNAL — now internal. Both of these pointed at custom-sea.com,
 which does not exist. Send them to the section instead:
-/  (menu item "Printer & POS System")                 /printer-pos/   [PENDING]
-/  (menu item "Custom (S.E.A) Gralessando")           /printer-pos/   [PENDING]
+/  (menu item "Printer & POS System")                 /printer-pos/
+/  (menu item "Custom (S.E.A) Gralessando")           /printer-pos/
 
 UNRESOLVED — decide before go-live:
 /gralessando          Linked from the old site's "Our Websites" menu.
@@ -85,7 +108,7 @@ Redirect 301 /hanindo-product                                  /
 Redirect 301 /oil-and-gas                                      /citra/
 Redirect 301 /home-automotive                                  /automotive/
 Redirect 301 /partners-a-principals                            /partners/
-Redirect 301 /training-gilbarco-veeder-root-thermal-printer-indonesia  /training/
+Redirect 301 /training-gilbarco-veeder-root-thermal-printer-indonesia  /products-services/
 Redirect 301 /news-info/career-hanindo-group-gilbarco-veeder-root-indonesia-thermal-printer  /career/
 Redirect 301 /contact-us                                       /contact/
 Redirect 301 /overseas                                         /shanghai/

@@ -41,11 +41,22 @@ Redirect 301 /oil-and-gas                                           /citra/
 Redirect 301 /home-automotive                                       /automotive/
 Redirect 301 /partners-a-principals                                 /partners/
 
-# NOT ENABLED: /training/ does not exist on the new site, so this would
-# 301 straight into a 404. Left off deliberately — the old URL falls
-# through to 404.html instead, which offers the company index.
-# Uncomment if a training page is ever built.
-# Redirect 301 /training-gilbarco-veeder-root-thermal-printer-indonesia /training/
+# ENABLED 2026-08-17, repointed. This was off because it aimed at
+# /training/, which does not exist and never did, so it would have 301'd
+# straight into a 404 — leaving it off was the right call at the time.
+#
+# It now goes to /products-services/ instead. The old page offered
+# training on Gilbarco Veeder-Root equipment and on thermal printers, and
+# nothing on the new site replaces it; that URL spans two product
+# families, so the group products page is the one page covering both. Not
+# ideal, but a real indexed URL now lands on what the group supplies with
+# a route to the right company, rather than falling through to 404.html.
+#
+# The automotive spooring and balancing courses are the only training
+# content on the site and belong to a different product line, so this
+# must NOT be repointed there. If a /training/ page is ever built, aim
+# this at it and update REDIRECTS.txt to match.
+Redirect 301 /training-gilbarco-veeder-root-thermal-printer-indonesia /products-services/
 
 Redirect 301 /news-info/career-hanindo-group-gilbarco-veeder-root-indonesia-thermal-printer /career/
 Redirect 301 /contact-us                                            /contact/
