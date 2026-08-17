@@ -886,6 +886,24 @@ a.pcard:hover .more svg{transform:translateX(3px)}
 .checks{list-style:none;display:grid;gap:.75rem;margin-top:1.7rem}
 .checks li{display:flex;gap:.7rem;align-items:flex-start;color:var(--ink);font-size:.95rem}
 .checks li svg{flex:none;width:17px;height:17px;margin-top:.28rem;fill:none;stroke:var(--brand);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+/* The item number that replaced the tick on 2026-08-17. A tick claims each
+   line is something achieved or included, which was true of nothing these
+   lists hold: a duties list, a set of product categories, a run of company
+   capabilities. The contact pages lost their markers outright rather than
+   taking numbers -- a tick beside a phone number claimed a phone number.
+
+   Sized to the slot the 17px icon held so the text edge does not move, and
+   tabular so two digits always occupy the same width. Numbers are written
+   into the markup, not generated with a counter, because the walker in each
+   translate.js keys on whole text nodes and a CSS ::before would be
+   invisible to it -- keeping them as real text keeps that honest.
+
+   The selector is descendant-qualified, not a bare .cnum, and has to stay
+   that way: .cnum is a <span>, so .checks-desc span below -- and the mobile
+   rule that restates it -- both match it at (0,1,1) and would otherwise win
+   on specificity, handing the number the description's muted grey and size
+   instead of the brand blue. */
+.checks .cnum,.clist .cnum,.heropanel .cnum{flex:none;min-width:1.5rem;padding-top:.18rem;font-size:.78rem;font-weight:700;color:var(--brand);letter-spacing:.08em;font-variant-numeric:tabular-nums;line-height:1.4}
 /* A tick list where each item carries a bold label above a line of detail,
    rather than a bare phrase. Used by the Gralessando and Hanindo Shanghai
    home pages, which describe the same Custom range. */
