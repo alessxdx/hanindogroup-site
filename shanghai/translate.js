@@ -57,29 +57,26 @@
     "Transport, retail & public services": "交通、零售与公共服务",
     "Industry & technology": "工业与科技",
 
-    /* ---- contact block ---- */
-    "Talk to Hanindo (Shanghai) International Co., Ltd.": "联系汉琳德上海",
-    "Sourcing printing or POS,": "正在采购打印或 POS 设备，",
-    "for the Chinese market?": "面向中国市场？",
-    "Tell us the sites and volumes you handle and our team will match the right printing, scanning and POS package.": "请告知您负责的站点与业务量，我们的团队将为您匹配合适的打印、扫描与 POS 方案。",
+    /* ---- contact page, and the footer's office columns ----
+       The contact band these mostly belonged to came off the home, About
+       and Products & Services pages, and twelve of its entries went with
+       it: the eyebrow, both halves of the heading, the sub line, "Contact
+       page", the three phone and representative-office labels, and the
+       four pieces its market note was split into by the <b>s and <a>s.
+       What is left is still in use and was checked one at a time.
+       "Email our team" is the contact page's button; "Shanghai Office",
+       "Shenzhen Office" and the two city names are the footer's address
+       columns on all four pages; "Indonesia" and ", see" are the contact
+       page's own market note, which is worded differently from the one
+       that came off. */
     "Email our team": "发送邮件给我们",
-    "Contact page": "联系页面",
     "Shanghai Office": "上海办公室",
-    "Shanghai Phone": "上海电话",
-    "Shenzhen Representative Office": "深圳代表处",
-    "Shenzhen Phone": "深圳电话",
     "Shenzhen Office": "深圳办公室",
     "Shanghai, China": "中国上海",
     "Shenzhen, China": "中国深圳",
     "Tel:": "电话：",
-
-    /* ---- market note ---- */
-    "This contact handles": "此联系方式负责",
-    "China": "中国",
     "Indonesia": "印度尼西亚",
-    ". For": "。如需",
     ", see": "，请联系",
-    ". For South East Asia, see": "。如需东南亚地区，请联系",
 
     /* ---- footer ---- */
     "Our Companies": "集团公司",
