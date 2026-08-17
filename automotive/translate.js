@@ -341,8 +341,10 @@
     "Temperature Compensating Inflator": "Pengisi Angin Berkompensasi Suhu",
     "Freestanding Inflator, Round": "Pengisi Angin Berdiri, Bulat",
     "Freestanding Inflator, Square": "Pengisi Angin Berdiri, Persegi",
-    "Anywhere a tyre holds air.": "Di mana pun ban menahan angin.",
-    "The workshop range is one part of what Airtec build. The same inflation technology runs on forecourts, in hangars and across mine sites, and PT. Hanindo Automotive can supply beyond the service bay.": "Rangkaian untuk bengkel hanyalah sebagian dari yang dibuat Airtec. Teknologi pengisian angin yang sama dipakai di SPBU, hanggar, dan area tambang, dan PT. Hanindo Automotive dapat memasok di luar service bay.",
+    /* The Airtec Sectors section lost its heading and its lede at the
+       business's request -- the section is titled Sectors now, which the
+       entry further up already covers -- so the heading it used to carry
+       and the paragraph under it went from here with them. */
     "Workshops, tyre shops and service centres": "Bengkel, toko ban, dan pusat layanan",
     "Petroleum Retail": "Ritel Perminyakan",
     "Forecourt inflators for customer use": "Pengisi angin SPBU untuk digunakan pelanggan",
