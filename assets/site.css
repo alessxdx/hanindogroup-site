@@ -802,6 +802,32 @@ img{max-width:100%;display:block}
 .section.dark .svc:hover{background:var(--blue-800)}
 .section.dark .svc h3{color:#fff}
 
+/* ---------- SERVICE LIST — numbered rows, two up ----------
+   The fire-fighting "Comprehensive services" block, six icon cards in a
+   hairline grid until 2026-08-17. Same reasoning as .advlist on the About
+   pages: a row of identical icon-over-bold-line-over-grey-sentence cards is
+   the stock template shape, and at six across the eye could not tell whether
+   to read down or along.
+
+   The rule reads as one line across both columns because the columns TOUCH --
+   there is no column-gap. Each cell carries its own bottom border and they
+   meet in the middle. Separation is padding-right inside the cell instead.
+   Add a gap here and every rule breaks in half.
+
+   :nth-child(-n+2) is the first row and :nth-last-child(-n+2) the last, so
+   this assumes an EVEN number of items. Six today. With an odd count the
+   last item sits alone and the one beside it keeps a border into empty
+   space -- revisit the two selectors if that ever happens. */
+.svclist{display:grid;grid-template-columns:1fr 1fr;margin-top:1.8rem}
+.svcitem{display:grid;grid-template-columns:2.5rem 1fr;gap:0 .9rem;padding-right:2.6rem;border-bottom:1px solid var(--line)}
+.svcitem:nth-child(-n+2) .svcnum,.svcitem:nth-child(-n+2) .svcbody{padding-top:0}
+.svcitem:nth-last-child(-n+2){border-bottom:0}
+.svcitem:nth-last-child(-n+2) .svcbody{padding-bottom:0}
+.svcnum{font-size:.78rem;font-weight:700;color:var(--brand);letter-spacing:.1em;font-variant-numeric:tabular-nums;padding-top:1.45rem}
+.svcbody{padding:1.4rem 0}
+.svcbody h3{font-weight:800;font-size:.9rem;color:var(--blue-800);text-transform:uppercase;letter-spacing:.09em;margin-bottom:.4rem}
+.svcbody p{color:var(--muted);font-size:.92rem}
+
 /* ---------- MARKET CARDS ----------
    .svc-grid pared back to a contact list, sitting under the office
    details on the three Custom contact pages rather than in a section of
@@ -1815,6 +1841,23 @@ a[href^="tel:"]:hover,a[href^="tel:"]:focus-visible{text-decoration:underline}
   .gtl .yr{font-size:1.05rem}
   .gtl h3{font-size:.95rem;min-height:0;margin:.1rem 0 .14rem}
   .gtl p{font-size:.92rem;line-height:1.45}
+
+  /* --- "Comprehensive services": two up, labels only.
+     Collapsing to one column would double the height, which is the opposite
+     of what a phone wants from six short labels, so it stays two-up at three
+     rows. Tightening alone was not enough: measured at 375px it still came to
+     355px against the 277px the six cards took, because every uppercase title
+     wraps to two lines in a 120px column and each gloss adds two more.
+     The descriptions carry .hide-sm and come off, which is what that utility
+     is for -- "Power, control and protection systems." under a heading
+     reading ELECTRICAL SERVICES is a restatement, not the spec. That lands it
+     at roughly 210px. h3 loses its bottom margin here or the hidden
+     paragraph leaves a gap behind it. --- */
+  .svclist{margin-top:1.2rem}
+  .svcitem{grid-template-columns:1.85rem 1fr;gap:0 .45rem;padding-right:.7rem}
+  .svcnum{font-size:.7rem;letter-spacing:.06em;padding-top:.95rem}
+  .svcbody{padding:.9rem 0}
+  .svcbody h3{font-size:.78rem;letter-spacing:.05em;margin-bottom:0}
 
   /* --- "Why clients trust us": the same rows, tightened.
      The two-across card arrangement this replaced lived here, and it was

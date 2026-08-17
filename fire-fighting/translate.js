@@ -191,9 +191,18 @@
     "General Supplier": "Pemasok Umum",
     "Sourcing and supply of quality components.": "Pengadaan dan penyediaan komponen berkualitas.",
     "Fire Fighting Systems": "Sistem Pemadam Kebakaran",
-    "Our specialist core — detection and suppression.": "Inti keahlian kami — deteksi dan pemadaman.",
+    /* Was "Our specialist core — detection and suppression." until 2026-08-17.
+       The preface came off with the card layout: singling out one of six
+       services as the core read oddly in a numbered list where all six sit
+       level, and the page says it plainly enough elsewhere. */
+    "Detection and suppression.": "Deteksi dan pemadaman.",
     "Mechanical Services": "Layanan Mekanikal",
+    /* Two wordings on purpose, one per page: the one-page variant says
+       "Mechanical engineering", products-services.html just "Engineering".
+       The shorter one had no entry at all and sat in English through the
+       whole toggle until this was noticed. */
     "Mechanical engineering for buildings and industry.": "Rekayasa mekanikal untuk bangunan dan industri.",
+    "Engineering for buildings and industry.": "Rekayasa untuk bangunan dan industri.",
     "Electrical Services": "Layanan Elektrikal",
     "Power, control and protection systems.": "Sistem daya, kontrol, dan proteksi.",
     "Maintenance Services": "Layanan Pemeliharaan",
