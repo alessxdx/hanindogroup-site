@@ -285,7 +285,11 @@ img{max-width:100%;display:block}
 .contact .info .v{font-weight:500;font-size:.95rem;margin-top:.15rem}
 .contact .clist{list-style:none;display:grid;gap:.72rem;margin:1.5rem 0 .2rem}
 .contact .clist li{display:flex;align-items:flex-start;gap:.65rem;color:#c9d2e6;font-size:.98rem}
-.contact .clist li svg{flex:none;width:18px;height:18px;margin-top:.25rem;fill:none;stroke:#7fd9ff;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+/* The tick that led each line became an item number on 2026-08-17, so the
+   svg rules that sat here and beside the .contact-light colours below are
+   gone. The number takes its geometry from .checks .cnum in site.css and
+   needs no colour of its own here: --crimson is #1b93d8 now, the same value
+   as --brand, so the number already lands on this site's accent. */
 
 /* ---------- footer ---------- */
 /* Footer. Metrics deliberately match the site.css footer the other
@@ -587,7 +591,6 @@ img{max-width:100%;display:block}
 .contact.contact-light h2{color:var(--navy-800)}
 .contact.contact-light p.sub{color:var(--muted)}
 .contact.contact-light .clist li{color:#33405c}
-.contact.contact-light .clist li svg{stroke:var(--crimson)}
 .contact.contact-light .info .ic{background:var(--paper);border:1px solid var(--line)}
 .contact.contact-light .info .ic svg{stroke:var(--crimson)}
 .contact.contact-light .info .k{color:var(--muted)}
