@@ -119,7 +119,7 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
   .prod .shot img{max-height:120px}
 }
 
-/* PHONE: the Sectors cards, sized down and given their hierarchy back.
+/* The Sectors cards, sized down and given their hierarchy back.
    These are the same .seccell the Industries served grids use on the
    Products & Services pages, but the full variant -- a name with a line
    of copy under it, rather than a name on its own -- so they are sized
@@ -132,12 +132,12 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
    and takes the height down with it.
    Not as small as the names-only grids elsewhere: those cells hold two
    or three words, these hold a sentence, and the readability rule this
-   overrides is a fair point. */
-@media(max-width:640px){
-  .secgrid .seccell{padding:.8rem .9rem}
-  .secgrid .secname{font-size:.88rem;line-height:1.3}
-  .secgrid .secwhat{font-size:.8rem;line-height:1.45;margin-top:.18rem}
-}
+   overrides is a fair point.
+   Applied at every width, not just below 640px, at the business's
+   request -- the cards were reading large on a desktop too. */
+.secgrid .seccell{padding:.8rem .9rem}
+.secgrid .secname{font-size:.88rem;line-height:1.3}
+.secgrid .secwhat{font-size:.8rem;line-height:1.45;margin-top:.18rem}
 </style>
 </head>
 <body>
