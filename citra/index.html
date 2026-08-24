@@ -58,6 +58,15 @@
   .lede-split p{display:block}
   .lede-split p + p{margin-top:.8rem}
 }
+/* Bullet markers on the intro list, replacing the 01/02/03 numbers. The three
+   items are unranked capabilities, not an ordered sequence, so a plain bullet
+   reads truer than a running count. Drawn with a ::before rather than a real
+   "•" text node so translate.js's text-node walker never sees a marker to key
+   on — the numbers had to be real text because they carried meaning; a bullet
+   does not. Sized and positioned to the .cnum slot it replaces (1.5rem min +
+   the list's .7rem gap) so the text edge does not shift. Works on both the
+   desktop and phone layouts. */
+.checks.bullets li::before{content:"•";flex:none;min-width:1.5rem;padding-top:.02rem;font-size:1.1rem;line-height:1.3;color:var(--brand)}
 /* Customer wall, banded by industry. Same .band / .bandlab block the group
    home and Partners walls use for their principals. Flat sizing applies here
    too: the old wall ranked customers into t1 and t2, which put five names in
@@ -168,14 +177,14 @@
            the head. Keep one sentence per <p>: the split points are what
            makes it readable in a 40-character column. -->
       <div class="lede lede-split" style="max-width:none">
-        <p>PT. Hanindo Citra supplies, installs, and services the equipment fuel is dispensed, measured and monitored with — dispensers, submersible turbine pumps, automatic tank gauging systems, flow meters, forecourt controllers, and fuel management systems.</p>
-        <p>The same systems run retail forecourts, fuel depots, marine terminals, aviation fuelling and industrial sites.</p>
-        <p>The company also builds fuel stations from consultation and design through construction to the day the site opens.</p>
+        <p>PT. Hanindo Citra supplies, installs and services the equipment used to dispense, measure and monitor fuel — including dispensers, submersible turbine pumps, automatic tank gauging systems, flow meters, forecourt controllers and fuel management systems.</p>
+        <p>These systems support retail forecourts, fuel depots, marine terminals, aviation fuelling and industrial sites.</p>
+        <p>The company also builds fuel stations, taking projects from initial consultation and design through construction to the day the site opens.</p>
       </div>
-      <ul class="checks">
-        <li><span class="cnum">01</span><span>Sole distributor in Indonesia for Gilbarco Veeder-Root (since 1987), Total Control Systems, and ITL.</span></li>
-        <li><span class="cnum">02</span><span>Provides end-to-end construction for the retail petroleum industry, from consultation and design through construction until the fuel station is operational.</span></li>
-        <li><span class="cnum">03</span><span>Supplies and installs signboards and lighting for fuel stations, with after-sales service for all equipment installed.</span></li>
+      <ul class="checks bullets">
+        <li><span>Sole distributor in Indonesia for Gilbarco Veeder-Root since 1987</span></li>
+        <li><span>Provides end-to-end construction for the retail petroleum industry, from consultation and design through construction until the fuel station is operational.</span></li>
+        <li><span>Supplies and installs signboards and lighting for fuel stations, with after-sales service for all equipment installed.</span></li>
       </ul>
     </div>
   </div>
@@ -420,7 +429,7 @@ b.addEventListener('click',function(){
 });
 window.addEventListener('resize',sync);window.addEventListener('load',sync);sync();})();
 </script>
-<script src="translate.js?v=202608171607"></script>
+<script src="translate.js?v=202608241200"></script>
 <script src="../assets/nav.js?v=202608122200" defer></script>
 </body>
 </html>
