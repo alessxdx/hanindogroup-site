@@ -71,18 +71,18 @@
 
     /* On a company mini-site the heading is the way back to the group,
        not the word "Menu".
-       The desktop bar carries that link in .top-right, which is hidden
-       from 860px down, so on a phone the only route back was the grey
-       breadcrumb in the hero — which reads as where you are rather than
-       as somewhere you can go. Borrowing the link puts it at the top of
-       the panel, where someone who has lost their way looks first, and
-       costs no row of its own: the label it replaces did nothing.
-       Cloned rather than written out, so it appears only where there is
-       one to clone. The group's own pages ARE the group and carry no
-       such link; they keep the plain label.
-       The two lines are already on it — see twoLine() below, which runs
-       against the topbar copy on load — so this only has to clone. */
-    var back = document.querySelector('.top-right .grouplink');
+       The company header carries that link under the group lockup (Option
+       B); it is hidden from 860px down, so on a phone the only route back
+       was the grey breadcrumb in the hero — which reads as where you are
+       rather than as somewhere you can go. Borrowing the link puts it at
+       the top of the panel, where someone who has lost their way looks
+       first, and costs no row of its own: the label it replaces did nothing.
+       Cloned rather than written out, so it appears only where there is one
+       to clone. The group's own pages ARE the group and carry no such link;
+       they keep the plain label.
+       The two lines are already on it — see moveBack/twoLine() below, which
+       run against the header copy on load — so this only has to clone. */
+    var back = document.querySelector('.grouplink');
     head.insertBefore(
       back ? back.cloneNode(true) : label('Menu'),
       head.firstChild);
@@ -183,16 +183,29 @@
     burger.setAttribute('aria-expanded', on ? 'true' : 'false');
   }
 
-  /* The way back to the group reads as two lines at every width now, not
-     just in the drawer. Done to the topbar copy on load rather than in
-     the markup because the same anchor is written into forty-seven pages
-     and none of them should have to change for a wording decision — and
-     because the drawer clones this element, so doing it here means the
-     phone and the desktop cannot drift apart.
-     Runs regardless of width: the desktop link is the one it edits, and
-     the drawer takes its copy from the result. */
-  var topback = document.querySelector('.top-right .grouplink');
-  if(topback) twoLine(topback);
+  /* Option B header (2026-08): the way back to the group moves UNDER the
+     group lockup, and the lockup itself stops being a link — only this line
+     is clickable. Done here, against the one anchor written into every
+     company page, so no page markup changes and the drawer (which clones
+     this node above) cannot drift from it.
+     The two-line "Back to / Hanindo Group" that twoLine() builds is what the
+     drawer heading wants; under the logo, site.css lays the same stack out on
+     one line and hides it below 860px, where the drawer carries the route
+     instead. The group's own pages carry no such link, so this does nothing
+     there and their lockup stays a link home. Runs at every width so the
+     desktop link is edited and the drawer takes its copy from the result. */
+  var back  = document.querySelector('.top-right .grouplink');
+  var brand = document.querySelector('.brands .brand');
+  if(back && brand){
+    var home = document.createElement('div');
+    home.className = 'brandhome';
+    brand.parentNode.insertBefore(home, brand);
+    home.appendChild(brand);
+    home.appendChild(back);
+    brand.removeAttribute('href');      /* the lockup is decoration now */
+    brand.removeAttribute('aria-label');
+  }
+  if(back) twoLine(back);
 
   burger.addEventListener('click', function(){ open(!tabs.classList.contains('open')); });
 

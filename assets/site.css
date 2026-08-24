@@ -209,6 +209,20 @@ img{max-width:100%;display:block}
   text-transform:uppercase;font-weight:700;color:var(--muted);line-height:1.1;
   transition:color .18s}
 .grouplink:hover .glback{color:var(--brand)}
+/* Option B: the group lockup is decoration, and the "Back to Hanindo Group"
+   link sits beneath it. nav.js moves the existing .grouplink into a .brandhome
+   wrapper on load (against the one anchor every company page carries) and
+   strips the lockup's href. The two-line stack nav.js builds for the drawer
+   heading is laid out on ONE row here — "Back to" beside the name — with the
+   circular chevron badge carried over from the base .grouplink rules. Hidden
+   below 860px, where the drawer carries the way back instead. */
+.brandhome{display:flex;flex-direction:column;align-items:flex-start;gap:.3rem}
+a.brand:not([href]){cursor:default}
+.brandhome .grouplink{border-right:0;padding-right:0;height:auto;font-size:.78rem;gap:.45rem}
+.brandhome .grouplink .glstack{display:flex;gap:.32rem;line-height:1.2}
+.brandhome .grouplink .glback{font-size:inherit;letter-spacing:normal;text-transform:none;font-weight:600;color:var(--muted)}
+.brandhome .grouplink:hover .glback{color:var(--brand)}
+@media(max-width:860px){.brandhome .grouplink{display:none}}
 .searchbox{display:flex;height:38px}
 .searchbox input{border:1px solid var(--line);border-right:0;border-radius:var(--r) 0 0 var(--r);padding:0 .9rem;font-family:var(--font);font-size:.86rem;width:170px;outline:none;background:var(--white)}
 .searchbox input:focus{border-color:var(--brand)}
