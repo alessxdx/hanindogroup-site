@@ -124,7 +124,7 @@
     "Company overview": "Profil perusahaan",
     "Four decades in": "Empat dekade di",
     "petroleum equipment": "peralatan perminyakan",
-    "PT. Hanindo Citra has represented Gilbarco Veeder-Root since that first year — four decades of partnership, serving the same industry with the same principal.": "PT. Hanindo Citra telah mewakili Gilbarco Veeder-Root sejak tahun pertama itu — empat dekade kemitraan, melayani industri yang sama dengan prinsipal yang sama.",
+    "PT. Hanindo Citra has represented Gilbarco Veeder-Root since that first year — a partnership spanning four decades.": "PT. Hanindo Citra telah mewakili Gilbarco Veeder-Root sejak tahun pertama itu — kemitraan yang membentang empat dekade.",
     /* Both "and also this" lines in the overview carry an inline link, so
        each reaches the walker as text nodes either side of the anchor and
        needs an entry per fragment. The link text is a company name and a
@@ -172,7 +172,6 @@
     /* "Petroleum Equipment Institute" is left alone on purpose — it is the
        body's own name, like the principals elsewhere in this file. */
     "PEI Member 2026": "Anggota PEI 2026",
-    "ISO certificates issued by URS · Accredited by UKAS & IAF · Valid to November 2027 — click any certificate to view the full document.": "Sertifikat ISO diterbitkan oleh URS · Terakreditasi UKAS & IAF · Berlaku hingga November 2027 — klik sertifikat untuk melihat dokumen lengkap.",
     "View ↗": "Lihat ↗",
 
     /* ---- products & services ---- */
