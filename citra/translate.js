@@ -133,13 +133,8 @@
     ". This brings both the automation systems and the equipment they support under one company.": ". Hal ini menyatukan sistem otomasi dan peralatan yang didukungnya dalam satu perusahaan.",
     "PT. Hanindo Citra also delivers the group's fire protection work through its": "PT. Hanindo Citra juga menjalankan pekerjaan proteksi kebakaran grup melalui",
     "Retail forecourt equipment": "Peralatan forecourt ritel",
-    "The principal we distribute": "Prinsipal yang kami distribusikan",
-    "Sole distributor for Indonesia.": "Distributor tunggal untuk Indonesia.",
-    /* The lead sentence wraps the principal's name in <b>, so it reaches the
-       walker as two fragments either side of the bold name — one entry each,
-       the name itself left in English like every principal. */
-    "Since 1987, PT. Hanindo Citra has been the sole Indonesian distributor for": "Sejak 1987, PT. Hanindo Citra menjadi distributor tunggal di Indonesia untuk",
-    "— fuel dispensers, automatic tank gauging and submersible pumps, backed by local installation and after-sales service.": "— dispenser BBM, automatic tank gauging, dan pompa submersible, didukung pemasangan lokal dan layanan purnajual.",
+    "The principals we distribute": "Prinsipal yang kami distribusikan",
+    "Distributors for Indonesia.": "Distributor untuk Indonesia.",
     "Fuel dispensers, tank gauging & submersible pumps": "Dispenser BBM, tank gauging & pompa submersible",
     "Positive displacement flow meters & registers": "Flow meter positive displacement & register",
     "Forecourt controllers & distribution modules": "Forecourt controller & modul distribusi",
