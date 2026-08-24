@@ -124,17 +124,22 @@
     "Company overview": "Profil perusahaan",
     "Four decades in": "Empat dekade di",
     "petroleum equipment": "peralatan perminyakan",
-    "PT. Hanindo Citra continues the work started by PT Sugiron Citra, whose petroleum equipment division began operating in 1987 and became the foundation of the Hanindo Group. It has represented Gilbarco Veeder-Root since that first year—four decades of partnership, serving the same industry with the same principal.": "PT. Hanindo Citra melanjutkan pekerjaan yang dimulai PT Sugiron Citra, yang divisi peralatan perminyakannya mulai beroperasi pada tahun 1987 dan menjadi fondasi Hanindo Group. Perusahaan ini telah mewakili Gilbarco Veeder-Root sejak tahun pertama itu—empat dekade kemitraan, melayani industri yang sama dengan prinsipal yang sama.",
+    "PT. Hanindo Citra has represented Gilbarco Veeder-Root since that first year — four decades of partnership, serving the same industry with the same principal.": "PT. Hanindo Citra telah mewakili Gilbarco Veeder-Root sejak tahun pertama itu — empat dekade kemitraan, melayani industri yang sama dengan prinsipal yang sama.",
     /* Both "and also this" lines in the overview carry an inline link, so
        each reaches the walker as text nodes either side of the anchor and
        needs an entry per fragment. The link text is a company name and a
        department name — neither is translated. */
-    "Since 2012 it has also carried the group's oil and gas automation work, which transferred here from": "Sejak 2012 perusahaan ini juga menangani pekerjaan otomasi minyak dan gas grup, yang dialihkan ke sini dari",
-    "— the automation and the equipment it runs are now specified by the same company.": "— otomasi dan peralatan yang dijalankannya kini ditangani oleh perusahaan yang sama.",
+    "Since 2012, it has also carried the group's oil and gas automation work, which transferred from": "Sejak 2012, perusahaan ini juga menangani pekerjaan otomasi minyak dan gas grup, yang dialihkan dari",
+    ". This brings both the automation systems and the equipment they support under one company.": ". Hal ini menyatukan sistem otomasi dan peralatan yang didukungnya dalam satu perusahaan.",
     "PT. Hanindo Citra also delivers the group's fire protection work through its": "PT. Hanindo Citra juga menjalankan pekerjaan proteksi kebakaran grup melalui",
     "Retail forecourt equipment": "Peralatan forecourt ritel",
-    "The principals we distribute": "Prinsipal yang kami distribusikan",
+    "The principal we distribute": "Prinsipal yang kami distribusikan",
     "Sole distributor for Indonesia.": "Distributor tunggal untuk Indonesia.",
+    /* The lead sentence wraps the principal's name in <b>, so it reaches the
+       walker as two fragments either side of the bold name — one entry each,
+       the name itself left in English like every principal. */
+    "Since 1987, PT. Hanindo Citra has been the sole Indonesian distributor for": "Sejak 1987, PT. Hanindo Citra menjadi distributor tunggal di Indonesia untuk",
+    "— fuel dispensers, automatic tank gauging and submersible pumps, backed by local installation and after-sales service.": "— dispenser BBM, automatic tank gauging, dan pompa submersible, didukung pemasangan lokal dan layanan purnajual.",
     "Fuel dispensers, tank gauging & submersible pumps": "Dispenser BBM, tank gauging & pompa submersible",
     "Positive displacement flow meters & registers": "Flow meter positive displacement & register",
     "Forecourt controllers & distribution modules": "Forecourt controller & modul distribusi",

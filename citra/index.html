@@ -28,14 +28,32 @@
 </script>
 <link rel="stylesheet" href="../assets/site.css?v=202608171607" />
 <style>
-/* One flat size for the partner wall. Every brand on this page is fuelling
-   and forecourt, so the t1/t2 ranking that site.css applies had nothing to
-   rank — it only left three different logo sizes in a wall that reads as one
-   group.
-   42px rather than the 46px the group walls use: eleven marks at 46px wrap
-   5 + 5 + 1 and leave Airtec stranded alone on the last row, which is the
-   ragged look this was meant to fix. 42px wraps 5 + 6. Re-check this if a
-   brand is added or removed. */
+/* Partner wall, sized so the shared Gilbarco-family ring reads at ONE
+   diameter across every logo that carries it. That ring is bundled at a
+   different scale in each source file, so a single flat height left six
+   different ring sizes — which is what "same logo, different size" was.
+   Measured on the live wall 2026-08-24 (canvas, ring height ÷ file height):
+   Orpak, Gasboy, Red Jacket and ANGI are cropped tight (ring = full file
+   height); DOMS carries padding (ring 0.75) and Gilbarco is a two-line
+   lockup (ring 0.79). So each .w carries its own --logo-h, set to land the
+   ring at 44px: renderedH = 44 × fileH ÷ ringH. The three non-ring marks
+   (Invenco, TCS, ITL) have no ring and are sized by eye to sit with that
+   group. Re-measure if any file here is replaced.
+   Scoped to .pwall so ONLY the principals wall takes this: the customer wall
+   lower down is also .wall.flat and must keep the shared 42px + .mid/.sq
+   sizing restored below. --logo-h is read straight through here (no .mid/.sq
+   on the principals wall); --logo-scale shrinks the wall as one on phones so
+   the rings stay matched at every width. */
+.wall.pwall{--logo-scale:1}
+.wall.pwall .w{--logo-max:280px;max-width:var(--logo-max)}
+.wall.pwall .w img{height:calc(var(--logo-h,44px) * var(--logo-scale))}
+@media(max-width:640px){.wall.pwall{--logo-scale:.8}.wall.pwall .w{--logo-max:185px}}
+
+/* Customer wall (below) keeps the original flat sizing, untouched by the
+   principals wall above: 42px base with site.css's .mid/.sq multipliers, and
+   34px on a phone. The principals wall is .wall.flat too, so it also matches
+   these rules — but each of its .w carries an inline --logo-h that overrides
+   the 42px, and its .pwall img rule overrides the height. */
 .wall.flat .w{--logo-h:42px;--logo-max:280px;max-width:var(--logo-max)}
 @media(max-width:640px){.wall.flat .w{--logo-h:34px;--logo-max:185px}}
 
@@ -232,17 +250,19 @@
   <div class="chead reveal"><span class="kick">Partners &amp; Principals</span>
   </div>
   <div class="wrap">
-    <div class="wall flat reveal d1">
-      <div class="w mid"><img src="../photos/partners/gilbarco.svg" alt="Gilbarco Veeder-Root" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Gilbarco Veeder-Root</span></div>
-      <div class="w"><img src="../photos/partners/redjacket.webp" alt="Red Jacket" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Red Jacket</span></div>
-      <div class="w mid"><img src="../photos/partners/invenco.png" alt="Invenco" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Invenco</span></div>
-      <div class="w mid"><img src="../photos/partners/doms.png" alt="DOMS" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">DOMS</span></div>
-      <div class="w mid"><img src="../photos/partners/orpak.png" alt="Orpak" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Orpak</span></div>
-      <div class="w"><img src="../photos/partners/gasboy.png" alt="Gasboy" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Gasboy</span></div>
-      <div class="w mid"><img src="../photos/partners/angi.png" alt="ANGI" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">ANGI</span></div>
-      <div class="w sq"><img src="../photos/partners/tcs.png" alt="TCS Flow Meters" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">TCS Flow Meters</span></div>
-      <div class="w mid"><img src="../photos/partners/itl.png" alt="ITL" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">ITL</span></div>
-      <div class="w sq"><img src="../photos/partners/oti.png" alt="OTI — On Track Innovations" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">OTI — On Track Innovations</span></div>
+    <div class="wall flat pwall reveal d1">
+      <!-- Per-logo heights land the shared ring at 44px; see the wall comment
+           in the head. Non-ring marks (Invenco, TCS, ITL) sized to sit with
+           the group. Do not re-add .mid/.sq here — this wall reads --logo-h. -->
+      <div class="w" style="--logo-h:56px"><img src="../photos/partners/gilbarco.svg" alt="Gilbarco Veeder-Root" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Gilbarco Veeder-Root</span></div>
+      <div class="w" style="--logo-h:44px"><img src="../photos/partners/redjacket.webp" alt="Red Jacket" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Red Jacket</span></div>
+      <div class="w" style="--logo-h:46px"><img src="../photos/partners/invenco.png" alt="Invenco" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Invenco</span></div>
+      <div class="w" style="--logo-h:58px"><img src="../photos/partners/doms.png" alt="DOMS" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">DOMS</span></div>
+      <div class="w" style="--logo-h:44px"><img src="../photos/partners/orpak.png" alt="Orpak" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Orpak</span></div>
+      <div class="w" style="--logo-h:44px"><img src="../photos/partners/gasboy.png" alt="Gasboy" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">Gasboy</span></div>
+      <div class="w" style="--logo-h:44px"><img src="../photos/partners/angi.png" alt="ANGI" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">ANGI</span></div>
+      <div class="w" style="--logo-h:60px"><img src="../photos/partners/tcs.png" alt="TCS Flow Meters" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">TCS Flow Meters</span></div>
+      <div class="w" style="--logo-h:52px"><img src="../photos/partners/itl.png" alt="ITL" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span style="display:none">ITL</span></div>
     </div>
   </div>
 </section>
@@ -429,7 +449,7 @@ b.addEventListener('click',function(){
 });
 window.addEventListener('resize',sync);window.addEventListener('load',sync);sync();})();
 </script>
-<script src="translate.js?v=202608241200"></script>
+<script src="translate.js?v=202608241300"></script>
 <script src="../assets/nav.js?v=202608122200" defer></script>
 </body>
 </html>

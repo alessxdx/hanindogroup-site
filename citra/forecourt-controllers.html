@@ -80,14 +80,6 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
 .grouphead h2{font-size:1.5rem;font-weight:800;color:var(--blue-800);letter-spacing:-.012em}
 .grouphead p{font-size:.92rem;color:var(--muted);margin-top:.4rem;line-height:1.65}
 
-/* The device list is long enough that it wants columns rather than the
-   inline .taglist wrap used elsewhere — a reader scans it for one brand. */
-.devcols{columns:4;column-gap:2rem;margin-top:1.6rem;list-style:none}
-@media(max-width:900px){.devcols{columns:3}}
-@media(max-width:640px){.devcols{columns:2}}
-.devcols li{break-inside:avoid;font-size:.85rem;line-height:1.55;color:var(--muted);padding:.1rem 0}
-.devcols li em{font-style:normal;color:#93a3ba}
-
 .note{margin-top:1.6rem;font-size:.86rem;color:var(--muted);max-width:70ch}
 /* PHONE READING — the specification tables.
    Reference data, set tight because on a desktop it sits in a column
@@ -102,40 +94,6 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
   details.specs .acch{font-size:.82rem}
   .prod .brandtag{font-size:.74rem}
   .prod .dspec .tag{font-size:.85rem}
-}
-
-/* ---------- THE VERSION 4 FEATURE GRID ----------
-   Eight .svc cards on the shared sheet's roomy numbers — 34px icon,
-   1.8rem padding, 1.05rem heading — ran 621px on a desktop for what is a
-   feature list, not a section of its own. Taken down to the numbers the
-   Fire Fighting sheet uses for the same class, which is the compact
-   version of this card the group already ships: 26px icon, 1.1rem
-   padding, .87rem heading, .79rem copy. 621px to 395px.
-   Not lifted into site.css and not written as a modifier class, because
-   this is the only Citra page with a .svc-grid on it, and the shared
-   numbers are still right for the Automotive and Flowtech grids that
-   carry two lines a card rather than six. If a second page wants this,
-   that is the point to make it a class.
-   The card keeps its white ground. The Fire Fighting cards sit on
-   --paper, which is what makes that strip read as one band, but this
-   grid sits in a white section and would have needed the section to
-   change with it. */
-.svc{padding:1.1rem .95rem 1.2rem}
-.svc .ic{width:26px;height:26px;margin-bottom:.6rem}
-.svc h3{font-size:.87rem;line-height:1.3;margin-bottom:.3rem}
-.svc p{font-size:.79rem;line-height:1.45}
-/* Two to a row on a phone rather than one, the same pairing the Citra
-   and Automotive product grids now use. Eight full-width cards stood
-   2,146px — three phone screens for the feature list alone. Paired and
-   scaled it is 916px.
-   These cards carry more words than the product cards do, so the type
-   goes down with the column and not only the column. */
-@media(max-width:640px){
-  .svc-grid{grid-template-columns:1fr 1fr}
-  .svc{padding:.85rem .75rem .95rem}
-  .svc .ic{width:22px;height:22px;margin-bottom:.45rem}
-  .svc h3{font-size:.85rem;line-height:1.25;margin-bottom:.25rem}
-  .svc p{font-size:.76rem;line-height:1.4}
 }
 
 /* PHONE: the spec table folds behind a tap, and the photo panel comes in.
@@ -403,139 +361,6 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
   </div>
 </section>
 
-<!-- ============ SOFTWARE ============ -->
-<section class="section paper">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="kicker">Enabler Version 4 software</span>
-      <h2 class="h2">One API, one web interface.</h2>
-      <p class="lede">Every Enabler ships with the same Version 4 software, so a client application written once deploys against Express, Ethernet or Embedded without change. Integration is a matter of two to three developer-weeks against the API rather than a ground-up build.</p>
-    </div>
-
-    <div class="svc-grid reveal">
-      <div class="svc">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M9 18l-5-6 5-6M15 6l5 6-5 6"/></svg></div>
-        <h3>API and SDK</h3>
-          <p>.NET native, Java native and COM APIs, with iOS and Android through Xamarin. The pump control interface is pre-built for ActiveX and .NET, so no forecourt GUI has to be written.</p>
-      </div>
-      <div class="svc">
-        <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div>
-        <h3>Multi-client</h3>
-          <p>Client-server architecture lets more than one application &mdash; multiple POS terminals, back office, head office &mdash; share the same forecourt. XML schemas are published for custom clients.</p>
-      </div>
-      <div class="svc">
-        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 010 18 15 15 0 010-18"/></svg></div>
-        <h3>Web-based setup</h3>
-          <p>Configuration, diagnosis and maintenance from any browser or tablet, with no separate tool to install. One configuration file can be pushed to any number of sites.</p>
-      </div>
-      <div class="svc">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></div>
-        <h3>Remote site monitor</h3>
-          <p>Live forecourt activity on every filling position, from anywhere, with recent events and deliveries per pump, so a reported fault is reviewed before anyone drives out.</p>
-      </div>
-      <div class="svc">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
-        <h3>Integrated reporting</h3>
-          <p>Built-in reports on fuel transactions and pump or system events, filtered down to specifics, accessible locally or remotely as soon as the activity happens.</p>
-      </div>
-      <div class="svc">
-        <div class="ic"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div>
-        <h3>Open SQL database</h3>
-          <p>All data lands in a documented ANSI SQL schema in real time, readable with standard tools &mdash; an open, published data model rather than a closed one.</p>
-      </div>
-      <div class="svc">
-        <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg></div>
-        <h3>Site applications</h3>
-          <p>Site Operations for day-to-day changes and delivery data, Configuration for setup, and Wetstock Maintenance for tanker deliveries, tank dips, tote reconciliation and gauge reporting.</p>
-      </div>
-      <div class="svc">
-        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v18"/><path d="M3.5 9h17M3.5 15h17"/></svg></div>
-        <h3>Languages and regions</h3>
-          <p>Fully Unicode aware, with built-in English, Spanish and Simplified Chinese, partial Indonesian, French, Italian, Portuguese, Thai, Russian and Slovenian, and regional currency and number formats.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ DEVICE COMPATIBILITY ============ -->
-<section class="section white">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="kicker">Interfaces</span>
-      <h2 class="h2">One unit, most of the forecourt.</h2>
-      <p class="lede">Twenty-five years of forecourt interfacing sits behind the protocol library. One Enabler talks to mixed brands of dispenser on the same site, plus tank gauges, price signs and tagging systems.</p>
-    </div>
-
-    <ul class="devcols reveal">
-      <li>2A <em>(NP Dart)</em></li>
-      <li>Actronic <em>(LPG)</em></li>
-      <li>ADAST <em>(IFSF)</em></li>
-      <li>AG Walker <em>(SPD/MPD)</em></li>
-      <li>Agira <em>(C4000/Develco/GC21/GC22)</em></li>
-      <li>ANGI</li>
-      <li>Aplab</li>
-      <li>Ariel <em>(GC21/GC22)</em></li>
-      <li>Aspro <em>(Coritec/Develco)</em></li>
-      <li>Batchen</li>
-      <li>Ben&#269; <em>(PDE/PDEX)</em></li>
-      <li>Bennett</li>
-      <li>Censtar <em>(RS-485)</em></li>
-      <li>Clean Fuel Technology</li>
-      <li>Comota</li>
-      <li>Compac</li>
-      <li>Coritec</li>
-      <li>Daruma</li>
-      <li>Develco</li>
-      <li>Dong-Hwa Prime</li>
-      <li>Dresser-Wayne <em>(US/DART/UK/IFSF)</em></li>
-      <li>Email Australia <em>(Tyco/RelQual/ECL)</em></li>
-      <li>Europump</li>
-      <li>Ferranti <em>(Autocourt/Wayne UK)</em></li>
-      <li>Fuelquip</li>
-      <li>Gilbarco <em>(US/EU/Australia/China/IFSF)</em></li>
-      <li>HengShan <em>(domestic/export)</em></li>
-      <li>Hong Yang / Star</li>
-      <li>IFSF <em>(dispenser, price sign, tank gauge)</em></li>
-      <li>Intermech</li>
-      <li>Kalvacha <em>(IFSF)</em></li>
-      <li>Koppens Automatic <em>(EPS)</em></li>
-      <li>Korea EnE <em>(formerly LG)</em></li>
-      <li>Kraus Global</li>
-      <li>LanFeng</li>
-      <li>Larsen &amp; Toubro <em>(Z-Line/MPD)</em></li>
-      <li>Logitron <em>(PumaLAN/IFSF)</em></li>
-      <li>Maser <em>(MTR-ST/Regismart)</em></li>
-      <li>Midco</li>
-      <li>MPI Tag Tech <em>(attendant tagging)</em></li>
-      <li>Nuovo Pignone <em>(RS-485)</em></li>
-      <li>ORPAK <em>(vehicle tagging)</em></li>
-      <li>PEC / Gallagher</li>
-      <li>Petrotec <em>(HDX/EPS)</em></li>
-      <li>Prowalco <em>(SPD/MPD)</em></li>
-      <li>Pump Control SRL <em>(GC21/22)</em></li>
-      <li>Realtech <em>(RS-485)</em></li>
-      <li>RIX</li>
-      <li>SAFE</li>
-      <li>Sanki <em>(SPD/MPD/Mobile)</em></li>
-      <li>Schlumberger <em>(EPS)</em></li>
-      <li>Somo</li>
-      <li>Tatsuno <em>(SS LAN/Ben&#269;)</em></li>
-      <li>Tokheim <em>(UDC/IFSF, international, South Africa, China)</em></li>
-      <li>Tokheim-Hengshan <em>(domestic/export)</em></li>
-      <li>Tokico <em>(RS-485)</em></li>
-      <li>Tominaga <em>(RS-485)</em></li>
-      <li>Yenen</li>
-    </ul>
-
-    <p class="note">Tank gauges: Fafnir <em>(VR/native)</em>, IFSF and Veeder-Root compatible units including EBW, Franklin Fuelling Incon TLG, Omtec and OPW, plus Veeder-Root EMR3 and GVR EMR3 bulk meters. Ask us to confirm a specific model before ordering.</p>
-
-    <div class="dspec reveal" style="margin-top:2.2rem">
-      <div class="k">Certification and support</div>
-      <div class="taglist"><span class="tag">CE</span><span class="tag">FCC</span><span class="tag">RoHS compliant</span><span class="tag">Designed and made in New Zealand</span><span class="tag">Annual software maintenance available</span></div>
-    </div>
-  </div>
-</section>
-
 
 <!-- ============ FOOTER ============ -->
 <footer class="footer">
@@ -593,7 +418,7 @@ window.addEventListener('pageshow',function(){var i=document.querySelector('.sea
   var d=document.querySelectorAll('details.specfold');
   for(var i=0;i<d.length;i++)d[i].open=false;}}catch(e){}})();
 </script>
-<script src="translate.js?v=202608241200"></script>
+<script src="translate.js?v=202608241300"></script>
 <script src="../assets/nav.js?v=202608122200" defer></script>
 </body>
 </html>
