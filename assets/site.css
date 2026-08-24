@@ -1142,6 +1142,22 @@ a.pcard:hover .more svg{transform:translateX(3px)}
 .footer .cl{display:block;margin-bottom:.45rem;color:#a5b5cd}
 .footer .cl b{color:#fff;font-weight:600}
 .foot-bottom{border-top:1px solid rgba(255,255,255,.08);margin-top:2.4rem;padding-top:1.4rem;display:flex;flex-wrap:wrap;gap:.6rem;justify-content:space-between;font-size:.78rem;color:#6f7f99}
+/* Certification strip in the footer — small framed thumbnails of the actual
+   certificates with the standard beside each, NOT clickable (the big cards
+   that used to open a PDF are gone). Used by the Citra and Fire Fighting
+   footers, which each list their own set. A thumbnail whose file is missing
+   (e.g. a logo not yet supplied) falls back to a text badge via .badge. */
+.footcerts{border-top:1px solid rgba(255,255,255,.08);margin-top:2.4rem;padding-top:1.6rem}
+.footcerts .fclab{display:block;font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;color:#8394ae;font-weight:700;margin-bottom:1rem}
+.fcrow{display:flex;gap:1.8rem;flex-wrap:wrap}
+.fitem{display:flex;align-items:center;gap:.7rem}
+.fitem .fthumb{flex:none;width:52px;height:70px;background:#fff;border:1px solid rgba(255,255,255,.22);border-radius:3px;padding:2px;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.fitem .fthumb img{width:100%;height:100%;object-fit:contain;display:block}
+.fitem .fthumb.badge{display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.06)}
+.fitem .fthumb.badge b{color:#fff;font-size:.9rem;font-weight:800;letter-spacing:.02em}
+.fitem .cstd{font-size:.82rem;font-weight:700;color:#eaf2fb;line-height:1.2}
+.fitem .clbl{font-size:.68rem;color:#8394ae;margin-top:.1rem}
+@media(max-width:560px){.fcrow{gap:1.1rem}.fitem .fthumb{width:44px;height:60px}}
 /* ================= HOME ================= */
 /* Hero slideshow — 3 slides, crossfade. Flat: no zoom, no glow. */
 .hero{position:relative;overflow:hidden;background:var(--blue-950);color:#fff}

@@ -154,6 +154,8 @@
     "Leverage advanced technology and proven systems to enhance efficiency, quality and safety.": "Memanfaatkan teknologi mutakhir dan sistem teruji untuk meningkatkan efisiensi, kualitas, dan keselamatan.",
     "Credentials": "Kredensial",
     "Certifications & Licenses": "Sertifikasi & Lisensi",
+    /* Sub-label under the SKK thumbnail in the footer certification strip. */
+    "Fire Protection": "Proteksi Kebakaran",
     "Certified to international management-system standards for the engineering, procurement, construction and supply of mechanical, electrical, instrumentation and related civil works.": "Tersertifikasi standar sistem manajemen internasional untuk rekayasa, pengadaan, konstruksi, dan penyediaan pekerjaan mekanikal, elektrikal, instrumentasi, serta pekerjaan sipil terkait.",
     "Quality Management": "Manajemen Mutu",
     "Environmental Management": "Manajemen Lingkungan",
