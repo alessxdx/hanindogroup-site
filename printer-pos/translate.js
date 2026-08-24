@@ -203,7 +203,7 @@
     ", see": ", lihat",
 
     /* ---- footer ---- */
-    "Your technology one stop solution, serving the oil & gas, automation, automotive and fire protection industries in Indonesia since 1987.": "Solusi teknologi satu atap Anda, melayani industri minyak & gas, otomasi, otomotif, dan proteksi kebakaran di Indonesia sejak 1987.",
+    "Hanindo Group has served businesses across Indonesia since 1987, providing technology, equipment and engineering solutions across specialised industries. Our companies cover oil & gas, automation, automotive, fire protection, printing and POS, combining international brands with local expertise and technical support.": "Hanindo Group telah melayani berbagai bisnis di seluruh Indonesia sejak 1987, menyediakan solusi teknologi, peralatan, dan rekayasa di berbagai industri khusus. Perusahaan kami mencakup minyak & gas, otomasi, otomotif, proteksi kebakaran, percetakan, dan POS, memadukan merek internasional dengan keahlian lokal dan dukungan teknis.",
     "PT. Hanindo Automation Solutions": "PT. Hanindo Automation Solutions",
     "Tel:": "Tel:",
     "© 2026 Hanindo Group. All Rights Reserved.": "© 2026 Hanindo Group. Hak Cipta Dilindungi."

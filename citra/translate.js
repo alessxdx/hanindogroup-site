@@ -523,7 +523,7 @@
     "Tell us the dispenser brands, the pump count and the POS you are integrating with, and our team will scope the controller, the distribution modules and the integration work to match.": "Beri tahu kami merek dispenser, jumlah pompa, dan POS yang akan diintegrasikan, dan tim kami akan menentukan controller, modul distribusi, serta pekerjaan integrasi yang sesuai.",
 
     /* ---- footer ---- */
-    "Your technology one stop solution, serving the oil & gas, automation, automotive and fire protection industries in Indonesia since 1987.": "Solusi teknologi satu atap Anda, melayani industri minyak & gas, otomasi, otomotif, dan proteksi kebakaran di Indonesia sejak 1987.",
+    "Hanindo Group has served businesses across Indonesia since 1987, providing technology, equipment and engineering solutions across specialised industries. Our companies cover oil & gas, automation, automotive, fire protection, printing and POS, combining international brands with local expertise and technical support.": "Hanindo Group telah melayani berbagai bisnis di seluruh Indonesia sejak 1987, menyediakan solusi teknologi, peralatan, dan rekayasa di berbagai industri khusus. Perusahaan kami mencakup minyak & gas, otomasi, otomotif, proteksi kebakaran, percetakan, dan POS, memadukan merek internasional dengan keahlian lokal dan dukungan teknis.",
     "Our Companies": "Perusahaan Kami",
     "PT. Hanindo Automation Solutions": "PT. Hanindo Automation Solutions",
     "Tel:": "Tel:",
