@@ -77,6 +77,23 @@
   text-align:center;background:var(--white);border:1px solid var(--line);border-radius:var(--r);
   padding:.6rem .7rem;font-size:.8rem;line-height:1.25;font-weight:700;color:var(--blue-800);transition:.18s}
 .indgrid .pill:hover{background:var(--blue-800);color:#fff;border-color:var(--blue-800)}
+/* This page lists the scope of work as a single-column bulleted list, not the
+   two-column 01–04 grid the shared .svclist carries on the Fire Fighting pages.
+   Scoped to .svclist.bullets so those pages keep their numbers and columns. The
+   shared nth-child(-n+2) padding/border rules assume two columns and would land
+   a half-width divider under an odd item here, so the rhythm is reset first/last.
+   The .svcnum cell stays as the bullet track — its number hidden, a brand dot
+   drawn in its place and nudged onto the title's first line. */
+.svclist.bullets{grid-template-columns:1fr}
+.svclist.bullets .svcitem{grid-template-columns:1.5rem 1fr;gap:0;padding-right:0;
+  border-bottom:1px solid var(--line)}
+.svclist.bullets .svcitem:last-child{border-bottom:0}
+.svclist.bullets .svcnum,.svclist.bullets .svcbody{padding:1rem 0}
+.svclist.bullets .svcitem:first-child .svcnum,.svclist.bullets .svcitem:first-child .svcbody{padding-top:0}
+.svclist.bullets .svcitem:last-child .svcbody{padding-bottom:0}
+.svclist.bullets .svcnum{font-size:0}
+.svclist.bullets .svcnum::before{content:"";display:block;width:7px;height:7px;
+  border-radius:50%;background:var(--brand);margin-top:.32rem}
 </style>
 </head>
 <body>
@@ -141,11 +158,10 @@
       <h2 class="h2">Everything a station needs,<br/>under one contract.</h2>
       <p class="lede" style="max-width:none">Every aspect required in the construction of a fuel station is handled by us, so clients deal with one team from permit to handover.</p>
     </div>
-    <div class="svclist">
-      <div class="svcitem reveal"><div class="svcnum">01</div><div class="svcbody"><h3>Permits &amp; Approvals</h3><p class="hide-sm">We take on the permit request procedures required before construction can begin, keeping the project schedule intact.</p></div></div>
-      <div class="svcitem reveal d1"><div class="svcnum">02</div><div class="svcbody"><h3>Materials &amp; Labour</h3><p class="hide-sm">Supply of raw materials and the site labour force to put them in place, managed as a single package.</p></div></div>
-      <div class="svcitem reveal d2"><div class="svcnum">03</div><div class="svcbody"><h3>Mechanical &amp; Electrical Installation</h3><p class="hide-sm">Mechanical and electrical installation across the site, carried out by our own installation teams.</p></div></div>
-      <div class="svcitem reveal d3"><div class="svcnum">04</div><div class="svcbody"><h3>Operator &amp; Safety Training</h3><p class="hide-sm">Short training for station employees on fuel station operational and safety procedures before the site opens.</p></div></div>
+    <div class="svclist bullets">
+      <div class="svcitem reveal"><div class="svcnum"></div><div class="svcbody"><h3>Materials &amp; Labour</h3><p class="hide-sm">Supply of raw materials and the site labour force to put them in place, managed as a single package.</p></div></div>
+      <div class="svcitem reveal d1"><div class="svcnum"></div><div class="svcbody"><h3>Mechanical &amp; Electrical Installation</h3><p class="hide-sm">Mechanical and electrical installation across the site, carried out by our own installation teams.</p></div></div>
+      <div class="svcitem reveal d2"><div class="svcnum"></div><div class="svcbody"><h3>Operator &amp; Safety Training</h3><p class="hide-sm">Short training for station employees on fuel station operational and safety procedures before the site opens.</p></div></div>
     </div>
   </div>
 </section>
