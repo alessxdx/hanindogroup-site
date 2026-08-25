@@ -48,6 +48,19 @@
    "Photo needed" box, for the same reason the intro section does not. */
 .tile.plain img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;padding:0;mix-blend-mode:normal;z-index:0}
 .tile.plain.haspic .ic{display:none}
+
+/* Oil & Gas cross-link, compact. The default .xlink parks the eyebrow in a
+   narrow left column and leaves the whole left side empty, and the section
+   carries full vertical padding -- together that reads as a big airy panel.
+   Here the eyebrow stacks above the heading, the copy is width-capped, and
+   the padding is trimmed, so it reads as a slim "related company" band.
+   Scoped to this page so the shared .xlink elsewhere is untouched. */
+.section.xl-compact{padding-top:clamp(34px,4.5vw,52px);padding-bottom:clamp(34px,4.5vw,52px)}
+.xlink.compact{grid-template-columns:1fr;gap:.3rem;max-width:72ch;padding-top:1.25rem}
+.xlink.compact .xl-rel{padding-top:0;margin-bottom:.15rem}
+.xlink.compact h3{font-size:clamp(1.15rem,2vw,1.4rem);margin-bottom:.45rem}
+.xlink.compact p{font-size:.92rem;max-width:70ch;line-height:1.55}
+.xlink.compact .xl-go{margin-top:.85rem}
 </style>
 </head>
 <body>
@@ -165,9 +178,9 @@
 </section>
 
 <!-- ============ CROSS-LINK: OIL & GAS ============ -->
-<section class="section paper">
+<section class="section paper xl-compact">
   <div class="wrap">
-    <div class="xlink reveal">
+    <div class="xlink reveal compact">
       <p class="xl-rel">Better together</p>
       <div>
         <h3>PT. Hanindo Citra — Oil &amp; Gas</h3>
