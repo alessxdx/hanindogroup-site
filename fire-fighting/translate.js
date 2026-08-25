@@ -15,6 +15,9 @@
     "Get directions": "Petunjuk arah",
     /* ---- navigation / header ---- */
     "Back to": "Kembali ke",
+    /* Kicker over the PT. Hanindo Citra pill in the nav — this department is
+       part of that company. The company name itself is left untranslated. */
+    "Part of": "Bagian dari",
     "Home": "Beranda",
     "About Us": "Tentang Kami",
     "Products & Services": "Produk & Layanan",
