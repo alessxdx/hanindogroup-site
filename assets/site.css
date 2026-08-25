@@ -223,6 +223,42 @@ a.brand:not([href]){cursor:default}
 .brandhome .grouplink .glback{font-size:inherit;letter-spacing:normal;text-transform:none;font-weight:600;color:var(--muted)}
 .brandhome .grouplink:hover .glback{color:var(--brand)}
 @media(max-width:860px){.brandhome .grouplink{display:none}}
+/* ---------- COMPANY ⇄ DEPARTMENT CROSS-LINK ----------
+   A second "back to" line, this one under the CO-BRAND logo, pointing at
+   the related site: the Fire Fighting mini-site carries a .citralink UP to
+   its parent PT. Hanindo Citra; the Citra site carries a .deptlink DOWN to
+   its Fire Fighting Department. Both sit in a .cobrandhome column beside the
+   co-brand, the mirror of the .brandhome "Back to Hanindo Group" link under
+   the group lockup, so the two logos each own their route. Static in the
+   page markup — nav.js is not involved — with the hairline divider moved off
+   .cobrand and onto the column so the two logos stay separated as before.
+   Hidden below 860px, where the phone drawer carries the route instead: the
+   nav tab that used to lead here keeps a .drawer-only class (see below) and
+   reappears there. Fire Fighting recolours --blue-800/--brand to its navy in
+   fire-fighting.css, so the link lands on that site's palette without a
+   local rule. */
+.cobrandhome{display:flex;flex-direction:column;align-items:flex-start;gap:.3rem;
+  border-left:1px solid var(--line);padding-left:1rem}
+.cobrandhome .cobrand{border-left:0;padding-left:0}
+.citralink,.deptlink{display:inline-flex;align-items:center;gap:.45rem;
+  font-size:.78rem;font-weight:600;color:var(--blue-800);white-space:nowrap;transition:color .18s}
+.citralink svg,.deptlink svg{width:12px;height:12px;flex:none;box-sizing:content-box;padding:5px;
+  border-radius:50%;background:#eaf4fb;fill:none;stroke:var(--brand);stroke-width:2.6;
+  transition:transform .18s,background .18s}
+.citralink:hover,.deptlink:hover{color:var(--brand-600)}
+.citralink:hover svg{background:#d7ebf9;transform:translateX(-2px)}
+.deptlink:hover svg{background:#d7ebf9;transform:translateX(2px)}
+.citralink .glstack{display:flex;gap:.32rem;line-height:1.2}
+.citralink .glback{font-weight:600;color:var(--muted);transition:color .18s}
+.citralink:hover .glback{color:var(--brand)}
+@media(max-width:860px){.citralink,.deptlink{display:none}}
+/* A nav entry that belongs only in the phone drawer, never the desktop bar:
+   the cross-link to the sibling site. On desktop the under-logo link above
+   carries it, so the tab is hidden; below 860px the under-logo link is gone
+   and this reappears as an ordinary drawer row. Kept as a real tab so the
+   drawer's existing row styling and nav.js dress it with no extra work. */
+.tabs>li.drawer-only{display:none}
+@media(max-width:860px){.tabs>li.drawer-only{display:block}}
 .searchbox{display:flex;height:38px}
 .searchbox input{border:1px solid var(--line);border-right:0;border-radius:var(--r) 0 0 var(--r);padding:0 .9rem;font-family:var(--font);font-size:.86rem;width:170px;outline:none;background:var(--white)}
 .searchbox input:focus{border-color:var(--brand)}
