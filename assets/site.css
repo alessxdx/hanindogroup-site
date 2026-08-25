@@ -223,42 +223,71 @@ a.brand:not([href]){cursor:default}
 .brandhome .grouplink .glback{font-size:inherit;letter-spacing:normal;text-transform:none;font-weight:600;color:var(--muted)}
 .brandhome .grouplink:hover .glback{color:var(--brand)}
 @media(max-width:860px){.brandhome .grouplink{display:none}}
-/* ---------- COMPANY ⇄ DEPARTMENT CROSS-LINK ----------
-   A second "back to" line, this one under the CO-BRAND logo, pointing at
-   the related site: the Fire Fighting mini-site carries a .citralink UP to
-   its parent PT. Hanindo Citra; the Citra site carries a .deptlink DOWN to
-   its Fire Fighting Department. Both sit in a .cobrandhome column beside the
-   co-brand, the mirror of the .brandhome "Back to Hanindo Group" link under
-   the group lockup, so the two logos each own their route. Static in the
-   page markup — nav.js is not involved — with the hairline divider moved off
-   .cobrand and onto the column so the two logos stay separated as before.
-   Hidden below 860px, where the phone drawer carries the route instead: the
-   nav tab that used to lead here keeps a .drawer-only class (see below) and
-   reappears there. Fire Fighting recolours --blue-800/--brand to its navy in
-   fire-fighting.css, so the link lands on that site's palette without a
-   local rule. */
+/* ---------- COMPANY ⇄ DEPARTMENT LINKS ----------
+   The Fire Fighting mini-site and its parent PT. Hanindo Citra point at each
+   other, but NOT the same way — the relationship is not symmetric. Citra is a
+   full oil & gas company; Fire Fighting is one department of it.
+
+   Fire Fighting side: a .citralink sits under the co-brand logo, the mirror of
+   the .brandhome "Back to Hanindo Group" link under the group lockup, so each
+   logo owns its route up. It lives in a .cobrandhome column; the hairline
+   divider moves off .cobrand onto the column so the two logos stay separated.
+   Hidden below 860px, where the phone drawer carries it as the .drawer-only
+   nav tab instead. Fire Fighting recolours --blue-800/--brand to its navy in
+   fire-fighting.css, so the link lands on that site's palette with no local rule.
+
+   Citra side: NO link under the logo — a bare department name in that slot read
+   as Citra's own identity ("Citra = fire fighting"). Instead the co-brand
+   carries Citra's OWN descriptor (.cotag "Oil & Gas"), and the department is
+   reached from a set-apart pill in the nav bar (.ffdept), labelled as a
+   department so it reads as a division Citra has, not a section of the site. */
 .cobrandhome{display:flex;flex-direction:column;align-items:flex-start;gap:.3rem;
   border-left:1px solid var(--line);padding-left:1rem}
 .cobrandhome .cobrand{border-left:0;padding-left:0}
-.citralink,.deptlink{display:inline-flex;align-items:center;gap:.45rem;
+.citralink{display:inline-flex;align-items:center;gap:.45rem;
   font-size:.78rem;font-weight:600;color:var(--blue-800);white-space:nowrap;transition:color .18s}
-.citralink svg,.deptlink svg{width:12px;height:12px;flex:none;box-sizing:content-box;padding:5px;
+.citralink svg{width:12px;height:12px;flex:none;box-sizing:content-box;padding:5px;
   border-radius:50%;background:#eaf4fb;fill:none;stroke:var(--brand);stroke-width:2.6;
   transition:transform .18s,background .18s}
-.citralink:hover,.deptlink:hover{color:var(--brand-600)}
+.citralink:hover{color:var(--brand-600)}
 .citralink:hover svg{background:#d7ebf9;transform:translateX(-2px)}
-.deptlink:hover svg{background:#d7ebf9;transform:translateX(2px)}
 .citralink .glstack{display:flex;gap:.32rem;line-height:1.2}
 .citralink .glback{font-weight:600;color:var(--muted);transition:color .18s}
 .citralink:hover .glback{color:var(--brand)}
-@media(max-width:860px){.citralink,.deptlink{display:none}}
+@media(max-width:860px){.citralink{display:none}}
+/* Citra's own descriptor, under its logo in the .cobrandhome column, in place
+   of the department link that used to mislabel it as a fire-fighting company. */
+.cotag{font-size:.62rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--brand);white-space:nowrap}
+/* The Fire Fighting department, reached from the Citra nav as a set-apart pill
+   pushed to the right, with a small kicker naming the relationship. Its own
+   darker fill and left hairline lift it off the section tabs so it reads as a
+   sibling destination, not a page of this site. Vertical padding is tighter
+   than a normal tab so the two lines do not stand the bar taller. On a phone it
+   folds back into an ordinary drawer row. */
+/* Let the tab row fill the bar on desktop so the pill's margin-left:auto has
+   room to push it to the far edge. Desktop-only, so the phone drawer (the same
+   .tabs list, stacked) is untouched; every site's tabs stay left-packed, this
+   only frees the trailing space they already left empty. */
+@media(min-width:861px){.navbar .tabs{flex:1}}
+.tabs>li.ffdept{margin-left:auto}
+.tabs>li.ffdept>a{flex-direction:column;align-items:flex-start;justify-content:center;gap:1px;
+  padding:.42rem 1.3rem;background:var(--blue-900);border-left:1px solid rgba(255,255,255,.14);line-height:1.15}
+.tabs>li.ffdept>a:hover{background:var(--blue-950)}
+.ffdept .ffk{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:#8fb7dd;font-weight:700}
+.ffdept .ffn{display:flex;align-items:center;gap:.35rem;color:#fff;font-size:.88rem;font-weight:600}
+.ffdept .ffn svg{width:12px;height:12px;flex:none;fill:none;stroke:var(--sky);stroke-width:2}
 /* A nav entry that belongs only in the phone drawer, never the desktop bar:
-   the cross-link to the sibling site. On desktop the under-logo link above
-   carries it, so the tab is hidden; below 860px the under-logo link is gone
-   and this reappears as an ordinary drawer row. Kept as a real tab so the
-   drawer's existing row styling and nav.js dress it with no extra work. */
+   the Fire Fighting site's link UP to PT. Hanindo Citra. On desktop the
+   under-logo .citralink carries it, so the tab is hidden; below 860px the
+   under-logo link is gone and this reappears as an ordinary drawer row. */
 .tabs>li.drawer-only{display:none}
-@media(max-width:860px){.tabs>li.drawer-only{display:block}}
+@media(max-width:860px){
+  .tabs>li.drawer-only{display:block}
+  .tabs>li.ffdept{margin-left:0}
+  .tabs>li.ffdept>a{padding:.95rem var(--pad);background:none;border-left:3px solid transparent}
+  .ffdept .ffn{font-size:1rem}
+}
 .searchbox{display:flex;height:38px}
 .searchbox input{border:1px solid var(--line);border-right:0;border-radius:var(--r) 0 0 var(--r);padding:0 .9rem;font-family:var(--font);font-size:.86rem;width:170px;outline:none;background:var(--white)}
 .searchbox input:focus{border-color:var(--brand)}

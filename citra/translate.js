@@ -55,6 +55,10 @@
     "Products & services": "Produk & layanan",
     "Fire Fighting": "Pemadam Kebakaran",
     "Fire Fighting Department": "Departemen Pemadam Kebakaran",
+    /* The oil & gas descriptor under the Citra logo, and the kicker over the
+       Fire Fighting pill in the nav that names it as a department of Citra. */
+    "Oil & Gas": "Minyak & Gas",
+    "Our department": "Departemen kami",
     "Contact Us": "Hubungi Kami",
     "Projects": "Proyek",
     "Pumps & Dispensers": "Pompa & Dispenser",
