@@ -117,7 +117,7 @@
     "Brands we supply and service.": "Merek yang kami pasok dan layani.",
     "Enquiries": "Pertanyaan",
     "Looking for a particular brand?": "Mencari merek tertentu?",
-    "Tell us which equipment you need and we will put you in touch with the division that handles it — whether that is fuel dispensing, workshop equipment, automation or fire protection.": "Beri tahu kami peralatan yang Anda butuhkan dan kami akan menghubungkan Anda dengan divisi yang menanganinya — baik dispenser BBM, peralatan bengkel, otomasi, maupun proteksi kebakaran.",
+    "Tell us which equipment you need, and we'll put you in touch with the right division — whether it's fuel dispensing, workshop equipment, automation, printing and POS, or fire protection.": "Beri tahu kami peralatan yang Anda butuhkan, dan kami akan menghubungkan Anda dengan divisi yang tepat — baik dispenser BBM, peralatan bengkel, otomasi, printer & POS, maupun proteksi kebakaran.",
     "Contact us": "Hubungi kami",
 
     /* ---- home: closing contact band ---- */
@@ -198,10 +198,10 @@
     "Current openings.": "Lowongan saat ini.",
     "Sales — Automotive Equipment": "Sales — Peralatan Otomotif",
     "Jakarta · Full-time": "Jakarta · Penuh waktu",
-    "Sell automotive equipment to workshops and dealers, open new accounts through active canvassing, and hit the sales targets that keep the territory growing.": "Menjual peralatan otomotif ke bengkel dan dealer, membuka pelanggan baru melalui canvassing aktif, serta mencapai target penjualan yang menjaga pertumbuhan wilayah.",
+    "Sell automotive equipment to workshops and dealers, find new customers by visiting potential clients, and achieve sales targets to grow the business.": "Menjual peralatan otomotif ke bengkel dan dealer, mencari pelanggan baru dengan mengunjungi calon klien, serta mencapai target penjualan untuk mengembangkan bisnis.",
     "What you'll do": "Yang akan Anda kerjakan",
     "Promote and sell automotive equipment products": "Mempromosikan dan menjual produk peralatan otomotif",
-    "Canvass to widen the customer network": "Melakukan canvassing untuk memperluas jaringan pelanggan",
+    "Actively prospect for and develop new customers to expand the customer network": "Secara aktif mencari dan mengembangkan pelanggan baru untuk memperluas jaringan pelanggan",
     "Meet the sales targets that have been set": "Mencapai target penjualan yang telah ditetapkan",
     "Coordinate with other departments on delivery and payment": "Berkoordinasi dengan departemen lain terkait pengiriman dan pembayaran",
     "Maintain strong relationships with customers": "Menjaga hubungan baik dengan pelanggan",
