@@ -76,7 +76,6 @@
     "Fuel station construction and renovation": "Konstruksi dan renovasi SPBU",
     "Engineering, civil, mechanical and electrical works": "Pekerjaan rekayasa, sipil, mekanikal, dan elektrikal",
     "Equipment installation and commissioning": "Pemasangan dan commissioning peralatan",
-    "Permitting, site preparation and safety": "Perizinan, persiapan lokasi, dan keselamatan",
     "Operator training": "Pelatihan operator",
 
     /* ---- company page: what we deliver ----
