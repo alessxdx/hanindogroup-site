@@ -53,13 +53,9 @@
     "Self-Service Solutions": "自助服务解决方案",
 
     /* ---- products & services page ----
-       The eyebrow and the heading over the catalogue. Both had no entry
-       until 2026-08-17, so they stayed English while the rest of the page
-       turned over -- the heading was the largest type on it.
-       "Products & services" is sentence case and a separate key from the
-       navigation's title-case "Products & Services" above; the walker
-       matches the whole node, case included. Both take the same Chinese. */
-    "Products & services": "产品与服务",
+       The heading over the catalogue. It had no entry until 2026-08-17, so
+       it stayed English while the rest of the page turned over -- and it
+       was the largest type on it. */
     "Our product range": "我们的产品系列",
 
     /* ---- customers ---- */

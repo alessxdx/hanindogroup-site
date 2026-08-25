@@ -141,9 +141,6 @@
     /* ---- products & services ---- */
     "Products &": "Produk &",
     "Services": "Layanan",
-    /* The kicker over the range, lower-cased, so it is a different node from
-       the "Products &" / "Services" pair the hero splits. */
-    "Products & services": "Produk & layanan",
     "Our product range": "Rangkaian produk kami",
     /* The Fluid Handling tile and its drop-down entry. "Lubrication & Fluid
        Handling" below is the longer form used on the range card. */
@@ -158,10 +155,9 @@
     "Equipment from leading international manufacturers, chosen to improve productivity, safety and service quality. Most of it fits out a workshop.": "Peralatan dari produsen internasional terkemuka, dipilih untuk meningkatkan produktivitas, keselamatan, dan mutu layanan. Sebagian besar untuk melengkapi bengkel.",
     "Tyre changers, wheel balancers and 3D wheel alignment.": "Tyre changer, wheel balancer, dan spooring roda 3D.",
     "View products": "Lihat produk",
-    /* Products & Services page: the catalogue was restyled and its heading,
-       kicker and per-card link text all changed. Each card names what it
-       leads to now, where every card used to say "View products". */
-    "Products & services": "Produk & Layanan",
+    /* Products & Services page: the catalogue was restyled and its heading
+       and per-card link text all changed. Each card names what it leads to
+       now, where every card used to say "View products". */
     "Our product range": "Rangkaian produk kami",
     "View tyre service equipment": "Lihat peralatan layanan ban",
     "View inflators": "Lihat pengisi angin",

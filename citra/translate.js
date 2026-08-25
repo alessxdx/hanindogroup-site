@@ -52,7 +52,6 @@
     "Home": "Beranda",
     "About Us": "Tentang Kami",
     "Products & Services": "Produk & Layanan",
-    "Products & services": "Produk & layanan",
     "Fire Fighting": "Pemadam Kebakaran",
     "Fire Fighting Department": "Departemen Pemadam Kebakaran",
     /* The oil & gas descriptor under the Citra logo, and the kicker over the

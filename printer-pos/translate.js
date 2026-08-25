@@ -47,7 +47,6 @@
     "About Us": "Tentang Kami",
     "Our Companies": "Perusahaan Kami",
     "Products & Services": "Produk & Layanan",
-    "Products & services": "Produk & layanan",
     "Professional Printing Solutions": "Solusi Pencetakan Profesional",
     "DC / POS Solutions": "Solusi DC / POS",
     "Scanning Solutions": "Solusi Pemindaian",
