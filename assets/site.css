@@ -980,6 +980,14 @@ a.pcard:hover .more svg{transform:translateX(3px)}
    on specificity, handing the number the description's muted grey and size
    instead of the brand blue. */
 .checks .cnum,.clist .cnum,.heropanel .cnum{flex:none;min-width:1.5rem;padding-top:.18rem;font-size:.78rem;font-weight:700;color:var(--brand);letter-spacing:.08em;font-variant-numeric:tabular-nums;line-height:1.4}
+/* Bullet variant of the checks list: add .bullets and drop the .cnum spans,
+   and each row takes a "•" in the brand colour instead of a running number.
+   Used where the items are unranked capabilities rather than an ordered
+   sequence. Drawn as a ::before, not a real text node, so translate.js's
+   text-node walker never sees a marker to key on. Sized and positioned to the
+   .cnum slot it replaces (1.5rem min + the list's .7rem gap) so the text edge
+   does not move. */
+.checks.bullets li::before{content:"\2022";flex:none;min-width:1.5rem;padding-top:.02rem;font-size:1.1rem;line-height:1.3;color:var(--brand)}
 /* A tick list where each item carries a bold label above a line of detail,
    rather than a bare phrase. Used by the Gralessando and Hanindo Shanghai
    home pages, which describe the same Custom range. */
