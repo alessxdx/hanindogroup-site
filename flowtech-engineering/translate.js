@@ -222,9 +222,9 @@
        goes back on the page, its entry has to come back with it. */
 
     /* ---- sister company ---- */
-    "Part of the same group": "Bagian dari grup yang sama",
-    "Oil & Gas — PT. Hanindo Citra": "Minyak & Gas — PT. Hanindo Citra",
-    "Flowtech builds the stations that PT. Hanindo Citra equips. PT. Hanindo Citra supplies the dispensers, tank gauging, flow meters and fuel management systems, and provides after-sales service once the site is running.": "Flowtech membangun SPBU yang dilengkapi oleh PT. Hanindo Citra. PT. Hanindo Citra memasok dispenser, tank gauging, flow meter, dan sistem manajemen bahan bakar, serta memberikan layanan purnajual setelah lokasi beroperasi.",
+    "Better together": "Lebih baik bersama",
+    "PT. Hanindo Citra — Oil & Gas": "PT. Hanindo Citra — Minyak & Gas",
+    "On fuel station projects, Flowtech works hand in hand with its Hanindo Group sister company, PT. Hanindo Citra. We handle the construction; they supply the dispensers, tank gauging, flow meters and fuel management systems, and keep the site serviced once it's running.": "Dalam proyek SPBU, Flowtech bahu-membahu dengan perusahaan saudaranya di Hanindo Group, PT. Hanindo Citra. Kami menangani konstruksi; mereka memasok dispenser, tank gauging, flow meter, dan sistem manajemen bahan bakar, serta menjaga lokasi tetap terlayani setelah beroperasi.",
     "Visit Oil & Gas": "Kunjungi Minyak & Gas",
 
     /* ---- contact page ----
