@@ -109,6 +109,34 @@
    everything else instead of being overridden. */
 .wall.flat .w.lockup{--logo-h:60px}
 @media(max-width:640px){.wall.flat .w.lockup{--logo-h:48px}}
+/* Fire Fighting cross-link, folded into the hero as one compact pill in place
+   of the full-width band that used to sit above the footer. It names the
+   department and the relationship (it is part of Citra) and links across to
+   that site, high on the page where it is actually seen. Reuses the three
+   dictionary keys the old band carried, so the toggle needs nothing new.
+   Sky/kicker colours are literal: this sits on the dark hero, where the group
+   --brand blue reads too dark. */
+.hero-ff{display:inline-flex;align-items:center;gap:1.1rem;margin-top:1.5rem;
+  padding:.68rem .85rem .68rem 1.1rem;border:1px solid rgba(127,217,255,.32);
+  background:rgba(127,217,255,.08);border-radius:12px;
+  transition:background .18s,border-color .18s}
+.hero-ff:hover{background:rgba(127,217,255,.14);border-color:rgba(127,217,255,.5)}
+.hero-ff .ff-main{display:flex;flex-direction:column;gap:.16rem;line-height:1.2}
+.hero-ff .ff-kick{font-size:.63rem;letter-spacing:.14em;text-transform:uppercase;
+  font-weight:700;color:#8fb7dd}
+.hero-ff .ff-name{font-size:1.02rem;font-weight:700;color:#fff}
+.hero-ff .ff-go{display:inline-flex;align-items:center;gap:.4rem;font-size:.85rem;
+  font-weight:700;color:#7fd9ff;white-space:nowrap;padding-left:1.1rem;
+  border-left:1px solid rgba(255,255,255,.16)}
+.hero-ff .ff-go svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;
+  transition:transform .18s}
+.hero-ff:hover .ff-go svg{transform:translateX(3px)}
+@media(max-width:560px){
+  .hero-ff{display:flex;width:100%;gap:.8rem}
+  .hero-ff .ff-main{flex:1}
+  .hero-ff .ff-name{font-size:.96rem}
+  .hero-ff .ff-go{padding-left:.8rem}
+}
 </style>
 </head>
 <body>
@@ -171,6 +199,13 @@
     <div class="crumb"><a href="../">Hanindo Group</a><span class="sep">/</span><a href="index.html">PT. Hanindo Citra</a></div>
     <h1>PT. Hanindo <span class="fx">Citra</span></h1>
     <p class="intro hide-sm">PT. Hanindo Citra provides sales and after-sales service of petroleum equipment and product supply, from the forecourt to the bulk terminal, and builds the fuel stations that run it.</p>
+    <a class="hero-ff" href="../fire-fighting/" aria-label="Visit the Fire Fighting Department, also part of PT. Hanindo Citra">
+      <span class="ff-main">
+        <span class="ff-kick">Also part of PT. Hanindo Citra</span>
+        <span class="ff-name">Fire Fighting Department</span>
+      </span>
+      <span class="ff-go">Visit Fire Fighting <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
   </div>
 </section>
 <!-- ============ INTRO ============ -->
@@ -377,20 +412,9 @@
   </div>
 </section>
 
-<!-- ============ CROSS-LINK: FIRE FIGHTING ============ -->
-<section class="section white">
-  <div class="wrap">
-    <div class="xlink reveal">
-      <p class="xl-rel">Also part of PT. Hanindo Citra</p>
-      <div>
-        <h3>Fire Fighting Department</h3>
-        <p>PT. Hanindo Citra also designs, supplies, installs and maintains complete fire-fighting systems across Indonesia — hydrant, sprinkler, gas and foam suppression, detection and alarm.</p>
-        <a class="xl-go" href="../fire-fighting/">Visit Fire Fighting <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-    </div>
-  </div>
-</section>
-
+<!-- The Fire Fighting cross-link that used to sit here as a full-width band is
+     now a compact pill in the hero (see .hero-ff) — higher on the page and far
+     smaller. Its three dictionary keys are still carried by translate.js. -->
 
 <!-- ============ FOOTER ============ -->
 <footer class="footer">
