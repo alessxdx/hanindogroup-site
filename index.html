@@ -35,14 +35,17 @@
    signal once a row means an industry: the first band would simply look
    like the most important one. One --logo-h for every mark instead.
 
-   The .mid and .sq shape lifts in site.css still apply on top, and must —
-   they are aspect-ratio correction, not rank, so a square mark and a long
-   wordmark end up carrying the same optical weight.
+   Every mark draws at that one height, flat. The .mid and .sq shape lifts
+   from site.css (which raise a square mark to even out optical AREA) are
+   overridden back to the base height here: the brief was a single
+   standardised size across the wall, so height parity wins over area
+   parity, and a square mark simply carries less width than a wordmark.
 
    Each band is label + .tier, so the label sits above its own row rather
    than becoming a flex item inside it. */
 .wall.flat .band{width:100%}
 .wall.flat .w{--logo-h:46px;--logo-max:280px;max-width:var(--logo-max)}
+.wall.flat .w.mid img,.wall.flat .w.sq img{height:var(--logo-h)}
 @media(max-width:640px){.wall.flat .w{--logo-h:34px;--logo-max:185px}}
 </style>
 </head>
