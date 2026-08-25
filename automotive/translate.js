@@ -152,7 +152,7 @@
        lubrication reaching past the workshop, is gone from the page. The
        key is the whole trimmed node, so the old one stopped matching the
        moment the English was cut. Its Indonesian went with it. */
-    "Equipment from leading international manufacturers, chosen to improve productivity, safety and service quality. Most of it fits out a workshop.": "Peralatan dari produsen internasional terkemuka, dipilih untuk meningkatkan produktivitas, keselamatan, dan mutu layanan. Sebagian besar untuk melengkapi bengkel.",
+    "Equipment from leading international manufacturers, chosen to improve productivity, safety and service quality. Most of it fits out a workshop; the RAASM fluid handling range also goes to lubricant distributors, plants and mine sites.": "Peralatan dari produsen internasional terkemuka, dipilih untuk meningkatkan produktivitas, keselamatan, dan mutu layanan. Sebagian besar untuk melengkapi bengkel; rangkaian penanganan fluida RAASM juga dipakai distributor pelumas, pabrik, dan lokasi tambang.",
     "Tyre changers, wheel balancers and 3D wheel alignment.": "Tyre changer, wheel balancer, dan spooring roda 3D.",
     "View products": "Lihat produk",
     /* Products & Services page: the catalogue was restyled and its heading
@@ -177,7 +177,7 @@
 
     /* ---- products & services: the services block ---- */
     "Support beyond the equipment": "Dukungan lebih dari sekadar alat",
-    "Supplying the machine is the start. These services are quoted separately, so you take only what you need. The training is open to anyone, not only to customers who buy equipment from us.": "Pengadaan mesin hanyalah awal. Layanan berikut ditawarkan terpisah, sehingga Anda hanya mengambil yang Anda butuhkan. Pelatihannya terbuka untuk siapa saja, tidak hanya bagi pelanggan yang membeli peralatan dari kami.",
+    "Beyond supply, we provide installation, maintenance and training — each quoted separately, so the scope matches the requirement. Training is open to the wider industry, not only to our equipment customers.": "Selain pengadaan, kami menyediakan pemasangan, perawatan, dan pelatihan — masing-masing ditawarkan terpisah, sehingga lingkupnya sesuai dengan kebutuhan. Pelatihan terbuka untuk industri secara luas, tidak hanya bagi pelanggan peralatan kami.",
     "Technical Training": "Pelatihan Teknis",
     "Spooring and balancing courses.": "Pelatihan spooring dan balancing.",
     "Installation & Commissioning": "Pemasangan & Commissioning",

@@ -222,7 +222,7 @@
     /* ---- contact ---- */
     "Let's get you to": "Mari hubungkan Anda",
     "the right team.": "dengan tim yang tepat.",
-    "Hanindo Group brings together several specialist companies. Choose the business your enquiry is about and we will take you straight to their contact page.": "Hanindo Group menghimpun beberapa perusahaan spesialis. Pilih bidang usaha yang Anda tanyakan dan kami akan mengarahkan Anda langsung ke halaman kontaknya.",
+    "Every company in the group, and the team that answers for it.": "Perusahaan grup kami, dan tim yang menangani masing-masing.",
     "Who can we connect you with?": "Dengan siapa kami dapat menghubungkan Anda?",
     "Contact by business.": "Kontak menurut bidang usaha.",
     "Each of our companies runs its own enquiries. Pick the one that fits and you will land on the team that can help.": "Setiap perusahaan kami menangani pertanyaannya sendiri. Pilih yang sesuai dan Anda akan langsung terhubung dengan tim yang dapat membantu.",

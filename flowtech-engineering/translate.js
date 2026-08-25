@@ -192,7 +192,7 @@
        entry at the top of this dictionary -- the tab, the footer link,
        the breadcrumb and the heading are all the same word now. */
     "Fuel station construction handled end to end — design, permits, materials and labour, installation and operator training, under one contract.": "Konstruksi SPBU ditangani menyeluruh — desain, perizinan, material dan tenaga kerja, pemasangan, dan pelatihan operator, dalam satu kontrak.",
-    "Every aspect required in the construction of a fuel station is handled by us, so clients deal with one team from permit to handover.": "Setiap aspek yang dibutuhkan dalam pembangunan SPBU kami tangani sendiri, sehingga klien berurusan dengan satu tim dari perizinan hingga serah terima.",
+    "We take the station from permit to handover, so there is one contract and one team for the whole build.": "Kami menangani SPBU dari perizinan hingga serah terima, sehingga hanya ada satu kontrak dan satu tim untuk keseluruhan pembangunan.",
 
     /* ---- scope of work page: the four contractor stages ----
        These are the timeline now, a heading and one line each, so the
@@ -201,7 +201,7 @@
        <p>, which is one text node each. */
     "As contractor": "Sebagai kontraktor",
     "How a project runs.": "Bagaimana proyek berjalan.",
-    "In general, the scope of work and responsibility taken on as contractor runs in four stages.": "Secara umum, lingkup pekerjaan dan tanggung jawab yang diemban sebagai kontraktor berjalan dalam empat tahap.",
+    "As contractor, the scope runs in four stages.": "Sebagai kontraktor, lingkup pekerjaan berjalan dalam empat tahap.",
     "Review of Basic Design": "Peninjauan Desain Dasar",
     "The owner's plans re-designed and checked against conditions in the field.": "Gambar rencana pemilik dirancang ulang dan diperiksa terhadap kondisi di lapangan.",
     "Detail Design": "Desain Detail",

@@ -71,7 +71,7 @@
     "Automatic Tank Gauging": "Automatic Tank Gauging",
 
     /* ---- home ---- */
-    "PT. Hanindo Citra provides sales and after-sales service of petroleum equipment and product supply, from the forecourt to the bulk terminal, and builds the fuel stations that run it.": "PT. Hanindo Citra menyediakan penjualan dan layanan purnajual peralatan perminyakan serta pasokan produk, dari forecourt hingga terminal curah, dan membangun SPBU yang menjalankannya.",
+    "PT. Hanindo Citra supplies and services petroleum equipment from the forecourt to the bulk terminal — and builds the fuel stations it goes into.": "PT. Hanindo Citra memasok dan merawat peralatan perminyakan dari forecourt hingga terminal curah — serta membangun SPBU tempat peralatan itu dipasang.",
     "Everything fuel moves through.": "Semua yang dilalui bahan bakar.",
     /* The lead under "Everything fuel moves through" is three entries, not
        one. It is one paragraph on a desktop but three <p> elements, so a
@@ -127,7 +127,7 @@
     "Company overview": "Profil perusahaan",
     "Four decades in": "Empat dekade di",
     "petroleum equipment": "peralatan perminyakan",
-    "PT. Hanindo Citra has represented Gilbarco Veeder-Root since that first year — a partnership spanning four decades.": "PT. Hanindo Citra telah mewakili Gilbarco Veeder-Root sejak tahun pertama itu — kemitraan yang membentang empat dekade.",
+    "PT. Hanindo Citra has represented Gilbarco Veeder-Root since 1987, the year its petroleum equipment work began.": "PT. Hanindo Citra telah mewakili Gilbarco Veeder-Root sejak 1987, tahun ketika pekerjaan peralatan perminyakannya dimulai.",
     /* Both "and also this" lines in the overview carry an inline link, so
        each reaches the walker as text nodes either side of the anchor and
        needs an entry per fragment. The link text is a company name and a

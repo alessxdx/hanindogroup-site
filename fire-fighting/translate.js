@@ -306,7 +306,7 @@
     "West Sumatera": "Sumatera Barat",
     "Complete site fire-protection delivery for the Directorate General of Railways.": "Pengerjaan proteksi kebakaran lokasi secara lengkap untuk Direktorat Jenderal Perkeretaapian.",
     "Power": "Kelistrikan",
-    "PT. Hanindo Citra designed and built a complete hydrant system for PLN UID Lampung. The project covered the supply, installation, testing, and commissioning of the fire protection system, ensuring compliance with project specifications and applicable fire-safety standards.": "PT. Hanindo Citra merancang dan membangun sistem hidran lengkap untuk PLN UID Lampung. Proyek ini mencakup pengadaan, pemasangan, pengujian, dan komisioning sistem proteksi kebakaran, dengan memastikan kesesuaian terhadap spesifikasi proyek dan standar keselamatan kebakaran yang berlaku.",
+    "PT. Hanindo Citra designed and built a complete hydrant system for PLN UID Lampung — supply, installation, testing and commissioning, to project specification and Indonesian fire-safety standards.": "PT. Hanindo Citra merancang dan membangun sistem hidran lengkap untuk PLN UID Lampung — pengadaan, pemasangan, pengujian, dan komisioning, sesuai spesifikasi proyek dan standar keselamatan kebakaran Indonesia.",
 
     /* ---- project detail modals ---- */
     "Project Overview": "Ikhtisar Proyek",
@@ -334,7 +334,7 @@
     "— personnel certified as technical assessor in fire protection competency under the Indonesian National Work Competency Standards (SKKNI).": "— personel bersertifikat sebagai asesor teknis kompetensi proteksi kebakaran berdasarkan Standar Kompetensi Kerja Nasional Indonesia (SKKNI).",
 
     /* products & services, and the one-page variant */
-    "Our service portfolio is built around a single goal — a system that remains operational on day one and every day after.": "Portofolio layanan kami dibangun di sekitar satu tujuan — sistem yang tetap beroperasi sejak hari pertama dan setiap hari sesudahnya.",
+    "One team carries a system from design through installation and testing to the maintenance contract that keeps it working.": "Satu tim membawa sebuah sistem dari perancangan, pemasangan, dan pengujian hingga kontrak perawatan yang menjaganya tetap berfungsi.",
 
     /* contact page: the line under "How to reach us." The other company
        dictionaries carry the same sentence shaped to their own business. */
@@ -343,8 +343,8 @@
     /* projects page: the two case write-ups. Client and facility names stay as
        they are; Ministry of Transportation follows the About page's
        "Kementerian Perhubungan". */
-    "PT. Hanindo Citra designed and built a complete hydrant system for PT. GLB Indonesia. The project covered the supply, installation, testing, and commissioning of the fire protection system, ensuring compliance with project specifications and applicable fire-safety standards.": "PT. Hanindo Citra merancang dan membangun sistem hidran lengkap untuk PT. GLB Indonesia. Proyek ini mencakup pengadaan, pemasangan, pengujian, dan commissioning sistem proteksi kebakaran, serta memastikan kesesuaian dengan spesifikasi proyek dan standar keselamatan kebakaran yang berlaku.",
-    "PT. Hanindo Citra delivered a complete hydrant system for the Ministry of Transportation facility in Padang. The project covered the supply, installation, testing, and commissioning of the fire protection system, ensuring compliance with project specifications and applicable fire-safety standards.": "PT. Hanindo Citra menghadirkan sistem hidran lengkap untuk fasilitas Kementerian Perhubungan di Padang. Proyek ini mencakup pengadaan, pemasangan, pengujian, dan commissioning sistem proteksi kebakaran, serta memastikan kesesuaian dengan spesifikasi proyek dan standar keselamatan kebakaran yang berlaku.",
+    "PT. Hanindo Citra designed and built a complete hydrant system for PT. GLB Indonesia — supply, installation, testing and commissioning, to project specification and Indonesian fire-safety standards.": "PT. Hanindo Citra merancang dan membangun sistem hidran lengkap untuk PT. GLB Indonesia — pengadaan, pemasangan, pengujian, dan komisioning, sesuai spesifikasi proyek dan standar keselamatan kebakaran Indonesia.",
+    "PT. Hanindo Citra delivered a complete hydrant system for the Ministry of Transportation facility in Padang — supply, installation, testing and commissioning, to project specification and Indonesian fire-safety standards.": "PT. Hanindo Citra menghadirkan sistem hidran lengkap untuk fasilitas Kementerian Perhubungan di Padang — pengadaan, pemasangan, pengujian, dan komisioning, sesuai spesifikasi proyek dan standar keselamatan kebakaran Indonesia.",
 
     /* one-page variant: vision, the four mission points, and the three
        credential panels. Nine paragraphs, the largest single block of
