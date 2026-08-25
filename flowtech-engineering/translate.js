@@ -210,6 +210,12 @@
     "Soil investigation, work permit to safety, survey and measurement, and shop drawings.": "Penyelidikan tanah, izin kerja untuk keselamatan, survei dan pengukuran, serta shop drawing.",
     "Construction Work": "Pekerjaan Konstruksi",
     "Buried and double-wall tanks, fuel piping, the station building and the canopy.": "Tangki pendam dan tangki dinding ganda, perpipaan bahan bakar, bangunan SPBU, dan kanopi.",
+    /* "On site" construction gallery captions, under the timeline. */
+    "On site": "Di lokasi",
+    "Buried tanks": "Tangki pendam",
+    "Double-wall tanks": "Tangki dinding ganda",
+    "Building foundation": "Fondasi bangunan",
+    "Canopy structure": "Struktur kanopi",
     "Industries served": "Industri yang dilayani",
     "Fuel Stations": "SPBU",
     "Oil & Gas": "Minyak & Gas",
