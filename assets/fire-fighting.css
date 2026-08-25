@@ -369,7 +369,10 @@ img{max-width:100%;display:block}
 .vm-mission h3{color:#fff}
 .mlist{list-style:none;display:grid;gap:1.1rem}
 .mlist li{display:flex;gap:.95rem;align-items:flex-start}
-.mlist .n{flex:none;width:32px;height:32px;border-radius:9px;background:var(--fire);color:#fff;font-weight:800;font-size:.92rem;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 18px -8px rgba(27,147,216,.6)}
+/* The numbered squares went on 2026-08-25, site-wide; see .mlist in
+   site.css. Restated here only to hold the slot at this page's wider
+   32px and take the fire accent on the dark mission card. */
+.mlist li::before{min-width:32px;font-size:1.25rem;color:var(--fire)}
 .mlist p{color:#c9d2e6;font-size:.98rem}
 
 /* ---------- services page ---------- */
@@ -690,7 +693,7 @@ body{line-height:1.65}
 .certcard,.isocard,.proj,.wccard,.vm-card,.pmodal-box,.aphoto,.pcard,.syscard,.tile{border-radius:var(--r)}
 .certcard,.isocard,.proj,.wccard,.pcard{box-shadow:none;border:1px solid var(--line)}
 .proj:hover,.isocard:hover,.wccard:hover,.certcard:hover,.pcard:hover,.syscard:hover{transform:none;box-shadow:none;border-color:var(--crimson)}
-.pstep .n,.mlist .n{box-shadow:none;border-radius:var(--r)}
+.pstep .n{box-shadow:none;border-radius:var(--r)}
 .btn-fire{background:var(--crimson);box-shadow:none}
 .btn-fire:hover{background:var(--crimson-600);transform:none;box-shadow:none}
 .btn-dark:hover{transform:none}
@@ -752,7 +755,7 @@ body{line-height:1.65}
 /* the mission list sits on white here, so re-colour it from the navy-card defaults */
 .vmc .mlist{gap:.6rem;text-align:left;margin-top:.2rem}
 .vmc .mlist p{color:#33405c;font-size:.9rem}
-.vmc .mlist .n{width:26px;height:26px;font-size:.82rem}
+.vmc .mlist li::before{min-width:26px;font-size:1.1rem;color:var(--navy-800)}
 @media(max-width:780px){.vmc{padding:1.3rem 1.1rem}}
 
 /* ---------- WHY CHOOSE US ----------

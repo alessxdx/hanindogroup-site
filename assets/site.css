@@ -413,7 +413,15 @@ a.brand:not([href]){cursor:default}
 .vm-card>p{color:var(--muted);font-size:.95rem}
 .mlist{list-style:none;display:grid;gap:.85rem}
 .mlist li{display:flex;gap:.8rem;align-items:flex-start}
-.mlist .n{flex:none;width:26px;height:26px;border-radius:var(--r);background:var(--blue-800);color:#fff;font-size:.8rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:.1rem}
+/* A bullet, not a numbered square. The squares went on 2026-08-25 along
+   with the 01/02/03 on "Why clients trust us": a mission statement is a
+   set of commitments held at once, not a sequence, and numbering them
+   invited the reader to look for an order that was never meant.
+   Same technique as .checks.bullets further down -- drawn as a ::before
+   rather than a real text node, so translate.js's text-node walker never
+   sees a marker to key on -- and sized to the 26px square it replaces so
+   the text edge stays where it was. */
+.mlist li::before{content:"\2022";flex:none;min-width:26px;padding-top:.02rem;font-size:1.1rem;line-height:1.4;color:var(--brand)}
 .mlist p{color:var(--muted);font-size:.95rem}
 /* Inside a .compact section the pair tightens: smaller gap, less padding,
    shorter type. Carried here rather than repeated page-local now that the
@@ -484,30 +492,29 @@ a.brand:not([href]){cursor:default}
 .offbody .addr{margin-top:auto;padding-top:.55rem;font-size:.8rem;color:var(--ink);opacity:.75}
 
 /* ---------- WHY CHOOSE US ----------
-   A numbered list, not a row of cards. It replaced three centred icon
-   tiles side by side on 2026-08-17: three abreast, each with a tinted
-   icon over a bold line and one grey sentence, is the single most
+   A plain list of rows, not a row of cards. It replaced three centred
+   icon tiles side by side on 2026-08-17: three abreast, each with a
+   tinted icon over a bold line and one grey sentence, is the single most
    recognisable stock-template shape on the web, and the block announced
    the count twice over -- once in the layout and once in a lede reading
    "Three things you can count on". The lede is gone and the heading sits
-   left; the numbers now carry the count, quietly.
+   left.
+
+   The 01/02/03 in the left margin went on 2026-08-25. They were the last
+   thing still counting the rows out loud, and nothing here runs in an
+   order: these are three separate claims, not three steps. Without the
+   number column the rows start at the left edge like every other block
+   on the page, and the hairline between them still does the separating.
 
    One arrangement at every width. The old block needed a second one
    (two up, third spanning) which had to be revisited whenever the copy
    changed length; rows reflow on their own.
 
-   The rule sits on .advbody rather than .advrow on purpose, so it starts
-   at the text and leaves the number out in the margin.
-
-   Every page that runs this carries exactly three rows. Nothing breaks
-   with four -- there is no :last-child special case any more -- but the
-   numbers are written into the markup, so a fourth needs its own 04. */
+   Every page that runs this carries exactly three rows, and a fourth
+   would need nothing written for it. */
 .advhead{max-width:78ch;margin:0 auto 1.6rem}
 .advhead .h2{text-transform:uppercase;letter-spacing:.08em;font-size:1.05rem}
 .advlist{max-width:78ch;margin:0 auto;display:grid}
-.advrow{display:grid;grid-template-columns:3.4rem 1fr;gap:0 1.3rem}
-.advnum{font-size:.82rem;font-weight:700;color:var(--brand);letter-spacing:.1em;padding-top:1.55rem;font-variant-numeric:tabular-nums}
-.advrow:first-child .advnum{padding-top:0}
 .advbody{padding:1.5rem 0;border-bottom:1px solid var(--line)}
 .advrow:first-child .advbody{padding-top:0}
 .advrow:last-child .advbody{border-bottom:0;padding-bottom:0}
@@ -2005,12 +2012,10 @@ a[href^="tel:"]:hover,a[href^="tel:"]:focus-visible{text-decoration:underline}
      type scaled down to stop the longest card running to eleven lines,
      and a :last-child rule that assumed exactly three. None of that is
      needed now. Rows are already full width, so the phone only wants
-     smaller type, a narrower number column and less air per row.
+     smaller type and less air per row.
      Placed at the end of this block on purpose: .advbody p is restated
      near the top of it, and a media query adds no specificity, so an
      override written above that line would be silently dropped. --- */
-  .advrow{grid-template-columns:2.3rem 1fr;gap:0 .9rem}
-  .advnum{font-size:.74rem;padding-top:1.25rem}
   .advbody{padding:1.2rem 0}
   .advbody h3{font-size:.84rem;letter-spacing:.07em}
   .advbody p{font-size:.86rem;line-height:1.55}
