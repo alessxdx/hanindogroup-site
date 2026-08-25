@@ -178,7 +178,7 @@
     "Brand we supply:": "Merek yang kami sediakan:",
     "Brands we supply:": "Merek yang kami sediakan:",
     "Dispensing, measurement, monitoring and the systems that tie them together.": "Dispensing, pengukuran, pemantauan, dan sistem yang menyatukan semuanya.",
-    "A complete forecourt, and the bulk storage beyond it: dispensing, measurement, monitoring and the management systems that tie them together.": "Forecourt yang lengkap, dan penyimpanan curah di luarnya: dispensing, pengukuran, pemantauan, dan sistem manajemen yang menyatukan semuanya.",
+    "Everything between the tank and the nozzle — the forecourt equipment, and the measurement and monitoring behind it.": "Semua yang ada di antara tangki dan nozzle — peralatan forecourt, serta pengukuran dan pemantauan di belakangnya.",
     "Retail fuel dispensers from Gilbarco Veeder-Root, for forecourts of every size.": "Dispenser BBM ritel dari Gilbarco Veeder-Root, untuk forecourt segala ukuran.",
     "Forecourt controllers linking the dispensers and tank gauges to the point of sale, from three brands.": "Controller forecourt yang menghubungkan dispenser dan tank gauge ke point of sale, dari tiga merek.",
     "Piston and rotary positive displacement metering for accurate custody transfer.": "Pengukuran positive displacement tipe piston dan rotary untuk custody transfer yang akurat.",

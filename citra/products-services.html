@@ -175,12 +175,16 @@
     <div class="reveal">
       <span class="kicker">Products &amp; services</span>
       <h2 class="h2">Our product range</h2>
-      <!-- Leads on scope, not on the list. The hero intro directly above
-           opens "Dispensing, measurement, monitoring…" verbatim, so a lede
-           that opens the same way reads as a stutter — which is what the
-           old "A complete forecourt:" opening was quietly preventing. Same
-           widened scope, kept in front. -->
-      <p class="lede" style="max-width:none">A complete forecourt, and the bulk storage beyond it: dispensing, measurement, monitoring and the management systems that tie them together.</p>
+      <!-- States the scope and stops. The hero intro directly above already
+           says "Dispensing, measurement, monitoring and the systems that tie
+           them together", and every earlier draft of this line repeated that
+           list somewhere in it — moving the echo from the front of the
+           sentence to the back does not stop it being an echo. Worse, the
+           list is what the five cards below are for, so a lede carrying it
+           says nothing that is not on screen twice already.
+           No count in the wording either: "five product lines" would have to
+           be revisited the day a sixth is added. -->
+      <p class="lede" style="max-width:none">Everything between the tank and the nozzle — the forecourt equipment, and the measurement and monitoring behind it.</p>
     </div>
     <div class="pgrid">
 
@@ -333,7 +337,7 @@ window.addEventListener('pageshow',function(){var i=document.querySelector('.sea
 /* reveal */
 (function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
 </script>
-<script src="translate.js?v=202608251800"></script>
+<script src="translate.js?v=202608251900"></script>
 <script src="../assets/nav.js?v=202608241700" defer></script>
 </body>
 </html>
