@@ -33,20 +33,29 @@
    .flat cancels the t1/t2/t3 tier sizes from site.css. Those tiers rank a
    brand by how much business the group does with it, which is the wrong
    signal once a row means an industry: the first band would simply look
-   like the most important one. One --logo-h for every mark instead.
+   like the most important one.
 
-   Every mark draws at that one height, flat. The .mid and .sq shape lifts
-   from site.css (which raise a square mark to even out optical AREA) are
-   overridden back to the base height here: the brief was a single
-   standardised size across the wall, so height parity wins over area
-   parity, and a square mark simply carries less width than a wordmark.
+   RING-MATCHED, like the Citra principals wall. The Fuelling brands share
+   the Gilbarco swirl ring, but that ring is bundled at a different scale in
+   each source file — so one flat height leaves six different ring sizes,
+   which is the "same logo, different size" the brief was about. Instead each
+   Fuelling .w carries its own inline --logo-h (values measured on Citra) that
+   lands every ring at one diameter: Orpak/Gasboy/Red Jacket/ANGI are cropped
+   tight (ring = full height, 44px); DOMS carries padding (58px) and Gilbarco
+   is a two-line lockup (56px); the non-ring marks (Invenco, ITL, TCS) are
+   sized by eye to sit with the group. The .mid/.sq shape lifts from site.css
+   are overridden so --logo-h reads straight through. Every other band has no
+   ring and keeps the flat 46px base. --logo-scale shrinks the whole wall as
+   one on phones so the rings stay matched at every width. Re-measure a value
+   here only if its logo file is replaced.
 
    Each band is label + .tier, so the label sits above its own row rather
    than becoming a flex item inside it. */
 .wall.flat .band{width:100%}
+.wall.flat{--logo-scale:1}
 .wall.flat .w{--logo-h:46px;--logo-max:280px;max-width:var(--logo-max)}
-.wall.flat .w.mid img,.wall.flat .w.sq img{height:var(--logo-h)}
-@media(max-width:640px){.wall.flat .w{--logo-h:34px;--logo-max:185px}}
+.wall.flat .w img,.wall.flat .w.mid img,.wall.flat .w.sq img{height:calc(var(--logo-h) * var(--logo-scale))}
+@media(max-width:640px){.wall.flat{--logo-scale:.74}.wall.flat .w{--logo-max:185px}}
 </style>
 </head>
 <body>
@@ -247,15 +256,15 @@
       <div class="band">
         <span class="bandlab">Fuelling equipment &amp; energy</span>
         <div class="tier">
-          <div class="w mid"><img src="photos/partners/gilbarco.svg" alt="Gilbarco Veeder-Root" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" loading="lazy" /><span style="display:none">Gilbarco Veeder-Root</span></div>
-          <div class="w"><img src="photos/partners/redjacket.webp" alt="Red Jacket" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" loading="lazy" /><span style="display:none">Red Jacket</span></div>
-          <div class="w"><img src="photos/partners/gasboy.png" alt="Gasboy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" loading="lazy" /><span style="display:none">Gasboy</span></div>
-          <div class="w mid"><img src="photos/partners/angi.png" alt="ANGI" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" loading="lazy" /><span style="display:none">ANGI</span></div>
-          <div class="w mid"><img src="photos/partners/doms.png" alt="DOMS" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" loading="lazy" /><span style="display:none">DOMS</span></div>
-          <div class="w mid"><img src="photos/partners/orpak.png" alt="Orpak" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" loading="lazy" /><span style="display:none">Orpak</span></div>
-          <div class="w mid"><img src="photos/partners/invenco.svg" alt="Invenco" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" loading="lazy" /><span style="display:none">Invenco</span></div>
-          <div class="w mid"><img src="photos/partners/itl.png" alt="ITL" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" loading="lazy" /><span style="display:none">ITL</span></div>
-          <div class="w sq"><img src="photos/partners/tcs.png" alt="TCS" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" loading="lazy" /><span style="display:none">TCS</span></div>
+          <div class="w mid" style="--logo-h:56px"><img src="photos/partners/gilbarco.svg" alt="Gilbarco Veeder-Root" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" loading="lazy" /><span style="display:none">Gilbarco Veeder-Root</span></div>
+          <div class="w" style="--logo-h:44px"><img src="photos/partners/redjacket.webp" alt="Red Jacket" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" loading="lazy" /><span style="display:none">Red Jacket</span></div>
+          <div class="w" style="--logo-h:44px"><img src="photos/partners/gasboy.png" alt="Gasboy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" loading="lazy" /><span style="display:none">Gasboy</span></div>
+          <div class="w mid" style="--logo-h:44px"><img src="photos/partners/angi.png" alt="ANGI" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" loading="lazy" /><span style="display:none">ANGI</span></div>
+          <div class="w mid" style="--logo-h:58px"><img src="photos/partners/doms.png" alt="DOMS" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" loading="lazy" /><span style="display:none">DOMS</span></div>
+          <div class="w mid" style="--logo-h:44px"><img src="photos/partners/orpak.png" alt="Orpak" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" loading="lazy" /><span style="display:none">Orpak</span></div>
+          <div class="w mid" style="--logo-h:46px"><img src="photos/partners/invenco.svg" alt="Invenco" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" loading="lazy" /><span style="display:none">Invenco</span></div>
+          <div class="w mid" style="--logo-h:52px"><img src="photos/partners/itl.png" alt="ITL" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" loading="lazy" /><span style="display:none">ITL</span></div>
+          <div class="w sq" style="--logo-h:60px"><img src="photos/partners/tcs.png" alt="TCS" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" loading="lazy" /><span style="display:none">TCS</span></div>
         </div>
       </div>
       <div class="band">
