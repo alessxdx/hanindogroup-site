@@ -120,7 +120,7 @@
     "partnership started": "的起点",
     "Hanindo (Shanghai) International Co., Ltd. is the first of the Group’s three CUSTOM companies and the foundation for its regional CUSTOM business. Following the Group’s partnership with CUSTOM in 2005, the Shanghai office was established in 2007 as Hanindo’s first operation outside Indonesia, with Shenzhen following in 2009 to support the company’s growth in China.": "汉琳德（上海）系统集成有限公司是集团三家 CUSTOM 公司中成立最早的一家，也是集团区域 CUSTOM 业务的基石。继集团于 2005 年与 CUSTOM 建立合作之后，上海办公室于 2007 年成立，成为汉琳德在印度尼西亚以外的首个经营机构；深圳办公室于 2009 年设立，以支持公司在中国的发展。",
     "Establishing a registered company in China, rather than operating through an agent, was a deliberate choice to maintain direct control over customer support, spare parts and technical service. This approach remains central to Hanindo’s commitment to providing reliable long-term support for every system delivered.": "在中国注册成立实体公司，而非通过代理商开展业务，是为了对客户支持、备件与技术服务保持直接掌控而作出的审慎选择。这一做法始终是汉琳德的核心，让每一套交付的系统都能获得可靠的长期支持。",
-    "The Shanghai office": "上海办公室",
+    "Our Shanghai office": "我们的上海办公室",
 
     "Our journey": "我们的历程",
     "CUSTOM Hanindo Growth": "CUSTOM 与 Hanindo 的发展",
