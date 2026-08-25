@@ -320,6 +320,9 @@
     ": Monday to Friday, 08.00 – 17.00 WIB": ": Senin – Jumat, 08.00 – 17.00 WIB",
 
     /* ---- catalogue pages: shared furniture ---- */
+    /* The back link that replaced the category tab bar on each catalogue
+       page — one button per page, all the same text. */
+    "Back to our other products": "Kembali ke produk kami lainnya",
     "The range": "Rangkaian produk",
     "All models": "Semua model",
     "Workshop": "Bengkel",
