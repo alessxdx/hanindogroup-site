@@ -66,13 +66,15 @@
    Forecourt Controllers, which carries three brands. Each opens the maker's
    site in a new tab. .brandbtn.soon is the inert placeholder (Orpak, whose
    URL is still to come). */
-.brandrow{margin-top:auto;display:flex;flex-wrap:wrap;gap:.5rem;padding-top:1rem}
+.brandnote{margin-top:auto;padding-top:1rem;font-size:.72rem;font-weight:600;color:var(--muted);margin-bottom:.45rem}
+.brandrow{display:flex;flex-wrap:wrap;gap:.5rem}
 .brandbtn{display:inline-flex;align-items:center;gap:.35rem;padding:.5rem .8rem;border:1px solid var(--line);border-radius:var(--r);font-size:.8rem;font-weight:700;color:var(--blue-800);background:var(--white);transition:border-color .18s,color .18s}
 .brandbtn:hover{border-color:var(--brand);color:var(--brand-600)}
 .brandbtn svg{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:2;flex:none}
 .brandbtn.soon{color:var(--muted);border-style:dashed}
 @media(max-width:640px){
-  .brandrow{gap:.35rem;padding-top:.7rem}
+  .brandnote{padding-top:.7rem;font-size:.66rem;margin-bottom:.3rem}
+  .brandrow{gap:.35rem}
   .brandbtn{padding:.4rem .6rem;font-size:.72rem}
 }
 </style>
@@ -118,11 +120,11 @@
           <li><a href="products-services.html#forecourt">Forecourt Controllers</a>
             <ul class="subdrop">
               <li><a href="https://integration.co.nz/" target="_blank" rel="noopener">ITL</a></li>
-              <li><a href="https://www.gilbarco.com/sea/products/forecourt-automation" target="_blank" rel="noopener">DOMS</a></li>
-              <li><a href="products-services.html#forecourt">Orpak</a></li>
+              <li><a href="https://www.gilbarco.com/sea/products/forecourt-automation" target="_blank" rel="noopener">Gilbarco DOMS</a></li>
+              <li><a href="products-services.html#forecourt">Gilbarco ORPAK</a></li>
             </ul>
           </li>
-          <li><a href="https://www.tcsmeters.com/" target="_blank" rel="noopener">Flow Meters <span style="opacity:.58;font-weight:400">(TCS)</span></a></li>
+          <li><a href="https://www.tcsmeters.com/" target="_blank" rel="noopener">Flow Meters <span style="opacity:.58;font-weight:400">(Total Control Systems)</span></a></li>
           <li><a href="https://www.gilbarco.com/sea/products/automatic-tank-gauging" target="_blank" rel="noopener">Automatic Tank Gauging <span style="opacity:.58;font-weight:400">(Gilbarco Veeder-Root)</span></a></li>
           <li><a href="https://www.gilbarco.com/sea/products/submersible-turbine-pumps" target="_blank" rel="noopener">Submersible Turbine Pumps <span style="opacity:.58;font-weight:400">(Gilbarco Red Jacket)</span></a></li>
         </ul>
@@ -179,8 +181,9 @@
         <div class="pbody">
           <h4>Pumps &amp; Dispensers</h4>
           <p>Retail fuel dispensers from Gilbarco Veeder-Root, for forecourts of every size.</p>
+          <div class="brandnote">Brand we supply:</div>
           <div class="brandrow">
-            <a class="brandbtn" href="https://www.gilbarco.com/sea/products/pumps-and-dispensers" target="_blank" rel="noopener">Gilbarco Veeder-Root <svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+            <a class="brandbtn" href="https://www.gilbarco.com/sea/products/pumps-and-dispensers" target="_blank" rel="noopener">Gilbarco Veeder-Root <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           </div>
         </div>
       </div>
@@ -193,10 +196,11 @@
         <div class="pbody">
           <h4>Forecourt Controllers</h4>
           <p>Forecourt controllers linking the dispensers and tank gauges to the point of sale, from three brands.</p>
+          <div class="brandnote">Brands we supply:</div>
           <div class="brandrow">
-            <a class="brandbtn" href="https://integration.co.nz/" target="_blank" rel="noopener">ITL <svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
-            <a class="brandbtn" href="https://www.gilbarco.com/sea/products/forecourt-automation" target="_blank" rel="noopener">DOMS <svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
-            <span class="brandbtn soon" title="Link coming soon">Orpak</span>
+            <a class="brandbtn" href="https://integration.co.nz/" target="_blank" rel="noopener">ITL <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="brandbtn" href="https://www.gilbarco.com/sea/products/forecourt-automation" target="_blank" rel="noopener">Gilbarco DOMS <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <span class="brandbtn soon" title="Link coming soon">Gilbarco ORPAK</span>
           </div>
         </div>
       </div>
@@ -209,8 +213,9 @@
         <div class="pbody">
           <h4>Flow Meters</h4>
           <p>Piston and rotary positive displacement metering for accurate custody transfer.</p>
+          <div class="brandnote">Brand we supply:</div>
           <div class="brandrow">
-            <a class="brandbtn" href="https://www.tcsmeters.com/" target="_blank" rel="noopener">TCS <svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+            <a class="brandbtn" href="https://www.tcsmeters.com/" target="_blank" rel="noopener">Total Control Systems <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           </div>
         </div>
       </div>
@@ -223,8 +228,9 @@
         <div class="pbody">
           <h4>Automatic Tank Gauging</h4>
           <p>Veeder-Root consoles and magnetostrictive probes, for continuous wet-stock monitoring and environmental compliance.</p>
+          <div class="brandnote">Brand we supply:</div>
           <div class="brandrow">
-            <a class="brandbtn" href="https://www.gilbarco.com/sea/products/automatic-tank-gauging" target="_blank" rel="noopener">Gilbarco Veeder-Root <svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+            <a class="brandbtn" href="https://www.gilbarco.com/sea/products/automatic-tank-gauging" target="_blank" rel="noopener">Gilbarco Veeder-Root <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           </div>
         </div>
       </div>
@@ -237,8 +243,9 @@
         <div class="pbody">
           <h4>Submersible Turbine Pumps</h4>
           <p>Red Jacket submersible pumps, with electronic monitoring and line leak detection.</p>
+          <div class="brandnote">Brand we supply:</div>
           <div class="brandrow">
-            <a class="brandbtn" href="https://www.gilbarco.com/sea/products/submersible-turbine-pumps" target="_blank" rel="noopener">Gilbarco Red Jacket <svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+            <a class="brandbtn" href="https://www.gilbarco.com/sea/products/submersible-turbine-pumps" target="_blank" rel="noopener">Gilbarco Red Jacket <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           </div>
         </div>
       </div>
@@ -310,7 +317,7 @@ window.addEventListener('pageshow',function(){var i=document.querySelector('.sea
 /* reveal */
 (function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
 </script>
-<script src="translate.js?v=202608251700"></script>
+<script src="translate.js?v=202608251800"></script>
 <script src="../assets/nav.js?v=202608241700" defer></script>
 </body>
 </html>

@@ -175,6 +175,8 @@
 
     /* ---- products & services ---- */
     "Our product range": "Rangkaian produk kami",
+    "Brand we supply:": "Merek yang kami sediakan:",
+    "Brands we supply:": "Merek yang kami sediakan:",
     "Dispensing, measurement, monitoring and the systems that tie them together.": "Dispensing, pengukuran, pemantauan, dan sistem yang menyatukan semuanya.",
     "A complete forecourt, and the bulk storage beyond it: dispensing, measurement, monitoring and the management systems that tie them together.": "Forecourt yang lengkap, dan penyimpanan curah di luarnya: dispensing, pengukuran, pemantauan, dan sistem manajemen yang menyatukan semuanya.",
     "Retail fuel dispensers from Gilbarco Veeder-Root, for forecourts of every size.": "Dispenser BBM ritel dari Gilbarco Veeder-Root, untuk forecourt segala ukuran.",
