@@ -178,15 +178,10 @@
     "Dispensing, measurement, monitoring and the systems that tie them together.": "Dispensing, pengukuran, pemantauan, dan sistem yang menyatukan semuanya.",
     "A complete forecourt, and the bulk storage beyond it: dispensing, measurement, monitoring and the management systems that tie them together.": "Forecourt yang lengkap, dan penyimpanan curah di luarnya: dispensing, pengukuran, pemantauan, dan sistem manajemen yang menyatukan semuanya.",
     "Retail fuel dispensers from Gilbarco Veeder-Root, for forecourts of every size.": "Dispenser BBM ritel dari Gilbarco Veeder-Root, untuk forecourt segala ukuran.",
-    "View models & nozzle variants": "Lihat model & varian nozzle",
-    "ITL Enabler controllers, linking the dispensers and tank gauges to the point of sale through one open API.": "Controller ITL Enabler, menghubungkan dispenser dan tank gauge ke point of sale melalui satu API terbuka.",
-    "View controllers & modules": "Lihat controller & modul",
+    "Forecourt controllers linking the dispensers and tank gauges to the point of sale, from three brands.": "Controller forecourt yang menghubungkan dispenser dan tank gauge ke point of sale, dari tiga merek.",
     "Piston and rotary positive displacement metering for accurate custody transfer.": "Pengukuran positive displacement tipe piston dan rotary untuk custody transfer yang akurat.",
-    "View meters & registers": "Lihat meter & register",
     "Veeder-Root consoles and magnetostrictive probes, for continuous wet-stock monitoring and environmental compliance.": "Konsol Veeder-Root dan probe magnetostrictive, untuk pemantauan wet stock berkelanjutan dan kepatuhan lingkungan.",
-    "View consoles & probes": "Lihat konsol & probe",
     "Red Jacket submersible pumps, with electronic monitoring and line leak detection.": "Pompa submersible Red Jacket, dengan pemantauan elektronik dan deteksi kebocoran jalur.",
-    "View pumps & controls": "Lihat pompa & kontrol",
 
     /* ---- projects ---- */
     "Stations built,": "SPBU yang dibangun,",

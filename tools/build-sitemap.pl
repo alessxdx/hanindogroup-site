@@ -59,6 +59,13 @@ my %SKIP = (
   'search/index.html'                        => 1,
   '404.html'                                 => 1,
   'fire-fighting/hanindo-citra-website.html' => 1,
+  # Citra product detail pages are now redirect stubs to the manufacturers'
+  # own sites; keep them out of the sitemap.
+  'citra/dispensers.html'                    => 1,
+  'citra/forecourt-controllers.html'         => 1,
+  'citra/flow-meters.html'                   => 1,
+  'citra/tank-gauging.html'                  => 1,
+  'citra/submersible-pumps.html'             => 1,
 );
 
 # ---------------------------------------------------------------------
