@@ -150,7 +150,7 @@
     "To be Indonesia's trusted partner for petroleum equipment, delivering reliable solutions and dependable service throughout every stage of a fuel station's lifecycle.": "Menjadi mitra terpercaya Indonesia untuk peralatan perminyakan, menghadirkan solusi yang andal dan layanan yang dapat diandalkan di setiap tahap siklus hidup sebuah SPBU.",
     "02 / Mission": "02 / Misi",
     "Mission": "Misi",
-    "Deliver efficient, optimal and targeted services while upholding professional standards and work commitment.": "Memberikan layanan yang efisien, optimal, dan tepat sasaran dengan menjunjung standar profesional serta komitmen kerja.",
+    "Deliver efficient service that does what it is meant to do, to professional standards and with the commitment to see it through.": "Memberikan layanan yang efisien, optimal, dan tepat sasaran dengan menjunjung standar profesional serta komitmen kerja.",
     "Continuously invest in innovation and the development of our people to raise capability.": "Terus berinvestasi dalam inovasi dan pengembangan sumber daya manusia untuk meningkatkan kapabilitas.",
     "Implement management systems and technologies that improve efficiency, quality, and occupational health & safety.": "Menerapkan sistem manajemen dan teknologi yang meningkatkan efisiensi, mutu, serta keselamatan dan kesehatan kerja.",
     "Why choose us": "Mengapa memilih kami",
