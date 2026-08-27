@@ -143,6 +143,13 @@ GO-LIVE CHECKLIST (separate from redirects)
     uses absolute paths (/assets/..., /photos/...) because Apache
     serves it at whatever URL the visitor asked for — do not change
     them to relative paths.
+
+    REGENERATING IT NO LONGER MEANS OVERWRITING IT. Since 2026-08-25
+    the file also carries compression, caching and a hotlink-protection
+    block, none of which come from this document. Regenerate the
+    redirect section only, and leave the rest of the file standing —
+    the hotlink block in particular is the only thing stopping other
+    sites embedding our photographs, and it would go silently.
 [ ] Check robots.txt reaches https://hanindogroup.com/robots.txt and
     sitemap.xml reaches https://hanindogroup.com/sitemap.xml, then
     submit the sitemap in Google Search Console.

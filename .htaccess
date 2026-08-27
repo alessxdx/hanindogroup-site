@@ -72,6 +72,49 @@ Redirect 301 /about                                                 /about/
 
 
 # ---------------------------------------------------------------------
+# Hotlink protection.
+#
+# Stops another site embedding our photographs in its own pages: the
+# image loads on their page, but the file and the bandwidth are ours.
+# A request for an image is refused unless it was sent from this site.
+#
+# NOT GENERATED FROM REDIRECTS.TXT. The redirect block above is; this is
+# not. If that block is ever regenerated, this section has to survive the
+# regeneration -- REDIRECTS.txt carries the same warning.
+#
+# WHAT IT DOES NOT DO, because the two get confused: it does not stop
+# anyone downloading an image. Someone who opens the file's URL directly
+# still gets it, deliberately -- see the empty-referer rule below. This
+# protects bandwidth and stops our photographs decorating someone else's
+# site; it is not a copy guard. Neither is the context-menu script in
+# assets/protect.js, whose header says the same thing at length.
+#
+# The empty-referer allowance is the important line and must stay. A
+# browser sends no Referer when someone types the URL, and neither does:
+#
+#   - WhatsApp, Facebook, LinkedIn and X fetching the og:image for a
+#     link preview. Block those and every shared link loses its picture.
+#   - Google and Bing image crawlers.
+#   - Visitors on privacy settings or corporate proxies that strip the
+#     header on ordinary page loads -- who would otherwise see a page of
+#     broken images.
+#
+# Any host under hanindogroup.com passes, on either scheme and with or
+# without www, so a staging subdomain keeps working. To let a specific
+# partner embed our images, add their domain as another RewriteCond in
+# the same form, above the RewriteRule.
+#
+# Wrapped in IfModule like the blocks below: without mod_rewrite the
+# directives are skipped rather than throwing a 500.
+# ---------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_REFERER} !^$
+  RewriteCond %{HTTP_REFERER} !^https?://([a-z0-9-]+\.)*hanindogroup\.com(:[0-9]+)?(/|$) [NC]
+  RewriteRule \.(jpe?g|png|gif|webp|svg|ico|bmp|avif)$ - [F,NC]
+</IfModule>
+
+# ---------------------------------------------------------------------
 # Compression.
 #
 # The stylesheet alone is 111KB of text and was going over the wire
