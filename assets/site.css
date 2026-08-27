@@ -66,7 +66,19 @@ html{scroll-behavior:smooth}
    container, so position:sticky keeps working. */
 body{font-family:var(--font);color:var(--ink);background:var(--white);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:clip}
 a{color:inherit;text-decoration:none}
+/* The drag and long-press half of the right-click deterrent; the context
+   menu itself is taken in assets/protect.js, which also carries the note
+   on what this does and does not actually prevent. Read that before
+   trusting either of them.
+
+   -webkit-user-drag stops a picture being dragged out of the page and
+   onto the desktop, and -webkit-touch-callout stops the iOS long-press
+   sheet with Save to Photos on it. Both are prefixed and non-standard,
+   so Firefox honours neither -- protect.js cancels dragstart to cover
+   it. user-select on an image is belt and braces: an image inside a
+   selection can be copied with the text around it. */
 img{max-width:100%;display:block}
+img,svg{-webkit-user-drag:none;-webkit-touch-callout:none;user-select:none;-webkit-user-select:none}
 .wrap{max-width:var(--maxw);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
 .eyebrow{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--sky);display:inline-block;margin-bottom:1rem}
 .grad-text{color:var(--brand)}
