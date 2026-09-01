@@ -1,0 +1,10 @@
+Product brochures — one PDF per model, served straight from here.
+
+Filenames are listed in /CATALOGUES-NEEDED.txt at the repository root.
+Each one is the product's photo filename with a .pdf extension, so
+hpa-b35.png and hpa-b35.pdf are the same machine.
+
+Empty for now. Dropping a file in does not by itself put a button on the
+page: the card needs one line of HTML pointing at it, because a static
+site cannot test whether a file exists and a button that 404s is worse
+than no button.

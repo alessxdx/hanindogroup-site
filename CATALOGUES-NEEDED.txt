@@ -1,0 +1,132 @@
+HANINDO AUTOMOTIVE — PRODUCT BROCHURES NEEDED
+==================================================
+One PDF per model. The card for a model shows a "Download brochure"
+button once its file is in; until then the card carries no button at
+all, so nobody ever clicks through to a missing file.
+
+Drop the PDF into /catalogues/ using the EXACT filename below and tell
+me — the button is one line of HTML per card and I will add it. There is
+no automatic pickup: a static site cannot check whether a file exists,
+which is exactly why a card without a brochure shows nothing rather than
+a dead link.
+
+FILENAMES are the product's photo filename with a .pdf extension. That is
+deliberate — hpa-b35.png and hpa-b35.pdf are the same machine, so there
+is only ever one slug per model to remember, and a typo in either shows
+up immediately next to its twin.
+
+STATUS MARKERS, same as PHOTOS-NEEDED.txt:
+
+  [DONE] / [COMPLETE]   the brochure is in and the button is live
+  [NEEDED]              nothing there yet
+
+BEFORE SENDING ANYTHING: confirm no brochure carries pricing. These
+pages are public and indexed by Google. A PDF with prices in it is a
+public price list, and it makes "Request a quotation" pointless.
+
+Keep files under ~5 MB where you can. They are photo-heavy documents and
+the button shows the size next to it, so a 30 MB file advertises itself
+as a bad idea to anyone on mobile data.
+
+
+--------------------------------------------------
+TYRE SERVICE  (/automotive/tyre-service/)
+--------------------------------------------------
+HPA-Faip — twelve models
+hpa-b35.pdf           B35 Digital Wheel Balancer           [NEEDED]
+hpa-b55.pdf           B55 Digital Wheel Balancer           [NEEDED]
+hpa-b60.pdf           B60 TV Monitor Wheel Balancer        [NEEDED]
+hpa-b75.pdf           B75 Digital Wheel Balancer (Truck)   [NEEDED]
+hpa-b225.pdf          B225 Digital Wheel Balancer          [NEEDED]
+hpa-b325.pdf          B325 TV Monitor Wheel Balancer       [NEEDED]
+hpa-m31.pdf           M31 Semi-Automatic Tyre Changer      [NEEDED]
+hpa-m54.pdf           M54 Automatic Tyre Changer           [NEEDED]
+hpa-m422.pdf          M422 Automatic Tyre Changer          [NEEDED]
+hpa-m424.pdf          M424 Automatic Tyre Changer          [NEEDED]
+hpa-c880-std.pdf      C880 STD 3D Wheel Alignment          [NEEDED]
+hpa-c880-inext.pdf    C880 i-Next 3D Wheel Alignment       [NEEDED]
+
+WELDANN — five models
+weldann-si003.pdf     SI003 Semi-Automatic Tyre Changer    [NEEDED]
+weldann-si118.pdf     SI118 Automatic Tilt-Back Changer    [NEEDED]
+weldann-s2023.pdf     S2023 Semi-Automatic Wheel Balancer  [NEEDED]
+weldann-s2228.pdf     S2228 Automatic Balancer, LCD        [NEEDED]
+weldann-s3015.pdf     S3015 3D Wheel Alignment System      [NEEDED]
+
+HAKIRO — one model
+hakiro-ja-c01.pdf     JA-C01 Semi-Automatic Tyre Changer   [NEEDED]
+
+
+--------------------------------------------------
+SERVICE EQUIPMENT  (/automotive/service/)
+--------------------------------------------------
+weldann-lcs-9800.pdf  LCS-9800 Oil Flushing Machine        [NEEDED]
+weldann-wcs-9800.pdf  WCS-9800 Radiator Cooling System     [NEEDED]
+weldann-atf-9800.pdf  ATF-9800 Transmission Oil Exchanger  [NEEDED]
+weldann-am-552.pdf    AM-552 Brake Lathe Bench Machine     [NEEDED]
+weldann-hho-300.pdf   HHO-300 Carbon Cleaning, motorcycle  [NEEDED]
+weldann-hho-700.pdf   HHO-700 Carbon Cleaning, automotive  [NEEDED]
+weldann-ac-900.pdf    AC-900 A/C Recycling Service Station [NEEDED]
+weldann-wdn-70.pdf    WDN-70 Nitrogen Generator            [NEEDED]
+weldann-gx-900.pdf    GX-900 Catalytic Converter Cleaner   [NEEDED]
+thinktool-t77.pdf     T77 Diagnostic Scan Tool             [NEEDED]
+
+
+--------------------------------------------------
+TYRE INFLATION  (/automotive/airtec/)
+--------------------------------------------------
+Airtec publish a brand catalogue covering the whole 89 series. If you
+would rather send that one document than eight, say so — the eight cards
+can all point at the same file, and the list below collapses to one line.
+
+airtec-89mxa.pdf      89MXA Compact Inflator               [NEEDED]
+airtec-89mda.pdf      89MDA General Purpose Inflator       [NEEDED]
+airtec-89xda-xdd.pdf  89XDA / XDD Heavy Duty Inflator      [NEEDED]
+airtec-89xdb-xde.pdf  89XDB / XDE High Flow Inflator       [NEEDED]
+airtec-89xhb.pdf      89XHB High Pressure Inflator         [NEEDED]
+airtec-89xtc.pdf      89XTC Temperature Compensating       [NEEDED]
+airtec-89bep-bed.pdf  89BEP / BED Freestanding, round      [NEEDED]
+airtec-89fep-fed.pdf  89FEP / FED Freestanding, square     [NEEDED]
+
+
+--------------------------------------------------
+LIFTS & HANDLING  (/automotive/lifts/)
+--------------------------------------------------
+ATOM — five models
+atom-dl-35yd.pdf      DL-3.5YD Mid-Rise Scissor Lift       [NEEDED]
+atom-dl-35dc.pdf      DL-3.5DC In-Ground Mini Scissor      [NEEDED]
+atom-dl-35cb.pdf      DL-3.5CB On-Ground Mini Scissor      [NEEDED]
+atom-dl-40lm.pdf      DL-4.0LM 2-Post Car Lift             [NEEDED]
+atom-gc-40pro.pdf     GC-4.0PRO 2-Post Car Lift            [NEEDED]
+
+WELDANN — three models
+weldann-dl-40cbd.pdf  DL-4.0CBD Ultra-Thin Scissor Lift    [NEEDED]
+weldann-dl-40ssz.pdf  DL-4.0SSZ 4-Post Car Lift            [NEEDED]
+weldann-dl-40yyj.pdf  DL-4.0 YYJ Shaking Machine           [NEEDED]
+
+
+--------------------------------------------------
+WELDING  (/automotive/welding/)
+--------------------------------------------------
+weldann-mma-200a.pdf      MMA-200A portable                [NEEDED]
+weldann-mma-400f.pdf      MMA-400F                         [NEEDED]
+weldann-mma-700f.pdf      MMA-700F                         [NEEDED]
+weldann-mig-mma-350f.pdf  MIG/MMA-350F                     [NEEDED]
+weldann-mig-mma-500f.pdf  MIG/MMA-500F                     [NEEDED]
+
+The 400F and 700F share a cabinet and their product photo is deliberately
+the same shot, but they are rated differently — so they want two
+brochures, not one file referenced twice.
+
+
+--------------------------------------------------
+FLUID HANDLING  (/automotive/raasm/)
+--------------------------------------------------
+This page lists RAASM ranges rather than individual models, so it has no
+product cards to hang a per-model button on. If you want a brochure here
+it would be one RAASM catalogue for the page as a whole — tell me and I
+will put a single button at the top.
+
+
+==================================================
+49 brochures across five pages. None are in yet.
