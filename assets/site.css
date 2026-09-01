@@ -671,8 +671,15 @@ a.brand:not([href]){cursor:default}
 /* the company that owns the column, under its industry heading */
 .mcol .mco{display:block;font-size:.64rem;font-weight:600;letter-spacing:.06em;
   text-transform:uppercase;color:var(--muted);margin:-.05rem 0 .4rem}
+/* --muted rather than the old #4a6076: the same grey the verticals block
+   on About uses for its descriptions, and the one already sitting under
+   these very links in the .mco and .mnote lines. The old value leaned
+   blue enough to compete with the .h4 above it and with the brand marks
+   on the page behind the open panel. Both panels — Our Businesses and
+   Products & Services — read from this one rule. The drawer sets its own
+   colour further down; this is the desktop panel only. */
 .mcol a{display:block;padding:.5rem 0 .1rem;font-size:.84rem;font-weight:500;
-  color:#4a6076;line-height:1.35}
+  color:var(--muted);line-height:1.35}
 .mcol a:hover{color:var(--brand-600)}
 /* market or parentage, under the entry it qualifies */
 .mcol a .mnote{display:block;font-size:.64rem;font-weight:600;letter-spacing:.06em;
