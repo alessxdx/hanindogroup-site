@@ -50,6 +50,32 @@
     "(Indonesia)": "(Indonesia)",
     "(Singapore)": "(Singapura)",
     "(China)": "(Tiongkok)",
+    /* The nav tab is "Our Businesses", not "Our Companies": the menu lists
+       Fire Fighting, which is a department of PT. Hanindo Citra and not a
+       company of its own. "Our Companies" stays above — the footer heading
+       still uses it, and there it really is a list of companies. */
+    "Our Businesses": "Bidang Usaha Kami",
+    "A division of PT. Hanindo Citra": "Divisi dari PT. Hanindo Citra",
+    "By market": "Menurut pasar",
+    /* the Products & Services mega menu. Every category below is worded
+       exactly as its own company site words it — citra/translate.js and
+       automotive/translate.js — so a reader meets the same Indonesian on
+       the group menu and on the page it opens. */
+    "PT. Hanindo Citra — Fire Fighting Department": "PT. Hanindo Citra — Departemen Pemadam Kebakaran",
+    "Pumps & Dispensers": "Pompa & Dispenser",
+    "Forecourt Controllers": "Forecourt Controller",
+    "Flow Meters": "Flow Meter",
+    "Automatic Tank Gauging": "Automatic Tank Gauging",
+    "Submersible Turbine Pumps": "Pompa Turbin Submersible",
+    "All Oil & Gas products →": "Semua produk Minyak & Gas →",
+    "Fire Protection, Pumps & Hydrants": "Proteksi Kebakaran, Pompa & Hidran",
+    "Projects": "Proyek",
+    "Tyre Service": "Layanan Ban",
+    "Tyre Inflation": "Pengisian Angin Ban",
+    "Lifts & Handling": "Lift & Penanganan",
+    "Service Equipment": "Peralatan Servis",
+    "Fluid Handling": "Penanganan Fluida",
+    "All Automotive products →": "Semua produk Otomotif →",
     "Products & Services": "Produk & Layanan",
     "Partners": "Mitra",
     "Career": "Karier",

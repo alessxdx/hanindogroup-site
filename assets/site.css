@@ -623,6 +623,72 @@ a.brand:not([href]){cursor:default}
   .drop-co .dgrp{padding:.7rem var(--pad) .25rem calc(var(--pad) + 1rem);white-space:normal}
   .drop-co .subdrop a{padding-left:calc(var(--pad) + 2.1rem)}
 }
+/* ---------- MEGA MENU ----------
+   The group header's two wide menus: Our Businesses and Products &
+   Services. Both hang off a <li class="has-drop has-mega"> and both
+   panels carry class="drop mega" — BOTH classes, deliberately.
+
+   .drop is what everything else is already built around: the hover
+   reveal above (.tabs>li.has-drop:hover .drop), the phone flattening
+   below 861px, and nav.js, which finds a sub-menu by looking for a
+   child with that class (child(li,'drop')) and gives it the drawer's
+   chevron, its max-height animation and its aria wiring. Carrying the
+   class means the mega inherits all of that and the phone menu needs
+   no script change whatsoever. .mega then only re-dresses the panel
+   for the desktop: full width instead of a 252px column, and light
+   instead of navy, because four columns of navy across the whole
+   window reads as a second page rather than a menu.
+
+   The li goes position:static so the panel measures against .navbar
+   rather than against its own tab, which is what lets it span. */
+.tabs>li.has-mega{position:static}
+.mega{left:0;right:0;min-width:0;background:var(--white);
+  border-top:1px solid var(--line);border-bottom:3px solid var(--brand);
+  box-shadow:0 26px 50px rgba(10,40,80,.16)}
+/* minmax(0,1fr), not 1fr: a bare 1fr floors at min-content, and the
+   longest company name in the Printer & POS column then stole width
+   from the other three. Zero floor lets the four columns stay equal
+   and the long names wrap instead. */
+.mega .minner{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2.2rem;
+  max-width:var(--maxw,1200px);margin:0 auto;padding:1.7rem var(--pad) 2rem}
+.mcol h4{margin:0 0 .15rem;padding-bottom:.55rem;font-size:.8rem;font-weight:700;
+  color:var(--blue-800);border-bottom:1px solid var(--line)}
+/* the company that owns the column, under its industry heading */
+.mcol .mco{display:block;font-size:.64rem;font-weight:600;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--muted);margin:-.05rem 0 .4rem}
+.mcol a{display:block;padding:.5rem 0 .1rem;font-size:.84rem;font-weight:500;
+  color:#4a6076;line-height:1.35}
+.mcol a:hover{color:var(--brand-600)}
+/* market or parentage, under the entry it qualifies */
+.mcol a .mnote{display:block;font-size:.64rem;font-weight:600;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--muted);margin-top:.05rem}
+/* only on links that leave for another company's site */
+.mcol a .mext{width:11px;height:11px;margin-left:.3rem;stroke:currentColor;stroke-width:2;
+  fill:none;stroke-linecap:round;stroke-linejoin:round;opacity:.55;vertical-align:0}
+.mcol .mall{margin-top:.45rem;font-size:.76rem;font-weight:700;color:var(--brand-600)}
+.mcol .mall:hover{text-decoration:underline}
+/* the company whose own site this is, on the company headers */
+.mcol a.mcur{color:var(--blue-800);font-weight:700;cursor:default}
+@media(max-width:860px){
+  /* Inside the drawer the panel is a plain stacked group again: the grid
+     collapses, the white ground goes back to the drawer's navy, and each
+     industry column becomes a labelled section of the list. The hiding
+     and the animation are already handled by .drop above. */
+  .mega{background:rgba(0,0,0,.2);border-top:0;border-bottom:0;box-shadow:none}
+  .mega .minner{display:block;max-width:none;margin:0;padding:0;gap:0}
+  .mcol{padding-bottom:.35rem}
+  .mcol+.mcol{border-top:1px solid rgba(255,255,255,.08)}
+  .mcol h4{padding:.75rem var(--pad) .1rem calc(var(--pad) + 1rem);
+    font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--sky);border-bottom:0}
+  .mcol .mco{padding:0 var(--pad) .2rem calc(var(--pad) + 1rem);color:#8fa6bf;margin:0}
+  .mcol a{padding:.6rem var(--pad) .6rem calc(var(--pad) + 1rem);
+    font-size:.94rem;color:#c6d3e4;white-space:normal}
+  .mcol a .mnote{color:#8fa6bf}
+  .mcol .mall{color:var(--sky);font-size:.88rem}
+  .mcol a.mcur{color:#fff}
+}
+
 .subdrop a{padding-left:2.3rem;font-size:.83rem;color:#b9c6d8;position:relative}
 /* short elbow marking the item as a child of the entry above it */
 .subdrop a::before{content:"";position:absolute;left:1.45rem;top:50%;width:9px;height:1px;background:rgba(255,255,255,.32)}
