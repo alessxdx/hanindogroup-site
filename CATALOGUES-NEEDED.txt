@@ -72,8 +72,13 @@ being filed among the tyre changers it attaches to.
 
 Their specifications came out of these brochures rather than the usual
 catalogue, so they are worth a second look before anyone quotes from
-them — in particular the M20 net weight, which the sheet gives as 223 kg
-against the smaller-capacity M31's 179 kg.
+them.
+
+THE M20 NET WEIGHT IS 223 kg AND THAT IS CORRECT — confirmed by the
+business. It reads like a typo because the M31 sits above it at 179 kg
+with a larger 21" chuck, so the smaller machine is the heavier one by
+44 kg. Leave it alone. This is the second time it has been queried; the
+first was on the day the card was written.
 
 WELDANN — five models
 weldann-si003.pdf     SI003 Semi-Automatic Tyre Changer    [NEEDED]
