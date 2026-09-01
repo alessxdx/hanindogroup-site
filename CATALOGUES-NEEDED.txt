@@ -1,8 +1,9 @@
 HANINDO AUTOMOTIVE — PRODUCT BROCHURES NEEDED
 ==================================================
-One PDF per model. The card for a model shows a "Download brochure"
-button once its file is in; until then the card carries no button at
-all, so nobody ever clicks through to a missing file.
+One PDF per model, with one exception: tyre inflation takes a single
+Airtec series catalogue across all eight of its cards. A card shows its
+"Download brochure" button once its file is in; until then it carries no
+button at all, so nobody ever clicks through to a missing file.
 
 Drop the PDF into /catalogues/ using the EXACT filename below and tell
 me — the button is one line of HTML per card and I will add it. There is
@@ -20,9 +21,11 @@ STATUS MARKERS, same as PHOTOS-NEEDED.txt:
   [DONE] / [COMPLETE]   the brochure is in and the button is live
   [NEEDED]              nothing there yet
 
-BEFORE SENDING ANYTHING: confirm no brochure carries pricing. These
-pages are public and indexed by Google. A PDF with prices in it is a
-public price list, and it makes "Request a quotation" pointless.
+NO PRICING, confirmed by the business: a brochure states what the
+machine does, and a price comes only after the customer makes contact.
+These pages are public and indexed by Google, so a PDF with prices in it
+would be a public price list and would make "Request a quotation"
+pointless. Check each file before it goes in.
 
 Keep files under ~5 MB where you can. They are photo-heavy documents and
 the button shows the size next to it, so a 30 MB file advertises itself
@@ -75,18 +78,19 @@ thinktool-t77.pdf     T77 Diagnostic Scan Tool             [NEEDED]
 --------------------------------------------------
 TYRE INFLATION  (/automotive/airtec/)
 --------------------------------------------------
-Airtec publish a brand catalogue covering the whole 89 series. If you
-would rather send that one document than eight, say so — the eight cards
-can all point at the same file, and the list below collapses to one line.
+ONE file, not eight — the business chose the Airtec series catalogue.
+All eight cards on the page point at the same document, so a buyer
+looking at the 89XHB gets the whole 89 series and can see how it sits
+against the others.
 
-airtec-89mxa.pdf      89MXA Compact Inflator               [NEEDED]
-airtec-89mda.pdf      89MDA General Purpose Inflator       [NEEDED]
-airtec-89xda-xdd.pdf  89XDA / XDD Heavy Duty Inflator      [NEEDED]
-airtec-89xdb-xde.pdf  89XDB / XDE High Flow Inflator       [NEEDED]
-airtec-89xhb.pdf      89XHB High Pressure Inflator         [NEEDED]
-airtec-89xtc.pdf      89XTC Temperature Compensating       [NEEDED]
-airtec-89bep-bed.pdf  89BEP / BED Freestanding, round      [NEEDED]
-airtec-89fep-fed.pdf  89FEP / FED Freestanding, square     [NEEDED]
+This is the one filename that is NOT a product slug, because it is not
+about one product. Named for the series instead:
+
+airtec-89-series.pdf  Airtec 89 series, all eight models   [NEEDED]
+
+If Airtec later supply per-model sheets, the eight slugs are
+airtec-89mxa, -89mda, -89xda-xdd, -89xdb-xde, -89xhb, -89xtc,
+-89bep-bed and -89fep-fed, matching their product photos.
 
 
 --------------------------------------------------
@@ -120,13 +124,26 @@ brochures, not one file referenced twice.
 
 
 --------------------------------------------------
-FLUID HANDLING  (/automotive/raasm/)
+FLUID HANDLING  (/automotive/raasm/)  — NO BROCHURES
 --------------------------------------------------
-This page lists RAASM ranges rather than individual models, so it has no
-product cards to hang a per-model button on. If you want a brochure here
-it would be one RAASM catalogue for the page as a whole — tell me and I
-will put a single button at the top.
+Settled: nothing is wanted here, and nothing is missing.
+
+The page is eleven range cards that link straight out to raasm.com —
+hose reels, grease equipment, pneumatic pumps and the rest. There are no
+product cards and no spec tables, so there is nothing for a per-model
+button to sit on. A single RAASM PDF at the top would also be the one
+document on the site guaranteed to go stale, because every card beside
+it already reaches RAASM's own live catalogue.
+
+Do not add this section back without a reason that answers both points.
 
 
 ==================================================
-49 brochures across five pages. None are in yet.
+42 brochures across four pages. None are in yet.
+
+  tyre service       18
+  service equipment  10
+  lifts & handling    8
+  welding             5
+  tyre inflation      1   (one series catalogue, eight cards)
+  fluid handling      0   (deliberately)
