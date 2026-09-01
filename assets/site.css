@@ -657,6 +657,15 @@ a.brand:not([href]){cursor:default}
    and the long names wrap instead. */
 .mega .minner{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2.2rem;
   max-width:var(--maxw,1200px);margin:0 auto;padding:1.7rem var(--pad) 2rem}
+/* The four columns are already equal height, being grid tracks, but the
+   "All ... products" link sits in normal flow directly under the last
+   entry — so it lands wherever that column's text happens to end. The
+   company lines wrap to two lines in some columns and one in others,
+   and the four links stepped up and down across the panel. Making the
+   column a flex box lets that last link claim the leftover space with
+   margin-top:auto, which sits it on the floor of the tallest column and
+   puts all four on one line. */
+.mega .mcol{display:flex;flex-direction:column}
 .mcol h4{margin:0 0 .15rem;padding-bottom:.55rem;font-size:.8rem;font-weight:700;
   color:var(--blue-800);border-bottom:1px solid var(--line)}
 /* the company that owns the column, under its industry heading */
@@ -671,7 +680,7 @@ a.brand:not([href]){cursor:default}
 /* only on links that leave for another company's site */
 .mcol a .mext{width:11px;height:11px;margin-left:.3rem;stroke:currentColor;stroke-width:2;
   fill:none;stroke-linecap:round;stroke-linejoin:round;opacity:.55;vertical-align:0}
-.mcol .mall{margin-top:.45rem;font-size:.76rem;font-weight:700;color:var(--brand-600)}
+.mcol .mall{margin-top:auto;padding-top:.45rem;font-size:.76rem;font-weight:700;color:var(--brand-600)}
 .mcol .mall:hover{text-decoration:underline}
 /* the company whose own site this is, on the company headers */
 .mcol a.mcur{color:var(--blue-800);font-weight:700;cursor:default}
@@ -695,6 +704,10 @@ a.brand:not([href]){cursor:default}
      and the animation are already handled by .drop above. */
   .mega{background:rgba(0,0,0,.2);border-top:0;border-bottom:0;box-shadow:none}
   .mega .minner{display:block;max-width:none;margin:0;padding:0;gap:0}
+  /* Back to a plain block in the drawer: the columns are stacked
+     sections there, not tracks of equal height, so there is no leftover
+     space for the last link to drop into and nothing to align it with. */
+  .mega .mcol{display:block}
   .mcol{padding-bottom:.35rem}
   .mcol+.mcol{border-top:1px solid rgba(255,255,255,.08)}
   .mcol h4{padding:.75rem var(--pad) .1rem calc(var(--pad) + 1rem);
