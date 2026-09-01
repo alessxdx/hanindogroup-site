@@ -88,7 +88,7 @@ silently shadow nothing and just confuse the next person.
 --------------------------------------------------
 HPA-Faip TYRE SERVICE  (/automotive/tyre-service/)
 --------------------------------------------------
-Twelve HPA-Faip models are listed with their photo slots already
+Fifteen HPA-Faip models are listed with their photo slots already
 wired. Drop a PNG with the EXACT filename into /photos/automotive/products/ and
 it replaces the "Photo to follow" placeholder. Cut-out product shot on
 white, ~800px wide; the card contains rather than crops it.
@@ -96,7 +96,10 @@ white, ~800px wide; the card contains rather than crops it.
 Specifications are in for every model on the page.
 
 B45 and B50 were dropped from the page at the business's request,
-taking HPA-Faip from fourteen models to twelve.
+taking HPA-Faip from fourteen models to twelve. The M20, the ALLY 30
+helper and the C880 i-Next Slim were added later, when their brochures
+turned up for machines the page had never listed — which is what takes
+it to fifteen.
 
 hpa-b35.png       B35 Digital Wheel Balancer          [COMPLETE]
 hpa-b55.png       B55 Digital Wheel Balancer          [COMPLETE]
@@ -110,6 +113,13 @@ hpa-m422.png      M422 Tyre Changer 22" 3ph           [COMPLETE]
 hpa-m424.png      M424 Tyre Changer 24" 3ph           [COMPLETE]
 hpa-c880-std.png  C880 STD 3D Wheel Alignment         [COMPLETE]
 hpa-c880-inext.png C880 i-Next 3D Wheel Alignment     [COMPLETE]
+
+Three models were added to the page after their brochures arrived, so
+these three slots are new and still empty. Same rules as above — cut-out
+product shot on white, ~800px wide:
+hpa-m20.png            M20 Tyre Changer, 20" swing-arm   [NEEDED]
+hpa-ally30.png         ALLY 30 Universal Helper Device   [NEEDED]
+hpa-c880-inext-slim.png C880 i-Next Slim 3D Alignment    [NEEDED]
 
 Other brands on the same page:
 hakiro-ja-c01.png  Hakiro JA-C01 Tyre Changer          [COMPLETE]
