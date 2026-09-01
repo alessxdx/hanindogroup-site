@@ -56,8 +56,19 @@
 
 /* Own-brand cards, laid out side-on rather than stacked — photo on the
    left, copy on the right. Much shorter than the stacked version the
-   shared .bcard rules give, so the two brands read in one glance. */
+   shared .bcard rules give, so the three brands read in one glance. */
 .brandcards{gap:1rem;margin-top:1.1rem}
+/* Three brands in a two-column grid leaves the third alone on row 2 with
+   a half-width hole beside it. Let it run the full width instead: these
+   cards are side-on, so a wide one reads as a row rather than a stretched
+   box. Collapses to nothing once the grid is single-column anyway. */
+.brandcards .bcard:nth-child(3){grid-column:1/-1}
+/* The JA-C01 shot is a tall portrait cutout, and the rule below sizes
+   these images height:100% — which resolves to auto against an auto-height
+   panel, so the portrait alone would drive this card to twice the height
+   of the other two. Pin the panel and let object-fit:contain letterbox it.
+   Above the stacking breakpoint only; below it the panel is already fixed. */
+@media(min-width:1041px){.brandcards .bcard:nth-child(3) .bimg{height:186px}}
 .bcard{display:grid;grid-template-columns:220px 1fr}
 .bcard .bimg{height:100%;min-height:186px;border-bottom:0;border-right:1px solid var(--line)}
 .bcard .bbody{padding:1.15rem 1.3rem;align-self:center}
@@ -144,9 +155,9 @@
              headed "Sole distributor for Indonesia." and led with the same
              words twice in a row. This one takes its line from the end of
              the paragraph under it, which is the actual claim. -->
-        <h2 class="h2 reveal" style="margin-bottom:1.4rem">The Group&rsquo;s Workshop<br/>&amp; Industrial Equipment Arm</h2>
+        <h2 class="h2 reveal" style="margin-bottom:1.4rem">The Line for Workshop<br/>and Industrial Equipment</h2>
         <p class="reveal">PT. Hanindo Automotive was established within the Hanindo Group in 2002, providing workshop and industrial equipment solutions designed to improve efficiency, productivity and ease of use.</p>
-        <p class="reveal d1">Beyond supplying equipment, we support the full lifecycle of every solution &mdash; from specification and installation to commissioning, operator training, spare parts and after-sales service. As the sole distributor in Indonesia for Airtec, HPA-Faip and RAASM, alongside our own brands WELDANN and ATOM, we equip workshops and industrial facilities with reliable solutions from a single partner.</p>
+        <p class="reveal d1">Beyond supplying equipment, we support the full lifecycle of every solution &mdash; from specification and installation to commissioning, operator training, spare parts and after-sales service. As the sole distributor in Indonesia for Airtec, HPA-Faip and RAASM, alongside our own brands WELDANN, ATOM and HAKIRO, we equip workshops and industrial facilities with reliable solutions from a single partner.</p>
       </div>
       <div class="about-media">
         <div class="aphoto reveal d1"><img src="../photos/group/divisions/div-automotive.jpg" alt="Automotive workshop equipped by PT. Hanindo Automotive" loading="lazy" /><span class="cap">Workshop and garage equipment</span></div>
@@ -177,15 +188,15 @@
   <div class="wrap">
     <div class="reveal">
       <span class="kicker">Our own brands</span>
-      <h2 class="h2">WELDANN and ATOM.</h2>
-      <p class="lede" style="max-width:none">Alongside the international manufacturers we represent, PT. Hanindo Automotive develops and supplies equipment under our own brands &mdash; WELDANN and ATOM. We manage the specifications, spare parts, warranty and after-sales support to ensure reliable long-term performance.</p>
+      <h2 class="h2">WELDANN, ATOM and HAKIRO.</h2>
+      <p class="lede" style="max-width:none">Alongside the international manufacturers we represent, PT. Hanindo Automotive develops and supplies equipment under our own brands &mdash; WELDANN, ATOM and HAKIRO. We manage the specifications, spare parts, warranty and after-sales support to ensure reliable long-term performance.</p>
     </div>
     <div class="brandcards">
       <div class="bcard reveal">
         <div class="bimg"><img src="../photos/automotive/brands/brand-weldann.jpg" alt="WELDANN disc lathe machine" loading="lazy" style="object-position:center 62%" onerror="this.style.display='none'" /></div>
         <div class="bbody">
           <h3>WELDANN</h3>
-          <p>Professional workshop equipment designed for demanding service environments, covering tyre service, lifts, fluid exchange, brake and diagnostic solutions. Supported by warranty, training and after-sales service across Southeast Asia.</p>
+          <p>Professional workshop equipment designed for demanding service environments, covering tyre service, lifts, fluid exchange, brake and diagnostic solutions. Supported by warranty, training and after-sales service across Indonesia.</p>
         </div>
       </div>
       <div class="bcard reveal d1">
@@ -193,6 +204,17 @@
         <div class="bbody">
           <h3>ATOM</h3>
           <p>A range of vehicle lifts including mid-rise, in-ground, on-ground scissor and two-post lifts from 3.5 to 4 tonnes. Built with quality components and safety features for reliable workshop operations.</p>
+        </div>
+      </div>
+      <!-- The third brand has no location photo yet, so the card carries the
+           JA-C01 product shot from the tyre service catalogue. That file is a
+           cutout on white, so it wants object-fit:contain and its own padding
+           rather than the cover crop the other two cards use. -->
+      <div class="bcard reveal d2">
+        <div class="bimg"><img src="../photos/automotive/products/hakiro-ja-c01.png" alt="Hakiro JA-C01 semi-automatic tyre changer" loading="lazy" style="object-fit:contain;padding:1.2rem" onerror="this.style.display='none'" /></div>
+        <div class="bbody">
+          <h3>HAKIRO</h3>
+          <p>A semi-automatic swing-arm tyre changer &mdash; the starting point for tyre shops just setting up.</p>
         </div>
       </div>
     </div>
@@ -240,7 +262,7 @@
       <div class="advrow reveal d1">
         <div class="advbody">
           <h3>Quality You Can Rely On</h3>
-          <p>Access to internationally recognised equipment brands alongside our own WELDANN and ATOM product lines.</p>
+          <p>Access to internationally recognised equipment brands alongside our own WELDANN, ATOM and HAKIRO product lines.</p>
         </div>
       </div>
       <div class="advrow reveal d2">
@@ -304,7 +326,7 @@ window.addEventListener('pageshow',function(){var i=document.querySelector('.sea
 /* reveal */
 (function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
 </script>
-<script src="translate.js?v=202609012000"></script>
+<script src="translate.js?v=202609012100"></script>
 <script src="../assets/nav.js?v=202609011900" defer></script>
 <script src="../assets/protect.js?v=202608252100" defer></script>
 </body>
