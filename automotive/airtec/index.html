@@ -39,11 +39,11 @@
    pages use — those rules are page-local to each of them rather than in
    site.css, so they are restated here. */
 .prod{border:1px solid var(--line);border-radius:var(--r);background:#fff;margin-bottom:1.1rem;overflow:hidden}
-.prod .inner{display:grid;grid-template-columns:280px 1fr;gap:0}
+.prod .inner{display:grid;grid-template-columns:320px 1fr;gap:0}
 @media(max-width:820px){.prod .inner{grid-template-columns:1fr}}
-.prod .shot{background:#fff;border-right:1px solid var(--line);display:flex;align-items:center;justify-content:center;padding:1.4rem;min-height:170px}
+.prod .shot{background:#fff;border-right:1px solid var(--line);display:flex;align-items:center;justify-content:center;padding:1.1rem;min-height:170px}
 @media(max-width:820px){.prod .shot{border-right:0;border-bottom:1px solid var(--line);min-height:0}}
-.prod .shot img{max-width:100%;max-height:150px;width:auto;object-fit:contain}
+.prod .shot img{max-width:100%;max-height:200px;width:auto;object-fit:contain}
 .prod .body{padding:1.3rem 1.4rem 1.5rem}
 /* The catalogue pages badge each product with its brand. Every model here
    is Airtec, so the badge carries the sector the model is built for
@@ -113,7 +113,7 @@ table.spectable td:last-child{color:var(--ink);font-weight:600;text-align:right}
 @media(min-width:641px){.prod .specfold[open]>summary{display:none}}
 @media(max-width:640px){
   .prod .shot{padding:.9rem}
-  .prod .shot img{max-height:120px}
+  .prod .shot img{max-height:155px}
 }
 
 /* The Sectors cards, sized down and given their hierarchy back.
