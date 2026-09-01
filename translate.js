@@ -56,7 +56,6 @@
        still uses it, and there it really is a list of companies. */
     "Our Businesses": "Bidang Usaha Kami",
     "A division of PT. Hanindo Citra": "Divisi dari PT. Hanindo Citra",
-    "By market": "Menurut pasar",
     /* the Products & Services mega menu. Every category below is worded
        exactly as its own company site words it — citra/translate.js and
        automotive/translate.js — so a reader meets the same Indonesian on
@@ -76,6 +75,11 @@
     "Service Equipment": "Peralatan Servis",
     "Fluid Handling": "Penanganan Fluida",
     "All Automotive products →": "Semua produk Otomotif →",
+    "Professional Printing Solutions": "Solusi Pencetakan Profesional",
+    "DC / POS Solutions": "Solusi DC / POS",
+    "Scanning Solutions": "Solusi Pemindaian",
+    "Self-Service Solutions": "Solusi Layanan Mandiri",
+    "All Printer & POS products →": "Semua produk Printer & POS →",
     "Products & Services": "Produk & Layanan",
     "Partners": "Mitra",
     "Career": "Karier",
