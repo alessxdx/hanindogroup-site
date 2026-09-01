@@ -54,21 +54,19 @@
 .dcell>div:last-child{flex:1;display:flex;flex-direction:column}
 .dfrom{margin-top:auto;padding-top:.6rem;font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--brand)}
 
-/* Own-brand cards, laid out side-on rather than stacked — photo on the
-   left, copy on the right. Much shorter than the stacked version the
-   shared .bcard rules give, so the three brands read in one glance. */
-.brandcards{gap:1rem;margin-top:1.1rem}
-/* Three brands in a two-column grid leaves the third alone on row 2 with
-   a half-width hole beside it. Let it run the full width instead: these
-   cards are side-on, so a wide one reads as a row rather than a stretched
-   box. Collapses to nothing once the grid is single-column anyway. */
-.brandcards .bcard:nth-child(3){grid-column:1/-1}
-.bcard{display:grid;grid-template-columns:220px 1fr}
-.bcard .bimg{height:100%;min-height:186px;border-bottom:0;border-right:1px solid var(--line)}
-.bcard .bbody{padding:1.15rem 1.3rem;align-self:center}
+/* Own-brand cards, all three on one row — a two-column grid stranded the
+   third brand on a row of its own. A third of the width each, with a
+   shallower photo and tighter copy than the shared .bcard rules give, so
+   the cards stay small enough to read in a single glance. */
+.brandcards{grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.1rem}
+.bcard .bimg{height:170px}
+.bcard .bbody{padding:1.1rem 1.15rem}
 .bcard h3{font-size:1rem;margin-bottom:.35rem}
-.bcard .bbody p{font-size:.86rem;line-height:1.55}
-@media(max-width:1040px){.bcard{grid-template-columns:1fr}.bcard .bimg{height:200px;min-height:0;border-right:0;border-bottom:1px solid var(--line)}}
+.bcard .bbody p{font-size:.84rem;line-height:1.55}
+/* Below this a third of the width squeezes the copy into a ribbon. Two
+   columns would strand the third brand on a row of its own, so go
+   straight to one, with the taller photo the full width can carry. */
+@media(max-width:780px){.brandcards{grid-template-columns:1fr}.bcard .bimg{height:200px}}
 
 /* .adv-* and the compact Vision & Mission tightening moved to site.css —
    three About pages carry them now. */
