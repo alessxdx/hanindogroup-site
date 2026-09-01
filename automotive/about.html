@@ -63,12 +63,6 @@
    cards are side-on, so a wide one reads as a row rather than a stretched
    box. Collapses to nothing once the grid is single-column anyway. */
 .brandcards .bcard:nth-child(3){grid-column:1/-1}
-/* The JA-C01 shot is a tall portrait cutout, and the rule below sizes
-   these images height:100% — which resolves to auto against an auto-height
-   panel, so the portrait alone would drive this card to twice the height
-   of the other two. Pin the panel and let object-fit:contain letterbox it.
-   Above the stacking breakpoint only; below it the panel is already fixed. */
-@media(min-width:1041px){.brandcards .bcard:nth-child(3) .bimg{height:186px}}
 .bcard{display:grid;grid-template-columns:220px 1fr}
 .bcard .bimg{height:100%;min-height:186px;border-bottom:0;border-right:1px solid var(--line)}
 .bcard .bbody{padding:1.15rem 1.3rem;align-self:center}
@@ -206,12 +200,8 @@
           <p>A range of vehicle lifts including mid-rise, in-ground, on-ground scissor and two-post lifts from 3.5 to 4 tonnes. Built with quality components and safety features for reliable workshop operations.</p>
         </div>
       </div>
-      <!-- The third brand has no location photo yet, so the card carries the
-           JA-C01 product shot from the tyre service catalogue. That file is a
-           cutout on white, so it wants object-fit:contain and its own padding
-           rather than the cover crop the other two cards use. -->
       <div class="bcard reveal d2">
-        <div class="bimg"><img src="../photos/automotive/products/hakiro-ja-c01.png" alt="Hakiro JA-C01 semi-automatic tyre changer" loading="lazy" style="object-fit:contain;padding:1.2rem" onerror="this.style.display='none'" /></div>
+        <div class="bimg"><img src="../photos/automotive/brands/brand-hakiro.jpg" alt="HAKIRO JA-C01 semi-automatic tyre changer" loading="lazy" style="object-position:center 55%" onerror="this.style.display='none'" /></div>
         <div class="bbody">
           <h3>HAKIRO</h3>
           <p>A semi-automatic swing-arm tyre changer &mdash; the starting point for tyre shops just setting up.</p>

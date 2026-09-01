@@ -62,7 +62,7 @@ Put a new photo in the folder for the site that uses it:
   photos/group/shanghai/      Hanindo (Shanghai) International Co., Ltd. page
 
   photos/automotive/hero/     Hanindo Automotive banners
-  photos/automotive/brands/   ATOM and WELDANN brand shots
+  photos/automotive/brands/   ATOM, WELDANN and HAKIRO brand shots
   photos/automotive/products/ the 36 catalogue product shots
   photos/citra/hero/    + /products/
   photos/printer-pos/hero/    + /products/
@@ -796,14 +796,7 @@ rather than contained — keep the subject away from the edges.
 
 brand-atom.jpg     ATOM two-post vehicle lift   1187x1063  [COMPLETE]
 brand-weldann.jpg  WELDANN disc lathe machine   1195x1556  [COMPLETE]
-brand-hakiro.jpg   HAKIRO JA-C01 tyre changer              [WANTED]
-
-The HAKIRO card is standing in with hakiro-ja-c01.png, the cut-out from
-the tyre service catalogue, so it needs object-fit:contain and a pinned
-panel height instead of the cover crop the other two use. Dropping
-brand-hakiro.jpg in lets that card go back to matching its neighbours —
-delete the two overrides in the page-local <style> when it lands.
-
+brand-hakiro.jpg   HAKIRO JA-C01 tyre changer              [COMPLETE]
 
 CUSTOMER LOGOS
 The "Customer base" wall on /automotive/index.html has 32 slots and
