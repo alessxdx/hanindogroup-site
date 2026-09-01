@@ -92,6 +92,12 @@ img,svg{-webkit-user-drag:none;-webkit-touch-callout:none;user-select:none;-webk
 .btn-dark:hover{background:var(--blue-700);border-color:var(--blue-700)}
 .btn-outline{background:transparent;color:var(--blue-800);border-color:var(--line)}
 .btn-outline:hover{border-color:var(--blue-800)}
+/* A size, not a style: the same button set down for use inside a card
+   rather than at the foot of a section. The brochure links on the
+   catalogue pages sit next to a spec table, where a full-size button
+   would outweigh the specs it belongs to. */
+.btn-sm{padding:.5rem 1rem;font-size:.82rem}
+.btn-sm svg{width:14px;height:14px}
 
 /* ---------- HEADER ---------- */
 .topbar{background:var(--white);border-bottom:1px solid var(--line)}

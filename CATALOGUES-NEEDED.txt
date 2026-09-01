@@ -35,19 +35,48 @@ as a bad idea to anyone on mobile data.
 --------------------------------------------------
 TYRE SERVICE  (/automotive/tyre-service/)
 --------------------------------------------------
-HPA-Faip — twelve models
+HPA-Faip — twelve models, ten of them in
 hpa-b35.pdf           B35 Digital Wheel Balancer           [NEEDED]
-hpa-b55.pdf           B55 Digital Wheel Balancer           [NEEDED]
+hpa-b55.pdf           B55 Digital Wheel Balancer           [COMPLETE]
 hpa-b60.pdf           B60 TV Monitor Wheel Balancer        [NEEDED]
-hpa-b75.pdf           B75 Digital Wheel Balancer (Truck)   [NEEDED]
-hpa-b225.pdf          B225 Digital Wheel Balancer          [NEEDED]
-hpa-b325.pdf          B325 TV Monitor Wheel Balancer       [NEEDED]
-hpa-m31.pdf           M31 Semi-Automatic Tyre Changer      [NEEDED]
-hpa-m54.pdf           M54 Automatic Tyre Changer           [NEEDED]
-hpa-m422.pdf          M422 Automatic Tyre Changer          [NEEDED]
-hpa-m424.pdf          M424 Automatic Tyre Changer          [NEEDED]
-hpa-c880-std.pdf      C880 STD 3D Wheel Alignment          [NEEDED]
-hpa-c880-inext.pdf    C880 i-Next 3D Wheel Alignment       [NEEDED]
+hpa-b75.pdf           B75 Digital Wheel Balancer (Truck)   [COMPLETE]
+hpa-b225.pdf          B225 Digital Wheel Balancer          [COMPLETE]
+hpa-b325.pdf          B325 TV Monitor Wheel Balancer       [COMPLETE]
+hpa-m31.pdf           M31 Semi-Automatic Tyre Changer      [COMPLETE]
+hpa-m54.pdf           M54 Automatic Tyre Changer           [COMPLETE]
+hpa-m422.pdf          M422 Automatic Tyre Changer          [COMPLETE]
+hpa-m424.pdf          M424 Automatic Tyre Changer          [COMPLETE]
+hpa-c880-std.pdf      C880 STD 3D Wheel Alignment          [COMPLETE]
+hpa-c880-inext.pdf    C880 i-Next 3D Wheel Alignment       [COMPLETE]
+
+B35 and B60 are the two gaps, and they are real gaps rather than
+mislabelled files — no brochure in the batch mentions either code
+anywhere in its text. The B55 sheet does not cover the B60 despite the
+two being mechanically identical, and the B225 sheet covers B225C, B225
+and B215 Evo but no B35.
+
+Some sheets cover more than the one model, which is fine — the card
+links to the sheet its machine is on:
+  hpa-b225.pdf  is the B225C / B225 / B215 Evo sheet
+  hpa-b325.pdf  is the B325 / B325 C Evo sheet
+  hpa-m424.pdf  is the M424A 2V FS sheet, the version the card names
+
+THREE BROCHURES SUPPLIED WITH NO CARD TO PUT THEM ON. Held out of
+/catalogues/ rather than filed with nowhere to link from:
+
+  C880 iNEXT Slim   A slimmer 2-camera i-Next, with a manual camera
+                    beam and provision for a trolley. Either a second
+                    link on the C880 i-Next card or a thirteenth model
+                    on the page — it is a distinct machine, not a
+                    variant sheet.
+  M20               Semi-automatic swing-arm tyre changer, 20". Not on
+                    the page at all. Sits directly between the M31
+                    (swing-arm, 21") and the Hakiro JA-C01 (swing-arm,
+                    20") — worth adding if it is still sold here.
+  ALLY 30           Universal helper device for tyre changers. An
+                    accessory, not a model. The page names the HSA21
+                    and HTB24 helper arms in prose but has no card for
+                    an accessory to hang off.
 
 WELDANN — five models
 weldann-si003.pdf     SI003 Semi-Automatic Tyre Changer    [NEEDED]
@@ -139,7 +168,8 @@ Do not add this section back without a reason that answers both points.
 
 
 ==================================================
-42 brochures across four pages. None are in yet.
+42 brochures across four pages. 10 are in — the HPA-Faip range
+minus its B35 and B60. 32 to go.
 
   tyre service       18
   service equipment  10

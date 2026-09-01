@@ -101,6 +101,10 @@
     "Phone": "Telepon",
     "Email": "Email",
     "Tel:": "Tel:",
+    /* The brochure link on the catalogue cards. "PDF" and the file size
+       beside it are a format name and a unit, so they read the same either
+       way and are left alone. */
+    "Download brochure": "Unduh brosur",
     "Photo needed": "Perlu foto",
     "Photo to follow": "Foto menyusul",
 

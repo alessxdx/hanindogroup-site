@@ -26,7 +26,7 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Hanindo Group","item":"https://hanindogroup.com/"},{"@type":"ListItem","position":2,"name":"PT. Hanindo Automotive","item":"https://hanindogroup.com/automotive/"},{"@type":"ListItem","position":3,"name":"Products & Services","item":"https://hanindogroup.com/automotive/products-services.html"},{"@type":"ListItem","position":4,"name":"Tyre Service"}]}]}
 </script>
-<link rel="stylesheet" href="../../assets/site.css?v=202609011900" />
+<link rel="stylesheet" href="../../assets/site.css?v=202609021000" />
 <style>
 /* Tighter section rhythm than the company home, as on the other
    automotive sub-pages. */
@@ -50,6 +50,15 @@
 .prod .shot .soon{display:flex;flex-direction:column;align-items:center;gap:.5rem;color:#9aa7b8;font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;font-weight:600}
 .prod .shot .soon svg{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.5}
 .prod .await{margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);font-size:.84rem;color:var(--muted)}
+/* Brochure link, at the foot of the card under the specs. Only the cards
+   whose PDF is actually in /catalogues/ carry one — a static site cannot
+   test for a file, so a card with no brochure shows nothing rather than a
+   link to a 404. The size is stated because these run to several MB and
+   the person tapping it may be on mobile data. */
+.prod .pdfrow{margin-top:1rem;padding-top:.9rem;border-top:1px solid var(--line);
+  display:flex;align-items:center;gap:.8rem;flex-wrap:wrap}
+.prod .pdfrow .meta{font-size:.78rem;color:var(--muted)}
+@media(max-width:560px){.prod .pdfrow .btn{width:100%;justify-content:center}}
 .prod .await b{color:var(--blue-800);font-weight:600}
 .grouphead{margin:2.6rem 0 1.2rem;padding-top:1.6rem;border-top:1px solid var(--line)}
 .grouphead:first-of-type{border-top:0;padding-top:0}
@@ -262,6 +271,10 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
         </table>
       </details>
       <p class="note">Mechanically identical to the B60 &mdash; the B55 reads out on a high-brightness digital LED display panel.</p>
+      <div class="pdfrow">
+        <a class="btn btn-outline btn-sm" href="../../catalogues/hpa-b55.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>Download brochure</a>
+        <span class="meta">PDF &middot; 1.6 MB</span>
+      </div>
     </div>
   </div>
 </article>
@@ -314,6 +327,10 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
           <tr><td>Supply voltage</td><td>230 V 1 ph 50 Hz &middot; 115 V 1 ph 60 Hz</td></tr>
         </table>
       </details>
+      <div class="pdfrow">
+        <a class="btn btn-outline btn-sm" href="../../catalogues/hpa-b75.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>Download brochure</a>
+        <span class="meta">PDF &middot; 4.5 MB</span>
+      </div>
     </div>
   </div>
 </article>
@@ -346,6 +363,10 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
         </table>
       </details>
       <p class="note">Mechanically identical to the B325 &mdash; the B225 reads out on a double digital LED display panel with a manual keyboard.</p>
+      <div class="pdfrow">
+        <a class="btn btn-outline btn-sm" href="../../catalogues/hpa-b225.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>Download brochure</a>
+        <span class="meta">PDF &middot; 1.5 MB</span>
+      </div>
     </div>
   </div>
 </article>
@@ -378,6 +399,10 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
         </table>
       </details>
       <p class="note">Mechanically identical to the B225 &mdash; the B325 upgrades to a 19&Prime; widescreen LCD colour monitor, showing high-resolution graphic interfaces.</p>
+      <div class="pdfrow">
+        <a class="btn btn-outline btn-sm" href="../../catalogues/hpa-b325.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>Download brochure</a>
+        <span class="meta">PDF &middot; 1.0 MB</span>
+      </div>
     </div>
   </div>
 </article>
@@ -407,6 +432,10 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
         </table>
       </details>
       <p class="note">The arm swings aside by hand rather than tilting back, so the machine can stand against a wall &mdash; the smallest footprint in the range. The mounting head is reset by hand for each wheel. Optional <b>HSA21</b> helper arm.</p>
+      <div class="pdfrow">
+        <a class="btn btn-outline btn-sm" href="../../catalogues/hpa-m31.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>Download brochure</a>
+        <span class="meta">PDF &middot; 2.3 MB</span>
+      </div>
     </div>
   </div>
 </article>
@@ -434,6 +463,10 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
         </table>
       </details>
       <p class="note">The heavy-duty model: a reinforced chassis that resists flex on stiff sidewalls, so it suits high-volume tyre centres, low-profile and run-flat work. Shown fitted with the optional <b>HTB24</b> bead-pressing helper arm. Also available as the <b>M54 LL</b>, a lever-less version that lifts the bead over the rim without a tyre iron.</p>
+      <div class="pdfrow">
+        <a class="btn btn-outline btn-sm" href="../../catalogues/hpa-m54.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>Download brochure</a>
+        <span class="meta">PDF &middot; 1.2 MB</span>
+      </div>
     </div>
   </div>
 </article>
@@ -461,6 +494,10 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
         </table>
       </details>
       <p class="note">Also supplied as the <b>M422 2V FS</b>, the two-speed version &mdash; the weight above is for that model.</p>
+      <div class="pdfrow">
+        <a class="btn btn-outline btn-sm" href="../../catalogues/hpa-m422.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>Download brochure</a>
+        <span class="meta">PDF &middot; 0.8 MB</span>
+      </div>
     </div>
   </div>
 </article>
@@ -488,6 +525,10 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
         </table>
       </details>
       <p class="note">Also supplied as the <b>M424 2V FS</b>, the two-speed version &mdash; the weight above is for that model.</p>
+      <div class="pdfrow">
+        <a class="btn btn-outline btn-sm" href="../../catalogues/hpa-m424.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>Download brochure</a>
+        <span class="meta">PDF &middot; 0.9 MB</span>
+      </div>
     </div>
   </div>
 </article>
@@ -511,6 +552,10 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
           <tr><td>Power supply</td><td>115/230 Vac &middot; 50/60 Hz &middot; 1 Ph</td></tr>
         </table>
       </details>
+      <div class="pdfrow">
+        <a class="btn btn-outline btn-sm" href="../../catalogues/hpa-c880-std.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>Download brochure</a>
+        <span class="meta">PDF &middot; 1.0 MB</span>
+      </div>
     </div>
   </div>
 </article>
@@ -539,6 +584,10 @@ details.specs .acch{font-size:.78rem;font-weight:700;color:var(--blue-800);text-
           <tr><td>Weight &mdash; PC holder</td><td>11 kg</td></tr>
         </table>
       </details>
+      <div class="pdfrow">
+        <a class="btn btn-outline btn-sm" href="../../catalogues/hpa-c880-inext.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>Download brochure</a>
+        <span class="meta">PDF &middot; 1.4 MB</span>
+      </div>
     </div>
   </div>
 </article>
@@ -779,7 +828,7 @@ window.addEventListener('pageshow',function(){var i=document.querySelector('.sea
   apply('all');
 })();
 </script>
-<script src="../translate.js?v=202609020900"></script>
+<script src="../translate.js?v=202609021000"></script>
 <script src="../../assets/nav.js?v=202609011900" defer></script>
 <script src="../../assets/protect.js?v=202608252100" defer></script>
 </body>
