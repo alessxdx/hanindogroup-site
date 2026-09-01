@@ -18,6 +18,17 @@
    ===================================================================== */
 (function () {
   var DICT = {
+    /* the Our Businesses menu, built by assets/nav.js */
+    "Our Businesses": "集团业务",
+    "Printer & POS": "打印与 POS",
+    "Oil & Gas": "石油与天然气",
+    "Fire Fighting": "消防",
+    "Automotive": "汽车",
+    "Fire Fighting Department": "消防部",
+    "A division of PT. Hanindo Citra": "PT. Hanindo Citra 旗下部门",
+    "Singapore": "新加坡",
+    "China": "中国",
+    "You are here": "当前位置",
     /* ---- directions ----
        This read "Petunjuk arah" until 2026-08-17 -- Indonesian, carried
        over with the entry when this dictionary was seeded from one of the

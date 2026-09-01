@@ -669,6 +669,19 @@ a.brand:not([href]){cursor:default}
 .mcol .mall:hover{text-decoration:underline}
 /* the company whose own site this is, on the company headers */
 .mcol a.mcur{color:var(--blue-800);font-weight:700;cursor:default}
+/* On a company site the group menu is built by nav.js and sits at the
+   far right, away from that company's own tabs — it leaves the site
+   rather than moving around inside it. Citra and Fire Fighting already
+   end in the .ffdept pill, which claims the free space first; this
+   then sits directly after it, and the two read as one right-hand
+   group of routes out. */
+.tabs>li.gbtab{margin-left:auto}
+.tabs>li.gbtab>a{border-left:1px solid rgba(255,255,255,.12)}
+@media(max-width:860px){
+  /* in the drawer it is another row, in source order */
+  .tabs>li.gbtab{margin-left:0}
+  .tabs>li.gbtab>a{border-left:3px solid transparent}
+}
 @media(max-width:860px){
   /* Inside the drawer the panel is a plain stacked group again: the grid
      collapses, the white ground goes back to the drawer's navy, and each

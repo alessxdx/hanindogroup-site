@@ -183,6 +183,84 @@
     burger.setAttribute('aria-expanded', on ? 'true' : 'false');
   }
 
+  /* ---------- the group menu, on a company site ----------
+     Until now the only way from one company to another was back to the
+     group and out again: two hops, and the reason the group's own
+     header grew an Our Businesses menu. This puts the same menu in
+     every company's tab bar, so the sister sites are one hover away
+     from anywhere inside one of them.
+
+     Built here rather than written into the pages. There are 43 of
+     them at two different depths, and a menu pasted into each is a
+     menu that has to be edited in 43 places the next time a company is
+     added — which is the reason this file exists at all. The group's
+     own pages keep their hand-written copy: it is the same markup,
+     it is what a crawler reads, and this only fills in where there is
+     none.
+
+     Two things are read off the page rather than assumed. The prefix
+     to the group root comes from the .grouplink every company header
+     carries — "../" on a company page, "../../" under Automotive — so
+     nothing here has to know how deep it is sitting. And the company
+     you are already in is matched against the path, so its own name
+     appears as a label rather than a link back to where you are. */
+  var GROUP = [
+    ['Oil &amp; Gas', [
+      ['citra/',                'PT. Hanindo Citra',                          ''],
+      ['flowtech-engineering/', 'PT. Flowtech Engineering',                   '']
+    ]],
+    ['Fire Fighting', [
+      ['fire-fighting/',        'Fire Fighting Department',                   'A division of PT. Hanindo Citra']
+    ]],
+    ['Automotive', [
+      ['automotive/',           'PT. Hanindo Automotive',                     '']
+    ]],
+    ['Printer &amp; POS', [
+      ['automation/',           'PT. Hanindo Automation Solutions',           'Indonesia'],
+      ['printer-pos/',          'Gralessando (S) Pte. Ltd.',                  'Singapore'],
+      ['shanghai/',             'Hanindo (Shanghai) International Co., Ltd.', 'China']
+    ]]
+  ];
+
+  function businesses(){
+    var link = document.querySelector('.grouplink');
+    if(!link) return;                          /* a group page: it has its own */
+    if(tabs.querySelector('.has-mega')) return;      /* never build it twice */
+
+    var root = link.getAttribute('href') || '../';
+    var here = location.pathname;
+    var caret = '<svg class="caret" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>';
+    var ext   = '<svg class="mext" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg>';
+    var cols  = '';
+
+    for(var g = 0; g < GROUP.length; g++){
+      var rows = GROUP[g][1], items = '';
+      for(var i = 0; i < rows.length; i++){
+        var slug = rows[i][0], name = rows[i][1], note = rows[i][2];
+        if(here.indexOf('/' + slug) >= 0){
+          items += '<a class="mcur" aria-current="page">' + name +
+                   '<span class="mnote">You are here</span></a>';
+        } else {
+          items += '<a href="' + root + slug + '" target="_blank" rel="noopener">' +
+                   name + ' ' + ext +
+                   (note ? '<span class="mnote">' + note + '</span>' : '') + '</a>';
+        }
+      }
+      cols += '<div class="mcol"><h4>' + GROUP[g][0] + '</h4>' + items + '</div>';
+    }
+
+    var li = document.createElement('li');
+    li.className = 'has-drop has-mega gbtab';
+    li.innerHTML =
+      '<a href="' + root + '#companies">Our Businesses ' + caret + '</a>' +
+      '<div class="drop mega"><div class="minner">' + cols + '</div></div>';
+
+    /* Before the language row, which is the drawer's own last item and
+       has no place above the menu it would otherwise sit on top of. */
+    tabs.insertBefore(li, tabs.querySelector('.tablang'));
+  }
+  businesses();
+
   /* Option B header (2026-08): the way back to the group moves UNDER the
      group lockup, and the lockup itself stops being a link — only this line
      is clickable. Done here, against the one anchor written into every

@@ -11,6 +11,14 @@
    ===================================================================== */
 (function () {
   var DICT = {
+    /* the Our Businesses menu, built by assets/nav.js */
+    "Our Businesses": "Bidang Usaha Kami",
+    "Fire Fighting": "Pemadam Kebakaran",
+    "Automotive": "Otomotif",
+    "A division of PT. Hanindo Citra": "Divisi dari PT. Hanindo Citra",
+    "Singapore": "Singapura",
+    "China": "Tiongkok",
+    "You are here": "Anda di sini",
     /* ---- directions ---- */
     "Get directions": "Petunjuk arah",
     /* ---- navigation / header ---- */

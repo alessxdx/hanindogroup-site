@@ -38,6 +38,15 @@
    ===================================================================== */
 (function () {
   var DICT = {
+    /* the Our Businesses menu, built by assets/nav.js */
+    "Our Businesses": "Bidang Usaha Kami",
+    "Oil & Gas": "Minyak & Gas",
+    "Fire Fighting": "Pemadam Kebakaran",
+    "Automotive": "Otomotif",
+    "Fire Fighting Department": "Departemen Pemadam Kebakaran",
+    "A division of PT. Hanindo Citra": "Divisi dari PT. Hanindo Citra",
+    "Singapore": "Singapura",
+    "You are here": "Anda di sini",
     /* ---- directions ---- */
     "Get directions": "Petunjuk arah",
     /* ---- navigation / header ---- */
