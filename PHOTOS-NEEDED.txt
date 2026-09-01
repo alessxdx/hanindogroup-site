@@ -118,7 +118,7 @@ Three models were added to the page after their brochures arrived, so
 these three slots are newer than the rest:
 hpa-m20.png             M20 Tyre Changer, 20" swing-arm  [COMPLETE]
 hpa-c880-inext-slim.png C880 i-Next Slim 3D Alignment    [COMPLETE]
-hpa-ally30.png          ALLY 30 Universal Helper Device  [NEEDED]
+hpa-ally30.png          ALLY 30 Universal Helper Device  [COMPLETE]
 
 The M20 and the i-Next Slim were cut out of their own brochures rather
 than supplied separately. Those PDFs carry each photograph as a JPEG on
@@ -127,11 +127,17 @@ manufacturer's own cutout — not a background keyed out by eye. Worth
 trying first for any model whose photo is missing but whose brochure is
 in /catalogues/.
 
-The ALLY 30 cannot be done that way. Its brochure has no standalone shot
-of the machine: the cover is abstract artwork, the hero image is the
-helper mounted on an M424 with the tyre changer faded out behind it, and
-the rest are close-ups of the roller and disc. It needs a real product
-photograph — cut-out on white, ~800px wide, like every other file here.
+The ALLY 30 could not be done that way: its brochure has no standalone
+shot of the machine, only abstract cover art, close-ups of the roller and
+disc, and a hero image of the helper mounted on an M424. It was supplied
+as a JPEG on white instead, and its background was removed by flooding
+inward from the border rather than by thresholding on brightness — the
+arm, the clamp and the cone are pale grey, and a brightness threshold
+punches holes straight through them.
+
+It is also the smallest file here at 282x348, because that is the
+resolution it arrived at. Left alone rather than upscaled: the cards cap
+image height at 150px, so nothing on the page is asking for more.
 
 Other brands on the same page:
 hakiro-ja-c01.png  Hakiro JA-C01 Tyre Changer          [COMPLETE]
