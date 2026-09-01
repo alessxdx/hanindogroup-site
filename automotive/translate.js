@@ -65,26 +65,29 @@
     /* ---- home ---- */
     "Automotive": "Otomotif",
     "PT. Hanindo Automotive equips the modern service bay — diagnostics, lifting and handling, tyre service and lubrication.": "PT. Hanindo Automotive melengkapi service bay modern — diagnostik, pengangkatan dan penanganan, layanan ban, dan pelumasan.",
-    "The workshop, fully equipped.": "Bengkel, lengkap sepenuhnya.",
-    "PT. Hanindo Automotive equips and supports professional workshops with complete service bay solutions — from tyre changers, wheel balancers and 3D wheel alignment systems to vehicle lifts, diagnostics, fluid handling, lubrication systems and welding equipment. Every solution is backed by our engineering expertise, installation support and after-sales service.": "PT. Hanindo Automotive melengkapi dan mendukung bengkel profesional dengan solusi service bay yang lengkap — mulai dari tyre changer, wheel balancer, dan sistem spooring 3D hingga lift kendaraan, alat diagnostik, penanganan fluida, sistem pelumasan, dan peralatan las. Setiap solusi didukung keahlian teknis, dukungan pemasangan, dan layanan purnajual kami.",
+    "The workshop, fully equipped.": "Solusi Peralatan Bengkel.",
+    "PT. Hanindo Automotive equips and supports professional workshops with complete service bay solutions — from tyre changers, wheel balancers and 3D wheel alignment systems to vehicle lifts, diagnostics, fluid handling, lubrication systems and welding equipment. Every solution is backed by our engineering expertise, installation support and after-sales service.": "PT. Hanindo Automotive melengkapi dan mendukung bengkel profesional dengan solusi service bay yang lengkap — mulai dari tyre changer, wheel balancer, dan sistem spooring 3D hingga lift kendaraan, alat diagnostik, penanganan fluida, dan sistem pelumasan. Setiap solusi didukung dengan layanan purnajual, instalasi, dan teknisi yang ahli dalam bidangnya.",
     "Sole distributor in Indonesia for Airtec, HPA-Faip and RAASM": "Distributor tunggal di Indonesia untuk Airtec, HPA-Faip, dan RAASM",
-    "Own brands WELDANN and ATOM, supported by dedicated spare parts and warranty service": "Merek sendiri WELDANN dan ATOM, didukung suku cadang khusus dan layanan garansi",
-    "Installation, commissioning and operator training by our own technicians": "Pemasangan, komisioning, dan pelatihan operator oleh teknisi kami sendiri",
+    "Own brands WELDANN and ATOM, supported by dedicated spare parts and warranty service": "Merek sendiri WELDANN, ATOM, dan HAKIRO, didukung dengan garansi dan spareparts yang terjamin",
+    "Installation, commissioning and operator training by our own technicians": "Instalasi, commissioning, dan pelatihan operator oleh teknisi PT. Hanindo Automotive",
     "RAASM fluid handling solutions supplied beyond workshops to lubricant distributors, industrial plants and mining operations": "Solusi penanganan fluida RAASM yang dipasok melampaui bengkel ke distributor pelumas, pabrik industri, dan operasi pertambangan",
     "What we supply": "Yang kami sediakan",
-    "Wheel Alignment": "Spooring Roda",
+    /* The reviewer asked for this tile to stay English in both languages —
+       "Spooring Roda" read as the odd one out beside Tyre Changer and
+       Wheel Balancer, which the trade already says in English. */
+    "Wheel Alignment": "Wheel Aligner",
     "Tyre Changer": "Tyre Changer",
     "Wheel Balancer": "Wheel Balancer",
     "Tyre Inflator": "Pengisi Angin Ban",
     "Car Lift": "Car Lift",
     "Lubrication": "Pelumasan",
     "Our Brands": "Merek Kami",
-    "Sole distributor in Indonesia for Airtec, HPA-Faip and RAASM. WELDANN and ATOM are our own.": "Distributor tunggal di Indonesia untuk Airtec, HPA-Faip, dan RAASM. WELDANN dan ATOM adalah merek kami sendiri.",
+    "Sole distributor in Indonesia for Airtec, HPA-Faip and RAASM. WELDANN and ATOM are our own.": "Distributor tunggal di Indonesia untuk Airtec, HPA-Faip, dan RAASM. WELDANN, ATOM, dan HAKIRO adalah merek kami sendiri.",
     "Customer base": "Basis pelanggan",
     /* The sector labels on the customer wall. These are headings, not
        company names, so they translate — the logos and the .nm fallback
        names beside them stay in their own form. */
-    "Vehicle manufacturers": "Produsen kendaraan",
+    "Vehicle manufacturers": "Bengkel Resmi",
     "Tyre, lubricant & service": "Ban, pelumas & servis",
     "Fleet, distribution & heavy equipment": "Armada, distribusi & alat berat",
     "Energy & industry": "Energi & industri",
@@ -117,8 +120,8 @@
     "Singapore": "Singapura",
     "Italy": "Italia",
     "PT. Hanindo Automotive was established within the Hanindo Group in 2002, providing workshop and industrial equipment solutions designed to improve efficiency, productivity and ease of use.": "PT. Hanindo Automotive didirikan di dalam Hanindo Group pada tahun 2002, menyediakan solusi peralatan bengkel dan industri yang dirancang untuk meningkatkan efisiensi, produktivitas, dan kemudahan penggunaan.",
-    "Beyond supplying equipment, we support the full lifecycle of every solution — from specification and installation to commissioning, operator training, spare parts and after-sales service. As the sole distributor in Indonesia for Airtec, HPA-Faip and RAASM, alongside our own brands WELDANN and ATOM, we equip workshops and industrial facilities with reliable solutions from a single partner.": "Lebih dari sekadar memasok peralatan, kami mendukung seluruh siklus hidup setiap solusi — dari penentuan spesifikasi dan pemasangan hingga komisioning, pelatihan operator, suku cadang, dan layanan purnajual. Sebagai distributor tunggal di Indonesia untuk Airtec, HPA-Faip, dan RAASM, bersama merek kami sendiri WELDANN dan ATOM, kami melengkapi bengkel dan fasilitas industri dengan solusi andal dari satu mitra.",
-    "The principals we distribute": "Prinsipal yang kami distribusikan",
+    "Beyond supplying equipment, we support the full lifecycle of every solution — from specification and installation to commissioning, operator training, spare parts and after-sales service. As the sole distributor in Indonesia for Airtec, HPA-Faip and RAASM, alongside our own brands WELDANN and ATOM, we equip workshops and industrial facilities with reliable solutions from a single partner.": "Lebih dari sekadar memasok peralatan, kami mendukung seluruh proses mulai dari penentuan spesifikasi dan pemasangan hingga komisioning, pelatihan operator, suku cadang, dan layanan purnajual. Sebagai distributor tunggal di Indonesia untuk Airtec, HPA-Faip, dan RAASM, bersama merek kami sendiri WELDANN, ATOM, dan HAKIRO, kami melengkapi bengkel dan fasilitas industri dengan solusi andal dari satu mitra.",
+    "The principals we distribute": "Merek yang kami distribusikan",
     "Sole distributor for Indonesia.": "Distributor tunggal untuk Indonesia.",
     "Digital tyre inflators — workshop, forecourt and plant": "Pengisi angin ban digital — bengkel, SPBU, dan pabrik",
     "Aligners, balancers & tyre changers": "Alat spooring, balancing & tyre changer",
