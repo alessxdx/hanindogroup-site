@@ -49,9 +49,9 @@
     "Professional printing": "Pencetakan profesional",
     "POS, receipt, fiscal, ticket, label and mobile printers.": "Printer POS, struk, fiskal, tiket, label, dan mobile.",
     "Point of sale & data capture": "Point of sale & penangkapan data",
-    "Terminals, touch systems, cash registers, scanners and payment terminals.": "Terminal, sistem layar sentuh, mesin kasir, pemindai, dan terminal pembayaran.",
+    "Terminals, touch systems, cash registers, scanners and payment terminals.": "Terminal, sistem layar sentuh, mesin kasir, scanner, dan terminal pembayaran.",
     "Scanning": "Scanning",
-    "Document scanners and multifunction print-and-scan systems.": "Pemindai dokumen dan sistem cetak-pindai multifungsi.",
+    "Document scanners and multifunction print-and-scan systems.": "Scanner dokumen dan sistem cetak-pindai multifungsi.",
 
     /* ---- product strip ---- */
     "What we supply": "Yang kami sediakan",
@@ -155,13 +155,12 @@
     "Products &": "Produk &",
     "Services": "Layanan",
     "Printing, scanning and point of sale — supplied, integrated and supported.": "Pencetakan, scanning, dan point of sale — dipasok, diintegrasikan, dan didukung.",
-    "What we offer": "Yang kami tawarkan",
-    "Automation hardware, counter to kiosk": "Perangkat keras otomasi, dari meja kasir hingga kios",
+    "Our product range": "Rangkaian produk kami",
     "Four families of Custom hardware and the software that runs them, supplied, integrated and supported across South East Asia. Each links through to the full Custom catalogue.": "Empat rangkaian perangkat keras Custom beserta perangkat lunaknya, dipasok, diintegrasikan, dan didukung di seluruh Asia Tenggara. Masing-masing terhubung ke katalog Custom lengkap.",
     "POS, receipt, fiscal, ticket, label, kiosk and mobile printers.": "Printer POS, struk, fiskal, tiket, label, kios, dan mobile.",
     "View products": "Lihat produk",
     "POS terminals, touch systems, cash registers and monitors.": "Terminal POS, sistem layar sentuh, mesin kasir, dan monitor.",
-    "Document scanners, barcode readers and imaging systems.": "Pemindai dokumen dan pembaca barcode.",
+    "Document scanners, barcode readers and imaging systems.": "Scanner dokumen dan pembaca barcode.",
     "Kiosks and countertop units for unattended service.": "Kios dan perangkat meja untuk layanan mandiri.",
 
     /* ---- industries ---- */
