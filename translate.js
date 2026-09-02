@@ -114,10 +114,10 @@
     "Hanindo Group — Your Solution Provider": "Hanindo Group — Mitra Solusi Anda",
     "Technology Solutions": "Solusi Teknologi",
     "Across Industries": "Lintas Industri",
-    "One group delivering trusted technology and engineering solutions — from fuel stations and industrial facilities to automotive workshops, with CUSTOM printing wherever tickets, receipts and boarding passes are issued.": "Satu grup yang menghadirkan solusi teknologi dan rekayasa tepercaya — dari SPBU dan fasilitas industri hingga bengkel otomotif, dengan pencetakan CUSTOM di mana pun tiket, struk, dan boarding pass diterbitkan.",
+    "One group delivering trusted technology and engineering solutions — from fuel stations and industrial facilities to automotive workshops, with CUSTOM printing wherever tickets, receipts and boarding passes are issued.": "Satu grup yang menghadirkan solusi teknologi dan teknik tepercaya — melayani SPBU, fasilitas industri, dan bengkel otomotif, serta menyediakan solusi pencetakan CUSTOM untuk tiket, struk, dan boarding pass.",
     "Your technology one stop solution for": "Solusi teknologi satu atap Anda untuk",
     "Oil & Gas industry": "Industri minyak & gas",
-    "F&B and entertainment": "Makanan & minuman dan hiburan",
+    "F&B and entertainment": "F&B dan hiburan",
     "Retail and industrial automation": "Otomasi ritel dan industri",
     "Telemetry": "Telemetri",
     "Automotive industry": "Industri otomotif",
@@ -163,7 +163,7 @@
     "Tel:": "Tel:",
 
     /* ---- footer ---- */
-    "Hanindo Group has served businesses across Indonesia since 1987, providing technology, equipment and engineering solutions across specialised industries. Our companies cover oil & gas, automation, automotive, fire protection, printing and POS, combining international brands with local expertise and technical support.": "Hanindo Group telah melayani berbagai bisnis di seluruh Indonesia sejak 1987, menyediakan solusi teknologi, peralatan, dan rekayasa di berbagai industri khusus. Perusahaan kami mencakup minyak & gas, otomasi, otomotif, proteksi kebakaran, percetakan, dan POS, memadukan merek internasional dengan keahlian lokal dan dukungan teknis.",
+    "Hanindo Group has served businesses across Indonesia since 1987, providing technology, equipment and engineering solutions across specialised industries. Our companies cover oil & gas, automation, automotive, fire protection, printing and POS, combining international brands with local expertise and technical support.": "Hanindo Group telah melayani berbagai bisnis di seluruh Indonesia sejak 1987, menyediakan solusi teknologi, peralatan, dan teknik di berbagai industri khusus. Perusahaan kami mencakup minyak & gas, otomasi, otomotif, proteksi kebakaran, percetakan, dan POS, memadukan merek internasional dengan keahlian lokal dan dukungan teknis.",
     "© 2026 Hanindo Group. All Rights Reserved.": "© 2026 Hanindo Group. Hak Cipta Dilindungi.",
 
     /* ---- about: hero + growth timeline ---- */
@@ -180,7 +180,7 @@
     "China expansion": "Ekspansi Tiongkok",
     "Hanindo (Shanghai) International Co., Ltd. office opens, Shenzhen follows in 2009.": "Kantor Hanindo (Shanghai) International Co., Ltd. dibuka, Shenzhen menyusul pada 2009.",
     "South East Asia expansion": "Ekspansi Asia Tenggara",
-    "PT. Hanindo Automation Solutions adds CUSTOM Hanindo Indonesia.": "PT. Hanindo Automation Solutions menghadirkan CUSTOM Hanindo Indonesia.",
+    "PT. Hanindo Automation Solutions adds CUSTOM Hanindo Indonesia.": "PT. Hanindo Automation Solutions mendirikan CUSTOM Hanindo Indonesia.",
     "Singapore office": "Kantor Singapura",
     "Gralessando (S) Pte. Ltd. opens, covering CUSTOM Hanindo South East Asia.": "Gralessando (S) Pte. Ltd. dibuka, mencakup CUSTOM Hanindo Asia Tenggara.",
     "Regional partnerships": "Kemitraan regional",
@@ -207,12 +207,12 @@
     "Vision & Mission": "Visi & Misi",
     "01 / Vision": "01 / Visi",
     "Vision": "Visi",
-    "To be the trusted technology and engineering partner that industries across Indonesia and Southeast Asia rely on for long-term growth.": "Menjadi mitra teknologi dan rekayasa tepercaya yang diandalkan industri di Indonesia dan Asia Tenggara untuk pertumbuhan jangka panjang.",
+    "To be the trusted technology and engineering partner that industries across Indonesia and Southeast Asia rely on for long-term growth.": "Menjadi mitra teknologi dan teknik tepercaya yang diandalkan industri di Indonesia dan Asia Tenggara untuk pertumbuhan jangka panjang.",
     "02 / Mission": "02 / Misi",
     "Mission": "Misi",
-    "Deliver reliable technology and engineering solutions through leading global partnerships and our own product brands.": "Menghadirkan solusi teknologi dan rekayasa yang andal melalui kemitraan global terkemuka dan merek produk kami sendiri.",
-    "Support customers throughout the full lifecycle of every system — from specification and installation to training, spare parts and after-sales service.": "Mendampingi pelanggan sepanjang siklus hidup setiap sistem — dari penentuan spesifikasi dan pemasangan hingga pelatihan, suku cadang, dan layanan purnajual.",
-    "Continuously improve our capabilities while operating responsibly toward our customers, employees and the environment.": "Terus meningkatkan kapabilitas kami sembari beroperasi secara bertanggung jawab terhadap pelanggan, karyawan, dan lingkungan.",
+    "Deliver reliable technology and engineering solutions through leading global partnerships and our own product brands.": "Menghadirkan solusi teknologi dan teknik yang andal melalui kemitraan global terkemuka dan merek produk kami sendiri.",
+    "Support customers throughout the full lifecycle of every system — from specification and installation to training, spare parts and after-sales service.": "Mendampingi pelanggan di setiap tahap, mulai dari penentuan spesifikasi dan pemasangan hingga pelatihan, suku cadang, dan layanan setelah pembelian.",
+    "Continuously improve our capabilities while operating responsibly toward our customers, employees and the environment.": "Terus meningkatkan kapabilitas kami sekaligus menjalankan bisnis secara bertanggung jawab terhadap pelanggan, karyawan, dan lingkungan.",
 
     /* ---- products & services ---- */
     "Products &": "Produk &",
