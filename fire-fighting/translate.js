@@ -38,7 +38,7 @@
        heading key is needed here. PT. Hanindo Citra is a company name and
        stays as it is; the eyebrows, body copy and buttons below are the
        parts that still translate. */
-    "We design, supply, install and maintain complete fire-fighting systems — reliable on day one, and every day after.": "Kami merancang, memasok, memasang, dan memelihara sistem pemadam kebakaran yang lengkap — andal sejak hari pertama, dan setiap hari sesudahnya.",
+    "We design, supply, install and maintain complete fire-fighting systems — reliable on day one, and every day after.": "Kami merancang, memasok, memasang, dan memelihara sistem pemadam kebakaran yang lengkap — andal sejak hari pertama dan seterusnya.",
     "Our products & services": "Produk & layanan kami",
     "About PT. Hanindo Citra": "Tentang PT. Hanindo Citra",
     "The fire fighting department of the Hanindo Group — delivering advanced, end-to-end fire-protection systems that safeguard lives and property across Indonesia.": "Departemen pemadam kebakaran Hanindo Group — menghadirkan sistem proteksi kebakaran mutakhir dan menyeluruh yang melindungi jiwa dan properti di seluruh Indonesia.",
@@ -49,12 +49,12 @@
     "Scroll": "Gulir",
 
     /* ---- home hero + intro split (new layout) ---- */
-    "PT. Hanindo Citra designs, supplies, installs and maintains complete fire-fighting systems — reliable on day one, and every day after.": "PT. Hanindo Citra merancang, memasok, memasang, dan memelihara sistem pemadam kebakaran yang lengkap — andal sejak hari pertama, dan setiap hari sesudahnya.",
+    "PT. Hanindo Citra designs, supplies, installs and maintains complete fire-fighting systems — reliable on day one, and every day after.": "PT. Hanindo Citra merancang, memasok, memasang, dan memelihara sistem pemadam kebakaran yang lengkap — andal sejak hari pertama dan seterusnya.",
     "Fire safety, under one roof.": "Keselamatan kebakaran, dalam satu atap.",
-    "Hanindo Group's fire protection division provides engineered fire protection solutions designed to safeguard lives, assets and critical infrastructure across Indonesia.": "Divisi proteksi kebakaran Hanindo Group menghadirkan solusi proteksi kebakaran terekayasa yang dirancang untuk melindungi jiwa, aset, dan infrastruktur penting di seluruh Indonesia.",
-    "Complete project lifecycle support — from design and supply to installation, testing, commissioning and long-term maintenance": "Dukungan penuh sepanjang siklus proyek — dari perancangan dan pemasokan hingga pemasangan, pengujian, commissioning, dan pemeliharaan jangka panjang",
-    "Six core fire protection systems covering hydrant, sprinkler, gas suppression, foam, deluge and fire alarm solutions": "Enam sistem proteksi kebakaran utama meliputi hidran, sprinkler, pemadam gas, busa, deluge, dan solusi alarm kebakaran",
-    "Trusted across oil & gas, government facilities and industrial sectors throughout Indonesia": "Dipercaya di sektor migas, fasilitas pemerintah, dan sektor industri di seluruh Indonesia",
+    "Hanindo Group's fire protection division provides engineered fire protection solutions designed to safeguard lives, assets and critical infrastructure across Indonesia.": "Divisi proteksi kebakaran Hanindo Group menghadirkan solusi proteksi kebakaran terintegrasi untuk melindungi jiwa, aset, dan infrastruktur penting di seluruh Indonesia.",
+    "Complete project lifecycle support — from design and supply to installation, testing, commissioning and long-term maintenance": "Dukungan penuh sepanjang siklus proyek — dari perancangan dan pengadaan hingga pemasangan, pengujian, commissioning, dan pemeliharaan jangka panjang",
+    "Six core fire protection systems covering hydrant, sprinkler, gas suppression, foam, deluge and fire alarm solutions": "Enam sistem proteksi kebakaran utama meliputi hidran, sprinkler, pemadam gas, busa, deluge, dan sistem alarm kebakaran",
+    "Trusted across oil & gas, government facilities and industrial sectors throughout Indonesia": "Dipercaya oleh pelanggan di sektor migas, fasilitas pemerintah, dan industri di seluruh Indonesia",
 
     /* ---- home statement + stats ---- */
     "PT. Hanindo Citra is the fire protection division of Hanindo Group—transforming": "PT. Hanindo Citra adalah divisi proteksi kebakaran Hanindo Group—mengubah",
@@ -149,20 +149,20 @@
     "Specialising in advanced fire-fighting systems — end-to-end solutions designed to protect lives and property.": "Berspesialisasi dalam sistem pemadam kebakaran mutakhir — solusi menyeluruh yang dirancang untuk melindungi jiwa dan properti.",
     "Company overview": "Sekilas Perusahaan",
     "Excellence and safety,": "Keunggulan dan keselamatan,",
-    "by design": "sejak dari desain",
-    "PT. Hanindo Citra delivers engineered fire protection systems that safeguard people, protect assets, and keep businesses operating with confidence.": "PT. Hanindo Citra menghadirkan sistem proteksi kebakaran hasil rekayasa yang melindungi jiwa, menjaga aset, dan menjaga kelangsungan operasional bisnis dengan penuh percaya diri.",
-    "From design and engineering to installation, testing, commissioning, and maintenance, we provide end-to-end solutions tailored to commercial, industrial, and critical infrastructure projects.": "Dari desain dan rekayasa hingga pemasangan, pengujian, commissioning, dan pemeliharaan, kami menyediakan solusi menyeluruh yang disesuaikan untuk proyek komersial, industri, dan infrastruktur vital.",
-    "Built on technical expertise and a commitment to quality, every system is designed to meet rigorous standards and perform reliably long after handover.": "Dibangun atas keahlian teknis dan komitmen terhadap kualitas, setiap sistem dirancang untuk memenuhi standar yang ketat dan bekerja andal jauh setelah serah terima.",
+    "by design": "sejak tahap desain",
+    "PT. Hanindo Citra delivers engineered fire protection systems that safeguard people, protect assets, and keep businesses operating with confidence.": "PT. Hanindo Citra menghadirkan sistem proteksi kebakaran hasil rekayasa yang dirancang untuk melindungi jiwa, menjaga aset, dan mendukung kelangsungan operasional bisnis.",
+    "From design and engineering to installation, testing, commissioning, and maintenance, we provide end-to-end solutions tailored to commercial, industrial, and critical infrastructure projects.": "Dari desain dan rekayasa hingga pemasangan, pengujian, commissioning, dan pemeliharaan, kami menyediakan solusi menyeluruh yang disesuaikan dengan kebutuhan proyek komersial, industri, dan infrastruktur vital.",
+    "Built on technical expertise and a commitment to quality, every system is designed to meet rigorous standards and perform reliably long after handover.": "Didukung keahlian teknis dan komitmen terhadap kualitas, setiap sistem dirancang untuk memenuhi standar yang ketat dan bekerja secara andal, bahkan setelah serah terima proyek.",
     "Fire pump & piping installation": "Instalasi pompa & perpipaan kebakaran",
     "Site delivery, West Sumatera": "Pengerjaan lokasi, Sumatera Barat",
     "Our direction": "Arah Kami",
     "Vision & Mission": "Visi & Misi",
     "Vision": "Visi",
-    "To be the fire protection partner our clients trust — delivering reliable systems, professional expertise and lasting peace of mind.": "Menjadi mitra proteksi kebakaran yang dipercaya klien — menghadirkan sistem yang andal, keahlian profesional, dan ketenangan yang berkelanjutan.",
+    "To be the fire protection partner our clients trust — delivering reliable systems, professional expertise and lasting peace of mind.": "Menjadi mitra proteksi kebakaran yang dipercaya klien — menghadirkan sistem yang andal, keahlian profesional, dan rasa aman yang berkelanjutan.",
     "Mission": "Misi",
-    "Provide end-to-end fire protection solutions with quality, efficiency and technical excellence.": "Menyediakan solusi proteksi kebakaran menyeluruh dengan kualitas, efisiensi, dan keunggulan teknis.",
-    "Invest continuously in innovation and in our people.": "Terus berinvestasi dalam inovasi dan sumber daya manusia.",
-    "Leverage advanced technology and proven systems to enhance efficiency, quality and safety.": "Memanfaatkan teknologi mutakhir dan sistem teruji untuk meningkatkan efisiensi, kualitas, dan keselamatan.",
+    "Provide end-to-end fire protection solutions with quality, efficiency and technical excellence.": "Menyediakan solusi proteksi kebakaran menyeluruh dengan mengutamakan kualitas, efisiensi, dan keunggulan teknis.",
+    "Invest continuously in innovation and in our people.": "Terus berinvestasi dalam inovasi, teknologi, dan pengembangan sumber daya manusia.",
+    "Leverage advanced technology and proven systems to enhance efficiency, quality and safety.": "Memanfaatkan teknologi mutakhir dan sistem yang teruji untuk meningkatkan efisiensi, kualitas, dan keselamatan.",
     "Credentials": "Kredensial",
     "Certifications & Licenses": "Sertifikasi & Lisensi",
     /* Sub-label under the SKK thumbnail in the footer certification strip. */
@@ -184,12 +184,12 @@
     "See our projects": "Lihat proyek kami",
     "Our products": "Produk kami",
     "Talk to us": "Hubungi kami",
-    "Proven Experience": "Pengalaman Teruji",
+    "Proven Experience": "Pengalaman yang Teruji",
     "Supporting critical projects across government, oil & gas and industrial sectors, including Pertamina and the Ministry of Transportation.": "Mendukung proyek-proyek penting di sektor pemerintah, migas, dan industri, termasuk Pertamina dan Kementerian Perhubungan.",
     "Global Standards": "Standar Global",
-    "Internationally recognised products designed to comply with NFPA, SNI and ISO standards.": "Produk yang diakui secara internasional dan dirancang untuk memenuhi standar NFPA, SNI, dan ISO.",
-    "Lifecycle Support": "Dukungan Sepanjang Siklus",
-    "From consultation and site surveys to after-sales maintenance, we provide continuous support throughout the system lifecycle.": "Dari konsultasi dan survei lokasi hingga perawatan purnajual, kami memberikan dukungan berkelanjutan sepanjang siklus hidup sistem.",
+    "Internationally recognised products designed to comply with NFPA, SNI and ISO standards.": "Menghadirkan produk yang diakui secara internasional dan dirancang untuk memenuhi standar NFPA, SNI, dan ISO.",
+    "Lifecycle Support": "Dukungan Menyeluruh",
+    "From consultation and site surveys to after-sales maintenance, we provide continuous support throughout the system lifecycle.": "Dari konsultasi dan survei lokasi hingga layanan purnajual, kami memberikan dukungan berkelanjutan sepanjang siklus hidup sistem.",
     /* Trusted / Best Quality / Excellent Service are no longer on About —
        these three headings survive only on hanindo-citra-website.html, which
        shares this dictionary. Delete them when that page goes. Its three
@@ -201,7 +201,7 @@
     /* ---- products & services page ---- */
     "Products &": "Produk &",
     "Services": "Layanan",
-    "Complete fire protection and building services — operational on day one, and every day after.": "Layanan proteksi kebakaran dan bangunan yang lengkap — beroperasi sejak hari pertama, dan setiap hari sesudahnya.",
+    "Complete fire protection and building services — operational on day one, and every day after.": "Layanan proteksi kebakaran dan bangunan yang lengkap — beroperasi sejak hari pertama dan seterusnya.",
     "What we do": "Yang kami lakukan",
     "Comprehensive services": "Layanan menyeluruh",
     /* The lede under that heading, on both pages. It had no entry at all and
@@ -214,7 +214,7 @@
        one leads with a gerund.
        MEP stays MEP, and Plumbing keeps its English spelling: both are the
        forms used on Indonesian tender documents. */
-    "PT. Hanindo Citra is a complete solutions partner for fire protection and building services. We deliver end-to-end MEP (Mechanical, Electrical & Plumbing) installations alongside our specialist core in fire safety, drawing on the strength and global network of the Hanindo Group to bring international best practices to every project.": "PT. Hanindo Citra adalah mitra solusi lengkap untuk proteksi kebakaran dan layanan bangunan. Kami mengerjakan instalasi MEP (Mekanikal, Elektrikal & Plumbing) secara menyeluruh bersama inti keahlian kami di bidang keselamatan kebakaran, dengan memanfaatkan kekuatan dan jaringan global Hanindo Group untuk menghadirkan praktik terbaik internasional di setiap proyek.",
+    "PT. Hanindo Citra is a complete solutions partner for fire protection and building services. We deliver end-to-end MEP (Mechanical, Electrical & Plumbing) installations alongside our specialist core in fire safety, drawing on the strength and global network of the Hanindo Group to bring international best practices to every project.": "PT. Hanindo Citra merupakan mitra terpercaya untuk solusi proteksi kebakaran dan layanan bangunan. Kami menangani instalasi MEP (Mekanikal, Elektrikal & Plumbing) secara menyeluruh, didukung keahlian utama kami di bidang keselamatan kebakaran serta kekuatan dan jaringan global Hanindo Group. Hal ini memungkinkan kami menghadirkan standar dan praktik terbaik internasional dalam setiap proyek.",
     "General Contractor": "Kontraktor Umum",
     "Project delivery and site management.": "Pelaksanaan proyek dan manajemen lokasi.",
     "General Supplier": "Pemasok Umum",
@@ -224,16 +224,16 @@
        The preface came off with the card layout: singling out one of six
        services as the core read oddly in a numbered list where all six sit
        level, and the page says it plainly enough elsewhere. */
-    "Detection and suppression.": "Deteksi dan pemadaman.",
+    "Detection and suppression.": "Sistem deteksi dan pemadaman kebakaran.",
     "Mechanical Services": "Layanan Mekanikal",
     /* Two wordings on purpose, one per page: the one-page variant says
        "Mechanical engineering", products-services.html just "Engineering".
        The shorter one had no entry at all and sat in English through the
        whole toggle until this was noticed. */
     "Mechanical engineering for buildings and industry.": "Rekayasa mekanikal untuk bangunan dan industri.",
-    "Engineering for buildings and industry.": "Rekayasa untuk bangunan dan industri.",
+    "Engineering for buildings and industry.": "Rekayasa dan instalasi untuk bangunan dan industri.",
     "Electrical Services": "Layanan Elektrikal",
-    "Power, control and protection systems.": "Sistem daya, kontrol, dan proteksi.",
+    "Power, control and protection systems.": "Sistem kelistrikan, kontrol, dan proteksi.",
     "Maintenance Services": "Layanan Pemeliharaan",
     "Ongoing service contracts and support.": "Kontrak layanan dan dukungan berkelanjutan.",
     "Fire fighting system solutions": "Solusi sistem pemadam kebakaran",
@@ -260,18 +260,19 @@
        before assuming one entry covers it. */
     "Design & Engineering": "Desain & Rekayasa",
     "Tailored designs based on risk assessment and regulatory requirements.": "Desain yang disesuaikan berdasarkan penilaian risiko dan persyaratan regulasi.",
-    "Tailored designs from risk assessment and regulations.": "Desain yang disesuaikan berdasarkan penilaian risiko dan regulasi.",
+    "Tailored designs from risk assessment and regulations.": "Desain yang disesuaikan berdasarkan penilaian risiko dan peraturan yang berlaku.",
     "Procure & Supply": "Pengadaan & Pasokan",
     "Sourcing high-quality components from reputable global manufacturers.": "Pengadaan komponen berkualitas tinggi dari produsen global ternama.",
     "Quality components from reputable global manufacturers.": "Komponen berkualitas dari produsen global ternama.",
     "Install & Integrate": "Pemasangan & Integrasi",
     "Professional installation of detection, alarm, hydrant and suppression systems.": "Pemasangan profesional sistem deteksi, alarm, hidran, dan pemadam.",
-    "Professional installation of detection, alarm and suppression.": "Pemasangan profesional sistem deteksi, alarm, dan pemadam.",
+    "Professional installation of detection, alarm and suppression.": "Pemasangan profesional sistem deteksi, alarm, dan pemadam kebakaran.",
     "Test & Commission": "Pengujian & Commissioning",
     "Thorough validation to ensure optimal performance and reliability.": "Validasi menyeluruh untuk memastikan kinerja dan keandalan optimal.",
+    "Thorough validation for optimal performance.": "Pengujian menyeluruh untuk memastikan kinerja sistem yang optimal.",
     "Maintain & Support": "Pemeliharaan & Dukungan",
     "Ongoing maintenance programs to guarantee system integrity.": "Program pemeliharaan berkelanjutan untuk menjamin integritas sistem.",
-    "Ongoing maintenance to guarantee system integrity.": "Pemeliharaan berkelanjutan untuk menjamin integritas sistem.",
+    "Ongoing maintenance to guarantee system integrity.": "Pemeliharaan berkelanjutan untuk menjaga keandalan dan integritas sistem.",
     "Industries served": "Industri yang dilayani",
     "Oil & Gas": "Minyak & Gas",
     "Petrochemical": "Petrokimia",
@@ -362,7 +363,7 @@
     "Continuously invest in innovation and the development of our people to raise capability.": "Terus berinvestasi dalam inovasi dan pengembangan sumber daya manusia untuk meningkatkan kapabilitas.",
     "Implement management systems and technologies that improve efficiency, quality, and occupational health & safety.": "Menerapkan sistem manajemen dan teknologi yang meningkatkan efisiensi, kualitas, serta keselamatan dan kesehatan kerja.",
     "Trusted by leading organisations across government, oil & gas, and industry — including the Ministry of Transportation, PT Pertamina (Persero), AKR Fuel Storage, LPG Petroleum Storage, PT. GLB Indonesia, and the OP-1 Operational Building.": "Dipercaya oleh organisasi terkemuka di sektor pemerintah, minyak & gas, dan industri — termasuk Kementerian Perhubungan, PT Pertamina (Persero), AKR Fuel Storage, LPG Petroleum Storage, PT. GLB Indonesia, dan Gedung Operasional OP-1.",
-    "We deliver internationally branded fire-protection products engineered to the highest NFPA, SNI, and ISO standards — reliable on day one, and every day after.": "Kami menghadirkan produk proteksi kebakaran bermerek internasional yang direkayasa sesuai standar NFPA, SNI, dan ISO tertinggi — andal sejak hari pertama, dan setiap hari sesudahnya.",
+    "We deliver internationally branded fire-protection products engineered to the highest NFPA, SNI, and ISO standards — reliable on day one, and every day after.": "Kami menghadirkan produk proteksi kebakaran bermerek internasional yang direkayasa sesuai standar NFPA, SNI, dan ISO tertinggi — andal sejak hari pertama dan seterusnya.",
     "Fast response, free consultation, on-site surveys, and committed after-sales support — fully dedicated to our clients' satisfaction.": "Respons cepat, konsultasi gratis, survei lokasi, dan dukungan purnajual yang berkomitmen — sepenuhnya demi kepuasan klien kami.",
     "Membership of the National Fire Protection Association (NFPA) — the global authority behind the world's leading fire-safety standards.": "Keanggotaan National Fire Protection Association (NFPA) — otoritas global di balik standar keselamatan kebakaran terkemuka di dunia.",
     "Personnel certified in fire-safety competency (Ahli K3 Penanggulangan Kebakaran) under the Ministry of Manpower of the Republic of Indonesia.": "Personel bersertifikat kompetensi keselamatan kebakaran (Ahli K3 Penanggulangan Kebakaran) di bawah Kementerian Ketenagakerjaan Republik Indonesia."
