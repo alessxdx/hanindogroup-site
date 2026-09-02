@@ -135,7 +135,7 @@
     "Company overview": "Profil perusahaan",
     "Four decades in": "Empat dekade di",
     "petroleum equipment": "peralatan perminyakan",
-    "PT. Hanindo Citra has represented Gilbarco Veeder-Root since 1987, the year its petroleum equipment work began.": "PT. Hanindo Citra telah mewakili Gilbarco Veeder-Root sejak 1987, tahun ketika pekerjaan peralatan perminyakannya dimulai.",
+    "PT. Hanindo Citra has represented Gilbarco Veeder-Root since 1987, the year its petroleum equipment work began.": "PT. Hanindo Citra telah menjadi perwakilan Gilbarco Veeder-Root sejak 1987, sejak awal kiprahnya di bidang peralatan perminyakan.",
     /* Both "and also this" lines in the overview carry an inline link, so
        each reaches the walker as text nodes either side of the anchor and
        needs an entry per fragment. The link text is a company name and a
