@@ -209,7 +209,7 @@
     "your project.": "proyek Anda.",
     "Tell us what you are running or building, and we will put the right person on it.": "Beri tahu kami apa yang sedang Anda jalankan atau bangun, dan kami akan menugaskan orang yang tepat.",
     "How to reach us.": "Cara menghubungi kami.",
-    "For equipment enquiries, spare parts, service calls or a new station project, our Jakarta team is the first point of contact.": "Untuk pertanyaan peralatan, suku cadang, panggilan servis, atau proyek SPBU baru, tim Jakarta kami adalah titik kontak pertama.",
+    "For equipment enquiries, spare parts, service calls or a new station project, our Jakarta team is the first point of contact.": "Untuk pertanyaan seputar peralatan, suku cadang, panggilan servis, hingga proyek SPBU baru, tim Jakarta kami siap membantu sebagai kontak utama Anda.",
     "Telephone": "Telepon",
     "Office hours": "Jam operasional",
     ": Monday to Friday, 08.00 – 17.00 WIB": ": Senin – Jumat, 08.00 – 17.00 WIB",

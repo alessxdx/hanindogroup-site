@@ -327,7 +327,7 @@
     "your project.": "proyek Anda.",
     "Tell us what you are running or building, and we will put the right person on it.": "Beri tahu kami apa yang sedang Anda jalankan atau bangun, dan kami akan menugaskan orang yang tepat.",
     "How to reach us.": "Cara menghubungi kami.",
-    "For workshop equipment, installation, calibration or spare parts, our Jakarta team is the first point of contact.": "Untuk peralatan bengkel, pemasangan, kalibrasi, atau suku cadang, tim Jakarta kami adalah kontak pertama Anda.",
+    "For workshop equipment, installation, calibration or spare parts, our Jakarta team is the first point of contact.": "Untuk kebutuhan peralatan bengkel, pemasangan, kalibrasi, hingga suku cadang, tim Jakarta kami siap membantu sebagai kontak utama Anda.",
     "Telephone": "Telepon",
     "Office hours": "Jam operasional",
     ": Monday to Friday, 08.00 – 17.00 WIB": ": Senin – Jumat, 08.00 – 17.00 WIB",

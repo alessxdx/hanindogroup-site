@@ -251,7 +251,7 @@
     "your project.": "proyek Anda.",
     "Tell us about the site and we will put the right person on it.": "Ceritakan lokasi Anda dan kami akan menugaskan orang yang tepat.",
     "How to reach us.": "Cara menghubungi kami.",
-    "For fuel station construction, oil and gas construction work, or a question about a project we have delivered, our Jakarta office is the first point of contact.": "Untuk konstruksi SPBU, pekerjaan konstruksi minyak dan gas, atau pertanyaan mengenai proyek yang telah kami selesaikan, kantor Jakarta kami adalah titik kontak pertama.",
+    "For fuel station construction, oil and gas construction work, or a question about a project we have delivered, our Jakarta office is the first point of contact.": "Untuk kebutuhan konstruksi SPBU, pekerjaan konstruksi minyak dan gas, hingga pertanyaan mengenai proyek yang telah kami selesaikan, kantor Jakarta kami siap membantu sebagai kontak utama Anda.",
     "Head office": "Kantor pusat",
     "Office hours": "Jam kerja",
     ": Monday to Friday, 08.00 – 17.00 WIB": ": Senin sampai Jumat, 08.00 – 17.00 WIB",
