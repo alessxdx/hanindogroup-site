@@ -117,7 +117,7 @@
     "One group delivering trusted technology and engineering solutions — from fuel stations and industrial facilities to automotive workshops, with CUSTOM printing wherever tickets, receipts and boarding passes are issued.": "Satu grup yang menghadirkan solusi teknologi dan teknik tepercaya — melayani SPBU, fasilitas industri, dan bengkel otomotif, serta menyediakan solusi pencetakan CUSTOM untuk tiket, struk, dan boarding pass.",
     "Your technology one stop solution for": "Solusi teknologi satu atap Anda untuk",
     "Oil & Gas industry": "Industri minyak & gas",
-    "F&B and entertainment": "F&B dan hiburan",
+    "F&B and entertainment": "F&B",
     "Retail and industrial automation": "Otomasi ritel dan industri",
     "Telemetry": "Telemetri",
     "Automotive industry": "Industri otomotif",
