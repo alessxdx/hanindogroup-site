@@ -230,7 +230,7 @@
        "Mechanical engineering", products-services.html just "Engineering".
        The shorter one had no entry at all and sat in English through the
        whole toggle until this was noticed. */
-    "Mechanical engineering for buildings and industry.": "Rekayasa mekanikal untuk bangunan dan industri.",
+    "Mechanical engineering for buildings and industry.": "Rekayasa dan instalasi untuk bangunan dan industri.",
     "Engineering for buildings and industry.": "Rekayasa dan instalasi untuk bangunan dan industri.",
     "Electrical Services": "Layanan Elektrikal",
     "Power, control and protection systems.": "Sistem kelistrikan, kontrol, dan proteksi.",
@@ -259,7 +259,7 @@
        not by anyone noticing. If a stage is reworded again, check BOTH pages
        before assuming one entry covers it. */
     "Design & Engineering": "Desain & Rekayasa",
-    "Tailored designs based on risk assessment and regulatory requirements.": "Desain yang disesuaikan berdasarkan penilaian risiko dan persyaratan regulasi.",
+    "Tailored designs based on risk assessment and regulatory requirements.": "Desain yang disesuaikan berdasarkan penilaian risiko dan peraturan yang berlaku.",
     "Tailored designs from risk assessment and regulations.": "Desain yang disesuaikan berdasarkan penilaian risiko dan peraturan yang berlaku.",
     "Procure & Supply": "Pengadaan & Pasokan",
     "Sourcing high-quality components from reputable global manufacturers.": "Pengadaan komponen berkualitas tinggi dari produsen global ternama.",
@@ -268,7 +268,7 @@
     "Professional installation of detection, alarm, hydrant and suppression systems.": "Pemasangan profesional sistem deteksi, alarm, hidran, dan pemadam.",
     "Professional installation of detection, alarm and suppression.": "Pemasangan profesional sistem deteksi, alarm, dan pemadam kebakaran.",
     "Test & Commission": "Pengujian & Commissioning",
-    "Thorough validation to ensure optimal performance and reliability.": "Validasi menyeluruh untuk memastikan kinerja dan keandalan optimal.",
+    "Thorough validation to ensure optimal performance and reliability.": "Pengujian menyeluruh untuk memastikan kinerja sistem yang optimal.",
     "Thorough validation for optimal performance.": "Pengujian menyeluruh untuk memastikan kinerja sistem yang optimal.",
     "Maintain & Support": "Pemeliharaan & Dukungan",
     "Ongoing maintenance programs to guarantee system integrity.": "Program pemeliharaan berkelanjutan untuk menjamin integritas sistem.",
