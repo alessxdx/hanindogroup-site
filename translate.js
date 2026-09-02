@@ -49,7 +49,7 @@
     "PT. Hanindo Automation Solutions": "PT. Hanindo Automation Solutions",
     "(Indonesia)": "(Indonesia)",
     "(Singapore)": "(Singapura)",
-    "(China)": "(Tiongkok)",
+    "(China)": "(China)",
     /* The nav tab is "Our Businesses", not "Our Companies": the menu lists
        Fire Fighting, which is a department of PT. Hanindo Citra and not a
        company of its own. "Our Companies" stays above — the footer heading
@@ -81,7 +81,7 @@
     "All Automotive products →": "Semua produk Otomotif →",
     "Professional Printing Solutions": "Solusi Pencetakan Profesional",
     "DC / POS Solutions": "Solusi DC / POS",
-    "Scanning Solutions": "Solusi Pemindaian",
+    "Scanning Solutions": "Solusi Scanning",
     "Self-Service Solutions": "Solusi Layanan Mandiri",
     "All Printer & POS products →": "Semua produk Printer & POS →",
     "Products & Services": "Produk & Layanan",
@@ -141,7 +141,7 @@
     "Petroleum equipment & station construction": "Peralatan perminyakan & konstruksi SPBU",
     "Autoshop equipment — diagnostics, lifts, tyre & lube": "Peralatan bengkel — diagnostik, lift, ban & pelumasan",
     "End-to-end fire-protection systems, pumps & hydrants": "Sistem proteksi kebakaran menyeluruh, pompa & hidran",
-    "Printing, scanning & point-of-sale hardware and software": "Perangkat keras dan lunak pencetakan, pemindaian & point-of-sale",
+    "Printing, scanning & point-of-sale hardware and software": "Perangkat keras dan lunak pencetakan, scanning & point-of-sale",
     "Visit site": "Kunjungi situs",
 
     /* ---- partners strip + partners page ---- */
@@ -176,8 +176,8 @@
     "Hanindo Group established": "Hanindo Group didirikan",
     "Citra, Automotive, Automation Solutions and Flowtech formed within months.": "Citra, Automotive, Automation Solutions, dan Flowtech dibentuk dalam hitungan bulan.",
     "CUSTOM partnership": "Kemitraan CUSTOM",
-    "Partnered to expand CUSTOM products to the China market.": "Kemitraan untuk memperluas produk CUSTOM ke pasar Tiongkok.",
-    "China expansion": "Ekspansi Tiongkok",
+    "Partnered to expand CUSTOM products to the China market.": "Kemitraan untuk memperluas produk CUSTOM ke pasar China.",
+    "China expansion": "Ekspansi China",
     "Hanindo (Shanghai) International Co., Ltd. office opens, Shenzhen follows in 2009.": "Kantor Hanindo (Shanghai) International Co., Ltd. dibuka, Shenzhen menyusul pada 2009.",
     "South East Asia expansion": "Ekspansi Asia Tenggara",
     "PT. Hanindo Automation Solutions adds CUSTOM Hanindo Indonesia.": "PT. Hanindo Automation Solutions mendirikan CUSTOM Hanindo Indonesia.",
@@ -196,11 +196,11 @@
     "Click through to any of the companies below to find out more about what they do.": "Klik salah satu perusahaan di bawah ini untuk mengetahui lebih lanjut tentang apa yang mereka kerjakan.",
     "Petroleum equipment, station construction and fire protection.": "Peralatan perminyakan, konstruksi SPBU, dan proteksi kebakaran.",
     "Workshop and garage equipment for the service bay.": "Peralatan bengkel dan garasi untuk service bay.",
-    "Printing, scanning and point-of-sale systems — the Custom range, carried by three companies in their own markets.": "Sistem pencetakan, pemindaian, dan point-of-sale — rangkaian Custom, dibawakan oleh tiga perusahaan di pasarnya masing-masing.",
+    "Printing, scanning and point-of-sale systems — the Custom range, carried by three companies in their own markets.": "Sistem pencetakan, scanning, dan point-of-sale — rangkaian Custom, dibawakan oleh tiga perusahaan di pasarnya masing-masing.",
     /* the market under each of the three Printer & POS companies */
     "Indonesia": "Indonesia",
     "Singapore": "Singapura",
-    "China": "Tiongkok",
+    "China": "China",
 
     /* ---- about: vision & mission ---- */
     "Our direction": "Arah kami",
@@ -222,7 +222,7 @@
     "Everything the group supplies.": "Semua yang disediakan grup.",
     "A sample of the range below. Click through to any of the companies to see its full catalogue.": "Berikut sebagian dari rangkaian produk kami. Klik salah satu perusahaan untuk melihat katalog lengkapnya.",
     "Lifts and handling, tyre service, diagnostics, welding and lubrication for the service bay.": "Lift dan penanganan, layanan ban, diagnostik, pengelasan, dan pelumasan untuk service bay.",
-    "Printers, point-of-sale terminals, scanners and self-service kiosks, with the software that runs them.": "Printer, terminal point-of-sale, pemindai, dan kios layanan mandiri, beserta perangkat lunak yang menjalankannya.",
+    "Printers, point-of-sale terminals, scanners and self-service kiosks, with the software that runs them.": "Printer, terminal point-of-sale, scanner, dan kios layanan mandiri, beserta perangkat lunak yang menjalankannya.",
     "Email the group": "Email grup",
 
     /* ---- career ---- */
