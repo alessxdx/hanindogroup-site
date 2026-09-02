@@ -347,11 +347,13 @@
 
     /* contact page: the line under "How to reach us." The other company
        dictionaries carry the same sentence shaped to their own business. */
-    "For fire-protection design, supply, installation, testing or maintenance, our Jakarta team is the first point of contact.": "Untuk desain, pengadaan, pemasangan, pengujian, atau pemeliharaan proteksi kebakaran, tim Jakarta kami adalah titik kontak pertama.",
+    "For fire-protection design, supply, installation, testing or maintenance, our Jakarta team is the first point of contact.": "Untuk kebutuhan desain, pengadaan, pemasangan, pengujian, hingga pemeliharaan proteksi kebakaran, tim Jakarta kami siap membantu sebagai kontak utama Anda.",
 
     /* projects page: the two case write-ups. Client and facility names stay as
        they are; Ministry of Transportation follows the About page's
        "Kementerian Perhubungan". */
+    "Ministry of Transportation": "Kementerian Perhubungan",
+    "Ministry of Transportation – Padang": "Kementerian Perhubungan – Padang",
     "PT. Hanindo Citra designed and built a complete hydrant system for PT. GLB Indonesia — supply, installation, testing and commissioning, to project specification and Indonesian fire-safety standards.": "PT. Hanindo Citra merancang dan membangun sistem hidran lengkap untuk PT. GLB Indonesia — pengadaan, pemasangan, pengujian, dan komisioning, sesuai spesifikasi proyek dan standar keselamatan kebakaran Indonesia.",
     "PT. Hanindo Citra delivered a complete hydrant system for the Ministry of Transportation facility in Padang — supply, installation, testing and commissioning, to project specification and Indonesian fire-safety standards.": "PT. Hanindo Citra menghadirkan sistem hidran lengkap untuk fasilitas Kementerian Perhubungan di Padang — pengadaan, pemasangan, pengujian, dan komisioning, sesuai spesifikasi proyek dan standar keselamatan kebakaran Indonesia.",
 
