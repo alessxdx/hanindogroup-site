@@ -43,21 +43,21 @@
     "Other markets": "Pasar lainnya",
 
     /* ---- home hero + intro ---- */
-    "PT. Hanindo Automation Solutions supplies the printing, scanning and point-of-sale hardware and software behind retail and hospitality automation.": "PT. Hanindo Automation Solutions menyediakan perangkat keras dan perangkat lunak pencetakan, pemindaian, dan point-of-sale yang menjadi tulang punggung otomasi ritel dan perhotelan.",
-    "Printing, scanning, and point of sale.": "Pencetakan, pemindaian, dan point of sale.",
-    "PT. Hanindo Automation Solutions carries the Custom range in Indonesia — the same printing, scanning and point-of-sale hardware and software the group supplies across South East Asia and China, delivered and supported from the Jakarta head office.": "PT. Hanindo Automation Solutions membawa rangkaian produk Custom di Indonesia — perangkat keras dan perangkat lunak pencetakan, pemindaian, dan point-of-sale yang sama dengan yang dipasok grup di Asia Tenggara dan Tiongkok, dikirim dan didukung dari kantor pusat Jakarta.",
+    "PT. Hanindo Automation Solutions supplies the printing, scanning and point-of-sale hardware and software behind retail and hospitality automation.": "PT. Hanindo Automation Solutions menyediakan perangkat keras dan perangkat lunak pencetakan, scanning, dan point-of-sale yang mendukung otomasi ritel dan perhotelan.",
+    "Printing, scanning, and point of sale.": "Pencetakan, scanning, dan point of sale.",
+    "PT. Hanindo Automation Solutions carries the Custom range in Indonesia — the same printing, scanning and point-of-sale hardware and software the group supplies across South East Asia and China, delivered and supported from the Jakarta head office.": "PT. Hanindo Automation Solutions membawa rangkaian produk Custom di Indonesia — perangkat keras dan perangkat lunak pencetakan, scanning, dan point-of-sale yang juga digunakan di berbagai pasar di Asia Tenggara dan China, dikirim dan didukung dari kantor pusat Jakarta.",
     "Professional printing": "Pencetakan profesional",
     "POS, receipt, fiscal, ticket, label and mobile printers.": "Printer POS, struk, fiskal, tiket, label, dan mobile.",
     "Point of sale & data capture": "Point of sale & penangkapan data",
     "Terminals, touch systems, cash registers, scanners and payment terminals.": "Terminal, sistem layar sentuh, mesin kasir, pemindai, dan terminal pembayaran.",
-    "Scanning": "Pemindaian",
+    "Scanning": "Scanning",
     "Document scanners and multifunction print-and-scan systems.": "Pemindai dokumen dan sistem cetak-pindai multifungsi.",
 
     /* ---- product strip ---- */
     "What we supply": "Yang kami sediakan",
     "Professional Printing Solutions": "Solusi Pencetakan Profesional",
     "DC / POS Solutions": "Solusi DC / POS",
-    "Scanning Solutions": "Solusi Pemindaian",
+    "Scanning Solutions": "Solusi Scanning",
     "Self-Service Solutions": "Solusi Layanan Mandiri",
 
     /* ---- customers ---- */
@@ -86,42 +86,42 @@
     "Email": "Email",
     "Jakarta Office": "Kantor Jakarta",
     "Tel:": "Tel:",
-    "China": "Tiongkok",
+    "China": "China",
     ", see": ", lihat",
 
     /* ---- footer ---- */
     "Our Companies": "Perusahaan Kami",
-    "Hanindo Group has served businesses across Indonesia since 1987, providing technology, equipment and engineering solutions across specialised industries. Our companies cover oil & gas, automation, automotive, fire protection, printing and POS, combining international brands with local expertise and technical support.": "Hanindo Group telah melayani berbagai bisnis di seluruh Indonesia sejak 1987, menyediakan solusi teknologi, peralatan, dan rekayasa di berbagai industri khusus. Perusahaan kami mencakup minyak & gas, otomasi, otomotif, proteksi kebakaran, percetakan, dan POS, memadukan merek internasional dengan keahlian lokal dan dukungan teknis.",
+    "Hanindo Group has served businesses across Indonesia since 1987, providing technology, equipment and engineering solutions across specialised industries. Our companies cover oil & gas, automation, automotive, fire protection, printing and POS, combining international brands with local expertise and technical support.": "Hanindo Group telah melayani berbagai bisnis di seluruh Indonesia sejak 1987, menyediakan solusi teknologi, peralatan, dan teknik di berbagai industri khusus. Perusahaan kami mencakup minyak & gas, otomasi, otomotif, proteksi kebakaran, percetakan, dan POS, memadukan merek internasional dengan keahlian lokal dan dukungan teknis.",
     "© 2026 Hanindo Group. All Rights Reserved.": "© 2026 Hanindo Group. Hak Cipta Dilindungi.",
 
     /* ---- about: hero + overview + journey ---- */
     "About": "Tentang",
     "Us": "Kami",
-    "One of the four companies the Hanindo Group was founded with, and the arm that brings CUSTOM’s printing, scanning and self-service systems to Indonesia.": "Salah satu dari empat perusahaan pendiri Hanindo Group, dan lini yang menghadirkan sistem pencetakan, pemindaian, dan layanan mandiri CUSTOM ke Indonesia.",
+    "One of the four companies the Hanindo Group was founded with, and the arm that brings CUSTOM’s printing, scanning and self-service systems to Indonesia.": "Salah satu dari empat perusahaan pendiri Hanindo Group, dan lini yang menghadirkan sistem pencetakan, scanning, dan layanan mandiri CUSTOM ke Indonesia.",
 
     "Company overview": "Profil perusahaan",
     "Founded for oil & gas,": "Didirikan untuk minyak & gas,",
     "rebuilt around CUSTOM": "dibangun ulang di sekitar CUSTOM",
     /* Both paragraphs carry an inline link, so each reaches the walker as
        two text nodes either side of the anchor and needs an entry per side.
-       Neither link text is translated: "PT. Hanindo Citra" and "CUSTOM S.p.A."
+       Neither link text is translated: "PT. Hanindo Citra" and "CUSTOM China"
        are company names. */
     "PT. Hanindo Automation Solutions was one of the four companies established when the Hanindo Group was founded in 2002. Originally focused on automation solutions for the oil and gas industry, the company later evolved through its partnership with": "PT. Hanindo Automation Solutions adalah salah satu dari empat perusahaan yang didirikan saat Hanindo Group berdiri pada tahun 2002. Awalnya berfokus pada solusi otomasi untuk industri minyak dan gas, perusahaan ini kemudian berkembang melalui kemitraannya dengan",
-    ", introducing the CUSTOM product line to Indonesia in 2012 as CUSTOM Hanindo Indonesia.": ", memperkenalkan lini produk CUSTOM ke Indonesia pada tahun 2012 sebagai CUSTOM Hanindo Indonesia.",
-    "Today, PT. Hanindo Automation Solutions focuses on CUSTOM printing, scanning and point-of-sale solutions, supported by local system integration and technical expertise. The oil and gas automation business was transferred to": "Saat ini, PT. Hanindo Automation Solutions berfokus pada solusi pencetakan, pemindaian, dan point-of-sale CUSTOM, didukung integrasi sistem dan keahlian teknis lokal. Bisnis otomasi minyak dan gas dialihkan ke",
+    ", introducing the CUSTOM product line to Indonesia in 2012 as CUSTOM Hanindo Indonesia.": ", memperkenalkan produk-produk CUSTOM ke Indonesia pada tahun 2012 sebagai CUSTOM Hanindo Indonesia.",
+    "Today, PT. Hanindo Automation Solutions focuses on CUSTOM printing, scanning and point-of-sale solutions, supported by local system integration and technical expertise. The oil and gas automation business was transferred to": "Saat ini, PT. Hanindo Automation Solutions berfokus pada solusi pencetakan, scanning, dan point-of-sale CUSTOM, didukung integrasi sistem dan keahlian teknis lokal. Bisnis otomasi minyak dan gas dialihkan ke",
     ", where it continues alongside its petroleum equipment operations.": ", tempatnya berlanjut bersama operasi peralatan perminyakan perusahaan tersebut.",
     "Our Indonesia Office": "Kantor Kami di Indonesia",
 
     "Our journey": "Perjalanan kami",
     "CUSTOM Hanindo Growth": "Pertumbuhan CUSTOM Hanindo",
     "CUSTOM partnership": "Kemitraan CUSTOM",
-    "Partnered to expand CUSTOM products to the China market.": "Kemitraan untuk memperluas produk CUSTOM ke pasar Tiongkok.",
+    "Partnered to expand CUSTOM products to the China market.": "Kemitraan untuk memperluas produk CUSTOM ke pasar China.",
     "Shanghai office": "Kantor Shanghai",
-    "The group’s first office in China.": "Kantor pertama grup ini di Tiongkok.",
+    "The group’s first office in China.": "Kantor pertama grup ini di China.",
     "Shenzhen office": "Kantor Shenzhen",
-    "A second China office as the market grows.": "Kantor kedua di Tiongkok seiring pertumbuhan pasar.",
+    "A second China office as the market grows.": "Kantor kedua di China seiring pertumbuhan pasar.",
     "South East Asia expansion": "Ekspansi Asia Tenggara",
-    "PT. Hanindo Automation Solutions adds CUSTOM Hanindo Indonesia.": "PT. Hanindo Automation Solutions menghadirkan CUSTOM Hanindo Indonesia.",
+    "PT. Hanindo Automation Solutions adds CUSTOM Hanindo Indonesia.": "PT. Hanindo Automation Solutions mendirikan CUSTOM Hanindo Indonesia.",
     "Singapore office": "Kantor Singapura",
     "Gralessando (S) Pte. Ltd. opens, covering CUSTOM Hanindo South East Asia.": "Gralessando (S) Pte. Ltd. dibuka, mencakup CUSTOM Hanindo Asia Tenggara.",
     "Regional partnerships": "Kemitraan regional",
@@ -137,9 +137,9 @@
     "To be Indonesia’s trusted technology partner for retail, transport and service industries.": "Menjadi mitra teknologi tepercaya Indonesia untuk industri ritel, transportasi, dan jasa.",
     "02 / Mission": "02 / Misi",
     "Mission": "Misi",
-    "Deliver CUSTOM printing, scanning and point-of-sale solutions tailored to customer needs.": "Menghadirkan solusi pencetakan, pemindaian, dan point-of-sale CUSTOM yang disesuaikan dengan kebutuhan pelanggan.",
+    "Deliver CUSTOM printing, scanning and point-of-sale solutions tailored to customer needs.": "Menghadirkan solusi pencetakan, scanning, dan point-of-sale CUSTOM yang disesuaikan dengan kebutuhan pelanggan.",
     "Integrate, install and support systems through our local technical team.": "Mengintegrasikan, memasang, dan mendukung sistem melalui tim teknis lokal kami.",
-    "Help businesses adopt reliable technology solutions that improve daily operations.": "Membantu bisnis mengadopsi solusi teknologi andal yang meningkatkan operasional sehari-hari.",
+    "Help businesses adopt reliable technology solutions that improve daily operations.": "Membantu bisnis menggunakan teknologi yang andal untuk mendukung operasional sehari-hari.",
 
     /* ---- about: why choose us ---- */
     "Why choose us": "Mengapa memilih kami",
@@ -149,20 +149,20 @@
     "Technology Expertise": "Keahlian Teknologi",
     "Official CUSTOM solutions with the capability to integrate hardware into business operations.": "Solusi CUSTOM resmi dengan kemampuan mengintegrasikan perangkat keras ke dalam operasional bisnis.",
     "Local Support": "Dukungan Lokal",
-    "Installation, technical assistance and after-sales service from our own team.": "Pemasangan, bantuan teknis, dan layanan purnajual dari tim kami sendiri.",
+    "Installation, technical assistance and after-sales service from our own team.": "Pemasangan, bantuan teknis, dan layanan setelah pembelian dari tim kami sendiri.",
 
     /* ---- products & services ---- */
     "Products &": "Produk &",
     "Services": "Layanan",
-    "Printing, scanning and point of sale — supplied, integrated and supported.": "Pencetakan, pemindaian, dan point of sale — dipasok, diintegrasikan, dan didukung.",
+    "Printing, scanning and point of sale — supplied, integrated and supported.": "Pencetakan, scanning, dan point of sale — dipasok, diintegrasikan, dan didukung.",
     "What we offer": "Yang kami tawarkan",
     "Automation hardware, counter to kiosk": "Perangkat keras otomasi, dari meja kasir hingga kios",
     "Four families of Custom hardware and the software that runs them, supplied, integrated and supported across South East Asia. Each links through to the full Custom catalogue.": "Empat rangkaian perangkat keras Custom beserta perangkat lunaknya, dipasok, diintegrasikan, dan didukung di seluruh Asia Tenggara. Masing-masing terhubung ke katalog Custom lengkap.",
     "POS, receipt, fiscal, ticket, label, kiosk and mobile printers.": "Printer POS, struk, fiskal, tiket, label, kios, dan mobile.",
     "View products": "Lihat produk",
     "POS terminals, touch systems, cash registers and monitors.": "Terminal POS, sistem layar sentuh, mesin kasir, dan monitor.",
-    "Document scanners, barcode readers and imaging systems.": "Pemindai dokumen, pembaca barcode, dan sistem pencitraan.",
-    "Kiosks and countertop units for unattended service.": "Kios dan unit meja untuk layanan mandiri.",
+    "Document scanners, barcode readers and imaging systems.": "Pemindai dokumen dan pembaca barcode.",
+    "Kiosks and countertop units for unattended service.": "Kios dan perangkat meja untuk layanan mandiri.",
 
     /* ---- industries ---- */
     "Industries served": "Industri yang dilayani",
@@ -171,7 +171,7 @@
     "Public Transport": "Transportasi Umum",
     "Aviation": "Penerbangan",
     "Healthcare": "Kesehatan",
-    "Parking": "Perparkiran",
+    "Parking": "Parkir",
     "Logistics & Postal": "Logistik & Pos",
     "Entertainment": "Hiburan",
     "Lotteries & Betting": "Lotere & Taruhan",
