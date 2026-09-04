@@ -240,7 +240,7 @@
     /* ---- sister company ---- */
     "Better together": "Lebih baik bersama",
     "PT. Hanindo Citra — Oil & Gas": "PT. Hanindo Citra — Minyak & Gas",
-    "On fuel station projects, Flowtech works hand in hand with its Hanindo Group sister company, PT. Hanindo Citra. We handle the construction; they supply the dispensers, tank gauging, flow meters and fuel management systems, and keep the site serviced once it's running.": "Dalam proyek SPBU, Flowtech bekerja bersama perusahaan saudaranya di Hanindo Group, PT. Hanindo Citra. Flowtech menangani konstruksi, sementara Hanindo Citra memasok dispenser, tank gauging, flow meter, dan sistem manajemen bahan bakar, serta menyediakan layanan purnajual setelah SPBU beroperasi.",
+    "On fuel station projects, Flowtech works hand in hand with its Hanindo Group sister company, PT. Hanindo Citra. We handle the construction; they supply the dispensers, tank gauging, flow meters and fuel management systems, and keep the site serviced once it's running.": "Dalam proyek SPBU, Flowtech bekerja bersama perusahaan saudaranya di Hanindo Group, PT. Hanindo Citra. Flowtech menangani konstruksi, sementara Hanindo Citra memasok dispenser, tank gauging, flow meter, dan sistem manajemen bahan bakar, serta menyediakan layanan setelah pembelian begitu SPBU beroperasi.",
     "Visit Oil & Gas": "Kunjungi Minyak & Gas",
 
     /* ---- contact page ----

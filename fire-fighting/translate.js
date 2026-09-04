@@ -189,7 +189,7 @@
     "Global Standards": "Standar Global",
     "Internationally recognised products designed to comply with NFPA, SNI and ISO standards.": "Menghadirkan produk yang diakui secara internasional dan dirancang untuk memenuhi standar NFPA, SNI, dan ISO.",
     "Lifecycle Support": "Dukungan Menyeluruh",
-    "From consultation and site surveys to after-sales maintenance, we provide continuous support throughout the system lifecycle.": "Dari konsultasi dan survei lokasi hingga layanan purnajual, kami memberikan dukungan berkelanjutan sepanjang siklus hidup sistem.",
+    "From consultation and site surveys to after-sales maintenance, we provide continuous support throughout the system lifecycle.": "Dari konsultasi dan survei lokasi hingga layanan setelah pembelian, kami memberikan dukungan berkelanjutan sepanjang siklus hidup sistem.",
     /* Trusted / Best Quality / Excellent Service are no longer on About —
        these three headings survive only on hanindo-citra-website.html, which
        shares this dictionary. Delete them when that page goes. Its three
@@ -366,7 +366,7 @@
     "Implement management systems and technologies that improve efficiency, quality, and occupational health & safety.": "Menerapkan sistem manajemen dan teknologi yang meningkatkan efisiensi, kualitas, serta keselamatan dan kesehatan kerja.",
     "Trusted by leading organisations across government, oil & gas, and industry — including the Ministry of Transportation, PT Pertamina (Persero), AKR Fuel Storage, LPG Petroleum Storage, PT. GLB Indonesia, and the OP-1 Operational Building.": "Dipercaya oleh organisasi terkemuka di sektor pemerintah, minyak & gas, dan industri — termasuk Kementerian Perhubungan, PT Pertamina (Persero), AKR Fuel Storage, LPG Petroleum Storage, PT. GLB Indonesia, dan Gedung Operasional OP-1.",
     "We deliver internationally branded fire-protection products engineered to the highest NFPA, SNI, and ISO standards — reliable on day one, and every day after.": "Kami menghadirkan produk proteksi kebakaran bermerek internasional yang direkayasa sesuai standar NFPA, SNI, dan ISO tertinggi — andal sejak hari pertama dan seterusnya.",
-    "Fast response, free consultation, on-site surveys, and committed after-sales support — fully dedicated to our clients' satisfaction.": "Respons cepat, konsultasi gratis, survei lokasi, dan dukungan purnajual yang berkomitmen — sepenuhnya demi kepuasan klien kami.",
+    "Fast response, free consultation, on-site surveys, and committed after-sales support — fully dedicated to our clients' satisfaction.": "Respons cepat, konsultasi gratis, survei lokasi, dan dukungan setelah pembelian yang berkomitmen — sepenuhnya demi kepuasan klien kami.",
     "Membership of the National Fire Protection Association (NFPA) — the global authority behind the world's leading fire-safety standards.": "Keanggotaan National Fire Protection Association (NFPA) — otoritas global di balik standar keselamatan kebakaran terkemuka di dunia.",
     "Personnel certified in fire-safety competency (Ahli K3 Penanggulangan Kebakaran) under the Ministry of Manpower of the Republic of Indonesia.": "Personel bersertifikat kompetensi keselamatan kebakaran (Ahli K3 Penanggulangan Kebakaran) di bawah Kementerian Ketenagakerjaan Republik Indonesia."
   };

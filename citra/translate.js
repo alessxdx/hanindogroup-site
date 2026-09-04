@@ -94,7 +94,7 @@
     "The company also builds fuel stations, taking projects from initial consultation and design through construction to the day the site opens.": "Perusahaan ini juga membangun SPBU, membawa proyek dari konsultasi dan perancangan awal hingga pembangunan, sampai hari lokasi mulai beroperasi.",
     "Sole distributor in Indonesia for Gilbarco Veeder-Root since 1987": "Distributor tunggal di Indonesia untuk Gilbarco Veeder-Root sejak 1987",
     "Provides end-to-end construction for the retail petroleum industry, from consultation and design through construction until the fuel station is operational.": "Menyediakan konstruksi menyeluruh untuk industri ritel perminyakan, dari konsultasi dan perancangan hingga pembangunan sampai SPBU beroperasi.",
-    "Supplies and installs signboards and lighting for fuel stations, with after-sales service for all equipment installed.": "Memasok dan memasang papan nama serta penerangan SPBU, dengan layanan purnajual untuk semua peralatan yang dipasang.",
+    "Supplies and installs signboards and lighting for fuel stations, with after-sales service for all equipment installed.": "Memasok dan memasang papan nama serta penerangan SPBU, dengan layanan setelah pembelian untuk semua peralatan yang dipasang.",
     "What we supply": "Yang kami sediakan",
     "Partners & Principals": "Mitra & Prinsipal",
 
