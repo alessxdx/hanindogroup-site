@@ -413,19 +413,16 @@
     "Agriculture": "Pertanian",
     "Aeronautics": "Aeronautika",
 
-    /* ---- accessory and option words ----
-       Spec TABLES are not translated at all: every string inside a
-       .spectable was removed on request, labels and word-values alike, so
-       a specification reads the same in both languages. What follows is
-       the kit and option vocabulary that sits OUTSIDE those tables --
-       "Supplied with" lists, family chips -- which still turns over. */
-    "Hose clamp": "Klem selang",
-    "Mask and brush": "Masker dan sikat",
+    /* ---- product family words ----
+       Nothing a customer reads as a specification is translated any more.
+       Every string inside a .spectable went, labels and word-values alike,
+       and so did the "Supplied with" kit lists, so a spec sheet reads the
+       same in both languages. What is left here is the family and option
+       vocabulary that labels a product range rather than specifies a
+       machine. Do not add spec or kit strings back without asking. */
     "Diaphragm": "Diafragma",
-    "Belt": "Sabuk",
     "Spring": "Pegas",
     "Pneumatic": "Pneumatik",
-    "Manual": "Manual",
     "Motorised": "Bermotor",
     "Trolley-mounted": "Terpasang pada troli",
     "Rotary slip rings": "Slip ring rotari",
