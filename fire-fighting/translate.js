@@ -52,8 +52,8 @@
     "PT. Hanindo Citra designs, supplies, installs and maintains complete fire-fighting systems — reliable on day one, and every day after.": "PT. Hanindo Citra merancang, memasok, memasang, dan memelihara sistem pemadam kebakaran yang lengkap — andal sejak hari pertama dan seterusnya.",
     "Fire safety, under one roof.": "Keselamatan kebakaran, dalam satu atap.",
     "Hanindo Group's fire protection division provides engineered fire protection solutions designed to safeguard lives, assets and critical infrastructure across Indonesia.": "Divisi proteksi kebakaran Hanindo Group menghadirkan solusi proteksi kebakaran terintegrasi untuk melindungi jiwa, aset, dan infrastruktur penting di seluruh Indonesia.",
-    "Complete project lifecycle support — from design and supply to installation, testing, commissioning and long-term maintenance": "Dukungan penuh sepanjang siklus proyek — dari perancangan dan pengadaan hingga pemasangan, pengujian, commissioning, dan pemeliharaan jangka panjang",
-    "Six core fire protection systems covering hydrant, sprinkler, gas suppression, foam, deluge and fire alarm solutions": "Enam sistem proteksi kebakaran utama meliputi hidran, sprinkler, pemadam gas, busa, deluge, dan sistem alarm kebakaran",
+    "Complete project lifecycle support — from design and supply to installation, testing, commissioning and long-term maintenance": "Dukungan penuh dalam pelaksanaan proyek — dari perancangan dan pengadaan hingga pemasangan, pengujian, commissioning, dan pemeliharaan jangka panjang",
+    "Six core fire protection systems covering hydrant, sprinkler, gas suppression, foam, deluge and fire alarm solutions": "Sistem proteksi kebakaran utama meliputi hidran, sprinkler, pemadam gas, busa, deluge, dan sistem alarm kebakaran",
     "Trusted across oil & gas, government facilities and industrial sectors throughout Indonesia": "Dipercaya oleh pelanggan di sektor migas, fasilitas pemerintah, dan industri di seluruh Indonesia",
 
     /* ---- home statement + stats ---- */
@@ -85,7 +85,7 @@
     "Contact page": "Halaman kontak",
     "Head Office": "Kantor Pusat",
     "Telephone (Head Office)": "Telepon (Kantor Pusat)",
-    "Fire Fighting Dept Office": "Kantor Departemen Pemadam Kebakaran",
+    "Fire Fighting Dept Office": "Kantor Departemen Pemadam Kebakaran PT. Hanindo Citra",
     "Phone": "Telepon",
     /* The contact checklist labels its hours "Office hours" and prints the
        days after a colon, in its own text node. Both entries are the
@@ -151,7 +151,7 @@
     "Excellence and safety,": "Keunggulan dan keselamatan,",
     "by design": "sejak tahap desain",
     "PT. Hanindo Citra delivers engineered fire protection systems that safeguard people, protect assets, and keep businesses operating with confidence.": "PT. Hanindo Citra menghadirkan sistem proteksi kebakaran hasil rekayasa yang dirancang untuk melindungi jiwa, menjaga aset, dan mendukung kelangsungan operasional bisnis.",
-    "From design and engineering to installation, testing, commissioning, and maintenance, we provide end-to-end solutions tailored to commercial, industrial, and critical infrastructure projects.": "Dari desain dan rekayasa hingga pemasangan, pengujian, commissioning, dan pemeliharaan, kami menyediakan solusi menyeluruh yang disesuaikan dengan kebutuhan proyek komersial, industri, dan infrastruktur vital.",
+    "From design and engineering to installation, testing, commissioning, and maintenance, we provide end-to-end solutions tailored to commercial, industrial, and critical infrastructure projects.": "Dari desain dan rekayasa hingga pemasangan, pengujian, commissioning, dan pemeliharaan, kami menyediakan solusi menyeluruh yang disesuaikan dengan kebutuhan proyek pemerintahan, komersial, industri, dan infrastruktur vital.",
     "Built on technical expertise and a commitment to quality, every system is designed to meet rigorous standards and perform reliably long after handover.": "Didukung keahlian teknis dan komitmen terhadap kualitas, setiap sistem dirancang untuk memenuhi standar yang ketat dan bekerja secara andal, bahkan setelah serah terima proyek.",
     "Fire pump & piping installation": "Instalasi pompa & perpipaan kebakaran",
     "Site delivery, West Sumatera": "Pengerjaan lokasi, Sumatera Barat",
@@ -189,7 +189,7 @@
     "Global Standards": "Standar Global",
     "Internationally recognised products designed to comply with NFPA, SNI and ISO standards.": "Menghadirkan produk yang diakui secara internasional dan dirancang untuk memenuhi standar NFPA, SNI, dan ISO.",
     "Lifecycle Support": "Dukungan Menyeluruh",
-    "From consultation and site surveys to after-sales maintenance, we provide continuous support throughout the system lifecycle.": "Dari konsultasi dan survei lokasi hingga layanan setelah pembelian, kami memberikan dukungan berkelanjutan sepanjang siklus hidup sistem.",
+    "From consultation and site surveys to after-sales maintenance, we provide continuous support throughout the system lifecycle.": "Dari konsultasi dan survei lokasi hingga layanan setelah pembelian, kami memberikan dukungan yang berkelanjutan.",
     /* Trusted / Best Quality / Excellent Service are no longer on About —
        these three headings survive only on hanindo-citra-website.html, which
        shares this dictionary. Delete them when that page goes. Its three
@@ -214,7 +214,7 @@
        one leads with a gerund.
        MEP stays MEP, and Plumbing keeps its English spelling: both are the
        forms used on Indonesian tender documents. */
-    "PT. Hanindo Citra is a complete solutions partner for fire protection and building services. We deliver end-to-end MEP (Mechanical, Electrical & Plumbing) installations alongside our specialist core in fire safety, drawing on the strength and global network of the Hanindo Group to bring international best practices to every project.": "PT. Hanindo Citra merupakan mitra terpercaya untuk solusi proteksi kebakaran dan layanan bangunan. Kami menangani instalasi MEP (Mekanikal, Elektrikal & Plumbing) secara menyeluruh, didukung keahlian utama kami di bidang keselamatan kebakaran serta kekuatan dan jaringan global Hanindo Group. Hal ini memungkinkan kami menghadirkan standar dan praktik terbaik internasional dalam setiap proyek.",
+    "PT. Hanindo Citra is a complete solutions partner for fire protection and building services. We deliver end-to-end MEP (Mechanical, Electrical & Plumbing) installations alongside our specialist core in fire safety, drawing on the strength and global network of the Hanindo Group to bring international best practices to every project.": "PT. Hanindo Citra merupakan mitra terpercaya untuk solusi proteksi kebakaran dan layanan bangunan. Kami menangani instalasi MEP (Mekanikal, Elektrikal & Plumbing) secara menyeluruh, didukung keahlian utama kami di bidang keselamatan kebakaran serta kekuatan dan jaringan global Hanindo Group. Hal ini memungkinkan kami memberikan pelayanan terbaik berstandar internasional dalam setiap proyek.",
     "General Contractor": "Kontraktor Umum",
     "Project delivery and site management.": "Pelaksanaan proyek dan manajemen lokasi.",
     "General Supplier": "Pemasok Umum",
@@ -310,7 +310,7 @@
     "Lombok, Indonesia": "Lombok, Indonesia",
     "Alarm, hydrant, sprinkler & deluge systems.": "Sistem alarm, hidran, sprinkler & deluge.",
     "Pontianak, Sei Nipah": "Pontianak, Sei Nipah",
-    "Supply & installation of foam system.": "Pengadaan & pemasangan sistem busa.",
+    "Supply & installation of hydrant, water tank cooling & foam systems.": "Pengadaan & pemasangan sistem hidran, pendingin tangki air, dan busa.",
     "Rail Infrastructure": "Infrastruktur Perkeretaapian",
     "West Sumatera": "Sumatera Barat",
     "Complete site fire-protection delivery for the Directorate General of Railways.": "Pengerjaan proteksi kebakaran lokasi secara lengkap untuk Direktorat Jenderal Perkeretaapian.",
@@ -343,7 +343,7 @@
     "— personnel certified as technical assessor in fire protection competency under the Indonesian National Work Competency Standards (SKKNI).": "— personel bersertifikat sebagai asesor teknis kompetensi proteksi kebakaran berdasarkan Standar Kompetensi Kerja Nasional Indonesia (SKKNI).",
 
     /* products & services, and the one-page variant */
-    "One team carries a system from design through installation and testing to the maintenance contract that keeps it working.": "Satu tim membawa sebuah sistem dari perancangan, pemasangan, dan pengujian hingga kontrak perawatan yang menjaganya tetap berfungsi.",
+    "One team carries a system from design through installation and testing to the maintenance contract that keeps it working.": "Satu rangkaian yang membawa sebuah sistem dari perancangan, pemasangan, dan pengujian hingga kontrak perawatan yang menjaganya tetap berfungsi.",
 
     /* contact page: the line under "How to reach us." The other company
        dictionaries carry the same sentence shaped to their own business. */
