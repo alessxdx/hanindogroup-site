@@ -158,6 +158,7 @@
     /* ---- products & services ---- */
     "Products &": "Produk &",
     "Services": "Layanan",
+    "Six ranges, from tyre service and lifting to fluid handling and welding.": "Peralatan bengkel ban, sistem pelumasan, hingga pelatihan.",
     "Our product range": "Rangkaian produk kami",
     /* The Fluid Handling tile and its drop-down entry. "Lubrication & Fluid
        Handling" below is the longer form used on the range card. */
@@ -169,7 +170,7 @@
        lubrication reaching past the workshop, is gone from the page. The
        key is the whole trimmed node, so the old one stopped matching the
        moment the English was cut. Its Indonesian went with it. */
-    "Equipment from leading international manufacturers, chosen to improve productivity, safety and service quality. Most of it fits out a workshop; the RAASM fluid handling range also goes to lubricant distributors, plants and mine sites.": "Peralatan dari produsen internasional terkemuka, dipilih untuk meningkatkan produktivitas, keselamatan, dan mutu layanan. Sebagian besar untuk melengkapi bengkel; rangkaian penanganan fluida RAASM juga dipakai distributor pelumas, pabrik, dan lokasi tambang.",
+    "Equipment from leading international manufacturers, chosen to improve productivity, safety and service quality. Most of it fits out a workshop; the RAASM fluid handling range also goes to lubricant distributors, plants and mine sites.": "Peralatan dari merek internasional terkemuka, dipilih untuk meningkatkan produktivitas, keselamatan, dan mutu layanan. Peralatan yang mendukung kebutuhan bengkel, seperti rangkaian penanganan fluida RAASM, dan juga digunakan pada distributor pelumas, pabrik, dan lokasi tambang.",
     "Tyre changers, wheel balancers and 3D wheel alignment.": "Tyre changer, wheel balancer, dan spooring roda 3D.",
     "View products": "Lihat produk",
     /* Products & Services page: the catalogue was restyled and its heading
@@ -268,35 +269,11 @@
        company names are deliberately left untranslated, as at the top of
        this file. The sector still appears in the scope line below it, and
        those lines are translated. */
-    /* titles */
-    "ATOM two-post lifts": "Lift dua tiang ATOM",
-    "ATOM midrise scissor lifts": "Lift gunting midrise ATOM",
-    "HPA-Faip tyre changer and balancer": "Alat ganti ban dan balancer HPA-Faip",
-    /* "Tyre service" is the umbrella for a job with more than one of aligner,
-       balancer and changer. It is the site's own category name — the Products
-       & Services card of that name reads "Tyre changers, wheel balancers and
-       3D wheel alignment" — so it is a term the site already defines rather
-       than one invented for these cards. Spelling all three machines out ran
-       past the two-line clamp on the deck. */
-    "WELDANN tyre service and ATOM lifts": "Servis ban WELDANN dan lift ATOM",
-    "WELDANN tyre service and RAASM suction": "Servis ban WELDANN dan suction RAASM",
-    "RAASM lubrication systems": "Sistem pelumasan RAASM",
-    "HPA-Faip wheel aligner and ATOM lifts": "Spooring roda HPA-Faip dan lift ATOM",
-    /* "Spooring dan balancing" rather than a literal translation: that is the
-       phrase Indonesian workshops put on their own signage, so it is what a
-       reader is looking for. The deck was "HPA-Faip wheel alignment" until a
-       fourth photo showed the B 45 balancer on the same job. */
-    "HPA-Faip wheel aligner and balancer": "Spooring roda dan balancer HPA-Faip",
-    "RAASM lube truck": "Truk pelumas RAASM",
-    "HPA-Faip tyre service": "Servis ban HPA-Faip",
-    /* Model number stays as it is printed on the machine — M 928 Royal is a
-       name, not words, the same rule the principals get at the top of this
-       file. Only "tyre changer" is translated. */
-    "HPA-Faip tyre changer": "Alat ganti ban HPA-Faip",
-    "RAASM oil drainers": "Penampung oli bekas RAASM",
-    "BrainBee gas and smoke analysers": "Penganalisis gas dan asap BrainBee",
-    "RAASM service module": "Modul servis RAASM",
-    "AIRTEC tyre inflator": "Pengisi angin ban AIRTEC",
+    /* Card titles are NOT translated. They name machines by brand and type
+       â ATOM two-post lifts, RAASM lube truck â and the brand carries the
+       meaning, so they read the same in both languages. The Indonesian
+       entries were removed on request. Do not add them back without asking.
+       Scope lines below still translate. */
     /* Scope lines. NOT on the page at the moment: the deck sets the customer
        and the title over the photograph and has no room for a sentence under
        it. Kept because they are written and translated, and an unmatched
@@ -436,158 +413,14 @@
     "Agriculture": "Pertanian",
     "Aeronautics": "Aeronautika",
 
-    /* ---- specification labels ----
-       These repeat across every model, so a short list covers a great
-       many rows. Values are left alone: numbers and SI units read the
-       same in both languages. */
-    "Pressure range": "Rentang tekanan",
-    "Accuracy": "Akurasi",
-    "Enclosure": "Casing",
-    "Dimensions": "Dimensi",
-    "Hose kit": "Set selang",
-    "Hose": "Selang",
+    /* ---- accessory and option words ----
+       Spec TABLES are not translated at all: every string inside a
+       .spectable was removed on request, labels and word-values alike, so
+       a specification reads the same in both languages. What follows is
+       the kit and option vocabulary that sits OUTSIDE those tables --
+       "Supplied with" lists, family chips -- which still turns over. */
     "Hose clamp": "Klem selang",
-    "Power supply": "Catu daya",
-    "Units": "Satuan",
-    "Flow rate": "Laju aliran",
-    "Valve": "Katup",
-    "Switches": "Sakelar",
-    "Compensation": "Kompensasi",
-    "Multi-tyre": "Multi-ban",
-    "Column": "Kolom",
-    "Column height": "Tinggi kolom",
-    "Vandal resistant": "Tahan vandalisme",
-    "Capacity": "Kapasitas",
-    "Rated capacity": "Kapasitas terukur",
-    "Lifting capacity": "Kapasitas angkat",
-    "Lifting height": "Tinggi angkat",
-    "Lifting time": "Waktu naik",
-    "Decline time": "Waktu turun",
-    "Table length": "Panjang meja",
-    "Table width": "Lebar meja",
-    "Total width": "Lebar total",
-    "Total height": "Tinggi total",
-    "Overall width": "Lebar keseluruhan",
-    "Original height": "Tinggi awal",
-    "Max lifting height": "Tinggi angkat maks.",
-    "Min lifting height": "Tinggi angkat min.",
-    "Min height": "Tinggi min.",
-    "Secondary lifting height": "Tinggi angkat sekunder",
-    "Main scissor capacity": "Kapasitas scissor utama",
-    "Main lifting height": "Tinggi angkat utama",
-    "Main table length": "Panjang meja utama",
-    "Main table width": "Lebar meja utama",
-    "Sub scissor capacity": "Kapasitas scissor sub",
-    "Sub lifting height": "Tinggi angkat sub",
-    "Sub table length": "Panjang meja sub",
-    "Sub table width": "Lebar meja sub",
-    "Pass width": "Lebar lintasan",
-    "Single lane width": "Lebar jalur tunggal",
-    "Lane spacing": "Jarak antar jalur",
-    "Width between columns": "Lebar antar kolom",
-    "Working height": "Tinggi kerja",
-    "Air pressure": "Tekanan udara",
-    "Working pressure": "Tekanan kerja",
-    "Working air pressure": "Tekanan udara kerja",
-    "Working gas pressure": "Tekanan gas kerja",
-    "Operating pressure": "Tekanan operasi",
-    "Max pressure": "Tekanan maks.",
-    "Input air": "Udara masuk",
-    "Pneumatic air supply": "Suplai udara pneumatik",
-    "Weight": "Berat",
-    "Net weight": "Berat bersih",
-    "Gross weight": "Berat kotor",
-    "Machine weight (net)": "Berat mesin (bersih)",
-    "Machine weight (gross)": "Berat mesin (kotor)",
-    "Machine dimensions": "Dimensi mesin",
-    "Package": "Paket",
-    "Packaging size": "Ukuran kemasan",
-    "Voltage": "Tegangan",
-    "Input voltage": "Tegangan input",
-    "AC input voltage": "Tegangan input AC",
-    "Supply voltage": "Tegangan suplai",
-    "No-load voltage": "Tegangan tanpa beban",
-    "Input frequency": "Frekuensi input",
-    "Input power cable": "Kabel daya input",
-    "Power": "Daya",
-    "Motor power": "Daya motor",
-    "Maximum power": "Daya maksimum",
-    "Power consumption": "Konsumsi daya",
-    "Power absorption": "Serapan daya",
-    "Rated input power": "Daya input terukur",
-    "Real current": "Arus nyata",
-    "Current display range": "Rentang tampilan arus",
-    "Rated duty cycle": "Siklus kerja terukur",
-    "Insulation class": "Kelas isolasi",
-    "Insulation level": "Tingkat isolasi",
-    "Protection class": "Kelas proteksi",
-    "Protection grade": "Tingkat proteksi",
-    "Efficiency": "Efisiensi",
-    "Cooling mode": "Mode pendinginan",
-    "Air cooling": "Pendinginan udara",
-    "Noise level": "Tingkat kebisingan",
-    "Noise level running": "Tingkat kebisingan saat beroperasi",
-    "Working temperature": "Suhu kerja",
-    "Ambient temperature": "Suhu lingkungan",
-    "Working humidity": "Kelembapan kerja",
-    "Display": "Tampilan",
-    "Display precision": "Presisi tampilan",
-    "Dual display": "Tampilan ganda",
-    "Camera resolution": "Resolusi kamera",
-    "Measuring time": "Waktu pengukuran",
-    "Spinning speed": "Kecepatan putar",
-    "Drive speed": "Kecepatan penggerak",
-    "Chuck rotation speed": "Kecepatan putar chuck",
-    "Shaft diameter": "Diameter poros",
-    "Rim diameter": "Diameter pelek",
-    "Rim diameter (measurable)": "Diameter pelek (terukur)",
-    "Rim diameter (setting range)": "Diameter pelek (rentang setelan)",
-    "Rim width range": "Rentang lebar pelek",
-    "Max tyre diameter": "Diameter ban maks.",
-    "Max tyre width": "Lebar ban maks.",
-    "Max tyre weight": "Berat ban maks.",
-    "Max wheel diameter": "Diameter roda maks.",
-    "Max wheel width": "Lebar roda maks.",
-    "Max wheel weight": "Berat roda maks.",
-    "Bead-breaker opening": "Bukaan bead breaker",
-    "Bead-breaking power": "Daya bead breaker",
-    "Inner clamping size": "Ukuran cekam dalam",
-    "Outer clamping size": "Ukuran cekam luar",
-    "Inside clamp": "Cekam dalam",
-    "Outside clamp": "Cekam luar",
-    "Max self-centring torque": "Torsi self-centring maks.",
-    "Balancing accuracy": "Akurasi balancing",
-    "Unbalance accuracy": "Akurasi unbalance",
-    "Max unbalance calculated": "Unbalance maks. terhitung",
-    "Turning accuracy": "Akurasi putar",
-    "Individual toe": "Toe individual",
-    "Total toe": "Toe total",
-    "Steering angle difference": "Selisih sudut kemudi",
-    "Max steering": "Sudut kemudi maks.",
-    "Track width": "Lebar jejak",
-    "Wheelbase": "Jarak sumbu roda",
-    "Flange to machine distance": "Jarak flange ke mesin",
-    "Brake runout": "Run-out rem",
-    "Type": "Tipe",
-    "Configuration": "Konfigurasi",
-    "Tank": "Tangki",
-    "Storage tank capacity": "Kapasitas tangki penyimpanan",
-    "New/used fluid tank": "Tangki fluida baru/bekas",
-    "Fluid draining hose": "Selang pembuangan fluida",
-    "Fluid outlet hose": "Selang keluar fluida",
-    "Fluid return hose": "Selang balik fluida",
-    "Quick joint size": "Ukuran quick joint",
-    "Oil bottle": "Botol oli",
     "Mask and brush": "Masker dan sikat",
-    "Refrigerant": "Refrigeran",
-    "Vacuum pump": "Pompa vakum",
-    "Ultimate vacuum": "Vakum akhir",
-    "Filter precision": "Presisi filter",
-    "Water consumption": "Konsumsi air",
-    "Nitrogen purity": "Kemurnian nitrogen",
-    "Nitrogen process speed": "Kecepatan proses nitrogen",
-    "Rated gas production": "Produksi gas terukur",
-    "Compressor": "Kompresor",
     "Diaphragm": "Diafragma",
     "Belt": "Sabuk",
     "Spring": "Pegas",
@@ -595,15 +428,7 @@
     "Manual": "Manual",
     "Motorised": "Bermotor",
     "Trolley-mounted": "Terpasang pada troli",
-    "Swing-arm": "Lengan ayun",
-    "Printer": "Printer",
-    "Gas loadcell": "Load cell gas",
     "Rotary slip rings": "Slip ring rotari",
-    "Pressure gauge": "Alat ukur tekanan",
-    "Electrode diameter": "Diameter elektroda",
-    "MMA electrode": "Elektroda MMA",
-    "MIG solid wire diameter": "Diameter kawat solid MIG",
-    "MIG flux wire diameter": "Diameter kawat flux MIG",
     "Spot welding": "Las titik",
     "Cleaning": "Pembersihan",
     "Service columns": "Kolom servis",
@@ -617,10 +442,6 @@
     "Single line": "Jalur tunggal",
     "Dual line": "Jalur ganda",
     "Progressive": "Progresif",
-    "Round profile": "Profil bulat",
-    "Square profile": "Profil persegi",
-    "Low range option": "Opsi rentang rendah",
-    "Yes": "Ya",
 
     /* ---- catalogue page leads ----
        The one-line summary under each catalogue hero. Shorter than the
@@ -691,18 +512,13 @@
     ", a lever-less version that lifts the bead over the rim without a tyre iron.": ", versi tanpa tuas yang mengangkat bead melewati pelek tanpa linggis ban.",
     "The general workshop model. The post tilts back on a pedal and returns the tool head to the same setting, so a matched set of wheels runs without readjusting. Needs clear space behind for the tilt.": "Model bengkel umum. Tiangnya dimiringkan ke belakang dengan pedal dan mengembalikan kepala alat ke setelan yang sama, sehingga satu set roda seragam dapat dikerjakan tanpa penyetelan ulang. Membutuhkan ruang kosong di belakang untuk kemiringannya.",
     "The M422 with 24″ rim capacity — the same tilting post and pedal-set tool head, sized for larger alloy wheels and light SUVs.": "M422 dengan kapasitas pelek 24″ — tiang miring dan kepala alat berpedal yang sama, dirancang untuk pelek aloi lebih besar dan SUV ringan.",
-    "Bead-breaking power (at 10 bar)": "Daya bead breaker (pada 10 bar)",
     ", the two-speed version — the weight above is for that model.": ", versi dua kecepatan — berat di atas adalah untuk model tersebut.",
     "Two-camera 3D alignment — standard, i-Next and i-Next Slim.": "Spooring 3D dua kamera — standar, i-Next, dan i-Next Slim.",
     "The i-Next measurements in a slim cabinet. The camera beam moves on a handle rather than a motor, so one operator can set it from pit level to full lift height by hand. Pre-arranged for a second monitor or an A4 printer, and for the aligner trolley.": "Pengukuran i-Next dalam kabinet ramping. Batang kameranya digerakkan dengan pegangan alih-alih motor, sehingga satu operator dapat menyetelnya dari ketinggian pit hingga lift penuh dengan tangan. Telah disiapkan untuk monitor kedua atau printer A4, serta untuk troli aligner.",
-    "Sensor holder": "Dudukan sensor",
-    "11″–26″ (with adaptor)": "11″–26″ (dengan adaptor)",
     /* The ALLY 30 is an accessory rather than a machine, so it is the one
        card on the page whose heading is not a machine type. */
     "One model — a universal helper arm that fits the tyre changers above.": "Satu model — lengan bantu universal yang cocok untuk tyre changer di atas.",
     "Universal Helper Device": "Alat Bantu Universal",
-    "Working range": "Rentang kerja",
-    "Pressing force on tools": "Gaya tekan pada perkakas",
     "Not a machine of its own — it stands beside a tyre changer and does the holding a second pair of hands would. A tapered roller keeps the first bead in the rim well, a large disc lifts the tyre to free the lower bead, and a rotating depressor and presser cone hold a stiff tyre down on the turntable. That is what makes run-flat, ultra-low-profile and alloy work manageable single-handed.": "Bukan mesin tersendiri — alat ini berdiri di samping tyre changer dan melakukan penahanan yang biasanya butuh sepasang tangan tambahan. Rol kerucut menjaga bead pertama tetap di kanal pelek, cakram besar mengangkat ban untuk melepaskan bead bawah, dan penekan berputar serta kerucut penekan menahan ban kaku pada turntable. Itulah yang membuat pekerjaan run-flat, profil ultra-rendah, dan pelek aloi dapat ditangani seorang diri.",
     "Five models — tyre changers, wheel balancers and 3D alignment.": "Lima model — tyre changer, wheel balancer, dan spooring 3D.",
     "Automatic Car Wheel Balancer with LCD Display": "Wheel Balancer Mobil Otomatis dengan Layar LCD",
@@ -715,21 +531,6 @@
     "Shares its cabinet with the MMA-400F — the two look alike; the difference is in the rating.": "Menggunakan kabinet yang sama dengan MMA-400F — keduanya tampak serupa; perbedaannya pada ratingnya.",
     "MIG/MMA big current, for industrial duty": "MIG/MMA arus besar, untuk penggunaan industri",
     "Auto-set function, 3 in 1": "Fungsi auto-set, 3 in 1",
-    "IGBT – Module, 15 kg wire spool": "Modul IGBT, spool kawat 15 kg",
-
-    /* ---- spec values that are words rather than numbers ----
-       Most values are left alone, being figures and SI units. These few
-       read as English sentences, so they translate. */
-    "Diecast aluminium, wall or surface mount (IP66)": "Aluminium cetak, pemasangan dinding atau permukaan (IP66)",
-    "Diecast aluminium wall mount (IP66)": "Aluminium cetak, pemasangan dinding (IP66)",
-    "Dual display — set and actual pressure": "Tampilan ganda — tekanan setelan dan aktual",
-    "High flow ½″, standard or large bore": "Aliran tinggi ½″, standar atau large bore",
-    "Wet and dry tyre, against defined ambient": "Ban basah dan kering, terhadap suhu lingkungan yang ditentukan",
-    "single speed — 0.75 kW": "kecepatan tunggal — 0,75 kW",
-    "Machine weight (M422 2V FS)": "Berat mesin (M422 2V FS)",
-    "Machine weight (M424 2V FS)": "Berat mesin (M424 2V FS)",
-    "±2 mm  (range 1219–2439 mm)": "±2 mm  (rentang 1219–2439 mm)",
-    "±2 mm  (range 2006–4572 mm)": "±2 mm  (rentang 2006–4572 mm)",
 
     /* ---- model configuration lines ----
        The code and the rim size stay; the layout and the phase count are
@@ -741,19 +542,6 @@
     "— JA-C01 · swing-arm · 20″": "— JA-C01 · lengan ayun · 20″",
     "— C880 STD · 2 camera": "— C880 STD · 2 kamera",
     "— C880 i-Next · 2 camera": "— C880 i-Next · 2 kamera",
-    "High impact polycarbonate (IP40)": "Polikarbonat berdaya tahan benturan tinggi (IP40)",
-    "High impact polycarbonate (IP66)": "Polikarbonat berdaya tahan benturan tinggi (IP66)",
-    "Stainless steel (piezo optional)": "Baja tahan karat (piezo opsional)",
-    "Double digital LED panel": "Panel LED digital ganda",
-    "High-brightness LED panel": "Panel LED kecerahan tinggi",
-    "High-resolution LCD monitor": "Monitor LCD resolusi tinggi",
-    "Quantity per 20′ container": "Jumlah per kontainer 20′",
-    "Steering difference at 20°": "Selisih sudut kemudi pada 20°",
-    "Weight — camera arm": "Berat — lengan kamera",
-    "Weight — PC holder": "Berat — dudukan PC",
-    "Weight — pole": "Berat — tiang",
-    "Single phase 220 V": "Satu fasa 220 V",
-    "Weight (G.W/N.W)": "Berat (kotor/bersih)"
   };
 
   var LANG_KEY = 'ha_auto_lang', ALT = 'id', HTML_LANG = 'id';
