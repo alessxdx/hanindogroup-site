@@ -181,7 +181,7 @@
     /* ---- products & services ---- */
     "Products &": "产品与",
     "Services": "服务",
-    "Printing, scanning and point of sale — supplied, integrated and supported across China.": "打印、扫描与销售点 — 在中国全境供应、集成并提供支持。",
+    "Printing, scanning and point of sale — supplied, integrated and supported across China.": "打印、扫描及 POS 相关产品——在中国境内提供销售、系统集成与技术支持服务",
     "What we offer": "我们提供的产品",
     "Automation hardware, counter to kiosk": "自动化硬件，从柜台到自助终端",
     "Four families of Custom hardware and the software that runs them, supplied, integrated and supported across China. Each links through to the full Custom catalogue.": "四大系列 Custom 硬件及其配套软件，在中国全境供应、集成并提供支持。每一项均可链接至完整的 Custom 产品目录。",
