@@ -41,7 +41,7 @@
     "About Us": "关于我们",
     "Products & Services": "产品与服务",
     "Contact Us": "联系我们",
-    "Your Solution Provider": "您的解决方案伙伴",
+    "Your Solution Provider": "您的解决方案伙伴/供应商",
     "Other markets": "其他市场",
 
     /* ---- home hero + intro ---- */
@@ -128,7 +128,7 @@
 
     /* ---- footer ---- */
     "Our Companies": "集团公司",
-    "Hanindo Group has served businesses across Indonesia since 1987, providing technology, equipment and engineering solutions across specialised industries. Our companies cover oil & gas, automation, automotive, fire protection, printing and POS, combining international brands with local expertise and technical support.": "自 1987 年以来，Hanindo Group 持续为印度尼西亚各地的企业提供服务，在多个专业领域提供技术、设备和工程解决方案。我们的公司涵盖石油天然气、自动化、汽车、消防、印刷和 POS 等领域，将国际品牌与本地专业知识和技术支持相结合。",
+    "Hanindo Group has served businesses across Indonesia since 1987, providing technology, equipment and engineering solutions across specialised industries. Our companies cover oil & gas, automation, automotive, fire protection, printing and POS, combining international brands with local expertise and technical support.": "Hanindo 集团自 1987 年起为印度尼西亚各地企业提供服务，面向多个专业行业提供技术、设备及工程解决方案。集团旗下各业务板块覆盖石油天然气、自动化、汽车、消防、打印及 POS 领域，融合国际品牌资源与本地专业经验、技术支持",
     "© 2026 Hanindo Group. All Rights Reserved.": "© 2026 Hanindo Group. 版权所有。",
 
     /* ---- about: hero + overview + journey ---- */
