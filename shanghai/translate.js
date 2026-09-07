@@ -102,12 +102,16 @@
        .cl collapses to zero height and its margin collapses with its
        neighbours, so the address sits tighter against the phone line in
        Chinese than the three-line English stack does -- 8px against 92px.
-       Shenzhen keeps its English address and its 中国深圳 line below --
-       only Shanghai has been given a Chinese address so far. */
+       Shenzhen below is laid out the same way. */
     "Room 3211, Tower B, The Place": "上海市长宁区遵义路100号虹桥南丰城B楼3211室",
-    "No. 100 Zunyi Rd, Changning District": "",
+    "Zunyi Rd 100, Changning district": "",
     "Shanghai, China": "",
-    "Shenzhen, China": "中国深圳",
+    /* Shenzhen, handled the same way as Shanghai above: the whole postal
+       address on the first span, the street span and the city span blank.
+       Both offices now read as Chinese addresses in 中文. */
+    "Room 808 Haosheng Plaza": "深圳市南山区4096号濠盛商务中心808室",
+    "No. 4096 Dongbin Rd, Nanshan District": "",
+    "Shenzhen, China": "",
     "Tel:": "电话：",
     /* The fax label in the footer's two office columns. It used to be two
        entries, one per whole line, because the number sat in the same text
@@ -168,9 +172,10 @@
     "Shanghai": "上海",
     "Shenzhen": "深圳",
     "The registered office and the company’s base since 2007.": "注册办公地址，自 2007 年起为公司总部。",
-    "The representative office of the Shanghai company, keeping customers in southern China close to the same team.": "上海公司的代表处，让华南地区的客户由同一团队就近服务。",
-    "Room 3211, Tower B, The Place, No. 100 Zunyi Rd, Changning District, Shanghai": "上海市长宁区遵义路100号虹桥南丰城B楼3211室",
+    "The representative office of the Shanghai company, keeping customers in southern China close to the same team.": "上海公司的代表处，为华南地区客户提供同一团队就近服务",
+    "Room 3211, Tower B, The Place, Zunyi Rd 100, Changning district, Shanghai": "上海市长宁区遵义路100号虹桥南丰城B楼3211室",
     "Tel +86 21 6237 0600": "电话 +86 21 6237 0600",
+    "Room 808 Haosheng Plaza, No. 4096 Dongbin Rd, Nanshan District, Shenzhen": "深圳市南山区4096号濠盛商务中心808室",
     "Tel +86 755 8665 2653": "电话 +86 755 8665 2653",
 
     /* ---- about: direction ---- */
@@ -248,7 +253,7 @@
        only lone-colon node on this site, so the key cannot collide; check that
        again before reusing this trick on another page. */
     ":": "：",
-    ": Room 3211, Tower B, The Place, No. 100 Zunyi Rd, Changning District, Shanghai, China": "：上海市长宁区遵义路100号虹桥南丰城B楼3211室",
+    ": Room 3211, Tower B, The Place, Zunyi Rd 100, Changning district, Shanghai, China": "：上海市长宁区遵义路100号虹桥南丰城B楼3211室",
     ": Monday to Friday, 09.00 – 18.00 CST": "：周一至周五，09:00 – 18:00（中国标准时间）",
     "Representative office": "代表处",
     "For": "如需",
