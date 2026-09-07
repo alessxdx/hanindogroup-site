@@ -45,12 +45,13 @@
     "Other markets": "其他市场",
 
     /* ---- home hero + intro ---- */
-    /* The hero h1 is two text nodes split by a <br/>. The first becomes
-       the Chinese registered name; the second maps to an empty string so
-       the 中文 view shows that name alone. Both keys exist nowhere else
-       as whole nodes — check that before reusing either elsewhere. */
-    "Hanindo (Shanghai)": "汉琳德（上海）系统集成有限公司",
-    "International Co., Ltd.": "",
+    /* The hero h1 is two text nodes split by a <br/>, so the 中文 name
+       breaks the same way the English one does: 汉琳德（上海）on the
+       first line, 系统集成有限公司 on the blue .fx second line. Both
+       keys exist nowhere else as whole nodes — check that before
+       reusing either elsewhere. */
+    "Hanindo (Shanghai)": "汉琳德（上海）",
+    "International Co., Ltd.": "系统集成有限公司",
     "Hanindo (Shanghai) International Co., Ltd. supplies the printing, scanning and point-of-sale hardware and software behind retail and hospitality automation.": "汉琳德（上海）系统集成有限公司，为零售及酒店自动化场景提供打印、扫描与 POS 销售终端软硬件产品",
     "Printing, scanning, and point of sale.": "打印、扫描、POS及自动化解决方案",
     "Established in Shanghai in 2007, Hanindo (Shanghai) International Co., Ltd. is the Hanindo Group’s presence in China, operating as Hanindo CUSTOM China. The company represents CUSTOM’s printing, scanning and automation solutions, supporting the same business that the Group delivers across Southeast Asia.": "汉琳德（上海）系统集成有限公司 2007 年成立于上海，为 Hanindo 集团的中国业务实体，对外以 Hanindo CUSTOM China 开展经营。公司代理 CUSTOM 品牌的打印、扫描及自动化解决方案，业务模式与该集团在东南亚地区开展的业务保持一致。",
