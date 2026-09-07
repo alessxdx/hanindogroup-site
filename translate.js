@@ -203,7 +203,6 @@
     "China": "China",
 
     /* ---- about: vision & mission ---- */
-    "Our direction": "Arah kami",
     "Vision & Mission": "Visi & Misi",
     "01 / Vision": "01 / Visi",
     "Vision": "Visi",

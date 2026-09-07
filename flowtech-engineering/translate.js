@@ -119,7 +119,6 @@
        The numbered mission items are a <span class="n"> and a <p>, so the
        digit is its own text node and needs no entry -- only the sentence
        beside it does. */
-    "Our direction": "Arah kami",
     "Vision & Mission": "Visi & Misi",
     "01 / Vision": "01 / Visi",
     "Vision": "Visi",
@@ -131,7 +130,6 @@
     "Support customers with practical expertise throughout the project lifecycle.": "Mendampingi pelanggan dengan keahlian praktis di sepanjang siklus proyek.",
 
     /* ---- about page: why clients trust us ---- */
-    "Why choose us": "Mengapa memilih kami",
     "Why clients trust us": "Mengapa klien memercayai kami",
     "Industry Experience": "Pengalaman industri",
     "Years of experience delivering fuel station and oil & gas construction projects across Indonesia.": "Pengalaman bertahun-tahun menyelesaikan proyek konstruksi SPBU serta minyak & gas di seluruh Indonesia.",

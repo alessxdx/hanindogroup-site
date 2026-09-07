@@ -170,7 +170,6 @@
     "A CUSTOM Hanindo office follows the Philippines partnership.": "继菲律宾合作之后设立 CUSTOM Hanindo 办公室。",
 
     /* ---- about: where we are ---- */
-    "Where we are": "我们的所在",
     "Our Offices": "我们的办公室",
     "Shanghai": "上海",
     "Shenzhen": "深圳",
@@ -182,7 +181,6 @@
     "Tel +86 755 8665 2653": "电话 +86 755 8665 2653",
 
     /* ---- about: direction ---- */
-    "Our direction": "我们的方向",
     "Vision & Mission": "愿景与使命",
     "01 / Vision": "01 / 愿景",
     "Vision": "愿景",
@@ -194,7 +192,6 @@
     "Help businesses adopt reliable technology solutions that improve daily operations.": "助力企业选用可靠的技术方案，改善日常运营。",
 
     /* ---- about: why choose us ---- */
-    "Why choose us": "为何选择我们",
     "Why clients trust us": "客户为何信赖我们",
     "Industry Experience": "行业经验",
     "Part of the Hanindo Group, supporting retail, transport and service operators across China since 2007.": "隶属于 Hanindo 集团，自 2007 年起，为全国零售、交通及服务行业运营商提供业务支持。",

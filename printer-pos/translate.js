@@ -137,7 +137,6 @@
     "A CUSTOM Hanindo office follows the Philippines partnership.": "Kantor CUSTOM Hanindo menyusul setelah kemitraan Filipina.",
 
     /* ---- about: direction and credentials ---- */
-    "Our direction": "Arah kami",
     "Vision & Mission": "Visi & Misi",
     "01 / Vision": "01 / Visi",
     "Vision": "Visi",
@@ -147,7 +146,6 @@
     "Deliver CUSTOM printing, scanning and point-of-sale solutions tailored to customer needs.": "Menghadirkan solusi pencetakan, scanning, dan point-of-sale CUSTOM yang disesuaikan dengan kebutuhan pelanggan.",
     "Integrate, install and support systems through our Singapore office and appointed partners.": "Mengintegrasikan, memasang, dan mendukung sistem melalui kantor Singapura dan mitra yang kami tunjuk.",
     "Help businesses adopt reliable technology solutions that improve daily operations.": "Membantu bisnis menggunakan teknologi yang andal untuk mendukung operasional sehari-hari.",
-    "Why choose us": "Mengapa memilih kami",
     "Why clients trust us": "Mengapa klien mempercayai kami",
     "Industry Experience": "Pengalaman Industri",
     "Technology Expertise": "Keahlian Teknologi",

@@ -130,7 +130,6 @@
     "A CUSTOM Hanindo office follows the Philippines partnership.": "Kantor CUSTOM Hanindo menyusul setelah kemitraan Filipina.",
 
     /* ---- about: direction ---- */
-    "Our direction": "Arah kami",
     "Vision & Mission": "Visi & Misi",
     "01 / Vision": "01 / Visi",
     "Vision": "Visi",
@@ -142,7 +141,6 @@
     "Help businesses adopt reliable technology solutions that improve daily operations.": "Membantu bisnis menggunakan teknologi yang andal untuk mendukung operasional sehari-hari.",
 
     /* ---- about: why choose us ---- */
-    "Why choose us": "Mengapa memilih kami",
     "Why clients trust us": "Mengapa klien mempercayai kami",
     "Industry Experience": "Pengalaman Industri",
     "Part of the Hanindo Group, supporting retail, transport and service operators across Indonesia.": "Bagian dari Hanindo Group, mendukung operator ritel, transportasi, dan jasa di seluruh Indonesia.",

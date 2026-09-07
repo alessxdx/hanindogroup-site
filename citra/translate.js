@@ -151,7 +151,6 @@
     "Forecourt controllers & distribution modules": "Forecourt controller & modul distribusi",
     "United States": "Amerika Serikat",
     "New Zealand": "Selandia Baru",
-    "Our direction": "Arah kami",
     "Vision & Mission": "Visi & Misi",
     "01 / Vision": "01 / Visi",
     "Vision": "Visi",
@@ -161,7 +160,6 @@
     "Deliver efficient service that does what it is meant to do, to professional standards and with the commitment to see it through.": "Memberikan layanan yang efisien, optimal, dan tepat sasaran dengan menjunjung standar profesional serta komitmen kerja.",
     "Continuously invest in innovation and the development of our people to raise capability.": "Terus berinvestasi dalam inovasi dan pengembangan sumber daya manusia untuk meningkatkan kapabilitas.",
     "Implement management systems and technologies that improve efficiency, quality, and occupational health & safety.": "Menerapkan sistem manajemen dan teknologi yang meningkatkan efisiensi, mutu, serta keselamatan dan kesehatan kerja.",
-    "Why choose us": "Mengapa memilih kami",
     "Why clients trust us": "Mengapa klien mempercayai kami",
     /* "Since 1987" is a date, not a phrase — it reads the same in both
        languages, so it has no entry here and is left alone by the toggle. */
