@@ -109,17 +109,20 @@
     "Shanghai, China": "",
     "Shenzhen, China": "中国深圳",
     "Tel:": "电话：",
-    /* The fax lines beside "Tel:" in the footer's two office columns. The
-       number is part of the node, so the whole line is the key -- these
-       are the only two fax numbers the company has, and if either changes
-       the entry has to change with it.
-       The contact page's own two fax lines are deliberately NOT here:
-       there the number and the fax sit in one node with the telephone,
-       separated by non-breaking spaces, so the key would carry invisible
-       characters and would stop matching the moment anyone re-typed the
-       line. Left in English rather than made fragile. */
-    "Fax: +86 21 6237 0598": "传真：+86 21 6237 0598",
-    "Fax: +86 755 8659 9823": "传真：+86 755 8659 9823",
+    /* The fax label in the footer's two office columns. It used to be two
+       entries, one per whole line, because the number sat in the same text
+       node -- so a changed number meant a changed key. The number now has
+       its own <span class="nb"> to stop it breaking mid-line, which splits
+       the node and leaves just the label to translate, the same shape as
+       "Tel:" above. The trailing space in "Fax: " survives the swap, so
+       both lines now read 电话： and 传真： with one space before the
+       number; the fax line used to have none.
+       The contact page's own fax is still NOT here: there the number and
+       the fax sit in one node with the telephone, separated by
+       non-breaking spaces, so the key would carry invisible characters and
+       would stop matching the moment anyone re-typed the line. Left in
+       English rather than made fragile. */
+    "Fax:": "传真：",
     "Indonesia": "印度尼西亚",
     ", see": "，请联系",
 

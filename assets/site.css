@@ -1338,6 +1338,14 @@ a.pcard:hover .more svg{transform:translateX(3px)}
 .footer ul a:hover{color:#fff}
 .footer .cl{display:block;margin-bottom:.45rem;color:#a5b5cd}
 .footer .cl b{color:#fff;font-weight:600}
+/* A phone number must never break across two lines. The footer columns are
+   narrow -- 164px on the five-column Shanghai footer -- and "+86 755 8665
+   2653" was splitting after "8665", which reads as two numbers. nowrap on
+   the tel: link covers every Tel line on the site; .nb is for the fax
+   numbers, which are plain text with no link to hang the rule on. The
+   label is still allowed to wrap away from the number, so a long line
+   becomes label-then-number rather than a broken number. */
+a[href^="tel:"],.footer .cl .nb{white-space:nowrap}
 .foot-bottom{border-top:1px solid rgba(255,255,255,.08);margin-top:2.4rem;padding-top:1.4rem;display:flex;flex-wrap:wrap;gap:.6rem;justify-content:space-between;font-size:.78rem;color:#6f7f99}
 /* Certification strip in the footer — small framed thumbnails of the actual
    certificates with the standard beside each, NOT clickable (the big cards
