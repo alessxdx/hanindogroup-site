@@ -46,15 +46,15 @@
 
     /* ---- home hero + intro ---- */
     "Hanindo (Shanghai) International Co., Ltd. supplies the printing, scanning and point-of-sale hardware and software behind retail and hospitality automation.": "汉琳德上海为零售与酒店自动化提供打印、扫描及销售点软硬件。",
-    "Printing, scanning, and point of sale.": "打印、扫描与销售点。",
-    "Established in Shanghai in 2007, Hanindo (Shanghai) International Co., Ltd. is the Hanindo Group’s presence in China, operating as Hanindo CUSTOM China. The company represents CUSTOM’s printing, scanning and automation solutions, supporting the same business that the Group delivers across Southeast Asia.": "汉琳德（上海）系统集成有限公司于 2007 年在上海成立，是 Hanindo Group 在中国的业务主体，以 Hanindo CUSTOM China 的名义经营。公司代理 CUSTOM 的打印、扫描与自动化解决方案，与集团在东南亚开展的业务一脉相承。",
-    "Within China the company works from two locations: Shanghai & Shenzhen.": "公司在中国设有两处办公地点：上海与深圳。",
-    "Professional printing": "专业打印",
-    "POS, receipt, fiscal, ticket, label and mobile printers.": "POS、小票、税控、票据、标签及移动打印机。",
-    "Point of sale & data capture": "销售点与数据采集",
-    "Terminals, touch systems, cash registers, scanners and payment terminals.": "终端、触控系统、收银机、扫描器及支付终端。",
-    "Scanning": "扫描",
-    "Document scanners and multifunction print-and-scan systems.": "文档扫描仪及多功能打印扫描系统。",
+    "Printing, scanning, and point of sale.": "打印、扫描、POS及自动化解决方案",
+    "Established in Shanghai in 2007, Hanindo (Shanghai) International Co., Ltd. is the Hanindo Group’s presence in China, operating as Hanindo CUSTOM China. The company represents CUSTOM’s printing, scanning and automation solutions, supporting the same business that the Group delivers across Southeast Asia.": "汉琳德（上海）系统集成有限公司 2007 年成立于上海，为 Hanindo 集团的中国业务实体，对外以 Hanindo CUSTOM China 开展经营。公司代理 CUSTOM 品牌的打印、扫描及自动化解决方案，业务模式与该集团在东南亚地区开展的业务保持一致。",
+    "Within China the company works from two locations: Shanghai & Shenzhen.": "公司在国内设有两处办公地点：上海、深圳",
+    "Professional printing": "专业打印设备",
+    "POS, receipt, fiscal, ticket, label and mobile printers.": "POS打印机、小票打印机、税控打印机、票据打印机、标签打印机及移动打印机",
+    "Point of sale & data capture": "POS及扫码设备",
+    "Terminals, touch systems, cash registers, scanners and payment terminals.": "终端设备、触控系统、收银机、扫描器及支付终端",
+    "Scanning": "扫描设备",
+    "Document scanners and multifunction print-and-scan systems.": "文档扫描仪以及打印扫描一体化多功能设备",
 
     /* ---- product strip ---- */
     "What we supply": "我们的供应范围",
