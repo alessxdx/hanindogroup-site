@@ -86,14 +86,27 @@
        four pieces its market note was split into by the <b>s and <a>s.
        What is left is still in use and was checked one at a time.
        "Email our team" is the contact page's button; "Shanghai Office",
-       "Shenzhen Office" and the two city names are the footer's address
-       columns on all four pages; "Indonesia" and ", see" are the contact
-       page's own market note, which is worded differently from the one
+       "Shenzhen Office" and the city names are the footer's address
+       columns on all four pages -- Shanghai's is blank now, see the
+       note below; "Indonesia" and ", see" are the contact page's own
+       market note, which is worded differently from the one
        that came off. */
     "Email our team": "发送邮件给我们",
     "Shanghai Office": "上海办公室",
     "Shenzhen Office": "深圳办公室",
-    "Shanghai, China": "中国上海",
+    /* The footer's Shanghai column, which in Chinese is one line rather
+       than three. The whole postal address rides on the first span; the
+       street span and the city span are deliberately blank, because a
+       Chinese address runs city-district-street-building-room in one
+       unbroken string and there is nothing left to put on them. A blank
+       .cl collapses to zero height and its margin collapses with its
+       neighbours, so the address sits tighter against the phone line in
+       Chinese than the three-line English stack does -- 8px against 92px.
+       Shenzhen keeps its English address and its 中国深圳 line below --
+       only Shanghai has been given a Chinese address so far. */
+    "Room 3211, Tower B, The Place": "上海市长宁区遵义路100号虹桥南丰城B楼3211室",
+    "No. 100 Zunyi Rd, Changning District": "",
+    "Shanghai, China": "",
     "Shenzhen, China": "中国深圳",
     "Tel:": "电话：",
     /* The fax lines beside "Tel:" in the footer's two office columns. The
@@ -153,6 +166,7 @@
     "Shenzhen": "深圳",
     "The registered office and the company’s base since 2007.": "注册办公地址，自 2007 年起为公司总部。",
     "The representative office of the Shanghai company, keeping customers in southern China close to the same team.": "上海公司的代表处，让华南地区的客户由同一团队就近服务。",
+    "Room 3211, Tower B, The Place, No. 100 Zunyi Rd, Changning District, Shanghai": "上海市长宁区遵义路100号虹桥南丰城B楼3211室",
     "Tel +86 21 6237 0600": "电话 +86 21 6237 0600",
     "Tel +86 755 8665 2653": "电话 +86 755 8665 2653",
 
@@ -231,7 +245,7 @@
        only lone-colon node on this site, so the key cannot collide; check that
        again before reusing this trick on another page. */
     ":": "：",
-    ": Room 3211-3212, Tower B, City Center, No. 100 Zunyi Rd, Changning District, Shanghai, China": "： Room 3211-3212, Tower B, City Center, No. 100 Zunyi Rd, Changning District, Shanghai, China",
+    ": Room 3211, Tower B, The Place, No. 100 Zunyi Rd, Changning District, Shanghai, China": "：上海市长宁区遵义路100号虹桥南丰城B楼3211室",
     ": Monday to Friday, 09.00 – 18.00 CST": "：周一至周五，09:00 – 18:00（中国标准时间）",
     "Representative office": "代表处",
     "For": "如需",
