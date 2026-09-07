@@ -121,11 +121,14 @@
        "Tel:" above. The trailing space in "Fax: " survives the swap, so
        both lines now read 电话： and 传真： with one space before the
        number; the fax line used to have none.
-       The contact page's own fax is still NOT here: there the number and
-       the fax sit in one node with the telephone, separated by
-       non-breaking spaces, so the key would carry invisible characters and
-       would stop matching the moment anyone re-typed the line. Left in
-       English rather than made fragile. */
+       The contact page carries its own two fax lines, further down. They
+       were left in English while &nbsp; sat either side of the middot,
+       which would have put invisible characters in the key; the markup
+       uses ordinary spaces now, so they are keyed on the whole tail after
+       the telephone number. That does mean a changed number means a
+       changed key -- unavoidable on the Shenzhen line, where Chinese adds
+       a 电话： label that the English does not have, so there is no label
+       node to translate on its own. */
     "Fax:": "传真：",
     "Indonesia": "印度尼西亚",
     ", see": "，请联系",
@@ -231,8 +234,8 @@
     "Let's talk about": "让我们聊聊",
     "your project.": "您的项目。",
     "Tell us what you are running or building, and we will put the right person on it.": "告诉我们您正在运营或建设的项目，我们会安排合适的同事对接。",
-    "How to reach us.": "如何联系我们。",
-    "For printing, scanning and point-of-sale supply, integration, consumables or service in China, reach the Shanghai office.": "在中国，如需打印、扫描与销售点设备的供应、集成、耗材或服务，请联系上海办公室。",
+    "How to reach us.": "如何联系我们",
+    "For printing, scanning and point-of-sale supply, integration, consumables or service in China, reach the Shanghai office.": "在中国，如需打印、扫描与POS设备的供应、系统集成、耗材或技术服务，请联系上海办公室。",
     "Office": "办公地址",
     "Telephone": "电话",
     "Office hours": "办公时间",
@@ -254,7 +257,9 @@
        again before reusing this trick on another page. */
     ":": "：",
     ": Room 3211, Tower B, The Place, Zunyi Rd 100, Changning district, Shanghai, China": "：上海市长宁区遵义路100号虹桥南丰城B楼3211室",
-    ": Monday to Friday, 09.00 – 18.00 CST": "：周一至周五，09:00 – 18:00（中国标准时间）",
+    "· Fax +86 21 6237 0598": "· 传真： +86 21 6237 0598",
+    "+86 755 8665 2653 · Fax +86 755 8659 9823": "电话： +86 755 8665 2653 · 传真： +86 755 8659 9823",
+    ": Monday to Friday, 09.00 – 18.00 CST": "：周一至周五，09:00 – 18:00（北京时间）",
     "Representative office": "代表处",
     "For": "如需",
     "South East Asia": "东南亚",
