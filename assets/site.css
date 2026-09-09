@@ -1249,10 +1249,10 @@ a.pcard:hover .more svg{transform:translateX(3px)}
    mark within 5% of 2600 sq px.
 
      file          aspect   height   drawn width
+     flowtech       2.32      33px      78px
      citra          2.40      33px      79px
      gralessando    2.61      32px      84px
      shanghai       2.51      32px      80px
-     flowtech       3.27      28px      92px
      automotive     3.57      27px      96px
      automation     4.21      25px     105px
 
@@ -1268,10 +1268,10 @@ a.pcard:hover .more svg{transform:translateX(3px)}
    just holds the column, which is why that row indents instead. */
 .vgrid .vopt .lw{flex:none;width:110px;height:34px;display:flex;align-items:center;justify-content:center}
 .vgrid .vopt .lw img{width:auto;max-width:110px;object-fit:contain;mix-blend-mode:multiply}
+.vgrid .vopt .lw img[src$="logo-flowtech.png"]{height:33px}
 .vgrid .vopt .lw img[src$="logo-citra.png"]{height:33px}
 .vgrid .vopt .lw img[src$="logo-gralessando.png"]{height:32px}
 .vgrid .vopt .lw img[src$="logo-shanghai.png"]{height:32px}
-.vgrid .vopt .lw img[src$="logo-flowtech.png"]{height:28px}
 .vgrid .vopt .lw img[src$="logo-automotive.png"]{height:27px}
 .vgrid .vopt .lw img[src$="logo-automation.png"]{height:25px}
 .vgrid .vopt .nm{flex:1;min-width:0}
