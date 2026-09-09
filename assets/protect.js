@@ -33,10 +33,11 @@
    copied and searched, and links outside images keep their menu. That
    is the narrowest form of this that still answers the ask.
 
-   Scoped to <img> and inline <svg>. Background images set in CSS have
-   no context menu of their own to take away -- the menu that opens over
-   them belongs to the page, and blocking that would cost every link on
-   it.
+   Scoped to <img> and inline <svg>, and to whatever is laid over one --
+   a caption, a badge, a label sitting on a photo goes with the photo.
+   Background images set in CSS have no context menu of their own to take
+   away -- the menu that opens over them belongs to the page, and blocking
+   that would cost every link on it.
    ============================================================== */
 (function () {
   'use strict';
@@ -51,8 +52,38 @@
     return !!node.closest('img, svg, picture');
   }
 
+  /* A photo with something laid over it is still a photo to whoever is
+     right-clicking. The project decks are the clear case: the caption
+     wash, the "4 photos" badge and the customer label are spans covering
+     the whole card, so the event target is never the <img> underneath and
+     isArtwork() alone let the menu through on every card. Hit-testing the
+     cursor catches those without a list of overlay class names to keep in
+     step -- elementsFromPoint returns the whole stack under the point,
+     top first, so the photo below the wash is in it.
+
+     Hero backdrops are the exception. .bg is the full-bleed photo behind
+     a page hero, inset:0 under the heading, the intro line and the
+     breadcrumb links, and the tint and glow layers cover it edge to edge.
+     Counting it would take the menu away from that text and those links
+     across all 46 pages, and it would buy nothing: with the tint on top,
+     the menu that opens over a hero is the page's, not the image's, so
+     there is no Save image as in it to withhold.
+
+     Keyboard-invoked menus (the Menu key, Shift+F10) carry no useful
+     coordinates, so fall back to the target on its own. */
+  function overArtwork(e) {
+    if (isArtwork(e.target)) return true;
+    if (!document.elementsFromPoint) return false;
+    if (!e.clientX && !e.clientY) return false;
+    var stack = document.elementsFromPoint(e.clientX, e.clientY);
+    for (var i = 0; i < stack.length; i++) {
+      if (isArtwork(stack[i]) && !stack[i].closest('.bg')) return true;
+    }
+    return false;
+  }
+
   document.addEventListener('contextmenu', function (e) {
-    if (isArtwork(e.target)) e.preventDefault();
+    if (overArtwork(e)) e.preventDefault();
   });
 
   /* Dragging a picture out of the page and onto the desktop saves it
