@@ -109,19 +109,14 @@ thinktool-t77.pdf     T77 Diagnostic Scan Tool             [NEEDED]
 --------------------------------------------------
 TYRE INFLATION  (/automotive/airtec/)
 --------------------------------------------------
-ONE file, not eight — the business chose the Airtec series catalogue.
-All eight cards on the page point at the same document, so a buyer
-looking at the 89XHB gets the whole 89 series and can see how it sits
-against the others.
+Settled on 2026-09-09: nothing is wanted here any more.
 
-This is the one filename that is NOT a product slug, because it is not
-about one product. Named for the series instead:
-
-airtec-89-series.pdf  Airtec 89 series, all eight models   [NEEDED]
-
-If Airtec later supply per-model sheets, the eight slugs are
-airtec-89mxa, -89mda, -89xda-xdd, -89xdb-xde, -89xhb, -89xtc,
--89bep-bed and -89fep-fed, matching their product photos.
+The page is five industry cards that link straight out to
+airtecasia.com — the same shape as Fluid Handling (RAASM) above, and
+for the same reason. The eight model articles the 89-series catalogue
+was meant to sit under are gone, and airtecasia.com carries its own
+Downloads page. The airtec-89-series.pdf that was [NEEDED] here has no
+card left to sit on.
 
 
 --------------------------------------------------

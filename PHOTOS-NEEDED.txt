@@ -694,42 +694,35 @@ promises three. Do not pad the canvas to force 2.03; padding does not
 make the machines any bigger.
 
 AIRTEC PAGE  (/automotive/airtec/)
-Airtec had no products anywhere on the site before this page — unlike
-HPA FAIP, whose twelve products all sit on the Tyre Service page — so a
-brand page was the only place its range could live. Eight models, with
-descriptions and specifications taken from airtecasia.com. Reached from
-the Products & Services dropdown, the catalogue and brand grids on that
-page, and the distributor grid on About Us.
+Since 2026-09-09 the page is five industry cards — Petroleum,
+Automotive, Aviation, Transport, Mining — each opening the maker's
+catalogue on airtecasia.com, replacing eight model articles whose
+hand-copied specifications went stale whenever Airtec revised a model.
+Reached from the Products & Services dropdown, the catalogue and brand
+grids on that page, and the distributor grid on About Us.
 
 Shots live in /photos/automotive/products/ with the rest of the
-company's product photography, named for the model, all supplied and in
-place:
+company's product photography, named for the model, airtec- prefixed
+so the brand is readable in a folder shared with the Weldann, ATOM and
+HPA shots. Five front a card; the other five belonged to the model
+articles and are kept for whenever a card or page wants them again:
 
-airtec-89mxa.png              Compact, machine-mounted        [COMPLETE]
-airtec-89mda.png              General purpose, wall mounted   [COMPLETE]
-airtec-89xda-xdd.png          Heavy duty, diecast aluminium   [COMPLETE]
-airtec-89xdb-xde.png          High flow                       [COMPLETE]
-airtec-89xhb.png              High pressure, to 12.5 bar      [COMPLETE]
-airtec-89xtc.png              Temperature compensating        [COMPLETE]
-airtec-89bep-bed.png          Freestanding forecourt, round   [COMPLETE]
-airtec-89fep-fed.png          Freestanding forecourt, square  [COMPLETE]
+airtec-89bep-bed.png          Petroleum card                  [COMPLETE]
+airtec-89mda.png              Automotive card                 [COMPLETE]
+airtec-89xdh.jpg              Aviation card                   [COMPLETE]
+airtec-axl200.jpg             Transport card                  [COMPLETE]
+airtec-89xtc.png              Mining card                     [COMPLETE]
+airtec-89mxa.png              Compact, machine-mounted        [unused]
+airtec-89xda-xdd.png          Heavy duty, diecast aluminium   [unused]
+airtec-89xdb-xde.png          High flow                       [unused]
+airtec-89xhb.png              High pressure, to 12.5 bar      [unused]
+airtec-89fep-fed.png          Freestanding forecourt, square  [unused]
 
-Every file carries the airtec- prefix so the brand is readable from the
-filename, which matters in a folder shared with the Weldann, ATOM and
-HPA product shots.
-
-The range carries a setting filter — All / Workshop / Mining /
-Forecourt. Each card is tagged in data-sector on the <article>, and a
-model can hold more than one: the high flow and high pressure units are
-wall-mounted workshop equipment that mines also run, so they appear
-under both. A new model needs that attribute set or it will vanish from
-every filter except All.
-
-Nothing outstanding. Airtec publish a further sixteen or so categories
-— aircraft inflators, nitrogen analysers, axle load monitoring, stainless
-steel cabinets, large-display and mobile units — none of which are on the
-page. Add a card and a shot to the
-same folder if any of those are carried.
+Nothing outstanding. The two .jpg files are the maker's own catalogue
+shots (89XDH aircraft inflator, AXL200i axle load indicator), saved
+from airtecasia.com on 2026-09-09 — white-backed studio photographs
+rather than cut-out .png, which reads the same inside the card. Any
+<img> must use the exact extension.
 
 RAASM PAGE  (/automotive/raasm/)
 A page for the brand rather than for a product category, because RAASM
