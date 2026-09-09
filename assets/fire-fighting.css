@@ -91,7 +91,16 @@ img{max-width:100%;display:block}
 @media(max-width:860px){
   .tablang .langtoggle button.active{background:var(--white);color:var(--navy-800)}
 }
-.navbar{position:sticky;top:0;z-index:100;background:var(--navy-800);box-shadow:0 6px 20px -12px rgba(0,0,0,.5)}
+/* Two shadows, and the first one is not decoration. site.css gives the
+   sticky bar a `0 1px 0` in its own colour because the bar's height lands
+   on a fraction of a pixel, so at some scroll offsets the browser rounds
+   the stuck bar and the content under it to different pixel rows and the
+   white page background shows through the seam. This file loads after
+   site.css and used to declare box-shadow on its own, which replaced that
+   repaint with the drop shadow and left the white line back on these six
+   pages. Keep both: the repaint first so it draws over the drop shadow,
+   in --navy-800 because that is this bar's background. */
+.navbar{position:sticky;top:0;z-index:100;background:var(--navy-800);box-shadow:0 1px 0 var(--navy-800),0 6px 20px -12px rgba(0,0,0,.5)}
 .navbar .wrap{display:flex;align-items:stretch;justify-content:space-between}
 .tabs{display:flex;list-style:none}
 .tabs>li>a{display:flex;align-items:center;padding:1rem 1.5rem;font-size:.95rem;font-weight:600;color:#eef1f7;border-top:3px solid transparent;transition:.15s;white-space:nowrap}
