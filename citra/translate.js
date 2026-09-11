@@ -135,14 +135,27 @@
     "Company overview": "Profil perusahaan",
     "Four decades in": "Empat dekade di",
     "petroleum equipment": "peralatan perminyakan",
-    "PT. Hanindo Citra has represented Gilbarco Veeder-Root since 1987, the year its petroleum equipment work began.": "PT. Hanindo Citra telah menjadi perwakilan Gilbarco Veeder-Root sejak 1987, sejak awal kiprahnya di bidang peralatan perminyakan.",
-    /* Both "and also this" lines in the overview carry an inline link, so
-       each reaches the walker as text nodes either side of the anchor and
-       needs an entry per fragment. The link text is a company name and a
-       department name — neither is translated. */
-    "Since 2012, it has also carried the group's oil and gas automation work, which transferred from": "Sejak 2012, perusahaan ini juga menangani pekerjaan otomasi minyak dan gas grup, yang dialihkan dari",
-    ". This brings both the automation systems and the equipment they support under one company.": ". Hal ini menyatukan sistem otomasi dan peralatan yang didukungnya dalam satu perusahaan.",
-    "PT. Hanindo Citra also delivers the group's fire protection work through its": "PT. Hanindo Citra juga menjalankan pekerjaan proteksi kebakaran grup melalui",
+    "PT. Hanindo Citra has represented Gilbarco Veeder-Root since 1987, the year its petroleum equipment work began.": "PT. Hanindo Citra telah menjadi perwakilan Gilbarco Veeder-Root sejak 1987, saat perusahaan mulai mengembangkan bisnisnya di bidang peralatan untuk industri perminyakan.",
+    /* The Indonesian for the paragraph below arrived as two paragraphs
+       and is one entry here. The English is a single <p> and the walker
+       swaps a text node for a text node, so two Indonesian paragraphs
+       would mean splitting the English in two as well. Nothing is lost:
+       both halves are here, in the order they were written.
+       The two entries that sat here before belonged to the 2012
+       automation paragraph and went when that paragraph did. */
+    "Gilbarco Veeder-Root alone was never going to equip a whole station, so over the years the company has worked with other manufacturers alongside it — Total Control Systems and ITL among them today. The aim has been the same throughout: to be a complete solution provider, equipping a forecourt end to end and backing it with installation, maintenance and technical support.": "Seiring berkembangnya kebutuhan di SPBU, Gilbarco Veeder-Root tentunya tidak dapat menyediakan seluruh kebutuhan peralatan secara mandiri. Karena itu, selama bertahun-tahun PT. Hanindo Citra juga bekerja sama dengan berbagai produsen lainnya, termasuk Total Control Systems dan ITL yang hingga kini menjadi bagian dari jajaran mitra kami. Tujuannya tetap sama sejak awal: menjadi penyedia solusi lengkap untuk SPBU, mulai dari penyediaan dan pemasangan peralatan di seluruh area forecourt hingga layanan pemeliharaan, perawatan, dan dukungan teknis.",
+    /* The last line of the overview carries an inline link, so it reaches
+       the walker as text either side of the anchor. This entry is the
+       part before the link; the full stop after it is a node of its own
+       and needs none. The Indonesian has to end on "melalui" for the
+       same reason the English ends on "through its" -- the link follows
+       it -- so the clause about keselamatan dan perlindungan fasilitas
+       sits mid-sentence rather than at the end, where it was written. It
+       says the same thing either way.
+       The link text is not covered here: "Fire Fighting Department" is
+       in the navigation block above, so the department reads the same in
+       this sentence as it does in the nav pill. */
+    "PT. Hanindo Citra also delivers the group's fire protection work through its": "PT. Hanindo Citra juga menyediakan solusi proteksi kebakaran, sebagai bagian dari layanan kami untuk memenuhi kebutuhan keselamatan dan perlindungan fasilitas, melalui",
     "Retail forecourt equipment": "Peralatan forecourt ritel",
     "The principals we distribute": "Prinsipal yang kami distribusikan",
     "Distributors for Indonesia.": "Distributor untuk Indonesia.",
