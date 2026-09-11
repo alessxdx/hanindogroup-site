@@ -85,7 +85,9 @@
     "Contact page": "Halaman kontak",
     "Head Office": "Kantor Pusat",
     "Telephone (Head Office)": "Telepon (Kantor Pusat)",
-    "Fire Fighting Dept Office": "Kantor Departemen Pemadam Kebakaran PT. Hanindo Citra",
+    /* The department keeps its English name here too -- only "Kantor" and
+       the company are Indonesian. */
+    "Fire Fighting Dept Office": "Kantor Fire Fighting Department PT. Hanindo Citra",
     "Phone": "Telepon",
     /* The contact checklist labels its hours "Office hours" and prints the
        days after a colon, in its own text node. Both entries are the
@@ -131,7 +133,11 @@
     /* The footer column heading, on every page of this site. Wording follows
        the group and company footers so the whole site reads the same. */
     "Our Companies": "Perusahaan Kami",
-    "Fire Fighting Department": "Departemen Pemadam Kebakaran",
+    /* "Fire Fighting Department" is NOT translated, at the business's
+       request on 2026-09-11: the department is named in English wherever
+       it appears, on Bahasa as on English. An entry here is what would
+       translate it, so the absence of one is the instruction -- do not
+       add it back. */
     "A specialist division of the Hanindo Group, delivering end-to-end fire protection — from design and engineering through supply, installation, testing and long-term maintenance.": "Divisi spesialis dari Hanindo Group, menghadirkan proteksi kebakaran menyeluruh — dari desain dan rekayasa hingga pengadaan, pemasangan, pengujian, dan pemeliharaan jangka panjang.",
     /* The group tagline in the footer, on all six pages of this site. It is
        listed in the seven other dictionaries and was missing from this one

@@ -50,7 +50,11 @@
     "Our Businesses": "Bidang Usaha Kami",
     "Fire Fighting": "Pemadam Kebakaran",
     "Automotive": "Otomotif",
-    "Fire Fighting Department": "Departemen Pemadam Kebakaran",
+    /* "Fire Fighting Department" is NOT translated, at the business's
+       request on 2026-09-11: the department is named in English wherever
+       it appears, on Bahasa as on English. An entry here is what would
+       translate it, so the absence of one is the instruction -- do not
+       add it back. */
     "A division of PT. Hanindo Citra": "Divisi dari PT. Hanindo Citra",
     "Indonesia": "Indonesia",
     "Singapore": "Singapura",

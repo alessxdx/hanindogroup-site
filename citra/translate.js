@@ -61,7 +61,11 @@
     "About Us": "Tentang Kami",
     "Products & Services": "Produk & Layanan",
     "Fire Fighting": "Pemadam Kebakaran",
-    "Fire Fighting Department": "Departemen Pemadam Kebakaran",
+    /* "Fire Fighting Department" is NOT translated, at the business's
+       request on 2026-09-11: the department is named in English wherever
+       it appears, on Bahasa as on English. An entry here is what would
+       translate it, so the absence of one is the instruction -- do not
+       add it back. */
     /* The oil & gas descriptor under the Citra logo, and the kicker over the
        Fire Fighting pill in the nav that names it as a department of Citra. */
     "Oil & Gas": "Minyak & Gas",
@@ -152,9 +156,9 @@
        it -- so the clause about keselamatan dan perlindungan fasilitas
        sits mid-sentence rather than at the end, where it was written. It
        says the same thing either way.
-       The link text is not covered here: "Fire Fighting Department" is
-       in the navigation block above, so the department reads the same in
-       this sentence as it does in the nav pill. */
+       The link text is not covered here or anywhere else: "Fire Fighting
+       Department" is left in English on Bahasa across the whole site --
+       see the note in the navigation block above. */
     "PT. Hanindo Citra also delivers the group's fire protection work through its": "PT. Hanindo Citra juga menyediakan solusi proteksi kebakaran, sebagai bagian dari layanan kami untuk memenuhi kebutuhan keselamatan dan perlindungan fasilitas, melalui",
     "Retail forecourt equipment": "Peralatan forecourt ritel",
     "The principals we distribute": "Prinsipal yang kami distribusikan",

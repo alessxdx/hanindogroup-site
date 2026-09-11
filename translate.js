@@ -45,7 +45,11 @@
        three of the six are Indonesian. */
     "By industry": "Menurut industri",
     "Printer & POS, by market": "Printer & POS, menurut pasar",
-    "Fire Fighting Department": "Departemen Pemadam Kebakaran",
+    /* "Fire Fighting Department" is NOT translated, at the business's
+       request on 2026-09-11: the department is named in English wherever
+       it appears, on Bahasa as on English. An entry here is what would
+       translate it, so the absence of one is the instruction -- do not
+       add it back. */
     "PT. Hanindo Automation Solutions": "PT. Hanindo Automation Solutions",
     "(Indonesia)": "(Indonesia)",
     "(Singapore)": "(Singapura)",
@@ -60,7 +64,7 @@
        exactly as its own company site words it — citra/translate.js and
        automotive/translate.js — so a reader meets the same Indonesian on
        the group menu and on the page it opens. */
-    "PT. Hanindo Citra — Fire Fighting Department": "PT. Hanindo Citra — Departemen Pemadam Kebakaran",
+    /* "Fire Fighting Department" stays English on Bahasa -- see the note in the navigation block above. */
     "Pumps & Dispensers": "Pompa & Dispenser",
     "Forecourt Controllers": "Forecourt Controller",
     "Flow Meters": "Flow Meter",
@@ -94,7 +98,7 @@
        setLang() below, and the rest of the page in assets/search.js. */
     "Search": "Cari",
     "Search the site.": "Cari di situs ini.",
-    "Fire Fighting Department": "Departemen Pemadam Kebakaran",
+    /* "Fire Fighting Department" stays English on Bahasa -- see the note in the navigation block above. */
     /* the Products & Services drop-down, by industry */
     "Oil & Gas": "Minyak & Gas",
     "Oil, Gas & Fire Protection": "Minyak, Gas & Proteksi Kebakaran",
@@ -187,7 +191,7 @@
     "CUSTOM Hanindo partnerships established in Vietnam, Thailand and the Philippines.": "Kemitraan CUSTOM Hanindo dijalin di Vietnam, Thailand, dan Filipina.",
     "Manila office": "Kantor Manila",
     "A CUSTOM Hanindo office follows the Philippines partnership.": "Kantor CUSTOM Hanindo menyusul setelah kemitraan Filipina.",
-    "Fire Fighting Department": "Divisi Pemadam Kebakaran",
+    /* "Fire Fighting Department" stays English on Bahasa -- see the note in the navigation block above. */
     "PT. Hanindo Citra adds fire protection.": "PT. Hanindo Citra menambah proteksi kebakaran.",
 
     /* ---- about + contact: the company cards ---- */
