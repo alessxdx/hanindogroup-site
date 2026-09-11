@@ -1133,16 +1133,13 @@ hero-flowtech.jpg         [COMPLETE] Home page hero background, in
                           blue overlay heaviest there, so a replacement
                           wants its detail to the RIGHT of the frame.
 
-flow-construction.png     [COMPLETE] Beside "Fuel Station & Oil & Gas
-                          Construction" on the home page, same folder —
-                          next to the hero shot, the way
-                          auto-workshop.jpg sits beside
-                          hero-automotive.jpg. Supplied at 808x418 and
-                          drawn at 483x318, so it is sharp at 1x and
-                          will soften on a high-density screen; a larger
-                          original would be better if there is one. It
-                          is also wider than the panel (1.93 against
-                          1.52), so cover crops the sides.
+NOT WIRED — the page no longer loads this.
+flow-construction.png     [NOT USED] Was beside "Fuel Station & Oil &
+                          Gas Construction" on the home page. The panel
+                          was removed at the business's request so the
+                          heading and capabilities run the full width;
+                          the file is still in photos/flowtech/hero/ if
+                          the shot is ever wanted back.
 
 WHAT WE DELIVER TILES  ->  photos/flowtech/deliver/
 Four square tiles on the home page. All four are filled; a tile with no

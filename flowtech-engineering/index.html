@@ -29,13 +29,26 @@
 </script>
 <link rel="stylesheet" href="../assets/site.css?v=202609091200" />
 <style>
-/* The intro section is a .split with a photograph on the right, but this
-   company has no photography of its own and may never supply any. When
-   the file is absent the shot removes itself and this rule takes the
-   grid back to one column, so the section reads as it did before the
-   slot existed -- no gap, no placeholder. Drop the file in and the two
-   columns appear on their own. */
+/* The intro section was a .split with a photograph on the right. The
+   shot was dropped at the business's request, so the grid runs at one
+   column and the heading, lede and capabilities take the full width.
+   The class stays on the markup rather than the rule being folded away,
+   so a photograph can be put back by adding a .shot beside the text and
+   taking .nophoto off. */
 .split.nophoto{grid-template-columns:1fr}
+/* With the panel gone the column is the full 1072px of the wrap, and
+   two things in it were sized for half that. .lede carries max-width:64ch
+   from site.css, which left the paragraph hugging the left edge with
+   nothing beside it; released, it settles on two lines across. The
+   capability list is a one-column grid everywhere else on the site, so
+   four short bullets ran down the left in a tall stack -- two columns
+   pairs them off and the block fills the width the photograph used to.
+   Both revert to the site defaults on a narrow screen, below. */
+.split.nophoto .lede{max-width:none}
+.split.nophoto .checks{grid-template-columns:1fr 1fr;column-gap:2.4rem}
+@media (max-width:760px){
+  .split.nophoto .checks{grid-template-columns:1fr}
+}
 
 /* What we deliver: a photograph per tile, each one optional.
    site.css draws .tile img for cut-out product shots -- contained,
@@ -144,7 +157,7 @@
      to the contact block without asking for a click on the way. -->
 <section class="section white compact">
   <div class="wrap">
-    <div class="split">
+    <div class="split nophoto">
       <div>
     <div class="reveal">
       <span class="kicker">PT. Flowtech Engineering</span>
@@ -160,19 +173,6 @@
         <li><span>Operator training</span></li>
       </ul>
     </div>
-      </div>
-      <!-- No "Photo needed" placeholder here, unlike the other company
-           pages: this one has never had photography, and an empty box on
-           the home page would say so out loud. If the file is missing the
-           shot removes itself and the section runs as one column, exactly
-           as it did before this slot existed. -->
-      <div class="shot reveal d2">
-        <!-- No loading="lazy" on this one, deliberately. The collapse
-             above depends on the error firing, and a lazy image that is
-             never scrolled to never tries to load, so the panel would sit
-             there empty on a short visit. It is the first section under
-             the hero, so it is close to the fold anyway. -->
-        <img src="../photos/flowtech/hero/flow-construction.png" alt="PT. Flowtech Engineering construction work on a fuel station site" onerror="if(this.src.slice(-4)=='.png'){this.src=this.src.slice(0,-4)+'.jpg';return}var s=this.parentElement;s.style.display='none';if(s.parentElement)s.parentElement.classList.add('nophoto')" loading="lazy" />
       </div>
     </div>
   </div>
