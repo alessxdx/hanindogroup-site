@@ -41,13 +41,12 @@
     /* the Our Businesses menu, built by assets/nav.js */
     "Our Businesses": "Bidang Usaha Kami",
     "Oil & Gas": "Minyak & Gas",
-    "Fire Fighting": "Pemadam Kebakaran",
     "Automotive": "Otomotif",
-    /* "Fire Fighting Department" is NOT translated, at the business's
-       request on 2026-09-11: the department is named in English wherever
-       it appears, on Bahasa as on English. An entry here is what would
-       translate it, so the absence of one is the instruction -- do not
-       add it back. */
+    /* Neither "Fire Fighting" nor "Fire Fighting Department" is translated,
+       at the business's request on 2026-09-11: the department is named in
+       English wherever it appears, on Bahasa as on English. An entry here
+       is what would translate it, so the absence of one is the instruction
+       -- do not add either back. */
     "A division of PT. Hanindo Citra": "Divisi dari PT. Hanindo Citra",
     "Singapore": "Singapura",
     "You are here": "Anda di sini",
@@ -190,7 +189,7 @@
     "Retail chains, hospitality groups and entertainment venues.": "Jaringan ritel, grup perhotelan, dan tempat hiburan.",
     "Content needed": "Perlu konten",
     "Add Gralessando (S) Pte. Ltd. project references here": "Tambahkan referensi proyek Gralessando (S) Pte. Ltd. di sini",
-    "This page is built and linked, but no project references have been supplied for Gralessando (S) Pte. Ltd. yet. Add each project as a card — client, location, scope and a photo — following the pattern used on the Fire Fighting projects page.": "Halaman ini sudah dibuat dan tertaut, tetapi belum ada referensi proyek yang disediakan untuk Gralessando (S) Pte. Ltd. Tambahkan setiap proyek sebagai kartu — klien, lokasi, lingkup pekerjaan, dan foto — mengikuti pola yang dipakai pada halaman proyek Pemadam Kebakaran.",
+    "This page is built and linked, but no project references have been supplied for Gralessando (S) Pte. Ltd. yet. Add each project as a card — client, location, scope and a photo — following the pattern used on the Fire Fighting projects page.": "Halaman ini sudah dibuat dan tertaut, tetapi belum ada referensi proyek yang disediakan untuk Gralessando (S) Pte. Ltd. Tambahkan setiap proyek sebagai kartu — klien, lokasi, lingkup pekerjaan, dan foto — mengikuti pola yang dipakai pada halaman proyek Fire Fighting.",
     "See the pattern": "Lihat polanya",
 
     /* ---- contact ---- */

@@ -13,7 +13,6 @@
   var DICT = {
     /* the Our Businesses menu, built by assets/nav.js */
     "Our Businesses": "Bidang Usaha Kami",
-    "Fire Fighting": "Pemadam Kebakaran",
     "Automotive": "Otomotif",
     "A division of PT. Hanindo Citra": "Divisi dari PT. Hanindo Citra",
     "Singapore": "Singapura",
@@ -133,11 +132,11 @@
     /* The footer column heading, on every page of this site. Wording follows
        the group and company footers so the whole site reads the same. */
     "Our Companies": "Perusahaan Kami",
-    /* "Fire Fighting Department" is NOT translated, at the business's
-       request on 2026-09-11: the department is named in English wherever
-       it appears, on Bahasa as on English. An entry here is what would
-       translate it, so the absence of one is the instruction -- do not
-       add it back. */
+    /* Neither "Fire Fighting" nor "Fire Fighting Department" is translated,
+       at the business's request on 2026-09-11: the department is named in
+       English wherever it appears, on Bahasa as on English. An entry here
+       is what would translate it, so the absence of one is the instruction
+       -- do not add either back. */
     "A specialist division of the Hanindo Group, delivering end-to-end fire protection — from design and engineering through supply, installation, testing and long-term maintenance.": "Divisi spesialis dari Hanindo Group, menghadirkan proteksi kebakaran menyeluruh — dari desain dan rekayasa hingga pengadaan, pemasangan, pengujian, dan pemeliharaan jangka panjang.",
     /* The group tagline in the footer, on all six pages of this site. It is
        listed in the seven other dictionaries and was missing from this one

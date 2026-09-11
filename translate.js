@@ -45,11 +45,11 @@
        three of the six are Indonesian. */
     "By industry": "Menurut industri",
     "Printer & POS, by market": "Printer & POS, menurut pasar",
-    /* "Fire Fighting Department" is NOT translated, at the business's
-       request on 2026-09-11: the department is named in English wherever
-       it appears, on Bahasa as on English. An entry here is what would
-       translate it, so the absence of one is the instruction -- do not
-       add it back. */
+    /* Neither "Fire Fighting" nor "Fire Fighting Department" is translated,
+       at the business's request on 2026-09-11: the department is named in
+       English wherever it appears, on Bahasa as on English. An entry here
+       is what would translate it, so the absence of one is the instruction
+       -- do not add either back. */
     "PT. Hanindo Automation Solutions": "PT. Hanindo Automation Solutions",
     "(Indonesia)": "(Indonesia)",
     "(Singapore)": "(Singapura)",
@@ -76,7 +76,7 @@
     "Gas Suppression": "Pemadam Gas",
     "Foam Suppression": "Pemadam Busa",
     "Fire Detection & Alarm": "Deteksi & Alarm Kebakaran",
-    "All Fire Fighting products →": "Semua produk Pemadam Kebakaran →",
+    "All Fire Fighting products →": "Semua produk Fire Fighting →",
     "Tyre Service": "Layanan Ban",
     "Tyre Inflation": "Pengisian Angin Ban",
     "Lifts & Handling": "Lift & Penanganan",
@@ -105,7 +105,6 @@
     "Automotive": "Otomotif",
     "Fuelling equipment & energy": "Peralatan pengisian bahan bakar & energi",
     "Printing & POS": "Pencetakan & POS",
-    "Fire Fighting": "Pemadam Kebakaran",
 
     /* ---- home: slide 1, welcome ---- */
     "Welcome": "Selamat datang",

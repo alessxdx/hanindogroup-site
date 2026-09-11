@@ -60,12 +60,11 @@
     "Home": "Beranda",
     "About Us": "Tentang Kami",
     "Products & Services": "Produk & Layanan",
-    "Fire Fighting": "Pemadam Kebakaran",
-    /* "Fire Fighting Department" is NOT translated, at the business's
-       request on 2026-09-11: the department is named in English wherever
-       it appears, on Bahasa as on English. An entry here is what would
-       translate it, so the absence of one is the instruction -- do not
-       add it back. */
+    /* Neither "Fire Fighting" nor "Fire Fighting Department" is translated,
+       at the business's request on 2026-09-11: the department is named in
+       English wherever it appears, on Bahasa as on English. An entry here
+       is what would translate it, so the absence of one is the instruction
+       -- do not add either back. */
     /* The oil & gas descriptor under the Citra logo, and the kicker over the
        Fire Fighting pill in the nav that names it as a department of Citra. */
     "Oil & Gas": "Minyak & Gas",
@@ -119,7 +118,7 @@
     /* ---- home: fire fighting cross-link and contact ---- */
     "Also part of PT. Hanindo Citra": "Juga bagian dari PT. Hanindo Citra",
     "PT. Hanindo Citra also designs, supplies, installs and maintains complete fire-fighting systems across Indonesia — hydrant, sprinkler, gas and foam suppression, detection and alarm.": "PT. Hanindo Citra juga merancang, memasok, memasang, dan merawat sistem pemadam kebakaran lengkap di seluruh Indonesia — hydrant, sprinkler, pemadam gas dan foam, serta deteksi dan alarm.",
-    "Visit Fire Fighting": "Kunjungi Pemadam Kebakaran",
+    "Visit Fire Fighting": "Kunjungi Fire Fighting",
     "Talk to PT. Hanindo Citra": "Hubungi PT. Hanindo Citra",
     "Planning a station,": "Merencanakan SPBU,",
     "or upgrading a forecourt?": "atau meningkatkan forecourt?",
@@ -216,7 +215,7 @@
     "Retail petroleum construction and bulk fuel installations, from greenfield stations to depot and terminal systems.": "Konstruksi ritel perminyakan dan instalasi bahan bakar curah, dari SPBU greenfield hingga sistem depot dan terminal.",
     "Content needed": "Perlu konten",
     "Add PT. Hanindo Citra project references here": "Tambahkan referensi proyek PT. Hanindo Citra di sini",
-    "This page is built and linked, but no project references have been supplied for PT. Hanindo Citra yet. Add each project as a card — client, location, scope and a photo — following the pattern used on the Fire Fighting projects page.": "Halaman ini sudah dibuat dan tertaut, tetapi belum ada referensi proyek yang disediakan untuk PT. Hanindo Citra. Tambahkan setiap proyek sebagai kartu — klien, lokasi, lingkup pekerjaan, dan foto — mengikuti pola yang dipakai pada halaman proyek Pemadam Kebakaran.",
+    "This page is built and linked, but no project references have been supplied for PT. Hanindo Citra yet. Add each project as a card — client, location, scope and a photo — following the pattern used on the Fire Fighting projects page.": "Halaman ini sudah dibuat dan tertaut, tetapi belum ada referensi proyek yang disediakan untuk PT. Hanindo Citra. Tambahkan setiap proyek sebagai kartu — klien, lokasi, lingkup pekerjaan, dan foto — mengikuti pola yang dipakai pada halaman proyek Fire Fighting.",
     "See the pattern": "Lihat polanya",
 
     /* ---- contact ---- */
