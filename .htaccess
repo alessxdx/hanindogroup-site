@@ -70,6 +70,21 @@ Redirect 301 /contact-us                                            /contact/
 Redirect 301 /overseas                                              /shanghai/
 Redirect 301 /about                                                 /about/
 
+# ---------------------------------------------------------------------
+# Pages removed from this site, as opposed to from Joomla.
+#
+# These were live here and have since been taken off, so an indexed or
+# bookmarked URL would land on 404.html. Each goes to the section it
+# belonged to rather than to the home page, so the visitor arrives
+# somewhere that still answers what they were looking for.
+# ---------------------------------------------------------------------
+
+# The Projects tab came off PT. Flowtech Engineering on 2026-09-11 at the
+# business's request, and the page went with it -- the tab was the only
+# link into it. The company home carries the six oil-company logos, which
+# is the track record that page stood for.
+Redirect 301 /flowtech-engineering/projects.html                    /flowtech-engineering/
+
 
 # ---------------------------------------------------------------------
 # Hotlink protection.

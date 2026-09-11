@@ -82,6 +82,20 @@ CONFIRMED 2026-08-17 by Graziella, and now live in .htaccess:
                       until she says so" until it was asked directly.
 
 
+PAGES REMOVED FROM THIS SITE. Not Joomla URLs — these were live on the
+new site and have since been taken off, so anything Google indexed or
+anyone bookmarked in the meantime would 404. Redirect each to the
+section it belonged to:
+/flowtech-engineering/projects.html                   /flowtech-engineering/
+                      The Projects tab came off PT. Flowtech Engineering
+                      on 2026-09-11 at the business's request and the
+                      page went with it, nothing else having linked to
+                      it. The company home carries the six oil-company
+                      logos, which is the track record the page stood
+                      for, so it is the right landing place. Live in
+                      .htaccess.
+
+
 UNRESOLVED — decide before go-live:
 /?Itemid=152          Old Joomla sitemap. Suggest -> /
 /component/users/...  Joomla login/password-reset endpoints. These have
@@ -116,6 +130,9 @@ Redirect 301 /news-info/career-hanindo-group-gilbarco-veeder-root-indonesia-ther
 Redirect 301 /contact-us                                       /contact/
 Redirect 301 /overseas                                         /shanghai/
 Redirect 301 /about                                            /about/
+
+# Removed from this site rather than from Joomla -- see the note above.
+Redirect 301 /flowtech-engineering/projects.html                /flowtech-engineering/
 
 # IMPORTANT: order matters. The longer /about-hanindo-group/* rules
 # MUST come before the bare /about-hanindo-group rule, otherwise the
@@ -158,7 +175,7 @@ GO-LIVE CHECKLIST (separate from redirects)
 
         perl tools/build-sitemap.pl
 
-    It lists 48 URLs today. /search/, 404.html and the whole-department
+    It lists 42 URLs today. /search/, 404.html and the whole-department
     fire-fighting variant are deliberately left out, the same
     exclusions build-search-index.pl makes. A sitemap listing pages
     that no longer exist is worse than no sitemap at all, so run this
