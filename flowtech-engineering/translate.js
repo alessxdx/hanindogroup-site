@@ -6,8 +6,9 @@
    English <-> Bahasa Indonesia. The choice is remembered
    (localStorage) across the pages of this site only.
 
-   Five pages: Home, About Us, Products & Services, Projects and
-   Contact Us.
+   Four pages: Home, About Us, Products & Services and Contact Us.
+   The Projects page came off the site at the business's request, and
+   the entries that spoke only for it went with it.
 
    To EDIT a translation: find the English on the left, change the
    Indonesian on the right. To ADD one: copy a line and fill in both
@@ -19,10 +20,11 @@
    and the sentence that follows it.
 
    Where a split like that does NOT translate in the English order, the
-   dictionary cannot do the job — Indonesian reverses "Featured
-   Projects" into "Proyek Unggulan". Those halves carry their own
+   dictionary cannot do the job, and those halves carry their own
    Indonesian in a data-bahasa attribute instead of appearing below; see
-   collectScoped() at the foot of this file.
+   collectScoped() at the foot of this file. No page carries that
+   attribute at the moment: the one heading that needed it, "Featured
+   Projects" on the Projects page, went with the page.
 
    Shared wording — the navigation and the footer — is carried over
    verbatim from the group and PT. Hanindo Automotive dictionaries
@@ -68,7 +70,9 @@
        "Products & Services" and "Products & services" entries that used
        to sit here went with the old label. */
     "Services": "Layanan",
-    "Projects": "Proyek",
+    /* The "Projects" entry that sat here was the tab, the footer link
+       and the breadcrumb of the projects page; it went when the
+       page did. */
     /* "Contact Us" is the tab, the footer link and the breadcrumb. The
        "Contact page" entry that sat under it was the contact band's
        second button and went with the band. */
@@ -167,33 +171,15 @@
        Only the head translates. The registered names under the logos are
        names in either language, and they only show at all if a logo file
        goes missing. The Projects page carried the same six logos under a
-       heading of its own until that wall came off; its four entries went
-       with it. */
+       heading of its own until that wall came off, and that page is now
+       gone as well. */
     "Customer base": "Basis pelanggan",
 
-    /* ---- projects page ----
-       The project names ("SPBU Total Oil Indonesia"), the street
-       addresses and the years are left as they are: SPBU is already the
-       Indonesian word, and the rest are proper nouns and figures. */
-    /* The section head follows the Fire Fighting projects page, which
-       also repeats its hero here -- "Track record" over "Featured
-       projects". Sentence case, and one text node, so it stays an
-       ordinary entry; the walker matches the whole node, case included. */
-    "Track record": "Rekam jejak",
-    "Featured projects": "Proyek unggulan",
-    /* The hero's title-case "Featured Projects" is NOT here. It went back
-       to the .fx split when the second word was asked for in sky blue,
-       and its two halves carry their own Indonesian on the h1 and the
-       span -- see collectScoped() below. Adding it back here would do
-       nothing: the walker never sees that heading as one node. */
-    "Fuel station projects delivered for Pertamina, Total Oil Indonesia, Shell, Petronas and Chevron, from permit through to a station in operation.": "Proyek SPBU yang diselesaikan untuk Pertamina, Total Oil Indonesia, Shell, Petronas, dan Chevron, dari perizinan hingga SPBU beroperasi.",
-    "Further references": "Referensi lainnya",
-    "Also delivered.": "Juga diselesaikan.",
-    "Stations named in the company profile beyond the reference table above.": "SPBU yang disebutkan dalam profil perusahaan di luar tabel referensi di atas.",
-    "Shell petrol station, S. Parman": "SPBU Shell, S. Parman",
-    "Petronas service station, Fatmawati": "SPBU Petronas, Fatmawati",
-    "Chevron service station, Duri Camp": "SPBU Chevron, Duri Camp",
-    "Total gas station, Kemang Raya": "SPBU Total, Kemang Raya",
+    /* The projects page had a block of its own here -- the "Track
+       record" head, the hero line about the five oil companies, the
+       "Further references" list and its four stations. The page came
+       off the site at the business's request and its entries went with
+       it; no wording below is shared with any page that is still up. */
 
     /* ---- products & services page: hero ----
        The heading is the one word "Services", covered by the navigation
@@ -293,14 +279,14 @@
 
   /* Element-scoped translations, read off a data-bahasa attribute rather
      than the dictionary above.
-     One heading needs this. The Projects hero is "Featured Projects" with
-     the second word in sky blue, which means an .fx span, which means two
-     text nodes -- and Indonesian puts the noun first, "Proyek Unggulan",
-     so the second English word has to become the FIRST Indonesian one.
-     DICT is keyed on the text alone, and "Projects" is also the nav tab,
-     the breadcrumb and a footer link on that same page, all of which must
-     stay "Proyek". One key cannot be both. So each half of the heading
-     carries its own Indonesian on itself.
+     No page carries the attribute at the moment. The one that did was
+     the Projects hero, "Featured Projects" with the second word in sky
+     blue -- an .fx span, so two text nodes, and Indonesian puts the noun
+     first, "Proyek Unggulan", so the second English word had to become
+     the FIRST Indonesian one. DICT is keyed on the text alone and could
+     not hold both that and the "Proyek" the nav tab needed, so each half
+     of the heading carried its own Indonesian on itself. The machinery
+     stays for the next heading that splits the same way.
      Nodes claimed here are skipped by the walker below, so a word inside
      a data-bahasa element never picks up a DICT entry by accident. Only
      the element's own leading text is taken, not its descendants' -- that
