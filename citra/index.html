@@ -113,7 +113,8 @@
 /* Fire Fighting cross-link, folded into the hero as one compact card in place
    of the full-width band that used to sit above the footer. Corners on the
    site --r, so it squares up with the hero buttons instead of carrying a
-   pill radius of its own. It names the
+   pill radius of its own, and the name sits at button size (.92rem/600) to
+   finish the match -- no mobile step-down, it is already small there. It names the
    department and the relationship (it is part of Citra) and links across to
    that site, high on the page where it is actually seen. Reuses the three
    dictionary keys the old band carried, so the toggle needs nothing new.
@@ -127,7 +128,7 @@
 .hero-ff .ff-main{display:flex;flex-direction:column;gap:.16rem;line-height:1.2}
 .hero-ff .ff-kick{font-size:.63rem;letter-spacing:.14em;text-transform:uppercase;
   font-weight:700;color:#8fb7dd}
-.hero-ff .ff-name{font-size:1.02rem;font-weight:700;color:#fff}
+.hero-ff .ff-name{font-size:.92rem;font-weight:600;color:#fff}
 .hero-ff .ff-go{display:inline-flex;align-items:center;gap:.4rem;font-size:.85rem;
   font-weight:700;color:#7fd9ff;white-space:nowrap;padding-left:1.1rem;
   border-left:1px solid rgba(255,255,255,.16)}
@@ -137,7 +138,6 @@
 @media(max-width:560px){
   .hero-ff{display:flex;width:100%;gap:.8rem}
   .hero-ff .ff-main{flex:1}
-  .hero-ff .ff-name{font-size:.96rem}
   .hero-ff .ff-go{padding-left:.8rem}
 }
 </style>
