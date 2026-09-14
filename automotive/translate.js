@@ -85,7 +85,13 @@
     "Car Lift": "Car Lift",
     "Lubrication": "Pelumasan",
     "Our Brands": "Merek Kami",
-    "Sole distributor in Indonesia for Airtec, HPA-Faip and RAASM. WELDANN, ATOM and HAKIRO are our own.": "Distributor tunggal di Indonesia untuk Airtec, HPA-Faip, dan RAASM. WELDANN, ATOM, dan HAKIRO adalah merek kami sendiri.",
+    /* The Our Brands line carries a <br/> between its two sentences, so it
+       matches as two nodes rather than one -- the same shape as the About
+       hero heading. Both halves have to be here or the toggle drops the line
+       back to English. The first key is the bullet wording plus a full stop,
+       which is why it looks like a duplicate of the entry above and is not. */
+    "Sole distributor in Indonesia for Airtec, HPA-Faip and RAASM.": "Distributor tunggal di Indonesia untuk Airtec, HPA-Faip, dan RAASM.",
+    "WELDANN, ATOM and HAKIRO are our own.": "WELDANN, ATOM, dan HAKIRO adalah merek kami sendiri.",
     "Customer base": "Basis pelanggan",
     /* The sector labels on the customer wall. These are headings, not
        company names, so they translate — the logos and the .nm fallback
