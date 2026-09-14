@@ -88,10 +88,11 @@
     /* The Our Brands line carries a <br/> between its two sentences, so it
        matches as two nodes rather than one -- the same shape as the About
        hero heading. Both halves have to be here or the toggle drops the line
-       back to English. The first key is the bullet wording plus a full stop,
-       which is why it looks like a duplicate of the entry above and is not. */
-    "Sole distributor in Indonesia for Airtec, HPA-Faip and RAASM.": "Distributor tunggal di Indonesia untuk Airtec, HPA-Faip, dan RAASM.",
-    "WELDANN, ATOM and HAKIRO are our own.": "WELDANN, ATOM, dan HAKIRO adalah merek kami sendiri.",
+       back to English. The first key names the same three principals as the
+       bullet above but in the reverse order, so it is a near-twin of that
+       entry rather than a duplicate of it. */
+    "Sole distributor in Indonesia for RAASM, HPA-Faip, and Airtec": "Distributor tunggal di Indonesia untuk RAASM, HPA-Faip, dan Airtec",
+    "ATOM, WELDANN, HAKIRO are our own brands": "ATOM, WELDANN, HAKIRO adalah merek kami sendiri",
     "Customer base": "Basis pelanggan",
     /* The sector labels on the customer wall. These are headings, not
        company names, so they translate — the logos and the .nm fallback
