@@ -110,8 +110,10 @@
    everything else instead of being overridden. */
 .wall.flat .w.lockup{--logo-h:60px}
 @media(max-width:640px){.wall.flat .w.lockup{--logo-h:48px}}
-/* Fire Fighting cross-link, folded into the hero as one compact pill in place
-   of the full-width band that used to sit above the footer. It names the
+/* Fire Fighting cross-link, folded into the hero as one compact card in place
+   of the full-width band that used to sit above the footer. Corners on the
+   site --r, so it squares up with the hero buttons instead of carrying a
+   pill radius of its own. It names the
    department and the relationship (it is part of Citra) and links across to
    that site, high on the page where it is actually seen. Reuses the three
    dictionary keys the old band carried, so the toggle needs nothing new.
@@ -119,7 +121,7 @@
    --brand blue reads too dark. */
 .hero-ff{display:inline-flex;align-items:center;gap:1.1rem;margin-top:1.5rem;
   padding:.68rem .85rem .68rem 1.1rem;border:1px solid rgba(127,217,255,.32);
-  background:rgba(127,217,255,.08);border-radius:12px;
+  background:rgba(127,217,255,.08);border-radius:var(--r);
   transition:background .18s,border-color .18s}
 .hero-ff:hover{background:rgba(127,217,255,.14);border-color:rgba(127,217,255,.5)}
 .hero-ff .ff-main{display:flex;flex-direction:column;gap:.16rem;line-height:1.2}
