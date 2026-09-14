@@ -1208,8 +1208,22 @@ ovs-office-shenzhen.jpg   "Where we are" on About Us, Shenzhen   [COMPLETE]
                           the About page Shanghai card. Swap one if that
                           repetition is not wanted.
 
-The "Customer base" wall on /shanghai/index.html is waiting on the China
-customer list and currently shows five "Logo to come" placeholder cells.
+The "Customer base" wall on /shanghai/index.html has four cells in its
+Airports & aviation band. Three of them are waiting on their mark and
+fall back to the company name as text until the file lands:
+
+  spring-airlines.png     Spring Airlines (春秋航空) — Airports &
+                          aviation band. Mark over wordmark, square,
+                          so .sq.
+  travelsky.png           TravelSky (中国航信) — Airports & aviation
+                          band. Wordmark in a red rule, middling
+                          proportion, so .mid.
+  china-eastern.png       China Eastern Airlines (中国东方航空) —
+                          Airports & aviation band. Wide wordmark with
+                          the swift at the left, so no shape class.
+
+Cut out to transparency like the rest of this pool: the Shanghai wall is
+NOT .paper, so a white ground will not drop out and will show as a box.
 Logos go in /photos/customers/ with the other two walls — one pool for
 the whole site, so a customer already listed under CUSTOMER LOGOS below
 needs no new file, only a cell.
