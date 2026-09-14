@@ -1209,21 +1209,27 @@ ovs-office-shenzhen.jpg   "Where we are" on About Us, Shenzhen   [COMPLETE]
                           repetition is not wanted.
 
 The "Customer base" wall on /shanghai/index.html has four cells in its
-Airports & aviation band. Three of them are waiting on their mark and
-fall back to the company name as text until the file lands:
+Airports & aviation band, and all four now carry their mark:
 
-  spring-airlines.png     Spring Airlines (春秋航空) — Airports &
-                          aviation band. Mark over wordmark, square,
-                          so .sq.
-  travelsky.png           TravelSky (中国航信) — Airports & aviation
-                          band. Wordmark in a red rule, middling
-                          proportion, so .mid.
-  china-eastern.png       China Eastern Airlines (中国东方航空) —
-                          Airports & aviation band. Wide wordmark with
-                          the swift at the left, so no shape class.
+  spring-airlines.png     Spring Airlines (春秋航空)             [COMPLETE]
+                          1185x931, 1.27 -> .sq. Supplied at
+                          1280 square with the mark floating in
+                          the middle; recropped to the convention.
+  travel-sky.png          TravelSky (中国航信)                   [COMPLETE]
+                          330x190, 1.74 -> .sq, NOT .mid. The
+                          ratio sits between the two classes and
+                          .mid drew it at half the area of its
+                          neighbours. Note the hyphen in the name.
+  china-eastern.png       China Eastern Airlines (中国东方航空)  [COMPLETE]
+                          795x173, 4.60 -> no shape class.
 
-Cut out to transparency like the rest of this pool: the Shanghai wall is
-NOT .paper, so a white ground will not drop out and will show as a box.
+Spring Airlines and China Eastern are on an opaque white ground rather
+than cut out. That is safe HERE and only here: .customers is background
+var(--white), so the ground is invisible against it. There is no
+multiply on this wall to rescue them -- that rule is .paper only -- so
+if either cell ever moves to a tinted section the file has to be cut
+out to transparency first. travel-sky.png is already transparent.
+
 Logos go in /photos/customers/ with the other two walls — one pool for
 the whole site, so a customer already listed under CUSTOMER LOGOS below
 needs no new file, only a cell.
