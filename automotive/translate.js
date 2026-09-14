@@ -70,7 +70,7 @@
     "PT. Hanindo Automotive equips the modern service bay — diagnostics, lifting and handling, tyre service and lubrication.": "PT. Hanindo Automotive melengkapi service bay modern — diagnostik, pengangkatan dan penanganan, layanan ban, dan pelumasan.",
     "The workshop, fully equipped.": "Solusi Peralatan Bengkel.",
     "PT. Hanindo Automotive equips and supports professional workshops with complete service bay solutions — from tyre changers, wheel balancers and 3D wheel alignment systems to vehicle lifts, diagnostics, fluid handling, lubrication systems and welding equipment. Every solution is backed by our engineering expertise, installation support and after-sales service.": "PT. Hanindo Automotive melengkapi dan mendukung bengkel profesional dengan solusi service bay yang lengkap — mulai dari tyre changer, wheel balancer, dan sistem spooring 3D hingga lift kendaraan, alat diagnostik, penanganan fluida, dan sistem pelumasan. Setiap solusi didukung dengan layanan setelah pembelian, instalasi, dan teknisi yang ahli dalam bidangnya.",
-    "Sole distributor in Indonesia for Airtec, HPA-Faip and RAASM": "Distributor tunggal di Indonesia untuk Airtec, HPA-Faip, dan RAASM",
+    "Sole distributor in Indonesia for RAASM, HPA-Faip and Airtec": "Distributor tunggal di Indonesia untuk RAASM, HPA-Faip, dan Airtec",
     "Own brands WELDANN, ATOM and HAKIRO, supported by dedicated spare parts and warranty service": "Merek sendiri WELDANN, ATOM, dan HAKIRO, didukung dengan garansi dan spareparts yang terjamin",
     "Installation, commissioning and operator training by our own technicians": "Instalasi, commissioning, dan pelatihan operator oleh teknisi PT. Hanindo Automotive",
     "RAASM fluid handling solutions supplied beyond workshops to lubricant distributors, industrial plants and mining operations": "Solusi penanganan fluida RAASM yang dipasok melampaui bengkel ke distributor pelumas, pabrik industri, dan operasi pertambangan",
@@ -92,7 +92,7 @@
        bullet above but in the reverse order, so it is a near-twin of that
        entry rather than a duplicate of it. */
     "Sole distributor in Indonesia for RAASM, HPA-Faip, and Airtec": "Distributor tunggal di Indonesia untuk RAASM, HPA-Faip, dan Airtec",
-    "ATOM, WELDANN, HAKIRO are our own brands": "ATOM, WELDANN, HAKIRO adalah merek kami sendiri",
+    "ATOM, WELDANN, and HAKIRO are our own brands": "ATOM, WELDANN, dan HAKIRO adalah merek kami sendiri",
     "Customer base": "Basis pelanggan",
     /* The sector labels on the customer wall. These are headings, not
        company names, so they translate — the logos and the .nm fallback
@@ -134,7 +134,7 @@
     "Singapore": "Singapura",
     "Italy": "Italia",
     "PT. Hanindo Automotive was established within the Hanindo Group in 2002, providing workshop and industrial equipment solutions designed to improve efficiency, productivity and ease of use.": "PT. Hanindo Automotive didirikan di dalam Hanindo Group pada tahun 2002, menyediakan solusi peralatan bengkel dan industri yang dirancang untuk meningkatkan efisiensi, produktivitas, dan kemudahan penggunaan.",
-    "Beyond supplying equipment, we support the full lifecycle of every solution — from specification and installation to commissioning, operator training, spare parts and after-sales service. As the sole distributor in Indonesia for Airtec, HPA-Faip and RAASM, alongside our own brands WELDANN, ATOM and HAKIRO, we equip workshops and industrial facilities with reliable solutions from a single partner.": "Lebih dari sekadar memasok peralatan, kami mendukung seluruh proses mulai dari penentuan spesifikasi dan pemasangan hingga commissioning, pelatihan operator, suku cadang, dan layanan setelah pembelian. Sebagai distributor tunggal di Indonesia untuk Airtec, HPA-Faip, dan RAASM, bersama merek kami sendiri WELDANN, ATOM, dan HAKIRO, kami melengkapi bengkel dan fasilitas industri dengan solusi andal dari satu mitra.",
+    "Beyond supplying equipment, we support the full lifecycle of every solution — from specification and installation to commissioning, operator training, spare parts and after-sales service. As the sole distributor in Indonesia for RAASM, HPA-Faip and Airtec, alongside our own brands WELDANN, ATOM and HAKIRO, we equip workshops and industrial facilities with reliable solutions from a single partner.": "Lebih dari sekadar memasok peralatan, kami mendukung seluruh proses mulai dari penentuan spesifikasi dan pemasangan hingga commissioning, pelatihan operator, suku cadang, dan layanan setelah pembelian. Sebagai distributor tunggal di Indonesia untuk RAASM, HPA-Faip, dan Airtec, bersama merek kami sendiri WELDANN, ATOM, dan HAKIRO, kami melengkapi bengkel dan fasilitas industri dengan solusi andal dari satu mitra.",
     "The principals we distribute": "Merek yang kami distribusikan",
     "Sole distributor for Indonesia.": "Distributor tunggal untuk Indonesia.",
     "Digital tyre inflators — workshop, forecourt and plant": "Pengisi angin ban digital — bengkel, SPBU, dan pabrik",
@@ -157,7 +157,7 @@
     "Continuously improve our products and services to meet international standards of quality and safety.": "Terus menyempurnakan produk dan layanan kami untuk memenuhi standar mutu dan keselamatan internasional.",
     "Why clients trust us": "Mengapa pelanggan percaya kepada kami",
     "Trusted Partner": "Mitra Tepercaya",
-    "One of the Hanindo Group companies and the sole distributor in Indonesia for Airtec, HPA-Faip and RAASM.": "Salah satu perusahaan Hanindo Group sekaligus distributor tunggal di Indonesia untuk Airtec, HPA-Faip, dan RAASM.",
+    "One of the Hanindo Group companies and the sole distributor in Indonesia for RAASM, HPA-Faip and Airtec.": "Salah satu perusahaan Hanindo Group sekaligus distributor tunggal di Indonesia untuk RAASM, HPA-Faip, dan Airtec.",
     "Quality You Can Rely On": "Kualitas yang Dapat Diandalkan",
     "Access to internationally recognised equipment brands alongside our own WELDANN, ATOM and HAKIRO product lines.": "Peralatan yang sudah dikenal secara internasional dan juga merek milik Hanindo Automotive seperti WELDANN, ATOM, dan HAKIRO.",
     "Complete Support": "Dukungan Menyeluruh",
