@@ -68,7 +68,7 @@
     /* The sector labels on the customer wall. These are headings, not
        company names, so they translate — the logos and the .nm fallback
        names beside them stay in their own form. */
-    "Airports & airlines": "Bandara & maskapai",
+    "Airports & aviation": "Bandara & penerbangan",
     "Transport": "Transportasi",
     "Technology & services": "Teknologi & layanan",
 
