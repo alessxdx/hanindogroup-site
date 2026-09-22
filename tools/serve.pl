@@ -76,6 +76,12 @@ if ($ENV{LAN}) {
 }
 STDOUT->autoflush(1);
 
+# Browsers abort speculative connections mid-response; writing to one of
+# those raises SIGPIPE, which kills the whole server (exit 3328 under Git
+# for Windows perl). A preview server should shrug and serve the next
+# request instead.
+$SIG{PIPE} = 'IGNORE';
+
 # One request per connection, then close.
 #
 # This server is single-threaded, so it can only ever be inside one
