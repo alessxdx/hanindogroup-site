@@ -133,11 +133,11 @@
     "South East Asia expansion": "Ekspansi Asia Tenggara",
     "PT. Hanindo Automation Solutions adds CUSTOM Hanindo Indonesia.": "PT. Hanindo Automation Solutions mendirikan CUSTOM Hanindo Indonesia.",
     "Singapore office": "Kantor Singapura",
-    "Gralessando (S) Pte. Ltd. opens, covering CUSTOM Hanindo South East Asia.": "Gralessando (S) Pte. Ltd. dibuka, mencakup CUSTOM Hanindo Asia Tenggara.",
+    "Gralessando (S) Pte. Ltd. opens, covering CUSTOM (S.E.A) Hanindo.": "Gralessando (S) Pte. Ltd. dibuka, mencakup CUSTOM (S.E.A) Hanindo.",
     "Regional partnerships": "Kemitraan regional",
-    "CUSTOM Hanindo partnerships established in Vietnam, Thailand and the Philippines.": "Kemitraan CUSTOM Hanindo dijalin di Vietnam, Thailand, dan Filipina.",
+    "CUSTOM (S.E.A) Hanindo partnerships established in Vietnam, Thailand and the Philippines.": "Kemitraan CUSTOM (S.E.A) Hanindo dijalin di Vietnam, Thailand, dan Filipina.",
     "Manila office": "Kantor Manila",
-    "A CUSTOM Hanindo office follows the Philippines partnership.": "Kantor CUSTOM Hanindo menyusul setelah kemitraan Filipina.",
+    "A CUSTOM (S.E.A) Hanindo office follows the Philippines partnership.": "Kantor CUSTOM (S.E.A) Hanindo menyusul setelah kemitraan Filipina.",
 
     /* ---- about: direction and credentials ---- */
     "Vision & Mission": "Visi & Misi",
