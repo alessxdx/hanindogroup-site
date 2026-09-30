@@ -39,6 +39,15 @@
 .mktsw .btn{padding:.6rem 1.1rem;font-size:.83rem}
 /* the market each sister company serves, picked out in the sky accent */
 .mktsw .btn .mkt{color:var(--sky)}
+/* Phones: every market button on one line at one shared size. The type
+   scales with the screen just enough that the longest name, Hanindo
+   (Shanghai) International Co., Ltd. (China), fits a 360px phone; the
+   other buttons follow it so the pair stays matched. */
+@media(max-width:560px){
+  .mktsw .btn{padding:.55rem .8rem;font-size:min(.83rem,3vw);gap:.45rem}
+  .mktsw .bname{white-space:nowrap}
+  .mktsw .btn svg{width:14px;height:14px}
+}
 /* the trading name, very small under the registered name on its button */
 .mktsw .bname small{display:block;font-size:.62rem;font-weight:500;font-style:italic;letter-spacing:.02em;opacity:.85;margin-top:.05rem}
 /* Customer wall, banded by sector — the same block the PT. Hanindo Citra,
