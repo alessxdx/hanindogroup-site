@@ -987,7 +987,9 @@ a.brand:not([href]){cursor:default}
 .pagehero .crumb a:hover{color:#fff}
 .pagehero .crumb .sep{opacity:.45;margin:0 .45rem}
 .pagehero h1{font-weight:700;font-size:clamp(1.9rem,3.8vw,2.75rem);line-height:1.12;letter-spacing:-.015em;margin-top:.6rem}
-.pagehero h1 .fx{color:var(--sky)}
+/* The second half of a page heading stays white like the rest; only the
+   group home page's "Hanindo Group." keeps the sky accent (index.html). */
+.pagehero h1 .fx{color:#fff}
 .pagehero p.intro{color:#c3d0e4;max-width:64ch;margin-top:.9rem;font-size:1rem}
 
 /* ---------- SECTION BASE + MOTION ---------- */
@@ -1399,7 +1401,7 @@ a[href^="tel:"],.footer .cl .nb{white-space:nowrap}
      .hslide.solo .content{max-width:62ch} */
 @media(max-width:900px){.hslide .wrap{grid-template-columns:1fr;gap:2rem}}
 .hslide h1{font-weight:700;font-size:clamp(1.85rem,3.7vw,2.8rem);line-height:1.14;letter-spacing:-.02em;color:#fff}
-.hslide h1 .ln2{color:var(--sky)}
+.hslide h1 .ln2{color:#fff}
 .hslide .redline{width:56px;height:3px;background:var(--brand);margin:1.2rem 0}
 .hslide p.lead{font-size:clamp(.95rem,1.35vw,1.05rem);color:#c3d0e4;max-width:54ch}
 .hslide p.lead+p.lead{margin-top:.8rem}
