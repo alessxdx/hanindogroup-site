@@ -1290,7 +1290,7 @@ a.pcard:hover .more svg{transform:translateX(3px)}
 .vgrid .vopt .lw{flex:none;width:110px;height:34px;display:flex;align-items:center;justify-content:center}
 .vgrid .vopt .lw img{width:auto;max-width:110px;object-fit:contain;mix-blend-mode:multiply}
 .vgrid .vopt .lw img[src$="logo-flowtech.png"]{height:33px}
-.vgrid .vopt .lw img[src$="logo-citra.png"]{height:33px}
+.vgrid .vopt .lw img[src*="logo-citra.png"]{height:33px}
 .vgrid .vopt .lw img[src$="logo-gralessando.png"]{height:32px}
 .vgrid .vopt .lw img[src$="logo-shanghai.png"]{height:32px}
 .vgrid .vopt .lw img[src$="logo-automotive.png"]{height:27px}
