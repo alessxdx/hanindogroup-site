@@ -1007,3 +1007,19 @@ body{line-height:1.65}
 @media(max-width:640px){
   .proj-grid{grid-template-columns:1fr 1fr;gap:.6rem}
 }
+
+/* ---------- FOOTER CERTIFICATIONS: ONE ROW ----------
+   Fire Fighting carries five badges, one more than any other site, and the
+   long SKK title pushed NFPA onto a second row on its own. On desktop the
+   row no longer wraps: the short badges keep their size and the long SKK
+   title wraps inside its own item instead. Below 1180px five will not
+   fit, so narrower screens keep the wrapping row from site.css. */
+@media(min-width:1180px){
+  .fcrow{flex-wrap:nowrap;gap:1.3rem;justify-content:space-between}
+  .fitem{flex:none}
+  .fcrow .fitem:nth-child(4){flex:0 1 auto;min-width:0}
+  .fitem>div:last-child{min-width:0}
+  /* short titles stay whole; only the long SKK title (4th) gives way */
+  .fcrow .cstd,.fcrow .clbl{white-space:nowrap}
+  .fcrow .fitem:nth-child(4) .cstd,.fcrow .fitem:nth-child(4) .clbl{white-space:normal}
+}
