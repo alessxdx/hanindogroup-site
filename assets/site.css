@@ -1341,7 +1341,7 @@ a.pcard:hover .more svg{transform:translateX(3px)}
 .footer ul{list-style:none;display:grid;gap:.5rem}
 .footer ul a{transition:color .15s}
 .footer ul a:hover{color:#fff}
-.footer ul a .tname{display:block;font-size:.72rem;font-style:italic;color:var(--sky);letter-spacing:.02em;margin-top:.1rem}
+.footer ul a .tname{display:block;font-size:.72rem;font-style:italic;letter-spacing:.02em;margin-top:.1rem}
 .footer .cl{display:block;margin-bottom:.45rem;color:#a5b5cd}
 .footer .cl b{color:#fff;font-weight:600}
 /* A phone number must never break across two lines. The footer columns are
