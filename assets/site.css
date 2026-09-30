@@ -1281,6 +1281,8 @@ a.pcard:hover .more svg{transform:translateX(3px)}
 /* Market sits inline after the name. Stacking it was part of what drove
    the Automation row to four lines. */
 .vgrid .vopt .nm em{font-style:normal;font-weight:400;font-size:.82rem;color:var(--muted);margin-left:.5rem}
+/* a trading name, small on its own line under the registered name */
+.vgrid .vopt .tname{display:block;font-size:.72rem;font-weight:600;font-style:italic;color:var(--brand-600);letter-spacing:.02em;margin-top:.1rem}
 /* The Fire Fighting Department is a department of Hanindo Citra, not a
    company beside it: indented under its parent behind a short branch rule,
    replacing a 9px dash that floated clear of the row and read as a stray
@@ -1339,6 +1341,7 @@ a.pcard:hover .more svg{transform:translateX(3px)}
 .footer ul{list-style:none;display:grid;gap:.5rem}
 .footer ul a{transition:color .15s}
 .footer ul a:hover{color:#fff}
+.footer ul a .tname{display:block;font-size:.72rem;font-style:italic;color:var(--sky);letter-spacing:.02em;margin-top:.1rem}
 .footer .cl{display:block;margin-bottom:.45rem;color:#a5b5cd}
 .footer .cl b{color:#fff;font-weight:600}
 /* A phone number must never break across two lines. The footer columns are
