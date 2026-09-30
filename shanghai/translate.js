@@ -111,7 +111,8 @@
        Chinese than the three-line English stack does -- 8px against 92px.
        Shenzhen below is laid out the same way. */
     "Room 3211, Tower B, The Place": "上海市长宁区遵义路100号虹桥南丰城B楼3211室",
-    "Zunyi Rd 100, Changning district": "",
+    "Zunyi Rd 100,": "",
+    "Changning District": "",
     "Shanghai, China": "",
     /* Shenzhen, handled the same way as Shanghai above: the whole postal
        address on the first span, the street span and the city span blank.
