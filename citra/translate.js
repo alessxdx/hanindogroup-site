@@ -119,6 +119,8 @@
     "Also part of PT. Hanindo Citra": "Juga bagian dari PT. Hanindo Citra",
     "PT. Hanindo Citra also designs, supplies, installs and maintains complete fire-fighting systems across Indonesia — hydrant, sprinkler, gas and foam suppression, detection and alarm.": "PT. Hanindo Citra juga merancang, memasok, memasang, dan merawat sistem pemadam kebakaran lengkap di seluruh Indonesia — hydrant, sprinkler, pemadam gas dan foam, serta deteksi dan alarm.",
     "Visit Fire Fighting": "Kunjungi Fire Fighting",
+    "Part of PT. Hanindo Citra": "Bagian dari PT. Hanindo Citra",
+    "Visit Fire Fighting Department": "Kunjungi Fire Fighting Department",
     "Talk to PT. Hanindo Citra": "Hubungi PT. Hanindo Citra",
     "Planning a station,": "Merencanakan SPBU,",
     "or upgrading a forecourt?": "atau meningkatkan forecourt?",
