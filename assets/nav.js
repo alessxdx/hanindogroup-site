@@ -203,7 +203,10 @@
      carries — "../" on a company page, "../../" under Automotive — so
      nothing here has to know how deep it is sitting. And the company
      you are already in is matched against the path, so its own name
-     appears as a label rather than a link back to where you are. */
+     appears as a label rather than a link back to where you are.
+
+     Each row is [slug, name, note, trading name]; the optional fourth
+     is shown small under the name, as on the group pages' own copy. */
   var GROUP = [
     ['Oil &amp; Gas', [
       ['citra/',                'PT. Hanindo Citra',                          ''],
@@ -217,7 +220,7 @@
     ]],
     ['Printer &amp; POS', [
       ['automation/',           'PT. Hanindo Automation Solutions',           'Indonesia'],
-      ['printer-pos/',          'Gralessando (S) Pte. Ltd.',                  'Singapore'],
+      ['printer-pos/',          'Gralessando (S) Pte. Ltd.',                  'Singapore', 'CUSTOM (S.E.A) Hanindo'],
       ['shanghai/',             'Hanindo (Shanghai) International Co., Ltd.', 'China']
     ]]
   ];
@@ -237,12 +240,13 @@
       var rows = GROUP[g][1], items = '';
       for(var i = 0; i < rows.length; i++){
         var slug = rows[i][0], name = rows[i][1], note = rows[i][2];
+        var trade = rows[i][3] ? '<small class="mtrade">' + rows[i][3] + '</small>' : '';
         if(here.indexOf('/' + slug) >= 0){
-          items += '<a class="mcur" aria-current="page">' + name +
+          items += '<a class="mcur" aria-current="page">' + name + trade +
                    '<span class="mnote">You are here</span></a>';
         } else {
           items += '<a href="' + root + slug + '" target="_blank" rel="noopener">' +
-                   name + ' ' + ext +
+                   name + ' ' + ext + trade +
                    (note ? '<span class="mnote">' + note + '</span>' : '') + '</a>';
         }
       }
