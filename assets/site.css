@@ -688,7 +688,7 @@ a.brand:not([href]){cursor:default}
 .mcol a .mext{width:11px;height:11px;margin-left:.3rem;stroke:currentColor;stroke-width:2;
   fill:none;stroke-linecap:round;stroke-linejoin:round;opacity:.55;vertical-align:0}
 /* a trading name, small under the registered name it goes with */
-.mcol a .mtrade{display:block;font-size:.72rem;font-weight:600;font-style:italic;color:var(--brand-600);letter-spacing:.02em;margin-top:.05rem}
+.mcol a .mtrade{display:block;font-size:.72rem;font-weight:600;font-style:italic;letter-spacing:.02em;margin-top:.05rem}
 .mcol .mall{margin-top:auto;padding-top:.45rem;font-size:.76rem;font-weight:700;color:var(--brand-600)}
 .mcol .mall:hover{text-decoration:underline}
 /* the company whose own site this is, on the company headers */
@@ -726,7 +726,6 @@ a.brand:not([href]){cursor:default}
   .mcol a{padding:.6rem var(--pad) .6rem calc(var(--pad) + 1rem);
     font-size:.94rem;color:#c6d3e4;white-space:normal}
   .mcol a .mnote{color:#8fa6bf}
-  .mcol a .mtrade{color:var(--sky)}
   .mcol .mall{color:var(--sky);font-size:.88rem}
   .mcol a.mcur{color:#fff}
 }
