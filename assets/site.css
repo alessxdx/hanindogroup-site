@@ -232,15 +232,32 @@ img,svg{-webkit-user-drag:none;-webkit-touch-callout:none;user-select:none;-webk
    wrapper on load (against the one anchor every company page carries) and
    strips the lockup's href. The two-line stack nav.js builds for the drawer
    heading is laid out on ONE row here — "Back to" beside the name — with the
-   circular chevron badge carried over from the base .grouplink rules. Hidden
-   below 860px, where the drawer carries the way back instead. */
+   circular chevron badge carried over from the base .grouplink rules. Shown
+   on phones too, a size down, so the way back is visible without opening the
+   drawer. */
 .brandhome{display:flex;flex-direction:column;align-items:flex-start;gap:.3rem}
 a.brand:not([href]){cursor:default}
 .brandhome .grouplink{border-right:0;padding-right:0;height:auto;font-size:.78rem;gap:.45rem}
 .brandhome .grouplink .glstack{display:flex;gap:.32rem;line-height:1.2}
 .brandhome .grouplink .glback{font-size:inherit;letter-spacing:normal;text-transform:none;font-weight:600;color:var(--muted)}
 .brandhome .grouplink:hover .glback{color:var(--brand)}
-@media(max-width:860px){.brandhome .grouplink{display:none}}
+@media(max-width:860px){
+  .brandhome{gap:.2rem}
+  .brandhome .grouplink{font-size:.7rem;gap:.35rem}
+  .brandhome .grouplink svg{width:10px;height:10px;padding:4px}
+}
+/* With the back link showing under the group lockup on phones, the lockup
+   can no longer shrink to make room for a long descriptor beside it. The
+   Fire Fighting site's "Fire Fighting Department" tag then shoved its logo
+   column into the menu button, so on phones the tag wraps under its logo
+   instead of running out to the right. Short tags ("Oil & Gas") are
+   unaffected. */
+@media(max-width:560px){
+  .cobrandhome .cotag{white-space:normal;max-width:9.5em;letter-spacing:.08em;line-height:1.25}
+}
+@media(max-width:380px){
+  .cobrandhome .cotag{font-size:.56rem;letter-spacing:.06em}
+}
 /* ---------- COMPANY ⇄ DEPARTMENT LINKS ----------
    The Fire Fighting mini-site and its parent PT. Hanindo Citra point at each
    other, but NOT the same way — the relationship is not symmetric. Citra is a
