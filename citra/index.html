@@ -135,14 +135,19 @@
 .hero-ff .ff-go svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;
   transition:transform .18s}
 .hero-ff:hover .ff-go svg{transform:translateX(3px)}
-/* Slimmer on phones: tighter padding and a touch smaller type, so the
-   kicker and name wrap less and the card doesn't stand as a tall block. */
+/* On phones the card shrinks to a small "Visit Fire Fighting" link tucked
+   into the hero's bottom-right corner. Directly under the H1 it was the first
+   thing a phone visitor read, and made Citra look like the fire department;
+   in the corner it stays findable without speaking for the company. The
+   hero gets a little extra bottom room so it never crowds the heading. */
 @media(max-width:560px){
-  .hero-ff{display:flex;width:100%;gap:.65rem;margin-top:1.1rem;padding:.45rem .7rem .45rem .85rem}
-  .hero-ff .ff-main{flex:1;gap:.08rem}
-  .hero-ff .ff-kick{font-size:.55rem;letter-spacing:.05em}
-  .hero-ff .ff-name{font-size:.84rem}
-  .hero-ff .ff-go{padding-left:.65rem;font-size:.78rem}
+  .pagehero .wrap{align-self:stretch;display:flex;flex-direction:column;
+    justify-content:center;padding-bottom:3.4rem}
+  .hero-ff{position:absolute;right:var(--pad);bottom:.9rem;margin:0;
+    padding:.38rem .7rem;gap:0}
+  .hero-ff .ff-main{display:none}
+  .hero-ff .ff-go{padding-left:0;border-left:0;font-size:.76rem}
+  .hero-ff .ff-go svg{width:13px;height:13px}
 }
 </style>
 </head>
