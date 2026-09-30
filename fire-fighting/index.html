@@ -29,6 +29,23 @@
 </script>
 <link rel="stylesheet" href="../assets/site.css?v=202609301600" />
 <link rel="stylesheet" href="../assets/fire-fighting.css?v=202609301500" />
+<style>
+/* Phone-only link to the parent company, in the hero's bottom-right corner.
+   The desktop nav carries this as the "Part of PT. Hanindo Citra" pill;
+   in the phone drawer that pill folds away, so phone visitors got no
+   sign up front that this department belongs to Citra. Mirrors the
+   corner link on the Citra home hero, which points the other way. */
+.hero-citra{display:none}
+@media(max-width:560px){
+  .pagehero .wrap{align-self:stretch;display:flex;flex-direction:column;
+    justify-content:center;padding-bottom:4.2rem}
+  .hero-citra{position:absolute;right:var(--pad);bottom:.9rem;display:inline-flex;
+    align-items:center;gap:.35rem;padding:.4rem .75rem;border-radius:var(--r);
+    border:1px solid rgba(127,217,255,.32);background:rgba(127,217,255,.08);
+    font-size:.78rem;font-weight:700;color:#7fd9ff;white-space:nowrap}
+  .hero-citra svg{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:2}
+}
+</style>
 </head>
 <body>
 
@@ -82,6 +99,7 @@
     <div class="crumb"><a href="../">Hanindo Group</a><span class="sep">/</span>PT. Hanindo Citra Fire Fighting Department</div>
     <h1>PT. Hanindo Citra &mdash; <span class="fx">Fire Fighting Department</span></h1>
     <p class="intro hide-sm">PT. Hanindo Citra designs, supplies, installs and maintains complete fire-fighting systems — reliable on day one, and every day after.</p>
+    <a class="hero-citra" href="../citra/" target="_blank" rel="noopener" aria-label="Part of PT. Hanindo Citra — visit the PT. Hanindo Citra site"><span>Part of PT. Hanindo Citra</span> <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
   </div>
 </section>
 
@@ -278,7 +296,7 @@ function build(){
 if(document.readyState==='complete')build();else window.addEventListener('load',build);
 })();
 </script>
-<script src="translate.js?v=202609111700"></script>
+<script src="translate.js?v=202609301800"></script>
 <script src="../assets/nav.js?v=202609301200" defer></script>
 <script src="../assets/protect.js?v=202609091200" defer></script>
 </body>
