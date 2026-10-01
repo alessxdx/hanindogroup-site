@@ -115,7 +115,7 @@
     "Watch our introduction": "Sekilas Tentang Kami",
     "Introduction": "Perkenalan",
     "Introducing Hanindo Group": "Mengenal Hanindo Group",
-    "Our companies, divisions, and the industries we serve, all in one short film.": "Perusahaan, divisi, dan industri yang kami layani, semuanya dalam satu film singkat.",
+    "Our companies, divisions, and the industries we serve, all in one short film.": "Kenali perusahaan, divisi, serta berbagai industri yang kami layani melalui satu video singkat.",
     "Our companies": "Perusahaan kami",
 
     /* ---- home: slide 2, one stop solution ---- */
