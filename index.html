@@ -60,6 +60,11 @@
 /* Gralessando's trading name, small under it in the hero "Our companies"
    panel. A name, so it stays English on the Bahasa side too. */
 .hslide h1 .ln2.accent{color:var(--sky)}
+/* Phones: the hero headings a size up. At the 1.85rem floor of site.css the
+   full-width buttons out-weighed "Welcome to the Hanindo Group." on a phone.
+   2.2rem keeps the welcome on two lines down to 360px; going larger sends
+   slide 2's "Technology Solutions" to four lines there. Desktop unchanged. */
+@media(max-width:560px){.hslide h1{font-size:2.2rem}}
 /* "Watch our introduction" under the slide-1 buttons. A bare text link was
    easy to read past, so it leads with a small silent loop of the film's
    opening ("Every litre. Every receipt. ... One group behind it all.") with
