@@ -112,7 +112,7 @@
     "Oil & gas, fire protection, automotive, printer & POS — specialist companies based in Jakarta, Singapore and Shanghai, working across Southeast Asia.": "Minyak & gas, proteksi kebakaran, otomotif, printer & POS — perusahaan spesialis yang berbasis di Jakarta, Singapura, dan Shanghai, dengan cakupan kerja di seluruh Asia Tenggara.",
     "About the group": "Tentang grup",
     /* intro video: the hero link on Home and the section atop About */
-    "Watch our introduction": "Tonton perkenalan kami",
+    "Watch our introduction": "Sekilas Tentang Kami",
     "Introduction": "Perkenalan",
     "Introducing Hanindo Group": "Mengenal Hanindo Group",
     "Our companies, divisions, and the industries we serve, all in one short film.": "Perusahaan, divisi, dan industri yang kami layani, semuanya dalam satu film singkat.",
