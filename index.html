@@ -65,6 +65,13 @@
    2.2rem keeps the welcome on two lines down to 360px; going larger sends
    slide 2's "Technology Solutions" to four lines there. Desktop unchanged. */
 @media(max-width:560px){.hslide h1{font-size:2.2rem}}
+/* ...and the two hero buttons a size down on phones, so they stay the
+   second thing read after the heading. */
+@media(max-width:560px){
+  .hslide .cta{gap:.6rem;margin-top:1.4rem}
+  .hslide .cta .btn{padding:.62rem 1.15rem;font-size:.86rem}
+  .hslide .cta .btn svg{width:14px;height:14px}
+}
 /* "Watch our introduction" under the slide-1 buttons. A bare text link was
    easy to read past, so it leads with a small silent loop of the film's
    opening ("Every litre. Every receipt. ... One group behind it all.") with
