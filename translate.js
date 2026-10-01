@@ -111,6 +111,11 @@
     "Welcome to the": "Selamat datang di",
     "Oil & gas, fire protection, automotive, printer & POS — specialist companies based in Jakarta, Singapore and Shanghai, working across Southeast Asia.": "Minyak & gas, proteksi kebakaran, otomotif, printer & POS — perusahaan spesialis yang berbasis di Jakarta, Singapura, dan Shanghai, dengan cakupan kerja di seluruh Asia Tenggara.",
     "About the group": "Tentang grup",
+    /* intro video: the hero link on Home and the section atop About */
+    "Watch our introduction": "Tonton perkenalan kami",
+    "Introduction": "Perkenalan",
+    "Hanindo Group in 73 seconds.": "Hanindo Group dalam 73 detik.",
+    "Our companies, divisions and the industries they serve, in one short film.": "Perusahaan, divisi, dan industri yang kami layani, dalam satu film singkat.",
     "Our companies": "Perusahaan kami",
 
     /* ---- home: slide 2, one stop solution ---- */
