@@ -51,10 +51,11 @@
   .gtl h3{font-size:.72rem;margin:.26rem 0 .1rem}
   .gtl p{font-size:.65rem}
 }
-/* Intro video: text beside the player on desktop, stacked on phones.
+/* Intro video: text beside the player on desktop, stacked on phones. The
+   text starts at the page's left margin like the sections below it; the
+   player is capped at 540px so it does not take over the width.
    preload="none" keeps the 16MB file off the network until play. */
-.vidintro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:clamp(1.5rem,3.5vw,2.6rem);align-items:center;
-  max-width:900px;margin:0 auto}
+.vidintro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,540px);gap:clamp(1.5rem,4vw,3.5rem);align-items:center}
 .vidintro .h2{font-size:clamp(1.35rem,2.3vw,1.75rem)}
 .vidintro .lede{margin-top:.6rem;font-size:.92rem}
 .vidintro video{display:block;width:100%;aspect-ratio:16/9;background:#000;border-radius:var(--r);
