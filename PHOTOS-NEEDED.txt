@@ -990,17 +990,13 @@ hero-printer-pos.jpg      DONE — page hero, reception with the Custom
                           pages, each cropped to object-position
                           center 70% so the heading falls on the counter
                           rather than the signage.
-pos-about.jpg             About page, beside the Company overview
-                          [COMPLETE] the Singapore office interior
-                          (2560x1920), the slot this file was reserved
-                          for. Also used on the contact page, so a
-                          second office or team shot would let the two
-                          pages stop sharing one photograph.
-pos-terminal.jpg          DONE — intro section, the office signboard
-                          (2560x1920). Still a stand-in: a product shot
-                          of a Custom terminal or printer would suit the
-                          slot better, and would stop the section
-                          repeating the hero's subject.
+pos-about.jpg             NO LONGER NEEDED — removed from the About page
+                          on 2026-10-15 at the business's request; the
+                          Company overview now runs as one column.
+pos-terminal.jpg          NO LONGER NEEDED — the signboard photo was
+                          removed from the home intro on 2026-10-15 at the
+                          business's request; the office entrance
+                          (gralessando-office.jpg) now stands alone there.
 
 PRODUCT TILES  ("What we supply" strip on the home page)
 These go in /photos/printer-pos/products/. Cut-out product shot on
@@ -1197,8 +1193,9 @@ logo-flowtech.png         [COMPLETE] — in photos/brand/, see the COMPANY
 HANINDO OVERSEAS  (/shanghai/)
 --------------------------------------------------
 hero-overseas.jpg         Page hero — Shanghai skyline or office   [COMPLETE]
-ovs-shanghai.jpg          Intro section, first of the pair          [COMPLETE]
-                          Also the About page Company overview photo.
+ovs-shanghai.jpg          NO LONGER NEEDED — the open-plan office photo was
+                          removed from the home intro and the About page
+                          on 2026-10-15 at the business's request.
 ovs-shanghai-2.jpg        Intro section, second of the pair         [COMPLETE]
 ovs-office-shanghai.jpg   "Where we are" on About Us, Shanghai   [COMPLETE]
 ovs-office-shenzhen.jpg   "Where we are" on About Us, Shenzhen   [COMPLETE]
