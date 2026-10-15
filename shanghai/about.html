@@ -30,6 +30,10 @@
 <link rel="stylesheet" href="../assets/site.css?v=202609302100" />
 <style>
 @media(min-width:901px){.foot-grid{grid-template-columns:1.6fr 1fr 1fr 1fr 1fr}}
+/* Our Offices cards: site.css gives .off .shot a fixed 148px height, which
+   on a wide card cut the office signboards down to a thin band. Here the
+   photo keeps a 2:1 frame instead, so each sign shows whole at any width. */
+.off .shot{height:auto;aspect-ratio:2/1}
 </style>
 </head>
 <body>
