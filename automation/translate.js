@@ -43,7 +43,7 @@
     "Products & Services": "Produk & Layanan",
     "Contact Us": "Hubungi Kami",
     /* the hero's video link (index.html) */
-    "Watch CUSTOM's new headquarters": "Tonton Kantor Pusat Baru CUSTOM",
+    "Watch CUSTOM's new headquarters": "Nonton Kantor Pusat Baru CUSTOM",
     "Your Solution Provider": "Mitra Solusi Anda",
     "Other markets": "Pasar lainnya",
 
