@@ -41,6 +41,8 @@
     "About Us": "关于我们",
     "Products & Services": "产品与服务",
     "Contact Us": "联系我们",
+    /* the hero's video link (index.html) */
+    "Watch CUSTOM's new headquarters": "观看 CUSTOM 全新总部",
     "Your Solution Provider": "您的解决方案伙伴/供应商",
     "Other markets": "其他市场",
 
