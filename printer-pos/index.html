@@ -256,11 +256,11 @@
     </div>
     <div class="tilestrip reveal">
       <div class="strip strip-4" id="tilestrip">
-        <a class="tile" href="https://www.custom.biz/en_GB/catalog/printers" target="_blank" rel="noopener"><img src="../photos/printer-pos/products/professional-printing.png" alt="" loading="lazy" onerror="this.remove()" /><span>Professional Printing Solutions</span></a>
-        <a class="tile" href="https://www.custom.biz/en/products/pos-terminals" target="_blank" rel="noopener"><img src="../photos/printer-pos/products/dc-pos.png" alt="" loading="lazy" onerror="this.remove()" /><span>DC / POS Solutions</span></a>
-        <a class="tile" href="https://www.custom.biz/en_GB/catalog/scanning-solutions" target="_blank" rel="noopener"><img src="../photos/printer-pos/products/scanning.png" alt="" loading="lazy" onerror="this.remove()" /><span>Scanning Solutions</span></a>
-        <a class="tile" href="https://www.custom.biz/en_GB/catalog/self-service-solutions" target="_blank" rel="noopener"><img src="../photos/printer-pos/products/self-service.png" alt="" loading="lazy" onerror="this.remove()" /><span>Self-Service Solutions</span></a>
-        <a class="tile" href="https://www.custom.biz/en/products/mobility" target="_blank" rel="noopener"><img src="../photos/printer-pos/products/mobility.png" alt="" loading="lazy" onerror="this.remove()" /><span>Mobility</span></a>
+        <a class="tile" href="https://www.custom.biz/en_GB/catalog/printers" target="_blank" rel="noopener"><img src="../photos/printer-pos/products/professional-printing.png" alt="" onerror="this.remove()" /><span>Professional Printing Solutions</span></a>
+        <a class="tile" href="https://www.custom.biz/en/products/pos-terminals" target="_blank" rel="noopener"><img src="../photos/printer-pos/products/dc-pos.png" alt="" onerror="this.remove()" /><span>DC / POS Solutions</span></a>
+        <a class="tile" href="https://www.custom.biz/en_GB/catalog/scanning-solutions" target="_blank" rel="noopener"><img src="../photos/printer-pos/products/scanning.png" alt="" onerror="this.remove()" /><span>Scanning Solutions</span></a>
+        <a class="tile" href="https://www.custom.biz/en_GB/catalog/self-service-solutions" target="_blank" rel="noopener"><img src="../photos/printer-pos/products/self-service.png" alt="" onerror="this.remove()" /><span>Self-Service Solutions</span></a>
+        <a class="tile" href="https://www.custom.biz/en/products/mobility" target="_blank" rel="noopener"><img src="../photos/printer-pos/products/mobility.png" alt="" onerror="this.remove()" /><span>Mobility</span></a>
       </div>
       <button class="stripmore" type="button" aria-label="Show more products"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
     </div>
@@ -423,12 +423,21 @@ window.addEventListener('pageshow',function(){var i=document.querySelector('.sea
    The button hides itself when everything already fits. */
 (function(){var s=document.getElementById('tilestrip'),b=document.querySelector('.stripmore');if(!s||!b)return;
 function sync(){b.style.display=(s.scrollWidth-s.clientWidth>4)?'':'none';}
+/* "At the end" means the last tile is fully in view, not that the strip sits
+   on its very last pixel: a phone's smooth scroll can stop a few pixels short,
+   and the old pixel test then sent the next tap on to an empty edge instead of
+   back to the start. At the end the arrow turns round to say where it goes. */
+var lab=b.getAttribute('aria-label'),ic=b.querySelector('svg');
+if(ic)ic.style.transition='transform .2s';
+function atEnd(){var t=s.lastElementChild;return s.scrollLeft>=s.scrollWidth-s.clientWidth-8||!!(t&&t.getBoundingClientRect().right<=s.getBoundingClientRect().right+2);}
+function mark(){var e=atEnd();if(ic)ic.style.transform=e?'rotate(180deg)':'';b.setAttribute('aria-label',e?'Back to the first one':lab);}
 b.addEventListener('click',function(){
-  var max=s.scrollWidth-s.clientWidth;
-  if(s.scrollLeft>=max-8){s.scrollTo({left:0,behavior:'smooth'});}
+  if(atEnd()){s.scrollTo({left:0,behavior:'smooth'});}
   else{s.scrollBy({left:Math.round(s.clientWidth*.85),behavior:'smooth'});}
 });
-window.addEventListener('resize',sync);window.addEventListener('load',sync);sync();})();
+s.addEventListener('scroll',mark,{passive:true});
+function both(){sync();mark();}
+window.addEventListener('resize',both);window.addEventListener('load',both);both();})();
 </script>
 <!-- CUSTOM headquarters video, opened from the hero link. Click-to-play only, and
      preload="none" keeps the 15MB film off the network until someone presses play. -->

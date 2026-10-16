@@ -214,7 +214,7 @@
     <div class="tilestrip reveal d1">
       <div class="strip strip-4" id="tilestrip">
         <div class="tile plain">
-          <img src="../photos/flowtech/deliver/flow-engineering-design.jpg" alt="" onload="this.parentElement.classList.add('haspic')" onerror="if(this.src.slice(-4)=='.jpg'){this.src=this.src.slice(0,-4)+'.png';return}this.remove()" loading="lazy" />
+          <img src="../photos/flowtech/deliver/flow-engineering-design.jpg" alt="" onload="this.parentElement.classList.add('haspic')" onerror="if(this.src.slice(-4)=='.jpg'){this.src=this.src.slice(0,-4)+'.png';return}this.remove()" />
           <div class="ic"><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 00-2 2v14a2 2 0 002 2h12a2 2 0 002-2V9z"/><path d="M14 3v6h6"/><path d="M9 15l2 2 4-4"/></svg></div>
           <span class="lab"><b>Engineering &amp; Design</b><i>Design review, detailed engineering, site surveys and shop drawings.</i></span>
         </div>
@@ -333,12 +333,21 @@ window.addEventListener('pageshow',function(){var i=document.querySelector('.sea
    script the PT. Hanindo Citra and Gralessando strips run. */
 (function(){var s=document.getElementById('tilestrip'),b=document.querySelector('.stripmore');if(!s||!b)return;
 function sync(){b.style.display=(s.scrollWidth-s.clientWidth>4)?'':'none';}
+/* "At the end" means the last tile is fully in view, not that the strip sits
+   on its very last pixel: a phone's smooth scroll can stop a few pixels short,
+   and the old pixel test then sent the next tap on to an empty edge instead of
+   back to the start. At the end the arrow turns round to say where it goes. */
+var lab=b.getAttribute('aria-label'),ic=b.querySelector('svg');
+if(ic)ic.style.transition='transform .2s';
+function atEnd(){var t=s.lastElementChild;return s.scrollLeft>=s.scrollWidth-s.clientWidth-8||!!(t&&t.getBoundingClientRect().right<=s.getBoundingClientRect().right+2);}
+function mark(){var e=atEnd();if(ic)ic.style.transform=e?'rotate(180deg)':'';b.setAttribute('aria-label',e?'Back to the first one':lab);}
 b.addEventListener('click',function(){
-  var max=s.scrollWidth-s.clientWidth;
-  if(s.scrollLeft>=max-8){s.scrollTo({left:0,behavior:'smooth'});}
+  if(atEnd()){s.scrollTo({left:0,behavior:'smooth'});}
   else{s.scrollBy({left:Math.round(s.clientWidth*.85),behavior:'smooth'});}
 });
-window.addEventListener('resize',sync);window.addEventListener('load',sync);sync();})();
+s.addEventListener('scroll',mark,{passive:true});
+function both(){sync();mark();}
+window.addEventListener('resize',both);window.addEventListener('load',both);both();})();
 /* Customer marquee. Same script the Fire Fighting home runs: measure one
    pass of the cards, hand that width to the animation as --marw so the
    loop is seamless, then keep appending copies until the track is at

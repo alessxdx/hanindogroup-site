@@ -209,14 +209,14 @@
     </div>
     <div class="tilestrip reveal">
       <div class="strip" id="tilestrip">
-        <a class="tile" href="tyre-service/"><img src="../photos/automotive/products/weldann-s3015.png" alt="" loading="lazy" onerror="this.remove()" /><span>Wheel Alignment</span></a>
-        <a class="tile" href="tyre-service/"><img src="../photos/automotive/products/hpa-m54.png" alt="" loading="lazy" onerror="this.remove()" /><span>Tyre Changer</span></a>
-        <a class="tile" href="tyre-service/"><img src="../photos/automotive/products/hpa-b325.png" alt="" loading="lazy" onerror="this.remove()" /><span>Wheel Balancer</span></a>
-        <a class="tile" href="airtec/"><img src="../photos/automotive/products/airtec-89mda.png" alt="" loading="lazy" onerror="this.remove()" /><span>Tyre Inflator</span></a>
-        <a class="tile" href="lifts/"><img src="../photos/automotive/products/atom-dl-40lm.png" alt="" loading="lazy" onerror="this.remove()" /><span>Car Lift</span></a>
-        <a class="tile" href="service/"><img src="../photos/automotive/products/weldann-ac-900.png" alt="" loading="lazy" onerror="this.remove()" /><span>Service Equipment</span></a>
-        <a class="tile" href="raasm/"><img src="../photos/automotive/products/raasm-lineup.png" alt="" loading="lazy" onerror="this.remove()" /><span>Fluid Handling</span></a>
-        <a class="tile" href="welding/"><img src="../photos/automotive/products/weldann-mig-mma-350f.png" alt="" loading="lazy" onerror="this.remove()" /><span>Welding</span></a>
+        <a class="tile" href="tyre-service/"><img src="../photos/automotive/products/weldann-s3015.png" alt="" onerror="this.remove()" /><span>Wheel Alignment</span></a>
+        <a class="tile" href="tyre-service/"><img src="../photos/automotive/products/hpa-m54.png" alt="" onerror="this.remove()" /><span>Tyre Changer</span></a>
+        <a class="tile" href="tyre-service/"><img src="../photos/automotive/products/hpa-b325.png" alt="" onerror="this.remove()" /><span>Wheel Balancer</span></a>
+        <a class="tile" href="airtec/"><img src="../photos/automotive/products/airtec-89mda.png" alt="" onerror="this.remove()" /><span>Tyre Inflator</span></a>
+        <a class="tile" href="lifts/"><img src="../photos/automotive/products/atom-dl-40lm.png" alt="" onerror="this.remove()" /><span>Car Lift</span></a>
+        <a class="tile" href="service/"><img src="../photos/automotive/products/weldann-ac-900.png" alt="" onerror="this.remove()" /><span>Service Equipment</span></a>
+        <a class="tile" href="raasm/"><img src="../photos/automotive/products/raasm-lineup.png" alt="" onerror="this.remove()" /><span>Fluid Handling</span></a>
+        <a class="tile" href="welding/"><img src="../photos/automotive/products/weldann-mig-mma-350f.png" alt="" onerror="this.remove()" /><span>Welding</span></a>
       </div>
       <button class="stripmore" type="button" aria-label="Show more equipment"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
     </div>
@@ -408,12 +408,21 @@ window.addEventListener('pageshow',function(){var i=document.querySelector('.sea
 /* tile strip: advance on click, loop back at the end */
 (function(){var s=document.getElementById('tilestrip'),b=document.querySelector('.stripmore');if(!s||!b)return;
 function sync(){b.style.display=(s.scrollWidth-s.clientWidth>4)?'':'none';}
+/* "At the end" means the last tile is fully in view, not that the strip sits
+   on its very last pixel: a phone's smooth scroll can stop a few pixels short,
+   and the old pixel test then sent the next tap on to an empty edge instead of
+   back to the start. At the end the arrow turns round to say where it goes. */
+var lab=b.getAttribute('aria-label'),ic=b.querySelector('svg');
+if(ic)ic.style.transition='transform .2s';
+function atEnd(){var t=s.lastElementChild;return s.scrollLeft>=s.scrollWidth-s.clientWidth-8||!!(t&&t.getBoundingClientRect().right<=s.getBoundingClientRect().right+2);}
+function mark(){var e=atEnd();if(ic)ic.style.transform=e?'rotate(180deg)':'';b.setAttribute('aria-label',e?'Back to the first one':lab);}
 b.addEventListener('click',function(){
-  var max=s.scrollWidth-s.clientWidth;
-  if(s.scrollLeft>=max-8){s.scrollTo({left:0,behavior:'smooth'});}
+  if(atEnd()){s.scrollTo({left:0,behavior:'smooth'});}
   else{s.scrollBy({left:Math.round(s.clientWidth*.85),behavior:'smooth'});}
 });
-window.addEventListener('resize',sync);window.addEventListener('load',sync);sync();})();
+s.addEventListener('scroll',mark,{passive:true});
+function both(){sync();mark();}
+window.addEventListener('resize',both);window.addEventListener('load',both);both();})();
 /* customers marquees: repeat logos to fill width + seamless, even-spaced loop */
 (function(){var tracks=document.querySelectorAll('.mtrack');if(!tracks.length)return;
 var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
