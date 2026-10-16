@@ -997,6 +997,10 @@ pos-terminal.jpg          NO LONGER NEEDED — the signboard photo was
                           removed from the home intro on 2026-10-15 at the
                           business's request; the office entrance
                           (gralessando-office.jpg) now stands alone there.
+mobility.png              DONE — fifth "Mobility" card on Products &
+                          Services (all three CUSTOM sites), the Custom
+                          P-Ranger handheld cut-out, 270x221 transparent,
+                          in /photos/printer-pos/products/.
 
 PRODUCT TILES  ("What we supply" strip on the home page)
 These go in /photos/printer-pos/products/. Cut-out product shot on
