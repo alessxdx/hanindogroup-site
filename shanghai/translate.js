@@ -218,7 +218,7 @@
     "Automation hardware, counter to kiosk": "自动化硬件，从柜台到自助终端",
     "Five families of Custom hardware and the software that runs them, supplied, integrated and supported across China. Each links through to the full Custom catalogue.": "五大系列 Custom 硬件及其配套软件，在中国全境供应、集成并提供支持。每一项均可链接至完整的 Custom 产品目录。",
     "Mobility": "移动解决方案",
-    "Handheld computers, tablets and mobile printers for work on the move.": "手持终端、平板电脑及便携式打印机，助力移动作业。",
+    "Handheld computers, tablets and mobile printers for work on the move.": "手持终端、平板电脑及便携式打印机，用于移动工作。",
     "POS, receipt, fiscal, ticket, label, kiosk and mobile printers.": "POS、小票、税控、票据、标签、自助终端及移动打印机。",
     "View products": "查看产品",
     "POS terminals, touch systems, cash registers and monitors.": "POS 终端、触控系统、收银机与显示器。",
