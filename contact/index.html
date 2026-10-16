@@ -30,7 +30,18 @@
 <link rel="stylesheet" href="../assets/site.css?v=202609302100" />
 <!-- The company index (.vgrid / .vgrp / .vsec / .vopt) is in site.css:
      the About page runs the same block, and keeping two copies is how
-     the two pages drifted apart. This page carries no CSS of its own. -->
+     the two pages drifted apart. The only CSS here is for the address lines. -->
+<style>
+/* Contact page only: each company's main office address and phone under its
+   name. The rows stay single links to the company's own contact page, so the
+   number is plain text here (a link inside a link is not allowed). */
+.vgrid .vopt{align-items:flex-start}
+.vgrid .vopt .lw,.vgrid .vopt>svg{margin-top:.15rem}
+.vgrid .vopt .vinfo{display:flex;flex-wrap:wrap;gap:.15rem 1.1rem;margin-top:.3rem;font-weight:400;font-size:.84rem;color:var(--muted);line-height:1.45}
+.vgrid .vopt .vt{display:inline-flex;align-items:center;gap:.35rem;white-space:nowrap}
+.vgrid .vopt .vt .vph{width:13px;height:13px;fill:none;stroke:var(--brand);stroke-width:1.8;stroke-linejoin:round;flex:none;margin:0}
+.vgrid .vopt .nm .vinfo{display:flex}
+</style>
 </head>
 <body>
 
@@ -169,9 +180,9 @@
       <div class="vgrp">
         <div class="vsec">Oil, Gas &amp; Fire Protection<span>Petroleum equipment, station construction and fire protection.</span></div>
         <div class="vrows">
-          <a class="vopt" href="../citra/contact.html" target="_blank" rel="noopener"><span class="lw"><img src="../photos/brand/logo-citra.png?v=2" alt="" onerror="this.remove()" loading="lazy" /></span><span class="nm">PT. Hanindo Citra</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a class="vopt nest" href="../fire-fighting/contact.html" target="_blank" rel="noopener"><span class="lw"></span><span class="nm">Fire Fighting Department</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a class="vopt" href="../flowtech-engineering/contact.html" target="_blank" rel="noopener"><span class="lw"><img src="../photos/brand/logo-flowtech.png" alt="" onerror="this.remove()" loading="lazy" /></span><span class="nm">PT. Flowtech Engineering</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="vopt" href="../citra/contact.html" target="_blank" rel="noopener"><span class="lw"><img src="../photos/brand/logo-citra.png?v=2" alt="" onerror="this.remove()" loading="lazy" /></span><span class="nm">PT. Hanindo Citra<span class="vinfo"><span class="va">JL. Fatmawati Raya No.55, Jakarta Selatan 12410, Indonesia</span><span class="vt"><svg class="vph" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>+62 21 75900909</span></span></span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="vopt nest" href="../fire-fighting/contact.html" target="_blank" rel="noopener"><span class="lw"></span><span class="nm">Fire Fighting Department<span class="vinfo"><span class="va">Taman Tekno BSD, Blok J 3 No. 23, Tangerang Selatan, Banten 15314, Indonesia</span><span class="vt"><svg class="vph" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>+62 21 75900909</span></span></span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="vopt" href="../flowtech-engineering/contact.html" target="_blank" rel="noopener"><span class="lw"><img src="../photos/brand/logo-flowtech.png" alt="" onerror="this.remove()" loading="lazy" /></span><span class="nm">PT. Flowtech Engineering<span class="vinfo"><span class="va">JL. Fatmawati Raya No.55, Jakarta Selatan 12410, Indonesia</span><span class="vt"><svg class="vph" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>+62 21 75900909</span></span></span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </div>
 
@@ -179,7 +190,7 @@
       <div class="vgrp">
         <div class="vsec">Automotive<span>Workshop and garage equipment for the service bay.</span></div>
         <div class="vrows">
-          <a class="vopt" href="../automotive/contact.html" target="_blank" rel="noopener"><span class="lw"><img src="../photos/brand/logo-automotive.png" alt="" onerror="this.remove()" loading="lazy" /></span><span class="nm">PT. Hanindo Automotive</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="vopt" href="../automotive/contact.html" target="_blank" rel="noopener"><span class="lw"><img src="../photos/brand/logo-automotive.png" alt="" onerror="this.remove()" loading="lazy" /></span><span class="nm">PT. Hanindo Automotive<span class="vinfo"><span class="va">JL. Fatmawati Raya No.55, Jakarta Selatan 12410, Indonesia</span><span class="vt"><svg class="vph" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>+62 21 75900909</span></span></span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </div>
 
@@ -191,9 +202,9 @@
       <div class="vgrp">
         <div class="vsec">Printer &amp; POS<span>Printing, scanning and point-of-sale systems &mdash; the Custom range, carried by three companies in their own markets.</span></div>
         <div class="vrows">
-          <a class="vopt" href="../automation/contact.html" target="_blank" rel="noopener"><span class="lw"><img src="../photos/brand/logo-automation.png" alt="" onerror="this.remove()" loading="lazy" /></span><span class="nm">PT. Hanindo Automation Solutions<em>Indonesia</em></span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a class="vopt" href="../printer-pos/contact.html" target="_blank" rel="noopener"><span class="lw"><img src="../photos/brand/logo-gralessando.png" alt="" onerror="this.remove()" loading="lazy" /></span><span class="nm">Gralessando (S) Pte. Ltd.<em>Singapore</em><small class="tname">CUSTOM (S.E.A) Hanindo</small></span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a class="vopt" href="../shanghai/contact.html" target="_blank" rel="noopener"><span class="lw"><img src="../photos/brand/logo-shanghai.png" alt="" onerror="this.remove()" loading="lazy" /></span><span class="nm">Hanindo (Shanghai) International Co., Ltd.<em>China</em></span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="vopt" href="../automation/contact.html" target="_blank" rel="noopener"><span class="lw"><img src="../photos/brand/logo-automation.png" alt="" onerror="this.remove()" loading="lazy" /></span><span class="nm">PT. Hanindo Automation Solutions<em>Indonesia</em><span class="vinfo"><span class="va">JL. Fatmawati Raya No.55, Jakarta Selatan 12410, Indonesia</span><span class="vt"><svg class="vph" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>+62 21 75900909</span></span></span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="vopt" href="../printer-pos/contact.html" target="_blank" rel="noopener"><span class="lw"><img src="../photos/brand/logo-gralessando.png" alt="" onerror="this.remove()" loading="lazy" /></span><span class="nm">Gralessando (S) Pte. Ltd.<em>Singapore</em><small class="tname">CUSTOM (S.E.A) Hanindo</small><span class="vinfo"><span class="va">16 Jln Kilang Timor, #03-02 Redhill Forum, Singapore 159308</span><span class="vt"><svg class="vph" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>+65 6908 0281</span></span></span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="vopt" href="../shanghai/contact.html" target="_blank" rel="noopener"><span class="lw"><img src="../photos/brand/logo-shanghai.png" alt="" onerror="this.remove()" loading="lazy" /></span><span class="nm">Hanindo (Shanghai) International Co., Ltd.<em>China</em><span class="vinfo"><span class="va">Room 3211, Tower B, The Place, Zunyi Rd 100, Changning District, Shanghai, China</span><span class="vt"><svg class="vph" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>+86 21 6237 0600</span></span></span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </div>
 
