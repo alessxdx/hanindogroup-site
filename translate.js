@@ -87,6 +87,7 @@
     "DC / POS Solutions": "Solusi DC / POS",
     "Scanning Solutions": "Solusi Scanning",
     "Self-Service Solutions": "Solusi Layanan Mandiri",
+    "Mobility": "Mobilitas",
     "All Printer & POS products →": "Semua produk Printer & POS →",
     "Products & Services": "Produk & Layanan",
     "Partners": "Mitra",
@@ -229,7 +230,7 @@
     "Everything the group supplies.": "Semua yang disediakan grup.",
     "A sample of the range below. Click through to any of the companies to see its full catalogue.": "Berikut sebagian dari rangkaian produk kami. Klik salah satu perusahaan untuk melihat katalog lengkapnya.",
     "Lifts and handling, tyre service, diagnostics, welding and lubrication for the service bay.": "Lift dan penanganan, layanan ban, diagnostik, pengelasan, dan pelumasan untuk service bay.",
-    "Printers, point-of-sale terminals, scanners and self-service kiosks, with the software that runs them.": "Printer, terminal point-of-sale, scanner, dan kios layanan mandiri, beserta perangkat lunak yang menjalankannya.",
+    "Printers, point-of-sale terminals, scanners, self-service kiosks and mobile devices, with the software that runs them.": "Printer, terminal point-of-sale, scanner, kios layanan mandiri, dan perangkat mobile, beserta perangkat lunak yang menjalankannya.",
     "Email the group": "Email grup",
 
     /* ---- career ---- */
