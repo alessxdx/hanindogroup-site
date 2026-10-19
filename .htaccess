@@ -28,14 +28,14 @@ ErrorDocument 404 /404.html
 Redirect 301 /about-hanindo-group/hanindo-citra                     /citra/
 Redirect 301 /about-hanindo-group/flowtech-engineering              /flowtech-engineering/
 Redirect 301 /about-hanindo-group/hanindo-automotive                /automotive/
-Redirect 301 /about-hanindo-group/hanindo-automation-solutions      /automation/
-Redirect 301 /about-hanindo-group/hanindo-overseas                  /shanghai/
+Redirect 301 /about-hanindo-group/hanindo-automation-solutions      /automation-solutions/
+Redirect 301 /about-hanindo-group/hanindo-overseas                  /china/
 Redirect 301 /about-hanindo-group                                   /about/
 Redirect 301 /pt-hanindo-citra                                      /citra/
 Redirect 301 /pt-flowtech-engineering                               /flowtech-engineering/
 Redirect 301 /pt-hanindo-automotive                                 /automotive/
-Redirect 301 /hanindo-automation-solutions                          /automation/
-Redirect 301 /pt-hanindo-overseas                                   /shanghai/
+Redirect 301 /hanindo-automation-solutions                          /automation-solutions/
+Redirect 301 /pt-hanindo-overseas                                   /china/
 Redirect 301 /hanindo-product                                       /
 Redirect 301 /oil-and-gas                                           /citra/
 Redirect 301 /home-automotive                                       /automotive/
@@ -46,7 +46,7 @@ Redirect 301 /partners-a-principals                                 /partners/
 # belonged; confirmed on that date. Gralessando (S) Pte. Ltd. is the
 # printing and POS company, represented as Custom (S.E.A), so the URL is
 # that section's.
-Redirect 301 /gralessando                                           /printer-pos/
+Redirect 301 /gralessando                                           /gralessando-custom-sea/
 
 # ENABLED 2026-08-17, repointed. This was off because it aimed at
 # /training/, which does not exist and never did, so it would have 301'd
@@ -67,7 +67,7 @@ Redirect 301 /training-gilbarco-veeder-root-thermal-printer-indonesia /products-
 
 Redirect 301 /news-info/career-hanindo-group-gilbarco-veeder-root-indonesia-thermal-printer /career/
 Redirect 301 /contact-us                                            /contact/
-Redirect 301 /overseas                                              /shanghai/
+Redirect 301 /overseas                                              /china/
 Redirect 301 /about                                                 /about/
 
 # ---------------------------------------------------------------------

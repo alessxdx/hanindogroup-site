@@ -68,7 +68,7 @@
     'fire-fighting':        'PT. Hanindo Citra — Fire Fighting',
     'flowtech-engineering': 'PT. Flowtech Engineering',
     'automotive':           'PT. Hanindo Automotive',
-    'automation':           'PT. Hanindo Automation Solutions',
+    'automation-solutions':           'PT. Hanindo Automation Solutions',
     /* No PT. on the last two: neither is an Indonesian company. PT is the
        Indonesian form for a limited company, and these carry their own --
        Gralessando is registered in Singapore and carries (S) Pte. Ltd.,
@@ -76,8 +76,8 @@
        (Shanghai) International Co., Ltd.
        'Hanindo Group' above is the group rather than a registered entity,
        so it takes no prefix either. */
-    'printer-pos':          'Gralessando (S) Pte. Ltd.',
-    'shanghai':             'Hanindo (Shanghai) International Co., Ltd.'
+    'gralessando-custom-sea':          'Gralessando (S) Pte. Ltd.',
+    'china':             'Hanindo (Shanghai) International Co., Ltd.'
   };
 
   function sectionOf(url) {
@@ -538,7 +538,7 @@
        show anything was wrong. Noticed on 2026-08-17 while adding a page.
        Every other versioned asset on the site is stamped with a timestamp;
        this one was the exception. */
-    req.open('GET', '../assets/search-index.json?v=202610151100', true);
+    req.open('GET', '../assets/search-index.json?v=202610191500', true);
     req.onreadystatechange = function () {
       if (req.readyState !== 4) return;
 

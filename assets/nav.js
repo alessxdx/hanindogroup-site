@@ -219,9 +219,9 @@
       ['automotive/',           'PT. Hanindo Automotive',                     '']
     ]],
     ['Printer &amp; POS', [
-      ['automation/',           'PT. Hanindo Automation Solutions',           'Indonesia'],
-      ['printer-pos/',          'Gralessando (S) Pte. Ltd.',                  'Singapore', 'CUSTOM (S.E.A) Hanindo'],
-      ['shanghai/',             'Hanindo (Shanghai) International Co., Ltd.', 'China']
+      ['automation-solutions/',           'PT. Hanindo Automation Solutions',           'Indonesia'],
+      ['gralessando-custom-sea/',          'Gralessando (S) Pte. Ltd.',                  'Singapore', 'CUSTOM (S.E.A) Hanindo'],
+      ['china/',             'Hanindo (Shanghai) International Co., Ltd.', 'China']
     ]]
   ];
 

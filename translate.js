@@ -1,7 +1,7 @@
 /* =====================================================================
    Hanindo Group (group-level pages) — EN / Bahasa Indonesia toggle
    ---------------------------------------------------------------------
-   Same mechanism as automation/translate.js: on load it walks the
+   Same mechanism as automation-solutions/translate.js: on load it walks the
    visible text and, where a phrase matches an entry below, swaps
    English <-> Bahasa Indonesia. The choice is remembered
    (localStorage) across the group pages.
@@ -134,7 +134,7 @@
     "Hospitality": "Perhotelan",
     "Energy": "Energi",
     /* the two Custom sectors the hero names. The full eleven Custom serves
-       are listed on printer-pos/products-services.html — the panel has room
+       are listed on gralessando-custom-sea/products-services.html — the panel has room
        for ten rows before it runs past the bottom of the hero. */
     "Aviation & ticketing": "Penerbangan & tiket",
     "Self-service kiosks": "Kios layanan mandiri",

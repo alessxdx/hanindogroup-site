@@ -4,28 +4,28 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="google" content="notranslate" />
-<title>PT. Hanindo Automation Solutions | Hanindo Group</title>
-<meta name="description" content="PT. Hanindo Automation Solutions — printing, scanning and point of sale hardware and software." />
+<title>Gralessando (S) Pte. Ltd. | Hanindo Group</title>
+<meta name="description" content="Gralessando (S) Pte. Ltd. — printing, scanning and point of sale hardware and software." />
 <link rel="icon" href="/favicon.ico" sizes="any" />
 <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-<link rel="canonical" href="https://hanindogroup.com/automation/" />
+<link rel="canonical" href="https://hanindogroup.com/gralessando-custom-sea/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Hanindo Group" />
 <meta property="og:locale" content="en_US" />
-<meta property="og:title" content="PT. Hanindo Automation Solutions | Hanindo Group" />
-<meta property="og:description" content="PT. Hanindo Automation Solutions — printing, scanning and point of sale hardware and software." />
-<meta property="og:url" content="https://hanindogroup.com/automation/" />
-<meta property="og:image" content="https://hanindogroup.com/photos/brand/og-automation.jpg" />
+<meta property="og:title" content="Gralessando (S) Pte. Ltd. | Hanindo Group" />
+<meta property="og:description" content="Gralessando (S) Pte. Ltd. — printing, scanning and point of sale hardware and software." />
+<meta property="og:url" content="https://hanindogroup.com/gralessando-custom-sea/" />
+<meta property="og:image" content="https://hanindogroup.com/photos/brand/og-printer-pos.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="PT. Hanindo Automation Solutions" />
+<meta property="og:image:alt" content="Gralessando (S) Pte. Ltd." />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="PT. Hanindo Automation Solutions | Hanindo Group" />
-<meta name="twitter:description" content="PT. Hanindo Automation Solutions — printing, scanning and point of sale hardware and software." />
-<meta name="twitter:image" content="https://hanindogroup.com/photos/brand/og-automation.jpg" />
+<meta name="twitter:title" content="Gralessando (S) Pte. Ltd. | Hanindo Group" />
+<meta name="twitter:description" content="Gralessando (S) Pte. Ltd. — printing, scanning and point of sale hardware and software." />
+<meta name="twitter:image" content="https://hanindogroup.com/photos/brand/og-printer-pos.jpg" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://hanindogroup.com/automation/#organization","name":"PT. Hanindo Automation Solutions","url":"https://hanindogroup.com/automation/","image":"https://hanindogroup.com/photos/brand/og-automation.jpg","description":"PT. Hanindo Automation Solutions — printing, scanning and point of sale hardware and software.","address":{"@type":"PostalAddress","streetAddress":"JL. Fatmawati Raya No.55","addressLocality":"Jakarta Selatan","postalCode":"12410","addressCountry":"ID"},"telephone":"+62-21-75900909","email":"info@hanindogroup.com","parentOrganization":{"@id":"https://hanindogroup.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Hanindo Group","item":"https://hanindogroup.com/"},{"@type":"ListItem","position":2,"name":"PT. Hanindo Automation Solutions","item":"https://hanindogroup.com/automation/"}]}]}
+{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://hanindogroup.com/gralessando-custom-sea/#organization","name":"Gralessando (S) Pte. Ltd.","url":"https://hanindogroup.com/gralessando-custom-sea/","image":"https://hanindogroup.com/photos/brand/og-printer-pos.jpg","description":"Gralessando (S) Pte. Ltd. — printing, scanning and point of sale hardware and software.","address":{"@type":"PostalAddress","streetAddress":"16 Jln Kilang Timor, #03-02 Redhill Forum","addressLocality":"Singapore","postalCode":"159308","addressCountry":"SG"},"telephone":"+65-6908-0281","email":"csea-sg@hanindogroup.com","parentOrganization":{"@id":"https://hanindogroup.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Hanindo Group","item":"https://hanindogroup.com/"},{"@type":"ListItem","position":2,"name":"Gralessando (S) Pte. Ltd.","item":"https://hanindogroup.com/gralessando-custom-sea/"}]}]}
 </script>
 <link rel="stylesheet" href="../assets/site.css?v=202609302100" />
 <style>
@@ -37,21 +37,12 @@
    one. The .mid and .sq shape lifts stay — they correct for aspect ratio
    rather than rank. */
 .wall.flat .band{width:100%}
+/* Row break inside a band. The wall wraps on width alone, which left the
+   public-service logos split 7 + 1 with BSN stranded. This puts the wrap at
+   the sub-group edge instead, so transport and retail take the first row and
+   public services the second. */
+.wall.flat .tier .brk{flex-basis:100%;height:0;margin:0;padding:0}
 .wall.flat .w{--logo-h:42px;--logo-max:280px;max-width:var(--logo-max)}
-/* Three customers the business wants read first. They lead the Technology &
-   services band and draw a step larger than the rest of it — a lift on the
-   base height, so each keeps the .mid or .sq correction its own proportions
-   need rather than all three being forced to one size.
-   A class, not an inline style: an inline --logo-h would beat the 640px rule
-   below and leave these three full size on a phone while everything around
-   them stepped down. */
-.wall.flat .w.feature{--logo-h:52px}
-/* .stacked is the same lift for a different reason: Soekarno-Hatta is a
-   three-line lockup — name, then International Airport, then Operated by
-   Angkasa Pura II — so at the height a one-line wordmark takes, each of its
-   lines is a third the size and the whole mark reads small. */
-.wall.flat .w.stacked{--logo-h:52px}
-@media(max-width:640px){.wall.flat .w.feature,.wall.flat .w.stacked{--logo-h:42px}}
 @media(max-width:640px){.wall.flat .w{--logo-h:34px;--logo-max:185px}}
 /* .checks-desc moved to site.css — the Hanindo (Shanghai) International
    Co., Ltd. home page carries the same three lines and needs the same
@@ -66,10 +57,15 @@
    International Co., Ltd. home page carries the same line-up. */
 /* The customer wall is the shared .wall from site.css — nothing
    page-local is needed for it. */
-/* Sister markets. PT. Hanindo Automation Solutions, Hanindo (Shanghai)
-   International Co., Ltd. and Gralessando (S) Pte. Ltd. carry the same
-   Custom range for different countries, so each of the three home heroes
-   offers the other two. Keep all three in step. */
+/* Sister markets. Gralessando, Hanindo (Shanghai) International Co., Ltd. and Hanindo
+   Automation Solutions carry the same Custom range for different
+   countries, so each
+   of the three home heroes offers the other two. Keep all three in step. */
+/* The trading name, small and italic between the hero H1 and the intro:
+   the company is incorporated as Gralessando but trades as CUSTOM (S.E.A)
+   Hanindo, and the hero is where a visitor decides they found the right
+   company. A name, so it stays English on the Bahasa side too. */
+.pagehero .tradename{font-style:italic;font-size:clamp(.85rem,1.35vw,1rem);font-weight:600;color:#aee1ff;margin:.4rem 0 0;letter-spacing:.02em}
 .mktsw{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin-top:1.5rem}
 .mktsw .lab{width:100%;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--sky)}
 .mktsw .btn{padding:.6rem 1.1rem;font-size:.83rem}
@@ -84,8 +80,27 @@
   .mktsw .bname{white-space:nowrap}
   .mktsw .btn svg{width:14px;height:14px}
 }
-/* the trading name, very small under the registered name on its button */
-.mktsw .bname small{display:block;font-size:.62rem;font-weight:500;font-style:italic;letter-spacing:.02em;opacity:.85;margin-top:.05rem}
+
+/* The office signboard photo is 4:3, and only its middle band is the sign —
+   the tiled wall runs across the top quarter and the floor across the
+   bottom tenth. .shot crops with object-fit:cover, so how much of that dead
+   space shows depends entirely on the box's own aspect: at 705x240 the box
+   is 2.94:1 and shows the middle 45%, all sign, but once the column stacks
+   on a phone the box falls to about 1.4:1 — near the photo's own 1.33 — and
+   shows 2% to 98%, which puts the wall and the floor back in frame as dark
+   bands top and bottom.
+   Holding the box at 2.2:1 fixes the visible slice at 2560/2.2 = 1164 of
+   the 1920 rows, or 60.6%, whatever the screen width — which leaves 758
+   rows of travel. object-position 66% spends 500 of those, putting the
+   window at 26%-87%: clear of the wall at 25% and the floor at 90% with a
+   little margin at each end. Scoped to this page: the photo is only used
+   here, and .shot elsewhere frames pictures that want their whole height.
+   Written as .section.compact .split .shot, not .split .shot: site.css pins
+   a 240px min-height at that specificity, and left in place it wins, so
+   aspect-ratio derives the WIDTH from that height instead — 240 x 2.2 =
+   528px, which overflows a phone. Height has to follow width here. */
+.section.compact .split .shot{aspect-ratio:2.2;min-height:0}
+.section.compact .split .shot img{object-position:center 66%}
 /* "Watch CUSTOM's new headquarters" under the hero's market buttons, built the
    same way as the group homepage's "Watch our introduction": a silent 8-second
    320px loop (187KB) of the ribbon cutting leads into a click-to-play player.
@@ -126,9 +141,9 @@
         <img src="../photos/brand/logo-lockup.png" alt="Hanindo Group — Your Solution Provider" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
         <span class="btxt" style="display:none"><strong>HANINDOGROUP</strong><span>Your Solution Provider</span></span>
       </a>
-      <a class="cobrand" href="index.html" aria-label="PT. Hanindo Automation Solutions — home">
-        <img class="cologo" src="../photos/brand/logo-automation.png" alt="PT. Hanindo Automation Solutions — Member of the Hanindo Group of Companies" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
-        <span class="colabel" style="display:none">PT. HANINDO AUTOMATION SOLUTIONS</span>
+      <a class="cobrand" href="index.html" aria-label="Gralessando (S) Pte. Ltd. — home">
+        <img class="cologo" src="../photos/brand/logo-gralessando.png" alt="Gralessando (S) Pte. Ltd. — Member of the Hanindo Group of Companies" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" />
+        <span class="colabel" style="display:none">GRALESSANDO (S) PTE. LTD.</span>
       </a>
     </div>
     <div class="top-right">
@@ -166,17 +181,18 @@
 
 <!-- ============ PAGE HERO ============ -->
 <section class="pagehero hero-tall hero-show">
-  <div class="bg"><img src="../photos/automation/hero/hero-automation.jpg?v=1" alt="" onerror="this.style.display='none'" /></div>
+  <div class="bg"><img src="../photos/printer-pos/hero/hero-printer-pos.jpg" alt="" style="object-position:center 70%" onerror="this.style.display='none'" /></div>
   <div class="ov"></div><div class="glow"></div>
   <div class="wrap">
     <div class="hcopy">
-      <div class="crumb"><a href="../">Hanindo Group</a><span class="sep">/</span><a href="index.html">PT. Hanindo Automation Solutions</a></div>
-      <h1>PT. Hanindo <span class="fx">Automation Solutions</span></h1>
-      <p class="intro hide-sm">PT. Hanindo Automation Solutions supplies the printing, scanning and point-of-sale hardware and software behind retail and hospitality automation.</p>
+      <div class="crumb"><a href="../">Hanindo Group</a><span class="sep">/</span><a href="index.html">Gralessando (S) Pte. Ltd.</a></div>
+      <h1>Gralessando <span class="fx">(S) Pte. Ltd.</span></h1>
+      <p class="tradename">CUSTOM (S.E.A) Hanindo</p>
+      <p class="intro hide-sm">Gralessando (S) Pte. Ltd. supplies the printing, scanning and point-of-sale hardware and software behind retail and hospitality automation.</p>
       <div class="mktsw">
         <span class="lab">Other markets</span>
-        <a class="btn btn-ghost" href="../printer-pos/" target="_blank" rel="noopener"><span class="bname">Gralessando (S) Pte. Ltd. <span class="mkt">(<span>Singapore</span>)</span><small>CUSTOM (S.E.A) Hanindo</small></span> <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn-ghost" href="../shanghai/" target="_blank" rel="noopener"><span class="bname">Hanindo (Shanghai) International Co., Ltd. <span class="mkt">(<span>China</span>)</span></span> <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="../china/" target="_blank" rel="noopener"><span class="bname">Hanindo (Shanghai) International Co., Ltd. <span class="mkt">(<span>China</span>)</span></span> <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="../automation-solutions/" target="_blank" rel="noopener"><span class="bname">PT. Hanindo Automation Solutions <span class="mkt">(<span>Indonesia</span>)</span></span> <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
       <button type="button" class="watchlink" data-intro-video aria-haspopup="dialog"><span class="wthumb"><video class="wprev" muted autoplay loop playsinline preload="auto" poster="../photos/video/custom-hq-preview.jpg" aria-hidden="true" tabindex="-1"><source src="../photos/video/custom-hq-preview.mp4" type="video/mp4" /></video><span class="wplay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span></span><span class="wtext"><span class="wlab">Watch CUSTOM's new headquarters</span><span class="wdur">1:06</span></span></button>
     </div>
@@ -195,10 +211,11 @@
 <!-- ============ INTRO / SPLIT ============ -->
 <section class="section white compact">
   <div class="wrap">
-    <div class="reveal">
-      <span class="kicker">PT. Hanindo Automation Solutions</span>
-      <h2 class="h2">Printing, scanning, and point of sale.</h2>
-      <p class="lede" style="max-width:none">PT. Hanindo Automation Solutions carries the Custom range in Indonesia &mdash; the same printing, scanning and point-of-sale hardware and software the group supplies across South East Asia and China, delivered and supported from the Jakarta head office.</p>
+    <div class="split split-tight">
+      <div class="reveal">
+        <span class="kicker">Gralessando (S) Pte. Ltd.</span>
+        <h2 class="h2">Printing, scanning, and point of sale.</h2>
+        <p class="lede">Gralessando (S) Pte. Ltd. is incorporated in Singapore and is represented as CUSTOM (S.E.A) Hanindo. The Indonesian market is served by PT. Hanindo Automation Solutions, while the China market is served by Hanindo (Shanghai) International Co., Ltd.</p>
         <!-- The three areas Custom organises its own catalogue around,
              taken from custom.biz. "Reading solutions" was folded into
              data capture, which is where the scanners and payment
@@ -207,7 +224,14 @@
           <li><span><b>Professional printing</b>POS, receipt, fiscal, ticket, label and mobile printers.</span></li>
           <li><span><b>Point of sale &amp; data capture</b>Terminals, touch systems, cash registers, scanners and payment terminals.</span></li>
           <li><span><b>Scanning</b>Document scanners and multifunction print-and-scan systems.</span></li>
-      </ul>
+        </ul>
+      </div>
+      <div class="shotstack reveal d2" style="grid-template-columns:1fr">
+        <div class="shot">
+          <img src="../photos/printer-pos/office/gralessando-office.jpg" alt="Gralessando (S) Pte. Ltd. office, Singapore" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='flex'" loading="lazy" />
+          <div class="ph" style="display:none"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Photo needed</span></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -262,24 +286,24 @@
 -->
 
 <!-- ============ CUSTOMER BASE ============ -->
-<!-- Deliberately untiered, unlike the Gralessando and Hanindo (Shanghai)
-     International Co., Ltd. walls. Every customer is a plain .t1 in a
-     single free-flow .wall -- no .banded, no .tier row-groups -- so the
-     thirteen read as one group at one weight, drawn at the size the
-     Hanindo (Shanghai) International Co., Ltd. top band uses.
-     Ranking can come later by wrapping the cells in .tier groups and
-     demoting some to .t2; site.css already carries both modes.
+<!-- No "paper": the product strip above it is already grey, so this
+     would land grey-on-grey. Logo files are in /photos/customers/,
+     shared with the Hanindo Citra and Hanindo (Shanghai) International Co., Ltd.
+     walls. Names are listed in PHOTOS-NEEDED.txt.
 
-     Alphabetical, as on the other two walls.
+     The shared weighted .wall from site.css, built the same way as the
+     Hanindo (Shanghai) International Co., Ltd. wall: two bands, not three. .t1 is
+     the five accounts
+     that carry the most weight and .t2 is everyone else at one size.
+     Alphabetical within each band. To move a customer up or down, change
+     its tier class.
 
-     The shape class after the tier is still needed even without ranking:
-     nine of the thirteen are round or square badges, and sizing on height
-     alone would draw them at a fraction of the area of the wordmarks.
-     .sq under 2.0, .mid for 2.0-3.6, nothing wider. See the LOGO WALL
-     block in site.css.
-
-     No "paper": the product strip above is already grey, and this would
-     otherwise land grey on grey. -->
+     The shape class after the tier corrects for proportion, and matters
+     more here than on any other wall: this band runs from Singapore Pools
+     at 0.76:1 to Amadeus at 6.72:1, and sizing on height alone would draw
+     the square marks at a fraction of the weight of the wordmarks beside
+     them. .sq under 2.0, .mid for 2.0-3.6, nothing for wide wordmarks.
+     See the LOGO WALL block in site.css. -->
 <section class="customers" aria-label="Customer base">
   <div class="chead reveal"><span class="kick">Customer base</span></div>
   <div class="wrap">
@@ -287,53 +311,65 @@
       <div class="band">
         <span class="bandlab">Airports &amp; aviation</span>
         <div class="tier">
-          <div class="w mid stacked reveal"><img src="../photos/customers/soekarno-hatta.png?v=5" alt="Soekarno-Hatta International Airport" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Soekarno-Hatta International Airport</span></div>
-          <div class="w reveal"><img src="../photos/customers/surabaya-airport.png?v=5" alt="Juanda International Airport" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Juanda International Airport</span></div>
-          <div class="w reveal"><img src="../photos/customers/bali-airport.png?v=5" alt="I Gusti Ngurah Rai International Airport" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">I Gusti Ngurah Rai International Airport</span></div>
-          <div class="w sq reveal"><img src="../photos/customers/kediri.png?v=5" alt="Dhoho Airport" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Dhoho Airport</span></div>
-          <div class="w reveal"><img src="../photos/customers/garuda.png?v=5" alt="Garuda Indonesia" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Garuda Indonesia</span></div>
-          <div class="w reveal"><img src="../photos/customers/citi-link.png?v=5" alt="Citilink" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Citilink</span></div>
-          <div class="w reveal"><img src="../photos/customers/injourney-angkasa.png?v=5" alt="InJourney Aviation Services &mdash; Angkasa Pura Supports" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">InJourney Aviation Services</span></div>
-          <div class="w mid reveal"><img src="../photos/customers/sita.svg?v=5" alt="SITA" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">SITA</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/sita.svg" alt="SITA" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">SITA</span></div>
+          <div class="w reveal"><img src="../photos/customers/amadeus.png" alt="Amadeus" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Amadeus</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/collins.png" alt="Collins Aerospace" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Collins Aerospace</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/changi-airport.webp" alt="Changi Airport Singapore" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Changi Airport Singapore</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/singapore-airlines.png" alt="Singapore Airlines" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Singapore Airlines</span></div>
+          <!-- .mid, not .sq: the file used to be the reverse lockup on a red
+               plate, and the plate's padding made it read as square-ish. With
+               the plate gone the mark is its own 2.35:1 proportion. -->
+          <div class="w mid reveal"><img src="../photos/customers/airasia.png" alt="AirAsia" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">AirAsia</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/manila-airport.svg" alt="Manila International Airport Authority" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Manila International Airport Authority</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/mactan-cebu.png" alt="Mactan-Cebu International Airport Authority" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Mactan-Cebu International Airport Authority</span></div>
+          <div class="w reveal"><img src="../photos/customers/philippine-airlines.svg" alt="Philippine Airlines" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Philippine Airlines</span></div>
+          <div class="w reveal"><img src="../photos/customers/cebu-pacific.png" alt="Cebu Pacific" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Cebu Pacific</span></div>
+          <div class="w reveal"><img src="../photos/customers/acv-vietnam.png" alt="Airports Corporation of Vietnam" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Airports Corporation of Vietnam</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/don-mueang-bkk.svg" alt="Don Mueang International Airport" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Don Mueang International Airport</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/ventiane-laos.png" alt="Wattay International Airport" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Wattay International Airport</span></div>
         </div>
       </div>
       <div class="band">
-        <span class="bandlab">Transport</span>
+        <span class="bandlab">Transport, retail &amp; public services</span>
         <div class="tier">
-          <div class="w reveal"><img src="../photos/customers/jasamarga.png?v=5" alt="Jasa Marga" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Jasa Marga</span></div>
-          <div class="w sq reveal"><img src="../photos/customers/cmnp.png?v=5" alt="Citra Marga Nusaphala Persada" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Citra Marga Nusaphala Persada</span></div>
-          <div class="w sq reveal"><img src="../photos/customers/cmlj.png?v=5" alt="Citra Marga Lintas Jabar" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Citra Marga Lintas Jabar</span></div>
-          <div class="w sq reveal"><img src="../photos/customers/jlj.webp?v=5" alt="Jalantol Lingkarluar Jakarta" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Jalantol Lingkarluar Jakarta</span></div>
-          <div class="w sq reveal"><img src="../photos/customers/mtn.png?v=5" alt="Marga Trans Nusantara" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Marga Trans Nusantara</span></div>
-          <div class="w reveal"><img src="../photos/customers/pbtr.png?v=5" alt="Pemalang Batang Tol Road" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Pemalang Batang Tol Road</span></div>
-          <div class="w sq reveal"><img src="../photos/customers/hutama-karya.png?v=5" alt="Hutama Karya" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Hutama Karya</span></div>
+          <div class="w reveal"><img src="../photos/customers/smrt.png" alt="SMRT Trains" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">SMRT Trains</span></div>
+          <div class="w reveal"><img src="../photos/customers/strides.png" alt="Strides" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Strides</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/sg-cruise-centre.png" alt="Singapore Cruise Centre" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Singapore Cruise Centre</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/burger-king.png" alt="Burger King" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Burger King</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/jd-sports.png" alt="JD Sports" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">JD Sports</span></div>
+          <div class="brk" aria-hidden="true"></div>
+          <div class="w mid reveal"><img src="../photos/customers/nlb.png" alt="National Library Board" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">National Library Board</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/sg-pools.png" alt="Singapore Pools" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Singapore Pools</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/bsn.png" alt="Bank Simpanan Nasional" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Bank Simpanan Nasional</span></div>
         </div>
       </div>
       <div class="band">
-        <span class="bandlab">Technology &amp; services</span>
+        <span class="bandlab">Industry &amp; technology</span>
         <div class="tier">
-          <div class="w mid reveal"><img src="../photos/customers/altera.webp?v=5" alt="Altera Cipta Teknologi" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Altera Cipta Teknologi</span></div>
-          <div class="w mid reveal"><img src="../photos/customers/asyst.png?v=5" alt="Asyst" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Asyst</span></div>
-          <div class="w feature reveal"><img src="../photos/customers/mco-jaya.png?v=5" alt="MCO Jaya" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">MCO Jaya</span></div>
-          <div class="w mid feature reveal"><img src="../photos/customers/nutech.png?v=5" alt="Nutech" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Nutech</span></div>
-          <div class="w sq feature reveal"><img src="../photos/customers/pt-murni.png?v=5" alt="PT Murni" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">PT Murni</span></div>
-          <div class="w mid reveal"><img src="../photos/customers/elta-prima.png?v=5" alt="Elta Prima" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Elta Prima</span></div>
-          <div class="w reveal"><img class="tight" style="aspect-ratio:4.36" src="../photos/customers/ayu-berga.webp?v=5" alt="Ayu Berga" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Ayu Berga</span></div>
-          <div class="w reveal"><img src="../photos/customers/brinks.png?v=5" alt="Brink&rsquo;s" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Brink&rsquo;s</span></div>
-          <div class="w mid reveal"><img src="../photos/customers/corra.png?v=5" alt="Corra" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Corra</span></div>
-          <div class="w mid reveal"><img src="../photos/customers/sbn.png?v=5" alt="SBN" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">SBN</span></div>
+          <div class="w reveal"><img src="../photos/customers/st-engineering.png" alt="ST Engineering" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">ST Engineering</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/daifuku.png" alt="Daifuku" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Daifuku</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/aboitiz.png" alt="Aboitiz InfraCapital" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Aboitiz InfraCapital</span></div>
+          <div class="w reveal"><img src="../photos/customers/idemia.png" alt="IDEMIA" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">IDEMIA</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/wei-long-electronics.png" alt="Wei Long Electronics" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Wei Long Electronics</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/xyreon.png" alt="Xyreon Technology" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Xyreon Technology</span></div>
+          <div class="w reveal"><img src="../photos/customers/aogo.png" alt="AOGO Technologies" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">AOGO Technologies</span></div>
+          <div class="w sq reveal"><img src="../photos/customers/aldan.png" alt="Aldan Technology" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Aldan Technology</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/epoint.png" alt="Epoint Systems" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Epoint Systems</span></div>
+          <div class="w reveal"><img src="../photos/customers/iinnova.png" alt="i-innova" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">i-innova</span></div>
+          <div class="w mid reveal"><img src="../photos/customers/genie.png" alt="Genie" loading="lazy" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='block'" /><span class="nm" style="display:none">Genie</span></div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 <!-- The dark contact band that sat here came off at the business's
-     request, the last of the five to go -- Citra, Automotive, Flowtech
-     and Gralessando went before it. Nothing it carried is lost: the
-     Jakarta address, the phone, the mailbox and the note about which
-     company covers the other markets are all on the contact page, and
-     the footer repeats the address, the tel: link and the email on
-     every page. -->
+     request, the same removal Citra, Automotive and Flowtech had.
+     Contact is still two clicks from anywhere on the site: the nav keeps
+     its Contact Us tab, and the footer keeps the Singapore address, the
+     tel: link and the email. The band's market note -- which regions
+     this office covers and who handles the rest -- is on the contact
+     page in full, which is where the note itself pointed. -->
 
 <!-- ============ FOOTER ============ -->
 <footer class="footer">
@@ -344,7 +380,7 @@
         <p>Hanindo Group has served businesses across Indonesia since 2002, providing technology, equipment and engineering solutions across specialised industries. Our companies cover oil &amp; gas, automation, automotive, fire protection, printing and POS, combining international brands with local expertise and technical support.</p>
       </div>
       <div>
-        <h4>PT. Hanindo Automation Solutions</h4>
+        <h4>Gralessando (S) Pte. Ltd.</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
@@ -358,17 +394,17 @@
           <li><a href="../citra/" target="_blank" rel="noopener">PT. Hanindo Citra</a></li>
           <li><a href="../flowtech-engineering/" target="_blank" rel="noopener">PT. Flowtech Engineering</a></li>
           <li><a href="../automotive/" target="_blank" rel="noopener">PT. Hanindo Automotive</a></li>
-          <li><a href="../automation/" target="_blank" rel="noopener">PT. Hanindo Automation Solutions</a></li>
-          <li><a href="../printer-pos/" target="_blank" rel="noopener">Gralessando (S) Pte. Ltd.<small class="tname">CUSTOM (S.E.A) Hanindo</small></a></li>
-          <li><a href="../shanghai/" target="_blank" rel="noopener">Hanindo (Shanghai) International Co., Ltd.</a></li>
+          <li><a href="../automation-solutions/" target="_blank" rel="noopener">PT. Hanindo Automation Solutions</a></li>
+          <li><a href="../gralessando-custom-sea/" target="_blank" rel="noopener">Gralessando (S) Pte. Ltd.<small class="tname">CUSTOM (S.E.A) Hanindo</small></a></li>
+          <li><a href="../china/" target="_blank" rel="noopener">Hanindo (Shanghai) International Co., Ltd.</a></li>
         </ul>
       </div>
       <div>
-        <h4>Jakarta Office</h4>
-        <span class="cl"><b>JL. Fatmawati Raya No.55</b></span><span class="cl">Jakarta Selatan 12410</span><span class="cl">Indonesia</span><span class="cl">Tel: <b><a href="tel:+622175900909">+62 21 75900909</a></b></span><span class="cl">csea-in@hanindogroup.com</span>
+        <h4>Singapore Office</h4>
+        <span class="cl"><b>16 Jln Kilang Timor</b></span><span class="cl">#03-02 Redhill Forum</span><span class="cl">Singapore 159308</span><span class="cl">Tel: <b><a href="tel:+6569080281">+65 6908 0281</a></b></span><span class="cl">csea-sg@hanindogroup.com</span>
       </div>
     </div>
-    <div class="foot-bottom"><span>&copy; 2026 Hanindo Group. All Rights Reserved.</span><span>PT. Hanindo Automation Solutions</span></div>
+    <div class="foot-bottom"><span>&copy; 2026 Hanindo Group. All Rights Reserved.</span><span>Gralessando (S) Pte. Ltd.</span></div>
   </div>
 </footer>
 
@@ -442,7 +478,7 @@ window.addEventListener('resize',both);window.addEventListener('load',both);both
 })();
 </script>
 <script src="translate.js?v=202610161100"></script>
-<script src="../assets/nav.js?v=202609301200" defer></script>
+<script src="../assets/nav.js?v=202610191500" defer></script>
 <script src="../assets/protect.js?v=202609091200" defer></script>
 </body>
 </html>
