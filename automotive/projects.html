@@ -66,10 +66,11 @@
    These are the one card type that loses nothing at half width, because
    the photograph does the work and the two labels are short. No type
    scaling needed, unlike the text-only project cards on Flowtech.
-   Fifteen is odd, so the fifteenth sits on its own in the last row at the
-   same width as the other fourteen, with empty space beside it. It is
+   There are fourteen now (the BrainBee job came off on 2026-10-20). If the
+   count goes odd again, the last card sits on its own in the last row at
+   the same width as the others, with empty space beside it. It is
    deliberately NOT spanned: stretched across both columns it reads as a
-   flagship project rather than as the last of fifteen, and on a contact
+   flagship project rather than as the last of the set, and on a contact
    sheet every photograph should carry the same weight. */
 @media(max-width:640px){
   .decks{grid-template-columns:1fr 1fr;gap:.6rem}
@@ -192,7 +193,7 @@
   <div class="ov"></div><div class="glow"></div>
   <div class="wrap">
     <div class="crumb"><a href="../">Hanindo Group</a><span class="sep">/</span><a href="index.html">PT. Hanindo Automotive</a><span class="sep">/</span>Projects</div>
-    <h1>Featured <span class="fx" data-t="Projects (hero)">Projects</span></h1>
+    <h1>Install <span class="fx" data-t="Base (hero)">Base</span></h1>
     <p class="intro hide-sm">Supplied, installed and commissioned across Indonesia.</p>
   </div>
 </section>
@@ -202,7 +203,7 @@
   <div class="wrap">
     <div class="reveal">
       <span class="kicker">Track record</span>
-      <h2 class="h2">Featured projects</h2>
+      <h2 class="h2">Install base</h2>
     </div>
     <!-- To add a project: copy one .deck block, point data-base at the new
          filename stem in /photos/automotive/projects/, set data-count to how
@@ -364,17 +365,6 @@
       </div>
       <div class="reveal">
         <button class="deck" type="button"
-                data-base="brainbee-lng" data-count="2"
-                data-title="BrainBee AGS-688 gas and smoke analysers &mdash; LNG plant, Bontang"
-                aria-label="LNG Bontang — BrainBee gas and smoke analysers. View both photos.">
-          <img src="../photos/automotive/projects/brainbee-lng-1.jpg" alt="A technician running a test on a BrainBee analyser in the workshop of an LNG plant" loading="lazy" />
-          <span class="wash"></span>
-          <span class="more"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 21h11a2 2 0 002-2V8"/></svg>2 photos</span>
-          <span class="lbl"><span class="cust">LNG Bontang</span><span class="ttl">BrainBee gas and smoke analysers</span></span>
-        </button>
-      </div>
-      <div class="reveal">
-        <button class="deck" type="button"
                 data-base="raasm-intraco" data-count="2"
                 data-title="RAASM service module &mdash; Intraco, Balikpapan"
                 aria-label="Intraco — RAASM service module. View both photos.">
@@ -504,7 +494,7 @@ window.addEventListener('pageshow',function(){var i=document.querySelector('.sea
   });
 })();
 </script>
-<script src="translate.js?v=202610011900"></script>
+<script src="translate.js?v=202610201500"></script>
 <script src="../assets/nav.js?v=202610191630" defer></script>
 <script src="../assets/protect.js?v=202609091200" defer></script>
 </body>
