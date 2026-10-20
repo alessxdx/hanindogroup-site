@@ -136,6 +136,9 @@ find({
     $rel =~ s/^\.\///;
     $rel =~ s/\\/\//g;
     return if $SKIP{$rel};
+    # Underscore-prefixed files are scratch previews (_preview-*.html) left
+    # in the working tree while a change is being tried out, never pages.
+    return if $rel =~ m{(^|/)_[^/]*$};
     push @pages, $rel;
   },
 }, '.');
