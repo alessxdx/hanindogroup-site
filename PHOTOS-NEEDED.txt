@@ -375,6 +375,13 @@ citra-enabler.webp          Product card — ITL Enabler controller range [DONE]
 citra-flowmeter.png         Product card — TCS flow meters            [DONE]
 citra-atg.webp              Product card — Veeder-Root ATG range      [DONE]
 citra-stp.webp              Product card — submersible turbine pumps  [DONE]
+fuel-depot.jpg              About overview photo — bulk fuel depot with
+                            a tanker loading (660x417, supplied by the
+                            business; white edge cropped off). Sits in
+                            /photos/citra/about/.                     [DONE]
+mining-haul-truck.jpg       About overview photo — haul truck on a mine
+                            road (1000x665, Unsplash free licence,
+                            photo-1622645636770). /photos/citra/about/. [DONE]
 
 The dispenser, Enabler, ATG and STP cards carry manufacturer shots cut out onto
 pure white (#fff), and their tiles are white to match — see .pcard.cutout
