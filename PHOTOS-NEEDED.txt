@@ -270,9 +270,16 @@ div-automotive-card.jpg   Division card, group home page only — one
                           tyre changer and a wheel balancer [DONE]
                           1000x667, an AI-generated image the user
                           supplied, not a photo of a real project.
-div-fire-fighting.jpg     Division card — OPTIONAL.            [DONE]
-                          A file is in place. If it is ever removed the
-                          card falls back automatically to the existing
+div-fire-fighting.jpg     NO LONGER NEEDED — the burning-building photo.
+                          The card moved to div-fire-fighting-card.jpg.
+                          The file is still on disk.
+div-fire-fighting-card.jpg Division card, group home page only — a fire
+                          pump room: electric and diesel fire pumps,
+                          control panels, red pipework, an alarm valve
+                          and a hose cabinet [DONE] 1000x667, an
+                          AI-generated image the user supplied, not a
+                          photo of a real project. If it is ever removed
+                          the card falls back automatically to
                           fire-fighting/photos/mot-hydrant-pump.jpg
 div-printer-pos-card.jpg  Division card — POS / ticket printer hardware
                           [DONE] a photograph of a card payment at a
