@@ -69,6 +69,16 @@
    straight to one, with the taller photo the full width can carry. */
 @media(max-width:780px){.brandcards{grid-template-columns:1fr}.bcard .bimg{height:200px}}
 
+/* Company overview: the lifts-and-alignment workshop across the top, the
+   tyre bay and the lubrication bay paired underneath, as on Citra About.
+   Keep the captions short; on a phone the pair still sits side by side. */
+.about-media.trio{grid-template-columns:1fr 1fr}
+.about-media.trio .aphoto{min-height:190px}
+.about-media.trio .aphoto:first-child{grid-column:1/-1}
+.about-media.trio .bays img{object-position:center 80%}
+.about-media.trio .tyrebay img{object-position:center 72%}
+@media(max-width:480px){.about-media.trio .aphoto{min-height:150px}}
+
 /* .adv-* and the compact Vision & Mission tightening moved to site.css —
    three About pages carry them now. */
 </style>
@@ -152,9 +162,10 @@
         <p class="reveal">PT. Hanindo Automotive was established within the Hanindo Group in 2002, providing workshop and industrial equipment solutions designed to improve efficiency, productivity and ease of use.</p>
         <p class="reveal d1">Beyond supplying equipment, we support the full lifecycle of every solution &mdash; from specification and installation to commissioning, operator training, spare parts and after-sales service. As an authorized and trusted distributor in Indonesia for RAASM, HPA-Faip and Airtec, alongside our own brands WELDANN, ATOM and HAKIRO, we equip workshops and industrial facilities with reliable solutions from a single partner.</p>
       </div>
-      <div class="about-media">
-        <div class="aphoto reveal d1"><img src="../photos/group/divisions/div-automotive.jpg" alt="Automotive workshop equipped by PT. Hanindo Automotive" loading="lazy" /><span class="cap">Workshop and garage equipment</span></div>
-        <div class="aphoto reveal d2"><img src="../photos/automotive/projects/raasm-sefas-1.jpg" alt="A row of RAASM hose reels and metered dispensing points fitted above bulk oil tanks in a lubrication bay" loading="lazy" /><span class="cap">RAASM lubrication systems</span></div>
+      <div class="about-media trio">
+        <div class="aphoto bays reveal d1"><img src="../photos/automotive/projects/weldann-chery-1.jpg" alt="ATOM two-post lifts, a wheel aligner and a wheel balancer in the service bays of a dealer workshop" loading="lazy" /><span class="cap">Vehicle lifts and wheel alignment</span></div>
+        <div class="aphoto tyrebay reveal d2"><img src="../photos/automotive/projects/hpafaip-bquik-3.jpg" alt="HPA-Faip wheel balancer and tyre changer in a tyre service bay" loading="lazy" /><span class="cap">Tyre service equipment</span></div>
+        <div class="aphoto reveal d3"><img src="../photos/automotive/projects/raasm-sefas-1.jpg" alt="A row of RAASM hose reels and metered dispensing points fitted above bulk oil tanks in a lubrication bay" loading="lazy" /><span class="cap">RAASM lubrication systems</span></div>
       </div>
     </div>
   </div>
