@@ -245,7 +245,7 @@
           items += '<a class="mcur" aria-current="page">' + name + trade +
                    '<span class="mnote">You are here</span></a>';
         } else {
-          items += '<a href="' + root + slug + '" target="_blank" rel="noopener">' +
+          items += '<a href="' + root + slug + '">' +
                    name + ' ' + ext + trade +
                    (note ? '<span class="mnote">' + note + '</span>' : '') + '</a>';
         }
