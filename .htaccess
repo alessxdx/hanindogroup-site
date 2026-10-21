@@ -85,6 +85,13 @@ Redirect 301 /about                                                 /about/
 # is the track record that page stood for.
 Redirect 301 /flowtech-engineering/projects.html                    /flowtech-engineering/
 
+# The Projects tab came off the Fire Fighting Department on 2026-10-21:
+# those projects were delivered by a colleague's previous company, not by
+# Hanindo. The old one-page prototype repeated them and went at the same
+# time. Both are kept under the git tag archive/fire-fighting-projects.
+Redirect 301 /fire-fighting/projects.html                           /fire-fighting/
+Redirect 301 /fire-fighting/hanindo-citra-website.html              /fire-fighting/
+
 
 # ---------------------------------------------------------------------
 # Hotlink protection.

@@ -19,11 +19,8 @@ FILES
       index.html                  <- Home
       about.html                  <- About Us
       products-services.html      <- Products & Services
-      projects.html               <- Projects
       contact.html                <- Contact Us
-      hanindo-citra-website.html  <- OPTIONAL: whole site in one page
-                                     (tabs switch pages instantly)
-      translate.js                <- English / Bahasa Indonesia toggle
+      translate.js               <- English / Bahasa Indonesia toggle
                                      (MUST be uploaded with the .html)
       photos/                     <- this section's pictures
       README-FOR-COLLEAGUE.txt
@@ -77,13 +74,17 @@ page (Ctrl+F5). JPG format recommended.
 CURRENT PICTURES:
   prod-hydrant.jpg       Product card: Fire Hydrant Systems
                          (white background photos look best)
-  mot-op1-building.jpg   Home hero slide 3 + Featured project +
-                         About page + Projects page
-  mot-hydrant-pump.jpg   Home hero slide 1 + About page +
-                         Ministry of Transportation project card
-  proj-glb.jpg           Project card: PT. GLB Indonesia
-  proj-lpg.jpg           Project card: LPG Petroleum Storage
-  proj-akr.jpg           Project card: AKR Fuel Storage
+  mot-hydrant-pump.jpg   Page hero on every page, and the fallback
+                         if another photo fails to load
+  install-overhead-pipework.jpg
+                         Home page, beside the intro (Unsplash)
+  sprinkler-inlet.jpg    About page, "Sprinkler systems" (Unsplash)
+  The About page's "Fire pump systems" photo is the shared group
+  file ../photos/group/divisions/div-fire-fighting-card.jpg.
+
+  The Projects page and its photos came off on 2026-10-21 (the work
+  was done by a previous company, not Hanindo). They are kept in git
+  under the tag archive/fire-fighting-projects.
 
 AUTOMATIC PRODUCT-PHOTO SLOTS (files that do not exist yet):
 Drop a photo with one of these names into photos/ and it will

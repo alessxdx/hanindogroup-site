@@ -273,7 +273,9 @@ div-automotive-card.jpg   Division card, group home page only — one
 div-fire-fighting.jpg     NO LONGER NEEDED — the burning-building photo.
                           The card moved to div-fire-fighting-card.jpg.
                           The file is still on disk.
-div-fire-fighting-card.jpg Division card, group home page only — a fire
+div-fire-fighting-card.jpg Division card on the group home page, and the
+                          "Fire pump systems" photo on the Fire Fighting
+                          About page — a fire
                           pump room: electric and diesel fire pumps,
                           control panels, red pipework, an alarm valve
                           and a hose cabinet [DONE] 1000x534, an

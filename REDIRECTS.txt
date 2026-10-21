@@ -94,6 +94,15 @@ section it belonged to:
                       logos, which is the track record the page stood
                       for, so it is the right landing place. Live in
                       .htaccess.
+/fire-fighting/projects.html                          /fire-fighting/
+/fire-fighting/hanindo-citra-website.html             /fire-fighting/
+                      The Projects tab came off the Fire Fighting
+                      Department on 2026-10-21: the projects were
+                      delivered by a colleague's previous company, not
+                      by Hanindo. The old one-page prototype repeated
+                      them and was removed with it. Both pages and their
+                      photos are kept under the git tag
+                      archive/fire-fighting-projects. Live in .htaccess.
 
 
 UNRESOLVED — decide before go-live:
@@ -133,6 +142,8 @@ Redirect 301 /about                                            /about/
 
 # Removed from this site rather than from Joomla -- see the note above.
 Redirect 301 /flowtech-engineering/projects.html                /flowtech-engineering/
+Redirect 301 /fire-fighting/projects.html                       /fire-fighting/
+Redirect 301 /fire-fighting/hanindo-citra-website.html          /fire-fighting/
 
 # IMPORTANT: order matters. The longer /about-hanindo-group/* rules
 # MUST come before the bare /about-hanindo-group rule, otherwise the

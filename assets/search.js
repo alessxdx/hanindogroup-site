@@ -538,7 +538,7 @@
        show anything was wrong. Noticed on 2026-08-17 while adding a page.
        Every other versioned asset on the site is stamped with a timestamp;
        this one was the exception. */
-    req.open('GET', '../assets/search-index.json?v=202610211600', true);
+    req.open('GET', '../assets/search-index.json?v=202610211530', true);
     req.onreadystatechange = function () {
       if (req.readyState !== 4) return;
 
