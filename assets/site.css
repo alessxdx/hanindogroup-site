@@ -546,15 +546,22 @@ a.brand:not([href]){cursor:default}
    changed length; rows reflow on their own.
 
    Every page that runs this carries exactly three rows, and a fourth
-   would need nothing written for it. */
-.advhead{max-width:78ch;margin:0 auto 1.6rem}
+   would need nothing written for it.
+
+   Full width of the .wrap since 2026-10-21. It used to sit in a centred
+   78ch column with each sentence capped at 62ch, which broke every one of
+   these one-sentence claims onto a second line with half the row empty
+   beside it. Each fits on one line at desktop width; on a narrower
+   screen they wrap where they run out of room, which is the only reason
+   left for a break. */
+.advhead{margin:0 0 1.6rem}
 .advhead .h2{text-transform:uppercase;letter-spacing:.08em;font-size:1.05rem}
-.advlist{max-width:78ch;margin:0 auto;display:grid}
+.advlist{display:grid}
 .advbody{padding:1.5rem 0;border-bottom:1px solid var(--line)}
 .advrow:first-child .advbody{padding-top:0}
 .advrow:last-child .advbody{border-bottom:0;padding-bottom:0}
 .advbody h3{font-weight:800;font-size:.93rem;color:var(--blue-800);text-transform:uppercase;letter-spacing:.09em;margin-bottom:.45rem}
-.advbody p{color:var(--muted);font-size:.93rem;max-width:62ch}
+.advbody p{color:var(--muted);font-size:.93rem}
 .wcgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2rem}
 @media(max-width:860px){.wcgrid{grid-template-columns:1fr}}
 .wccard{background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--blue-800);border-radius:var(--r);padding:1.6rem 1.4rem;text-align:center}
