@@ -276,7 +276,7 @@ div-fire-fighting.jpg     NO LONGER NEEDED — the burning-building photo.
 div-fire-fighting-card.jpg Division card, group home page only — a fire
                           pump room: electric and diesel fire pumps,
                           control panels, red pipework, an alarm valve
-                          and a hose cabinet [DONE] 1000x667, an
+                          and a hose cabinet [DONE] 1000x534, an
                           AI-generated image the user supplied, not a
                           photo of a real project. If it is ever removed
                           the card falls back automatically to
