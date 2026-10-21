@@ -1110,12 +1110,20 @@ a.brand:not([href]){cursor:default}
    three, .mkt-1 for the single Shenzhen card on Shanghai. */
 .mkt{margin-top:.9rem}
 .mkt .svc{padding:.9rem 1rem}
-.mkt .svc h3{display:flex;align-items:center;gap:.4rem;font-size:.88rem;margin-bottom:.3rem;line-height:1.3}
-.mkt .svc .ic{width:15px;height:15px;flex:none;margin:0}
+.mkt .svc h3{display:flex;align-items:flex-start;gap:.4rem;font-size:.88rem;margin-bottom:.3rem;line-height:1.3}
+.mkt .svc .ic{width:15px;height:15px;flex:none;margin:.1rem 0 0}
 .mkt .svc p{font-size:.82rem;line-height:1.55}
 .mkt .svc b{color:var(--blue-800)}
 .mkt-1{grid-template-columns:1fr}
 @media(min-width:561px){.mkt-3{grid-template-columns:repeat(3,1fr)}}
+/* Side by side, the three cards share their rows: each spans two rows of
+   the grid and lays its heading and contact lines on them (subgrid), so a
+   heading that wraps -- "South East Asia (excluding the Philippines,
+   Thailand and Indonesia)" does -- deepens the heading row for all three
+   and the names, mailboxes and numbers stay level across the row. The pin
+   sits against the first line of the heading rather than its middle, for
+   the same reason. */
+@media(min-width:561px){.mkt-3{grid-template-rows:auto auto}.mkt-3 .svc{grid-row:span 2;display:grid;grid-template-rows:subgrid;row-gap:0;align-content:start}}
 .section.dark .svc p{color:#b9c6d8}
 .section.dark .svc .ic svg{stroke:var(--sky)}
 
