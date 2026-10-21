@@ -380,9 +380,11 @@ cropped file (no surrounding whitespace) so it renders at full size.
 --------------------------------------------------
 HANINDO CITRA  (/citra/)
 --------------------------------------------------
-hero-citra.webp           DONE — page hero on About, Products & Services and
-                            Contact: forecourt at dusk (1536x1024)
-hero-citra-mining.webp    DONE — home page hero only: a row of mine haul
+hero-citra.webp           NO LONGER USED — the forecourt at dusk (1536x1024)
+                            that every Citra hero carried until 2026-10-21.
+                            Kept on disk in case the forecourt comes back.
+hero-citra-mining.webp    DONE — page hero on Home, About, Products &
+                            Services and Contact: a row of mine haul
                             trucks (1920x1097, Unsplash free licence,
                             photo-1653202293335)
 citra-forecourt.jpg         NO LONGER NEEDED — the intro runs as one column
