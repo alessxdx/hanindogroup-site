@@ -40,6 +40,24 @@
 .wall.flat .band{width:100%}
 .wall.flat .w{--logo-h:46px;--logo-max:280px;max-width:var(--logo-max)}
 @media(max-width:640px){.wall.flat .w{--logo-h:34px;--logo-max:185px}}
+/* Automotive: HPA-Faip sits on the band's centre line, under its label,
+   the way Custom does in the band below. Plain flex centred the row as a
+   whole, and with Airtec far wider than RAASM that pushed HPA well right of
+   the label. Equal side columns hold Airtec right and RAASM left whatever
+   their widths; on a phone Airtec shrinks to its column rather than run
+   into the gutter. RAASM is square, so even with the .sq lift it read
+   smallest of the three; .big takes it 1.3x taller, to about HPA's area —
+   the same ratio as the home page wall. */
+.wall.flat .tier.trio{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)}
+.wall.flat .tier.trio>:first-child{justify-self:end}
+.wall.flat .tier.trio>:last-child{justify-self:start}
+.wall.flat .tier.trio .w{max-width:100%}
+.wall.flat .tier.trio .w img{max-width:100%}
+.wall.flat .tier.trio .w.sq.big img{height:calc(var(--logo-h) * 1.75 * 1.3)}
+/* Phones: at the 34px base the lifted HPA left Airtec's column so narrow
+   it shrank to half its height. A smaller base and tighter gaps here give
+   all three about the home page's phone sizes. */
+@media(max-width:640px){.wall.flat .tier.trio{column-gap:1rem}.wall.flat .tier.trio .w{--logo-h:26px}}
 </style>
 </head>
 <body>
@@ -185,12 +203,12 @@
       </div>
       <div class="band">
         <span class="bandlab">Automotive</span>
-        <div class="tier">
+        <div class="tier trio">
           <div class="w mid reveal"><img src="../photos/partners/airtec.png" alt="Airtec" loading="lazy" /></div>
           <div class="w sq reveal"><img src="../photos/partners/hpa.webp?v=2" alt="HPA-Faip" loading="lazy" /></div>
           <!-- The one brand with a page of its own so far: RAASM spans eleven
                sectors, so its range needs more room than a logo cell allows. -->
-          <a class="w sq reveal" href="../automotive/raasm/"><img src="../photos/partners/raasm.png" alt="RAASM" loading="lazy" /></a>
+          <a class="w sq big reveal" href="../automotive/raasm/"><img src="../photos/partners/raasm.png" alt="RAASM" loading="lazy" /></a>
         </div>
       </div>
       <div class="band">
