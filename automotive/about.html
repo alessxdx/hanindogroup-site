@@ -57,17 +57,19 @@
 
 /* Own-brand cards, all three on one row — a two-column grid stranded the
    third brand on a row of its own. A third of the width each, with a
-   shallower photo and tighter copy than the shared .bcard rules give, so
-   the cards stay small enough to read in a single glance. */
+   tighter copy than the shared .bcard rules give, so the cards stay small
+   enough to read in a single glance. The photo frame is 4:5 portrait: all
+   three machines stand taller than they are wide, and the wide 170px strip
+   this replaced cut every one of them off at the top. */
 .brandcards{grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.1rem}
-.bcard .bimg{height:170px}
+.bcard .bimg{height:auto;aspect-ratio:4/5}
 .bcard .bbody{padding:1.1rem 1.15rem}
 .bcard h3{font-size:1rem;margin-bottom:.35rem}
 .bcard .bbody p{font-size:.84rem;line-height:1.55}
 /* Below this a third of the width squeezes the copy into a ribbon. Two
    columns would strand the third brand on a row of its own, so go
-   straight to one, with the taller photo the full width can carry. */
-@media(max-width:780px){.brandcards{grid-template-columns:1fr}.bcard .bimg{height:200px}}
+   straight to one; the photo keeps its 4:5 frame. */
+@media(max-width:780px){.brandcards{grid-template-columns:1fr}}
 
 /* Company overview: the lifts-and-alignment workshop across the top, the
    tyre bay and the lubrication bay paired underneath, as on Citra About.
@@ -198,21 +200,21 @@
     </div>
     <div class="brandcards">
       <div class="bcard reveal">
-        <div class="bimg"><img src="../photos/automotive/brands/brand-weldann.jpg" alt="WELDANN disc lathe machine" loading="lazy" style="object-position:center 62%" onerror="this.style.display='none'" /></div>
+        <div class="bimg"><img src="../photos/automotive/brands/brand-weldann.jpg?v=2" alt="WELDANN disc lathe machine" loading="lazy" style="object-position:center 40%" onerror="this.style.display='none'" /></div>
         <div class="bbody">
           <h3>WELDANN</h3>
           <p>Professional workshop equipment for demanding service environments, covering tyre service, lifts, fluid exchange, brake and diagnostic solutions. Supported by warranty, training and after-sales service across Indonesia.</p>
         </div>
       </div>
       <div class="bcard reveal d1">
-        <div class="bimg"><img src="../photos/automotive/brands/brand-atom.jpg" alt="ATOM two-post vehicle lift" loading="lazy" style="object-position:38% 12%" onerror="this.style.display='none'" /></div>
+        <div class="bimg"><img src="../photos/automotive/brands/brand-atom.jpg" alt="ATOM two-post vehicle lift" loading="lazy" style="object-position:center center" onerror="this.style.display='none'" /></div>
         <div class="bbody">
           <h3>ATOM</h3>
           <p>Vehicle lifts including mid-rise, in-ground, on-ground scissor and two-post lifts from 3.5 to 4 tonnes. Built with quality components and safety features for reliable workshop operations.</p>
         </div>
       </div>
       <div class="bcard reveal d2">
-        <div class="bimg"><img src="../photos/automotive/brands/brand-hakiro.jpg" alt="HAKIRO JA-C01 semi-automatic tyre changer" loading="lazy" style="object-position:center 85%" onerror="this.style.display='none'" /></div>
+        <div class="bimg"><img src="../photos/automotive/brands/brand-hakiro.jpg" alt="HAKIRO JA-C01 semi-automatic tyre changer" loading="lazy" style="object-position:center 40%" onerror="this.style.display='none'" /></div>
         <div class="bbody">
           <h3>HAKIRO</h3>
           <p>A semi-automatic swing-arm tyre changer designed for tyre shops and workshops, offering a practical and reliable solution for everyday tyre servicing.</p>
