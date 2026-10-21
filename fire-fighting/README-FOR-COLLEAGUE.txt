@@ -78,9 +78,10 @@ CURRENT PICTURES:
                          if another photo fails to load
   install-overhead-pipework.jpg
                          Home page, beside the intro (Unsplash)
-  sprinkler-inlet.jpg    About page, "Sprinkler systems" (Unsplash)
-  The About page's "Fire pump systems" photo is the shared group
-  file ../photos/group/divisions/div-fire-fighting-card.jpg.
+  deluge-valve-room.jpg  About page, "Deluge systems" (AI-generated
+                         image supplied by Aless, not a real project)
+  foam-hangar-test.jpg   About page, "Foam suppression" (U.S. Air
+                         Force photo, Travis AFB 2020, public domain)
 
   The Projects page and its photos came off on 2026-10-21 (the work
   was done by a previous company, not Hanindo). They are kept in git
