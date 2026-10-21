@@ -398,10 +398,13 @@ citra-enabler.webp          Product card — ITL Enabler controller range [DONE]
 citra-flowmeter.png         Product card — TCS flow meters            [DONE]
 citra-atg.webp              Product card — Veeder-Root ATG range      [DONE]
 citra-stp.webp              Product card — submersible turbine pumps  [DONE]
-fuel-depot.jpg              About overview photo — bulk fuel depot with
-                            a tanker loading (660x417, supplied by the
+fuel-depot.jpg              Home intro photo — bulk fuel depot with a
+                            tanker loading (660x417, supplied by the
                             business; white edge cropped off). Sits in
-                            /photos/citra/about/.                     [DONE]
+                            /photos/citra/home/.                      [DONE]
+aviation-fuelling.jpg       Home intro photo — fuel truck beside a jet on
+                            an apron (1000x667, Unsplash free licence,
+                            photo-1606490043999). /photos/citra/home/. [DONE]
 mining-haul-truck.jpg       About overview photo — haul truck on a mine
                             road (1000x665, Unsplash free licence,
                             photo-1622645636770). /photos/citra/about/. [DONE]

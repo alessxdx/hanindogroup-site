@@ -32,17 +32,9 @@
 /* .about-copy a moved to site.css — the Automotive About page carries
    body-copy links now too. */
 
-/* Overview photos: the forecourt runs full width, with the depot and the
-   mine site paired underneath — the three places this company's equipment
-   works. Paired rather than stacked so the column stays roughly as tall as
-   the copy beside it. On a phone the pair still sits side by side, so keep
-   these captions short: at 375px a three-word caption already takes two
-   lines, which reads fine, but a longer one would climb the photo. */
-.about-media.trio{grid-template-columns:1fr 1fr}
-.about-media.trio .aphoto{min-height:190px}
-.about-media.trio .aphoto:first-child{grid-column:1/-1}
-.about-media.trio .depot img{object-position:18% 60%}
-@media(max-width:480px){.about-media.trio .aphoto{min-height:150px}}
+/* Overview photos: the forecourt and the mine site, stacked with the
+   shared .about-media styling. The fuel depot and aviation fuelling are
+   the home page's pair, so the two pages show four different sites. */
 
 /* Certificate cards, compact. site.css draws them at 300px tall with the
    whole certificate letter-boxed inside and the label ranged left, which
@@ -219,9 +211,8 @@
         <p class="reveal d1">Gilbarco Veeder-Root alone was never going to equip a whole station, so over the years the company has worked with other manufacturers alongside it — Total Control Systems and ITL among them today. The aim has been the same throughout: to be a complete solution provider, equipping a forecourt end to end and backing it with installation, maintenance and technical support.</p>
         <p class="reveal d2">PT. Hanindo Citra also delivers the group&#39;s fire protection work through its <a href="../fire-fighting/">Fire Fighting Department</a>.</p>
       </div>
-      <div class="about-media trio">
+      <div class="about-media">
         <div class="aphoto reveal d1"><img src="../photos/group/divisions/div-oil-and-gas.jpg" alt="Retail fuel station forecourt" loading="lazy" /><span class="cap">Retail forecourt</span></div>
-        <div class="aphoto depot reveal d2"><img src="../photos/citra/about/fuel-depot.jpg" alt="Tanker truck loading at a bulk fuel depot" loading="lazy" /><span class="cap">Fuel depot</span></div>
         <div class="aphoto reveal d3"><img src="../photos/citra/about/mining-haul-truck.jpg" alt="Haul truck on a mine-site road" loading="lazy" /><span class="cap">Mine-site fuelling</span></div>
       </div>
     </div>
@@ -363,7 +354,7 @@ window.addEventListener('pageshow',function(){var i=document.querySelector('.sea
 /* reveal */
 (function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){io.observe(x)});})();
 </script>
-<script src="translate.js?v=202610211400"></script>
+<script src="translate.js?v=202610211500"></script>
 <script src="../assets/nav.js?v=202610201200" defer></script>
 <script src="../assets/protect.js?v=202609091200" defer></script>
 </body>

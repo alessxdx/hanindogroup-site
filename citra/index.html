@@ -77,6 +77,21 @@
   .lede-split p{display:block}
   .lede-split p + p{margin-top:.8rem}
 }
+/* Intro photos: the copy on the left, a fuel depot and aviation fuelling
+   stacked on the right — two of the places beyond the forecourt that the
+   paragraph names. The forecourt and the mine site are About's pair, so
+   the two pages show four different sites between them. Below 900px the
+   photos drop under the copy and sit side by side. */
+.intro-split{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(2rem,4vw,3.4rem);align-items:start}
+.intro-photos{display:grid;gap:1rem;margin-top:.4rem}
+.intro-photos .aphoto{min-height:230px}
+.intro-photos .depot img{object-position:18% 60%}
+@media(max-width:900px){
+  .intro-split{grid-template-columns:1fr}
+  .intro-photos{grid-template-columns:1fr 1fr;margin-top:0}
+  .intro-photos .aphoto{min-height:170px}
+}
+@media(max-width:480px){.intro-photos .aphoto{min-height:140px}}
 /* Customer wall, banded by industry. Same .band / .bandlab block the group
    home and Partners walls use for their principals. Flat sizing applies here
    too: the old wall ranked customers into t1 and t2, which put five names in
@@ -238,6 +253,7 @@
 <!-- ============ INTRO ============ -->
 <section class="section white compact">
   <div class="wrap">
+    <div class="intro-split">
     <div class="reveal">
       <span class="kicker">PT. Hanindo Citra</span>
       <!-- Home says what a site operator can buy and who stands behind it.
@@ -260,6 +276,11 @@
         <li><span>Provides end-to-end construction for the retail petroleum industry, from consultation and design through construction until the fuel station is operational.</span></li>
         <li><span>Supplies and installs signboards and lighting for fuel stations, with after-sales service for all equipment installed.</span></li>
       </ul>
+    </div>
+    <div class="intro-photos">
+      <div class="aphoto depot reveal d1"><img src="../photos/citra/home/fuel-depot.jpg" alt="Tanker truck loading at a bulk fuel depot" loading="lazy" /><span class="cap">Fuel depot</span></div>
+      <div class="aphoto reveal d2"><img src="../photos/citra/home/aviation-fuelling.jpg" alt="Fuel truck beside a jet on an airport apron" loading="lazy" /><span class="cap">Aviation fuelling</span></div>
+    </div>
     </div>
   </div>
 </section>
@@ -518,7 +539,7 @@ s.addEventListener('scroll',mark,{passive:true});
 function both(){sync();mark();}
 window.addEventListener('resize',both);window.addEventListener('load',both);both();})();
 </script>
-<script src="translate.js?v=202610211400"></script>
+<script src="translate.js?v=202610211500"></script>
 <script src="../assets/nav.js?v=202610201200" defer></script>
 <script src="../assets/protect.js?v=202609091200" defer></script>
 </body>
