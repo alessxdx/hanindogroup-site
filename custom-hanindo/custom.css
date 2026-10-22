@@ -20,7 +20,6 @@
 .ocard .ln{font-size:.82rem;color:var(--ink);margin:0;line-height:1.5}
 /* an email address on its own line and never split across two */
 .ocard .ln .em{white-space:nowrap}
-.ocard.partner{background:var(--paper);border-style:dashed}
 /* customer wall, banded by industry */
 .wall.flat .band{width:100%}
 .wall.flat .w{--logo-h:42px;--logo-max:280px;max-width:var(--logo-max)}
