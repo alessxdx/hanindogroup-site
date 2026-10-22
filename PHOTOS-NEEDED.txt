@@ -282,12 +282,13 @@ div-fire-fighting-card.jpg Division card, group home page only — a fire
                           the card falls back automatically to
                           fire-fighting/photos/mot-hydrant-pump.jpg
 div-printer-pos-card.jpg  Division card — POS / ticket printer hardware
-                          [DONE] 1200x800: self-ordering kiosks with
-                          receipt printers and a POS counter with a
+                          [DONE] 1024x682: square-column self-ordering
+                          kiosks with receipt printers and a POS counter with a
                           receipt printer, scanner and card terminal in
                           a restaurant. An AI-generated image the user
                           supplied, not a real installation. Replaced
-                          the card-payment photo on 2026-10-22. Group
+                          the card-payment photo on 2026-10-22 (second
+                          version, kiosks closer to the Custom design). Group
                           home page only.
 div-printer-pos.png       Automation About page, Company overview
                           [DONE] the Indonesia office boardroom. The
