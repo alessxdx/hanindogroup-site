@@ -1,9 +1,4 @@
 /* Page styles shared by the CUSTOM Hanindo pages. */
-/* header lockup until a real logo exists: CUSTOM wordmark over the two regions */
-.cmark{display:flex;flex-direction:column;line-height:1.05;text-decoration:none;padding-left:1rem;border-left:1px solid var(--line)}
-.cmark .w1{font-weight:800;font-size:1.35rem;letter-spacing:.14em;color:#183a52}
-.cmark .w2{font-size:.68rem;font-weight:700;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;margin-top:.2rem}
-.cmark .w2 em{font-style:normal;color:var(--brand)}
 .langtoggle button{min-width:2.1rem}
 .pagehero .tradename{font-style:italic;font-size:clamp(.85rem,1.35vw,1rem);font-weight:600;color:#aee1ff;margin:.4rem 0 0;letter-spacing:.02em}
 /* region heading used on offices, customers and contact */
@@ -30,4 +25,3 @@
 .wall.flat .w.stacked{--logo-h:52px}
 @media(max-width:640px){.wall.flat .w{--logo-h:34px;--logo-max:185px}}
 .wall .w{opacity:1;transform:none}
-@media(max-width:640px){.cmark .w1{font-size:1.05rem}.cmark{padding-left:.6rem}}
