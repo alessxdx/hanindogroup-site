@@ -1,10 +1,9 @@
-/* MOCK-UP language switch: EN / ID / 中文. Draft translations for review only —
-   the real site's translations go through the usual manual process.
+/* Language switch for CUSTOM Hanindo: EN / ID / 中文. The Bahasa and Chinese
+   text is a DRAFT and still needs checking by a fluent reader.
    Any element with data-i18n="key" has its HTML swapped; English is read from
    the page itself, so a key missing here simply stays English. */
 var I18N = {
 id: {
-  'mock': 'MOCK-UP — satu situs CUSTOM Hanindo menggantikan tiga. Terjemahan masih draf.',
   'nav.home': 'Beranda', 'nav.about': 'Tentang Kami', 'nav.products': 'Produk &amp; Layanan', 'nav.contact': 'Hubungi Kami',
   'back': 'Hanindo Group',
   'hero.tag': 'Pencetakan, pemindaian &amp; point of sale di seluruh Asia',
@@ -66,7 +65,6 @@ id: {
   'ct.dir': 'Petunjuk arah', 'ct.mailbtn': 'Email tim kami'
 },
 zh: {
-  'mock': '样稿 — 以一个 CUSTOM Hanindo 网站取代三个。译文为草稿。',
   'nav.home': '首页', 'nav.about': '关于我们', 'nav.products': '产品与服务', 'nav.contact': '联系我们',
   'back': 'Hanindo 集团',
   'hero.tag': '覆盖亚洲的打印、扫描与销售点解决方案',
@@ -133,9 +131,9 @@ zh: {
     els.forEach(function(e){ var d = I18N[l], k = e.dataset.i18n; e.innerHTML = (d && d[k] != null) ? d[k] : e.dataset.en; });
     document.documentElement.lang = l === 'zh' ? 'zh-Hans' : l;
     document.querySelectorAll('[data-ml]').forEach(function(b){ var on = b.dataset.ml === l; b.classList.toggle('active', on); b.setAttribute('aria-pressed', on); });
-    try { localStorage.setItem('mockLang', l); } catch (e) {}
+    try { localStorage.setItem('customLang', l); } catch (e) {}
   }
   document.querySelectorAll('[data-ml]').forEach(function(b){ b.addEventListener('click', function(){ set(b.dataset.ml); }); });
-  var saved = 'en'; try { saved = localStorage.getItem('mockLang') || 'en'; } catch (e) {}
+  var saved = 'en'; try { saved = localStorage.getItem('customLang') || 'en'; } catch (e) {}
   set(saved);
 })();

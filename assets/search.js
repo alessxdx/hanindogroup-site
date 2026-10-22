@@ -68,16 +68,7 @@
     'fire-fighting':        'PT. Hanindo Citra — Fire Fighting',
     'flowtech-engineering': 'PT. Flowtech Engineering',
     'automotive':           'PT. Hanindo Automotive',
-    'automation-solutions':           'PT. Hanindo Automation Solutions',
-    /* No PT. on the last two: neither is an Indonesian company. PT is the
-       Indonesian form for a limited company, and these carry their own --
-       Gralessando is registered in Singapore and carries (S) Pte. Ltd.,
-       and the Shanghai company is registered in China as Hanindo
-       (Shanghai) International Co., Ltd.
-       'Hanindo Group' above is the group rather than a registered entity,
-       so it takes no prefix either. */
-    'gralessando-custom-sea':          'Gralessando (S) Pte. Ltd.',
-    'china':             'Hanindo (Shanghai) International Co., Ltd.'
+    'custom-hanindo':                  'CUSTOM Hanindo'
   };
 
   function sectionOf(url) {

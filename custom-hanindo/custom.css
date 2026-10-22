@@ -1,6 +1,4 @@
-/* MOCK-UP styles shared by the three CUSTOM Hanindo pages. */
-.mockbar{background:#fff6d6;color:#6b5200;font-size:.82rem;text-align:center;padding:.45rem 1rem;border-bottom:1px solid #f0dc95}
-.mockbar a{color:#6b5200;font-weight:700}
+/* Page styles shared by the CUSTOM Hanindo pages. */
 /* header lockup until a real logo exists: CUSTOM wordmark over the two regions */
 .cmark{display:flex;flex-direction:column;line-height:1.05;text-decoration:none;padding-left:1rem;border-left:1px solid var(--line)}
 .cmark .w1{font-weight:800;font-size:1.35rem;letter-spacing:.14em;color:#183a52}

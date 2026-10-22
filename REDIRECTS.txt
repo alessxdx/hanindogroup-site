@@ -6,7 +6,7 @@ any bookmarked links keep working.
 
 STATUS as of 2026-08-17: every target below exists and every redirect
 can be applied. The [PENDING] markers are gone with the pages they were
-waiting on — /about/, /partners/, /career/, /contact/ and /gralessando-custom-sea/
+waiting on — /about/, /partners/, /career/, /contact/ and /custom-hanindo/
 are all built.
 
 One exception, and it is a content decision rather than a mapping one:
@@ -25,13 +25,13 @@ OLD (Joomla)                                          NEW
 /about-hanindo-group/hanindo-citra                    /citra/
 /about-hanindo-group/flowtech-engineering             /flowtech-engineering/
 /about-hanindo-group/hanindo-automotive               /automotive/
-/about-hanindo-group/hanindo-automation-solutions     /automation-solutions/
-/about-hanindo-group/hanindo-overseas                 /china/
+/about-hanindo-group/hanindo-automation-solutions     /custom-hanindo/
+/about-hanindo-group/hanindo-overseas                 /custom-hanindo/
 /pt-hanindo-citra                                     /citra/
 /pt-flowtech-engineering                              /flowtech-engineering/
 /pt-hanindo-automotive                                /automotive/
-/hanindo-automation-solutions                         /automation-solutions/
-/pt-hanindo-overseas                                  /china/
+/hanindo-automation-solutions                         /custom-hanindo/
+/pt-hanindo-overseas                                  /custom-hanindo/
 /hanindo-product                                      /                          (no direct equivalent -> home)
 /oil-and-gas                                          /citra/
 /home-automotive                                      /automotive/
@@ -62,7 +62,7 @@ inventing course details would be worse than the redirect.
 THIS SITE'S OWN URL CHANGES. Two sections were renamed during the
 build to match the company name rather than the industry. Anyone who
 was sent a preview link needs these too:
-/overseas/                                            /china/
+/overseas/                                            /custom-hanindo/
 /oil-and-gas/                                         /citra/
 
 The /oil-and-gas row in the table above is the legacy Joomla URL and
@@ -70,11 +70,11 @@ already points at /citra/, so one Redirect covers both.
 
 WAS EXTERNAL — now internal. Both of these pointed at custom-sea.com,
 which does not exist. Send them to the section instead:
-/  (menu item "Printer & POS System")                 /gralessando-custom-sea/
-/  (menu item "Custom (S.E.A) Gralessando")           /gralessando-custom-sea/
+/  (menu item "Printer & POS System")                 /custom-hanindo/
+/  (menu item "Custom (S.E.A) Gralessando")           /custom-hanindo/
 
 CONFIRMED 2026-08-17 by Graziella, and now live in .htaccess:
-/gralessando                                          /gralessando-custom-sea/
+/gralessando                                          /custom-hanindo/
                       Linked from the old site's "Our Websites" menu. The
                       printing and POS company is Gralessando (S) Pte. Ltd.,
                       represented as Custom (S.E.A), so the URL belongs to
@@ -121,29 +121,36 @@ RewriteEngine On
 Redirect 301 /about-hanindo-group/hanindo-citra                /citra/
 Redirect 301 /about-hanindo-group/flowtech-engineering         /flowtech-engineering/
 Redirect 301 /about-hanindo-group/hanindo-automotive           /automotive/
-Redirect 301 /about-hanindo-group/hanindo-automation-solutions /automation-solutions/
-Redirect 301 /about-hanindo-group/hanindo-overseas             /china/
+Redirect 301 /about-hanindo-group/hanindo-automation-solutions /custom-hanindo/
+Redirect 301 /about-hanindo-group/hanindo-overseas             /custom-hanindo/
 Redirect 301 /about-hanindo-group                              /about/
 Redirect 301 /pt-hanindo-citra                                 /citra/
 Redirect 301 /pt-flowtech-engineering                          /flowtech-engineering/
 Redirect 301 /pt-hanindo-automotive                            /automotive/
-Redirect 301 /hanindo-automation-solutions                     /automation-solutions/
-Redirect 301 /pt-hanindo-overseas                              /china/
+Redirect 301 /hanindo-automation-solutions                     /custom-hanindo/
+Redirect 301 /pt-hanindo-overseas                              /custom-hanindo/
 Redirect 301 /hanindo-product                                  /
 Redirect 301 /oil-and-gas                                      /citra/
 Redirect 301 /home-automotive                                  /automotive/
 Redirect 301 /partners-a-principals                            /partners/
-Redirect 301 /gralessando                                      /gralessando-custom-sea/
+Redirect 301 /gralessando                                      /custom-hanindo/
 Redirect 301 /training-gilbarco-veeder-root-thermal-printer-indonesia  /products-services/
 Redirect 301 /news-info/career-hanindo-group-gilbarco-veeder-root-indonesia-thermal-printer  /career/
 Redirect 301 /contact-us                                       /contact/
-Redirect 301 /overseas                                         /china/
+Redirect 301 /overseas                                         /custom-hanindo/
 Redirect 301 /about                                            /about/
 
 # Removed from this site rather than from Joomla -- see the note above.
 Redirect 301 /flowtech-engineering/projects.html                /flowtech-engineering/
 Redirect 301 /fire-fighting/projects.html                       /fire-fighting/
 Redirect 301 /fire-fighting/hanindo-citra-website.html          /fire-fighting/
+
+# The three CUSTOM companies merged into one CUSTOM Hanindo site on
+# 2026-10-22. Prefix matches, so each old page lands on the page of the
+# same name. The old sites are kept on the main branch.
+Redirect 301 /gralessando-custom-sea                            /custom-hanindo
+Redirect 301 /automation-solutions                              /custom-hanindo
+Redirect 301 /china                                             /custom-hanindo
 
 # IMPORTANT: order matters. The longer /about-hanindo-group/* rules
 # MUST come before the bare /about-hanindo-group rule, otherwise the
