@@ -5,12 +5,7 @@
 .cmark .w2{font-size:.68rem;font-weight:700;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;margin-top:.2rem}
 .cmark .w2 em{font-style:normal;color:var(--brand)}
 .langtoggle button{min-width:2.1rem}
-/* hero region chips: one row per region */
 .pagehero .tradename{font-style:italic;font-size:clamp(.85rem,1.35vw,1rem);font-weight:600;color:#aee1ff;margin:.4rem 0 0;letter-spacing:.02em}
-.regions{display:grid;gap:.7rem;margin-top:1.4rem}
-.region{display:flex;flex-wrap:wrap;align-items:center;gap:.45rem}
-.region .rlab{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--sky);min-width:7.5rem}
-.region .chip{display:inline-flex;padding:.32rem .8rem;border:1px solid rgba(255,255,255,.35);border-radius:999px;font-size:.8rem;font-weight:600;color:#fff;background:rgba(255,255,255,.06)}
 /* region heading used on offices, customers and contact */
 .rhead{display:flex;align-items:baseline;gap:.8rem;margin:2rem 0 .2rem;padding-bottom:.5rem;border-bottom:2px solid var(--brand)}
 .rhead:first-child{margin-top:1rem}
@@ -23,7 +18,6 @@
 .ocard h3{font-size:1.02rem;margin:.25rem 0 .35rem}
 .ocard .ent{font-size:.8rem;color:var(--muted);margin:0 0 .6rem}
 .ocard .ln{font-size:.82rem;color:var(--ink);margin:0;line-height:1.5}
-.ocard .tbc{color:#a06a00;font-style:italic}
 .ocard.partner{background:var(--paper);border-style:dashed}
 /* customer wall, split by region then by sector */
 .wall.flat .band{width:100%}
