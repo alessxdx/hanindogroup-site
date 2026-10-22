@@ -24,7 +24,7 @@
 {"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://hanindogroup.com/custom-hanindo/#organization","name":"CUSTOM Hanindo","url":"https://hanindogroup.com/custom-hanindo/","image":"https://hanindogroup.com/photos/brand/og-printer-pos.jpg","description":"CUSTOM Hanindo — CUSTOM printing, scanning and point-of-sale hardware, supplied, integrated and supported across Southeast Asia and China.","parentOrganization":{"@id":"https://hanindogroup.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Hanindo Group","item":"https://hanindogroup.com/"},{"@type":"ListItem","position":2,"name":"CUSTOM Hanindo","item":"https://hanindogroup.com/custom-hanindo/"}]}]}
 </script>
 <link rel="stylesheet" href="../assets/site.css?v=202610221100" />
-<link rel="stylesheet" href="custom.css?v=202610221700" />
+<link rel="stylesheet" href="custom.css?v=202610221830" />
 <style>
 .split-tight{gap:clamp(1.6rem,3vw,2.4rem)}
 .split-tight .lede{margin-top:.75rem}
@@ -153,14 +153,14 @@
 <section class="section white compact" id="offices">
   <div class="wrap">
     <span class="kicker" data-i18n="off.kick">Where we are</span><h2 class="h2" data-i18n="off.h2">Two regions, one team.</h2>
-    <div class="rhead"><h3>CUSTOM S.E.A</h3><span>CUSTOM (S.E.A) Hanindo</span></div>
+    <div class="rhead rlogo"><h3><img class="sea" src="../photos/brand/logo-custom-sea.png" alt="CUSTOM S.E.A — CUSTOM (S.E.A) Hanindo" /></h3></div>
     <div class="offrow">
       <div class="ocard"><span class="cty" data-i18n="cty.sg">Singapore</span><h3>Singapore</h3><p class="ent">Gralessando (S) Pte. Ltd.</p><p class="ln">16 Jln Kilang Timor, #03-02 Redhill Forum, Singapore 159308<br/>+65 6908 0281 · csea-sg@hanindogroup.com</p></div>
       <div class="ocard"><span class="cty" data-i18n="cty.id">Indonesia</span><h3>Jakarta</h3><p class="ent">PT. Hanindo Automation Solutions</p><p class="ln">Jl. Fatmawati Raya No. 55, Jakarta Selatan 12410<br/>+62 21 75900909 · csea-in@hanindogroup.com</p></div>
       <div class="ocard"><span class="cty" data-i18n="cty.ph">Philippines</span><h3>Manila</h3><p class="ent">Gralessando (S) Pte. Ltd.</p><p class="ln">+63 915 356 9964 · csea-ph@hanindogroup.com</p></div>
       <div class="ocard partner"><span class="cty" data-i18n="cty.th">Thailand</span><h3>Bangkok</h3><p class="ent">Flowco Co., Ltd. — <span data-i18n="off.partner">partner office</span></p><p class="ln">csea-th@hanindogroup.com</p></div>
     </div>
-    <div class="rhead"><h3>CUSTOM China</h3><span>Hanindo (Shanghai) International Co., Ltd.</span></div>
+    <div class="rhead rlogo"><h3><img class="cn" src="../photos/brand/logo-shanghai.png" alt="CUSTOM China — Hanindo (Shanghai) International Co., Ltd." /></h3></div>
     <div class="offrow">
       <div class="ocard"><span class="cty" data-i18n="cty.cn">China</span><h3>Shanghai</h3><p class="ent">Hanindo (Shanghai) International Co., Ltd.</p><p class="ln">Room 3211, Tower B, The Place, Zunyi Rd 100, Changning district, Shanghai<br/>+86 21 6237 0600</p></div>
       <div class="ocard"><span class="cty" data-i18n="cty.cn">China</span><h3>Shenzhen</h3><p class="ent" data-i18n="off.sz">Representative office of the Shanghai company</p><p class="ln">Room 808 Haosheng Plaza, No. 4096 Dongbin Rd, Nanshan District, Shenzhen<br/>+86 755 8665 2653</p></div>
@@ -168,8 +168,8 @@
   </div>
 </section>
 
-<!-- CUSTOMER BASE — all three walls, shown in full: CUSTOM S.E.A first, then CUSTOM China,
-     each banded by sector. Nothing removed yet. -->
+<!-- CUSTOMER BASE — all three companies' customers on one wall, banded by industry.
+     Nothing removed yet. -->
 <section class="customers" aria-label="Customer base" style="background:var(--paper)">
   <div class="chead"><span class="kick" data-i18n="cust.kick">Customer base</span></div>
   <div class="wrap" id="custwrap"></div>
@@ -188,7 +188,7 @@
 </footer>
 
 <script>
-/* [file, name, shape class, region, band] */
+/* [file, name, shape class, region, industry band] */
 var C='../photos/customers/';
 var LOGOS=[
 ['sita.svg','SITA','mid','sea','av'],['amadeus.png','Amadeus','','sea','av'],['collins.png','Collins Aerospace','mid','sea','av'],
@@ -204,42 +204,35 @@ var LOGOS=[
 ['cmlj.png?v=5','Citra Marga Lintas Jabar','sq','sea','tr'],['jlj.webp?v=5','Jalantol Lingkarluar Jakarta','sq','sea','tr'],['mtn.png?v=5','Marga Trans Nusantara','sq','sea','tr'],['pbtr.png?v=5','Pemalang Batang Tol Road','','sea','tr'],
 ['burger-king.png','Burger King','sq','sea','rt'],['jd-sports.png','JD Sports','sq','sea','rt'],['nlb.png','National Library Board','mid','sea','rt'],
 ['sg-pools.png','Singapore Pools','sq','sea','rt'],['bsn.png','Bank Simpanan Nasional','mid','sea','rt'],['brinks.png?v=5','Brink’s','','sea','rt'],
-['st-engineering.png','ST Engineering','','sea','it'],['daifuku.png','Daifuku','mid','sea','it'],['aboitiz.png','Aboitiz InfraCapital','mid','sea','it'],['idemia.png','IDEMIA','','sea','it'],
+['st-engineering.png','ST Engineering','','sea','in'],['daifuku.png','Daifuku','mid','sea','in'],['aboitiz.png','Aboitiz InfraCapital','mid','sea','in'],['idemia.png','IDEMIA','','sea','it'],
 ['wei-long-electronics.png','Wei Long Electronics','sq','sea','it'],['xyreon.png','Xyreon Technology','mid','sea','it'],['aogo.png','AOGO Technologies','','sea','it'],
 ['aldan.png','Aldan Technology','sq','sea','it'],['epoint.png','Epoint Systems','mid','sea','it'],['iinnova.png','i-innova','','sea','it'],['genie.png','Genie','mid','sea','it'],
 ['altera.webp?v=5','Altera Cipta Teknologi','mid','sea','it'],['asyst.png?v=5','Asyst','mid','sea','it'],['mco-jaya.png?v=5','MCO Jaya','','sea','it'],['nutech.png?v=5','Nutech','mid','sea','it'],
 ['pt-murni.png?v=5','PT Murni','sq','sea','it'],['elta-prima.png?v=5','Elta Prima','mid','sea','it'],['corra.png?v=5','Corra','mid','sea','it'],['sbn.png?v=5','SBN','mid','sea','it'],
 
 ['china-eastern.png?v=2','China Eastern Airlines','','cn','av'],['spring-airlines.png?v=2','Spring Airlines','sq','cn','av'],['travel-sky.png?v=2','TravelSky','sq','cn','av'],['zhongjia-jincheng.png?v=2','Zhongjia Jincheng','mid','cn','av'],
-['elis-infotech.png?v=2','Elis Infotech','','cn','ss'],['grg-banking.png?v=2','GRGBanking','mid','cn','ss'],['golong.png?v=2','Hangzhou GOLONG Technology','sq','cn','ss'],['legate.png?v=2','Suzhou Legate','mid','cn','ss'],
-['histonetec.png?v=2','HiStone','','cn','ss'],['hisense.svg?v=2','Hisense','','cn','ss'],['ccl.png?v=2','CCL','mid','cn','ss'],['kioskidea.png?v=2','Kioskidea','','cn','ss'],
-['inspur.svg?v=2','Inspur','','cn','ss'],['damo.png?v=2','DEMO','','cn','ss'],['gwi.png?v=2','GreatWall Information','','cn','ss'],['ht-kiosk.png?v=2','Hangzhou Huiguang Technology','mid','cn','ss'],
-['hantai.png?v=2','Hantai Precision Industry','','cn','ss'],['hongjiali-group.png?v=2','Hongjiali Group','','cn','ss'],['kmy.png?v=2','KMY','sq','cn','ss'],['micrown.png?v=2','Micrown','','cn','ss'],
-['shenzhen-xufan.png?v=2','Shenzhen Xufan Technology','','cn','ss'],['szzt.png?v=2','SZZT Electronics','','cn','ss'],['yilianzhong.png?v=2','Yilianzhong','mid','cn','ss'],['yilisha.png?v=2','Yilisha','','cn','ss'],
-['yisida.png?v=2','Yisida','','cn','ss'],['zhilai.png?v=2','Zhilai Sci & Tech','mid','cn','ss'],
+['elis-infotech.png?v=2','Elis Infotech','','cn','it'],['grg-banking.png?v=2','GRGBanking','mid','cn','it'],['golong.png?v=2','Hangzhou GOLONG Technology','sq','cn','it'],['legate.png?v=2','Suzhou Legate','mid','cn','it'],
+['histonetec.png?v=2','HiStone','','cn','it'],['hisense.svg?v=2','Hisense','','cn','it'],['ccl.png?v=2','CCL','mid','cn','it'],['kioskidea.png?v=2','Kioskidea','','cn','it'],
+['inspur.svg?v=2','Inspur','','cn','it'],['damo.png?v=2','DEMO','','cn','it'],['gwi.png?v=2','GreatWall Information','','cn','it'],['ht-kiosk.png?v=2','Hangzhou Huiguang Technology','mid','cn','it'],
+['hantai.png?v=2','Hantai Precision Industry','','cn','in'],['hongjiali-group.png?v=2','Hongjiali Group','','cn','it'],['kmy.png?v=2','KMY','sq','cn','it'],['micrown.png?v=2','Micrown','','cn','it'],
+['shenzhen-xufan.png?v=2','Shenzhen Xufan Technology','','cn','it'],['szzt.png?v=2','SZZT Electronics','','cn','it'],['yilianzhong.png?v=2','Yilianzhong','mid','cn','it'],['yilisha.png?v=2','Yilisha','','cn','it'],
+['yisida.png?v=2','Yisida','','cn','it'],['zhilai.png?v=2','Zhilai Sci & Tech','mid','cn','it'],
 ['getinge.svg?v=2','Getinge','','cn','in'],['polysoude.png?v=2','Polysoude','','cn','in']
 ];
-var REGIONS=[
-  ['sea','CUSTOM S.E.A','Singapore · Indonesia · Philippines · Thailand · Vietnam · Malaysia',[['av','Airports & aviation'],['tr','Transport & toll roads'],['rt','Retail, banking & public services'],['it','Technology, integrators & industry']]],
-  ['cn','CUSTOM China','Shanghai · Shenzhen',[['av','Airports & aviation'],['ss','Self-service, banking & kiosk makers'],['in','Industry & technology']]]
-];
-var wrap=document.getElementById('custwrap');
-REGIONS.forEach(function(r){
-  var sec=document.createElement('div');sec.className='custreg';
-  sec.innerHTML='<div class="rhead"><h3>'+r[1]+'</h3></div><div class="wall banded flat"></div>';
-  var wall=sec.querySelector('.wall');
-  r[3].forEach(function(b){
-    var band=document.createElement('div');band.className='band';
-    band.innerHTML='<span class="bandlab" data-i18n="band.'+b[0]+'">'+b[1].replace('&','&amp;')+'</span><div class="tier"></div>';
-    var t=band.querySelector('.tier');
-    LOGOS.filter(function(l){return l[3]===r[0]&&l[4]===b[0]}).forEach(function(l){
-      var d=document.createElement('div');d.className='w '+l[2];
-      d.innerHTML='<img src="'+C+l[0]+'" alt="'+l[1]+'" title="'+l[1]+'" />';t.appendChild(d);
-    });
-    wall.appendChild(band);
+/* One wall for both regions, banded by the customer's industry. */
+var BANDS=[['av','Airports & aviation'],['tr','Transport & toll roads'],['rt','Retail, banking & public services'],['it','Technology & system integrators'],['in','Industry & engineering']];
+var wall=document.createElement('div');wall.className='wall banded flat';
+BANDS.forEach(function(b){
+  var band=document.createElement('div');band.className='band';
+  band.innerHTML='<span class="bandlab" data-i18n="band.'+b[0]+'">'+b[1].replace('&','&amp;')+'</span><div class="tier"></div>';
+  var t=band.querySelector('.tier');
+  LOGOS.filter(function(l){return l[4]===b[0]}).forEach(function(l){
+    var d=document.createElement('div');d.className='w '+l[2];
+    d.innerHTML='<img src="'+C+l[0]+'" alt="'+l[1]+'" title="'+l[1]+'" />';t.appendChild(d);
   });
-  wrap.appendChild(sec);
+  wall.appendChild(band);
 });
+document.getElementById('custwrap').appendChild(wall);
 </script>
 <div class="vmodal" id="introVideo" hidden role="dialog" aria-modal="true" aria-label="CUSTOM headquarters video">
   <div class="vbox">
@@ -282,7 +275,7 @@ REGIONS.forEach(function(r){
 function hsearch(f){var q=(f.q.value||'').trim();if(!q)return false;window.location.href='../search/?q='+encodeURIComponent(q);return false;}
 window.addEventListener('pageshow',function(){var i=document.querySelector('.searchbox input[name="q"]');if(i)i.value='';});
 </script>
-<script src="i18n.js?v=202610221700"></script>
+<script src="i18n.js?v=202610221830"></script>
 <script src="../assets/nav.js?v=202610221500" defer></script>
 <script src="../assets/protect.js?v=202609091200" defer></script>
 </body>

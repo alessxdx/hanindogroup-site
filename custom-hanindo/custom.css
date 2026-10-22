@@ -9,6 +9,11 @@
 /* region heading used on offices, customers and contact */
 .rhead{display:flex;align-items:baseline;gap:.8rem;margin:2rem 0 .2rem;padding-bottom:.5rem;border-bottom:2px solid var(--brand)}
 .rhead:first-child{margin-top:1rem}
+/* the region's own logo in place of its name: CUSTOM (S.E.A) Hanindo and Hanindo Shanghai */
+.rhead.rlogo{padding-bottom:.7rem}
+.rhead.rlogo img{display:block;width:auto;height:46px}
+.rhead.rlogo img.cn{height:58px}
+@media(max-width:640px){.rhead.rlogo img{height:36px}.rhead.rlogo img.cn{height:46px}}
 .rhead h3{font-size:1.15rem;letter-spacing:.1em;margin:0;color:#183a52}
 .rhead span{font-size:.82rem;color:var(--muted)}
 /* office cards */
@@ -19,13 +24,10 @@
 .ocard .ent{font-size:.8rem;color:var(--muted);margin:0 0 .6rem}
 .ocard .ln{font-size:.82rem;color:var(--ink);margin:0;line-height:1.5}
 .ocard.partner{background:var(--paper);border-style:dashed}
-/* customer wall, split by region then by sector */
+/* customer wall, banded by industry */
 .wall.flat .band{width:100%}
 .wall.flat .w{--logo-h:42px;--logo-max:280px;max-width:var(--logo-max)}
 .wall.flat .w.stacked{--logo-h:52px}
 @media(max-width:640px){.wall.flat .w{--logo-h:34px;--logo-max:185px}}
 .wall .w{opacity:1;transform:none}
-.custreg{margin-top:1.2rem}
-.custreg .rhead{justify-content:center;border-bottom:0;margin:2.4rem 0 .4rem}
-.custreg .rhead h3{font-size:1.3rem}
 @media(max-width:640px){.cmark .w1{font-size:1.05rem}.cmark{padding-left:.6rem}}

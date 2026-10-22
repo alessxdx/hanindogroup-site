@@ -24,7 +24,7 @@
 {"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://hanindogroup.com/custom-hanindo/#organization","name":"CUSTOM Hanindo","url":"https://hanindogroup.com/custom-hanindo/","image":"https://hanindogroup.com/photos/brand/og-printer-pos.jpg","description":"CUSTOM Hanindo — CUSTOM printing, scanning and point-of-sale hardware, supplied, integrated and supported across Southeast Asia and China.","parentOrganization":{"@id":"https://hanindogroup.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Hanindo Group","item":"https://hanindogroup.com/"},{"@type":"ListItem","position":2,"name":"CUSTOM Hanindo","item":"https://hanindogroup.com/custom-hanindo/"},{"@type":"ListItem","position":3,"name":"About Us","item":"https://hanindogroup.com/custom-hanindo/about.html"}]}]}
 </script>
 <link rel="stylesheet" href="../assets/site.css?v=202610221100" />
-<link rel="stylesheet" href="custom.css?v=202610221700" />
+<link rel="stylesheet" href="custom.css?v=202610221830" />
 <style>
 .off .shot{height:auto;aspect-ratio:2/1}
 .off .shot img{object-fit:cover;width:100%;height:100%}
@@ -36,6 +36,8 @@
 .ent p{font-size:.9rem;margin:0}
 .ent .cov{margin-top:.8rem;font-size:.8rem;color:var(--muted)}
 .ent .cov b{color:var(--ink)}
+/* each company's own logo at the head of its card */
+.ent .entlogo{display:block;height:58px;width:auto;max-width:100%;object-fit:contain;object-position:left center;margin:0 0 1rem}
 .entreg{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:#183a52;margin:1.6rem 0 0}
 </style>
 </head>
@@ -107,12 +109,12 @@
     <span class="kicker" data-i18n="ab.who">Who we are</span><h2 class="h2" data-i18n="ab.who.h2">Three companies, one team</h2>
     <p class="entreg">CUSTOM S.E.A</p>
     <div class="entgrid">
-      <div class="ent"><span class="yr" data-i18n="ab.e3.yr">Singapore · since 2014</span><h3>Gralessando (S) Pte. Ltd.</h3><p class="tn">CUSTOM (S.E.A) Hanindo</p><p data-i18n="ab.e3">The hub for Southeast Asia, with a Manila office and a partner in Thailand.</p><p class="cov"><b data-i18n="ab.cov">Covers:</b> <span data-i18n="ab.cov3">Singapore, Malaysia, Vietnam, Brunei, Cambodia, Laos, Myanmar, Philippines, Thailand</span></p></div>
-      <div class="ent"><span class="yr" data-i18n="ab.e2.yr">Indonesia · since 2012</span><h3>PT. Hanindo Automation Solutions</h3><p class="tn">CUSTOM Hanindo Indonesia</p><p data-i18n="ab.e2">Founded in 2002 for oil and gas automation, rebuilt around CUSTOM with local system integration in Jakarta.</p><p class="cov"><b data-i18n="ab.cov">Covers:</b> <span data-i18n="cty.id">Indonesia</span></p></div>
+      <div class="ent"><img class="entlogo" src="../photos/brand/logo-gralessando.png" alt="Gralessando (S) Pte. Ltd." /><span class="yr" data-i18n="ab.e3.yr">Singapore · since 2014</span><h3>Gralessando (S) Pte. Ltd.</h3><p class="tn">CUSTOM (S.E.A) Hanindo</p><p data-i18n="ab.e3">The hub for Southeast Asia, with a Manila office and a partner in Thailand.</p><p class="cov"><b data-i18n="ab.cov">Covers:</b> <span data-i18n="ab.cov3">Singapore, Malaysia, Vietnam, Brunei, Cambodia, Laos, Myanmar, Philippines, Thailand</span></p></div>
+      <div class="ent"><img class="entlogo" src="../photos/brand/logo-automation.png" alt="PT. Hanindo Automation Solutions" /><span class="yr" data-i18n="ab.e2.yr">Indonesia · since 2012</span><h3>PT. Hanindo Automation Solutions</h3><p class="tn">CUSTOM Hanindo Indonesia</p><p data-i18n="ab.e2">Founded in 2002 for oil and gas automation, rebuilt around CUSTOM with local system integration in Jakarta.</p><p class="cov"><b data-i18n="ab.cov">Covers:</b> <span data-i18n="cty.id">Indonesia</span></p></div>
     </div>
     <p class="entreg">CUSTOM China</p>
     <div class="entgrid">
-      <div class="ent"><span class="yr" data-i18n="ab.e1.yr">China · since 2007</span><h3>Hanindo (Shanghai) International Co., Ltd.</h3><p class="tn">CUSTOM China</p><p data-i18n="ab.e1">Where the CUSTOM partnership started. Registered office in Shanghai, representative office in Shenzhen.</p><p class="cov"><b data-i18n="ab.cov">Covers:</b> <span data-i18n="cty.cn">China</span></p></div>
+      <div class="ent"><img class="entlogo" src="../photos/brand/logo-shanghai.png" alt="Hanindo (Shanghai) International Co., Ltd." /><span class="yr" data-i18n="ab.e1.yr">China · since 2007</span><h3>Hanindo (Shanghai) International Co., Ltd.</h3><p class="tn">CUSTOM China</p><p data-i18n="ab.e1">Where the CUSTOM partnership started. Registered office in Shanghai, representative office in Shenzhen.</p><p class="cov"><b data-i18n="ab.cov">Covers:</b> <span data-i18n="cty.cn">China</span></p></div>
     </div>
   </div>
 </section>
@@ -190,7 +192,7 @@
 function hsearch(f){var q=(f.q.value||'').trim();if(!q)return false;window.location.href='../search/?q='+encodeURIComponent(q);return false;}
 window.addEventListener('pageshow',function(){var i=document.querySelector('.searchbox input[name="q"]');if(i)i.value='';});
 </script>
-<script src="i18n.js?v=202610221700"></script>
+<script src="i18n.js?v=202610221830"></script>
 <script src="../assets/nav.js?v=202610221500" defer></script>
 <script src="../assets/protect.js?v=202609091200" defer></script>
 </body>
