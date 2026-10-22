@@ -138,7 +138,7 @@
     "About": "Tentang",
     "Us": "Kami",
     "Company overview": "Profil perusahaan",
-    "Four decades in": "Empat dekade di",
+    "Decades in": "Puluhan tahun di",
     "petroleum equipment": "peralatan perminyakan",
     "PT. Hanindo Citra has represented Gilbarco Veeder-Root since 1987, the year its petroleum equipment work began.": "PT. Hanindo Citra telah menjadi perwakilan Gilbarco Veeder-Root sejak 1987, saat perusahaan mulai mengembangkan bisnisnya di bidang peralatan untuk industri perminyakan.",
     /* The Indonesian for the paragraph below arrived as two paragraphs
@@ -181,13 +181,13 @@
     "Why clients trust us": "Mengapa klien mempercayai kami",
     /* "Since 1987" is a date, not a phrase — it reads the same in both
        languages, so it has no entry here and is left alone by the toggle. */
-    "The original petroleum equipment business that became today's Hanindo Group, serving Indonesia's fuel retail industry for over four decades.": "Bisnis peralatan perminyakan yang menjadi cikal bakal Hanindo Group hari ini, melayani industri ritel bahan bakar Indonesia selama lebih dari empat dekade.",
+    "The original petroleum equipment business that became today's Hanindo Group, serving Indonesia's fuel retail industry for decades.": "Bisnis peralatan perminyakan yang menjadi cikal bakal Hanindo Group hari ini, melayani industri ritel bahan bakar Indonesia selama puluhan tahun.",
     "Global Brands": "Merek Global",
     "Equipment from trusted international manufacturers, selected for the reliability and performance demanded by modern fuel stations.": "Peralatan dari produsen internasional tepercaya, dipilih untuk keandalan dan performa yang dituntut SPBU modern.",
     "End-to-End Service": "Layanan Menyeluruh",
     "Consultation, installation, maintenance, and technical support from a single experienced team.": "Konsultasi, pemasangan, perawatan, dan dukungan teknis dari satu tim yang berpengalaman.",
     "Credentials": "Kredensial",
-    "Certifications & Licenses": "Sertifikasi & Lisensi",
+    "Certifications & Licences": "Sertifikasi & Lisensi",
     "Quality Management": "Manajemen Mutu",
     "Environmental Management": "Manajemen Lingkungan",
     "Occupational Health & Safety": "Keselamatan & Kesehatan Kerja",

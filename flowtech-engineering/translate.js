@@ -119,7 +119,7 @@
     "Company overview": "Profil perusahaan",
     "Built on Fuel Station Experience": "Dibangun dari pengalaman SPBU",
     "PT. Flowtech Engineering was established in 2002 as part of the Hanindo Group. Drawing on the Group's experience in the fuel station business, Flowtech was established to provide construction and engineering solutions for the industry.": "PT. Flowtech Engineering didirikan pada 2002 sebagai bagian dari Hanindo Group. Berbekal pengalaman Grup dalam bisnis SPBU, Flowtech didirikan untuk menghadirkan solusi konstruksi dan rekayasa bagi industri tersebut.",
-    "We have delivered new construction and renovation projects for major energy companies in Indonesia, including Pertamina, Petronas, Shell, Total and Chevron.": "Kami telah menyelesaikan proyek pembangunan baru dan renovasi untuk perusahaan energi besar di Indonesia, termasuk Pertamina, Petronas, Shell, Total, dan Chevron.",
+    "We have delivered new construction and renovation projects for major energy companies in Indonesia, including Pertamina, Petronas, Total and Chevron.": "Kami telah menyelesaikan proyek pembangunan baru dan renovasi untuk perusahaan energi besar di Indonesia, termasuk Pertamina, Petronas, Total, dan Chevron.",
     "Today, Flowtech provides construction solutions for fuel stations and the wider oil & gas industry, covering engineering, construction, mechanical and electrical installation, commissioning and operational preparation.": "Kini, Flowtech menghadirkan solusi konstruksi untuk SPBU dan industri minyak & gas yang lebih luas, mencakup rekayasa, konstruksi, pemasangan mekanikal dan elektrikal, commissioning, serta persiapan operasional.",
 
     /* ---- about page: vision & mission ----

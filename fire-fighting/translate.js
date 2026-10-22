@@ -169,7 +169,7 @@
     "Invest continuously in innovation and in our people.": "Terus berinvestasi dalam inovasi, teknologi, dan pengembangan sumber daya manusia.",
     "Leverage advanced technology and proven systems to enhance efficiency, quality and safety.": "Memanfaatkan teknologi mutakhir dan sistem yang teruji untuk meningkatkan efisiensi, kualitas, dan keselamatan.",
     "Credentials": "Kredensial",
-    "Certifications & Licenses": "Sertifikasi & Lisensi",
+    "Certifications & Licences": "Sertifikasi & Lisensi",
     /* Sub-label under the SKK thumbnail in the footer certification strip. */
     "Technical Assessor": "Pengkaji Teknis",
     "Certified to international management-system standards for the engineering, procurement, construction and supply of mechanical, electrical, instrumentation and related civil works.": "Tersertifikasi standar sistem manajemen internasional untuk rekayasa, pengadaan, konstruksi, dan penyediaan pekerjaan mekanikal, elektrikal, instrumentasi, serta pekerjaan sipil terkait.",
