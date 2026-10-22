@@ -39,6 +39,16 @@
 .ccard .acts{margin-top:auto;padding-top:1rem;display:flex;gap:.5rem;flex-wrap:wrap}
 .ccard .acts .btn{padding:.5rem .95rem;font-size:.8rem}
 @media(max-width:480px){.ccard dl{grid-template-columns:1fr}.ccard dt{margin-top:.3rem}}
+/* CUSTOM S.E.A: the four offices side by side. At a quarter of the width the
+   label-beside-value list is too narrow, so labels sit above their values. */
+.cgrid.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.cgrid.four .ccard{padding:1.2rem 1.15rem}
+.cgrid.four dl{grid-template-columns:1fr;gap:0}
+.cgrid.four dt{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;margin-top:.7rem}
+.cgrid.four dt:first-child{margin-top:0}
+.cgrid.four dd{overflow-wrap:anywhere}
+@media(max-width:1100px){.cgrid.four{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.cgrid.four{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -96,7 +106,7 @@
     <span class="kicker" data-i18n="ct.kick">How to reach us</span><h2 class="h2" data-i18n="ct.h2">Choose the office nearest you.</h2>
 
     <div class="rhead"><h3>CUSTOM S.E.A</h3><span>CUSTOM (S.E.A) Hanindo</span></div>
-    <div class="cgrid">
+    <div class="cgrid four">
       <div class="ccard"><span class="cty" data-i18n="cty.sg">Singapore</span><h3>Singapore</h3><p class="ent">Gralessando (S) Pte. Ltd.</p>
         <dl><dt data-i18n="ct.l.addr">Address</dt><dd>16 Jln Kilang Timor, #03-02 Redhill Forum, Singapore 159308</dd>
         <dt data-i18n="ct.l.tel">Telephone</dt><dd><a href="tel:+6569080281">+65 6908 0281</a></dd>
