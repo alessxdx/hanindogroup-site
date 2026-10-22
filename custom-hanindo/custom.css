@@ -18,6 +18,8 @@
 .ocard h3{font-size:1.02rem;margin:.25rem 0 .35rem}
 .ocard .ent{font-size:.8rem;color:var(--muted);margin:0 0 .6rem}
 .ocard .ln{font-size:.82rem;color:var(--ink);margin:0;line-height:1.5}
+/* an email address on its own line and never split across two */
+.ocard .ln .em{white-space:nowrap}
 .ocard.partner{background:var(--paper);border-style:dashed}
 /* customer wall, banded by industry */
 .wall.flat .band{width:100%}
