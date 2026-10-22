@@ -35,7 +35,9 @@
 .ccard dt{color:var(--muted);font-weight:600}
 .ccard dd{margin:0;color:var(--ink)}
 .ccard dd a{color:var(--brand)}
-.ccard .acts{margin-top:auto;padding-top:1rem;display:flex;gap:.5rem;flex-wrap:wrap}
+.ccard .acts{margin-top:auto;padding-top:1rem;display:flex;flex-direction:column;align-items:flex-start;gap:.5rem}
+/* Email is always the bottom button, so it lines up across a row of cards whether or not a card has directions */
+.ccard .acts .btn-fire{order:2}
 .ccard .acts .btn{padding:.5rem .95rem;font-size:.8rem}
 @media(max-width:480px){.ccard dl{grid-template-columns:1fr}.ccard dt{margin-top:.3rem}}
 /* CUSTOM S.E.A: the four offices side by side. At a quarter of the width the
