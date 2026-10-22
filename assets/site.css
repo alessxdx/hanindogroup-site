@@ -982,18 +982,21 @@ a.brand:not([href]){cursor:default}
    script, no fade, nothing to fail. A common baseline and two different
    sizes are what stop a set of cut-outs photographed at the same scale
    from reading as a flat repeat.
-   Three units in a pyramid: the monitor across the top, the two smaller
-   machines beneath it. The rows carry explicit heights and each image
+   Five units: the monitor across the top, the four smaller machines two
+   by two beneath it (the P3L and P-RANGER A12 joined on 2026-10-22). The
+   rows carry explicit heights and each image
    fills its row — a percentage max-height cannot resolve against an fr
    row, so the images would render at natural size and overflow. Sizing by
-   row also means the two machines below come out matched without a width
-   per image; every Custom shot is on the same 270x221 canvas.
+   row also means the machines below come out matched without a width
+   per image; every Custom shot is on the same 270x221 canvas (the two
+   newer ones at 540x442, the same proportions).
    Below 900px the stage is dropped: there is no room beside a wrapping
    heading, and stacking it underneath pushes the page down for pure
-   decoration. Shared by the Gralessando and Hanindo Shanghai home pages. */
+   decoration. Shared by the Gralessando, Hanindo Shanghai and Automation
+   Solutions home pages. */
 .hero-show .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(1.2rem,2.4vw,2rem);align-items:center}
 .hstage{display:grid;grid-template-columns:1fr 1fr;
-  grid-template-rows:clamp(105px,18vh,176px) clamp(85px,13vh,128px);
+  grid-template-rows:clamp(95px,16vh,160px) repeat(2,clamp(72px,11vh,112px));
   gap:clamp(.3rem,.8vw,.55rem);justify-items:center;align-items:end}
 .hstage img{height:100%;width:auto;max-width:100%;object-fit:contain;
   filter:drop-shadow(0 14px 20px rgba(0,0,0,.5))}
