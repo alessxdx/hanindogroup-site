@@ -219,7 +219,7 @@
       ['automotive/',           'PT. Hanindo Automotive',                     '']
     ]],
     ['Printer &amp; POS', [
-      ['custom-hanindo/',           'CUSTOM Hanindo',                             'CUSTOM S.E.A &middot; CUSTOM China']
+      ['custom-hanindo/',           'CUSTOM Hanindo',                             'CUSTOM China &amp; S.E.A']
     ]]
   ];
 
