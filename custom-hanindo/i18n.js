@@ -20,7 +20,7 @@ id: {
   'cust.kick': 'Pelanggan kami',
   'band.av': 'Bandara &amp; penerbangan', 'band.tr': 'Transportasi &amp; jalan tol', 'band.rt': 'Ritel, perbankan &amp; layanan publik',
   'band.it': 'Teknologi &amp; integrator sistem', 'band.in': 'Industri &amp; rekayasa',
-  'foot.desc': 'Hanindo Group telah melayani bisnis di seluruh Indonesia sejak 2002, menyediakan solusi teknologi, peralatan, dan rekayasa untuk berbagai industri khusus.',
+  'foot.desc': 'Hanindo Group telah melayani berbagai bisnis di seluruh Indonesia sejak 2002, menyediakan solusi teknologi, peralatan, dan teknik di berbagai industri khusus. Perusahaan kami mencakup minyak &amp; gas, otomasi, otomotif, proteksi kebakaran, percetakan, dan POS, memadukan merek internasional dengan keahlian lokal dan dukungan teknis.',
   'foot.reg': 'Perusahaan terdaftar', 'foot.off': 'Kantor', 'foot.rights': '&copy; 2026 Hanindo Group. Hak cipta dilindungi.',
   'cty.cn': 'Tiongkok', 'cty.sg': 'Singapura', 'cty.id': 'Indonesia', 'cty.ph': 'Filipina', 'cty.th': 'Thailand',
   /* about */
@@ -80,7 +80,7 @@ zh: {
   'cust.kick': '客户群',
   'band.av': '机场与航空', 'band.tr': '交通与收费公路', 'band.rt': '零售、银行与公共服务',
   'band.it': '科技与系统集成商', 'band.in': '工业与工程',
-  'foot.desc': 'Hanindo 集团自 2002 年起服务印度尼西亚各地企业，为多个专业行业提供技术、设备与工程解决方案。',
+  'foot.desc': 'Hanindo 集团自 2002 年起服务印度尼西亚各地企业，为多个专业行业提供技术、设备与工程解决方案。旗下公司涵盖油气、自动化、汽车、消防、打印及 POS 领域，将国际品牌与本地专业知识和技术支持相结合。',
   'foot.reg': '注册公司', 'foot.off': '办事处', 'foot.rights': '&copy; 2026 Hanindo 集团 版权所有',
   'cty.cn': '中国', 'cty.sg': '新加坡', 'cty.id': '印度尼西亚', 'cty.ph': '菲律宾', 'cty.th': '泰国',
   'ab.h1': '关于<span class="fx">我们</span>',
