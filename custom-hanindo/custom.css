@@ -25,3 +25,11 @@
 .wall.flat .w.stacked{--logo-h:52px}
 @media(max-width:640px){.wall.flat .w{--logo-h:34px;--logo-max:185px}}
 .wall .w{opacity:1;transform:none}
+/* Header: CUSTOM's own wordmark beside the Hanindo Group logo, in place
+   of the combined Hanindo + CUSTOM (S.E.A) lockup. The wordmark is a
+   wide, short strip, so it is sized by its letter height: 16px, the
+   size the owner chose, on desktop and phone alike. It is capped
+   by max-height rather than a fixed height: on a phone the header leaves
+   it less width than 16px of height needs, and a fixed height let the
+   global img max-width squash the letters instead of scaling them. */
+.cobrand img.cologo.wordmark{width:auto;height:auto;max-height:16px;max-width:100%}
