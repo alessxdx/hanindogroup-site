@@ -135,6 +135,10 @@
     "Italy": "Italia",
     "PT. Hanindo Automotive was established within the Hanindo Group in 2002, providing workshop and industrial equipment solutions designed to improve efficiency, productivity and ease of use.": "PT. Hanindo Automotive didirikan di dalam Hanindo Group pada tahun 2002, menyediakan solusi peralatan bengkel dan industri yang dirancang untuk meningkatkan efisiensi, produktivitas, dan kemudahan penggunaan.",
     "Beyond supplying equipment, we support the full lifecycle of every solution — from specification and installation to commissioning, operator training, spare parts and after-sales service. As an authorised and trusted distributor in Indonesia for RAASM, HPA-Faip and AIRTEC, alongside our own brands WELDANN, ATOM and HAKIRO, we equip workshops and industrial facilities with reliable solutions from a single partner.": "Lebih dari sekadar memasok peralatan, kami mendukung seluruh proses mulai dari penentuan spesifikasi dan pemasangan hingga commissioning, pelatihan operator, suku cadang, dan layanan setelah pembelian. Sebagai distributor resmi dan tepercaya di Indonesia untuk RAASM, HPA-Faip, dan AIRTEC, bersama merek kami sendiri WELDANN, ATOM, dan HAKIRO, kami melengkapi bengkel dan fasilitas industri dengan solusi andal dari satu mitra.",
+    /* Captions on the three overview photos. */
+    "Vehicle lifts and wheel alignment": "Lift kendaraan dan spooring",
+    "Tyre service equipment": "Peralatan layanan ban",
+    "Lubrication systems": "Sistem pelumasan",
     "The principals we distribute": "Merek yang kami distribusikan",
     "Sole distributor for Indonesia.": "Distributor tunggal untuk Indonesia.",
     "Digital tyre inflators — workshop, forecourt and plant": "Pengisi angin ban digital — bengkel, SPBU, dan pabrik",
