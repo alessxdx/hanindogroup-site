@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CUSTOM Hanindo (mock-up) | Hanindo Group</title>
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="stylesheet" href="../../assets/site.css?v=202610221100" />
+<link rel="stylesheet" href="mock.css" />
+<style>
+.split-tight{gap:clamp(1.6rem,3vw,2.4rem)}
+.split-tight .lede{margin-top:.75rem}
+.section.compact .split .shot{aspect-ratio:2.2;min-height:0}
+.section.compact .split .shot img{object-position:center 66%}
+.watchlink{display:inline-flex;align-items:center;gap:.85rem;margin-top:1.2rem;padding:0;
+  background:none;border:0;cursor:pointer;font:inherit;font-size:.92rem;font-weight:600;color:#fff;text-align:left}
+.watchlink .wthumb{position:relative;flex:none;width:128px;aspect-ratio:16/9;border-radius:6px;overflow:hidden;
+  background:#0b2c4d;border:1px solid rgba(255,255,255,.35);box-shadow:0 6px 18px rgba(0,0,0,.3)}
+.watchlink .wprev{display:block;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.watchlink .wplay{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;
+  background:rgba(4,32,58,.55);border:1px solid rgba(255,255,255,.7);transition:background .18s,transform .18s}
+.watchlink .wplay svg{width:11px;height:11px;fill:#fff;margin-left:2px}
+.watchlink .wtext{display:flex;flex-direction:column;gap:.15rem}
+.watchlink .wdur{font-size:.78rem;font-weight:500;color:#a9bcd6}
+.watchlink:hover .wplay{background:var(--brand);border-color:var(--brand);transform:translate(-50%,-50%) scale(1.08)}
+@media(max-width:560px){.watchlink .wthumb{width:112px}}
+.vmodal{position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;
+  padding:var(--pad);background:rgba(2,14,28,.88)}
+.vmodal[hidden]{display:none}
+.vmodal .vbox{position:relative;width:min(960px,100%)}
+.vmodal video{display:block;width:100%;aspect-ratio:16/9;background:#000;border-radius:var(--r)}
+.vmodal .vclose{position:absolute;top:-48px;right:0;width:38px;height:38px;border-radius:50%;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.35)}
+.vmodal .vclose svg{width:18px;height:18px;stroke:#fff;stroke-width:2.2;fill:none}
+</style>
+</head>
+<body>
+<div class="mockbar"><span data-i18n="mock">MOCK-UP — one CUSTOM Hanindo site in place of three. Translations are drafts.</span> &nbsp;<a href="../group-menu.html">Group menu</a> · <a href="index.html">Home</a> · <a href="about.html">About</a> · <a href="contact.html">Contact</a></div>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="brands">
+      <a class="brand" href="../../" aria-label="Hanindo Group — main page"><img src="../../photos/brand/logo-lockup.png" alt="Hanindo Group — Your Solution Provider" /></a>
+      <a class="cmark" href="index.html" aria-label="CUSTOM Hanindo — home"><span class="w1">CUSTOM</span><span class="w2">Hanindo · <em>S.E.A</em> &amp; <em>China</em></span></a>
+    </div>
+    <div class="top-right">
+      <a class="grouplink" href="../../"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg><span data-i18n="back">Hanindo Group</span></a>
+      <div class="langtoggle" role="group" aria-label="Language"><svg class="globe" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.7 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.7-3.9-9S9.4 5.6 12 3z"/></svg><button type="button" data-ml="en">EN</button><button type="button" data-ml="id">ID</button><button type="button" data-ml="zh">中文</button></div>
+    </div>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</div>
+<header class="navbar">
+  <div class="wrap">
+    <ul class="tabs" id="tabs">
+      <li class="active"><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+      <li class="has-drop">
+        <a href="#"><span data-i18n="nav.products">Products &amp; Services</span> <svg class="caret" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
+        <ul class="drop drop-co">
+          <li><a href="https://www.custom.biz/en_GB/catalog/printers" target="_blank" rel="noopener">Professional Printing Solutions</a></li>
+          <li><a href="https://www.custom.biz/en/products/pos-terminals" target="_blank" rel="noopener">DC / POS Solutions</a></li>
+          <li><a href="https://www.custom.biz/en_GB/catalog/scanning-solutions" target="_blank" rel="noopener">Scanning Solutions</a></li>
+          <li><a href="https://www.custom.biz/en_GB/catalog/self-service-solutions" target="_blank" rel="noopener">Self-Service Solutions</a></li>
+          <li><a href="https://www.custom.biz/en/products/mobility" target="_blank" rel="noopener">Mobility</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="pagehero hero-tall hero-show">
+  <div class="bg"><img src="../../photos/printer-pos/hero/hero-printer-pos.jpg" alt="" style="object-position:center 70%" /></div>
+  <div class="ov"></div><div class="glow"></div>
+  <div class="wrap">
+    <div class="hcopy">
+      <div class="crumb"><a href="../../">Hanindo Group</a><span class="sep">/</span><a href="index.html">CUSTOM Hanindo</a></div>
+      <h1>CUSTOM <span class="fx">Hanindo</span></h1>
+      <p class="tradename" data-i18n="hero.tag">Printing, scanning &amp; point of sale across Asia</p>
+      <p class="intro hide-sm" data-i18n="hero.intro">The Hanindo Group&rsquo;s CUSTOM business supplies, integrates and supports printing, scanning and point-of-sale hardware for retail, transport and service operators in China and Southeast Asia.</p>
+      <div class="regions">
+        <div class="region"><span class="rlab">CUSTOM S.E.A</span><span class="chip" data-i18n="mk.sg">Singapore</span><span class="chip" data-i18n="mk.id">Indonesia</span><span class="chip" data-i18n="mk.ph">Philippines</span><span class="chip" data-i18n="mk.th">Thailand</span><span class="chip" data-i18n="mk.rest">Rest of Southeast Asia</span></div>
+        <div class="region"><span class="rlab">CUSTOM China</span><span class="chip" data-i18n="mk.sh">Shanghai</span><span class="chip" data-i18n="mk.sz">Shenzhen</span></div>
+      </div>
+      <button type="button" class="watchlink" data-intro-video aria-haspopup="dialog"><span class="wthumb"><video class="wprev" muted autoplay loop playsinline preload="auto" poster="../../photos/video/custom-hq-preview.jpg" aria-hidden="true" tabindex="-1"><source src="../../photos/video/custom-hq-preview.mp4" type="video/mp4" /></video><span class="wplay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span></span><span class="wtext"><span class="wlab" data-i18n="video">Watch CUSTOM's new headquarters</span><span class="wdur">1:06</span></span></button>
+    </div>
+    <div class="hstage" aria-hidden="true">
+      <img class="top" src="../../photos/printer-pos/products/dc-pos.png" alt="" />
+      <img src="../../photos/printer-pos/products/scanning.png" alt="" />
+      <img src="../../photos/printer-pos/products/professional-printing.png" alt="" />
+      <img src="../../photos/printer-pos/products/p3l.png" alt="" />
+      <img src="../../photos/printer-pos/products/p-ranger-a12.png" alt="" />
+    </div>
+  </div>
+</section>
+
+<section class="section white compact">
+  <div class="wrap">
+    <div class="split split-tight">
+      <div>
+        <span class="kicker">CUSTOM Hanindo</span>
+        <h2 class="h2" data-i18n="intro.h2">One CUSTOM partner, from China to Southeast Asia.</h2>
+        <p class="lede" data-i18n="intro.lede">Since 2005, Hanindo has brought CUSTOM&rsquo;s range to Asia through its own registered companies rather than agents: in China since 2007, Indonesia since 2012 and Singapore since 2014, with offices and partners now covering the rest of Southeast Asia.</p>
+        <ul class="checks checks-desc bullets">
+          <li><span data-i18n="chk1"><b>Professional printing</b>POS, receipt, fiscal, ticket, label and mobile printers.</span></li>
+          <li><span data-i18n="chk2"><b>Point of sale &amp; data capture</b>Terminals, touch systems, cash registers, scanners and payment terminals.</span></li>
+          <li><span data-i18n="chk3"><b>Scanning</b>Document scanners and multifunction print-and-scan systems.</span></li>
+        </ul>
+      </div>
+      <div class="shotstack" style="grid-template-columns:1fr">
+        <div class="shot"><img src="../../photos/printer-pos/office/gralessando-office.jpg" alt="CUSTOM Hanindo Singapore office" /></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section paper compact">
+  <div class="wrap">
+    <span class="kicker" data-i18n="supply">What we supply</span>
+    <div class="tilestrip">
+      <div class="strip strip-4" id="tilestrip">
+        <a class="tile" href="https://www.custom.biz/en_GB/catalog/printers" target="_blank" rel="noopener"><img src="../../photos/printer-pos/products/professional-printing.png" alt="" /><span>Professional Printing Solutions</span></a>
+        <a class="tile" href="https://www.custom.biz/en/products/pos-terminals" target="_blank" rel="noopener"><img src="../../photos/printer-pos/products/dc-pos.png" alt="" /><span>DC / POS Solutions</span></a>
+        <a class="tile" href="https://www.custom.biz/en_GB/catalog/scanning-solutions" target="_blank" rel="noopener"><img src="../../photos/printer-pos/products/scanning.png" alt="" /><span>Scanning Solutions</span></a>
+        <a class="tile" href="https://www.custom.biz/en_GB/catalog/self-service-solutions" target="_blank" rel="noopener"><img src="../../photos/printer-pos/products/self-service.png" alt="" /><span>Self-Service Solutions</span></a>
+        <a class="tile" href="https://www.custom.biz/en/products/mobility" target="_blank" rel="noopener"><img src="../../photos/printer-pos/products/mobility.png" alt="" /><span>Mobility</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHERE WE ARE — every office, split into the two regions. -->
+<section class="section white compact" id="offices">
+  <div class="wrap">
+    <span class="kicker" data-i18n="off.kick">Where we are</span><h2 class="h2" data-i18n="off.h2">Two regions, one team.</h2>
+    <div class="rhead"><h3>CUSTOM S.E.A</h3><span>CUSTOM (S.E.A) Hanindo</span></div>
+    <div class="offrow">
+      <div class="ocard"><span class="cty" data-i18n="cty.sg">Singapore</span><h3>Singapore</h3><p class="ent">Gralessando (S) Pte. Ltd.</p><p class="ln">16 Jln Kilang Timor, #03-02 Redhill Forum, Singapore 159308<br/>+65 6908 0281 · csea-sg@hanindogroup.com</p></div>
+      <div class="ocard"><span class="cty" data-i18n="cty.id">Indonesia</span><h3>Jakarta</h3><p class="ent">PT. Hanindo Automation Solutions</p><p class="ln">Jl. Fatmawati Raya No. 55, Jakarta Selatan 12410<br/>+62 21 75900909 · csea-in@hanindogroup.com</p></div>
+      <div class="ocard"><span class="cty" data-i18n="cty.ph">Philippines</span><h3>Manila</h3><p class="ent">CUSTOM (S.E.A) Hanindo</p><p class="ln"><span class="tbc" data-i18n="off.tbc">Address to be confirmed</span><br/>+63 915 356 9964 · csea-ph@hanindogroup.com</p></div>
+      <div class="ocard partner"><span class="cty" data-i18n="cty.th">Thailand</span><h3>Bangkok</h3><p class="ent">Flowco Co., Ltd. — <span data-i18n="off.partner">partner office</span></p><p class="ln"><span class="tbc" data-i18n="off.tbc">Address to be confirmed</span><br/>csea-th@hanindogroup.com</p></div>
+    </div>
+    <div class="rhead"><h3>CUSTOM China</h3><span>Hanindo (Shanghai) International Co., Ltd.</span></div>
+    <div class="offrow">
+      <div class="ocard"><span class="cty" data-i18n="cty.cn">China</span><h3>Shanghai</h3><p class="ent">Hanindo (Shanghai) International Co., Ltd.</p><p class="ln">Room 3211, Tower B, The Place, Zunyi Rd 100, Changning district, Shanghai<br/>+86 21 6237 0600</p></div>
+      <div class="ocard"><span class="cty" data-i18n="cty.cn">China</span><h3>Shenzhen</h3><p class="ent" data-i18n="off.sz">Representative office of the Shanghai company</p><p class="ln">Room 808 Haosheng Plaza, No. 4096 Dongbin Rd, Nanshan District, Shenzhen<br/>+86 755 8665 2653</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CUSTOMER BASE — all three walls, shown in full: CUSTOM S.E.A first, then CUSTOM China,
+     each banded by sector. Nothing removed yet. -->
+<section class="customers" aria-label="Customer base" style="background:var(--paper)">
+  <div class="chead"><span class="kick" data-i18n="cust.kick">Customer base</span></div>
+  <div class="wrap" id="custwrap"></div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="fbrand"><strong>HANINDO GROUP</strong><span>Your Solution Provider</span><p data-i18n="foot.desc">Hanindo Group has served businesses across Indonesia since 2002, providing technology, equipment and engineering solutions across specialised industries.</p></div>
+      <div><h4>CUSTOM Hanindo</h4><ul><li><a href="index.html" data-i18n="nav.home">Home</a></li><li><a href="about.html" data-i18n="nav.about">About Us</a></li><li><a href="#" data-i18n="nav.products">Products &amp; Services</a></li><li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li></ul></div>
+      <div><h4 data-i18n="foot.reg">Registered companies</h4><ul><li>Gralessando (S) Pte. Ltd.<small class="tname">CUSTOM (S.E.A) Hanindo</small></li><li>PT. Hanindo Automation Solutions<small class="tname">CUSTOM Hanindo Indonesia</small></li><li>Hanindo (Shanghai) International Co., Ltd.<small class="tname">CUSTOM China</small></li></ul></div>
+      <div><h4 data-i18n="foot.off">Offices</h4><span class="cl"><b>Singapore</b> +65 6908 0281</span><span class="cl"><b>Jakarta</b> +62 21 75900909</span><span class="cl"><b>Manila</b> +63 915 356 9964</span><span class="cl"><b>Shanghai</b> +86 21 6237 0600</span><span class="cl"><b>Shenzhen</b> +86 755 8665 2653</span></div>
+    </div>
+    <div class="foot-bottom"><span data-i18n="foot.rights">&copy; 2026 Hanindo Group. All Rights Reserved.</span><span>CUSTOM Hanindo</span></div>
+  </div>
+</footer>
+
+<script>
+/* [file, name, shape class, region, band] */
+var C='../../photos/customers/';
+var LOGOS=[
+['sita.svg','SITA','mid','sea','av'],['amadeus.png','Amadeus','','sea','av'],['collins.png','Collins Aerospace','mid','sea','av'],
+['changi-airport.webp','Changi Airport Singapore','sq','sea','av'],['singapore-airlines.png','Singapore Airlines','mid','sea','av'],['airasia.png','AirAsia','mid','sea','av'],
+['soekarno-hatta.png?v=5','Soekarno-Hatta International Airport','mid stacked','sea','av'],['surabaya-airport.png?v=5','Juanda International Airport','','sea','av'],
+['bali-airport.png?v=5','I Gusti Ngurah Rai International Airport','','sea','av'],['kediri.png?v=5','Dhoho Airport','sq','sea','av'],
+['garuda.png?v=5','Garuda Indonesia','','sea','av'],['citi-link.png?v=5','Citilink','','sea','av'],['injourney-angkasa.png?v=5','InJourney Aviation Services','','sea','av'],
+['manila-airport.svg','Manila International Airport Authority','sq','sea','av'],['mactan-cebu.png','Mactan-Cebu International Airport Authority','sq','sea','av'],
+['philippine-airlines.svg','Philippine Airlines','','sea','av'],['cebu-pacific.png','Cebu Pacific','','sea','av'],
+['acv-vietnam.png','Airports Corporation of Vietnam','','sea','av'],['don-mueang-bkk.svg','Don Mueang International Airport','sq','sea','av'],['ventiane-laos.png','Wattay International Airport','sq','sea','av'],
+['smrt.png','SMRT Trains','','sea','tr'],['strides.png','Strides','','sea','tr'],['sg-cruise-centre.png','Singapore Cruise Centre','sq','sea','tr'],
+['jasamarga.png?v=5','Jasa Marga','','sea','tr'],['hutama-karya.png?v=5','Hutama Karya','sq','sea','tr'],['cmnp.png?v=5','Citra Marga Nusaphala Persada','sq','sea','tr'],
+['cmlj.png?v=5','Citra Marga Lintas Jabar','sq','sea','tr'],['jlj.webp?v=5','Jalantol Lingkarluar Jakarta','sq','sea','tr'],['mtn.png?v=5','Marga Trans Nusantara','sq','sea','tr'],['pbtr.png?v=5','Pemalang Batang Tol Road','','sea','tr'],
+['burger-king.png','Burger King','sq','sea','rt'],['jd-sports.png','JD Sports','sq','sea','rt'],['nlb.png','National Library Board','mid','sea','rt'],
+['sg-pools.png','Singapore Pools','sq','sea','rt'],['bsn.png','Bank Simpanan Nasional','mid','sea','rt'],['brinks.png?v=5','Brink’s','','sea','rt'],
+['st-engineering.png','ST Engineering','','sea','it'],['daifuku.png','Daifuku','mid','sea','it'],['aboitiz.png','Aboitiz InfraCapital','mid','sea','it'],['idemia.png','IDEMIA','','sea','it'],
+['wei-long-electronics.png','Wei Long Electronics','sq','sea','it'],['xyreon.png','Xyreon Technology','mid','sea','it'],['aogo.png','AOGO Technologies','','sea','it'],
+['aldan.png','Aldan Technology','sq','sea','it'],['epoint.png','Epoint Systems','mid','sea','it'],['iinnova.png','i-innova','','sea','it'],['genie.png','Genie','mid','sea','it'],
+['altera.webp?v=5','Altera Cipta Teknologi','mid','sea','it'],['asyst.png?v=5','Asyst','mid','sea','it'],['mco-jaya.png?v=5','MCO Jaya','','sea','it'],['nutech.png?v=5','Nutech','mid','sea','it'],
+['pt-murni.png?v=5','PT Murni','sq','sea','it'],['elta-prima.png?v=5','Elta Prima','mid','sea','it'],['corra.png?v=5','Corra','mid','sea','it'],['sbn.png?v=5','SBN','mid','sea','it'],
+
+['china-eastern.png?v=2','China Eastern Airlines','','cn','av'],['spring-airlines.png?v=2','Spring Airlines','sq','cn','av'],['travel-sky.png?v=2','TravelSky','sq','cn','av'],['zhongjia-jincheng.png?v=2','Zhongjia Jincheng','mid','cn','av'],
+['elis-infotech.png?v=2','Elis Infotech','','cn','ss'],['grg-banking.png?v=2','GRGBanking','mid','cn','ss'],['golong.png?v=2','Hangzhou GOLONG Technology','sq','cn','ss'],['legate.png?v=2','Suzhou Legate','mid','cn','ss'],
+['histonetec.png?v=2','HiStone','','cn','ss'],['hisense.svg?v=2','Hisense','','cn','ss'],['ccl.png?v=2','CCL','mid','cn','ss'],['kioskidea.png?v=2','Kioskidea','','cn','ss'],
+['inspur.svg?v=2','Inspur','','cn','ss'],['damo.png?v=2','DEMO','','cn','ss'],['gwi.png?v=2','GreatWall Information','','cn','ss'],['ht-kiosk.png?v=2','Hangzhou Huiguang Technology','mid','cn','ss'],
+['hantai.png?v=2','Hantai Precision Industry','','cn','ss'],['hongjiali-group.png?v=2','Hongjiali Group','','cn','ss'],['kmy.png?v=2','KMY','sq','cn','ss'],['micrown.png?v=2','Micrown','','cn','ss'],
+['shenzhen-xufan.png?v=2','Shenzhen Xufan Technology','','cn','ss'],['szzt.png?v=2','SZZT Electronics','','cn','ss'],['yilianzhong.png?v=2','Yilianzhong','mid','cn','ss'],['yilisha.png?v=2','Yilisha','','cn','ss'],
+['yisida.png?v=2','Yisida','','cn','ss'],['zhilai.png?v=2','Zhilai Sci & Tech','mid','cn','ss'],
+['getinge.svg?v=2','Getinge','','cn','in'],['polysoude.png?v=2','Polysoude','','cn','in']
+];
+var REGIONS=[
+  ['sea','CUSTOM S.E.A','Singapore · Indonesia · Philippines · Thailand · Vietnam · Malaysia',[['av','Airports & aviation'],['tr','Transport & toll roads'],['rt','Retail, banking & public services'],['it','Technology, integrators & industry']]],
+  ['cn','CUSTOM China','Shanghai · Shenzhen',[['av','Airports & aviation'],['ss','Self-service, banking & kiosk makers'],['in','Industry & technology']]]
+];
+var wrap=document.getElementById('custwrap');
+REGIONS.forEach(function(r){
+  var sec=document.createElement('div');sec.className='custreg';
+  sec.innerHTML='<div class="rhead"><h3>'+r[1]+'</h3></div><div class="wall banded flat"></div>';
+  var wall=sec.querySelector('.wall');
+  r[3].forEach(function(b){
+    var band=document.createElement('div');band.className='band';
+    band.innerHTML='<span class="bandlab" data-i18n="band.'+b[0]+'">'+b[1].replace('&','&amp;')+'</span><div class="tier"></div>';
+    var t=band.querySelector('.tier');
+    LOGOS.filter(function(l){return l[3]===r[0]&&l[4]===b[0]}).forEach(function(l){
+      var d=document.createElement('div');d.className='w '+l[2];
+      d.innerHTML='<img src="'+C+l[0]+'" alt="'+l[1]+'" title="'+l[1]+'" />';t.appendChild(d);
+    });
+    wall.appendChild(band);
+  });
+  wrap.appendChild(sec);
+});
+</script>
+<div class="vmodal" id="introVideo" hidden role="dialog" aria-modal="true" aria-label="CUSTOM headquarters video">
+  <div class="vbox">
+    <button type="button" class="vclose" aria-label="Close video"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <video controls playsinline preload="none" poster="../../photos/video/custom-hq-poster.jpg"><source src="../../photos/video/custom-hq.mp4?v=202610151500" type="video/mp4" /></video>
+  </div>
+</div>
+<script>
+(function(){
+  var m = document.getElementById('introVideo');
+  if (!m) return;
+  var v = m.querySelector('video'), shut = m.querySelector('.vclose'), opener = null;
+  var prev = document.querySelector('.watchlink .wprev');
+  var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prev && still) { prev.removeAttribute('autoplay'); prev.pause(); }
+  function open(e){
+    opener = e.currentTarget;
+    if (prev) prev.pause();
+    m.hidden = false;
+    document.body.style.overflow = 'hidden';
+    shut.focus();
+    var p = v.play();
+    if (p && p.catch) p.catch(function(){});
+  }
+  function close(){
+    v.pause();
+    m.hidden = true;
+    document.body.style.overflow = '';
+    if (opener) opener.focus();
+    if (prev && !still) { var q = prev.play(); if (q && q.catch) q.catch(function(){}); }
+  }
+  document.querySelectorAll('[data-intro-video]').forEach(function(b){ b.addEventListener('click', open); });
+  shut.addEventListener('click', close);
+  m.addEventListener('click', function(e){ if (e.target === m) close(); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && !m.hidden) close(); });
+})();
+</script>
+<script src="i18n.js"></script>
+<script src="../../assets/nav.js?v=202610201200" defer></script>
+</body>
+</html>

@@ -126,6 +126,8 @@ find({
     $rel =~ s/^\.\///;
     $rel =~ s/\\/\//g;
     return if $SKIP{$rel};
+    # Underscore-prefixed files and folders (_mockup/) are previews, not pages.
+    return if $rel =~ m{(^|/)_};
     push @pages, $rel;
   },
 }, '.');

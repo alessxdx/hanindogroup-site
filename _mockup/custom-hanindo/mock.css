@@ -1,0 +1,39 @@
+/* MOCK-UP styles shared by the three CUSTOM Hanindo pages. */
+.mockbar{background:#fff6d6;color:#6b5200;font-size:.82rem;text-align:center;padding:.45rem 1rem;border-bottom:1px solid #f0dc95}
+.mockbar a{color:#6b5200;font-weight:700}
+/* header lockup until a real logo exists: CUSTOM wordmark over the two regions */
+.cmark{display:flex;flex-direction:column;line-height:1.05;text-decoration:none;padding-left:1rem;border-left:1px solid var(--line)}
+.cmark .w1{font-weight:800;font-size:1.35rem;letter-spacing:.14em;color:#183a52}
+.cmark .w2{font-size:.68rem;font-weight:700;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;margin-top:.2rem}
+.cmark .w2 em{font-style:normal;color:var(--brand)}
+.langtoggle button{min-width:2.1rem}
+/* hero region chips: one row per region */
+.pagehero .tradename{font-style:italic;font-size:clamp(.85rem,1.35vw,1rem);font-weight:600;color:#aee1ff;margin:.4rem 0 0;letter-spacing:.02em}
+.regions{display:grid;gap:.7rem;margin-top:1.4rem}
+.region{display:flex;flex-wrap:wrap;align-items:center;gap:.45rem}
+.region .rlab{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--sky);min-width:7.5rem}
+.region .chip{display:inline-flex;padding:.32rem .8rem;border:1px solid rgba(255,255,255,.35);border-radius:999px;font-size:.8rem;font-weight:600;color:#fff;background:rgba(255,255,255,.06)}
+/* region heading used on offices, customers and contact */
+.rhead{display:flex;align-items:baseline;gap:.8rem;margin:2rem 0 .2rem;padding-bottom:.5rem;border-bottom:2px solid var(--brand)}
+.rhead:first-child{margin-top:1rem}
+.rhead h3{font-size:1.15rem;letter-spacing:.1em;margin:0;color:#183a52}
+.rhead span{font-size:.82rem;color:var(--muted)}
+/* office cards */
+.offrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
+.ocard{border:1px solid var(--line);border-radius:var(--r);padding:1.1rem 1.15rem;background:#fff}
+.ocard .cty{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--brand)}
+.ocard h3{font-size:1.02rem;margin:.25rem 0 .35rem}
+.ocard .ent{font-size:.8rem;color:var(--muted);margin:0 0 .6rem}
+.ocard .ln{font-size:.82rem;color:var(--ink);margin:0;line-height:1.5}
+.ocard .tbc{color:#a06a00;font-style:italic}
+.ocard.partner{background:var(--paper);border-style:dashed}
+/* customer wall, split by region then by sector */
+.wall.flat .band{width:100%}
+.wall.flat .w{--logo-h:42px;--logo-max:280px;max-width:var(--logo-max)}
+.wall.flat .w.stacked{--logo-h:52px}
+@media(max-width:640px){.wall.flat .w{--logo-h:34px;--logo-max:185px}}
+.wall .w{opacity:1;transform:none}
+.custreg{margin-top:1.2rem}
+.custreg .rhead{justify-content:center;border-bottom:0;margin:2.4rem 0 .4rem}
+.custreg .rhead h3{font-size:1.3rem}
+@media(max-width:640px){.cmark .w1{font-size:1.05rem}.cmark{padding-left:.6rem}}
