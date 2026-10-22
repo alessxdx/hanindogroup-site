@@ -57,7 +57,7 @@ id: {
   'ct.kick': 'Cara menghubungi kami', 'ct.h2': 'Pilih kantor terdekat.',
   'ct.l.addr': 'Alamat', 'ct.l.tel': 'Telepon', 'ct.l.mail': 'Email', 'ct.l.pic': 'Penanggung jawab', 'ct.l.hrs': 'Jam kantor', 'ct.l.cov': 'Wilayah',
   'ct.h.sg': 'Senin–Jumat, 09.00–17.30 SGT', 'ct.h.id': 'Senin–Jumat, 08.00–17.00 WIB', 'ct.h.cn': 'Senin–Jumat, 09.00–18.00 CST',
-  'ct.c.sg': 'Singapura, Malaysia, Vietnam, Brunei, Kamboja, Laos, Myanmar', 'ct.c.id': 'Indonesia', 'ct.c.ph': 'Filipina', 'ct.c.th': 'Thailand', 'ct.c.cn': 'Tiongkok', 'ct.c.sz': 'Tiongkok bagian selatan',
+  'ct.c.sg': 'Singapura, Malaysia, Vietnam, Brunei, Kamboja, Laos, Myanmar', 'ct.c.id': 'Indonesia', 'ct.c.ph': 'Filipina', 'ct.c.th': 'Thailand', 'ct.c.cn': 'Tiongkok dan Taiwan', 'ct.c.sz': 'Tiongkok bagian selatan',
   'ct.dir': 'Petunjuk arah', 'ct.mailbtn': 'Email tim kami'
 },
 zh: {
@@ -112,7 +112,7 @@ zh: {
   'ct.kick': '联系方式', 'ct.h2': '选择离您最近的办事处。',
   'ct.l.addr': '地址', 'ct.l.tel': '电话', 'ct.l.mail': '电子邮箱', 'ct.l.pic': '负责人', 'ct.l.hrs': '办公时间', 'ct.l.cov': '覆盖',
   'ct.h.sg': '周一至周五 09:00–17:30（新加坡时间）', 'ct.h.id': '周一至周五 08:00–17:00（雅加达时间）', 'ct.h.cn': '周一至周五 09:00–18:00（北京时间）',
-  'ct.c.sg': '新加坡、马来西亚、越南、文莱、柬埔寨、老挝、缅甸', 'ct.c.id': '印度尼西亚', 'ct.c.ph': '菲律宾', 'ct.c.th': '泰国', 'ct.c.cn': '中国', 'ct.c.sz': '华南地区',
+  'ct.c.sg': '新加坡、马来西亚、越南、文莱、柬埔寨、老挝、缅甸', 'ct.c.id': '印度尼西亚', 'ct.c.ph': '菲律宾', 'ct.c.th': '泰国', 'ct.c.cn': '中国大陆及台湾地区', 'ct.c.sz': '华南地区',
   'ct.dir': '查看路线', 'ct.mailbtn': '发送邮件'
 }
 };
