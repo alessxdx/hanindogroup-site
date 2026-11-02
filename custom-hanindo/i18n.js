@@ -77,7 +77,7 @@ id: {
 },
 zh: {
   'nav.home': '首页', 'nav.about': '关于我们', 'nav.products': '产品与服务', 'nav.contact': '联系我们',
-  'back': 'Hanindo 集团',
+  'back': '汉琳德集团',
   'hero.tag': '亚洲区域打印、扫描及收银终端解决方案',
   'hero.intro': '汉琳德集团旗下 CUSTOM 业务板块，为中国及东南亚地区的零售、交通与服务业客户，提供打印、扫描及POS的供货、整合集成与售后支持服务。',
   'video': '观看 CUSTOM 全新总部宣传片',
@@ -146,17 +146,36 @@ zh: {
   'ct.dir': '查看路线', 'ct.mailbtn': '发送邮件'
 }
 };
-/* The "Our Businesses" tab is built later by assets/nav.js (it is deferred),
-   so it is not among the data-i18n elements collected below; its label is
-   swapped on its own, once the page has loaded and on every switch. */
-var BIZ = { en: 'Our Businesses', id: 'Bidang Usaha Kami', zh: '集团业务' };
+/* The "Our Businesses" menu and the "Back to" line under the logo are built
+   later by assets/nav.js (it is deferred), so they are not among the
+   data-i18n elements collected below. Their text is matched word for word
+   instead, once the page has loaded and on every switch. Company names stay
+   English; a phrase missing for a language stays English too. */
+var NAV = {
+  'Our Businesses': { id: 'Bidang Usaha Kami', zh: '集团业务' },
+  'Oil & Gas': { id: 'Minyak & Gas', zh: '油气' },
+  'Fire Fighting': { zh: '消防' },
+  'Automotive': { id: 'Otomotif', zh: '汽车' },
+  'Printer & POS': { zh: '打印与 POS' },
+  'Fire Fighting Department': { zh: '消防事业部' },
+  'A division of PT. Hanindo Citra': { id: 'Divisi dari PT. Hanindo Citra', zh: 'PT. Hanindo Citra 旗下部门' },
+  'CUSTOM China & S.E.A': { zh: 'CUSTOM 中国及东南亚' },
+  'You are here': { id: 'Anda di sini', zh: '当前位置' },
+  'Back to': { id: 'Kembali ke', zh: '返回' }
+};
 (function(){
   var els = document.querySelectorAll('[data-i18n]');
   els.forEach(function(e){ e.dataset.en = e.innerHTML; });
   var cur = 'en';
   function biz(){
-    document.querySelectorAll('.gbtab > a').forEach(function(a){
-      var t = a.firstChild; if (t && t.nodeType === 3) t.nodeValue = (BIZ[cur] || BIZ.en) + ' ';
+    document.querySelectorAll('.gbtab, .glback').forEach(function(root){
+      var w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT), t;
+      while ((t = w.nextNode())) {
+        if (t._en == null) t._en = t.nodeValue;
+        var key = t._en.trim(), row = NAV[key];
+        if (!row) continue;
+        t.nodeValue = t._en.replace(key, row[cur] || key);
+      }
     });
   }
   function set(l){
