@@ -43,6 +43,9 @@
 /* all three companies side by side: each region label sits over its own cards */
 .entrow{display:grid;gap:1rem}
 @media(min-width:900px){.entrow{grid-template-columns:repeat(3,1fr);row-gap:1rem}.entrow .entreg{grid-row:1;grid-column:1/3}.entrow .entreg.cn{grid-column:3}.entrow .ent{grid-row:2}}
+/* the cards share their six inner rows (logo, years, name, trade name, text, covers),
+   so each line, "Covers" included, starts at the same height in all three */
+@media(min-width:900px){@supports(grid-template-rows:subgrid){.entrow .ent{grid-row:2/span 6;display:grid;grid-template-rows:subgrid;row-gap:0}.entrow .ent .cov{align-self:start}}}
 </style>
 </head>
 <body>
