@@ -146,16 +146,29 @@ zh: {
   'ct.dir': '查看路线', 'ct.mailbtn': '发送邮件'
 }
 };
+/* The "Our Businesses" tab is built later by assets/nav.js (it is deferred),
+   so it is not among the data-i18n elements collected below; its label is
+   swapped on its own, once the page has loaded and on every switch. */
+var BIZ = { en: 'Our Businesses', id: 'Bidang Usaha Kami', zh: '集团业务' };
 (function(){
   var els = document.querySelectorAll('[data-i18n]');
   els.forEach(function(e){ e.dataset.en = e.innerHTML; });
+  var cur = 'en';
+  function biz(){
+    document.querySelectorAll('.gbtab > a').forEach(function(a){
+      var t = a.firstChild; if (t && t.nodeType === 3) t.nodeValue = (BIZ[cur] || BIZ.en) + ' ';
+    });
+  }
   function set(l){
+    cur = l;
     els.forEach(function(e){ var d = I18N[l], k = e.dataset.i18n; e.innerHTML = (d && d[k] != null) ? d[k] : e.dataset.en; });
     document.documentElement.lang = l === 'zh' ? 'zh-Hans' : l;
     document.querySelectorAll('[data-ml]').forEach(function(b){ var on = b.dataset.ml === l; b.classList.toggle('active', on); b.setAttribute('aria-pressed', on); });
+    biz();
     try { localStorage.setItem('customLang', l); } catch (e) {}
   }
   document.querySelectorAll('[data-ml]').forEach(function(b){ b.addEventListener('click', function(){ set(b.dataset.ml); }); });
   var saved = 'en'; try { saved = localStorage.getItem('customLang') || 'en'; } catch (e) {}
   set(saved);
+  document.addEventListener('DOMContentLoaded', biz);
 })();
