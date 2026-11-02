@@ -57,7 +57,7 @@ id: {
   'ct.kick': 'Cara menghubungi kami', 'ct.h2': 'Pilih kantor terdekat.',
   'ct.l.addr': 'Alamat', 'ct.l.tel': 'Telepon', 'ct.l.mail': 'Email', 'ct.l.pic': 'Penanggung jawab', 'ct.l.hrs': 'Jam kantor', 'ct.l.cov': 'Wilayah',
   'ct.h.sg': 'Senin–Jumat, 09.00–17.30 SGT', 'ct.h.id': 'Senin–Jumat, 08.00–17.00 WIB', 'ct.h.cn': 'Senin–Jumat, 09.00–18.00 CST',
-  'ct.c.sg': 'Singapura, Malaysia, Vietnam, Brunei, Kamboja, Laos, Myanmar', 'ct.c.id': 'Indonesia', 'ct.c.ph': 'Filipina', 'ct.c.th': 'Thailand', 'ct.c.cn': 'Tiongkok dan Taiwan', 'ct.c.sz': 'Tiongkok bagian selatan',
+  'ct.c.sg': 'Singapura, Malaysia, Vietnam, Brunei, Kamboja, Laos, Myanmar', 'ct.c.id': 'Indonesia', 'ct.c.ph': 'Filipina', 'ct.c.th': 'Thailand', 'ct.c.cn': 'Tiongkok', 'ct.c.sz': 'Tiongkok bagian selatan',
   'ct.dir': 'Petunjuk arah', 'ct.mailbtn': 'Email tim kami',
   /* products & services */
   'pr.h1': 'Produk &amp; <span class="fx">Layanan</span>',
