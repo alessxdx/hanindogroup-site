@@ -58,7 +58,22 @@ id: {
   'ct.l.addr': 'Alamat', 'ct.l.tel': 'Telepon', 'ct.l.mail': 'Email', 'ct.l.pic': 'Penanggung jawab', 'ct.l.hrs': 'Jam kantor', 'ct.l.cov': 'Wilayah',
   'ct.h.sg': 'Senin–Jumat, 09.00–17.30 SGT', 'ct.h.id': 'Senin–Jumat, 08.00–17.00 WIB', 'ct.h.cn': 'Senin–Jumat, 09.00–18.00 CST',
   'ct.c.sg': 'Singapura, Malaysia, Vietnam, Brunei, Kamboja, Laos, Myanmar', 'ct.c.id': 'Indonesia', 'ct.c.ph': 'Filipina', 'ct.c.th': 'Thailand', 'ct.c.cn': 'Tiongkok dan Taiwan', 'ct.c.sz': 'Tiongkok bagian selatan',
-  'ct.dir': 'Petunjuk arah', 'ct.mailbtn': 'Email tim kami'
+  'ct.dir': 'Petunjuk arah', 'ct.mailbtn': 'Email tim kami',
+  /* products & services */
+  'pr.h1': 'Produk &amp; <span class="fx">Layanan</span>',
+  'pr.intro': 'Pencetakan, pemindaian, dan POS — dipasok, diintegrasikan, dan didukung.',
+  'pr.h2': 'Rangkaian produk kami',
+  'pr.lede': 'Lima kelompok perangkat keras CUSTOM beserta perangkat lunak yang menjalankannya, dipasok, diintegrasikan, dan didukung di seluruh Asia Tenggara dan Tiongkok. Masing-masing terhubung ke katalog lengkap CUSTOM.',
+  'pr.c1.h': 'Solusi Pencetakan Profesional', 'pr.c1.p': 'Printer POS, struk, fiskal, tiket, label, kios, dan printer mobile.',
+  'pr.c2.h': 'Solusi DC / POS', 'pr.c2.p': 'Terminal POS, sistem layar sentuh, mesin kasir, dan monitor.',
+  'pr.c3.h': 'Solusi Pemindaian', 'pr.c3.p': 'Pemindai dokumen, pembaca barcode, dan sistem pencitraan.',
+  'pr.c4.h': 'Solusi Layanan Mandiri', 'pr.c4.p': 'Kios dan unit meja untuk layanan tanpa petugas.',
+  'pr.c5.h': 'Mobilitas', 'pr.c5.p': 'Komputer genggam, tablet, dan printer mobile untuk bekerja di lapangan.',
+  'pr.more': 'Lihat produk',
+  'pr.inds': 'Industri yang dilayani',
+  'pr.i1': 'Ritel', 'pr.i2': 'Kios Pembayaran Mandiri &amp; Informasi', 'pr.i3': 'Transportasi Umum', 'pr.i4': 'Penerbangan',
+  'pr.i5': 'Kesehatan', 'pr.i6': 'Parkir', 'pr.i7': 'Logistik &amp; Pos', 'pr.i8': 'Hiburan',
+  'pr.i9': 'Lotere &amp; Taruhan', 'pr.i10': 'Manufaktur', 'pr.i11': 'Perbankan &amp; Keuangan'
 },
 zh: {
   'nav.home': '首页', 'nav.about': '关于我们', 'nav.products': '产品与服务', 'nav.contact': '联系我们',
