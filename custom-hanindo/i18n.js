@@ -153,12 +153,12 @@ zh: {
    English; a phrase missing for a language stays English too. */
 var NAV = {
   'Our Businesses': { id: 'Bidang Usaha Kami', zh: '集团业务' },
-  'Oil & Gas': { id: 'Minyak & Gas', zh: '油气' },
-  'Fire Fighting': { zh: '消防' },
-  'Automotive': { id: 'Otomotif', zh: '汽车' },
-  'Printer & POS': { zh: '打印与 POS' },
+  'Oil & Gas': { id: 'Minyak & Gas', zh: '油和气业务' },
+  'Fire Fighting': { zh: '消防业务' },
+  'Automotive': { id: 'Otomotif', zh: '汽车业务' },
+  'Printer & POS': { zh: '打印与 POS 业务' },
   'Fire Fighting Department': { zh: '消防事业部' },
-  'A division of PT. Hanindo Citra': { id: 'Divisi dari PT. Hanindo Citra', zh: 'PT. Hanindo Citra 旗下部门' },
+  'A division of PT. Hanindo Citra': { id: 'Divisi dari PT. Hanindo Citra', zh: '隶属于 PT. Hanindo Citra' },
   'CUSTOM China & S.E.A': { zh: 'CUSTOM 中国及东南亚' },
   'You are here': { id: 'Anda di sini', zh: '当前位置' },
   'Back to': { id: 'Kembali ke', zh: '返回' }
