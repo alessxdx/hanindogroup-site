@@ -191,6 +191,7 @@
     "Quality Management": "Manajemen Mutu",
     "Environmental Management": "Manajemen Lingkungan",
     "Occupational Health & Safety": "Keselamatan & Kesehatan Kerja",
+    "Information Security Management": "Manajemen Keamanan Informasi",
     /* "Petroleum Equipment Institute" is left alone on purpose — it is the
        body's own name, like the principals elsewhere in this file. */
     "PEI Member 2026": "Anggota PEI 2026",

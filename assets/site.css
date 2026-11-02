@@ -1397,6 +1397,8 @@ a[href^="tel:"],.footer .cl .nb{white-space:nowrap}
 .footcerts{border-top:1px solid rgba(255,255,255,.08);margin-top:2.4rem;padding-top:1.6rem}
 .footcerts .fclab{display:block;font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;color:#8394ae;font-weight:700;margin-bottom:1rem}
 .fcrow{display:flex;gap:1.8rem;flex-wrap:wrap}
+/* wide screens: the certificates share the row in equal columns, so a fifth one still fits on one line */
+@media(min-width:1000px){.fcrow{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:1.1rem}}
 .fitem{display:flex;align-items:center;gap:.7rem}
 .fitem .fthumb{flex:none;width:52px;height:70px;background:#fff;border:1px solid rgba(255,255,255,.22);border-radius:3px;padding:2px;box-shadow:0 2px 8px rgba(0,0,0,.25)}
 .fitem .fthumb img{width:100%;height:100%;object-fit:contain;display:block}
