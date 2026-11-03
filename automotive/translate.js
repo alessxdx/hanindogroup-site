@@ -60,10 +60,6 @@
     "Contact Us": "Hubungi Kami",
     "Your Solution Provider": "Mitra Solusi Anda",
     "Training Service": "Layanan Pelatihan",
-    "Tyre Service": "Layanan Ban",
-    "Lifts & Handling": "Lift & Penanganan",
-    "Service Equipment": "Peralatan Servis",
-    "Welding": "Pengelasan",
 
     /* ---- home ---- */
     "Automotive": "Otomotif",
@@ -214,7 +210,6 @@
     "Our product range": "Rangkaian produk kami",
     /* The Fluid Handling tile and its drop-down entry. "Lubrication & Fluid
        Handling" below is the longer form used on the range card. */
-    "Fluid Handling": "Penanganan Fluida",
     "Tyre service and inflation, lifting and handling, service equipment, lubrication and welding — six ranges across the catalogue.": "Layanan ban dan pengisian angin, pengangkatan dan penanganan, peralatan servis, pelumasan, dan pengelasan — enam rangkaian dalam katalog.",
     "What we offer": "Yang kami tawarkan",
     "Professional equipment, from the service bay to the plant floor": "Peralatan profesional, dari service bay hingga lantai pabrik",
@@ -229,15 +224,14 @@
        and per-card link text all changed. Each card names what it leads to
        now, where every card used to say "View products". */
     "Our product range": "Rangkaian produk kami",
-    "View tyre service equipment": "Lihat peralatan layanan ban",
-    "View inflators": "Lihat pengisi angin",
-    "View lifts & handling": "Lihat lift & penanganan",
-    "View service equipment": "Lihat peralatan servis",
-    "View fluid handling": "Lihat penanganan fluida",
-    "View welding machines": "Lihat mesin las",
+    "View tyre service equipment": "Lihat Tyre Service",
+    "View inflators": "Lihat Tyre Inflation",
+    "View lifts & handling": "Lihat Lifts & Handling",
+    "View service equipment": "Lihat Service Equipment",
+    "View fluid handling": "Lihat Fluid Handling",
+    "View welding machines": "Lihat Welding",
     /* Airtec range heading: was "Eight inflators." */
     "Digital tyre inflators.": "Pengisi angin ban digital.",
-    "Tyre Inflation": "Pengisian Angin Ban",
     "Digital inflators — machine-mounted, high flow, high pressure and temperature compensating.": "Pengisi angin digital — terpasang pada mesin, aliran tinggi, tekanan tinggi, dan berkompensasi suhu.",
     "Scissor, two-post and four-post lifts, 3.5 to 4 tonnes.": "Scissor lift, lift dua tiang, dan lift empat tiang, 3,5 hingga 4 ton.",
     "Fluid exchange, brake lathe, A/C recycling and diagnostics.": "Penggantian fluida, bubut rem, daur ulang A/C, dan diagnostik.",
