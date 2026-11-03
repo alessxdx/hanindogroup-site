@@ -77,7 +77,6 @@
     "Wheel Alignment": "Wheel Aligner",
     "Tyre Changer": "Tyre Changer",
     "Wheel Balancer": "Wheel Balancer",
-    "Tyre Inflator": "Pengisi Angin Ban",
     "Car Lift": "Car Lift",
     "Lubrication": "Pelumasan",
     "Our Brands": "Merek Kami",
