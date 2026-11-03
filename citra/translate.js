@@ -164,6 +164,18 @@
     "Retail forecourt equipment": "Peralatan forecourt ritel",
     "The principals we distribute": "Prinsipal yang kami distribusikan",
     "Distributors for Indonesia.": "Distributor untuk Indonesia.",
+    /* ---- lines found untranslated on the Citra pages, 2026-11-03 (mostly
+       page wording that changed after its entry was written) ---- */
+    "From mine sites and fuel depots to airports and forecourts, PT. Hanindo Citra equips every place fuel is stored, moved and dispensed.": "Dari lokasi tambang dan depot bahan bakar hingga bandara dan SPBU, PT. Hanindo Citra melengkapi setiap tempat bahan bakar disimpan, dialirkan, dan disalurkan.",
+    "Authorised and trusted distributor in Indonesia for Gilbarco Veeder-Root.": "Distributor resmi dan tepercaya di Indonesia untuk Gilbarco Veeder-Root.",
+    "Authorised and trusted distributor for Indonesia.": "Distributor resmi dan tepercaya untuk Indonesia.",
+    "Fuel depot": "Depot bahan bakar",
+    "Aviation fuelling": "Pengisian bahan bakar penerbangan",
+    "Retail forecourt": "Forecourt ritel",
+    "Mine-site fuelling": "Pengisian bahan bakar di lokasi tambang",
+    "Deliver efficient, effective service to professional standards and with the commitment to see it through.": "Memberikan layanan yang efisien dan efektif dengan menjunjung standar profesional serta komitmen untuk menuntaskannya.",
+    "Where the group began": "Tempat grup ini bermula",
+    "Tell us what you need, and we will put the right person on it.": "Beri tahu kami apa yang Anda butuhkan, dan kami akan menugaskan orang yang tepat.",
     "Fuel dispensers, tank gauging & submersible pumps": "Dispenser BBM, tank gauging & pompa submersible",
     "Positive displacement flow meters & registers": "Flow meter positive displacement & register",
     "Forecourt controllers & distribution modules": "Forecourt controller & modul distribusi",
