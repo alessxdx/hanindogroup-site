@@ -59,8 +59,6 @@
        company of its own. "Our Companies" stays above — the footer heading
        still uses it, and there it really is a list of companies. */
     "Our Businesses": "Bidang Usaha Kami",
-    "A division of PT. Hanindo Citra": "Divisi dari PT. Hanindo Citra",
-    /* the menu note now says "department"; the line above is kept for any page still using the old wording */
     "A department of PT. Hanindo Citra": "Departemen dari PT. Hanindo Citra",
     /* ---- lines found untranslated on the group pages, 2026-11-03 ---- */
     "Telecommunications": "Telekomunikasi",

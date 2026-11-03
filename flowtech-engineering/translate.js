@@ -54,7 +54,7 @@
        English wherever it appears, on Bahasa as on English. An entry here
        is what would translate it, so the absence of one is the instruction
        -- do not add either back. */
-    "A division of PT. Hanindo Citra": "Divisi dari PT. Hanindo Citra",
+    "A department of PT. Hanindo Citra": "Departemen dari PT. Hanindo Citra",
     "Indonesia": "Indonesia",
     "Singapore": "Singapura",
     "China": "Tiongkok",

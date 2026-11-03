@@ -14,7 +14,7 @@
     /* the Our Businesses menu, built by assets/nav.js */
     "Our Businesses": "Bidang Usaha Kami",
     "Automotive": "Otomotif",
-    "A division of PT. Hanindo Citra": "Divisi dari PT. Hanindo Citra",
+    "A department of PT. Hanindo Citra": "Departemen dari PT. Hanindo Citra",
     "Singapore": "Singapura",
     "China": "Tiongkok",
     "You are here": "Anda di sini",

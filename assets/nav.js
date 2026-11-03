@@ -213,7 +213,7 @@
       ['flowtech-engineering/', 'PT. Flowtech Engineering',                   '']
     ]],
     ['Fire Fighting', [
-      ['fire-fighting/',        'Fire Fighting Department',                   'A division of PT. Hanindo Citra']
+      ['fire-fighting/',        'Fire Fighting Department',                   'A department of PT. Hanindo Citra']
     ]],
     ['Automotive', [
       ['automotive/',           'PT. Hanindo Automotive',                     '']

@@ -158,7 +158,7 @@ var NAV = {
   'Automotive': { id: 'Otomotif', zh: '汽车业务' },
   'Printer & POS': { zh: '打印与 POS 业务' },
   'Fire Fighting Department': { zh: '消防事业部' },
-  'A division of PT. Hanindo Citra': { id: 'Divisi dari PT. Hanindo Citra', zh: '隶属于 PT. Hanindo Citra' },
+  'A department of PT. Hanindo Citra': { id: 'Departemen dari PT. Hanindo Citra', zh: '隶属于 PT. Hanindo Citra' },
   'CUSTOM China & S.E.A': { zh: 'CUSTOM 中国及东南亚' },
   'You are here': { id: 'Anda di sini', zh: '当前位置' },
   'Back to': { id: 'Kembali ke', zh: '返回' }
