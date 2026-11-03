@@ -229,6 +229,16 @@
     "PT. Hanindo Citra — Oil & Gas": "PT. Hanindo Citra — Minyak & Gas",
     "On fuel station projects, Flowtech works hand in hand with its Hanindo Group sister company, PT. Hanindo Citra. We handle the construction; they supply the dispensers, tank gauging, flow meters and fuel management systems, and keep the site serviced once it's running.": "Dalam proyek SPBU, Flowtech bekerja bersama perusahaan saudaranya di Hanindo Group, PT. Hanindo Citra. Flowtech menangani konstruksi, sementara Hanindo Citra memasok dispenser, tank gauging, flow meter, dan sistem manajemen bahan bakar, serta menyediakan layanan setelah pembelian begitu SPBU beroperasi.",
     "Visit Oil & Gas": "Kunjungi Minyak & Gas",
+    /* ---- lines found untranslated on the Flowtech pages, 2026-11-03: the
+       English was reworded after the entries above were written ---- */
+    "On fuel station projects, Flowtech works hand in hand with its Hanindo Group sister company, PT. Hanindo Citra. We handle the construction; they supply the dispensers, tank gauging, flow meters and fuel management systems, and keep the site serviced once it is running.": "Dalam proyek SPBU, Flowtech bekerja bersama perusahaan saudaranya di Hanindo Group, PT. Hanindo Citra. Flowtech menangani konstruksi, sementara Hanindo Citra memasok dispenser, tank gauging, flow meter, dan sistem manajemen bahan bakar, serta menyediakan layanan setelah pembelian begitu SPBU beroperasi.",
+    "Visit PT. Hanindo Citra": "Kunjungi PT. Hanindo Citra",
+    "Fuel Station and Oil & Gas Construction": "Konstruksi SPBU serta Minyak & Gas",
+    "Short training for station staff on operating and safety procedures before the site opens.": "Pelatihan singkat bagi staf SPBU mengenai prosedur operasional dan keselamatan sebelum lokasi mulai beroperasi.",
+    "Our scope as main contractor runs in four stages.": "Sebagai kontraktor utama, lingkup pekerjaan kami berjalan dalam empat tahap.",
+    "The owner's plans redesigned and checked against conditions in the field.": "Gambar rencana pemilik dirancang ulang dan diperiksa terhadap kondisi di lapangan.",
+    "The full detailed design, which once approved becomes the reference for the work.": "Desain detail lengkap, yang setelah disetujui menjadi acuan pekerjaan.",
+    "Soil investigation, work and safety permits, survey and measurement, and shop drawings.": "Penyelidikan tanah, izin kerja dan keselamatan, survei dan pengukuran, serta shop drawing.",
 
     /* ---- contact page ----
        The ": value" halves of the checklist stay in English: each is an
