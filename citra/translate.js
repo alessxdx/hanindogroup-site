@@ -117,7 +117,7 @@
 
     /* ---- home: fire fighting cross-link and contact ---- */
     "Also part of PT. Hanindo Citra": "Juga bagian dari PT. Hanindo Citra",
-    "PT. Hanindo Citra also designs, supplies, installs and maintains complete fire-fighting systems across Indonesia — hydrant, sprinkler, gas and foam suppression, detection and alarm.": "PT. Hanindo Citra juga merancang, memasok, memasang, dan merawat sistem pemadam kebakaran lengkap di seluruh Indonesia — hydrant, sprinkler, pemadam gas dan foam, serta deteksi dan alarm.",
+    "PT. Hanindo Citra also designs, supplies, installs and maintains complete fire-fighting systems across Indonesia — hydrant, sprinkler, gas and foam suppression, detection and alarm.": "PT. Hanindo Citra juga merancang, memasok, memasang, dan merawat sistem pemadam kebakaran lengkap di seluruh Indonesia — hydrant, sprinkler, gas dan foam suppression, serta deteksi dan alarm.",
     "Visit Fire Fighting": "Kunjungi Fire Fighting",
     "Part of PT. Hanindo Citra": "Bagian dari PT. Hanindo Citra",
     "Visit Fire Fighting Department": "Kunjungi Fire Fighting Department",
