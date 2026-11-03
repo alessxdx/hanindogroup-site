@@ -144,9 +144,9 @@
     "Tell us what you need, and we will put the right person on it.": "Beri tahu kami apa yang Anda butuhkan, dan kami akan menugaskan orang yang tepat.",
     "Equipment from leading international manufacturers and our own brands, chosen to improve productivity, safety and service quality. Most of it fits out a workshop; the RAASM fluid handling range also goes to lubricant distributors, plants and mine sites.": "Peralatan dari produsen internasional terkemuka dan merek kami sendiri, dipilih untuk meningkatkan produktivitas, keselamatan, dan mutu layanan. Sebagian besar untuk melengkapi bengkel; rangkaian penanganan fluida RAASM juga digunakan oleh distributor pelumas, pabrik, dan lokasi tambang.",
     "The training programme covers theory and practice:": "Program pelatihan mencakup teori dan praktik:",
-    "Install": "Instalasi",
-    "Base (hero)": "Terpasang",
-    "Installed Base": "Instalasi Terpasang",
+    "Featured Install": "Instalasi",
+    "Base (hero)": "Unggulan",
+    "Featured Install Base": "Instalasi Unggulan",
     /* AIRTEC page */
     "AIRTEC Corporation builds digital tyre inflation equipment in Singapore, under an ISO 9001:2015 quality system certified by SGS. An automatic inflator takes a target pressure and holds a tyre to it — no gauge, no operator standing over it. The range runs from a compact unit that mounts on the tyre changer itself to weather-sealed wall models, high-flow and high-pressure units for fleet and mine work, and vandal-resistant pedestals for a forecourt.": "AIRTEC Corporation membuat peralatan pengisian angin ban digital di Singapura, dengan sistem mutu ISO 9001:2015 yang disertifikasi oleh SGS. Pengisi angin otomatis menerima tekanan target dan menjaga ban tetap pada tekanan itu — tanpa alat ukur, tanpa operator yang harus menunggui. Rangkaiannya mulai dari unit ringkas yang dipasang langsung pada tyre changer hingga model dinding tersegel cuaca, unit aliran tinggi dan tekanan tinggi untuk armada dan tambang, serta unit berdiri tahan vandalisme untuk SPBU.",
     "Where AIRTEC works.": "Di mana AIRTEC digunakan.",
