@@ -73,6 +73,16 @@
 .brandbtn:hover{border-color:var(--brand);color:var(--brand-600)}
 .brandbtn svg{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:2;flex:none}
 .brandbtn.soon{color:var(--muted);border-style:dashed}
+/* Cards in a row share their inner rows (photo, name, text, "Brands we supply",
+   buttons), so the brand label starts at the same height in every card even
+   when one card's buttons wrap onto a second line. */
+@supports(grid-template-rows:subgrid){
+  .pgrid{align-items:start}
+  .pgrid > .pcard{display:grid;grid-row:span 5;grid-template-rows:subgrid;row-gap:0}
+  .pgrid > .pcard > .pbody{grid-row:span 4;display:grid;grid-template-rows:subgrid;row-gap:0}
+  .pgrid > .pcard .brandnote{margin-top:0;align-self:end}
+  .pgrid > .pcard .brandrow{align-self:start}
+}
 @media(max-width:640px){
   .brandnote{padding-top:.7rem;font-size:.66rem;margin-bottom:.3rem}
   .brandrow{gap:.35rem}
