@@ -84,6 +84,18 @@
        English. Same wording the Citra dictionary uses. */
     "Contact page": "Halaman kontak",
     "Head Office": "Kantor Pusat",
+    /* ---- lines found untranslated on the Fire Fighting pages, 2026-11-03
+       (mostly page wording that changed after its entry was written) ---- */
+    "Your Solution Provider": "Mitra Solusi Anda",
+    "Tel (Head Office):": "Telp (Kantor Pusat):",
+    "Deluge systems": "Sistem deluge",
+    "Foam suppression": "Pemadam busa",
+    "Our engineers bring years of fire-protection experience across government, oil & gas and industrial sites.": "Para teknisi kami membawa pengalaman bertahun-tahun di bidang proteksi kebakaran untuk instansi pemerintah, sektor minyak & gas, dan kawasan industri.",
+    "A complete, reliable fire protection system": "Sistem proteksi kebakaran yang lengkap dan andal",
+    "Clean agent, inert gas and CO₂ for sensitive areas": "Clean agent, gas inert, dan CO₂ untuk area sensitif",
+    "High-, medium- and low-expansion": "Ekspansi tinggi, sedang, dan rendah",
+    "High-hazard and process-area protection": "Proteksi area berisiko tinggi dan area proses",
+    "Tailored designs based on risk assessment and applicable regulations.": "Desain yang disesuaikan berdasarkan penilaian risiko dan peraturan yang berlaku.",
     "Telephone (Head Office)": "Telepon (Kantor Pusat)",
     /* The department keeps its English name here too -- only "Kantor" and
        the company are Indonesian. */
