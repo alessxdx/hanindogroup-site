@@ -131,6 +131,46 @@
     /* The overview h2 is split by a <br/>, so it matches as two nodes. */
     "The Line for Workshop": "Lini untuk peralatan bengkel",
     "and Industrial Equipment": "dan industri",
+    /* ---- descriptions found untranslated, 2026-11-03. By the owner's rule,
+       spec-table labels and product names (models, product types, tags and
+       project captions) stay English on Bahasa; only descriptions are
+       translated here. Most of these English lines were reworded after
+       their older entries were written. ---- */
+    "One Partner for Workshop": "Satu Mitra untuk Peralatan Bengkel",
+    "Authorised and trusted distributor for Indonesia.": "Distributor resmi dan tepercaya untuk Indonesia.",
+    "Authorised and trusted distributor in Indonesia for RAASM, HPA-Faip and AIRTEC": "Distributor resmi dan tepercaya di Indonesia untuk RAASM, HPA-Faip, dan AIRTEC",
+    "Authorised and trusted distributor in Indonesia for RAASM, HPA-Faip and AIRTEC.": "Distributor resmi dan tepercaya di Indonesia untuk RAASM, HPA-Faip, dan AIRTEC.",
+    "ATOM, WELDANN and HAKIRO are our own brands.": "ATOM, WELDANN, dan HAKIRO adalah merek kami sendiri.",
+    "Tell us what you need, and we will put the right person on it.": "Beri tahu kami apa yang Anda butuhkan, dan kami akan menugaskan orang yang tepat.",
+    "Equipment from leading international manufacturers and our own brands, chosen to improve productivity, safety and service quality. Most of it fits out a workshop; the RAASM fluid handling range also goes to lubricant distributors, plants and mine sites.": "Peralatan dari produsen internasional terkemuka dan merek kami sendiri, dipilih untuk meningkatkan produktivitas, keselamatan, dan mutu layanan. Sebagian besar untuk melengkapi bengkel; rangkaian penanganan fluida RAASM juga digunakan oleh distributor pelumas, pabrik, dan lokasi tambang.",
+    "The training programme covers theory and practice:": "Program pelatihan mencakup teori dan praktik:",
+    "Install": "Instalasi",
+    "Base (hero)": "Terpasang",
+    "Installed Base": "Instalasi Terpasang",
+    /* AIRTEC page */
+    "AIRTEC Corporation builds digital tyre inflation equipment in Singapore, under an ISO 9001:2015 quality system certified by SGS. An automatic inflator takes a target pressure and holds a tyre to it — no gauge, no operator standing over it. The range runs from a compact unit that mounts on the tyre changer itself to weather-sealed wall models, high-flow and high-pressure units for fleet and mine work, and vandal-resistant pedestals for a forecourt.": "AIRTEC Corporation membuat peralatan pengisian angin ban digital di Singapura, dengan sistem mutu ISO 9001:2015 yang disertifikasi oleh SGS. Pengisi angin otomatis menerima tekanan target dan menjaga ban tetap pada tekanan itu — tanpa alat ukur, tanpa operator yang harus menunggui. Rangkaiannya mulai dari unit ringkas yang dipasang langsung pada tyre changer hingga model dinding tersegel cuaca, unit aliran tinggi dan tekanan tinggi untuk armada dan tambang, serta unit berdiri tahan vandalisme untuk SPBU.",
+    "Where AIRTEC works.": "Di mana AIRTEC digunakan.",
+    "Petroleum": "Perminyakan",
+    "Freestanding, cabinet and wall-mounted inflators, built vandal-resistant for the forecourt.": "Pengisi angin berdiri, kabinet, dan dinding, dibuat tahan vandalisme untuk SPBU.",
+    "Workshop and tyre shop inflators, from a unit that mounts on the tyre changer to high-pressure and mobile models.": "Pengisi angin untuk bengkel dan toko ban, mulai dari unit yang dipasang pada tyre changer hingga model tekanan tinggi dan portabel.",
+    "Aircraft tyre inflators, specialised inflation controllers, digital gauges and nitrogen units.": "Pengisi angin ban pesawat, pengendali pengisian khusus, alat ukur digital, dan unit nitrogen.",
+    "Digital axle load indicators and monitoring systems for vehicles and trailers on air suspension.": "Indikator beban gandar digital dan sistem pemantauan untuk kendaraan dan trailer bersuspensi udara.",
+    "High-flow, high-pressure and temperature-compensating inflators for OTR and plant tyres.": "Pengisi angin aliran tinggi, tekanan tinggi, dan berkompensasi suhu untuk ban OTR dan alat berat.",
+    /* RAASM page */
+    "Spring, manual and motorised reels for oil, grease, air, water and diesel.": "Reel pegas, manual, dan bermotor untuk oli, gemuk, udara, air, dan solar.",
+    "Cable reels in the same housings, bringing power and lighting to the bay.": "Reel kabel dalam rumah yang sama, membawa listrik dan penerangan ke service bay.",
+    "Air-driven ratio pumps, sized by the fluid and the distance it has to travel.": "Pompa rasio bertenaga udara, dipilih menurut jenis fluida dan jarak yang harus ditempuh.",
+    "Air-operated double-diaphragm pumps for transfer duty and thicker fluids.": "Pompa diafragma ganda bertenaga udara untuk transfer dan fluida yang lebih kental.",
+    "Metered guns, dispensers and waste oil drainers for the service bay.": "Gun terukur, dispenser, dan penampung oli bekas untuk service bay.",
+    "Grease pumps, guns and reels for chassis work and plant maintenance.": "Pompa, gun, dan reel gemuk untuk pekerjaan sasis dan pemeliharaan pabrik.",
+    "Level monitoring: what is in every drum and tank, without opening one.": "Pemantauan level: mengetahui isi setiap drum dan tangki tanpa harus membukanya.",
+    "Fluid control: who drew what, how much of it, and against which job.": "Kontrol fluida: siapa mengambil apa, berapa banyak, dan untuk pekerjaan apa.",
+    "Columns and mobile trolleys that carry the reels and guns to the work.": "Kolom dan troli bergerak yang membawa reel dan gun ke lokasi kerja.",
+    "Diesel dispensing and transfer for depots, plant and standby tanks.": "Penyaluran dan transfer solar untuk depo, pabrik, dan tangki cadangan.",
+    /* Tyre Service, Service and Welding pages */
+    "The lower-capacity of the two swing-arm machines: the arm swings aside by hand rather than tilting back, so it stands against a wall, and it clamps to 20″ where the M31 reaches 21″. Two-speed motor on a pedal control. Optional": "Mesin lengan ayun berkapasitas lebih rendah dari keduanya: lengannya diayun ke samping dengan tangan alih-alih dimiringkan ke belakang, sehingga dapat ditempatkan menempel dinding, dan mencengkeram hingga 20″ sementara M31 mencapai 21″. Motor dua kecepatan dengan kendali pedal. Opsional",
+    "Supports DoIP diagnosis and CAN FD protocols with wide vehicle coverage": "Mendukung diagnosis DoIP dan protokol CAN FD dengan cakupan kendaraan yang luas",
+    "High-current MIG/MMA for industrial duty": "MIG/MMA arus tinggi untuk penggunaan industri",
     "Singapore": "Singapura",
     "Italy": "Italia",
     "PT. Hanindo Automotive was established within the Hanindo Group in 2002, providing workshop and industrial equipment solutions designed to improve efficiency, productivity and ease of use.": "PT. Hanindo Automotive didirikan di dalam Hanindo Group pada tahun 2002, menyediakan solusi peralatan bengkel dan industri yang dirancang untuk meningkatkan efisiensi, produktivitas, dan kemudahan penggunaan.",
