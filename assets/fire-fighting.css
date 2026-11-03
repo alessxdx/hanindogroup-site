@@ -851,6 +851,13 @@ body{line-height:1.65}
 .indgrid{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
 .indgrid .pill{flex:1 1 auto;white-space:nowrap;display:flex;align-items:center;justify-content:center;
   text-align:center;border-radius:var(--r);padding:.6rem .7rem;font-size:.8rem;line-height:1.25}
+/* Wide screens: all eight on one line. The Bahasa names are about 15% longer
+   than the row, so a pill may wrap its own name onto two lines rather than
+   push the last industry down on its own. */
+@media(min-width:1000px){
+  .indgrid{flex-wrap:nowrap}
+  .indgrid .pill{white-space:normal;min-width:0;flex:1 1 auto;padding:.6rem .55rem}
+}
 
 /* =====================================================================
    PHONE READING
