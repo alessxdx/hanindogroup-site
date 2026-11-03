@@ -367,7 +367,6 @@
     "Back to our other products": "Kembali ke produk kami lainnya",
     "The range": "Rangkaian produk",
     "All models": "Semua model",
-    "Workshop": "Bengkel",
     "Mining": "Pertambangan",
     "Forecourt": "SPBU",
     "No models in that setting.": "Tidak ada model untuk penggunaan tersebut.",
@@ -405,47 +404,10 @@
 
     /* ---- lifts, service, welding, raasm, tyre-service: headings ---- */
     "Scissor, two-post and four-post lifts from 3.5 to 4 tonnes.": "Scissor lift, lift dua tiang, dan lift empat tiang dari 3,5 hingga 4 ton.",
-    "Mid-Rise Scissor Car Lift": "Scissor Car Lift Mid-Rise",
-    "In-Ground Mini Scissor Lift": "Mini Scissor Lift Tanam",
-    "On-Ground Mini Scissor Lift": "Mini Scissor Lift Permukaan",
-    "Ultra-Thin Main/Sub Scissor Car Lift": "Scissor Car Lift Utama/Sub Ultra-Tipis",
-    "2-Post Car Lift": "Car Lift 2 Tiang",
-    "4-Post Car Lift": "Car Lift 4 Tiang",
-    "Automatic Tyre Changer": "Tyre Changer Otomatis",
-    "Semi-Automatic Tyre Changer": "Tyre Changer Semi-Otomatis",
-    "Semi-Automatic Car Tyre Changer": "Tyre Changer Mobil Semi-Otomatis",
-    "Digital Wheel Balancer": "Wheel Balancer Digital",
-    "Digital Wheel Balancer (Truck)": "Wheel Balancer Digital (Truk)",
-    "Semi-Automatic Car Wheel Balancer": "Wheel Balancer Mobil Semi-Otomatis",
-    "TV Monitor Wheel Balancer": "Wheel Balancer dengan Monitor TV",
-    "Automatic Transmission Oil Exchanger": "Alat Ganti Oli Transmisi Otomatis",
-    "Brake Lathe Bench Machine": "Mesin Bubut Rem Duduk",
-    "A/C Recycling Service Station": "Stasiun Servis Daur Ulang A/C",
-    "Catalytic Converter Cleaning Machine": "Mesin Pembersih Catalytic Converter",
-    "Radiator Cooling System Machine": "Mesin Sistem Pendingin Radiator",
-    "Oil Flushing Machine": "Mesin Flushing Oli",
-    "Nitrogen Generator": "Generator Nitrogen",
-    "Shaking Machine": "Mesin Pengocok",
-    "Diagnostic Scan Tool": "Alat Pindai Diagnostik",
-    "MMA Welding Machine": "Mesin Las MMA",
-    "MIG / MMA Welding Machine": "Mesin Las MIG / MMA",
-    "Automatic Tilt-Back Car Tyre Changer": "Tyre Changer Mobil Tilt-Back Otomatis",
-    "3D Wheel Alignment System": "Sistem Spooring Roda 3D",
-    "HHO Carbon Cleaning Machine — Automotive": "Mesin Pembersih Karbon HHO — Mobil",
     "HHO Carbon Cleaning Machine — Motorcycle": "Mesin Pembersih Karbon HHO — Motor",
     /* The RAASM catalogue's own sub-headings. "Hose & Cable Reels" below is
        the range card; these are the sections inside the catalogue page, where
        reels, pumps and equipment are listed apart. */
-    "Hose Reels": "Reel Selang",
-    "Cable Reels": "Reel Kabel",
-    "Diaphragm Pumps": "Pompa Diafragma",
-    "Pneumatic Pumps": "Pompa Pneumatik",
-    "Oil Equipment": "Peralatan Oli",
-    "Grease Equipment": "Peralatan Gemuk",
-    "Diesel Fuel Equipment": "Peralatan Bahan Bakar Diesel",
-    "Service Columns & Trolleys": "Kolom Servis & Troli",
-    "Fluid Control — FCS": "Kontrol Fluida — FCS",
-    "Fluid Level — FLS": "Level Fluida — FLS",
     "Hose & Cable Reels": "Reel Selang & Kabel",
     "Oil & Grease Dispensing": "Dispensing Oli & Gemuk",
     "Waste Oil Handling": "Penanganan Oli Bekas",
@@ -473,21 +435,14 @@
        vocabulary that labels a product range rather than specifies a
        machine. Do not add spec or kit strings back without asking. */
     "Diaphragm": "Diafragma",
-    "Spring": "Pegas",
     "Pneumatic": "Pneumatik",
-    "Motorised": "Bermotor",
-    "Trolley-mounted": "Terpasang pada troli",
     "Rotary slip rings": "Slip ring rotari",
     "Spot welding": "Las titik",
     "Cleaning": "Pembersihan",
     "Service columns": "Kolom servis",
     "Ram hoists": "Ram hoist",
-    "Metered guns": "Gun terukur",
-    "Ratio pumps": "Pompa rasio",
-    "Pumps": "Pompa",
     "Drainers": "Alat pembuangan",
     "Suction units": "Unit pengisap",
-    "Trolleys": "Troli",
     "Single line": "Jalur tunggal",
     "Dual line": "Jalur ganda",
     "Progressive": "Progresif",
@@ -567,10 +522,8 @@
     /* The ALLY 30 is an accessory rather than a machine, so it is the one
        card on the page whose heading is not a machine type. */
     "One model — a universal helper arm that fits the tyre changers above.": "Satu model — lengan bantu universal yang cocok untuk tyre changer di atas.",
-    "Universal Helper Device": "Alat Bantu Universal",
     "Not a machine of its own — it stands beside a tyre changer and does the holding a second pair of hands would. A tapered roller keeps the first bead in the rim well, a large disc lifts the tyre to free the lower bead, and a rotating depressor and presser cone hold a stiff tyre down on the turntable. That is what makes run-flat, ultra-low-profile and alloy work manageable single-handed.": "Bukan mesin tersendiri — alat ini berdiri di samping tyre changer dan melakukan penahanan yang biasanya butuh sepasang tangan tambahan. Rol kerucut menjaga bead pertama tetap di kanal pelek, cakram besar mengangkat ban untuk melepaskan bead bawah, dan penekan berputar serta kerucut penekan menahan ban kaku pada turntable. Itulah yang membuat pekerjaan run-flat, profil ultra-rendah, dan pelek aloi dapat ditangani seorang diri.",
     "Five models — tyre changers, wheel balancers and 3D alignment.": "Lima model — tyre changer, wheel balancer, dan spooring 3D.",
-    "Automatic Car Wheel Balancer with LCD Display": "Wheel Balancer Mobil Otomatis dengan Layar LCD",
     "One model — a semi-automatic swing-arm tyre changer.": "Satu model — tyre changer semi-otomatis lengan ayun.",
     "The arm swings aside by hand rather than tilting back, so the machine can stand against a wall — the same layout as the HPA-Faip M31.": "Lengannya diayun ke samping dengan tangan alih-alih dimiringkan ke belakang, sehingga mesin dapat ditempatkan menempel dinding — tata letak yang sama seperti HPA-Faip M31.",
 
@@ -584,13 +537,6 @@
     /* ---- model configuration lines ----
        The code and the rim size stay; the layout and the phase count are
        words, so they turn over. */
-    "— M31 · swing-arm · 21″ · 1ph": "— M31 · lengan ayun · 21″ · 1 fasa",
-    "— M54 · tilting-post, heavy-duty · 24″ · 1 or 3ph": "— M54 · tilting-post, heavy-duty · 24″ · 1 atau 3 fasa",
-    "— M422 · tilting-post · 22″ · 3ph": "— M422 · tilting-post · 22″ · 3 fasa",
-    "— M424 · tilting-post · 24″ · 3ph": "— M424 · tilting-post · 24″ · 3 fasa",
-    "— JA-C01 · swing-arm · 20″": "— JA-C01 · lengan ayun · 20″",
-    "— C880 STD · 2 camera": "— C880 STD · 2 kamera",
-    "— C880 i-Next · 2 camera": "— C880 i-Next · 2 kamera",
   };
 
   var LANG_KEY = 'ha_auto_lang', ALT = 'id', HTML_LANG = 'id';
