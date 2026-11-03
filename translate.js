@@ -60,6 +60,19 @@
        still uses it, and there it really is a list of companies. */
     "Our Businesses": "Bidang Usaha Kami",
     "A division of PT. Hanindo Citra": "Divisi dari PT. Hanindo Citra",
+    /* the menu note now says "department"; the line above is kept for any page still using the old wording */
+    "A department of PT. Hanindo Citra": "Departemen dari PT. Hanindo Citra",
+    /* ---- lines found untranslated on the group pages, 2026-11-03 ---- */
+    "Telecommunications": "Telekomunikasi",
+    "Fuel equipment for forecourts, depots, airports & mines": "Peralatan BBM untuk SPBU, depo, bandara & tambang",
+    "Introducing the Hanindo Group": "Mengenal Hanindo Group",
+    "Southeast Asia expansion": "Ekspansi ke Asia Tenggara",
+    "Printing, scanning and point-of-sale systems — the CUSTOM range across Southeast Asia and China.": "Sistem pencetakan, pemindaian, dan POS — rangkaian CUSTOM di seluruh Asia Tenggara dan China.",
+    "Southeast Asia & China": "Asia Tenggara & China",
+    "Dispensing pumps, automatic tank gauging, flow meters, submersible pumps and forecourt controllers, and station construction.": "Pompa dispenser, automatic tank gauging, flow meter, pompa submersible, dan forecourt controller, serta pembangunan SPBU.",
+    "Hydrant and sprinkler systems, foam and gas suppression, alarm and detection, with the mechanical, electrical and maintenance services around them.": "Sistem hidran dan sprinkler, pemadam busa dan gas, alarm dan deteksi, beserta layanan mekanikal, elektrikal, dan pemeliharaan yang menyertainya.",
+    "Careers": "Karier",
+    "Actively prospect for and develop new customers": "Aktif mencari dan mengembangkan pelanggan baru",
     /* the Products & Services mega menu. Every category below is worded
        exactly as its own company site words it — citra/translate.js and
        automotive/translate.js — so a reader meets the same Indonesian on
